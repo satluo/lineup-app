@@ -907,10 +907,8 @@ ms.addEventListener('touchmove', e=>{ const dy=e.touches[0].clientY-ty; if(dy>0&
 ms.addEventListener('touchend', e=>{ const dy=e.changedTouches[0].clientY-ty; ms.style.transform=''; if(dy>80)closeModal(); },{passive:true});
 
 // =====================================================
-// 实时数据 — CORS 代理 + FotMob __NEXT_DATA__
-// FotMob slug: 换比赛时改这一行
-const MATCH_SLUG = 'aston-villa-vs-manchester-united/3h9f6s';
-const PROXY = 'https://api.allorigins.win/raw?url=';
+// 实时数据 — 读取 GitHub Actions 生成的 data.json（同域，无CORS问题）
+// Actions 每2分钟自动抓 FotMob 数据写入 data.json
 let lastUpdated = null;
 let pollInterval = null;
 let isMatchLive = false;
@@ -935,25 +933,22 @@ function updateScore(mu, av) {
 
 function renderEvents(events) {
   const el = document.getElementById('events-list');
-  if(!el) return;
-  if(!events || events.length === 0) return;
+  if(!el || !events || events.length === 0) return;
   const filtered = events.filter(e=>!['AddedTime','Half'].includes(e.type));
   if(filtered.length === 0) return;
-  const iconMap = {Goal:'⚽',Card:'🟨',Substitution:'🔄'};
+  const iconMap = {Goal:'⚽', Card:'🟨', Substitution:'🔄'};
   const lines = filtered.map(e=>{
-    const ts = e.overloadTime ? `${e.timeStr}+${e.overloadTime}'` : `${e.timeStr}'`;
-    const icon = iconMap[e.type]||'•';
-    const player = (e.player||{}).name||'';
-    const card = e.card||'';
-    const isRed = card==='Red';
-    const cardIcon = isRed?'🟥':'🟨';
-    const finalIcon = e.type==='Card' ? cardIcon : icon;
-    const ring = e.isHome ? '#ff6b5b' : '#7ab8e8';
-    const swap = e.swap;
-    let desc = '';
-    if(swap && Array.isArray(swap) && swap.length>=2) desc = `↑${swap[0].name} ↓${swap[1].name}`;
-    else if(player) desc = player;
-    const left = e.isHome ? `<div class="tl-player" style="color:#ff6b5b">${desc}</div>` : `<div class="tl-empty">-</div>`;
+    // 兼容 data.json 格式（time/overload/player为字符串）和旧格式（timeStr/overloadTime/player为对象）
+    const time     = e.time ?? e.timeStr ?? '?';
+    const overload = e.overload ?? e.overloadTime;
+    const ts       = overload ? `${time}+${overload}'` : `${time}'`;
+    const player   = typeof e.player === 'string' ? e.player : (e.player||{}).name||'';
+    const card     = e.card || '';
+    const finalIcon = e.type==='Card' ? (card==='Red'?'🟥':'🟨') : (iconMap[e.type]||'•');
+    const ring     = e.isHome ? '#ff6b5b' : '#7ab8e8';
+    const swap     = e.swap || [];
+    let desc = swap.length>=2 ? `↑${swap[0].name} ↓${swap[1].name}` : player;
+    const left  = e.isHome  ? `<div class="tl-player" style="color:#ff6b5b">${desc}</div>` : `<div class="tl-empty">-</div>`;
     const right = !e.isHome ? `<div class="tl-player" style="color:#7ab8e8">${desc}</div>` : `<div class="tl-empty">-</div>`;
     return `<div class="tl-item">
       <div class="tl-left">${left}</div>
@@ -1003,49 +998,38 @@ function renderStats(data) {
 }
 
 async function fetchLiveData() {
-  const url = `https://www.fotmob.com/matches/${MATCH_SLUG}`;
   try {
-    const res = await fetch(PROXY + encodeURIComponent(url));
-    const html = await res.text();
-    const m = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
-    if(!m) return;
-    const data = JSON.parse(m[1]);
-    const props = data.props?.pageProps;
-    if(!props) return;
-    const header = props.header||{};
-    const teams = header.teams||[];
-    const status = header.status||{};
-    const content = props.content||{};
-    const facts = content.matchFacts||{};
+    // 加时间戳防缓存
+    const res = await fetch(`data.json?t=${Date.now()}`);
+    if (!res.ok) return;
+    const d = await res.json();
 
     // Score
-    const muScore = teams[0]?.score??0;
-    const avScore = teams[1]?.score??0;
-    updateScore(muScore, avScore);
+    updateScore(d.score?.home ?? 0, d.score?.away ?? 0);
 
     // Status
-    const scoreStr = status.scoreStr||'';
-    const liveTime = status.liveTime?.short||'';
-    const reason = status.reason?.short||'';
-    const isFT = reason==='FT'||reason==='AET';
-    const isLive = !isFT && (liveTime||scoreStr);
-    isMatchLive = !!isLive;
-    setStatus(isFT?'FT': isLive?liveTime:'尚未开始', isLive);
+    const liveTime = d.status?.liveTime || '';
+    const reason   = d.status?.reason   || '';
+    const isFT     = reason === 'FT' || reason === 'AET';
+    const isLive   = !isFT && !!liveTime;
+    isMatchLive = isLive;
+    setStatus(isFT ? 'FT' : isLive ? liveTime : '尚未开始', isLive);
 
     // Events
-    const events = facts.events?.events||[];
-    if(events.length>0) renderEvents(events);
+    if (d.events?.length > 0) renderEvents(d.events);
 
     // Stats
-    const statsGroups = content.stats?.Periods?.All?.stats||[];
-    if(statsGroups.length>0) renderLiveStats(statsGroups);
+    if (d.stats?.length > 0) renderStats(d.stats);
 
-    // Stop polling after FT
-    if(isFT && pollInterval) { clearInterval(pollInterval); pollInterval=null; setStatus('FT',false); }
+    // Stop after FT
+    if (isFT && pollInterval) { clearInterval(pollInterval); pollInterval = null; setStatus('FT', false); }
 
     lastUpdated = new Date();
     const updEl = document.getElementById('last-updated');
-    if(updEl) updEl.textContent = `更新 ${lastUpdated.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}`;
+    if (updEl) {
+      const fetchedAt = d.fetchedAt ? new Date(d.fetchedAt).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'}) : '';
+      updEl.textContent = `数据 ${fetchedAt}`;
+    }
   } catch(e) { console.warn('fetchLiveData error', e); }
 }
 

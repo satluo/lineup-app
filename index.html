@@ -875,7 +875,10 @@ function openModal(p, team) {
   const flag = flagMap[p.country] || '🌍';
   let chips = [];
   if(p.country) chips.push(`<div class="meta-chip">${flag} ${p.country}</div>`);
-  if(p.age)     chips.push(`<div class="meta-chip">🎂 ${p.age}岁</div>`);
+  if(p.age) {
+    const ageIcon = p.age<=21?'🌱': p.age<=26?'⚡': p.age<=30?'💪': p.age<=34?'🧓':'🏛️';
+    chips.push(`<div class="meta-chip">${ageIcon} ${p.age}岁</div>`);
+  }
   if(p.height)  chips.push(`<div class="meta-chip">📏 ${p.height}</div>`);
   if(p.foot) {
     const footColor = p.foot==='左脚'?'#f97316': p.foot==='双脚'?'#22c55e':'#60a5fa';

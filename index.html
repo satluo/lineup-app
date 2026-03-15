@@ -257,11 +257,11 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
       <div class="pitch-container">
         <div class="pitch" id="pitch">
           <svg class="pitch-markings" id="pitch-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
-          <div id="label-av" class="team-label-banner top">
-            <div class="team-label-pill" style="color:#6CABDD;border:1px solid rgba(28,44,91,0.6);">曼城 · 4-2-3-1</div>
+          <div id="label-mu" class="team-label-banner top">
+            <div class="team-label-pill" style="color:#e87070;border:1px solid rgba(122,38,58,0.6);">西汉姆联 · 3-4-3</div>
           </div>
-          <div id="label-mu" class="team-label-banner bottom">
-            <div class="team-label-pill" style="color:#e87070;border:1px solid rgba(122,38,58,0.6);">西汉姆联 · 4-2-3-1</div>
+          <div id="label-av" class="team-label-banner bottom">
+            <div class="team-label-pill" style="color:#6CABDD;border:1px solid rgba(28,44,91,0.6);">曼城 · 4-1-2-3</div>
           </div>
           <div class="players-layer" id="players-layer"></div>
         </div>
@@ -269,17 +269,17 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
       <!-- Bench always in lineup tab -->
       <div class="bench-section" id="bench-section">
         <div class="bench-split">
-          <!-- 曼城替补：左半场 -->
-          <div class="bench-half bench-half-av">
-            <div class="bench-half-label" style="color:#6CABDD">曼城 替补</div>
-            <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
-          </div>
-          <!-- 中场分隔线 -->
-          <div class="bench-divider"></div>
-          <!-- 西汉姆替补：右半场 -->
+          <!-- 主场西汉姆替补：左侧 -->
           <div class="bench-half bench-half-mu">
             <div class="bench-half-label" style="color:#e87070">西汉姆 替补</div>
             <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
+          </div>
+          <!-- 中场分隔线 -->
+          <div class="bench-divider"></div>
+          <!-- 客场曼城替补：右侧 -->
+          <div class="bench-half bench-half-av">
+            <div class="bench-half-label" style="color:#6CABDD">曼城 替补</div>
+            <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
         </div>
       </div>
@@ -722,11 +722,11 @@ function renderPitch() {
   const av = document.getElementById('label-av');
   const mu = document.getElementById('label-mu');
   if (ls) {
-    av.className = 'team-label-banner left';
-    mu.className = 'team-label-banner right';
+    mu.className = 'team-label-banner left';   // 主场西汉姆在左
+    av.className = 'team-label-banner right';  // 客场曼城在右
   } else {
-    av.className = 'team-label-banner top';
-    mu.className = 'team-label-banner bottom';
+    mu.className = 'team-label-banner top';    // 竖屏：主场西汉姆在上
+    av.className = 'team-label-banner bottom'; // 竖屏：客场曼城在下
   }
 
   // Landscape layout

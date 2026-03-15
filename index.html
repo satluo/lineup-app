@@ -452,27 +452,46 @@ const AV_PLAYERS = [
 
 // 替补席：左侧=主场曼联，右侧=客场维拉
 const MU_BENCH = [
-  {num:1, name:'Bayindir',    pos:'GK',  id:866967,  team:'mu'},
-  {num:26,name:'Heaven',      pos:'CB',  id:1559639, team:'mu'},
-  {num:3, name:'Mazraoui',    pos:'RB',  id:775539,  team:'mu'},
-  {num:12,name:'Malacia',     pos:'LB',  id:865118,  team:'mu'},
-  {num:25,name:'Ugarte',      pos:'CM',  id:1035614, team:'mu'},
-  {num:7, name:'M.Mount',     pos:'CAM', id:750032,  team:'mu'},
-  {num:39,name:'Fletcher',    pos:'LW',  id:1676985, team:'mu'},
-  {num:30,name:'Sesko',       pos:'ST',  id:1073977, team:'mu'},
-  {num:11,name:'Zirkzee',     pos:'ST',  id:950830,  team:'mu'},
+  {num:1, name:'Bayindir',   lastName:'Bayindir',  pos:'GK',  id:866967,  team:'mu', country:'土耳其', age:27, height:'197cm', foot:'右脚',
+    attrs:[{n:'速度',v:60},{n:'射门',v:18},{n:'传球',v:68},{n:'盘带',v:42},{n:'防守',v:76},{n:'体能',v:76}], tags:['土耳其国门'], bio:'曼联替补门将，身高197cm。' },
+  {num:26,name:'Heaven',     lastName:'Heaven',    pos:'CB',  id:1559639, team:'mu', country:'英格兰', age:19, height:'188cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:35},{n:'传球',v:68},{n:'盘带',v:55},{n:'防守',v:74},{n:'体能',v:78}], tags:['曼联青训','英格兰U20'], bio:'曼联本土培养中卫，19岁。' },
+  {num:3, name:'Mazraoui',   lastName:'Mazraoui',  pos:'RB',  id:775539,  team:'mu', country:'摩洛哥', age:27, height:'182cm', foot:'右脚',
+    attrs:[{n:'速度',v:80},{n:'射门',v:58},{n:'传球',v:74},{n:'盘带',v:72},{n:'防守',v:76},{n:'体能',v:82}], tags:['摩洛哥国脚','前拜仁'], bio:'摩洛哥右后卫，攻守均衡。' },
+  {num:12,name:'Malacia',    lastName:'Malacia',   pos:'LB',  id:865118,  team:'mu', country:'荷兰', age:25, height:'169cm', foot:'左脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:52},{n:'传球',v:72},{n:'盘带',v:70},{n:'防守',v:74},{n:'体能',v:84}], tags:['荷兰左后卫'], bio:'荷兰国脚左后卫，速度快。' },
+  {num:25,name:'Ugarte',     lastName:'Ugarte',    pos:'CM',  id:1035614, team:'mu', country:'乌拉圭', age:23, height:'182cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:62},{n:'传球',v:80},{n:'盘带',v:72},{n:'防守',v:85},{n:'体能',v:86}], tags:['乌拉圭中场','防守悍将'], bio:'来自PSG的防守型中场，拦截凶狠。' },
+  {num:7, name:'M.Mount',    lastName:'Mount',     pos:'CAM', id:750032,  team:'mu', country:'英格兰', age:27, height:'181cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:76},{n:'传球',v:82},{n:'盘带',v:78},{n:'防守',v:64},{n:'体能',v:82}], tags:['英格兰国脚','前切尔西'], bio:'英格兰中场，技术全面，曾在切尔西成名。' },
+  {num:39,name:'Fletcher',   lastName:'Fletcher',  pos:'LW',  id:1676985, team:'mu', country:'英格兰', age:18, height:'175cm', foot:'左脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:65},{n:'传球',v:68},{n:'盘带',v:76},{n:'防守',v:45},{n:'体能',v:78}], tags:['曼联青训','18岁新星'], bio:'曼联青训边锋，未来可期。' },
+  {num:30,name:'Sesko',      lastName:'Sesko',     pos:'ST',  id:1073977, team:'mu', country:'斯洛文尼亚', age:22, height:'195cm', foot:'左脚',
+    attrs:[{n:'速度',v:86},{n:'射门',v:82},{n:'传球',v:62},{n:'盘带',v:72},{n:'防守',v:38},{n:'体能',v:84}], tags:['斯洛文尼亚中锋','来自莱比锡'], bio:'195cm大中锋，速度爆炸的斯洛文尼亚新星。' },
+  {num:11,name:'Zirkzee',    lastName:'Zirkzee',   pos:'ST',  id:950830,  team:'mu', country:'荷兰', age:24, height:'193cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:78},{n:'传球',v:72},{n:'盘带',v:76},{n:'防守',v:42},{n:'体能',v:80}], tags:['荷兰前锋','技术型中锋'], bio:'荷兰高中锋，技术细腻，脚法出众。' },
 ];
 
 const AV_BENCH = [
-  {num:40,name:'Bizot',       pos:'GK',  id:195782,  team:'av'},
-  {num:16,name:'A.García',    pos:'CM',  id:1430406, team:'av'},
-  {num:22,name:'Maatsen',     pos:'LB',  id:966026,  team:'av'},
-  {num:14,name:'P.Torres',    pos:'CB',  id:792645,  team:'av'},
-  {num:3, name:'Lindelöf',    pos:'CB',  id:258269,  team:'av'},
-  {num:21,name:'D.Luiz',      pos:'CM',  id:787350,  team:'av'},
-  {num:9, name:'H.Elliott',   pos:'CAM', id:963964,  team:'av'},
-  {num:31,name:'L.Bailey',    pos:'LW',  id:671331,  team:'av'},
-  {num:18,name:'T.Abraham',   pos:'ST',  id:749661,  team:'av'},
+  {num:40,name:'Bizot',      lastName:'Bizot',     pos:'GK',  id:195782,  team:'av', country:'荷兰', age:33, height:'193cm', foot:'右脚',
+    attrs:[{n:'速度',v:60},{n:'射门',v:18},{n:'传球',v:70},{n:'盘带',v:44},{n:'防守',v:78},{n:'体能',v:76}], tags:['荷兰门将'], bio:'维拉替补门将，稳定可靠。' },
+  {num:16,name:'A.García',   lastName:'García',    pos:'CM',  id:1430406, team:'av', country:'西班牙', age:21, height:'178cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:65},{n:'传球',v:76},{n:'盘带',v:74},{n:'防守',v:68},{n:'体能',v:80}], tags:['西班牙新星'], bio:'西班牙年轻中场，前景广阔。' },
+  {num:22,name:'Maatsen',    lastName:'Maatsen',   pos:'LB',  id:966026,  team:'av', country:'荷兰', age:23, height:'174cm', foot:'左脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:60},{n:'传球',v:76},{n:'盘带',v:74},{n:'防守',v:74},{n:'体能',v:84}], tags:['荷兰快翼','前切尔西'], bio:'速度出众的荷兰左后卫。' },
+  {num:14,name:'P.Torres',   lastName:'Torres',    pos:'CB',  id:792645,  team:'av', country:'西班牙', age:28, height:'191cm', foot:'左脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:40},{n:'传球',v:78},{n:'盘带',v:62},{n:'防守',v:84},{n:'体能',v:80}], tags:['西班牙国脚','技术中卫'], bio:'西班牙技术型中卫，脚下出众。' },
+  {num:3, name:'Lindelöf',   lastName:'Lindelöf',  pos:'CB',  id:258269,  team:'av', country:'瑞典', age:30, height:'187cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:38},{n:'传球',v:74},{n:'盘带',v:58},{n:'防守',v:82},{n:'体能',v:80}], tags:['瑞典中卫','前曼联'], bio:'曾效力曼联的瑞典老将中卫。' },
+  {num:21,name:'D.Luiz',     lastName:'Luiz',      pos:'CM',  id:787350,  team:'av', country:'巴西', age:28, height:'178cm', foot:'右脚',
+    attrs:[{n:'速度',v:80},{n:'射门',v:72},{n:'传球',v:86},{n:'盘带',v:82},{n:'防守',v:72},{n:'体能',v:82}], tags:['巴西中场','传控大师'], bio:'技术出众的巴西中场，从尤文加盟。' },
+  {num:9, name:'H.Elliott',  lastName:'Elliott',   pos:'CAM', id:963964,  team:'av', country:'英格兰', age:22, height:'169cm', foot:'右脚',
+    attrs:[{n:'速度',v:80},{n:'射门',v:74},{n:'传球',v:78},{n:'盘带',v:80},{n:'防守',v:55},{n:'体能',v:80}], tags:['英格兰新星','前利物浦'], bio:'英格兰年轻攻中，前利物浦球员。' },
+  {num:31,name:'L.Bailey',   lastName:'Bailey',    pos:'LW',  id:671331,  team:'av', country:'牙买加', age:27, height:'170cm', foot:'左脚',
+    season:{goals:6, assists:5},
+    attrs:[{n:'速度',v:90},{n:'射门',v:74},{n:'传球',v:68},{n:'盘带',v:82},{n:'防守',v:48},{n:'体能',v:82}], tags:['牙买加速度','爆炸冲击力'], bio:'速度极快的牙买加边锋，冲击力强。' },
+  {num:18,name:'T.Abraham',  lastName:'Abraham',   pos:'ST',  id:749661,  team:'av', country:'英格兰', age:27, height:'191cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:80},{n:'传球',v:66},{n:'盘带',v:70},{n:'防守',v:40},{n:'体能',v:82}], tags:['英格兰高中锋','前切尔西'], bio:'英格兰高中锋，身体强壮，冲劲十足。' },
 ];
 
 
@@ -692,36 +711,13 @@ function renderBench() {
 }
 
 function openBenchModal(p, teamColor, ringColor) {
-  const lighter = teamColor === '#DA291C' ? '#e05a50' : '#c0406a';
-  const teamLabel = teamColor === '#DA291C' ? '曼联' : '维拉';
-  document.getElementById('modal-content').innerHTML = `
-    <div class="modal-header">
-      <img class="modal-avatar" src="${FOTMOB}${p.id}.png"
-        style="border-color:${ringColor};box-shadow:0 0 20px ${ringColor}40"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="modal-avatar-fallback" style="border-color:${ringColor};overflow:hidden">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-          <defs><radialGradient id="mbrg-${p.id}" cx="40%" cy="35%" r="65%">
-            <stop offset="0%" stop-color="${lighter}"/><stop offset="100%" stop-color="${teamColor}"/>
-          </radialGradient></defs>
-          <circle cx="32" cy="32" r="32" fill="url(#mbrg-${p.id})"/>
-          <text x="32" y="42" text-anchor="middle" fill="white" font-size="26" font-weight="900" font-family="Arial">${p.num}</text>
-        </svg>
-      </div>
-      <div class="modal-player-info">
-        <div class="modal-player-name">${p.name}</div>
-        <div class="modal-position-row">
-          <div class="modal-position" style="background:${teamColor}33;color:${ringColor};border:1px solid ${teamColor}55">${p.pos}</div>
-          <div class="modal-shirt">#${p.num} · ${teamLabel} · 替补</div>
-        </div>
-      </div>
-    </div>
-    <div class="modal-body" style="padding-top:12px">
-      <div style="color:var(--text-muted);font-size:12px;text-align:center;padding:20px">暂无详细数据</div>
-    </div>`;
-  document.getElementById('modal-overlay').classList.add('open');
-  document.getElementById('modal-sheet').classList.add('open');
-  document.body.style.overflow='hidden';
+  // 补全替补球员缺省字段，直接复用正选modal渲染
+  const team = teamColor === '#DA291C' ? 'mu' : 'av';
+  const fullP = Object.assign({
+    country: '-', age: '-', height: '-', foot: '-',
+    attrs: [], bio: '替补球员', tags: ['替补']
+  }, p);
+  openModal(fullP, team);
 }
 
 // === STATS ===

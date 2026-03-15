@@ -7,8 +7,8 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 :root {
-  --mu-red:#6CABDD; --av-claret:#1C2C5B; --av-main:#1C2C5B;
-  --whu-main:#7A263A; --mc-main:#6CABDD;
+  --mu-red:#6ea8e8; --av-claret:#aaaaaa; --av-main:#241F20;
+  --whu-main:#034694; --mc-main:#cccccc;
   --bg:#0d1117; --card-bg:#161b22; --border:#30363d;
   --text:#e6edf3; --text-muted:#8b949e; --accent:#58a6ff;
 }
@@ -20,9 +20,10 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .match-meta span { color:var(--accent); font-weight:600; }
 .score-row { display:flex; align-items:center; justify-content:space-between; gap:8px; }
 .team-info { display:flex; flex-direction:column; align-items:center; flex:1; gap:4px; }
-.team-badge { width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; font-weight:900; }
-.team-badge.mu { background:linear-gradient(135deg,#7A263A,#4a0018); color:#fff; box-shadow:0 0 15px rgba(122,38,58,0.5); }
-.team-badge.av { background:linear-gradient(135deg,#1C2C5B,#0a1230); color:#6CABDD; box-shadow:0 0 15px rgba(108,171,221,0.3); }
+.team-badge { width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; overflow:hidden; background:rgba(255,255,255,0.08); }
+.team-badge img { width:36px; height:36px; object-fit:contain; display:block; }
+.team-badge.mu { box-shadow:0 0 15px rgba(3,70,148,0.4); }
+.team-badge.av { box-shadow:0 0 15px rgba(255,255,255,0.1); }
 .team-name { font-size:12px; font-weight:700; text-align:center; }
 .score-display { display:flex; flex-direction:column; align-items:center; gap:4px; }
 .score-numbers { display:flex; align-items:center; gap:8px; }
@@ -82,8 +83,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .bench-title { font-size:10px; font-weight:700; color:var(--text-muted); letter-spacing:1px; text-transform:uppercase; margin-bottom:6px; }
 .bench-row-wrap { display:flex; align-items:flex-start; gap:6px; }
 .bench-row-label { font-size:9px; font-weight:700; padding-top:8px; min-width:36px; flex-shrink:0; }
-.bench-row-label.whu { color:#e87070; }
-.bench-row-label.mc { color:#6CABDD; }
+.bench-row-label.whu { color:#6ea8e8; }
+.bench-row-label.mc { color:#aaa; }
 .bench-card { display:inline-flex; flex-direction:column; align-items:center; cursor:pointer; padding:4px 6px; border-radius:8px; background:rgba(255,255,255,0.04); border:1px solid transparent; transition:all 0.2s; min-width:50px; }
 .bench-card:hover { background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.12); }
 .bench-avatar-wrap { position:relative; width:32px; height:32px; margin-bottom:3px; }
@@ -109,8 +110,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .stat-val.mu { color:#fff; text-align:right; }
 .stat-val.av { color:#fff; text-align:left; }
 .stat-bar-track { flex:1; height:5px; background:rgba(255,255,255,0.08); border-radius:3px; display:flex; position:relative; }
-.stat-bar-mu { height:100%; background:linear-gradient(90deg,#7A263A,#c44464); border-radius:3px 0 0 3px; }
-.stat-bar-av { height:100%; background:linear-gradient(90deg,#1C2C5B,#6CABDD); border-radius:0 3px 3px 0; }
+.stat-bar-mu { height:100%; background:linear-gradient(90deg,#034694,#3a6dbf); border-radius:3px 0 0 3px; }
+.stat-bar-av { height:100%; background:linear-gradient(90deg,#241F20,#666); border-radius:0 3px 3px 0; }
 .stat-divider { width:1px; height:14px; background:rgba(255,255,255,0.2); position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
 
 /* EVENTS PANEL */
@@ -127,8 +128,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 /* STATS SCORE */
 .stats-score-row { display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:2px; }
 .stats-score-num { font-size:28px; font-weight:900; }
-.stats-score-num.whu { color:#e87070; }
-.stats-score-num.mc { color:#6CABDD; }
+.stats-score-num.whu { color:#6ea8e8; }
+.stats-score-num.mc { color:#aaa; }
 .stats-score-divider { font-size:20px; color:var(--text-muted); font-weight:300; }
 .stats-score-teams { display:flex; justify-content:space-between; font-size:10px; font-weight:700; margin-bottom:10px; padding:0 4px; }
 
@@ -201,7 +202,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
   body { max-width:100%; flex-direction:column; }
   .match-header { padding:6px 20px; }
   .match-meta { margin-bottom:4px; font-size:9px; }
-  .team-badge { width:30px; height:30px; font-size:13px; }
+  .team-badge { width:32px; height:32px; }
+  .team-badge img { width:26px; height:26px; }
   .score-num { font-size:26px; }
   .score-divider { font-size:18px; }
   .team-name { font-size:11px; }
@@ -224,7 +226,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
   <div class="match-meta">英超 · 第30轮 &nbsp;|&nbsp; <span>2026年3月14日 周六 17:30</span> &nbsp;|&nbsp; 斯坦福桥</div>
   <div class="score-row">
     <div class="team-info">
-      <div class="team-badge mu">CHE</div>
+      <div class="team-badge mu" id="badge-mu"></div>
       <div class="team-name">切尔西</div>
     </div>
     <div class="score-display">
@@ -236,7 +238,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
       <div class="match-time" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:var(--text-muted)"><span>FT</span></div>
     </div>
     <div class="team-info">
-      <div class="team-badge av">NEW</div>
+      <div class="team-badge av" id="badge-av"></div>
       <div class="team-name">纽卡斯尔</div>
     </div>
   </div>
@@ -258,10 +260,10 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="pitch" id="pitch">
           <svg class="pitch-markings" id="pitch-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
           <div id="label-mu" class="team-label-banner top">
-            <div class="team-label-pill" style="color:#e87070;border:1px solid rgba(122,38,58,0.6);">切尔西 · 4-2-3-1</div>
+            <div class="team-label-pill" style="color:#6ea8e8;border:1px solid rgba(3,70,148,0.6);">切尔西 · 4-2-3-1</div>
           </div>
           <div id="label-av" class="team-label-banner bottom">
-            <div class="team-label-pill" style="color:#6CABDD;border:1px solid rgba(28,44,91,0.6);">纽卡斯尔 · 4-2-3-1</div>
+            <div class="team-label-pill" style="color:#aaaaaa;border:1px solid rgba(36,31,32,0.8);">纽卡斯尔 · 4-2-3-1</div>
           </div>
           <div class="players-layer" id="players-layer"></div>
         </div>
@@ -271,14 +273,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="bench-split">
           <!-- 主场西汉姆替补：左侧 -->
           <div class="bench-half bench-half-mu">
-            <div class="bench-half-label" style="color:#e87070">切尔西 替补</div>
+            <div class="bench-half-label" style="color:#6ea8e8">切尔西 替补</div>
             <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
           <!-- 中场分隔线 -->
           <div class="bench-divider"></div>
           <!-- 客场曼城替补：右侧 -->
           <div class="bench-half bench-half-av">
-            <div class="bench-half-label" style="color:#6CABDD">纽卡斯尔 替补</div>
+            <div class="bench-half-label" style="color:#aaaaaa">纽卡斯尔 替补</div>
             <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
         </div>
@@ -297,14 +299,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
           <span class="stats-score-num mc">1</span>
         </div>
         <div class="stats-score-teams">
-          <span style="color:#e87070">切尔西</span>
+          <span style="color:#6ea8e8">切尔西</span>
           <span style="color:var(--text-muted)">FT</span>
-          <span style="color:#6CABDD">纽卡斯尔</span>
+          <span style="color:#aaaaaa">纽卡斯尔</span>
         </div>
         <div style="font-size:9px;color:var(--text-muted);margin-bottom:6px;text-align:center">数据来源：直播吧 / dasfootball.com</div>
         <div class="stats-header-row">
-          <span class="stats-team-name mu" style="color:#e87070">切尔西</span>
-          <span class="stats-team-name av" style="color:#6CABDD">纽卡斯尔</span>
+          <span class="stats-team-name mu" style="color:#6ea8e8">切尔西</span>
+          <span class="stats-team-name av" style="color:#aaaaaa">纽卡斯尔</span>
         </div>
         <div id="stats-rows"></div>
       </div>
@@ -318,20 +320,20 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
           <!-- 18' Gordon 进球 (纽卡右侧) -->
           <div class="tl-item">
             <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">18'</div><div class="tl-dot" style="border-color:#6CABDD"></div><div class="tl-icon">⚽</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">A.Gordon</div><div class="tl-desc">头球破门</div></div>
+            <div class="tl-center"><div class="tl-time">18'</div><div class="tl-dot" style="border-color:#aaaaaa"></div><div class="tl-icon">⚽</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">A.Gordon</div><div class="tl-desc">头球破门</div></div>
           </div>
 
           <!-- 23' Fofana 黄牌 (切尔西左侧) -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">Fofana</div><div class="tl-desc">犯规</div></div>
+            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">Fofana</div><div class="tl-desc">犯规</div></div>
             <div class="tl-center"><div class="tl-time">23'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
             <div class="tl-right"><div class="tl-empty">-</div></div>
           </div>
 
           <!-- 25' Caicedo 黄牌 (切尔西左侧) -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">Caicedo</div><div class="tl-desc">犯规</div></div>
+            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">Caicedo</div><div class="tl-desc">犯规</div></div>
             <div class="tl-center"><div class="tl-time">25'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
             <div class="tl-right"><div class="tl-empty">-</div></div>
           </div>
@@ -345,14 +347,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 
           <!-- 46' 切尔西换人 Delap→Gusto -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">切尔西 换人</div><div class="tl-desc">↑Delap ↓Gusto</div></div>
+            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">切尔西 换人</div><div class="tl-desc">↑Delap ↓Gusto</div></div>
             <div class="tl-center"><div class="tl-time">46'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
             <div class="tl-right"><div class="tl-empty">-</div></div>
           </div>
 
           <!-- 61' 切尔西换人 Lavia→Caicedo -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">切尔西 换人</div><div class="tl-desc">↑Lavia ↓Caicedo</div></div>
+            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">切尔西 换人</div><div class="tl-desc">↑Lavia ↓Caicedo</div></div>
             <div class="tl-center"><div class="tl-time">61'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
             <div class="tl-right"><div class="tl-empty">-</div></div>
           </div>
@@ -361,26 +363,26 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
           <div class="tl-item">
             <div class="tl-left"><div class="tl-empty">-</div></div>
             <div class="tl-center"><div class="tl-time">67'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">纽卡 换人</div><div class="tl-desc">↑Joelinton ↓Woltemade</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">纽卡 换人</div><div class="tl-desc">↑Joelinton ↓Woltemade</div></div>
           </div>
 
           <!-- 77' 纽卡换人 Burn→Willock -->
           <div class="tl-item">
             <div class="tl-left"><div class="tl-empty">-</div></div>
             <div class="tl-center"><div class="tl-time">77'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">纽卡 换人</div><div class="tl-desc">↑D.Burn ↓Willock</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">纽卡 换人</div><div class="tl-desc">↑D.Burn ↓Willock</div></div>
           </div>
 
           <!-- 78' 纽卡换人 Elanga→Murphy -->
           <div class="tl-item">
             <div class="tl-left"><div class="tl-empty">-</div></div>
             <div class="tl-center"><div class="tl-time">78'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">纽卡 换人</div><div class="tl-desc">↑Elanga ↓Murphy</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">纽卡 换人</div><div class="tl-desc">↑Elanga ↓Murphy</div></div>
           </div>
 
           <!-- 82' 切尔西换人 Hato→Fofana -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">切尔西 换人</div><div class="tl-desc">↑J.Hato ↓Fofana</div></div>
+            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">切尔西 换人</div><div class="tl-desc">↑J.Hato ↓Fofana</div></div>
             <div class="tl-center"><div class="tl-time">82'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
             <div class="tl-right"><div class="tl-empty">-</div></div>
           </div>
@@ -389,14 +391,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
           <div class="tl-item">
             <div class="tl-left"><div class="tl-empty">-</div></div>
             <div class="tl-center"><div class="tl-time">84'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">Ramsdale</div><div class="tl-desc">时间浪费</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">Ramsdale</div><div class="tl-desc">时间浪费</div></div>
           </div>
 
           <!-- 89' Lewis Hall 黄牌 -->
           <div class="tl-item">
             <div class="tl-left"><div class="tl-empty">-</div></div>
             <div class="tl-center"><div class="tl-time">89'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">L.Hall</div><div class="tl-desc">犯规</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">L.Hall</div><div class="tl-desc">犯规</div></div>
           </div>
 
         </div>
@@ -416,6 +418,10 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 </div>
 <script>
 const FOTMOB = 'https://images.fotmob.com/image_resources/playerimages/';
+const FOTMOB_LOGO = 'https://images.fotmob.com/image_resources/logo/teamlogo/';
+// 换比赛时修改这两个队标ID（FotMob team ID）
+const MU_TEAM_ID = 8455;   // 切尔西
+const AV_TEAM_ID = 10261;  // 纽卡斯尔
 
 // 坐标规则（横屏球场 16:9，主场左攻右，客场右攻左）
 // xL = fotmob_x * 48        (主场，左半场 5%~42%)
@@ -689,9 +695,9 @@ function makeFallback(id, num, color, lighter) {
 function renderPlayer(p, team, ls) {
   const ismu = team==='mu';
   // mu = 西汉姆 (red/claret), av = 曼城 (sky blue)
-  const color = ismu?'#7A263A':'#1C2C5B';
-  const lighter = ismu?'#c44464':'#4488cc';
-  const ring = ismu?'#e87070':'#6CABDD';
+  const color = ismu?'#034694':'#241F20';
+  const lighter = ismu?'#3a6dbf':'#555555';
+  const ring = ismu?'#6ea8e8':'#cccccc';
   const x = ls ? p.xL : p.xP, y = ls ? p.yL : p.yP;
   const fb = makeFallback(p.id+'_'+p.num, p.num, color, lighter);
 
@@ -750,7 +756,7 @@ function renderPitch() {
 // === BENCH ===
 function renderBench() {
   function makeCard(p, teamColor, ringColor) {
-    const lighter = teamColor === '#7A263A' ? '#c44' : '#5af';
+    const lighter = teamColor === '#034694' ? '#3a6dbf' : '#555555';
     const fb = `<div class="bench-avatar-fb" id="bfb-${p.id}">
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <defs><radialGradient id="brg-${p.id}" cx="40%" cy="35%" r="65%">
@@ -777,13 +783,13 @@ function renderBench() {
   const muEl = document.getElementById('bench-mu');
   const avEl = document.getElementById('bench-av');
   muEl.innerHTML = ''; avEl.innerHTML = '';
-  MU_BENCH.forEach(p => muEl.appendChild(makeCard(p, '#7A263A', '#e87070')));
-  AV_BENCH.forEach(p => avEl.appendChild(makeCard(p, '#1C2C5B', '#6CABDD')));
+  MU_BENCH.forEach(p => muEl.appendChild(makeCard(p, '#034694', '#6ea8e8')));
+  AV_BENCH.forEach(p => avEl.appendChild(makeCard(p, '#241F20', '#cccccc')));
 }
 
 function openBenchModal(p, teamColor, ringColor) {
-  const lighter = teamColor === '#7A263A' ? '#c44' : '#5af';
-  const teamLabel = teamColor === '#7A263A' ? '西汉姆联' : '曼城';
+  const lighter = teamColor === '#034694' ? '#3a6dbf' : '#555555';
+  const teamLabel = teamColor === '#034694' ? '切尔西' : '纽卡斯尔';
   document.getElementById('modal-content').innerHTML = `
     <div class="modal-header">
       <img class="modal-avatar" src="${FOTMOB}${p.id}.png"
@@ -855,10 +861,10 @@ function getAttrColor(v) {
 function openModal(p, team) {
   const ismu = team==='mu';
   // mu = 西汉姆, av = 曼城
-  const color = ismu?'#7A263A':'#1C2C5B';
-  const lighter = ismu?'#c44464':'#4488cc';
-  const ring = ismu?'#e87070':'#6CABDD';
-  const initBg = ismu?'#5a1020':'#0a1230';
+  const color = ismu?'#034694':'#241F20';
+  const lighter = ismu?'#3a6dbf':'#555555';
+  const ring = ismu?'#6ea8e8':'#cccccc';
+  const initBg = ismu?'#021f50':'#111111';
 
   const radarHtml = p.attrs && p.attrs.length===6 ?
     `<div class="section-title">能力雷达</div><div class="radar-wrap">${drawRadar(p.attrs, ring)}</div>` : '';
@@ -939,7 +945,14 @@ let resizeT;
 window.addEventListener('resize', ()=>{ clearTimeout(resizeT); resizeT=setTimeout(renderPitch,100); });
 window.matchMedia('(orientation:landscape)').addEventListener('change', ()=>{ setTimeout(renderPitch,150); });
 
-// INIT
+// INIT — inject team badges from FotMob logo URLs
+function renderBadges() {
+  const muBadge = document.getElementById('badge-mu');
+  const avBadge = document.getElementById('badge-av');
+  if (muBadge) muBadge.innerHTML = `<img src="${FOTMOB_LOGO}${MU_TEAM_ID}_small.png" onerror="this.parentElement.textContent='MU'">`;
+  if (avBadge) avBadge.innerHTML = `<img src="${FOTMOB_LOGO}${AV_TEAM_ID}_small.png" onerror="this.parentElement.textContent='AV'">`;
+}
+renderBadges();
 renderPitch();
 renderBench();
 renderStats();

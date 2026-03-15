@@ -943,8 +943,12 @@ ms.addEventListener('touchmove', e=>{ const dy=e.touches[0].clientY-ty; if(dy>0&
 ms.addEventListener('touchend', e=>{ const dy=e.changedTouches[0].clientY-ty; ms.style.transform=''; if(dy>80)closeModal(); },{passive:true});
 
 // =====================================================
-// 实时数据 — 读取 GitHub Actions 生成的 data.json（同域，无CORS问题）
-// Actions 每2分钟自动抓 FotMob 数据写入 data.json
+// 实时数据 — football-data.org API（免费，无CORS问题）
+// 换比赛只改 FD_MATCH_ID；主场=MU(左), 客场=AV(右)
+const FD_MATCH_ID = 538082;  // Man Utd vs Aston Villa GW30
+const FD_TOKEN    = '7afd53d44d0248db957f6c9079191dbd';
+const FD_HOME_ID  = 66;   // Manchester United FC
+const FD_AWAY_ID  = 58;   // Aston Villa FC
 let lastUpdated = null;
 let pollInterval = null;
 let isMatchLive = false;
@@ -1035,37 +1039,67 @@ function renderStats(data) {
 
 async function fetchLiveData() {
   try {
-    // 加时间戳防缓存
-    const res = await fetch(`data.json?t=${Date.now()}`);
+    const res = await fetch(
+      `https://api.football-data.org/v4/matches/${FD_MATCH_ID}`,
+      { headers: { 'X-Auth-Token': FD_TOKEN } }
+    );
     if (!res.ok) return;
     const d = await res.json();
 
-    // Score
-    updateScore(d.score?.home ?? 0, d.score?.away ?? 0);
+    // ── Score ──────────────────────────────────────────────
+    const sc = d.score || {};
+    const ft = sc.fullTime || {};
+    const ht = sc.halfTime  || {};
+    const muScore = ft.home ?? ht.home ?? 0;
+    const avScore = ft.away ?? ht.away ?? 0;
+    updateScore(muScore, avScore);
 
-    // Status
-    const liveTime = d.status?.liveTime || '';
-    const reason   = d.status?.reason   || '';
-    const isFT     = reason === 'FT' || reason === 'AET';
-    const isLive   = !isFT && !!liveTime;
-    isMatchLive = isLive;
-    setStatus(isFT ? 'FT' : isLive ? liveTime : '尚未开始', isLive);
+    // ── Status ─────────────────────────────────────────────
+    const status = d.status || '';           // SCHEDULED/IN_PLAY/PAUSED/FINISHED
+    const minute = d.minute ?? '';
+    const isFT   = status === 'FINISHED';
+    const isLive = status === 'IN_PLAY' || status === 'PAUSED';
+    isMatchLive  = isLive;
+    const statusLabel = isFT ? 'FT'
+      : status === 'PAUSED'  ? `HT`
+      : isLive               ? `${minute}'`
+      : '尚未开始';
+    setStatus(statusLabel, isLive);
 
-    // Events
-    if (d.events?.length > 0) renderEvents(d.events);
+    // ── Events ─────────────────────────────────────────────
+    const goals = d.goals || [];
+    const bookings = d.bookings || [];
+    const subs = d.substitutions || [];
+    const allEvents = [
+      ...goals.map(e=>({
+        type:'Goal', time: e.minute, overload: e.injuryTime||null,
+        isHome: e.team?.id === FD_HOME_ID,
+        player: e.scorer?.name || '',
+        swap: []
+      })),
+      ...bookings.map(e=>({
+        type:'Card', time: e.minute, overload: e.injuryTime||null,
+        isHome: e.team?.id === FD_HOME_ID,
+        player: e.player?.name || '',
+        card: e.card === 'RED_CARD' ? 'Red' : 'Yellow',
+        swap: []
+      })),
+      ...subs.map(e=>({
+        type:'Substitution', time: e.minute, overload: e.injuryTime||null,
+        isHome: e.team?.id === FD_HOME_ID,
+        player: '',
+        swap: [{name: e.playerIn?.name||''}, {name: e.playerOut?.name||''}]
+      })),
+    ].sort((a,b)=> (a.time||0)-(b.time||0));
 
-    // Stats
-    if (d.stats?.length > 0) renderStats(d.stats);
+    if (allEvents.length > 0) renderEvents(allEvents);
 
-    // Stop after FT
+    // ── Stop polling after FT ──────────────────────────────
     if (isFT && pollInterval) { clearInterval(pollInterval); pollInterval = null; setStatus('FT', false); }
 
     lastUpdated = new Date();
     const updEl = document.getElementById('last-updated');
-    if (updEl) {
-      const fetchedAt = d.fetchedAt ? new Date(d.fetchedAt).toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'}) : '';
-      updEl.textContent = `数据 ${fetchedAt}`;
-    }
+    if (updEl) updEl.textContent = `更新 ${lastUpdated.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}`;
   } catch(e) { console.warn('fetchLiveData error', e); }
 }
 
@@ -1077,7 +1111,7 @@ function doRefresh() {
 
 function startPolling() {
   fetchLiveData(); // 立即抓一次
-  pollInterval = setInterval(fetchLiveData, 60000); // 每60秒
+  pollInterval = setInterval(fetchLiveData, 120000); // 每2分钟
 }
 
 let resizeT;

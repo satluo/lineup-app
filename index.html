@@ -553,6 +553,80 @@ function overallBg(v) {
   return '#ef4444';
 }
 
+// attrs 数组原始顺序：[速度, 射门, 传球, 盘带, 防守, 体能]  (index 0-5)
+// 按位置重映射为FIFA风格六维，返回 [{n,v}, ...]
+function getRadarAttrs(pos, attrs) {
+  if (!attrs || attrs.length < 6) return attrs || [];
+  const [速度, 射门, 传球, 盘带, 防守, 体能] = attrs.map(a => a.v);
+  const p = (pos || '').toUpperCase();
+
+  if (p === 'GK') return [
+    {n:'反应', v: 防守},
+    {n:'扑救', v: Math.round((防守 + 速度) / 2)},
+    {n:'定位', v: Math.round((防守 + 传球) / 2)},
+    {n:'传球', v: 传球},
+    {n:'速度', v: 速度},
+    {n:'体能', v: 体能},
+  ];
+  if (p === 'CB') return [
+    {n:'速度', v: 速度},
+    {n:'防守', v: 防守},
+    {n:'对抗', v: 体能},
+    {n:'传球', v: 传球},
+    {n:'空中', v: Math.round((防守 + 体能) / 2)},
+    {n:'灵活', v: 盘带},
+  ];
+  if (p === 'RB' || p === 'LB' || p === 'RWB' || p === 'LWB') return [
+    {n:'速度', v: 速度},
+    {n:'防守', v: 防守},
+    {n:'体能', v: 体能},
+    {n:'传球', v: 传球},
+    {n:'传中', v: Math.round((传球 + 盘带) / 2)},
+    {n:'对抗', v: Math.round((防守 + 体能) / 2)},
+  ];
+  if (p === 'CDM' || p === 'DM') return [
+    {n:'传球', v: 传球},
+    {n:'防守', v: 防守},
+    {n:'体能', v: 体能},
+    {n:'对抗', v: Math.round((防守 + 体能) / 2)},
+    {n:'速度', v: 速度},
+    {n:'盘带', v: 盘带},
+  ];
+  if (p === 'CM') return [
+    {n:'传球', v: 传球},
+    {n:'防守', v: 防守},
+    {n:'体能', v: 体能},
+    {n:'盘带', v: 盘带},
+    {n:'速度', v: 速度},
+    {n:'射门', v: 射门},
+  ];
+  if (p === 'CAM' || p === 'AM') return [
+    {n:'速度', v: 速度},
+    {n:'盘带', v: 盘带},
+    {n:'传球', v: 传球},
+    {n:'射门', v: 射门},
+    {n:'体能', v: 体能},
+    {n:'防守', v: 防守},
+  ];
+  if (p === 'RW' || p === 'LW' || p === 'RAM' || p === 'LAM' || p === 'LM' || p === 'RM') return [
+    {n:'速度', v: 速度},
+    {n:'盘带', v: 盘带},
+    {n:'射门', v: 射门},
+    {n:'传球', v: 传球},
+    {n:'体能', v: 体能},
+    {n:'防守', v: 防守},
+  ];
+  // ST / CF
+  return [
+    {n:'射门', v: 射门},
+    {n:'速度', v: 速度},
+    {n:'体能', v: 体能},
+    {n:'盘带', v: 盘带},
+    {n:'传球', v: 传球},
+    {n:'防守', v: 防守},
+  ];
+}
+
 function drawRadar(attrs, color) {
   const size = 130, cx = 65, cy = 65, r = 50;
   const labels = attrs.map(a => a.n);
@@ -761,10 +835,11 @@ function openModal(p, team) {
   const initBg = ismu?'#6a1010':'#1a3a5c';
 
   const radarHtml = p.attrs && p.attrs.length===6 ?
-    `<div class="section-title">能力雷达</div><div class="radar-wrap">${drawRadar(p.attrs, ring)}</div>` : '';
+    `<div class="section-title">能力雷达</div><div class="radar-wrap">${drawRadar(getRadarAttrs(p.pos, p.attrs), ring)}</div>` : '';
 
-  const attrHtml = p.attrs && p.attrs.length>0 ?
-    `<div class="attr-grid">${p.attrs.map(a=>`
+  const displayAttrs = getRadarAttrs(p.pos, p.attrs);
+  const attrHtml = displayAttrs && displayAttrs.length>0 ?
+    `<div class="attr-grid">${displayAttrs.map(a=>`
       <div class="attr-item">
         <div class="attr-label">${a.n}</div>
         <div class="attr-bar-wrap"><div class="attr-bar-fill" style="width:${a.v}%;background:${getAttrColor(a.v)}"></div></div>

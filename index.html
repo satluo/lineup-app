@@ -7,7 +7,7 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 :root {
-  --mu-red:#6ea8e8; --av-claret:#aaaaaa; --av-main:#241F20;
+  --mu-red:#e06055; --av-claret:#c0406a; --av-main:#95003C;
   --whu-main:#034694; --mc-main:#cccccc;
   --bg:#0d1117; --card-bg:#161b22; --border:#30363d;
   --text:#e6edf3; --text-muted:#8b949e; --accent:#58a6ff;
@@ -22,8 +22,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .team-info { display:flex; flex-direction:column; align-items:center; flex:1; gap:4px; }
 .team-badge { width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; overflow:hidden; background:rgba(255,255,255,0.08); }
 .team-badge img { width:36px; height:36px; object-fit:contain; display:block; }
-.team-badge.mu { box-shadow:0 0 15px rgba(3,70,148,0.4); }
-.team-badge.av { box-shadow:0 0 15px rgba(255,255,255,0.1); }
+.team-badge.mu { box-shadow:0 0 15px rgba(218,41,28,0.5); }
+.team-badge.av { box-shadow:0 0 15px rgba(149,0,50,0.4); }
 .team-name { font-size:12px; font-weight:700; text-align:center; }
 .score-display { display:flex; flex-direction:column; align-items:center; gap:4px; }
 .score-numbers { display:flex; align-items:center; gap:8px; }
@@ -83,8 +83,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .bench-title { font-size:10px; font-weight:700; color:var(--text-muted); letter-spacing:1px; text-transform:uppercase; margin-bottom:6px; }
 .bench-row-wrap { display:flex; align-items:flex-start; gap:6px; }
 .bench-row-label { font-size:9px; font-weight:700; padding-top:8px; min-width:36px; flex-shrink:0; }
-.bench-row-label.whu { color:#6ea8e8; }
-.bench-row-label.mc { color:#aaa; }
+.bench-row-label.whu { color:#e06055; }
+.bench-row-label.mc { color:#c0406a; }
 .bench-card { display:inline-flex; flex-direction:column; align-items:center; cursor:pointer; padding:4px 6px; border-radius:8px; background:rgba(255,255,255,0.04); border:1px solid transparent; transition:all 0.2s; min-width:50px; }
 .bench-card:hover { background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.12); }
 .bench-avatar-wrap { position:relative; width:32px; height:32px; margin-bottom:3px; }
@@ -110,8 +110,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .stat-val.mu { color:#fff; text-align:right; }
 .stat-val.av { color:#fff; text-align:left; }
 .stat-bar-track { flex:1; height:5px; background:rgba(255,255,255,0.08); border-radius:3px; display:flex; position:relative; }
-.stat-bar-mu { height:100%; background:linear-gradient(90deg,#034694,#3a6dbf); border-radius:3px 0 0 3px; }
-.stat-bar-av { height:100%; background:linear-gradient(90deg,#241F20,#666); border-radius:0 3px 3px 0; }
+.stat-bar-mu { height:100%; background:linear-gradient(90deg,#DA291C,#e05a50); border-radius:3px 0 0 3px; }
+.stat-bar-av { height:100%; background:linear-gradient(90deg,#95003C,#c0406a); border-radius:0 3px 3px 0; }
 .stat-divider { width:1px; height:14px; background:rgba(255,255,255,0.2); position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
 
 /* EVENTS PANEL */
@@ -128,8 +128,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 /* STATS SCORE */
 .stats-score-row { display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:2px; }
 .stats-score-num { font-size:28px; font-weight:900; }
-.stats-score-num.whu { color:#6ea8e8; }
-.stats-score-num.mc { color:#aaa; }
+.stats-score-num.whu { color:#e06055; }
+.stats-score-num.mc { color:#c0406a; }
 .stats-score-divider { font-size:20px; color:var(--text-muted); font-weight:300; }
 .stats-score-teams { display:flex; justify-content:space-between; font-size:10px; font-weight:700; margin-bottom:10px; padding:0 4px; }
 
@@ -223,23 +223,23 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 </head>
 <body>
 <div class="match-header">
-  <div class="match-meta">英超 · 第30轮 &nbsp;|&nbsp; <span>2026年3月14日 周六 17:30</span> &nbsp;|&nbsp; 斯坦福桥</div>
+  <div class="match-meta">英超 · 第30轮 &nbsp;|&nbsp; <span>2026年3月15日 周日 22:00</span> &nbsp;|&nbsp; 老特拉福德 &nbsp;<span id="last-updated" style="color:var(--text-muted);font-weight:400"></span></div>
   <div class="score-row">
     <div class="team-info">
       <div class="team-badge mu" id="badge-mu"></div>
-      <div class="team-name">切尔西</div>
+      <div class="team-name">曼联</div>
     </div>
     <div class="score-display">
       <div class="score-numbers">
         <div class="score-num" id="score-mu">0</div>
         <div class="score-divider">:</div>
-        <div class="score-num" id="score-av">1</div>
+        <div class="score-num" id="score-av">0</div>
       </div>
-      <div class="match-time" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:var(--text-muted)"><span>FT</span></div>
+      <div class="match-time" id="match-status" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:var(--text-muted)"><span id="status-text">-</span></div>
     </div>
     <div class="team-info">
       <div class="team-badge av" id="badge-av"></div>
-      <div class="team-name">纽卡斯尔</div>
+      <div class="team-name">维拉</div>
     </div>
   </div>
 </div>
@@ -260,10 +260,10 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="pitch" id="pitch">
           <svg class="pitch-markings" id="pitch-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
           <div id="label-mu" class="team-label-banner top">
-            <div class="team-label-pill" style="color:#6ea8e8;border:1px solid rgba(3,70,148,0.6);">切尔西 · 4-2-3-1</div>
+            <div class="team-label-pill" style="color:#e06055;border:1px solid rgba(218,41,28,0.6);">曼联 · 4-2-3-1</div>
           </div>
           <div id="label-av" class="team-label-banner bottom">
-            <div class="team-label-pill" style="color:#aaaaaa;border:1px solid rgba(36,31,32,0.8);">纽卡斯尔 · 4-2-3-1</div>
+            <div class="team-label-pill" style="color:#c0406a;border:1px solid rgba(149,0,50,0.6);">维拉 · 4-2-3-1</div>
           </div>
           <div class="players-layer" id="players-layer"></div>
         </div>
@@ -273,14 +273,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="bench-split">
           <!-- 主场西汉姆替补：左侧 -->
           <div class="bench-half bench-half-mu">
-            <div class="bench-half-label" style="color:#6ea8e8">切尔西 替补</div>
+            <div class="bench-half-label" style="color:#e06055">曼联 替补</div>
             <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
           <!-- 中场分隔线 -->
           <div class="bench-divider"></div>
           <!-- 客场曼城替补：右侧 -->
           <div class="bench-half bench-half-av">
-            <div class="bench-half-label" style="color:#aaaaaa">纽卡斯尔 替补</div>
+            <div class="bench-half-label" style="color:#c0406a">维拉 替补</div>
             <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
         </div>
@@ -294,19 +294,19 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
       <div class="stats-panel">
         <div class="stats-panel-title">数据统计</div>
         <div class="stats-score-row">
-          <span class="stats-score-num whu">0</span>
+          <span class="stats-score-num whu" id="stats-score-mu">0</span>
           <span class="stats-score-divider">-</span>
-          <span class="stats-score-num mc">1</span>
+          <span class="stats-score-num mc" id="stats-score-av">0</span>
         </div>
         <div class="stats-score-teams">
-          <span style="color:#6ea8e8">切尔西</span>
-          <span style="color:var(--text-muted)">FT</span>
-          <span style="color:#aaaaaa">纽卡斯尔</span>
+          <span style="color:#e06055">曼联</span>
+          <span id="stats-status-text" style="color:var(--text-muted)">-</span>
+          <span style="color:#c0406a">维拉</span>
         </div>
         <div style="font-size:9px;color:var(--text-muted);margin-bottom:6px;text-align:center">数据来源：直播吧 / dasfootball.com</div>
         <div class="stats-header-row">
-          <span class="stats-team-name mu" style="color:#6ea8e8">切尔西</span>
-          <span class="stats-team-name av" style="color:#aaaaaa">纽卡斯尔</span>
+          <span class="stats-team-name mu" style="color:#e06055">曼联</span>
+          <span class="stats-team-name av" style="color:#c0406a">维拉</span>
         </div>
         <div id="stats-rows"></div>
       </div>
@@ -316,91 +316,11 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="events-title">关键事件</div>
         <div class="timeline" id="events-list">
           <div class="timeline-line"></div>
-
-          <!-- 18' Gordon 进球 (纽卡右侧) -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">18'</div><div class="tl-dot" style="border-color:#aaaaaa"></div><div class="tl-icon">⚽</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">A.Gordon</div><div class="tl-desc">头球破门</div></div>
+          <div style="text-align:center;color:var(--text-muted);font-size:12px;padding:32px 16px">
+            <div style="font-size:28px;margin-bottom:8px">⏳</div>
+            <div>比赛尚未开始</div>
+            <div style="font-size:10px;margin-top:4px">开球后自动更新</div>
           </div>
-
-          <!-- 23' Fofana 黄牌 (切尔西左侧) -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">Fofana</div><div class="tl-desc">犯规</div></div>
-            <div class="tl-center"><div class="tl-time">23'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-empty">-</div></div>
-          </div>
-
-          <!-- 25' Caicedo 黄牌 (切尔西左侧) -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">Caicedo</div><div class="tl-desc">犯规</div></div>
-            <div class="tl-center"><div class="tl-time">25'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-empty">-</div></div>
-          </div>
-
-          <!-- HT -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time" style="color:var(--text-muted)">HT</div><div class="tl-dot" style="border-color:rgba(255,255,255,0.3)"></div><div class="tl-icon" style="font-size:10px;color:var(--text-muted)">0-1</div></div>
-            <div class="tl-right"><div class="tl-empty">-</div></div>
-          </div>
-
-          <!-- 46' 切尔西换人 Delap→Gusto -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">切尔西 换人</div><div class="tl-desc">↑Delap ↓Gusto</div></div>
-            <div class="tl-center"><div class="tl-time">46'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-empty">-</div></div>
-          </div>
-
-          <!-- 61' 切尔西换人 Lavia→Caicedo -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">切尔西 换人</div><div class="tl-desc">↑Lavia ↓Caicedo</div></div>
-            <div class="tl-center"><div class="tl-time">61'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-empty">-</div></div>
-          </div>
-
-          <!-- 67' 纽卡换人 Joelinton→Woltemade -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">67'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">纽卡 换人</div><div class="tl-desc">↑Joelinton ↓Woltemade</div></div>
-          </div>
-
-          <!-- 77' 纽卡换人 Burn→Willock -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">77'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">纽卡 换人</div><div class="tl-desc">↑D.Burn ↓Willock</div></div>
-          </div>
-
-          <!-- 78' 纽卡换人 Elanga→Murphy -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">78'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">纽卡 换人</div><div class="tl-desc">↑Elanga ↓Murphy</div></div>
-          </div>
-
-          <!-- 82' 切尔西换人 Hato→Fofana -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#6ea8e8">切尔西 换人</div><div class="tl-desc">↑J.Hato ↓Fofana</div></div>
-            <div class="tl-center"><div class="tl-time">82'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-empty">-</div></div>
-          </div>
-
-          <!-- 84' Ramsdale 黄牌 -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">84'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">Ramsdale</div><div class="tl-desc">时间浪费</div></div>
-          </div>
-
-          <!-- 89' Lewis Hall 黄牌 -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">89'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#aaaaaa">L.Hall</div><div class="tl-desc">犯规</div></div>
-          </div>
-
         </div>
       </div>
     </div>
@@ -420,8 +340,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 const FOTMOB = 'https://images.fotmob.com/image_resources/playerimages/';
 const FOTMOB_LOGO = 'https://images.fotmob.com/image_resources/logo/teamlogo/';
 // 换比赛时修改这两个队标ID（FotMob team ID）
-const MU_TEAM_ID = 8455;   // 切尔西
-const AV_TEAM_ID = 10261;  // 纽卡斯尔
+const MU_TEAM_ID = 10260;  // 曼联
+const AV_TEAM_ID = 10252;  // 维拉
 
 // 坐标规则（横屏球场 16:9，主场左攻右，客场右攻左）
 // xL = fotmob_x * 48        (主场，左半场 5%~42%)
@@ -429,148 +349,132 @@ const AV_TEAM_ID = 10261;  // 纽卡斯尔
 // yL = fotmob_y * 100
 // 换比赛时同步更新：MU_PLAYERS(主场)、AV_PLAYERS(客场)、MU_BENCH、AV_BENCH
 
-// 主场：切尔西（左半场，4-2-3-1）
+// 主场：曼联（左半场，4-2-3-1）Old Trafford
 const MU_PLAYERS = [
-  { id:789571,  num:1,  pos:'GK',  name:'R.Sánchez',  lastName:'Sánchez',    xP:50,yP:95, xL:5, yL:50,
-    country:'西班牙', age:26, height:'190cm', foot:'右脚',
-    attrs:[{n:'速度',v:65},{n:'射门',v:20},{n:'传球',v:72},{n:'盘带',v:48},{n:'防守',v:80},{n:'体能',v:78}],
-    tags:['西班牙国门'], bio:'切尔西主力门将，本场4次扑救。' },
-  { id:1197250, num:27, pos:'RB',  name:'Gusto',      lastName:'Gusto',      xP:82,yP:83, xL:14,yL:88,
-    country:'法国', age:21, height:'178cm', foot:'右脚',
-    attrs:[{n:'速度',v:86},{n:'射门',v:55},{n:'传球',v:74},{n:'盘带',v:76},{n:'防守',v:76},{n:'体能',v:84}],
-    tags:['法国右后卫','46分钟被换下'], bio:'半场后被Delap换下，切尔西右路改变策略。' },
-  { id:917802,  num:29, pos:'CB',  name:'Fofana',     lastName:'Fofana',     xP:64,yP:83, xL:14,yL:62,
-    country:'法国', age:24, height:'187cm', foot:'右脚',
-    attrs:[{n:'速度',v:82},{n:'射门',v:38},{n:'传球',v:74},{n:'盘带',v:65},{n:'防守',v:83},{n:'体能',v:80}],
-    tags:['法国中卫','23分钟黄牌','82分换下'], bio:'23分钟领黄牌，82分钟被换下。' },
-  { id:793907,  num:23, pos:'CB',  name:'Chalobah',   lastName:'Chalobah',   xP:36,yP:83, xL:14,yL:38,
-    country:'英格兰', age:25, height:'188cm', foot:'右脚',
-    attrs:[{n:'速度',v:78},{n:'射门',v:42},{n:'传球',v:72},{n:'盘带',v:62},{n:'防守',v:82},{n:'体能',v:82}],
-    tags:['英格兰中卫'], bio:'切尔西自家青训中卫，稳定发挥。' },
-  { id:873289,  num:3,  pos:'LB',  name:'Cucurella',  lastName:'Cucurella',  xP:18,yP:83, xL:14,yL:12,
-    country:'西班牙', age:26, height:'172cm', foot:'左脚',
-    attrs:[{n:'速度',v:82},{n:'射门',v:55},{n:'传球',v:76},{n:'盘带',v:72},{n:'防守',v:78},{n:'体能',v:84}],
-    tags:['西班牙国脚','左后卫'], bio:'西班牙国脚，攻守俱佳的左后卫。' },
-  { id:807729,  num:24, pos:'CDM', name:'R.James',    lastName:'James',      xP:62,yP:71, xL:23,yL:70,
-    country:'英格兰', age:25, height:'180cm', foot:'右脚',
-    attrs:[{n:'速度',v:82},{n:'射门',v:65},{n:'传球',v:80},{n:'盘带',v:78},{n:'防守',v:80},{n:'体能',v:82}],
-    tags:['英格兰国脚','双面手'], bio:'本场中场出场，全能型球员。' },
-  { id:1137668, num:25, pos:'CM',  name:'Caicedo',    lastName:'Caicedo',    xP:38,yP:71, xL:23,yL:30,
-    country:'厄瓜多尔', age:23, height:'176cm', foot:'右脚',
-    attrs:[{n:'速度',v:78},{n:'射门',v:65},{n:'传球',v:82},{n:'盘带',v:76},{n:'防守',v:88},{n:'体能',v:88}],
-    tags:['防守中场','25分钟黄牌','61分换下'], bio:'25分钟领黄牌，61分换下Lavia。' },
-  { id:1096353, num:10, pos:'RAM', name:'C.Palmer',   lastName:'Palmer',     xP:80,yP:60, xL:33,yL:84,
-    country:'英格兰', age:22, height:'185cm', foot:'右脚',
-    season:{goals:14, assists:10, rating:7.2},
-    attrs:[{n:'速度',v:80},{n:'射门',v:88},{n:'传球',v:86},{n:'盘带',v:88},{n:'防守',v:52},{n:'体能',v:80}],
-    tags:['英格兰天才','切尔西10号'], bio:'切尔西核心，本场表现被对方严密盯防。' },
-  { id:1137705, num:8,  pos:'CAM', name:'E.Fernández',lastName:'Fernández',  xP:50,yP:60, xL:33,yL:50,
-    country:'阿根廷', age:24, height:'178cm', foot:'右脚',
-    attrs:[{n:'速度',v:76},{n:'射门',v:72},{n:'传球',v:85},{n:'盘带',v:80},{n:'防守',v:70},{n:'体能',v:82}],
-    tags:['阿根廷世界杯冠军'], bio:'阿根廷中场，传球组织切尔西进攻。' },
-  { id:1203665, num:49, pos:'LAM', name:'Garnacho',   lastName:'Garnacho',   xP:20,yP:60, xL:33,yL:16,
-    country:'阿根廷', age:20, height:'180cm', foot:'左脚',
-    season:{goals:10, assists:7},
-    attrs:[{n:'速度',v:88},{n:'射门',v:78},{n:'传球',v:72},{n:'盘带',v:85},{n:'防守',v:52},{n:'体能',v:82}],
-    tags:['速度边锋','年轻才俊'], bio:'来自曼联的阿根廷年轻边锋，速度出众。' },
-  { id:1021382, num:20, pos:'ST',  name:'João Pedro', lastName:'Pedro',      xP:50,yP:53, xL:42,yL:50,
-    country:'巴西', age:23, height:'180cm', foot:'左脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:80},{n:'传球',v:68},{n:'盘带',v:76},{n:'防守',v:45},{n:'体能',v:82}],
-    tags:['巴西前锋'], bio:'切尔西首发中锋，本场被Ramsdale多次扑救。' },
+  { id:1178602, num:31, pos:'GK',  name:'Lammens',    lastName:'Lammens',    xP:50,yP:95, xL:5, yL:50,
+    country:'比利时', age:24, height:'191cm', foot:'左脚',
+    attrs:[{n:'速度',v:60},{n:'射门',v:18},{n:'传球',v:70},{n:'盘带',v:45},{n:'防守',v:78},{n:'体能',v:78}],
+    tags:['比利时门将'], bio:'曼联本赛季主力门将。' },
+  { id:751550,  num:2,  pos:'RB',  name:'Dalot',      lastName:'Dalot',      xP:82,yP:83, xL:14,yL:88,
+    country:'葡萄牙', age:26, height:'182cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:60},{n:'传球',v:76},{n:'盘带',v:74},{n:'防守',v:76},{n:'体能',v:82}],
+    tags:['葡萄牙右后卫','进攻型'], bio:'葡萄牙国脚右后卫，攻守两端积极。' },
+  { id:1358581, num:15, pos:'CB',  name:'Yoro',       lastName:'Yoro',       xP:64,yP:83, xL:14,yL:62,
+    country:'法国', age:19, height:'194cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:38},{n:'传球',v:72},{n:'盘带',v:60},{n:'防守',v:82},{n:'体能',v:82}],
+    tags:['法国天才','19岁中卫'], bio:'前里尔天才中卫，曼联未来基石。' },
+  { id:255610,  num:5,  pos:'CB',  name:'Maguire',    lastName:'Maguire',    xP:36,yP:83, xL:14,yL:38,
+    country:'英格兰', age:33, height:'194cm', foot:'右脚',
+    attrs:[{n:'速度',v:65},{n:'射门',v:55},{n:'传球',v:74},{n:'盘带',v:55},{n:'防守',v:80},{n:'体能',v:78}],
+    tags:['英格兰国脚','空中优势'], bio:'前队长，曼联老将。' },
+  { id:362694,  num:23, pos:'LB',  name:'L.Shaw',     lastName:'Shaw',       xP:18,yP:83, xL:14,yL:12,
+    country:'英格兰', age:28, height:'180cm', foot:'左脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:58},{n:'传球',v:76},{n:'盘带',v:72},{n:'防守',v:74},{n:'体能',v:76}],
+    tags:['英格兰左后卫'], bio:'复出的曼联左后卫，传中出众。' },
+  { id:208494,  num:18, pos:'CDM', name:'Casemiro',   lastName:'Casemiro',   xP:62,yP:71, xL:23,yL:70,
+    country:'巴西', age:34, height:'185cm', foot:'右脚',
+    attrs:[{n:'速度',v:65},{n:'射门',v:68},{n:'传球',v:82},{n:'盘带',v:70},{n:'防守',v:88},{n:'体能',v:80}],
+    tags:['巴西老炮','防守核心'], bio:'防守中场核心，拦截能力出众。' },
+  { id:1292810, num:37, pos:'CM',  name:'Mainoo',     lastName:'Mainoo',     xP:38,yP:71, xL:23,yL:30,
+    country:'英格兰', age:20, height:'180cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:70},{n:'传球',v:82},{n:'盘带',v:80},{n:'防守',v:72},{n:'体能',v:82}],
+    tags:['英格兰天才','曼联青训'], bio:'20岁中场，曼联未来核心。' },
+  { id:1070052, num:16, pos:'RAM', name:'Amad',       lastName:'Amad',       xP:80,yP:60, xL:33,yL:84,
+    country:'科特迪瓦', age:22, height:'174cm', foot:'右脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:74},{n:'传球',v:72},{n:'盘带',v:82},{n:'防守',v:52},{n:'体能',v:80}],
+    tags:['科特迪瓦快翼','突破能手'], bio:'速度灵活的边锋，频繁制造威胁。' },
+  { id:422685,  num:8,  pos:'CAM', name:'B.Fernandes',lastName:'Fernandes',  xP:50,yP:60, xL:33,yL:50,
+    captain:true,
+    country:'葡萄牙', age:31, height:'179cm', foot:'右脚',
+    season:{goals:12, assists:14, rating:7.8},
+    attrs:[{n:'速度',v:76},{n:'射门',v:86},{n:'传球',v:90},{n:'盘带',v:84},{n:'防守',v:62},{n:'体能',v:82}],
+    tags:['曼联队长','葡萄牙国脚'], bio:'曼联绝对核心，直接球权最多的球员。' },
+  { id:863098,  num:10, pos:'LAM', name:'Cunha',      lastName:'Cunha',      xP:20,yP:60, xL:33,yL:16,
+    country:'巴西', age:25, height:'181cm', foot:'左脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:82},{n:'传球',v:76},{n:'盘带',v:86},{n:'防守',v:50},{n:'体能',v:82}],
+    tags:['巴西中场','技术全面'], bio:'来自狼队的巴西技术型中场。' },
+  { id:923312,  num:19, pos:'ST',  name:'Mbeumo',     lastName:'Mbeumo',     xP:50,yP:53, xL:42,yL:50,
+    country:'喀麦隆', age:25, height:'173cm', foot:'右脚',
+    season:{goals:15, assists:7},
+    attrs:[{n:'速度',v:88},{n:'射门',v:84},{n:'传球',v:72},{n:'盘带',v:84},{n:'防守',v:52},{n:'体能',v:84}],
+    tags:['喀麦隆快马','来自布伦特福德'], bio:'本赛季15球，是曼联最具威胁的前锋。' },
 ];
 
-// 客场：纽卡斯尔（右半场，4-2-3-1）
+// 客场：维拉（右半场，4-2-3-1）
 const AV_PLAYERS = [
-  { id:746395,  num:32, pos:'GK',  name:'Ramsdale',   lastName:'Ramsdale',   xP:50,yP:5,  xL:95,yL:50,
-    country:'英格兰', age:26, height:'191cm', foot:'右脚',
-    attrs:[{n:'速度',v:62},{n:'射门',v:22},{n:'传球',v:74},{n:'盘带',v:50},{n:'防守',v:85},{n:'体能',v:80}],
-    tags:['英格兰门将','本场最佳','84分钟黄牌'], bio:'本场5次扑救保持零封，评分最高，84分钟领黄牌。' },
-  { id:1107910, num:21, pos:'RB',  name:'Livramento', lastName:'Livramento', xP:82,yP:17, xL:86,yL:88,
-    country:'葡萄牙', age:22, height:'175cm', foot:'右脚',
-    attrs:[{n:'速度',v:88},{n:'射门',v:60},{n:'传球',v:76},{n:'盘带',v:78},{n:'防守',v:76},{n:'体能',v:86}],
-    tags:['葡萄牙快翼','进攻右后卫'], bio:'速度出众的葡萄牙右后卫，进攻端积极。' },
-  { id:1137407, num:12, pos:'CB',  name:'Thiaw',      lastName:'Thiaw',      xP:64,yP:17, xL:86,yL:62,
-    country:'德国', age:23, height:'192cm', foot:'右脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:40},{n:'传球',v:72},{n:'盘带',v:62},{n:'防守',v:84},{n:'体能',v:84}],
-    tags:['德国中卫','空中优势'], bio:'来自AC米兰的德国中卫，防守出色。' },
-  { id:956682,  num:4,  pos:'CB',  name:'Botman',     lastName:'Botman',     xP:36,yP:17, xL:86,yL:38,
-    country:'荷兰', age:24, height:'193cm', foot:'左脚',
-    attrs:[{n:'速度',v:76},{n:'射门',v:38},{n:'传球',v:74},{n:'盘带',v:60},{n:'防守',v:86},{n:'体能',v:82}],
-    tags:['荷兰中卫','高大稳健'], bio:'荷兰国脚中卫，纽卡后防核心。' },
-  { id:1197655, num:3,  pos:'LB',  name:'L.Hall',     lastName:'Hall',       xP:18,yP:17, xL:86,yL:12,
-    country:'英格兰', age:20, height:'176cm', foot:'左脚',
-    attrs:[{n:'速度',v:84},{n:'射门',v:55},{n:'传球',v:74},{n:'盘带',v:72},{n:'防守',v:74},{n:'体能',v:84}],
-    tags:['英格兰新星','89分钟黄牌'], bio:'年轻左后卫，89分钟领黄牌。' },
-  { id:860975,  num:28, pos:'CDM', name:'Willock',    lastName:'Willock',    xP:62,yP:30, xL:77,yL:70,
-    country:'英格兰', age:25, height:'183cm', foot:'右脚',
-    attrs:[{n:'速度',v:78},{n:'射门',v:68},{n:'传球',v:76},{n:'盘带',v:74},{n:'防守',v:78},{n:'体能',v:84}],
-    tags:['英格兰中场','77分换下'], bio:'77分钟被Burn换下，防守中场贡献稳定。' },
-  { id:1021929, num:41, pos:'CM',  name:'J.Ramsey',   lastName:'Ramsey',     xP:38,yP:30, xL:77,yL:30,
-    country:'英格兰', age:23, height:'178cm', foot:'右脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:70},{n:'传球',v:78},{n:'盘带',v:76},{n:'防守',v:72},{n:'体能',v:85}],
-    tags:['英格兰中场','前阿斯顿维拉'], bio:'来自维拉的英格兰中场，跑动积极。' },
-  { id:521148,  num:23, pos:'RAM', name:'J.Murphy',   lastName:'Murphy',     xP:80,yP:40, xL:67,yL:84,
-    country:'英格兰', age:29, height:'176cm', foot:'右脚',
-    attrs:[{n:'速度',v:84},{n:'射门',v:72},{n:'传球',v:70},{n:'盘带',v:76},{n:'防守',v:58},{n:'体能',v:82}],
-    tags:['右路边锋','78分换下'], bio:'78分钟被Elanga换下。' },
-  { id:1106563, num:27, pos:'CAM', name:'Woltemade',  lastName:'Woltemade',  xP:50,yP:40, xL:67,yL:50,
-    country:'德国', age:23, height:'197cm', foot:'右脚',
-    attrs:[{n:'速度',v:78},{n:'射门',v:75},{n:'传球',v:74},{n:'盘带',v:72},{n:'防守',v:55},{n:'体能',v:82}],
-    tags:['德国高中锋','创造力强','67分换下'], bio:'197cm高大中场，67分被Joelinton换下。' },
-  { id:760359,  num:11, pos:'LAM', name:'H.Barnes',   lastName:'Barnes',     xP:20,yP:40, xL:67,yL:16,
-    country:'英格兰', age:26, height:'175cm', foot:'右脚',
-    attrs:[{n:'速度',v:86},{n:'射门',v:74},{n:'传球',v:72},{n:'盘带',v:82},{n:'防守',v:54},{n:'体能',v:82}],
-    tags:['速度边锋','英格兰快马'], bio:'英格兰左翼，速度和突破是纽卡的利器。' },
-  { id:906937,  num:10, pos:'ST',  name:'Gordon',     lastName:'Gordon',     xP:50,yP:47, xL:58,yL:50,
-    country:'英格兰', age:23, height:'174cm', foot:'右脚',
-    season:{goals:15, assists:8, rating:8.2},
-    attrs:[{n:'速度',v:88},{n:'射门',v:82},{n:'传球',v:74},{n:'盘带',v:84},{n:'防守',v:58},{n:'体能',v:84}],
-    tags:['本场进球','18分钟头球','英格兰国脚'], bio:'18分钟头球破门，本场最大功臣，评分8.2。' },
+  { id:268375,  num:23, pos:'GK',  name:'E.Martínez', lastName:'Martínez',   xP:50,yP:5,  xL:95,yL:50,
+    country:'阿根廷', age:33, height:'195cm', foot:'右脚',
+    attrs:[{n:'速度',v:62},{n:'射门',v:22},{n:'传球',v:76},{n:'盘带',v:52},{n:'防守',v:88},{n:'体能',v:82}],
+    tags:['世界杯冠军','世界最佳GK'], bio:'阿根廷世界杯冠军门将，防点球能力一流。' },
+  { id:1190033, num:26, pos:'RB',  name:'Bogarde',    lastName:'Bogarde',    xP:82,yP:17, xL:86,yL:88,
+    country:'荷兰', age:22, height:'182cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:52},{n:'传球',v:72},{n:'盘带',v:70},{n:'防守',v:76},{n:'体能',v:82}],
+    tags:['荷兰新星'], bio:'荷兰年轻右后卫，来自切尔西青训。' },
+  { id:710159,  num:4,  pos:'CB',  name:'Konsa',      lastName:'Konsa',      xP:64,yP:17, xL:86,yL:62,
+    country:'英格兰', age:27, height:'183cm', foot:'右脚',
+    attrs:[{n:'速度',v:80},{n:'射门',v:40},{n:'传球',v:74},{n:'盘带',v:62},{n:'防守',v:84},{n:'体能',v:84}],
+    tags:['英格兰国脚中卫'], bio:'维拉防守核心之一，英格兰国脚。' },
+  { id:419664,  num:5,  pos:'CB',  name:'Mings',      lastName:'Mings',      xP:36,yP:17, xL:86,yL:38,
+    country:'英格兰', age:32, height:'194cm', foot:'左脚',
+    attrs:[{n:'速度',v:72},{n:'射门',v:45},{n:'传球',v:74},{n:'盘带',v:58},{n:'防守',v:82},{n:'体能',v:80}],
+    tags:['英格兰老将中卫','空中优势'], bio:'维拉老将中卫，经验丰富。' },
+  { id:210111,  num:12, pos:'LB',  name:'Digne',      lastName:'Digne',      xP:18,yP:17, xL:86,yL:12,
+    country:'法国', age:32, height:'175cm', foot:'左脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:58},{n:'传球',v:78},{n:'盘带',v:68},{n:'防守',v:76},{n:'体能',v:78}],
+    tags:['法国国脚','传中精准'], bio:'法国老将左后卫，传中一流。' },
+  { id:215384,  num:6,  pos:'CDM', name:'Barkley',    lastName:'Barkley',    xP:62,yP:30, xL:77,yL:70,
+    country:'英格兰', age:32, height:'190cm', foot:'右脚',
+    attrs:[{n:'速度',v:74},{n:'射门',v:72},{n:'传球',v:80},{n:'盘带',v:76},{n:'防守',v:72},{n:'体能',v:80}],
+    tags:['英格兰中场','体格强壮'], bio:'维拉老将中场，身体对抗出色。' },
+  { id:1185748, num:24, pos:'CM',  name:'Onana',      lastName:'Onana',      xP:38,yP:30, xL:77,yL:30,
+    country:'比利时', age:23, height:'192cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:68},{n:'传球',v:82},{n:'盘带',v:72},{n:'防守',v:84},{n:'体能',v:88}],
+    tags:['比利时中场','前埃弗顿'], bio:'高大强壮中场，抢断能力出众。' },
+  { id:356406,  num:7,  pos:'RAM', name:'McGinn',     lastName:'McGinn',     xP:80,yP:40, xL:67,yL:84,
+    country:'苏格兰', age:31, height:'180cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:74},{n:'传球',v:78},{n:'盘带',v:74},{n:'防守',v:70},{n:'体能',v:88}],
+    tags:['苏格兰国脚','维拉老将'], bio:'维拉队老将，全能中场。' },
+  { id:610184,  num:10, pos:'CAM', name:'Buendía',    lastName:'Buendía',    xP:50,yP:40, xL:67,yL:50,
+    country:'阿根廷', age:27, height:'172cm', foot:'左脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:76},{n:'传球',v:84},{n:'盘带',v:86},{n:'防守',v:55},{n:'体能',v:80}],
+    tags:['阿根廷技师','创造力强'], bio:'维拉核心创造者，技术灵活。' },
+  { id:883080,  num:27, pos:'LAM', name:'M.Rogers',   lastName:'Rogers',     xP:20,yP:40, xL:67,yL:16,
+    country:'英格兰', age:22, height:'178cm', foot:'右脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:72},{n:'传球',v:74},{n:'盘带',v:80},{n:'防守',v:52},{n:'体能',v:82}],
+    tags:['英格兰新星','双脚均衡'], bio:'22岁英格兰新星，维拉左翼核心。' },
+  { id:540088,  num:11, pos:'ST',  name:'O.Watkins',  lastName:'Watkins',    xP:50,yP:47, xL:58,yL:50,
+    captain:true,
+    country:'英格兰', age:30, height:'180cm', foot:'右脚',
+    season:{goals:16, assists:9, rating:7.6},
+    attrs:[{n:'速度',v:88},{n:'射门',v:86},{n:'传球',v:74},{n:'盘带',v:80},{n:'防守',v:52},{n:'体能',v:88}],
+    tags:['维拉队长','英格兰主力前锋','16球'], bio:'英格兰主力中锋，本赛季16球9助，维拉绝对核心。' },
 ];
 
-// 替补：左侧=主场切尔西，右侧=客场纽卡斯尔
+// 替补席：左侧=主场曼联，右侧=客场维拉
 const MU_BENCH = [
-  {num:9, name:'L.Delap',      pos:'ST',  id:1113903, team:'che'},
-  {num:45,name:'R.Lavia',      pos:'CM',  id:1190867, team:'che'},
-  {num:21,name:'J.Hato',       pos:'CB',  id:1413846, team:'che'},
-  {num:28,name:'Sharman-Lowe', pos:'GK',  id:1117871, team:'che'},
-  {num:5, name:'Badiashile',   pos:'CB',  id:955376,  team:'che'},
-  {num:19,name:'M.Sarr',       pos:'CB',  id:1426170, team:'che'},
-  {num:4, name:'Adarabioyo',   pos:'CB',  id:683402,  team:'che'},
-  {num:17,name:'A.Santos',     pos:'CM',  id:1372921, team:'che'},
-  {num:38,name:'M.Guiu',       pos:'ST',  id:1412137, team:'che'},
+  {num:1, name:'Bayindir',    pos:'GK',  id:866967,  team:'mu'},
+  {num:26,name:'Heaven',      pos:'CB',  id:1559639, team:'mu'},
+  {num:3, name:'Mazraoui',    pos:'RB',  id:775539,  team:'mu'},
+  {num:12,name:'Malacia',     pos:'LB',  id:865118,  team:'mu'},
+  {num:25,name:'Ugarte',      pos:'CM',  id:1035614, team:'mu'},
+  {num:7, name:'M.Mount',     pos:'CAM', id:750032,  team:'mu'},
+  {num:39,name:'Fletcher',    pos:'LW',  id:1676985, team:'mu'},
+  {num:30,name:'Sesko',       pos:'ST',  id:1073977, team:'mu'},
+  {num:11,name:'Zirkzee',     pos:'ST',  id:950830,  team:'mu'},
 ];
 
 const AV_BENCH = [
-  {num:7, name:'Joelinton',    pos:'CM',  id:535936,  team:'new'},
-  {num:33,name:'D.Burn',       pos:'CB',  id:188058,  team:'new'},
-  {num:20,name:'A.Elanga',     pos:'LW',  id:1050166, team:'new'},
-  {num:26,name:'J.Ruddy',      pos:'GK',  id:40602,   team:'new'},
-  {num:1, name:'N.Pope',       pos:'GK',  id:280484,  team:'new'},
-  {num:37,name:'A.Murphy',     pos:'CM',  id:1362341, team:'new'},
-  {num:2, name:'Trippier',     pos:'RB',  id:191869,  team:'new'},
-  {num:18,name:'W.Osula',      pos:'ST',  id:1258092, team:'new'},
-  {num:9, name:'Y.Wissa',      pos:'ST',  id:666857,  team:'new'},
+  {num:40,name:'Bizot',       pos:'GK',  id:195782,  team:'av'},
+  {num:16,name:'A.García',    pos:'CM',  id:1430406, team:'av'},
+  {num:22,name:'Maatsen',     pos:'LB',  id:966026,  team:'av'},
+  {num:14,name:'P.Torres',    pos:'CB',  id:792645,  team:'av'},
+  {num:3, name:'Lindelöf',    pos:'CB',  id:258269,  team:'av'},
+  {num:21,name:'D.Luiz',      pos:'CM',  id:787350,  team:'av'},
+  {num:9, name:'H.Elliott',   pos:'CAM', id:963964,  team:'av'},
+  {num:31,name:'L.Bailey',    pos:'LW',  id:671331,  team:'av'},
+  {num:18,name:'T.Abraham',   pos:'ST',  id:749661,  team:'av'},
 ];
 
-
-
-// 西汉姆(左) vs 曼城(右) — 数据来源：dasfootball.com/直播吧
-const STATS_DATA = [
-  {label:'控球率',      mu:'67%',  av:'33%',  muP:67, avP:33},
-  {label:'预期进球 xG', mu:'1.39', av:'1.41', muP:50, avP:50},
-  {label:'总射门',      mu:'22',   av:'7',    muP:76, avP:24},
-  {label:'射正',        mu:'3',    av:'5',    muP:38, avP:62},
-  {label:'大机会',      mu:'2',    av:'1',    muP:67, avP:33},
-  {label:'禁区内射门',  mu:'10',   av:'3',    muP:77, avP:23},
-  {label:'角球',        mu:'8',    av:'1',    muP:89, avP:11},
-  {label:'传球成功率',  mu:'92%',  av:'78%',  muP:54, avP:46},
-  {label:'总传球',      mu:'675',  av:'331',  muP:67, avP:33},
-  {label:'犯规',        mu:'9',    av:'10',   muP:47, avP:53},
-  {label:'越位',        mu:'0',    av:'0',    muP:50, avP:50},
-  {label:'黄牌',        mu:'2',    av:'2',    muP:50, avP:50},
-  {label:'门将扑救',    mu:'4',    av:'3',    muP:57, avP:43},
-];
 
 // === SVG PITCH ===
 const ST = 'stroke="rgba(255,255,255,0.55)" stroke-width="0.5" fill="none"';
@@ -695,8 +599,8 @@ function makeFallback(id, num, color, lighter) {
 function renderPlayer(p, team, ls) {
   const ismu = team==='mu';
   // mu = 西汉姆 (red/claret), av = 曼城 (sky blue)
-  const color = ismu?'#034694':'#241F20';
-  const lighter = ismu?'#3a6dbf':'#555555';
+  const color = ismu?'#DA291C':'#95003C';
+  const lighter = ismu?'#e05a50':'#c0406a';
   const ring = ismu?'#6ea8e8':'#cccccc';
   const x = ls ? p.xL : p.xP, y = ls ? p.yL : p.yP;
   const fb = makeFallback(p.id+'_'+p.num, p.num, color, lighter);
@@ -756,7 +660,7 @@ function renderPitch() {
 // === BENCH ===
 function renderBench() {
   function makeCard(p, teamColor, ringColor) {
-    const lighter = teamColor === '#034694' ? '#3a6dbf' : '#555555';
+    const lighter = teamColor === '#DA291C' ? '#e05a50' : '#c0406a';
     const fb = `<div class="bench-avatar-fb" id="bfb-${p.id}">
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <defs><radialGradient id="brg-${p.id}" cx="40%" cy="35%" r="65%">
@@ -783,13 +687,13 @@ function renderBench() {
   const muEl = document.getElementById('bench-mu');
   const avEl = document.getElementById('bench-av');
   muEl.innerHTML = ''; avEl.innerHTML = '';
-  MU_BENCH.forEach(p => muEl.appendChild(makeCard(p, '#034694', '#6ea8e8')));
+  MU_BENCH.forEach(p => muEl.appendChild(makeCard(p, '#DA291C', '#e06055')));
   AV_BENCH.forEach(p => avEl.appendChild(makeCard(p, '#241F20', '#cccccc')));
 }
 
 function openBenchModal(p, teamColor, ringColor) {
-  const lighter = teamColor === '#034694' ? '#3a6dbf' : '#555555';
-  const teamLabel = teamColor === '#034694' ? '切尔西' : '纽卡斯尔';
+  const lighter = teamColor === '#DA291C' ? '#e05a50' : '#c0406a';
+  const teamLabel = teamColor === '#DA291C' ? '曼联' : '维拉';
   document.getElementById('modal-content').innerHTML = `
     <div class="modal-header">
       <img class="modal-avatar" src="${FOTMOB}${p.id}.png"
@@ -821,23 +725,6 @@ function openBenchModal(p, teamColor, ringColor) {
 }
 
 // === STATS ===
-function renderStats() {
-  const c = document.getElementById('stats-rows');
-  c.innerHTML = STATS_DATA.map(s => `
-    <div class="stat-row">
-      <div class="stat-row-label">${s.label}</div>
-      <div class="stat-bars">
-        <div class="stat-val mu">${s.mu}</div>
-        <div class="stat-bar-track">
-          <div class="stat-bar-mu" style="width:${s.muP}%"></div>
-          <div class="stat-divider"></div>
-          <div class="stat-bar-av" style="width:${s.avP}%"></div>
-        </div>
-        <div class="stat-val av">${s.av}</div>
-      </div>
-    </div>`).join('');
-}
-
 // === TABS (portrait) ===
 function switchTab(name, btn) {
   if (isLandscape()) return;
@@ -861,10 +748,10 @@ function getAttrColor(v) {
 function openModal(p, team) {
   const ismu = team==='mu';
   // mu = 西汉姆, av = 曼城
-  const color = ismu?'#034694':'#241F20';
-  const lighter = ismu?'#3a6dbf':'#555555';
+  const color = ismu?'#DA291C':'#95003C';
+  const lighter = ismu?'#e05a50':'#c0406a';
   const ring = ismu?'#6ea8e8':'#cccccc';
-  const initBg = ismu?'#021f50':'#111111';
+  const initBg = ismu?'#6a1010':'#3a0018';
 
   const radarHtml = p.attrs && p.attrs.length===6 ?
     `<div class="section-title">能力雷达</div><div class="radar-wrap">${drawRadar(p.attrs, ring)}</div>` : '';
@@ -936,9 +823,158 @@ ms.addEventListener('touchstart', e=>{ ty=e.touches[0].clientY; },{passive:true}
 ms.addEventListener('touchmove', e=>{ const dy=e.touches[0].clientY-ty; if(dy>0&&ms.scrollTop===0) ms.style.transform=`translateX(-50%) translateY(${Math.min(dy,200)}px)`; },{passive:true});
 ms.addEventListener('touchend', e=>{ const dy=e.changedTouches[0].clientY-ty; ms.style.transform=''; if(dy>80)closeModal(); },{passive:true});
 
+// =====================================================
+// 实时数据 — CORS 代理 + FotMob __NEXT_DATA__
+// FotMob slug: 换比赛时改这一行
+const MATCH_SLUG = 'aston-villa-vs-manchester-united/3h9f6s';
+const PROXY = 'https://api.allorigins.win/raw?url=';
+let lastUpdated = null;
+let pollInterval = null;
+let isMatchLive = false;
+
+function setStatus(text, live) {
+  ['status-text','stats-status-text'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el) el.textContent = text;
+  });
+  const ms = document.getElementById('match-status');
+  if(ms) {
+    ms.style.background = live ? 'rgba(34,197,94,0.15)' : 'rgba(255,255,255,0.08)';
+    ms.style.borderColor = live ? 'rgba(34,197,94,0.5)' : 'rgba(255,255,255,0.2)';
+    ms.style.color = live ? '#4ade80' : 'var(--text-muted)';
+  }
+}
+
+function updateScore(mu, av) {
+  ['score-mu','stats-score-mu'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=mu;});
+  ['score-av','stats-score-av'].forEach(id=>{const el=document.getElementById(id);if(el)el.textContent=av;});
+}
+
+function renderEvents(events) {
+  const el = document.getElementById('events-list');
+  if(!el) return;
+  if(!events || events.length === 0) return;
+  const filtered = events.filter(e=>!['AddedTime','Half'].includes(e.type));
+  if(filtered.length === 0) return;
+  const iconMap = {Goal:'⚽',Card:'🟨',Substitution:'🔄'};
+  const lines = filtered.map(e=>{
+    const ts = e.overloadTime ? `${e.timeStr}+${e.overloadTime}'` : `${e.timeStr}'`;
+    const icon = iconMap[e.type]||'•';
+    const player = (e.player||{}).name||'';
+    const card = e.card||'';
+    const isRed = card==='Red';
+    const cardIcon = isRed?'🟥':'🟨';
+    const finalIcon = e.type==='Card' ? cardIcon : icon;
+    const ring = e.isHome ? '#e06055' : '#c0406a';
+    const swap = e.swap;
+    let desc = '';
+    if(swap && Array.isArray(swap) && swap.length>=2) desc = `↑${swap[0].name} ↓${swap[1].name}`;
+    else if(player) desc = player;
+    const left = e.isHome ? `<div class="tl-player" style="color:#e06055">${desc}</div>` : `<div class="tl-empty">-</div>`;
+    const right = !e.isHome ? `<div class="tl-player" style="color:#c0406a">${desc}</div>` : `<div class="tl-empty">-</div>`;
+    return `<div class="tl-item">
+      <div class="tl-left">${left}</div>
+      <div class="tl-center"><div class="tl-time">${ts}</div><div class="tl-dot" style="border-color:${ring}"></div><div class="tl-icon">${finalIcon}</div></div>
+      <div class="tl-right">${right}</div>
+    </div>`;
+  });
+  el.innerHTML = '<div class="timeline-line"></div>' + lines.join('');
+}
+
+function renderLiveStats(statsGroups) {
+  // find top_stats group
+  const topGroup = statsGroups.find(g=>g.key==='top_stats');
+  if(!topGroup) return;
+  const newData = topGroup.stats.map(s=>{
+    const vals = s.stats||[];
+    const v0 = vals[0]??'-', v1 = vals[1]??'-';
+    let muP=50, avP=50;
+    if(typeof v0==='number'&&typeof v1==='number'&&(v0+v1)>0){muP=Math.round(v0*100/(v0+v1));avP=100-muP;}
+    const labelMap = {BallPossesion:'控球率',expected_goals:'预期进球 xG',total_shots:'总射门',
+      Shots_on_target_:'射正',BigChances:'大机会',ShotsInsideBox:'禁区内射门',
+      Corners:'角球',Passes_accurate:'传球成功率',Fouls:'犯规',YellowCards:'黄牌',Saves:'门将扑救'};
+    const label = labelMap[s.key]||s.title;
+    const fmt = (v)=>typeof v==='number'?(s.format==='double'?v.toFixed(2):v+''):v+'';
+    return {label, mu:fmt(v0), av:fmt(v1), muP, avP};
+  });
+  if(newData.length>0){
+    // update STATS_DATA and re-render
+    window.__liveStats = newData;
+    renderStats(newData);
+  }
+}
+
+function renderStats(data) {
+  const d = data || STATS_DATA;
+  const c = document.getElementById('stats-rows');
+  if(!c) return;
+  c.innerHTML = d.map(s=>`
+    <div class="stat-row">
+      <div class="stat-row-label">${s.label}</div>
+      <div class="stat-row-values">
+        <span class="stat-val-left" style="color:#e06055">${s.mu}</span>
+        <div class="stat-bar-track"><div class="stat-bar-mu" style="width:${s.muP}%"></div><div class="stat-bar-av" style="width:${s.avP}%"></div></div>
+        <span class="stat-val-right" style="color:#c0406a">${s.av}</span>
+      </div>
+    </div>`).join('');
+}
+
+async function fetchLiveData() {
+  const url = `https://www.fotmob.com/matches/${MATCH_SLUG}`;
+  try {
+    const res = await fetch(PROXY + encodeURIComponent(url));
+    const html = await res.text();
+    const m = html.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
+    if(!m) return;
+    const data = JSON.parse(m[1]);
+    const props = data.props?.pageProps;
+    if(!props) return;
+    const header = props.header||{};
+    const teams = header.teams||[];
+    const status = header.status||{};
+    const content = props.content||{};
+    const facts = content.matchFacts||{};
+
+    // Score
+    const muScore = teams[0]?.score??0;
+    const avScore = teams[1]?.score??0;
+    updateScore(muScore, avScore);
+
+    // Status
+    const scoreStr = status.scoreStr||'';
+    const liveTime = status.liveTime?.short||'';
+    const reason = status.reason?.short||'';
+    const isFT = reason==='FT'||reason==='AET';
+    const isLive = !isFT && (liveTime||scoreStr);
+    isMatchLive = !!isLive;
+    setStatus(isFT?'FT': isLive?liveTime:'尚未开始', isLive);
+
+    // Events
+    const events = facts.events?.events||[];
+    if(events.length>0) renderEvents(events);
+
+    // Stats
+    const statsGroups = content.stats?.Periods?.All?.stats||[];
+    if(statsGroups.length>0) renderLiveStats(statsGroups);
+
+    // Stop polling after FT
+    if(isFT && pollInterval) { clearInterval(pollInterval); pollInterval=null; setStatus('FT',false); }
+
+    lastUpdated = new Date();
+    const updEl = document.getElementById('last-updated');
+    if(updEl) updEl.textContent = `更新 ${lastUpdated.toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}`;
+  } catch(e) { console.warn('fetchLiveData error', e); }
+}
+
 function doRefresh() {
   const f=document.getElementById('refresh-fab');
-  f.classList.add('spinning'); setTimeout(()=>f.classList.remove('spinning'),700);
+  f.classList.add('spinning');
+  fetchLiveData().finally(()=>setTimeout(()=>f.classList.remove('spinning'),700));
+}
+
+function startPolling() {
+  fetchLiveData(); // 立即抓一次
+  pollInterval = setInterval(fetchLiveData, 60000); // 每60秒
 }
 
 let resizeT;
@@ -956,6 +992,7 @@ renderBadges();
 renderPitch();
 renderBench();
 renderStats();
+startPolling(); // 自动每60秒刷新直播数据
 
 // Portrait: show lineup by default, hide right col
 if (!isLandscape()) {

@@ -221,23 +221,23 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 </head>
 <body>
 <div class="match-header">
-  <div class="match-meta">英超 · 第30轮 &nbsp;|&nbsp; <span>2026年3月14日 周六 20:00</span> &nbsp;|&nbsp; 伦敦体育场</div>
+  <div class="match-meta">英超 · 第30轮 &nbsp;|&nbsp; <span>2026年3月14日 周六 17:30</span> &nbsp;|&nbsp; 斯坦福桥</div>
   <div class="score-row">
     <div class="team-info">
-      <div class="team-badge mu">WHU</div>
-      <div class="team-name">西汉姆联</div>
+      <div class="team-badge mu">CHE</div>
+      <div class="team-name">切尔西</div>
     </div>
     <div class="score-display">
       <div class="score-numbers">
-        <div class="score-num" id="score-mu">1</div>
+        <div class="score-num" id="score-mu">0</div>
         <div class="score-divider">:</div>
         <div class="score-num" id="score-av">1</div>
       </div>
       <div class="match-time" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:var(--text-muted)"><span>FT</span></div>
     </div>
     <div class="team-info">
-      <div class="team-badge av">MC</div>
-      <div class="team-name">曼城</div>
+      <div class="team-badge av">NEW</div>
+      <div class="team-name">纽卡斯尔</div>
     </div>
   </div>
 </div>
@@ -258,10 +258,10 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="pitch" id="pitch">
           <svg class="pitch-markings" id="pitch-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
           <div id="label-mu" class="team-label-banner top">
-            <div class="team-label-pill" style="color:#e87070;border:1px solid rgba(122,38,58,0.6);">西汉姆联 · 3-4-3</div>
+            <div class="team-label-pill" style="color:#e87070;border:1px solid rgba(122,38,58,0.6);">切尔西 · 4-2-3-1</div>
           </div>
           <div id="label-av" class="team-label-banner bottom">
-            <div class="team-label-pill" style="color:#6CABDD;border:1px solid rgba(28,44,91,0.6);">曼城 · 4-1-2-3</div>
+            <div class="team-label-pill" style="color:#6CABDD;border:1px solid rgba(28,44,91,0.6);">纽卡斯尔 · 4-2-3-1</div>
           </div>
           <div class="players-layer" id="players-layer"></div>
         </div>
@@ -271,14 +271,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="bench-split">
           <!-- 主场西汉姆替补：左侧 -->
           <div class="bench-half bench-half-mu">
-            <div class="bench-half-label" style="color:#e87070">西汉姆 替补</div>
+            <div class="bench-half-label" style="color:#e87070">切尔西 替补</div>
             <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
           <!-- 中场分隔线 -->
           <div class="bench-divider"></div>
           <!-- 客场曼城替补：右侧 -->
           <div class="bench-half bench-half-av">
-            <div class="bench-half-label" style="color:#6CABDD">曼城 替补</div>
+            <div class="bench-half-label" style="color:#6CABDD">纽卡斯尔 替补</div>
             <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
         </div>
@@ -292,19 +292,19 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
       <div class="stats-panel">
         <div class="stats-panel-title">数据统计</div>
         <div class="stats-score-row">
-          <span class="stats-score-num whu">1</span>
+          <span class="stats-score-num whu">0</span>
           <span class="stats-score-divider">-</span>
           <span class="stats-score-num mc">1</span>
         </div>
         <div class="stats-score-teams">
-          <span style="color:#e87070">西汉姆联</span>
+          <span style="color:#e87070">切尔西</span>
           <span style="color:var(--text-muted)">FT</span>
-          <span style="color:#6CABDD">曼城</span>
+          <span style="color:#6CABDD">纽卡斯尔</span>
         </div>
         <div style="font-size:9px;color:var(--text-muted);margin-bottom:6px;text-align:center">数据来源：直播吧 / dasfootball.com</div>
         <div class="stats-header-row">
-          <span class="stats-team-name mu" style="color:#e87070">西汉姆联</span>
-          <span class="stats-team-name av" style="color:#6CABDD">曼城</span>
+          <span class="stats-team-name mu" style="color:#e87070">切尔西</span>
+          <span class="stats-team-name av" style="color:#6CABDD">纽卡斯尔</span>
         </div>
         <div id="stats-rows"></div>
       </div>
@@ -315,82 +315,90 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="timeline" id="events-list">
           <div class="timeline-line"></div>
 
-          <!-- 11' Marmoush 进球 (曼城右侧) -->
+          <!-- 18' Gordon 进球 (纽卡右侧) -->
           <div class="tl-item">
             <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">11'</div><div class="tl-dot" style="border-color:#6CABDD"></div><div class="tl-icon">⚽</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">O.Marmoush</div><div class="tl-desc">进球 · 禁区射门</div></div>
+            <div class="tl-center"><div class="tl-time">18'</div><div class="tl-dot" style="border-color:#6CABDD"></div><div class="tl-icon">⚽</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">A.Gordon</div><div class="tl-desc">头球破门</div></div>
           </div>
 
-          <!-- 11' 黄牌 Marmoush (曼城) -->
+          <!-- 23' Fofana 黄牌 (切尔西左侧) -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">11'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">O.Marmoush</div><div class="tl-desc">手球</div></div>
-          </div>
-
-          <!-- 31' 进球 B.Silva (曼城) -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">31'</div><div class="tl-dot" style="border-color:#6CABDD"></div><div class="tl-icon">⚽</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">B.Silva</div><div class="tl-desc">进球 · 中路渗透</div></div>
-          </div>
-
-          <!-- 35' 进球 Mavropanos (西汉姆) -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">Mavropanos</div><div class="tl-desc">角球头球扳平</div></div>
-            <div class="tl-center"><div class="tl-time">35'</div><div class="tl-dot" style="border-color:#e87070"></div><div class="tl-icon">⚽</div></div>
+            <div class="tl-left"><div class="tl-player" style="color:#e87070">Fofana</div><div class="tl-desc">犯规</div></div>
+            <div class="tl-center"><div class="tl-time">23'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
             <div class="tl-right"><div class="tl-empty">-</div></div>
           </div>
 
-          <!-- 37' 黄牌 B.Silva (曼城) -->
+          <!-- 25' Caicedo 黄牌 (切尔西左侧) -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">37'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">B.Silva</div><div class="tl-desc">粗野犯规</div></div>
-          </div>
-
-          <!-- 60' 换人 曼城 ×2 -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-empty">-</div></div>
-            <div class="tl-center"><div class="tl-time">60'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">曼城 换人×2</div><div class="tl-desc">↑Marmoush,Aït-Nouri<br>↓Cherki,Doku</div></div>
-          </div>
-
-          <!-- 64' 换人 西汉姆 -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">西汉姆 换人</div><div class="tl-desc">↑Pablo ↓Magassa</div></div>
-            <div class="tl-center"><div class="tl-time">64'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
+            <div class="tl-left"><div class="tl-player" style="color:#e87070">Caicedo</div><div class="tl-desc">犯规</div></div>
+            <div class="tl-center"><div class="tl-time">25'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
             <div class="tl-right"><div class="tl-empty">-</div></div>
           </div>
 
-          <!-- 75' 换人 曼城 ×2 + 西汉姆 -->
+          <!-- HT -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">西汉姆 换人</div><div class="tl-desc">↑Castellanos ↓Traoré</div></div>
-            <div class="tl-center"><div class="tl-time">75'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">曼城 换人×2</div><div class="tl-desc">↑B.Silva,Semenyo<br>↓Reijnders,Foden</div></div>
-          </div>
-
-          <!-- 76' 黄牌 Magassa (西汉姆) -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">Magassa</div><div class="tl-desc">绊倒对手</div></div>
-            <div class="tl-center"><div class="tl-time">76'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
+            <div class="tl-left"><div class="tl-empty">-</div></div>
+            <div class="tl-center"><div class="tl-time" style="color:var(--text-muted)">HT</div><div class="tl-dot" style="border-color:rgba(255,255,255,0.3)"></div><div class="tl-icon" style="font-size:10px;color:var(--text-muted)">0-1</div></div>
             <div class="tl-right"><div class="tl-empty">-</div></div>
           </div>
 
-          <!-- 89' 黄牌 Fernandes (西汉姆) -->
+          <!-- 46' 切尔西换人 Delap→Gusto -->
           <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">M.Fernandes</div><div class="tl-desc">粗野犯规</div></div>
+            <div class="tl-left"><div class="tl-player" style="color:#e87070">切尔西 换人</div><div class="tl-desc">↑Delap ↓Gusto</div></div>
+            <div class="tl-center"><div class="tl-time">46'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
+            <div class="tl-right"><div class="tl-empty">-</div></div>
+          </div>
+
+          <!-- 61' 切尔西换人 Lavia→Caicedo -->
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-player" style="color:#e87070">切尔西 换人</div><div class="tl-desc">↑Lavia ↓Caicedo</div></div>
+            <div class="tl-center"><div class="tl-time">61'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
+            <div class="tl-right"><div class="tl-empty">-</div></div>
+          </div>
+
+          <!-- 67' 纽卡换人 Joelinton→Woltemade -->
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-empty">-</div></div>
+            <div class="tl-center"><div class="tl-time">67'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">纽卡 换人</div><div class="tl-desc">↑Joelinton ↓Woltemade</div></div>
+          </div>
+
+          <!-- 77' 纽卡换人 Burn→Willock -->
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-empty">-</div></div>
+            <div class="tl-center"><div class="tl-time">77'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">纽卡 换人</div><div class="tl-desc">↑D.Burn ↓Willock</div></div>
+          </div>
+
+          <!-- 78' 纽卡换人 Elanga→Murphy -->
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-empty">-</div></div>
+            <div class="tl-center"><div class="tl-time">78'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">纽卡 换人</div><div class="tl-desc">↑Elanga ↓Murphy</div></div>
+          </div>
+
+          <!-- 82' 切尔西换人 Hato→Fofana -->
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-player" style="color:#e87070">切尔西 换人</div><div class="tl-desc">↑J.Hato ↓Fofana</div></div>
+            <div class="tl-center"><div class="tl-time">82'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
+            <div class="tl-right"><div class="tl-empty">-</div></div>
+          </div>
+
+          <!-- 84' Ramsdale 黄牌 -->
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-empty">-</div></div>
+            <div class="tl-center"><div class="tl-time">84'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">Ramsdale</div><div class="tl-desc">时间浪费</div></div>
+          </div>
+
+          <!-- 89' Lewis Hall 黄牌 -->
+          <div class="tl-item">
+            <div class="tl-left"><div class="tl-empty">-</div></div>
             <div class="tl-center"><div class="tl-time">89'</div><div class="tl-dot" style="border-color:#e3b341"></div><div class="tl-icon">🟨</div></div>
-            <div class="tl-right"><div class="tl-empty">-</div></div>
+            <div class="tl-right"><div class="tl-player" style="color:#6CABDD">L.Hall</div><div class="tl-desc">犯规</div></div>
           </div>
 
-          <!-- 90+6' 换人 西汉姆 -->
-          <div class="tl-item">
-            <div class="tl-left"><div class="tl-player" style="color:#e87070">西汉姆 换人</div><div class="tl-desc">↑Kanté ↓Bowen</div></div>
-            <div class="tl-center"><div class="tl-time">90+6'</div><div class="tl-dot" style="border-color:#3ddc84"></div><div class="tl-icon">🔄</div></div>
-            <div class="tl-right"><div class="tl-empty">-</div></div>
-          </div>
         </div>
       </div>
     </div>
@@ -409,160 +417,153 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 <script>
 const FOTMOB = 'https://images.fotmob.com/image_resources/playerimages/';
 
-// =====================================================
 // 坐标规则（横屏球场 16:9，主场左攻右，客场右攻左）
 // xL = fotmob_x * 48        (主场，左半场 5%~42%)
 // xL = 100 - fotmob_x * 48  (客场，右半场 58%~95%)
 // yL = fotmob_y * 100
 // 换比赛时同步更新：MU_PLAYERS(主场)、AV_PLAYERS(客场)、MU_BENCH、AV_BENCH
-// =====================================================
 
-// 主场：西汉姆联（左半场，3-4-3）
+// 主场：切尔西（左半场，4-2-3-1）
 const MU_PLAYERS = [
-  { id:967941,  num:1,  pos:'GK',  name:'Hermansen',   lastName:'Hermansen',  xP:50,yP:95, xL:5, yL:50,
-    country:'丹麦', age:25, height:'190cm', foot:'右脚',
-    season:{rating:8.1},
-    attrs:[{n:'速度',v:62},{n:'射门',v:22},{n:'传球',v:72},{n:'盘带',v:48},{n:'防守',v:84},{n:'体能',v:80}],
-    tags:['本场评分8.1','4次扑救','本场最佳'], bio:'本场贡献4次扑救，是西汉姆能得到平局的最大功臣。' },
-  { id:955214,  num:25, pos:'CB',  name:'Todibo',       lastName:'Todibo',     xP:18,yP:83, xL:17,yL:79,
-    country:'法国', age:26, height:'187cm', foot:'右脚',
-    attrs:[{n:'速度',v:78},{n:'射门',v:40},{n:'传球',v:72},{n:'盘带',v:62},{n:'防守',v:83},{n:'体能',v:82}],
-    tags:['法国中卫','三中卫右路'], bio:'来自巴萨的法国中卫，本场出任三后卫右路。' },
-  { id:719219,  num:15, pos:'CB',  name:'Mavropanos',   lastName:'Mavropanos', xP:50,yP:83, xL:17,yL:50,
-    country:'希腊', age:27, height:'193cm', foot:'右脚',
-    season:{goals:2, rating:8.6},
-    attrs:[{n:'速度',v:74},{n:'射门',v:58},{n:'传球',v:70},{n:'盘带',v:55},{n:'防守',v:83},{n:'体能',v:84}],
-    tags:['进球中卫','本场英雄','角球神锋'], bio:'本场角球头球破门，评分8.6，拯救西汉姆。' },
-  { id:696646,  num:4,  pos:'CB',  name:'Disasi',       lastName:'Disasi',     xP:82,yP:83, xL:17,yL:21,
-    country:'法国', age:27, height:'185cm', foot:'右脚',
-    attrs:[{n:'速度',v:78},{n:'射门',v:45},{n:'传球',v:72},{n:'盘带',v:60},{n:'防守',v:82},{n:'体能',v:83}],
-    tags:['法国中卫','三中卫左路'], bio:'来自切尔西的法国中卫，三后卫左路。' },
-  { id:760320,  num:29, pos:'RWB', name:'Wan-Bissaka',  lastName:'Wan-Bissaka', xP:82,yP:70, xL:29,yL:88,
-    country:'英格兰', age:27, height:'183cm', foot:'右脚',
-    attrs:[{n:'速度',v:84},{n:'射门',v:48},{n:'传球',v:68},{n:'盘带',v:72},{n:'防守',v:84},{n:'体能',v:82}],
-    tags:['防守铁闸','前曼联球员'], bio:'前曼联右后卫，本场出任右翼卫。' },
-  { id:524437,  num:28, pos:'CM',  name:'Souček',       lastName:'Souček',     xP:38,yP:71, xL:29,yL:62,
-    country:'捷克', age:31, height:'193cm', foot:'右脚',
-    attrs:[{n:'速度',v:72},{n:'射门',v:70},{n:'传球',v:78},{n:'盘带',v:65},{n:'防守',v:82},{n:'体能',v:88}],
-    tags:['空中霸主','跑不死','捷克核心'], bio:'捷克国脚，本场跑动距离全场第一。' },
-  { id:1356312, num:18, pos:'CM',  name:'Fernandes',    lastName:'Fernandes',  xP:62,yP:71, xL:29,yL:38,
-    country:'葡萄牙', age:25, height:'179cm', foot:'右脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:72},{n:'传球',v:80},{n:'盘带',v:78},{n:'防守',v:68},{n:'体能',v:82}],
-    tags:['葡萄牙中场','89分钟黄牌'], bio:'89分钟领到黄牌，影响西汉姆最后反扑。' },
-  { id:1451265, num:12, pos:'LWB', name:'M.Diouf',      lastName:'Diouf',      xP:18,yP:70, xL:29,yL:12,
-    country:'塞内加尔', age:23, height:'184cm', foot:'右脚',
-    attrs:[{n:'速度',v:86},{n:'射门',v:60},{n:'传球',v:74},{n:'盘带',v:75},{n:'防守',v:72},{n:'体能',v:85}],
-    tags:['速度飞车','塞内加尔新星'], bio:'速度出众的年轻翼卫，进攻端积极。' },
-  { id:523825,  num:20, pos:'RW',  name:'Bowen',        lastName:'Bowen',      xP:80,yP:60, xL:42,yL:79,
-    captain:true,
-    country:'英格兰', age:28, height:'175cm', foot:'右脚',
-    season:{goals:8, assists:9, rating:7.0},
-    attrs:[{n:'速度',v:84},{n:'射门',v:80},{n:'传球',v:78},{n:'盘带',v:82},{n:'防守',v:62},{n:'体能',v:84}],
-    tags:['西汉姆队长','英格兰国脚'], bio:'西汉姆队长，全场参与进攻，90+6分钟被换下。' },
-  { id:823658,  num:11, pos:'ST',  name:'Castellanos',  lastName:'Castellanos',xP:50,yP:53, xL:42,yL:50,
-    country:'阿根廷', age:26, height:'183cm', foot:'右脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:78},{n:'传球',v:65},{n:'盘带',v:70},{n:'防守',v:45},{n:'体能',v:82}],
-    tags:['阿根廷前锋'], bio:'西汉姆锋线核心，本场首发出击。' },
-  { id:1227326, num:19, pos:'LW',  name:'Pablo',        lastName:'Pablo',      xP:20,yP:60, xL:42,yL:21,
-    country:'巴西', age:24, height:'176cm', foot:'右脚',
-    attrs:[{n:'速度',v:82},{n:'射门',v:72},{n:'传球',v:70},{n:'盘带',v:78},{n:'防守',v:55},{n:'体能',v:80}],
-    tags:['巴西边锋'], bio:'巴西年轻边锋，速度出色。' },
+  { id:789571,  num:1,  pos:'GK',  name:'R.Sánchez',  lastName:'Sánchez',    xP:50,yP:95, xL:5, yL:50,
+    country:'西班牙', age:26, height:'190cm', foot:'右脚',
+    attrs:[{n:'速度',v:65},{n:'射门',v:20},{n:'传球',v:72},{n:'盘带',v:48},{n:'防守',v:80},{n:'体能',v:78}],
+    tags:['西班牙国门'], bio:'切尔西主力门将，本场4次扑救。' },
+  { id:1197250, num:27, pos:'RB',  name:'Gusto',      lastName:'Gusto',      xP:82,yP:83, xL:14,yL:88,
+    country:'法国', age:21, height:'178cm', foot:'右脚',
+    attrs:[{n:'速度',v:86},{n:'射门',v:55},{n:'传球',v:74},{n:'盘带',v:76},{n:'防守',v:76},{n:'体能',v:84}],
+    tags:['法国右后卫','46分钟被换下'], bio:'半场后被Delap换下，切尔西右路改变策略。' },
+  { id:917802,  num:29, pos:'CB',  name:'Fofana',     lastName:'Fofana',     xP:64,yP:83, xL:14,yL:62,
+    country:'法国', age:24, height:'187cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:38},{n:'传球',v:74},{n:'盘带',v:65},{n:'防守',v:83},{n:'体能',v:80}],
+    tags:['法国中卫','23分钟黄牌','82分换下'], bio:'23分钟领黄牌，82分钟被换下。' },
+  { id:793907,  num:23, pos:'CB',  name:'Chalobah',   lastName:'Chalobah',   xP:36,yP:83, xL:14,yL:38,
+    country:'英格兰', age:25, height:'188cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:42},{n:'传球',v:72},{n:'盘带',v:62},{n:'防守',v:82},{n:'体能',v:82}],
+    tags:['英格兰中卫'], bio:'切尔西自家青训中卫，稳定发挥。' },
+  { id:873289,  num:3,  pos:'LB',  name:'Cucurella',  lastName:'Cucurella',  xP:18,yP:83, xL:14,yL:12,
+    country:'西班牙', age:26, height:'172cm', foot:'左脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:55},{n:'传球',v:76},{n:'盘带',v:72},{n:'防守',v:78},{n:'体能',v:84}],
+    tags:['西班牙国脚','左后卫'], bio:'西班牙国脚，攻守俱佳的左后卫。' },
+  { id:807729,  num:24, pos:'CDM', name:'R.James',    lastName:'James',      xP:62,yP:71, xL:23,yL:70,
+    country:'英格兰', age:25, height:'180cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:65},{n:'传球',v:80},{n:'盘带',v:78},{n:'防守',v:80},{n:'体能',v:82}],
+    tags:['英格兰国脚','双面手'], bio:'本场中场出场，全能型球员。' },
+  { id:1137668, num:25, pos:'CM',  name:'Caicedo',    lastName:'Caicedo',    xP:38,yP:71, xL:23,yL:30,
+    country:'厄瓜多尔', age:23, height:'176cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:65},{n:'传球',v:82},{n:'盘带',v:76},{n:'防守',v:88},{n:'体能',v:88}],
+    tags:['防守中场','25分钟黄牌','61分换下'], bio:'25分钟领黄牌，61分换下Lavia。' },
+  { id:1096353, num:10, pos:'RAM', name:'C.Palmer',   lastName:'Palmer',     xP:80,yP:60, xL:33,yL:84,
+    country:'英格兰', age:22, height:'185cm', foot:'右脚',
+    season:{goals:14, assists:10, rating:7.2},
+    attrs:[{n:'速度',v:80},{n:'射门',v:88},{n:'传球',v:86},{n:'盘带',v:88},{n:'防守',v:52},{n:'体能',v:80}],
+    tags:['英格兰天才','切尔西10号'], bio:'切尔西核心，本场表现被对方严密盯防。' },
+  { id:1137705, num:8,  pos:'CAM', name:'E.Fernández',lastName:'Fernández',  xP:50,yP:60, xL:33,yL:50,
+    country:'阿根廷', age:24, height:'178cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:72},{n:'传球',v:85},{n:'盘带',v:80},{n:'防守',v:70},{n:'体能',v:82}],
+    tags:['阿根廷世界杯冠军'], bio:'阿根廷中场，传球组织切尔西进攻。' },
+  { id:1203665, num:49, pos:'LAM', name:'Garnacho',   lastName:'Garnacho',   xP:20,yP:60, xL:33,yL:16,
+    country:'阿根廷', age:20, height:'180cm', foot:'左脚',
+    season:{goals:10, assists:7},
+    attrs:[{n:'速度',v:88},{n:'射门',v:78},{n:'传球',v:72},{n:'盘带',v:85},{n:'防守',v:52},{n:'体能',v:82}],
+    tags:['速度边锋','年轻才俊'], bio:'来自曼联的阿根廷年轻边锋，速度出众。' },
+  { id:1021382, num:20, pos:'ST',  name:'João Pedro', lastName:'Pedro',      xP:50,yP:53, xL:42,yL:50,
+    country:'巴西', age:23, height:'180cm', foot:'左脚',
+    attrs:[{n:'速度',v:80},{n:'射门',v:80},{n:'传球',v:68},{n:'盘带',v:76},{n:'防守',v:45},{n:'体能',v:82}],
+    tags:['巴西前锋'], bio:'切尔西首发中锋，本场被Ramsdale多次扑救。' },
 ];
 
-// 客场：曼城（右半场，4-1-2-3）
+// 客场：纽卡斯尔（右半场，4-2-3-1）
 const AV_PLAYERS = [
-  { id:618878,  num:25, pos:'GK',  name:'Donnarumma',  lastName:'Donnarumma', xP:50,yP:5,  xL:95,yL:50,
-    country:'意大利', age:26, height:'196cm', foot:'左脚',
-    attrs:[{n:'速度',v:58},{n:'射门',v:20},{n:'传球',v:75},{n:'盘带',v:50},{n:'防守',v:90},{n:'体能',v:82}],
-    tags:['世界顶级门将','196cm身高'], bio:'意大利国门，本场0失球。' },
-  { id:955529,  num:27, pos:'LB',  name:'M.Nunes',     lastName:'Nunes',      xP:18,yP:17, xL:86,yL:88,
-    country:'葡萄牙', age:27, height:'178cm', foot:'右脚',
-    attrs:[{n:'速度',v:85},{n:'射门',v:62},{n:'传球',v:80},{n:'盘带',v:78},{n:'防守',v:74},{n:'体能',v:85}],
-    tags:['全能球员','葡萄牙国脚'], bio:'葡萄牙全能球员，本场客串左后卫。' },
-  { id:1362998, num:45, pos:'CB',  name:'Khusanov',    lastName:'Khusanov',   xP:36,yP:17, xL:86,yL:62,
-    country:'乌兹别克斯坦', age:23, height:'186cm', foot:'右脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:35},{n:'传球',v:72},{n:'盘带',v:60},{n:'防守',v:82},{n:'体能',v:84}],
-    tags:['乌兹别克新星','强壮中卫'], bio:'来自朗斯的乌兹别克斯坦中卫，年轻有力。' },
-  { id:844425,  num:15, pos:'CB',  name:'Guéhi',       lastName:'Guéhi',      xP:64,yP:17, xL:86,yL:38,
+  { id:746395,  num:32, pos:'GK',  name:'Ramsdale',   lastName:'Ramsdale',   xP:50,yP:5,  xL:95,yL:50,
+    country:'英格兰', age:26, height:'191cm', foot:'右脚',
+    attrs:[{n:'速度',v:62},{n:'射门',v:22},{n:'传球',v:74},{n:'盘带',v:50},{n:'防守',v:85},{n:'体能',v:80}],
+    tags:['英格兰门将','本场最佳','84分钟黄牌'], bio:'本场5次扑救保持零封，评分最高，84分钟领黄牌。' },
+  { id:1107910, num:21, pos:'RB',  name:'Livramento', lastName:'Livramento', xP:82,yP:17, xL:86,yL:88,
+    country:'葡萄牙', age:22, height:'175cm', foot:'右脚',
+    attrs:[{n:'速度',v:88},{n:'射门',v:60},{n:'传球',v:76},{n:'盘带',v:78},{n:'防守',v:76},{n:'体能',v:86}],
+    tags:['葡萄牙快翼','进攻右后卫'], bio:'速度出众的葡萄牙右后卫，进攻端积极。' },
+  { id:1137407, num:12, pos:'CB',  name:'Thiaw',      lastName:'Thiaw',      xP:64,yP:17, xL:86,yL:62,
+    country:'德国', age:23, height:'192cm', foot:'右脚',
+    attrs:[{n:'速度',v:80},{n:'射门',v:40},{n:'传球',v:72},{n:'盘带',v:62},{n:'防守',v:84},{n:'体能',v:84}],
+    tags:['德国中卫','空中优势'], bio:'来自AC米兰的德国中卫，防守出色。' },
+  { id:956682,  num:4,  pos:'CB',  name:'Botman',     lastName:'Botman',     xP:36,yP:17, xL:86,yL:38,
+    country:'荷兰', age:24, height:'193cm', foot:'左脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:38},{n:'传球',v:74},{n:'盘带',v:60},{n:'防守',v:86},{n:'体能',v:82}],
+    tags:['荷兰中卫','高大稳健'], bio:'荷兰国脚中卫，纽卡后防核心。' },
+  { id:1197655, num:3,  pos:'LB',  name:'L.Hall',     lastName:'Hall',       xP:18,yP:17, xL:86,yL:12,
+    country:'英格兰', age:20, height:'176cm', foot:'左脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:55},{n:'传球',v:74},{n:'盘带',v:72},{n:'防守',v:74},{n:'体能',v:84}],
+    tags:['英格兰新星','89分钟黄牌'], bio:'年轻左后卫，89分钟领黄牌。' },
+  { id:860975,  num:28, pos:'CDM', name:'Willock',    lastName:'Willock',    xP:62,yP:30, xL:77,yL:70,
     country:'英格兰', age:25, height:'183cm', foot:'右脚',
-    attrs:[{n:'速度',v:78},{n:'射门',v:38},{n:'传球',v:80},{n:'盘带',v:68},{n:'防守',v:85},{n:'体能',v:82}],
-    tags:['英格兰国脚','技术型中卫'], bio:'英格兰国脚中卫，从水晶宫加盟曼城。' },
-  { id:933845,  num:21, pos:'RB',  name:'Ait-Nouri',   lastName:'Ait-Nouri',  xP:82,yP:17, xL:86,yL:12,
-    country:'法国', age:24, height:'177cm', foot:'左脚',
-    attrs:[{n:'速度',v:90},{n:'射门',v:65},{n:'传球',v:78},{n:'盘带',v:80},{n:'防守',v:72},{n:'体能',v:86}],
-    tags:['速度飞车','法国新星'], bio:'法国左后卫本场作为右后卫出场。' },
-  { id:675088,  num:16, pos:'CDM', name:'Rodri',        lastName:'Rodri',      xP:50,yP:30, xL:77,yL:50,
-    country:'西班牙', age:29, height:'191cm', foot:'右脚',
-    attrs:[{n:'速度',v:72},{n:'射门',v:72},{n:'传球',v:92},{n:'盘带',v:82},{n:'防守',v:90},{n:'体能',v:88}],
-    tags:['金球奖得主','曼城大脑'], bio:'2024金球奖得主，传球精准度和防守覆盖均属世界顶级。' },
-  { id:933576,  num:42, pos:'RAM', name:'Semenyo',      lastName:'Semenyo',    xP:80,yP:40, xL:67,yL:79,
-    country:'加纳', age:25, height:'179cm', foot:'右脚',
-    attrs:[{n:'速度',v:88},{n:'射门',v:72},{n:'传球',v:68},{n:'盘带',v:80},{n:'防守',v:55},{n:'体能',v:84}],
-    tags:['加纳快翼','75分钟登场'], bio:'75分钟换上，为曼城增加速度冲击。' },
-  { id:488139,  num:20, pos:'CAM', name:'B.Silva',      lastName:'Silva',      xP:50,yP:40, xL:67,yL:50,
-    captain:true,
-    country:'葡萄牙', age:30, height:'173cm', foot:'右脚',
-    season:{goals:5, assists:10, rating:7.9},
-    attrs:[{n:'速度',v:78},{n:'射门',v:82},{n:'传球',v:90},{n:'盘带',v:88},{n:'防守',v:70},{n:'体能',v:82}],
-    tags:['曼城队长','31分钟进球','本场黄牌'], bio:'31分钟打进关键进球，37分钟领到黄牌。' },
-  { id:1300526, num:33, pos:'LAM', name:"O'Reilly",     lastName:"O'Reilly",   xP:20,yP:40, xL:67,yL:21,
-    country:'爱尔兰', age:21, height:'180cm', foot:'右脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:72},{n:'传球',v:82},{n:'盘带',v:80},{n:'防守',v:70},{n:'体能',v:84}],
-    tags:['曼城青训','爱尔兰新星'], bio:'曼城自家青训，21岁已站稳一队主力。' },
-  { id:737066,  num:9,  pos:'ST',  name:'Haaland',      lastName:'Haaland',    xP:50,yP:47, xL:58,yL:70,
-    country:'挪威', age:25, height:'194cm', foot:'左脚',
-    season:{goals:22, assists:4, rating:7.5},
-    attrs:[{n:'速度',v:88},{n:'射门',v:97},{n:'传球',v:65},{n:'盘带',v:72},{n:'防守',v:40},{n:'体能',v:92}],
-    tags:['进球机器','22球领跑射手榜'], bio:'本赛季已打入22球，联赛射手榜领跑。' },
-  { id:839204,  num:7,  pos:'CF',  name:'Marmoush',     lastName:'Marmoush',   xP:50,yP:53, xL:58,yL:30,
-    country:'埃及', age:26, height:'180cm', foot:'右脚',
-    season:{goals:12, assists:8},
-    attrs:[{n:'速度',v:84},{n:'射门',v:84},{n:'传球',v:75},{n:'盘带',v:82},{n:'防守',v:55},{n:'体能',v:85}],
-    tags:['11分钟进球','黄牌','埃及之王'], bio:'11分钟手球进球后立刻吃黄牌。' },
+    attrs:[{n:'速度',v:78},{n:'射门',v:68},{n:'传球',v:76},{n:'盘带',v:74},{n:'防守',v:78},{n:'体能',v:84}],
+    tags:['英格兰中场','77分换下'], bio:'77分钟被Burn换下，防守中场贡献稳定。' },
+  { id:1021929, num:41, pos:'CM',  name:'J.Ramsey',   lastName:'Ramsey',     xP:38,yP:30, xL:77,yL:30,
+    country:'英格兰', age:23, height:'178cm', foot:'右脚',
+    attrs:[{n:'速度',v:80},{n:'射门',v:70},{n:'传球',v:78},{n:'盘带',v:76},{n:'防守',v:72},{n:'体能',v:85}],
+    tags:['英格兰中场','前阿斯顿维拉'], bio:'来自维拉的英格兰中场，跑动积极。' },
+  { id:521148,  num:23, pos:'RAM', name:'J.Murphy',   lastName:'Murphy',     xP:80,yP:40, xL:67,yL:84,
+    country:'英格兰', age:29, height:'176cm', foot:'右脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:72},{n:'传球',v:70},{n:'盘带',v:76},{n:'防守',v:58},{n:'体能',v:82}],
+    tags:['右路边锋','78分换下'], bio:'78分钟被Elanga换下。' },
+  { id:1106563, num:27, pos:'CAM', name:'Woltemade',  lastName:'Woltemade',  xP:50,yP:40, xL:67,yL:50,
+    country:'德国', age:23, height:'197cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:75},{n:'传球',v:74},{n:'盘带',v:72},{n:'防守',v:55},{n:'体能',v:82}],
+    tags:['德国高中锋','创造力强','67分换下'], bio:'197cm高大中场，67分被Joelinton换下。' },
+  { id:760359,  num:11, pos:'LAM', name:'H.Barnes',   lastName:'Barnes',     xP:20,yP:40, xL:67,yL:16,
+    country:'英格兰', age:26, height:'175cm', foot:'右脚',
+    attrs:[{n:'速度',v:86},{n:'射门',v:74},{n:'传球',v:72},{n:'盘带',v:82},{n:'防守',v:54},{n:'体能',v:82}],
+    tags:['速度边锋','英格兰快马'], bio:'英格兰左翼，速度和突破是纽卡的利器。' },
+  { id:906937,  num:10, pos:'ST',  name:'Gordon',     lastName:'Gordon',     xP:50,yP:47, xL:58,yL:50,
+    country:'英格兰', age:23, height:'174cm', foot:'右脚',
+    season:{goals:15, assists:8, rating:8.2},
+    attrs:[{n:'速度',v:88},{n:'射门',v:82},{n:'传球',v:74},{n:'盘带',v:84},{n:'防守',v:58},{n:'体能',v:84}],
+    tags:['本场进球','18分钟头球','英格兰国脚'], bio:'18分钟头球破门，本场最大功臣，评分8.2。' },
 ];
 
-// 替补席：左侧bench-av=主场西汉姆，右侧bench-mu=客场曼城
-// 注意：MU_BENCH显示在bench-mu(左)，AV_BENCH显示在bench-av(右)
+// 替补：左侧=主场切尔西，右侧=客场纽卡斯尔
 const MU_BENCH = [
-  {num:27,name:'Magassa',      pos:'LW',  id:1385894, team:'whu'},
-  {num:17,name:'A.Traore',     pos:'LW',  id:493647,  team:'whu'},
-  {num:55,name:'M.Kante',      pos:'CM',  id:1529203, team:'whu'},
-  {num:23,name:'Areola',       pos:'GK',  id:210164,  team:'whu'},
-  {num:63,name:'Mayers',       pos:'CB',  id:1624950, team:'whu'},
-  {num:2, name:'Walker-Peters',pos:'RB',  id:734042,  team:'whu'},
-  {num:3, name:'Kilman',       pos:'CB',  id:865931,  team:'whu'},
-  {num:32,name:'Potts',        pos:'CM',  id:1206287, team:'whu'},
-  {num:9, name:'C.Wilson',     pos:'ST',  id:184321,  team:'whu'},
+  {num:9, name:'L.Delap',      pos:'ST',  id:1113903, team:'che'},
+  {num:45,name:'R.Lavia',      pos:'CM',  id:1190867, team:'che'},
+  {num:21,name:'J.Hato',       pos:'CB',  id:1413846, team:'che'},
+  {num:28,name:'Sharman-Lowe', pos:'GK',  id:1117871, team:'che'},
+  {num:5, name:'Badiashile',   pos:'CB',  id:955376,  team:'che'},
+  {num:19,name:'M.Sarr',       pos:'CB',  id:1426170, team:'che'},
+  {num:4, name:'Adarabioyo',   pos:'CB',  id:683402,  team:'che'},
+  {num:17,name:'A.Santos',     pos:'CM',  id:1372921, team:'che'},
+  {num:38,name:'M.Guiu',       pos:'ST',  id:1412137, team:'che'},
 ];
 
 const AV_BENCH = [
-  {num:11,name:'Doku',         pos:'LW',  id:942368,  team:'mc'},
-  {num:10,name:'Cherki',       pos:'CAM', id:1104053, team:'mc'},
-  {num:47,name:'Foden',        pos:'CAM', id:815006,  team:'mc'},
-  {num:4, name:'Reijnders',    pos:'CM',  id:868344,  team:'mc'},
-  {num:1, name:'Trafford',     pos:'GK',  id:1187213, team:'mc'},
-  {num:6, name:'Ake',          pos:'CB',  id:417068,  team:'mc'},
-  {num:3, name:'R.Dias',       pos:'CB',  id:614006,  team:'mc'},
-  {num:8, name:'Kovacic',      pos:'CM',  id:239219,  team:'mc'},
-  {num:14,name:'N.Gonzalez',   pos:'CM',  id:1280132, team:'mc'},
+  {num:7, name:'Joelinton',    pos:'CM',  id:535936,  team:'new'},
+  {num:33,name:'D.Burn',       pos:'CB',  id:188058,  team:'new'},
+  {num:20,name:'A.Elanga',     pos:'LW',  id:1050166, team:'new'},
+  {num:26,name:'J.Ruddy',      pos:'GK',  id:40602,   team:'new'},
+  {num:1, name:'N.Pope',       pos:'GK',  id:280484,  team:'new'},
+  {num:37,name:'A.Murphy',     pos:'CM',  id:1362341, team:'new'},
+  {num:2, name:'Trippier',     pos:'RB',  id:191869,  team:'new'},
+  {num:18,name:'W.Osula',      pos:'ST',  id:1258092, team:'new'},
+  {num:9, name:'Y.Wissa',      pos:'ST',  id:666857,  team:'new'},
 ];
+
 
 
 // 西汉姆(左) vs 曼城(右) — 数据来源：dasfootball.com/直播吧
 const STATS_DATA = [
-  {label:'控球率',      mu:'29%',  av:'71%',  muP:29, avP:71},
-  {label:'预期进球 xG', mu:'0.54', av:'1.87', muP:22, avP:78},
-  {label:'总射门',      mu:'1',    av:'24',   muP:4,  avP:96},
-  {label:'射正',        mu:'1',    av:'5',    muP:17, avP:83},
-  {label:'射偏',        mu:'0',    av:'11',   muP:0,  avP:100},
-  {label:'禁区内射门',  mu:'1',    av:'19',   muP:5,  avP:95},
-  {label:'角球',        mu:'1',    av:'15',   muP:6,  avP:94},
-  {label:'传球成功率',  mu:'74%',  av:'91%',  muP:45, avP:55},
-  {label:'总传球',      mu:'303',  av:'736',  muP:29, avP:71},
-  {label:'犯规',        mu:'14',   av:'5',    muP:74, avP:26},
-  {label:'越位',        mu:'3',    av:'2',    muP:60, avP:40},
+  {label:'控球率',      mu:'67%',  av:'33%',  muP:67, avP:33},
+  {label:'预期进球 xG', mu:'1.39', av:'1.41', muP:50, avP:50},
+  {label:'总射门',      mu:'22',   av:'7',    muP:76, avP:24},
+  {label:'射正',        mu:'3',    av:'5',    muP:38, avP:62},
+  {label:'大机会',      mu:'2',    av:'1',    muP:67, avP:33},
+  {label:'禁区内射门',  mu:'10',   av:'3',    muP:77, avP:23},
+  {label:'角球',        mu:'8',    av:'1',    muP:89, avP:11},
+  {label:'传球成功率',  mu:'92%',  av:'78%',  muP:54, avP:46},
+  {label:'总传球',      mu:'675',  av:'331',  muP:67, avP:33},
+  {label:'犯规',        mu:'9',    av:'10',   muP:47, avP:53},
+  {label:'越位',        mu:'0',    av:'0',    muP:50, avP:50},
   {label:'黄牌',        mu:'2',    av:'2',    muP:50, avP:50},
-  {label:'门将扑救',    mu:'4',    av:'0',    muP:100,avP:0},
+  {label:'门将扑救',    mu:'4',    av:'3',    muP:57, avP:43},
 ];
 
 // === SVG PITCH ===

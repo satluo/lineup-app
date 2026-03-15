@@ -409,115 +409,124 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 <script>
 const FOTMOB = 'https://images.fotmob.com/image_resources/playerimages/';
 
-// 主场(左) = 西汉姆，xL = FotMob horizontalLayout.x*100, yL = y*100
-// 客场(右) = 曼城，xL 镜像翻转 = 100 - fotmob_x*100
+// =====================================================
+// 坐标规则（横屏球场 16:9，主场左攻右，客场右攻左）
+// xL = fotmob_x * 48        (主场，左半场 5%~42%)
+// xL = 100 - fotmob_x * 48  (客场，右半场 58%~95%)
+// yL = fotmob_y * 100
+// 换比赛时同步更新：MU_PLAYERS(主场)、AV_PLAYERS(客场)、MU_BENCH、AV_BENCH
+// =====================================================
+
+// 主场：西汉姆联（左半场，3-4-3）
 const MU_PLAYERS = [
-  { id:967941,  num:1,  pos:'GK',  name:'Hermansen',   lastName:'Hermansen',  xP:50,yP:95, xL:10,yL:50,
+  { id:967941,  num:1,  pos:'GK',  name:'Hermansen',   lastName:'Hermansen',  xP:50,yP:95, xL:5, yL:50,
     country:'丹麦', age:25, height:'190cm', foot:'右脚',
     season:{rating:8.1},
     attrs:[{n:'速度',v:62},{n:'射门',v:22},{n:'传球',v:72},{n:'盘带',v:48},{n:'防守',v:84},{n:'体能',v:80}],
     tags:['本场评分8.1','4次扑救','本场最佳'], bio:'本场贡献4次扑救，是西汉姆能得到平局的最大功臣。' },
-  { id:955214,  num:25, pos:'CB',  name:'Todibo',       lastName:'Todibo',     xP:18,yP:83, xL:36,yL:79,
+  { id:955214,  num:25, pos:'CB',  name:'Todibo',       lastName:'Todibo',     xP:18,yP:83, xL:17,yL:79,
     country:'法国', age:26, height:'187cm', foot:'右脚',
     attrs:[{n:'速度',v:78},{n:'射门',v:40},{n:'传球',v:72},{n:'盘带',v:62},{n:'防守',v:83},{n:'体能',v:82}],
-    tags:['法国中卫','身体对抗强'], bio:'来自巴萨的法国中卫，本场出任三后卫中路。' },
-  { id:719219,  num:15, pos:'CB',  name:'Mavropanos',   lastName:'Mavropanos', xP:50,yP:83, xL:36,yL:50,
+    tags:['法国中卫','三中卫右路'], bio:'来自巴萨的法国中卫，本场出任三后卫右路。' },
+  { id:719219,  num:15, pos:'CB',  name:'Mavropanos',   lastName:'Mavropanos', xP:50,yP:83, xL:17,yL:50,
     country:'希腊', age:27, height:'193cm', foot:'右脚',
     season:{goals:2, rating:8.6},
     attrs:[{n:'速度',v:74},{n:'射门',v:58},{n:'传球',v:70},{n:'盘带',v:55},{n:'防守',v:83},{n:'体能',v:84}],
     tags:['进球中卫','本场英雄','角球神锋'], bio:'本场角球头球破门，评分8.6，拯救西汉姆。' },
-  { id:696646,  num:4,  pos:'CB',  name:'Disasi',       lastName:'Disasi',     xP:82,yP:83, xL:36,yL:21,
+  { id:696646,  num:4,  pos:'CB',  name:'Disasi',       lastName:'Disasi',     xP:82,yP:83, xL:17,yL:21,
     country:'法国', age:27, height:'185cm', foot:'右脚',
     attrs:[{n:'速度',v:78},{n:'射门',v:45},{n:'传球',v:72},{n:'盘带',v:60},{n:'防守',v:82},{n:'体能',v:83}],
-    tags:['法国中卫'], bio:'来自切尔西的法国中卫，与Mavropanos、Todibo组成三中卫。' },
-  { id:760320,  num:29, pos:'RWB', name:'Wan-Bissaka',  lastName:'Wan-Bissaka', xP:82,yP:70, xL:61,yL:88,
+    tags:['法国中卫','三中卫左路'], bio:'来自切尔西的法国中卫，三后卫左路。' },
+  { id:760320,  num:29, pos:'RWB', name:'Wan-Bissaka',  lastName:'Wan-Bissaka', xP:82,yP:70, xL:29,yL:88,
     country:'英格兰', age:27, height:'183cm', foot:'右脚',
     attrs:[{n:'速度',v:84},{n:'射门',v:48},{n:'传球',v:68},{n:'盘带',v:72},{n:'防守',v:84},{n:'体能',v:82}],
-    tags:['防守铁闸','前曼联球员'], bio:'前曼联右后卫，本场出任右翼卫，防守悍勇。' },
-  { id:524437,  num:28, pos:'CM',  name:'Souček',       lastName:'Souček',     xP:38,yP:71, xL:61,yL:62,
+    tags:['防守铁闸','前曼联球员'], bio:'前曼联右后卫，本场出任右翼卫。' },
+  { id:524437,  num:28, pos:'CM',  name:'Souček',       lastName:'Souček',     xP:38,yP:71, xL:29,yL:62,
     country:'捷克', age:31, height:'193cm', foot:'右脚',
     attrs:[{n:'速度',v:72},{n:'射门',v:70},{n:'传球',v:78},{n:'盘带',v:65},{n:'防守',v:82},{n:'体能',v:88}],
     tags:['空中霸主','跑不死','捷克核心'], bio:'捷克国脚，本场跑动距离全场第一。' },
-  { id:1356312, num:18, pos:'CM',  name:'Fernandes',    lastName:'Fernandes',  xP:62,yP:71, xL:61,yL:38,
+  { id:1356312, num:18, pos:'CM',  name:'Fernandes',    lastName:'Fernandes',  xP:62,yP:71, xL:29,yL:38,
     country:'葡萄牙', age:25, height:'179cm', foot:'右脚',
     attrs:[{n:'速度',v:80},{n:'射门',v:72},{n:'传球',v:80},{n:'盘带',v:78},{n:'防守',v:68},{n:'体能',v:82}],
     tags:['葡萄牙中场','89分钟黄牌'], bio:'89分钟领到黄牌，影响西汉姆最后反扑。' },
-  { id:1451265, num:12, pos:'LWB', name:'M.Diouf',      lastName:'Diouf',      xP:18,yP:70, xL:61,yL:12,
+  { id:1451265, num:12, pos:'LWB', name:'M.Diouf',      lastName:'Diouf',      xP:18,yP:70, xL:29,yL:12,
     country:'塞内加尔', age:23, height:'184cm', foot:'右脚',
     attrs:[{n:'速度',v:86},{n:'射门',v:60},{n:'传球',v:74},{n:'盘带',v:75},{n:'防守',v:72},{n:'体能',v:85}],
     tags:['速度飞车','塞内加尔新星'], bio:'速度出众的年轻翼卫，进攻端积极。' },
-  { id:523825,  num:20, pos:'RW',  name:'Bowen',        lastName:'Bowen',      xP:80,yP:60, xL:87,yL:79,
+  { id:523825,  num:20, pos:'RW',  name:'Bowen',        lastName:'Bowen',      xP:80,yP:60, xL:42,yL:79,
     captain:true,
     country:'英格兰', age:28, height:'175cm', foot:'右脚',
     season:{goals:8, assists:9, rating:7.0},
     attrs:[{n:'速度',v:84},{n:'射门',v:80},{n:'传球',v:78},{n:'盘带',v:82},{n:'防守',v:62},{n:'体能',v:84}],
     tags:['西汉姆队长','英格兰国脚'], bio:'西汉姆队长，全场参与进攻，90+6分钟被换下。' },
-  { id:823658,  num:11, pos:'ST',  name:'Castellanos',  lastName:'Castellanos',xP:50,yP:53, xL:87,yL:50,
+  { id:823658,  num:11, pos:'ST',  name:'Castellanos',  lastName:'Castellanos',xP:50,yP:53, xL:42,yL:50,
     country:'阿根廷', age:26, height:'183cm', foot:'右脚',
     attrs:[{n:'速度',v:80},{n:'射门',v:78},{n:'传球',v:65},{n:'盘带',v:70},{n:'防守',v:45},{n:'体能',v:82}],
     tags:['阿根廷前锋'], bio:'西汉姆锋线核心，本场首发出击。' },
-  { id:1227326, num:19, pos:'LW',  name:'Pablo',        lastName:'Pablo',      xP:20,yP:60, xL:87,yL:21,
+  { id:1227326, num:19, pos:'LW',  name:'Pablo',        lastName:'Pablo',      xP:20,yP:60, xL:42,yL:21,
     country:'巴西', age:24, height:'176cm', foot:'右脚',
     attrs:[{n:'速度',v:82},{n:'射门',v:72},{n:'传球',v:70},{n:'盘带',v:78},{n:'防守',v:55},{n:'体能',v:80}],
-    tags:['巴西边锋'], bio:'巴西年轻边锋，速度出色，提供侧翼冲击力。' },
+    tags:['巴西边锋'], bio:'巴西年轻边锋，速度出色。' },
 ];
 
-// 客场(右) 曼城 — xL = 100 - fotmob_x*100 (镜像), yL = y*100
+// 客场：曼城（右半场，4-1-2-3）
 const AV_PLAYERS = [
-  { id:618878,  num:25, pos:'GK',  name:'Donnarumma',  lastName:'Donnarumma', xP:50,yP:5,  xL:90,yL:50,
+  { id:618878,  num:25, pos:'GK',  name:'Donnarumma',  lastName:'Donnarumma', xP:50,yP:5,  xL:95,yL:50,
     country:'意大利', age:26, height:'196cm', foot:'左脚',
     attrs:[{n:'速度',v:58},{n:'射门',v:20},{n:'传球',v:75},{n:'盘带',v:50},{n:'防守',v:90},{n:'体能',v:82}],
     tags:['世界顶级门将','196cm身高'], bio:'意大利国门，本场0失球。' },
-  { id:955529,  num:27, pos:'LB',  name:'M.Nunes',     lastName:'Nunes',      xP:18,yP:17, xL:71,yL:88,
+  { id:955529,  num:27, pos:'LB',  name:'M.Nunes',     lastName:'Nunes',      xP:18,yP:17, xL:86,yL:88,
     country:'葡萄牙', age:27, height:'178cm', foot:'右脚',
     attrs:[{n:'速度',v:85},{n:'射门',v:62},{n:'传球',v:80},{n:'盘带',v:78},{n:'防守',v:74},{n:'体能',v:85}],
     tags:['全能球员','葡萄牙国脚'], bio:'葡萄牙全能球员，本场客串左后卫。' },
-  { id:1362998, num:45, pos:'CB',  name:'Khusanov',    lastName:'Khusanov',   xP:36,yP:17, xL:71,yL:62,
+  { id:1362998, num:45, pos:'CB',  name:'Khusanov',    lastName:'Khusanov',   xP:36,yP:17, xL:86,yL:62,
     country:'乌兹别克斯坦', age:23, height:'186cm', foot:'右脚',
     attrs:[{n:'速度',v:80},{n:'射门',v:35},{n:'传球',v:72},{n:'盘带',v:60},{n:'防守',v:82},{n:'体能',v:84}],
     tags:['乌兹别克新星','强壮中卫'], bio:'来自朗斯的乌兹别克斯坦中卫，年轻有力。' },
-  { id:844425,  num:15, pos:'CB',  name:'Guéhi',       lastName:'Guéhi',      xP:64,yP:17, xL:71,yL:38,
+  { id:844425,  num:15, pos:'CB',  name:'Guéhi',       lastName:'Guéhi',      xP:64,yP:17, xL:86,yL:38,
     country:'英格兰', age:25, height:'183cm', foot:'右脚',
     attrs:[{n:'速度',v:78},{n:'射门',v:38},{n:'传球',v:80},{n:'盘带',v:68},{n:'防守',v:85},{n:'体能',v:82}],
     tags:['英格兰国脚','技术型中卫'], bio:'英格兰国脚中卫，从水晶宫加盟曼城。' },
-  { id:933845,  num:21, pos:'RB',  name:'Aït-Nouri',   lastName:'Aït-Nouri',  xP:82,yP:17, xL:71,yL:12,
+  { id:933845,  num:21, pos:'RB',  name:'Ait-Nouri',   lastName:'Ait-Nouri',  xP:82,yP:17, xL:86,yL:12,
     country:'法国', age:24, height:'177cm', foot:'左脚',
     attrs:[{n:'速度',v:90},{n:'射门',v:65},{n:'传球',v:78},{n:'盘带',v:80},{n:'防守',v:72},{n:'体能',v:86}],
-    tags:['速度飞车','法国新星'], bio:'法国左后卫本场作为右后卫出场，覆盖侧翼。' },
-  { id:675088,  num:16, pos:'CDM', name:'Rodri',        lastName:'Rodri',      xP:50,yP:30, xL:52,yL:50,
+    tags:['速度飞车','法国新星'], bio:'法国左后卫本场作为右后卫出场。' },
+  { id:675088,  num:16, pos:'CDM', name:'Rodri',        lastName:'Rodri',      xP:50,yP:30, xL:77,yL:50,
     country:'西班牙', age:29, height:'191cm', foot:'右脚',
     attrs:[{n:'速度',v:72},{n:'射门',v:72},{n:'传球',v:92},{n:'盘带',v:82},{n:'防守',v:90},{n:'体能',v:88}],
     tags:['金球奖得主','曼城大脑'], bio:'2024金球奖得主，传球精准度和防守覆盖均属世界顶级。' },
-  { id:933576,  num:42, pos:'RAM', name:'Semenyo',      lastName:'Semenyo',    xP:80,yP:40, xL:32,yL:79,
+  { id:933576,  num:42, pos:'RAM', name:'Semenyo',      lastName:'Semenyo',    xP:80,yP:40, xL:67,yL:79,
     country:'加纳', age:25, height:'179cm', foot:'右脚',
     attrs:[{n:'速度',v:88},{n:'射门',v:72},{n:'传球',v:68},{n:'盘带',v:80},{n:'防守',v:55},{n:'体能',v:84}],
-    tags:['加纳快翼','75分钟登场'], bio:'75分钟换上，为曼城右路增加速度冲击。' },
-  { id:488139,  num:20, pos:'CAM', name:'B.Silva',      lastName:'Silva',      xP:50,yP:40, xL:32,yL:50,
+    tags:['加纳快翼','75分钟登场'], bio:'75分钟换上，为曼城增加速度冲击。' },
+  { id:488139,  num:20, pos:'CAM', name:'B.Silva',      lastName:'Silva',      xP:50,yP:40, xL:67,yL:50,
     captain:true,
     country:'葡萄牙', age:30, height:'173cm', foot:'右脚',
     season:{goals:5, assists:10, rating:7.9},
     attrs:[{n:'速度',v:78},{n:'射门',v:82},{n:'传球',v:90},{n:'盘带',v:88},{n:'防守',v:70},{n:'体能',v:82}],
     tags:['曼城队长','31分钟进球','本场黄牌'], bio:'31分钟打进关键进球，37分钟领到黄牌。' },
-  { id:1300526, num:33, pos:'LAM', name:"O'Reilly",     lastName:"O'Reilly",   xP:20,yP:40, xL:32,yL:21,
+  { id:1300526, num:33, pos:'LAM', name:"O'Reilly",     lastName:"O'Reilly",   xP:20,yP:40, xL:67,yL:21,
     country:'爱尔兰', age:21, height:'180cm', foot:'右脚',
     attrs:[{n:'速度',v:80},{n:'射门',v:72},{n:'传球',v:82},{n:'盘带',v:80},{n:'防守',v:70},{n:'体能',v:84}],
     tags:['曼城青训','爱尔兰新星'], bio:'曼城自家青训，21岁已站稳一队主力。' },
-  { id:737066,  num:9,  pos:'ST',  name:'Haaland',      lastName:'Haaland',    xP:50,yP:47, xL:13,yL:70,
+  { id:737066,  num:9,  pos:'ST',  name:'Haaland',      lastName:'Haaland',    xP:50,yP:47, xL:58,yL:70,
     country:'挪威', age:25, height:'194cm', foot:'左脚',
     season:{goals:22, assists:4, rating:7.5},
     attrs:[{n:'速度',v:88},{n:'射门',v:97},{n:'传球',v:65},{n:'盘带',v:72},{n:'防守',v:40},{n:'体能',v:92}],
     tags:['进球机器','22球领跑射手榜'], bio:'本赛季已打入22球，联赛射手榜领跑。' },
-  { id:839204,  num:7,  pos:'CF',  name:'Marmoush',     lastName:'Marmoush',   xP:50,yP:53, xL:13,yL:30,
+  { id:839204,  num:7,  pos:'CF',  name:'Marmoush',     lastName:'Marmoush',   xP:50,yP:53, xL:58,yL:30,
     country:'埃及', age:26, height:'180cm', foot:'右脚',
     season:{goals:12, assists:8},
     attrs:[{n:'速度',v:84},{n:'射门',v:84},{n:'传球',v:75},{n:'盘带',v:82},{n:'防守',v:55},{n:'体能',v:85}],
-    tags:['11分钟进球','黄牌','埃及之王'], bio:'11分钟手球进球后立刻吃黄牌，本场表现复杂。' },
+    tags:['11分钟进球','黄牌','埃及之王'], bio:'11分钟手球进球后立刻吃黄牌。' },
 ];
 
-const MU_BENCH = [  // 西汉姆替补（真实FotMob ID）
+// 替补席：左侧bench-av=主场西汉姆，右侧bench-mu=客场曼城
+// 注意：MU_BENCH显示在bench-mu(左)，AV_BENCH显示在bench-av(右)
+const MU_BENCH = [
   {num:27,name:'Magassa',      pos:'LW',  id:1385894, team:'whu'},
-  {num:17,name:'A.Traoré',     pos:'LW',  id:493647,  team:'whu'},
-  {num:55,name:'M.Kanté',      pos:'CM',  id:1529203, team:'whu'},
+  {num:17,name:'A.Traore',     pos:'LW',  id:493647,  team:'whu'},
+  {num:55,name:'M.Kante',      pos:'CM',  id:1529203, team:'whu'},
   {num:23,name:'Areola',       pos:'GK',  id:210164,  team:'whu'},
   {num:63,name:'Mayers',       pos:'CB',  id:1624950, team:'whu'},
   {num:2, name:'Walker-Peters',pos:'RB',  id:734042,  team:'whu'},
@@ -526,17 +535,18 @@ const MU_BENCH = [  // 西汉姆替补（真实FotMob ID）
   {num:9, name:'C.Wilson',     pos:'ST',  id:184321,  team:'whu'},
 ];
 
-const AV_BENCH = [  // 曼城替补（真实FotMob ID）
+const AV_BENCH = [
   {num:11,name:'Doku',         pos:'LW',  id:942368,  team:'mc'},
   {num:10,name:'Cherki',       pos:'CAM', id:1104053, team:'mc'},
   {num:47,name:'Foden',        pos:'CAM', id:815006,  team:'mc'},
   {num:4, name:'Reijnders',    pos:'CM',  id:868344,  team:'mc'},
   {num:1, name:'Trafford',     pos:'GK',  id:1187213, team:'mc'},
-  {num:6, name:'Aké',          pos:'CB',  id:417068,  team:'mc'},
+  {num:6, name:'Ake',          pos:'CB',  id:417068,  team:'mc'},
   {num:3, name:'R.Dias',       pos:'CB',  id:614006,  team:'mc'},
   {num:8, name:'Kovacic',      pos:'CM',  id:239219,  team:'mc'},
-  {num:14,name:'N.González',   pos:'CM',  id:1280132, team:'mc'},
+  {num:14,name:'N.Gonzalez',   pos:'CM',  id:1280132, team:'mc'},
 ];
+
 
 // 西汉姆(左) vs 曼城(右) — 数据来源：dasfootball.com/直播吧
 const STATS_DATA = [

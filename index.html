@@ -7,8 +7,8 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 :root {
-  --mu-red:#e06055; --av-claret:#c0406a; --av-main:#95003C;
-  --whu-main:#034694; --mc-main:#cccccc;
+  --mu-red:#ff6b5b; --av-claret:#7ab8e8; --av-main:#3E7FBB;
+  --whu-main:#DA291C; --mc-main:#3E7FBB;
   --bg:#0d1117; --card-bg:#161b22; --border:#30363d;
   --text:#e6edf3; --text-muted:#8b949e; --accent:#58a6ff;
 }
@@ -23,7 +23,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .team-badge { width:44px; height:44px; border-radius:50%; display:flex; align-items:center; justify-content:center; overflow:hidden; background:rgba(255,255,255,0.08); }
 .team-badge img { width:36px; height:36px; object-fit:contain; display:block; }
 .team-badge.mu { box-shadow:0 0 15px rgba(218,41,28,0.5); }
-.team-badge.av { box-shadow:0 0 15px rgba(149,0,50,0.4); }
+.team-badge.av { box-shadow:0 0 15px rgba(62,127,187,0.5); }
 .team-name { font-size:12px; font-weight:700; text-align:center; }
 .score-display { display:flex; flex-direction:column; align-items:center; gap:4px; }
 .score-numbers { display:flex; align-items:center; gap:8px; }
@@ -83,8 +83,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .bench-title { font-size:10px; font-weight:700; color:var(--text-muted); letter-spacing:1px; text-transform:uppercase; margin-bottom:6px; }
 .bench-row-wrap { display:flex; align-items:flex-start; gap:6px; }
 .bench-row-label { font-size:9px; font-weight:700; padding-top:8px; min-width:36px; flex-shrink:0; }
-.bench-row-label.whu { color:#e06055; }
-.bench-row-label.mc { color:#c0406a; }
+.bench-row-label.whu { color:#ff6b5b; }
+.bench-row-label.mc { color:#7ab8e8; }
 .bench-card { display:inline-flex; flex-direction:column; align-items:center; cursor:pointer; padding:4px 6px; border-radius:8px; background:rgba(255,255,255,0.04); border:1px solid transparent; transition:all 0.2s; min-width:50px; }
 .bench-card:hover { background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.12); }
 .bench-avatar-wrap { position:relative; width:32px; height:32px; margin-bottom:3px; }
@@ -111,7 +111,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .stat-val.av { color:#fff; text-align:left; }
 .stat-bar-track { flex:1; height:5px; background:rgba(255,255,255,0.08); border-radius:3px; display:flex; position:relative; }
 .stat-bar-mu { height:100%; background:linear-gradient(90deg,#DA291C,#e05a50); border-radius:3px 0 0 3px; }
-.stat-bar-av { height:100%; background:linear-gradient(90deg,#95003C,#c0406a); border-radius:0 3px 3px 0; }
+.stat-bar-av { height:100%; background:linear-gradient(90deg,#3E7FBB,#5a9fd4); border-radius:0 3px 3px 0; }
 .stat-divider { width:1px; height:14px; background:rgba(255,255,255,0.2); position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
 
 /* EVENTS PANEL */
@@ -128,8 +128,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 /* STATS SCORE */
 .stats-score-row { display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:2px; }
 .stats-score-num { font-size:28px; font-weight:900; }
-.stats-score-num.whu { color:#e06055; }
-.stats-score-num.mc { color:#c0406a; }
+.stats-score-num.whu { color:#ff6b5b; }
+.stats-score-num.mc { color:#7ab8e8; }
 .stats-score-divider { font-size:20px; color:var(--text-muted); font-weight:300; }
 .stats-score-teams { display:flex; justify-content:space-between; font-size:10px; font-weight:700; margin-bottom:10px; padding:0 4px; }
 
@@ -260,10 +260,10 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="pitch" id="pitch">
           <svg class="pitch-markings" id="pitch-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
           <div id="label-mu" class="team-label-banner top">
-            <div class="team-label-pill" style="color:#e06055;border:1px solid rgba(218,41,28,0.6);">曼联 · 4-2-3-1</div>
+            <div class="team-label-pill" style="color:#ff6b5b;border:1px solid rgba(218,41,28,0.6);">曼联 · 4-2-3-1</div>
           </div>
           <div id="label-av" class="team-label-banner bottom">
-            <div class="team-label-pill" style="color:#c0406a;border:1px solid rgba(149,0,50,0.6);">维拉 · 4-2-3-1</div>
+            <div class="team-label-pill" style="color:#7ab8e8;border:1px solid rgba(62,127,187,0.6);">维拉 · 4-2-3-1</div>
           </div>
           <div class="players-layer" id="players-layer"></div>
         </div>
@@ -273,14 +273,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <div class="bench-split">
           <!-- 主场西汉姆替补：左侧 -->
           <div class="bench-half bench-half-mu">
-            <div class="bench-half-label" style="color:#e06055">曼联 替补</div>
+            <div class="bench-half-label" style="color:#ff6b5b">曼联 替补</div>
             <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
           <!-- 中场分隔线 -->
           <div class="bench-divider"></div>
           <!-- 客场曼城替补：右侧 -->
           <div class="bench-half bench-half-av">
-            <div class="bench-half-label" style="color:#c0406a">维拉 替补</div>
+            <div class="bench-half-label" style="color:#7ab8e8">维拉 替补</div>
             <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
           </div>
         </div>
@@ -299,14 +299,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
           <span class="stats-score-num mc" id="stats-score-av">0</span>
         </div>
         <div class="stats-score-teams">
-          <span style="color:#e06055">曼联</span>
+          <span style="color:#ff6b5b">曼联</span>
           <span id="stats-status-text" style="color:var(--text-muted)">-</span>
-          <span style="color:#c0406a">维拉</span>
+          <span style="color:#7ab8e8">维拉</span>
         </div>
         <div style="font-size:9px;color:var(--text-muted);margin-bottom:6px;text-align:center">数据来源：直播吧 / dasfootball.com</div>
         <div class="stats-header-row">
-          <span class="stats-team-name mu" style="color:#e06055">曼联</span>
-          <span class="stats-team-name av" style="color:#c0406a">维拉</span>
+          <span class="stats-team-name mu" style="color:#ff6b5b">曼联</span>
+          <span class="stats-team-name av" style="color:#7ab8e8">维拉</span>
         </div>
         <div id="stats-rows"></div>
       </div>
@@ -618,9 +618,9 @@ function makeFallback(id, num, color, lighter) {
 function renderPlayer(p, team, ls) {
   const ismu = team==='mu';
   // mu = 西汉姆 (red/claret), av = 曼城 (sky blue)
-  const color = ismu?'#DA291C':'#95003C';
-  const lighter = ismu?'#e05a50':'#c0406a';
-  const ring = ismu?'#6ea8e8':'#cccccc';
+  const color = ismu?'#DA291C':'#3E7FBB';
+  const lighter = ismu?'#e05a50':'#5a9fd4';
+  const ring = ismu?'#ff6b5b':'#7ab8e8';
   const x = ls ? p.xL : p.xP, y = ls ? p.yL : p.yP;
   const fb = makeFallback(p.id+'_'+p.num, p.num, color, lighter);
 
@@ -679,7 +679,7 @@ function renderPitch() {
 // === BENCH ===
 function renderBench() {
   function makeCard(p, teamColor, ringColor) {
-    const lighter = teamColor === '#DA291C' ? '#e05a50' : '#c0406a';
+    const lighter = teamColor === '#DA291C' ? '#e05a50' : '#5a9fd4';
     const fb = `<div class="bench-avatar-fb" id="bfb-${p.id}">
       <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
         <defs><radialGradient id="brg-${p.id}" cx="40%" cy="35%" r="65%">
@@ -706,8 +706,8 @@ function renderBench() {
   const muEl = document.getElementById('bench-mu');
   const avEl = document.getElementById('bench-av');
   muEl.innerHTML = ''; avEl.innerHTML = '';
-  MU_BENCH.forEach(p => muEl.appendChild(makeCard(p, '#DA291C', '#e06055')));
-  AV_BENCH.forEach(p => avEl.appendChild(makeCard(p, '#241F20', '#cccccc')));
+  MU_BENCH.forEach(p => muEl.appendChild(makeCard(p, '#DA291C', '#ff6b5b')));
+  AV_BENCH.forEach(p => avEl.appendChild(makeCard(p, '#3E7FBB', '#7ab8e8')));
 }
 
 function openBenchModal(p, teamColor, ringColor) {
@@ -744,10 +744,10 @@ function getAttrColor(v) {
 function openModal(p, team) {
   const ismu = team==='mu';
   // mu = 西汉姆, av = 曼城
-  const color = ismu?'#DA291C':'#95003C';
-  const lighter = ismu?'#e05a50':'#c0406a';
-  const ring = ismu?'#6ea8e8':'#cccccc';
-  const initBg = ismu?'#6a1010':'#3a0018';
+  const color = ismu?'#DA291C':'#3E7FBB';
+  const lighter = ismu?'#e05a50':'#5a9fd4';
+  const ring = ismu?'#ff6b5b':'#7ab8e8';
+  const initBg = ismu?'#6a1010':'#1a3a5c';
 
   const radarHtml = p.attrs && p.attrs.length===6 ?
     `<div class="section-title">能力雷达</div><div class="radar-wrap">${drawRadar(p.attrs, ring)}</div>` : '';
@@ -861,13 +861,13 @@ function renderEvents(events) {
     const isRed = card==='Red';
     const cardIcon = isRed?'🟥':'🟨';
     const finalIcon = e.type==='Card' ? cardIcon : icon;
-    const ring = e.isHome ? '#e06055' : '#c0406a';
+    const ring = e.isHome ? '#ff6b5b' : '#7ab8e8';
     const swap = e.swap;
     let desc = '';
     if(swap && Array.isArray(swap) && swap.length>=2) desc = `↑${swap[0].name} ↓${swap[1].name}`;
     else if(player) desc = player;
-    const left = e.isHome ? `<div class="tl-player" style="color:#e06055">${desc}</div>` : `<div class="tl-empty">-</div>`;
-    const right = !e.isHome ? `<div class="tl-player" style="color:#c0406a">${desc}</div>` : `<div class="tl-empty">-</div>`;
+    const left = e.isHome ? `<div class="tl-player" style="color:#ff6b5b">${desc}</div>` : `<div class="tl-empty">-</div>`;
+    const right = !e.isHome ? `<div class="tl-player" style="color:#7ab8e8">${desc}</div>` : `<div class="tl-empty">-</div>`;
     return `<div class="tl-item">
       <div class="tl-left">${left}</div>
       <div class="tl-center"><div class="tl-time">${ts}</div><div class="tl-dot" style="border-color:${ring}"></div><div class="tl-icon">${finalIcon}</div></div>
@@ -908,9 +908,9 @@ function renderStats(data) {
     <div class="stat-row">
       <div class="stat-row-label">${s.label}</div>
       <div class="stat-row-values">
-        <span class="stat-val-left" style="color:#e06055">${s.mu}</span>
+        <span class="stat-val-left" style="color:#ff6b5b">${s.mu}</span>
         <div class="stat-bar-track"><div class="stat-bar-mu" style="width:${s.muP}%"></div><div class="stat-bar-av" style="width:${s.avP}%"></div></div>
-        <span class="stat-val-right" style="color:#c0406a">${s.av}</span>
+        <span class="stat-val-right" style="color:#7ab8e8">${s.av}</span>
       </div>
     </div>`).join('');
 }

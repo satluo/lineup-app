@@ -257,47 +257,44 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
 .bio-text { font-size:13px; line-height:1.7; color:var(--text-2); background:var(--surface-2); border-radius:var(--r-md); padding:11px; border-left:2px solid; margin-bottom:12px; }
 
 /* PREVIEW PANEL */
-.preview-panel-inner { padding:20px 16px; }
-.preview-section { margin-bottom:28px; }
+.preview-panel-inner { padding:24px 20px; }
+.preview-section { margin-bottom:32px; }
 .preview-section:last-child { margin-bottom:0; }
 .preview-section-title {
-  font-size:13px; font-weight:600; color:var(--text-1);
-  margin-bottom:16px; letter-spacing:-0.2px;
+  font-size:11px; font-weight:400; color:var(--text-3);
+  margin-bottom:14px; letter-spacing:0.5px;
 }
 
-/* Form — 双列 */
-.form-block { margin-bottom:16px; }
-.form-team-row { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
-.form-team-name { font-size:12px; font-weight:600; min-width:50px; }
-.form-badges { display:flex; gap:3px; align-items:center; flex:1; }
+/* Form */
+.form-block { }
+.form-team-row { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
+.form-team-row:last-child { margin-bottom:0; }
+.form-team-name { font-size:14px; font-weight:600; min-width:36px; color:var(--text-1); }
+.form-badges { display:flex; gap:4px; align-items:center; flex:1; }
 .form-badge {
-  flex:1; aspect-ratio:1; max-width:32px;
+  width:28px; height:28px;
   display:inline-flex; align-items:center; justify-content:center;
-  border-radius:4px; font-size:11px; font-weight:600;
+  border-radius:6px; font-size:12px; font-weight:600;
   font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px;
 }
 .form-w { background:rgba(60,181,105,0.15); color:#3cb569; }
-.form-d { background:rgba(255,255,255,0.06); color:var(--text-3); }
+.form-d { background:rgba(255,255,255,0.05); color:var(--text-3); }
 .form-l { background:rgba(232,64,42,0.1); color:var(--home); }
 .form-record {
-  font-size:12px; color:var(--text-2); min-width:60px; text-align:right;
-  font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px;
+  font-size:13px; color:var(--text-3); min-width:44px; text-align:right;
+  font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px; font-weight:500;
 }
 
 /* Key items */
-.key-item {
-  padding:12px 0;
-  border-bottom:1px solid var(--divider);
-}
-.key-item:first-child { padding-top:0; }
-.key-item:last-child { border-bottom:none; padding-bottom:0; }
-.key-text { font-size:13px; color:var(--text-2); line-height:1.7; }
+.key-item { padding:10px 0; }
+.key-item + .key-item { border-top:1px solid var(--divider); }
+.key-text { font-size:14px; color:var(--text-2); line-height:1.8; font-weight:400; }
 
 /* Changes */
-.changes-block { margin-bottom:12px; }
+.changes-block { margin-bottom:14px; }
 .changes-block:last-child { margin-bottom:0; }
-.changes-label { font-size:11px; font-weight:600; margin-bottom:6px; }
-.changes-item { font-size:12px; color:var(--text-3); line-height:1.8; padding-left:2px; }
+.changes-label { font-size:14px; font-weight:600; margin-bottom:6px; color:var(--text-1); }
+.changes-item { font-size:13px; color:var(--text-3); line-height:1.8; }
 
 /* Spotlight (unused currently but keep) */
 .spotlight-card { display:flex; align-items:center; gap:10px; padding:8px 10px; background:var(--surface-2); border-radius:var(--r-md); margin-bottom:6px; cursor:pointer; border:1px solid var(--divider); transition:all 0.2s; }
@@ -340,7 +337,8 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
   .tab-content { display:block !important; }
   #tab-lineup { display:flex !important; flex-direction:column; flex:1; min-height:0; }
   .main-layout { display:flex; flex:1; gap:0; overflow:hidden; height:100vh; }
-  .left-col { flex:0 0 78%; display:flex; flex-direction:column; overflow:hidden; border-right:1px solid var(--divider); }
+  .left-col { flex:0 0 78%; display:flex; flex-direction:column; overflow:hidden; position:relative; }
+  .left-col::after { content:''; position:absolute; top:0; right:0; bottom:0; width:1px; background:linear-gradient(180deg, transparent 0%, var(--divider) 20%, var(--divider) 80%, transparent 100%); }
   .right-col { flex:0 0 22%; display:flex; flex-direction:column; overflow-y:auto; }
   /* 横屏：header 移入左栏顶部 */
   .match-header-ls { display:block; border-bottom:1px solid var(--divider); flex-shrink:0; }
@@ -1448,19 +1446,19 @@ function renderPreviewPanel() {
     if (r==='D') return `<span class="form-badge form-d">D</span>`;
     return `<span class="form-badge form-l">L</span>`;
   }
-  function formTeamRow(d, color, name) {
+  function formTeamRow(d, name) {
     const w = d.results.filter(r=>r==='W').length;
     const dr = d.results.filter(r=>r==='D').length;
     const l = d.results.filter(r=>r==='L').length;
     return `<div class="form-team-row">
-      <div class="form-team-name" style="color:${color}">${name}</div>
+      <div class="form-team-name">${name}</div>
       <div class="form-badges">${d.results.map(formDot).join('')}</div>
-      <div class="form-record">${w}W ${dr}D ${l}L</div>
+      <div class="form-record">${w}胜${dr}平${l}负</div>
     </div>`;
   }
   const formHtml =
-    formTeamRow(PREVIEW_DATA.form.mu, 'var(--home)', '曼联') +
-    formTeamRow(PREVIEW_DATA.form.av, 'var(--away)', '维拉');
+    formTeamRow(PREVIEW_DATA.form.mu, '曼联') +
+    formTeamRow(PREVIEW_DATA.form.av, '维拉');
 
   // === 关键变量 ===
   const keysHtml = PREVIEW_DATA.keys.map(k =>
@@ -1468,27 +1466,27 @@ function renderPreviewPanel() {
   ).join('');
 
   // === 阵容变化 ===
-  function changesBlock(name, color, items) {
+  function changesBlock(name, items) {
     return `<div class="changes-block">
-      <div class="changes-label" style="color:${color}">${name}</div>
+      <div class="changes-label">${name}</div>
       ${items.map(t=>`<div class="changes-item">${t}</div>`).join('')}
     </div>`;
   }
   const changesHtml =
-    changesBlock('曼联', 'var(--home)', PREVIEW_DATA.changes.mu) +
-    changesBlock('维拉', 'var(--away)', PREVIEW_DATA.changes.av);
+    changesBlock('曼联', PREVIEW_DATA.changes.mu) +
+    changesBlock('维拉', PREVIEW_DATA.changes.av);
 
   el.innerHTML = `<div class="preview-panel-inner">
     <div class="preview-section">
-      <div class="preview-section-title">Form</div>
+      <div class="preview-section-title">近5场状态</div>
       <div class="form-block">${formHtml}</div>
     </div>
     <div class="preview-section">
-      <div class="preview-section-title">Key Matchups</div>
+      <div class="preview-section-title">赛前看点</div>
       ${keysHtml}
     </div>
     <div class="preview-section">
-      <div class="preview-section-title">Lineup Changes</div>
+      <div class="preview-section-title">阵容变化</div>
       ${changesHtml}
     </div>
   </div>`;

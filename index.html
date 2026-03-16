@@ -257,8 +257,30 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
 .bio-text { font-size:13px; line-height:1.7; color:var(--text-2); background:var(--surface-2); border-radius:var(--r-md); padding:11px; border-left:2px solid; margin-bottom:12px; }
 
 /* PREVIEW PANEL */
-.preview-section { margin-bottom:14px; }
-.preview-section-title { font-size:9px; font-weight:500; color:var(--text-3); letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; padding-left:8px; border-left:1px solid var(--text-3); }
+.preview-section { margin-bottom:16px; }
+.preview-section-title { font-size:9px; font-weight:500; color:var(--text-3); letter-spacing:1.2px; text-transform:uppercase; margin-bottom:10px; padding-left:8px; border-left:1px solid var(--text-3); }
+
+/* Form badges */
+.form-row { margin-bottom:10px; }
+.form-label { font-size:9px; font-weight:500; color:var(--text-3); margin-bottom:5px; letter-spacing:0.5px; text-transform:uppercase; }
+.form-badges { display:flex; gap:4px; align-items:center; margin-bottom:4px; }
+.form-badge { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:4px; font-size:9px; font-weight:600; font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px; }
+.form-w { background:rgba(60,181,105,0.15); color:#3cb569; border:1px solid rgba(60,181,105,0.25); }
+.form-d { background:rgba(255,255,255,0.06); color:var(--text-2); border:1px solid var(--divider); }
+.form-l { background:rgba(232,64,42,0.12); color:#e8402a; border:1px solid rgba(232,64,42,0.2); }
+.form-summary { font-size:9px; color:var(--text-3); font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px; }
+
+/* Key items */
+.key-item { padding:7px 0; border-bottom:1px solid var(--divider); }
+.key-item:last-child { border-bottom:none; }
+.key-text { font-size:11px; color:var(--text-2); line-height:1.6; }
+
+/* Changes */
+.changes-block { margin-bottom:8px; }
+.changes-label { font-size:9px; font-weight:600; margin-bottom:3px; letter-spacing:0.3px; }
+.changes-item { font-size:10px; color:var(--text-3); padding-left:6px; line-height:1.7; }
+
+/* Spotlight cards */
 .spotlight-card { display:flex; align-items:center; gap:10px; padding:8px 10px; background:var(--surface-2); border-radius:var(--r-md); margin-bottom:6px; cursor:pointer; border:1px solid var(--divider); transition:all 0.2s; }
 .spotlight-card:hover { background:var(--surface-3); border-color:rgba(255,255,255,0.1); }
 .spotlight-rank { font-size:18px; min-width:24px; text-align:center; }
@@ -1403,54 +1425,53 @@ function renderPreviewPanel() {
 
   // === 近期状态 ===
   function formDot(r) {
-    const color = r==='W'?'#22c55e': r==='D'?'#eab308':'#f85149';
-    const label = r==='W'?'胜': r==='D'?'平':'负';
-    return `<span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:${color};font-size:9px;font-weight:900;color:#fff">${label}</span>`;
+    if (r==='W') return `<span class="form-badge form-w">W</span>`;
+    if (r==='D') return `<span class="form-badge form-d">D</span>`;
+    return `<span class="form-badge form-l">L</span>`;
   }
   function formRow(d) {
-    const wins   = d.results.filter(r=>r==='W').length;
-    const draws  = d.results.filter(r=>r==='D').length;
-    const losses = d.results.filter(r=>r==='L').length;
+    const w = d.results.filter(r=>r==='W').length;
+    const dr = d.results.filter(r=>r==='D').length;
+    const l = d.results.filter(r=>r==='L').length;
     const gf = d.scored.reduce((a,b)=>a+b,0);
     const ga = d.conceded.reduce((a,b)=>a+b,0);
-    return `<div style="margin-bottom:8px">
-      <div style="font-size:10px;font-weight:700;color:var(--text-muted);margin-bottom:4px">${d.label}</div>
-      <div style="display:flex;gap:4px;align-items:center;margin-bottom:4px">${d.results.map(formDot).join('')}</div>
-      <div style="font-size:10px;color:var(--text-muted)">${wins}胜${draws}平${losses}负 · 进${gf}球失${ga}球</div>
+    return `<div class="form-row">
+      <div class="form-label">${d.label}</div>
+      <div class="form-badges">${d.results.map(formDot).join('')}</div>
+      <div class="form-summary">${w}W ${dr}D ${l}L · ${gf}GF ${ga}GA</div>
     </div>`;
   }
   const formHtml = formRow(PREVIEW_DATA.form.mu) + formRow(PREVIEW_DATA.form.av);
 
   // === 关键变量 ===
   const keysHtml = PREVIEW_DATA.keys.map(k =>
-    `<div style="display:flex;gap:8px;align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
-      <span style="font-size:14px;flex-shrink:0;margin-top:1px">${k.icon}</span>
-      <span style="font-size:11px;color:var(--text-muted);line-height:1.5">${k.text}</span>
+    `<div class="key-item">
+      <span class="key-text">${k.text}</span>
     </div>`
   ).join('');
 
   // === 阵容变化 ===
   function changesBlock(label, color, items) {
-    return `<div style="margin-bottom:6px">
-      <div style="font-size:10px;font-weight:700;color:${color};margin-bottom:3px">${label}</div>
-      ${items.map(t=>`<div style="font-size:10px;color:var(--text-muted);padding-left:8px;line-height:1.6">· ${t}</div>`).join('')}
+    return `<div class="changes-block">
+      <div class="changes-label" style="color:${color}">${label}</div>
+      ${items.map(t=>`<div class="changes-item">· ${t}</div>`).join('')}
     </div>`;
   }
   const changesHtml =
-    changesBlock('🔴 曼联', '#ff6b5b', PREVIEW_DATA.changes.mu) +
-    changesBlock('🔵 维拉', '#7ab8e8', PREVIEW_DATA.changes.av);
+    changesBlock('曼联', 'var(--home)', PREVIEW_DATA.changes.mu) +
+    changesBlock('维拉', 'var(--away)', PREVIEW_DATA.changes.av);
 
   el.innerHTML = `
     <div class="preview-section">
-      <div class="preview-section-title">📊 近期状态</div>
+      <div class="preview-section-title">近期状态</div>
       ${formHtml}
     </div>
     <div class="preview-section">
-      <div class="preview-section-title">🔑 本场关键</div>
+      <div class="preview-section-title">本场关键</div>
       ${keysHtml}
     </div>
     <div class="preview-section">
-      <div class="preview-section-title">🔄 阵容变化</div>
+      <div class="preview-section-title">阵容变化</div>
       ${changesHtml}
     </div>
   `;

@@ -308,13 +308,16 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
       </div>
       <!-- Bench always in lineup tab -->
       <div class="bench-section" id="bench-section">
-        <div style="padding:2px 8px 0">
-          <div class="bench-half-label" style="color:#ff6b5b;margin-bottom:3px">曼联 替补</div>
-          <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:nowrap;gap:3px;width:100%;"></div>
-        </div>
-        <div style="padding:4px 8px 0;border-top:1px solid rgba(255,255,255,0.06);margin-top:3px">
-          <div class="bench-half-label" style="color:#7ab8e8;margin-bottom:3px">维拉 替补</div>
-          <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:nowrap;gap:3px;width:100%;"></div>
+        <div class="bench-split">
+          <div class="bench-half bench-half-mu">
+            <div class="bench-half-label" style="color:#ff6b5b;margin-bottom:3px">曼联 替补</div>
+            <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:nowrap;gap:2px;width:100%;"></div>
+          </div>
+          <div class="bench-divider"></div>
+          <div class="bench-half bench-half-av">
+            <div class="bench-half-label" style="color:#7ab8e8;margin-bottom:3px">维拉 替补</div>
+            <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:nowrap;gap:2px;width:100%;"></div>
+          </div>
         </div>
       </div>
     </div>

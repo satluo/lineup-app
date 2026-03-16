@@ -265,24 +265,26 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 <div class="match-header">
   <div class="match-meta">英超 · 第30轮 &nbsp;|&nbsp; <span>2026年3月15日 周日 22:00</span> &nbsp;|&nbsp; 老特拉福德 &nbsp;<span id="last-updated" style="color:var(--text-muted);font-weight:400"></span></div>
   <div class="score-row">
-    <div id="coach-mu" style="display:flex;align-items:center;gap:5px;flex:1;justify-content:flex-start"></div>
-    <div class="team-info">
-      <div class="team-badge mu" id="badge-mu"></div>
-      <div class="team-name">曼联</div>
-    </div>
-    <div class="score-display">
-      <div class="score-numbers">
-        <div class="score-num" id="score-mu">0</div>
-        <div class="score-divider">:</div>
-        <div class="score-num" id="score-av">0</div>
+    <div id="coach-mu" style="display:flex;align-items:center;gap:6px;width:100px;flex-shrink:0;justify-content:flex-start"></div>
+    <div style="display:flex;align-items:center;gap:8px;flex:1;justify-content:center">
+      <div class="team-info" style="flex:0 0 auto">
+        <div class="team-badge mu" id="badge-mu"></div>
+        <div class="team-name">曼联</div>
       </div>
-      <div class="match-time" id="match-status" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:var(--text-muted)"><span id="status-text">-</span></div>
+      <div class="score-display">
+        <div class="score-numbers">
+          <div class="score-num" id="score-mu">0</div>
+          <div class="score-divider">:</div>
+          <div class="score-num" id="score-av">0</div>
+        </div>
+        <div class="match-time" id="match-status" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:var(--text-muted)"><span id="status-text">-</span></div>
+      </div>
+      <div class="team-info" style="flex:0 0 auto">
+        <div class="team-badge av" id="badge-av"></div>
+        <div class="team-name">维拉</div>
+      </div>
     </div>
-    <div class="team-info">
-      <div class="team-badge av" id="badge-av"></div>
-      <div class="team-name">维拉</div>
-    </div>
-    <div id="coach-av" style="display:flex;align-items:center;gap:5px;flex:1;justify-content:flex-end;flex-direction:row-reverse"></div>
+    <div id="coach-av" style="display:flex;align-items:center;gap:6px;width:100px;flex-shrink:0;justify-content:flex-end"></div>
   </div>
 </div>
 
@@ -1347,18 +1349,20 @@ function renderBadges() {
   const avBadge = document.getElementById('badge-av');
   if (muBadge) muBadge.innerHTML = `<img src="${FOTMOB_LOGO}${MU_TEAM_ID}_small.png" onerror="this.parentElement.textContent='MU'">`;
   if (avBadge) avBadge.innerHTML = `<img src="${FOTMOB_LOGO}${AV_TEAM_ID}_small.png" onerror="this.parentElement.textContent='AV'">`;
-  function coachHtml(coachId, coachName) {
-    return `<img src="${FOTMOB}${coachId}.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;background:#333;flex-shrink:0;border:1px solid rgba(255,255,255,0.2)"
-      onerror="this.style.display='none'">
-      <div style="line-height:1.3">
+  function coachHtml(coachId, coachName, alignRight=false) {
+    const imgHtml = `<img src="${FOTMOB}${coachId}.png" style="width:30px;height:30px;border-radius:50%;object-fit:cover;flex-shrink:0;border:1px solid rgba(255,255,255,0.2)"
+      onerror="this.parentElement.querySelector('.coach-fb').style.display='flex';this.style.display='none'">
+      <div class="coach-fb" style="width:30px;height:30px;border-radius:50%;background:#444;flex-shrink:0;display:none;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff;border:1px solid rgba(255,255,255,0.2)">${coachName.charAt(0)}</div>`;
+    const textHtml = `<div style="line-height:1.3;${alignRight?'text-align:right':''}">
         <div style="font-size:7px;color:var(--text-muted);font-weight:500">主帅</div>
         <div style="font-size:10px;color:var(--text);font-weight:700;white-space:nowrap">${coachName}</div>
       </div>`;
+    return alignRight ? textHtml + imgHtml : imgHtml + textHtml;
   }
   const muCoach = document.getElementById('coach-mu');
   const avCoach = document.getElementById('coach-av');
-  if (muCoach) muCoach.innerHTML = coachHtml(MU_COACH_ID, MU_COACH);
-  if (avCoach) avCoach.innerHTML = coachHtml(AV_COACH_ID, AV_COACH);
+  if (muCoach) muCoach.innerHTML = coachHtml(MU_COACH_ID, MU_COACH, false);
+  if (avCoach) avCoach.innerHTML = coachHtml(AV_COACH_ID, AV_COACH, true);
 }
 renderBadges();
 renderPitch();

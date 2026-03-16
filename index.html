@@ -11,9 +11,9 @@
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 :root {
   --mu-red:#e8402a; --av-blue:#4a9eda;
-  --bg:#07090f;
-  --surface:#0f1420;
-  --surface-2:#151d2e;
+  --bg:#0a0a0a;
+  --surface:#111111;
+  --surface-2:#1a1a1a;
   --border:rgba(255,255,255,0.07);
   --border-strong:rgba(255,255,255,0.12);
   --text:#edf0f7; --text-muted:#5a6480; --text-secondary:#8892aa;
@@ -64,16 +64,16 @@ body { background:var(--bg); color:var(--text); font-family:'Inter','Noto Sans S
   position:relative; width:100%; aspect-ratio:9/16; max-height:72vh;
   border-radius:10px; overflow:visible;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255,255,255,0.025) 0%, transparent 70%),
+    radial-gradient(ellipse 100% 80% at 50% 50%, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.25) 100%),
     repeating-linear-gradient(
       to bottom,
-      #12391f 0px, #12391f 13px,
-      #163f23 13px, #163f23 26px
+      #2d6a3f 0px, #2d6a3f 14px,
+      #2a6039 14px, #2a6039 28px
     );
   box-shadow:
-    0 0 0 1px rgba(255,255,255,0.06),
-    inset 0 0 80px rgba(0,0,0,0.45),
-    0 12px 40px rgba(0,0,0,0.8);
+    0 0 0 1px rgba(0,0,0,0.5),
+    inset 0 0 60px rgba(0,0,0,0.35),
+    0 16px 48px rgba(0,0,0,0.9);
   clip-path:inset(0 round 10px);
 }
 .pitch-markings { position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; }

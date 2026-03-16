@@ -266,6 +266,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
     <div class="team-info">
       <div class="team-badge mu" id="badge-mu"></div>
       <div class="team-name">曼联</div>
+      <div id="coach-mu" style="font-size:9px;color:var(--text-muted);text-align:center;margin-top:1px;font-weight:500"></div>
     </div>
     <div class="score-display">
       <div class="score-numbers">
@@ -278,6 +279,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
     <div class="team-info">
       <div class="team-badge av" id="badge-av"></div>
       <div class="team-name">维拉</div>
+      <div id="coach-av" style="font-size:9px;color:var(--text-muted);text-align:center;margin-top:1px;font-weight:500"></div>
     </div>
   </div>
 </div>
@@ -363,6 +365,8 @@ const FOTMOB_LOGO = 'https://images.fotmob.com/image_resources/logo/teamlogo/';
 // 换比赛时修改这两个队标ID（FotMob team ID）
 const MU_TEAM_ID = 10260;  // 曼联
 const AV_TEAM_ID = 10252;  // 维拉
+const MU_COACH = '阿莫林';
+const AV_COACH = '乌纳伊·埃梅里';
 
 // 坐标规则（横屏球场 16:9，主场左攻右，客场右攻左）
 // 主场：xL = fotmob_x * 48        yL = fotmob_y * 100
@@ -1325,6 +1329,10 @@ function renderBadges() {
   const avBadge = document.getElementById('badge-av');
   if (muBadge) muBadge.innerHTML = `<img src="${FOTMOB_LOGO}${MU_TEAM_ID}_small.png" onerror="this.parentElement.textContent='MU'">`;
   if (avBadge) avBadge.innerHTML = `<img src="${FOTMOB_LOGO}${AV_TEAM_ID}_small.png" onerror="this.parentElement.textContent='AV'">`;
+  const muCoach = document.getElementById('coach-mu');
+  const avCoach = document.getElementById('coach-av');
+  if (muCoach) muCoach.textContent = MU_COACH;
+  if (avCoach) avCoach.textContent = AV_COACH;
 }
 renderBadges();
 renderPitch();

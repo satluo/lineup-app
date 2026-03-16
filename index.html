@@ -86,7 +86,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .bench-row-label { font-size:9px; font-weight:700; padding-top:8px; min-width:36px; flex-shrink:0; }
 .bench-row-label.whu { color:#ff6b5b; }
 .bench-row-label.mc { color:#7ab8e8; }
-.bench-card { display:inline-flex; flex-direction:column; align-items:center; cursor:pointer; padding:4px 6px; border-radius:8px; background:rgba(255,255,255,0.04); border:1px solid transparent; transition:all 0.2s; min-width:50px; }
+.bench-card { display:inline-flex; flex-direction:column; align-items:center; cursor:pointer; padding:4px 5px; border-radius:8px; background:rgba(255,255,255,0.04); border:1px solid transparent; transition:all 0.2s; min-width:44px; flex-shrink:0; }
 .bench-card:hover { background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.12); }
 .bench-avatar-wrap { position:relative; width:32px; height:32px; margin-bottom:3px; }
 .bench-avatar-ring { position:absolute; inset:-2px; border-radius:50%; border:2px solid; z-index:1; }
@@ -249,8 +249,8 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
   .tab-content { display:block !important; }
   #tab-lineup { display:flex !important; flex-direction:column; flex:1; min-height:0; }
   .main-layout { display:flex; flex:1; gap:0; overflow:hidden; height:calc(100vh - 70px); }
-  .left-col { flex:0 0 70%; display:flex; flex-direction:column; overflow:hidden; border-right:1px solid var(--border); }
-  .right-col { flex:0 0 30%; display:flex; flex-direction:column; overflow-y:auto; }
+  .left-col { flex:0 0 78%; display:flex; flex-direction:column; overflow:hidden; border-right:1px solid var(--border); }
+  .right-col { flex:0 0 22%; display:flex; flex-direction:column; overflow-y:auto; }
   .pitch-container { padding:0; background:#0d1117; overflow:hidden; }
   .pitch { width:100% !important; height:auto !important; aspect-ratio:16/9 !important; max-height:none !important; max-width:none !important; overflow:visible; clip-path:none !important; border-radius:0 !important; flex-shrink:0; }
   .bench-section { flex-shrink:0; padding:4px 8px 6px; border-top:1px solid var(--border); margin-top:0; }
@@ -312,14 +312,14 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
           <!-- 主场西汉姆替补：左侧 -->
           <div class="bench-half bench-half-mu">
             <div class="bench-half-label" style="color:#ff6b5b">曼联 替补</div>
-            <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
+            <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:nowrap;gap:3px;overflow-x:auto;padding-bottom:2px;"></div>
           </div>
           <!-- 中场分隔线 -->
           <div class="bench-divider"></div>
           <!-- 客场曼城替补：右侧 -->
           <div class="bench-half bench-half-av">
             <div class="bench-half-label" style="color:#7ab8e8">维拉 替补</div>
-            <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:wrap;gap:4px;"></div>
+            <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:nowrap;gap:3px;overflow-x:auto;padding-bottom:2px;"></div>
           </div>
         </div>
       </div>
@@ -333,7 +333,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
         <span style="font-size:12px;font-weight:700;color:var(--text)">本场导览</span>
         <span style="font-size:10px;color:var(--text-muted)">点击球员可查看详情</span>
       </div>
-      <div id="preview-panel" style="padding:12px 12px 0;overflow-y:auto"></div>
+      <div id="preview-panel" style="padding:8px 8px 0;overflow-y:auto"></div>
     </div>
     <div class="tab-content" id="tab-events">
       <div class="events-panel">

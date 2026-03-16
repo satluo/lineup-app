@@ -28,9 +28,9 @@
   --accent:#ebebeb;
   --gold:#d4a84b;
   --green:#3cb569;
-  /* ── 草场：清爽明亮绿 ── */
-  --pitch-a:#1a6b35;
-  --pitch-b:#208040;
+  /* ── 草场 ── */
+  --pitch-a:#186830;
+  --pitch-b:#22823c;
   /* ── 球场到背景过渡 ── */
   --pitch-fade:#0f1e14;
   /* ── 圆角 ── */
@@ -669,7 +669,7 @@ function svgPortrait() {
   // viewBox 100 × 178, pitch box at (5,5) to (95,173), W=90 H=168
   return `<svg class="pitch-markings" viewBox="0 0 100 178" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <!-- 边线 -->
-    <rect x="5" y="5" width="90" height="168" rx="1" ${LN}/>
+    <rect x="5" y="5" width="90" height="168" rx="0" ${LN}/>
     <!-- 中线 -->
     <line x1="5" y1="89" x2="95" y2="89" ${LN}/>
     <!-- 中圈 -->
@@ -710,7 +710,7 @@ function svgLandscape() {
   // viewBox 178 × 100, pitch box at (5,5) to (173,95), W=168 H=90
   return `<svg class="pitch-markings" viewBox="0 0 178 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
     <!-- 边线 -->
-    <rect x="5" y="5" width="168" height="90" rx="1" ${LN}/>
+    <rect x="5" y="5" width="168" height="90" rx="0" ${LN}/>
     <!-- 中线 -->
     <line x1="89" y1="5" x2="89" y2="95" ${LN}/>
     <!-- 中圈 -->

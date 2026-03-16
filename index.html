@@ -28,9 +28,9 @@
   --accent:#ebebeb;
   --gold:#d4a84b;
   --green:#3cb569;
-  /* ── 草场：饱和真实绿 ── */
-  --pitch-a:#1e5c30;
-  --pitch-b:#246b38;
+  /* ── 草场 ── */
+  --pitch-a:#1b5528;
+  --pitch-b:#22642f;
   /* ── 球场到背景过渡 ── */
   --pitch-fade:#0f1e14;
   /* ── 圆角 ── */
@@ -78,24 +78,43 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
 
 /* PITCH */
 .pitch-container { padding:0; background:var(--bg); position:relative; }
-.pitch-container::before { display:none; }
 .pitch {
   position:relative; width:100%; aspect-ratio:9/16; max-height:72vh;
-  border-radius:0; overflow:visible;
+  border-radius:0; overflow:hidden;
   background:
-    /* 中心微亮：模拟顶灯 */
-    radial-gradient(ellipse 80% 40% at 50% 45%, rgba(255,255,255,0.04) 0%, transparent 70%),
-    /* 上下边缘渐黑：融入背景 */
-    linear-gradient(to bottom, var(--bg) 0%, transparent 6%, transparent 94%, var(--bg) 100%),
-    /* 草皮条纹 */
-    repeating-linear-gradient(to bottom, var(--pitch-a) 0px, var(--pitch-a) 14px, var(--pitch-b) 14px, var(--pitch-b) 28px);
-  box-shadow: none;
+    /* 顶灯：椭圆高光偏上 */
+    radial-gradient(ellipse 70% 35% at 50% 42%, rgba(80,140,80,0.12) 0%, transparent 100%),
+    /* 四角暗角 */
+    radial-gradient(circle at 0% 0%, rgba(0,0,0,0.25) 0%, transparent 40%),
+    radial-gradient(circle at 100% 0%, rgba(0,0,0,0.25) 0%, transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(0,0,0,0.25) 0%, transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(0,0,0,0.25) 0%, transparent 40%),
+    /* 上下边缘渐黑 */
+    linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, transparent 4%, transparent 96%, rgba(0,0,0,0.6) 100%),
+    /* 条纹：用渐变做柔和过渡而非硬切 */
+    repeating-linear-gradient(to bottom,
+      var(--pitch-a) 0px,
+      var(--pitch-b) 7px,
+      var(--pitch-b) 14px,
+      var(--pitch-a) 21px,
+      var(--pitch-a) 28px
+    );
 }
 .pitch.landscape {
   background:
-    radial-gradient(ellipse 40% 80% at 45% 50%, rgba(255,255,255,0.04) 0%, transparent 70%),
-    linear-gradient(to right, var(--bg) 0%, transparent 5%, transparent 95%, var(--bg) 100%),
-    repeating-linear-gradient(to right, var(--pitch-a) 0px, var(--pitch-a) 14px, var(--pitch-b) 14px, var(--pitch-b) 28px);
+    radial-gradient(ellipse 35% 70% at 42% 50%, rgba(80,140,80,0.12) 0%, transparent 100%),
+    radial-gradient(circle at 0% 0%, rgba(0,0,0,0.25) 0%, transparent 40%),
+    radial-gradient(circle at 100% 0%, rgba(0,0,0,0.25) 0%, transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(0,0,0,0.25) 0%, transparent 40%),
+    radial-gradient(circle at 100% 100%, rgba(0,0,0,0.25) 0%, transparent 40%),
+    linear-gradient(to right, rgba(0,0,0,0.6) 0%, transparent 4%, transparent 96%, rgba(0,0,0,0.6) 100%),
+    repeating-linear-gradient(to right,
+      var(--pitch-a) 0px,
+      var(--pitch-b) 7px,
+      var(--pitch-b) 14px,
+      var(--pitch-a) 21px,
+      var(--pitch-a) 28px
+    );
 }
 .pitch-markings { position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; }
 .players-layer { position:absolute; top:0; left:0; width:100%; height:100%; overflow:visible; }
@@ -658,108 +677,109 @@ const AV_BENCH = [
 
 
 // === SVG PITCH ===
-const ST = 'stroke="rgba(255,255,255,0.3)" stroke-width="0.4" fill="none"';
-const DOT = 'fill="rgba(255,255,255,0.4)"';
-const GOAL_F = 'fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.3)" stroke-width="0.4"';
+// 线条层次系统：
+// L1 = 边线/球门线（最亮）
+// L2 = 禁区/中线/中圈（中等）
+// L3 = 角球弧/点球点（最淡）
+const L1 = 'stroke="rgba(255,255,255,0.45)" stroke-width="0.5" fill="none"';
+const L2 = 'stroke="rgba(255,255,255,0.28)" stroke-width="0.4" fill="none"';
+const L3 = 'stroke="rgba(255,255,255,0.18)" stroke-width="0.35" fill="none"';
+const DOT = 'fill="rgba(255,255,255,0.3)"';
+const GOAL_F = 'fill="rgba(0,0,0,0.2)" stroke="rgba(255,255,255,0.4)" stroke-width="0.4"';
+const GOAL_NET = 'fill="rgba(0,0,0,0.15)" stroke="none"';
 
 function svgPortrait() {
-  // viewBox 100×177.78，边线框从(4,4)到(96,173.78)，宽92，高169.78
-  // 球场宽92单位 ≈ 68m，高169.78单位 ≈ 105m
-  // 大禁区：宽64(40.32m)，高23(16.5m)；小禁区：宽36(18.32m)，高9(5.5m)
-  // 球门：宽23(7.32m/实际门框)，深3(2.44m，向外突出)
-  // 点球点：距球门线11.5单位(11m)
-  // 禁区弧：以点球点为圆心r=11.5，在大禁区外的部分
-  // 角球弧：以四个角旗点为圆心r=2，四分之一圆弧朝内
+  // viewBox 100×178, 边线框(6,6)→(94,172), 内宽88, 内高166
+  // 更大边距让球场"呼吸"
+  const W=88, H=166, L=6, T=6, R=94, B=172, CX=50, CY=89;
+  // 大禁区宽 61.3% of W ≈ 54, 高 13.7% of H ≈ 22.7
+  const PW=54, PH=22.7, PL=(100-PW)/2, PR=PL+PW;
+  // 小禁区宽 31.6% of W ≈ 27.8, 高 4.6% of H ≈ 7.6
+  const SW=27.8, SH=7.6, SL=(100-SW)/2, SR=SL+SW;
+  // 球门宽 10.8% of W ≈ 9.5
+  const GW=18, GH=2.5, GL=(100-GW)/2, GR=GL+GW;
+  // 点球点距门线 9.2% of H ≈ 15.3
+  const PEN=15.3;
+  // 中圈 r = 7.6% of H ≈ 12.6
+  const CR=12.6;
 
-  return `<svg class="pitch-markings" viewBox="0 0 100 177.78" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- 边线 -->
-    <rect x="4" y="4" width="92" height="169.78" ${ST}/>
+  return `<svg class="pitch-markings" viewBox="0 0 100 178" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+    <!-- 边线（最亮） -->
+    <rect x="${L}" y="${T}" width="${W}" height="${H}" ${L1}/>
     <!-- 中线 -->
-    <line x1="4" y1="88.89" x2="96" y2="88.89" ${ST}/>
+    <line x1="${L}" y1="${CY}" x2="${R}" y2="${CY}" ${L2}/>
     <!-- 中圈 -->
-    <circle cx="50" cy="88.89" r="11.5" ${ST}/>
-    <circle cx="50" cy="88.89" r="0.6" ${DOT}/>
+    <circle cx="${CX}" cy="${CY}" r="${CR}" ${L2}/>
+    <circle cx="${CX}" cy="${CY}" r="0.5" ${DOT}/>
 
-    <!-- 上方大禁区 -->
-    <rect x="18" y="4" width="64" height="23" ${ST}/>
-    <!-- 上方小禁区 -->
-    <rect x="32" y="4" width="36" height="9" ${ST}/>
-    <!-- 上方点球点 -->
-    <circle cx="50" cy="19.5" r="0.6" ${DOT}/>
-    <!-- 上方禁区弧（以点球点为圆心r=11.5，弧在禁区外，sweep向下=0） -->
-    <path d="M 37.5 27 A 11.5 11.5 0 0 0 62.5 27" ${ST}/>
-    <!-- 上方球门（宽23，深3，突出边线外，y=1到y=4） -->
-    <rect x="38.5" y="1" width="23" height="3" ${GOAL_F}/>
+    <!-- 上方 -->
+    <rect x="${PL}" y="${T}" width="${PW}" height="${PH}" ${L2}/>
+    <rect x="${SL}" y="${T}" width="${SW}" height="${SH}" ${L2}/>
+    <circle cx="${CX}" cy="${T+PEN}" r="0.5" ${DOT}/>
+    <path d="M ${PL+4} ${T+PH} A ${CR} ${CR} 0 0 0 ${PR-4} ${T+PH}" ${L3}/>
+    <!-- 上方球门 -->
+    <rect x="${GL}" y="${T-GH}" width="${GW}" height="${GH}" ${GOAL_F}/>
+    <rect x="${GL-0.5}" y="${T-GH-0.8}" width="${GW+1}" height="${GH+0.8}" rx="0.4" ${GOAL_NET}/>
 
-    <!-- 下方大禁区 -->
-    <rect x="18" y="150.78" width="64" height="23" ${ST}/>
-    <!-- 下方小禁区 -->
-    <rect x="32" y="164.78" width="36" height="9" ${ST}/>
-    <!-- 下方点球点 -->
-    <circle cx="50" cy="158.28" r="0.6" ${DOT}/>
-    <!-- 下方禁区弧（以点球点为圆心r=11.5，弧在禁区外，sweep向上=1） -->
-    <path d="M 37.5 150.78 A 11.5 11.5 0 0 1 62.5 150.78" ${ST}/>
-    <!-- 下方球门（宽23，深3，突出边线外，y=173.78到y=176.78） -->
-    <rect x="38.5" y="173.78" width="23" height="3" ${GOAL_F}/>
+    <!-- 下方 -->
+    <rect x="${PL}" y="${B-PH}" width="${PW}" height="${PH}" ${L2}/>
+    <rect x="${SL}" y="${B-SH}" width="${SW}" height="${SH}" ${L2}/>
+    <circle cx="${CX}" cy="${B-PEN}" r="0.5" ${DOT}/>
+    <path d="M ${PL+4} ${B-PH} A ${CR} ${CR} 0 0 1 ${PR-4} ${B-PH}" ${L3}/>
+    <!-- 下方球门 -->
+    <rect x="${GL}" y="${B}" width="${GW}" height="${GH}" ${GOAL_F}/>
+    <rect x="${GL-0.5}" y="${B}" width="${GW+1}" height="${GH+0.8}" rx="0.4" ${GOAL_NET}/>
 
-    <!-- 角球弧：以四角为圆心r=2，四分之一圆弧朝内 -->
-    <!-- 左上角(4,4)：从(6,4)弧到(4,6) -->
-    <path d="M 6 4 A 2 2 0 0 1 4 6" ${ST}/>
-    <!-- 右上角(96,4)：从(96,6)弧到(94,4) -->
-    <path d="M 96 6 A 2 2 0 0 1 94 4" ${ST}/>
-    <!-- 左下角(4,173.78)：从(6,173.78)弧到(4,171.78) -->
-    <path d="M 6 173.78 A 2 2 0 0 0 4 171.78" ${ST}/>
-    <!-- 右下角(96,173.78)：从(96,171.78)弧到(94,173.78) -->
-    <path d="M 96 171.78 A 2 2 0 0 0 94 173.78" ${ST}/>
+    <!-- 角球弧 r=1.8 -->
+    <path d="M ${L+1.8} ${T} A 1.8 1.8 0 0 1 ${L} ${T+1.8}" ${L3}/>
+    <path d="M ${R} ${T+1.8} A 1.8 1.8 0 0 1 ${R-1.8} ${T}" ${L3}/>
+    <path d="M ${L} ${B-1.8} A 1.8 1.8 0 0 1 ${L+1.8} ${B}" ${L3}/>
+    <path d="M ${R-1.8} ${B} A 1.8 1.8 0 0 1 ${R} ${B-1.8}" ${L3}/>
   </svg>`;
 }
 
 function svgLandscape() {
-  // viewBox 177.78×100，边线框从(4,4)到(173.78,96)
-  // 大禁区：高64(40.32m)，宽23(16.5m)；小禁区：高36(18.32m)，宽9(5.5m)
-  // 球门：高23(7.32m)，深3(向外突出)
-  // 点球点距门线11.5；禁区弧r=11.5
+  const W=166, H=88, L=6, T=6, R=172, B=94, CX=89, CY=50;
+  const PH2=54, PW2=22.7;
+  const PT=(100-PH2)/2, PB=PT+PH2;
+  const SH2=27.8, SW2=7.6;
+  const ST2=(100-SH2)/2, SB2=ST2+SH2;
+  const GH2=18, GW2=2.5, GT=(100-GH2)/2, GB=GT+GH2;
+  const PEN=15.3;
+  const CR=12.6;
 
-  return `<svg class="pitch-markings" viewBox="0 0 177.78 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  return `<svg class="pitch-markings" viewBox="0 0 178 100" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     <!-- 边线 -->
-    <rect x="4" y="4" width="169.78" height="92" ${ST}/>
+    <rect x="${L}" y="${T}" width="${W}" height="${H}" ${L1}/>
     <!-- 中线 -->
-    <line x1="88.89" y1="4" x2="88.89" y2="96" ${ST}/>
+    <line x1="${CX}" y1="${T}" x2="${CX}" y2="${B}" ${L2}/>
     <!-- 中圈 -->
-    <circle cx="88.89" cy="50" r="11.5" ${ST}/>
-    <circle cx="88.89" cy="50" r="0.6" ${DOT}/>
+    <circle cx="${CX}" cy="${CY}" r="${CR}" ${L2}/>
+    <circle cx="${CX}" cy="${CY}" r="0.5" ${DOT}/>
 
-    <!-- 左侧大禁区 -->
-    <rect x="4" y="18" width="23" height="64" ${ST}/>
-    <!-- 左侧小禁区 -->
-    <rect x="4" y="32" width="9" height="36" ${ST}/>
-    <!-- 左侧点球点 -->
-    <circle cx="19.5" cy="50" r="0.6" ${DOT}/>
-    <!-- 左侧禁区弧（以点球点为圆心r=11.5，弧在禁区右侧，sweep向右=0） -->
-    <path d="M 27 37.5 A 11.5 11.5 0 0 1 27 62.5" ${ST}/>
-    <!-- 左侧球门（高23，深3，突出边线外，x=1到x=4） -->
-    <rect x="1" y="38.5" width="3" height="23" ${GOAL_F}/>
+    <!-- 左侧 -->
+    <rect x="${L}" y="${PT}" width="${PW2}" height="${PH2}" ${L2}/>
+    <rect x="${L}" y="${ST2}" width="${SW2}" height="${SH2}" ${L2}/>
+    <circle cx="${L+PEN}" cy="${CY}" r="0.5" ${DOT}/>
+    <path d="M ${L+PW2} ${PT+4} A ${CR} ${CR} 0 0 1 ${L+PW2} ${PB-4}" ${L3}/>
+    <!-- 左球门 -->
+    <rect x="${L-GW2}" y="${GT}" width="${GW2}" height="${GH2}" ${GOAL_F}/>
+    <rect x="${L-GW2-0.8}" y="${GT-0.5}" width="${GW2+0.8}" height="${GH2+1}" rx="0.4" ${GOAL_NET}/>
 
-    <!-- 右侧大禁区 -->
-    <rect x="150.78" y="18" width="23" height="64" ${ST}/>
-    <!-- 右侧小禁区 -->
-    <rect x="164.78" y="32" width="9" height="36" ${ST}/>
-    <!-- 右侧点球点 -->
-    <circle cx="158.28" cy="50" r="0.6" ${DOT}/>
-    <!-- 右侧禁区弧（弧在禁区左侧，sweep向左=1） -->
-    <path d="M 150.78 37.5 A 11.5 11.5 0 0 0 150.78 62.5" ${ST}/>
-    <!-- 右侧球门（高23，深3，突出边线外，x=173.78到x=176.78） -->
-    <rect x="173.78" y="38.5" width="3" height="23" ${GOAL_F}/>
+    <!-- 右侧 -->
+    <rect x="${R-PW2}" y="${PT}" width="${PW2}" height="${PH2}" ${L2}/>
+    <rect x="${R-SW2}" y="${ST2}" width="${SW2}" height="${SH2}" ${L2}/>
+    <circle cx="${R-PEN}" cy="${CY}" r="0.5" ${DOT}/>
+    <path d="M ${R-PW2} ${PT+4} A ${CR} ${CR} 0 0 0 ${R-PW2} ${PB-4}" ${L3}/>
+    <!-- 右球门 -->
+    <rect x="${R}" y="${GT}" width="${GW2}" height="${GH2}" ${GOAL_F}/>
+    <rect x="${R}" y="${GT-0.5}" width="${GW2+0.8}" height="${GH2+1}" rx="0.4" ${GOAL_NET}/>
 
-    <!-- 角球弧：以四角为圆心r=2，四分之一圆弧朝内 -->
-    <!-- 左上角(4,4)：从(6,4)弧到(4,6) -->
-    <path d="M 6 4 A 2 2 0 0 1 4 6" ${ST}/>
-    <!-- 右上角(173.78,4)：从(173.78,6)弧到(171.78,4) -->
-    <path d="M 173.78 6 A 2 2 0 0 1 171.78 4" ${ST}/>
-    <!-- 左下角(4,96)：从(4,94)弧到(6,96) -->
-    <path d="M 4 94 A 2 2 0 0 0 6 96" ${ST}/>
-    <!-- 右下角(173.78,96)：从(171.78,96)弧到(173.78,94) -->
-    <path d="M 171.78 96 A 2 2 0 0 0 173.78 94" ${ST}/>
+    <!-- 角球弧 -->
+    <path d="M ${L+1.8} ${T} A 1.8 1.8 0 0 1 ${L} ${T+1.8}" ${L3}/>
+    <path d="M ${R} ${T+1.8} A 1.8 1.8 0 0 1 ${R-1.8} ${T}" ${L3}/>
+    <path d="M ${L} ${B-1.8} A 1.8 1.8 0 0 1 ${L+1.8} ${B}" ${L3}/>
+    <path d="M ${R-1.8} ${B} A 1.8 1.8 0 0 1 ${R} ${B-1.8}" ${L3}/>
   </svg>`;
 }
 

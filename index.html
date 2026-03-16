@@ -257,32 +257,51 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
 .bio-text { font-size:13px; line-height:1.7; color:var(--text-2); background:var(--surface-2); border-radius:var(--r-md); padding:11px; border-left:2px solid; margin-bottom:12px; }
 
 /* PREVIEW PANEL */
-.preview-section { margin-bottom:16px; }
-.preview-section-title { font-size:9px; font-weight:500; color:var(--text-3); letter-spacing:1.2px; text-transform:uppercase; margin-bottom:10px; padding-left:8px; border-left:1px solid var(--text-3); }
+.preview-panel-inner { padding:20px 16px; }
+.preview-section { margin-bottom:28px; }
+.preview-section:last-child { margin-bottom:0; }
+.preview-section-title {
+  font-size:13px; font-weight:600; color:var(--text-1);
+  margin-bottom:16px; letter-spacing:-0.2px;
+}
 
-/* Form badges */
-.form-row { margin-bottom:10px; }
-.form-label { font-size:9px; font-weight:500; color:var(--text-3); margin-bottom:5px; letter-spacing:0.5px; text-transform:uppercase; }
-.form-badges { display:flex; gap:4px; align-items:center; margin-bottom:4px; }
-.form-badge { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:4px; font-size:9px; font-weight:600; font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px; }
-.form-w { background:rgba(60,181,105,0.15); color:#3cb569; border:1px solid rgba(60,181,105,0.25); }
-.form-d { background:rgba(255,255,255,0.06); color:var(--text-2); border:1px solid var(--divider); }
-.form-l { background:rgba(232,64,42,0.12); color:#e8402a; border:1px solid rgba(232,64,42,0.2); }
-.form-summary { font-size:9px; color:var(--text-3); font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px; }
+/* Form — 双列 */
+.form-block { margin-bottom:16px; }
+.form-team-row { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.form-team-name { font-size:12px; font-weight:600; min-width:50px; }
+.form-badges { display:flex; gap:3px; align-items:center; flex:1; }
+.form-badge {
+  flex:1; aspect-ratio:1; max-width:32px;
+  display:inline-flex; align-items:center; justify-content:center;
+  border-radius:4px; font-size:11px; font-weight:600;
+  font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px;
+}
+.form-w { background:rgba(60,181,105,0.15); color:#3cb569; }
+.form-d { background:rgba(255,255,255,0.06); color:var(--text-3); }
+.form-l { background:rgba(232,64,42,0.1); color:var(--home); }
+.form-record {
+  font-size:12px; color:var(--text-2); min-width:60px; text-align:right;
+  font-family:'Barlow Condensed',sans-serif; letter-spacing:0.5px;
+}
 
 /* Key items */
-.key-item { padding:7px 0; border-bottom:1px solid var(--divider); }
-.key-item:last-child { border-bottom:none; }
-.key-text { font-size:11px; color:var(--text-2); line-height:1.6; }
+.key-item {
+  padding:12px 0;
+  border-bottom:1px solid var(--divider);
+}
+.key-item:first-child { padding-top:0; }
+.key-item:last-child { border-bottom:none; padding-bottom:0; }
+.key-text { font-size:13px; color:var(--text-2); line-height:1.7; }
 
 /* Changes */
-.changes-block { margin-bottom:8px; }
-.changes-label { font-size:9px; font-weight:600; margin-bottom:3px; letter-spacing:0.3px; }
-.changes-item { font-size:10px; color:var(--text-3); padding-left:6px; line-height:1.7; }
+.changes-block { margin-bottom:12px; }
+.changes-block:last-child { margin-bottom:0; }
+.changes-label { font-size:11px; font-weight:600; margin-bottom:6px; }
+.changes-item { font-size:12px; color:var(--text-3); line-height:1.8; padding-left:2px; }
 
-/* Spotlight cards */
+/* Spotlight (unused currently but keep) */
 .spotlight-card { display:flex; align-items:center; gap:10px; padding:8px 10px; background:var(--surface-2); border-radius:var(--r-md); margin-bottom:6px; cursor:pointer; border:1px solid var(--divider); transition:all 0.2s; }
-.spotlight-card:hover { background:var(--surface-3); border-color:rgba(255,255,255,0.1); }
+.spotlight-card:hover { background:var(--surface-3); }
 .spotlight-rank { font-size:18px; min-width:24px; text-align:center; }
 .spotlight-avatar { width:42px; height:42px; border-radius:50%; object-fit:cover; border:2px solid; flex-shrink:0; }
 .spotlight-avatar-fb { width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:13px; font-weight:900; color:#fff; border:2px solid; }
@@ -290,10 +309,10 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
 .spotlight-name { font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:var(--text-1); }
 .spotlight-sub { font-size:10px; color:var(--text-3); margin-top:1px; }
 .spotlight-tags { display:flex; gap:4px; flex-wrap:wrap; margin-top:3px; }
-.spotlight-tag { font-size:9px; padding:1px 6px; border-radius:var(--r-sm); background:rgba(255,255,255,0.06); color:var(--text-2); border:1px solid rgba(255,255,255,0.08); font-weight:500; }
+.spotlight-tag { font-size:9px; padding:1px 6px; border-radius:var(--r-sm); background:rgba(255,255,255,0.06); color:var(--text-2); font-weight:500; }
 .spotlight-overall { font-size:13px; font-weight:700; padding:2px 8px; border-radius:var(--r-sm); color:#fff; flex-shrink:0; font-family:'Barlow Condensed',sans-serif; }
 .duel-card { background:var(--surface-2); border-radius:var(--r-md); padding:10px 12px; margin-bottom:8px; border:1px solid var(--divider); }
-.duel-label { font-size:9px; color:var(--text-muted); text-align:center; margin-bottom:6px; letter-spacing:0.5px; }
+.duel-label { font-size:9px; color:var(--text-3); text-align:center; margin-bottom:6px; letter-spacing:0.5px; }
 .duel-row { display:flex; align-items:center; gap:8px; }
 .duel-player { flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; cursor:pointer; }
 .duel-avatar { width:38px; height:38px; border-radius:50%; object-fit:cover; border:2px solid; }
@@ -1429,52 +1448,50 @@ function renderPreviewPanel() {
     if (r==='D') return `<span class="form-badge form-d">D</span>`;
     return `<span class="form-badge form-l">L</span>`;
   }
-  function formRow(d) {
+  function formTeamRow(d, color, name) {
     const w = d.results.filter(r=>r==='W').length;
     const dr = d.results.filter(r=>r==='D').length;
     const l = d.results.filter(r=>r==='L').length;
-    const gf = d.scored.reduce((a,b)=>a+b,0);
-    const ga = d.conceded.reduce((a,b)=>a+b,0);
-    return `<div class="form-row">
-      <div class="form-label">${d.label}</div>
+    return `<div class="form-team-row">
+      <div class="form-team-name" style="color:${color}">${name}</div>
       <div class="form-badges">${d.results.map(formDot).join('')}</div>
-      <div class="form-summary">${w}W ${dr}D ${l}L · ${gf}GF ${ga}GA</div>
+      <div class="form-record">${w}W ${dr}D ${l}L</div>
     </div>`;
   }
-  const formHtml = formRow(PREVIEW_DATA.form.mu) + formRow(PREVIEW_DATA.form.av);
+  const formHtml =
+    formTeamRow(PREVIEW_DATA.form.mu, 'var(--home)', '曼联') +
+    formTeamRow(PREVIEW_DATA.form.av, 'var(--away)', '维拉');
 
   // === 关键变量 ===
   const keysHtml = PREVIEW_DATA.keys.map(k =>
-    `<div class="key-item">
-      <span class="key-text">${k.text}</span>
-    </div>`
+    `<div class="key-item"><div class="key-text">${k.text}</div></div>`
   ).join('');
 
   // === 阵容变化 ===
-  function changesBlock(label, color, items) {
+  function changesBlock(name, color, items) {
     return `<div class="changes-block">
-      <div class="changes-label" style="color:${color}">${label}</div>
-      ${items.map(t=>`<div class="changes-item">· ${t}</div>`).join('')}
+      <div class="changes-label" style="color:${color}">${name}</div>
+      ${items.map(t=>`<div class="changes-item">${t}</div>`).join('')}
     </div>`;
   }
   const changesHtml =
     changesBlock('曼联', 'var(--home)', PREVIEW_DATA.changes.mu) +
     changesBlock('维拉', 'var(--away)', PREVIEW_DATA.changes.av);
 
-  el.innerHTML = `
+  el.innerHTML = `<div class="preview-panel-inner">
     <div class="preview-section">
-      <div class="preview-section-title">近期状态</div>
-      ${formHtml}
+      <div class="preview-section-title">Form</div>
+      <div class="form-block">${formHtml}</div>
     </div>
     <div class="preview-section">
-      <div class="preview-section-title">本场关键</div>
+      <div class="preview-section-title">Key Matchups</div>
       ${keysHtml}
     </div>
     <div class="preview-section">
-      <div class="preview-section-title">阵容变化</div>
+      <div class="preview-section-title">Lineup Changes</div>
       ${changesHtml}
     </div>
-  `;
+  </div>`;
 }
 
 // INIT — inject team badges from FotMob logo URLs

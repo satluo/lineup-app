@@ -11,16 +11,24 @@
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 :root {
   --mu-red:#e8402a; --av-blue:#4a9eda;
-  --bg:#0a0a0a;
-  --surface:#111111;
-  --surface-2:#1a1a1a;
+  /* 背景：hsl(220,8%,7%) — 极微弱暖冷中性黑，参考 Linear/Vercel */
+  --bg:hsl(220,8%,6%);
+  --surface:hsl(220,8%,9%);
+  --surface-2:hsl(220,7%,13%);
   --border:rgba(255,255,255,0.07);
-  --border-strong:rgba(255,255,255,0.12);
-  --text:#edf0f7; --text-muted:#5a6480; --text-secondary:#8892aa;
-  --accent:#4f8ef7;
-  --gold:#f0a732;
-  --green:#34d058;
+  --border-strong:rgba(255,255,255,0.13);
+  /* 文字：略偏冷白，更通透 */
+  --text:hsl(210,20%,93%);
+  --text-muted:hsl(220,10%,38%);
+  --text-secondary:hsl(220,12%,56%);
+  /* Accent：更偏天蓝，比 GitHub 蓝饱和度低但纯净 */
+  --accent:hsl(214,84%,62%);
+  --gold:hsl(38,90%,55%);
+  --green:hsl(145,60%,45%);
   --red-soft:#e8402a;
+  /* 草皮颜色变量，方便统一修改 */
+  --pitch-a:hsl(140,42%,26%);
+  --pitch-b:hsl(140,40%,30%);
 }
 body { background:var(--bg); color:var(--text); font-family:'Inter','Noto Sans SC',-apple-system,sans-serif; min-height:100vh; display:flex; flex-direction:column; max-width:430px; margin:0 auto; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
 
@@ -63,18 +71,29 @@ body { background:var(--bg); color:var(--text); font-family:'Inter','Noto Sans S
 .pitch {
   position:relative; width:100%; aspect-ratio:9/16; max-height:72vh;
   border-radius:10px; overflow:visible;
+  /* 竖屏：横向条纹（平行于中线） */
   background:
-    radial-gradient(ellipse 100% 80% at 50% 50%, rgba(255,255,255,0.04) 0%, rgba(0,0,0,0.25) 100%),
+    radial-gradient(ellipse 120% 60% at 50% 50%, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.3) 100%),
     repeating-linear-gradient(
       to bottom,
-      #2d6a3f 0px, #2d6a3f 14px,
-      #2a6039 14px, #2a6039 28px
+      var(--pitch-a) 0px, var(--pitch-a) 14px,
+      var(--pitch-b) 14px, var(--pitch-b) 28px
     );
   box-shadow:
-    0 0 0 1px rgba(0,0,0,0.5),
-    inset 0 0 60px rgba(0,0,0,0.35),
-    0 16px 48px rgba(0,0,0,0.9);
+    0 0 0 1px rgba(0,0,0,0.6),
+    inset 0 0 80px rgba(0,0,0,0.4),
+    0 20px 60px rgba(0,0,0,0.95);
   clip-path:inset(0 round 10px);
+}
+/* 横屏：纵向条纹（平行于中线） */
+.pitch.landscape {
+  background:
+    radial-gradient(ellipse 60% 120% at 50% 50%, rgba(255,255,255,0.06) 0%, rgba(0,0,0,0.3) 100%),
+    repeating-linear-gradient(
+      to right,
+      var(--pitch-a) 0px, var(--pitch-a) 14px,
+      var(--pitch-b) 14px, var(--pitch-b) 28px
+    );
 }
 .pitch-markings { position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; }
 .players-layer { position:absolute; top:0; left:0; width:100%; height:100%; overflow:visible; }
@@ -282,7 +301,7 @@ body { background:var(--bg); color:var(--text); font-family:'Inter','Noto Sans S
   /* 横屏：header 移入左栏顶部 */
   .match-header-ls { display:block; border-bottom:1px solid var(--border); flex-shrink:0; }
   .pitch-container { padding:0; background:var(--bg); overflow:hidden; }
-  .pitch { width:100% !important; height:auto !important; aspect-ratio:16/9 !important; max-height:none !important; max-width:none !important; overflow:visible; clip-path:none !important; border-radius:0 !important; flex-shrink:0; }
+  .pitch { width:100% !important; height:auto !important; aspect-ratio:16/9 !important; max-height:none !important; max-width:none !important; overflow:visible; clip-path:none !important; border-radius:0 !important; flex-shrink:0; box-shadow:none !important; }
   .bench-section { flex-shrink:0; padding:4px 8px 6px; border-top:1px solid var(--border); margin-top:0; }
   .stats-panel { flex-shrink:0; padding:8px 10px; border-bottom:1px solid var(--border); }
   .events-panel { flex:1; overflow-y:auto; }
@@ -824,6 +843,7 @@ function renderPlayer(p, team, ls) {
 function renderPitch() {
   const ls = isLandscape();
   const pitch = document.getElementById('pitch');
+  pitch.classList.toggle('landscape', ls);
   pitch.querySelector('svg')?.remove();
   pitch.insertAdjacentHTML('afterbegin', ls ? svgLandscape() : svgPortrait());
 

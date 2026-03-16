@@ -947,19 +947,16 @@ function openModal(p, team) {
       ${p.season.rating!=null?`<div class="stat-card rating-card"><div class="stat-card-val rating-val">${p.season.rating}</div><div class="stat-card-label">评分</div></div>`:''}
     </div>` : '';
 
-  // === FIFA 六大类能力条（位置百分位）===
+  // === FIFA 六大类能力条（原始分）===
   const fifaAttrs = getFifaAttrs(p.pos, p.attrs);
   const attrHtml = fifaAttrs.length > 0 ?
-    `<div class="section-title">能力指标 <span style="font-size:9px;color:var(--text-muted);font-weight:400">（位置百分位）</span></div>
+    `<div class="section-title">能力指标</div>
      <div class="attr-grid">${fifaAttrs.map(a=>{
-       const barColor = a.pct>=85?'#22c55e': a.pct>=70?'#58a6ff': a.pct>=50?'#eab308':'#f85149';
+       const barColor = a.raw>=85?'#22c55e': a.raw>=75?'#58a6ff': a.raw>=65?'#eab308':'#f85149';
        return `<div class="attr-item">
         <div class="attr-label" style="font-size:9px;font-weight:800;color:${barColor};width:30px">${a.code}</div>
-        <div class="attr-bar-wrap"><div class="attr-bar-fill" style="width:${a.pct}%;background:${barColor};border-radius:2px;transition:width 0.6s ease"></div></div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;min-width:30px">
-          <span style="font-size:12px;font-weight:900;color:${barColor};line-height:1">${a.pct}</span>
-          <span style="font-size:8px;color:var(--text-muted);line-height:1">${a.raw}</span>
-        </div>
+        <div class="attr-bar-wrap"><div class="attr-bar-fill" style="width:${a.raw}%;background:${barColor};border-radius:2px;transition:width 0.6s ease"></div></div>
+        <div class="attr-val" style="color:${barColor}">${a.raw}</div>
       </div>`;
      }).join('')}</div>` : '';
 

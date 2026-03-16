@@ -238,19 +238,21 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 /* ===== LANDSCAPE ===== */
 @media (orientation:landscape),(min-width:768px) {
   body { max-width:100%; flex-direction:column; }
-  .match-header { padding:6px 20px; }
-  .match-meta { margin-bottom:4px; font-size:9px; }
+  .match-header { padding:5px 12px; position:static; box-shadow:none; }
+  .match-meta { margin-bottom:2px; font-size:9px; }
   .team-badge { width:32px; height:32px; }
   .team-badge img { width:26px; height:26px; }
-  .score-num { font-size:26px; }
-  .score-divider { font-size:18px; }
+  .score-num { font-size:24px; }
+  .score-divider { font-size:16px; }
   .team-name { font-size:11px; }
   .tab-bar { display:none; }
   .tab-content { display:block !important; }
   #tab-lineup { display:flex !important; flex-direction:column; flex:1; min-height:0; }
-  .main-layout { display:flex; flex:1; gap:0; overflow:hidden; height:calc(100vh - 70px); }
+  .main-layout { display:flex; flex:1; gap:0; overflow:hidden; height:100vh; }
   .left-col { flex:0 0 78%; display:flex; flex-direction:column; overflow:hidden; border-right:1px solid var(--border); }
   .right-col { flex:0 0 22%; display:flex; flex-direction:column; overflow-y:auto; }
+  /* 横屏：header 移入左栏顶部 */
+  .match-header-ls { display:block; border-bottom:1px solid var(--border); flex-shrink:0; }
   .pitch-container { padding:0; background:#0d1117; overflow:hidden; }
   .pitch { width:100% !important; height:auto !important; aspect-ratio:16/9 !important; max-height:none !important; max-width:none !important; overflow:visible; clip-path:none !important; border-radius:0 !important; flex-shrink:0; }
   .bench-section { flex-shrink:0; padding:4px 8px 6px; border-top:1px solid var(--border); margin-top:0; }
@@ -264,9 +266,11 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
   <div class="match-meta">英超 · 第30轮 &nbsp;|&nbsp; <span>2026年3月15日 周日 22:00</span> &nbsp;|&nbsp; 老特拉福德 &nbsp;<span id="last-updated" style="color:var(--text-muted);font-weight:400"></span></div>
   <div class="score-row">
     <div class="team-info">
-      <div class="team-badge mu" id="badge-mu"></div>
+      <div style="display:flex;align-items:center;gap:5px">
+        <div id="coach-mu" style="display:flex;align-items:center;gap:3px;flex-direction:row-reverse"></div>
+        <div class="team-badge mu" id="badge-mu"></div>
+      </div>
       <div class="team-name">曼联</div>
-      <div id="coach-mu" style="display:flex;align-items:center;gap:3px;justify-content:center"></div>
     </div>
     <div class="score-display">
       <div class="score-numbers">
@@ -277,9 +281,11 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
       <div class="match-time" id="match-status" style="background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.2);color:var(--text-muted)"><span id="status-text">-</span></div>
     </div>
     <div class="team-info">
-      <div class="team-badge av" id="badge-av"></div>
+      <div style="display:flex;align-items:center;gap:5px">
+        <div class="team-badge av" id="badge-av"></div>
+        <div id="coach-av" style="display:flex;align-items:center;gap:3px"></div>
+      </div>
       <div class="team-name">维拉</div>
-      <div id="coach-av" style="display:flex;align-items:center;gap:3px;justify-content:center"></div>
     </div>
   </div>
 </div>
@@ -809,6 +815,20 @@ function renderPitch() {
   document.getElementById('main-layout').style.flexDirection = ls?'row':'column';
   document.getElementById('left-col').style.display = ls?'flex':'block';
   document.getElementById('right-col').style.display = ls?'flex':'block';
+
+  // 横屏：把 match-header 移进 left-col 顶部；竖屏：移回 body 顶部
+  const hdr = document.querySelector('.match-header');
+  const leftCol = document.getElementById('left-col');
+  const body = document.body;
+  if (ls) {
+    if (hdr && hdr.parentElement !== leftCol) {
+      leftCol.insertBefore(hdr, leftCol.firstChild);
+    }
+  } else {
+    if (hdr && hdr.parentElement !== body) {
+      body.insertBefore(hdr, body.firstChild);
+    }
+  }
   if (ls) {
     document.getElementById('right-col').style.flexDirection = 'column';
     document.getElementById('tab-stats').style.display = 'block';
@@ -1332,9 +1352,12 @@ function renderBadges() {
   if (muBadge) muBadge.innerHTML = `<img src="${FOTMOB_LOGO}${MU_TEAM_ID}_small.png" onerror="this.parentElement.textContent='MU'">`;
   if (avBadge) avBadge.innerHTML = `<img src="${FOTMOB_LOGO}${AV_TEAM_ID}_small.png" onerror="this.parentElement.textContent='AV'">`;
   function coachHtml(coachId, coachName) {
-    return `<img src="${FOTMOB}${coachId}.png" style="width:16px;height:16px;border-radius:50%;object-fit:cover;background:#333;flex-shrink:0"
+    return `<img src="${FOTMOB}${coachId}.png" style="width:22px;height:22px;border-radius:50%;object-fit:cover;background:#333;flex-shrink:0;border:1px solid rgba(255,255,255,0.15)"
       onerror="this.style.display='none'">
-      <span style="font-size:9px;color:var(--text-muted);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:60px">${coachName}</span>`;
+      <div style="display:flex;flex-direction:column;line-height:1.2">
+        <span style="font-size:7px;color:var(--text-muted);font-weight:500;letter-spacing:0.3px">主帅</span>
+        <span style="font-size:9px;color:var(--text);font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:52px">${coachName}</span>
+      </div>`;
   }
   const muCoach = document.getElementById('coach-mu');
   const avCoach = document.getElementById('coach-av');

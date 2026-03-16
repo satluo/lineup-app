@@ -296,6 +296,11 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
   <!-- LEFT COL (pitch + bench) -->
   <div class="left-col" id="left-col">
     <div class="tab-content active" id="tab-lineup">
+      <!-- 教练栏：球场上方 -->
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:4px 10px;flex-shrink:0;border-bottom:1px solid rgba(255,255,255,0.06)">
+        <div id="coach-mu" style="display:flex;align-items:center;gap:6px"></div>
+        <div id="coach-av" style="display:flex;align-items:center;gap:6px;flex-direction:row-reverse"></div>
+      </div>
       <div class="pitch-container">
         <div class="pitch" id="pitch">
           <svg class="pitch-markings" id="pitch-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
@@ -306,9 +311,6 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
             <div class="team-label-pill" style="color:#7ab8e8;border:1px solid rgba(62,127,187,0.6);">维拉 · 4-2-3-1</div>
           </div>
           <div class="players-layer" id="players-layer"></div>
-          <!-- 教练浮层 -->
-          <div id="coach-mu" style="position:absolute;top:6px;left:6px;display:flex;align-items:center;gap:4px;z-index:8;pointer-events:none"></div>
-          <div id="coach-av" style="position:absolute;top:6px;right:6px;display:flex;align-items:center;gap:4px;z-index:8;pointer-events:none;flex-direction:row-reverse"></div>
         </div>
       </div>
       <!-- Bench always in lineup tab -->
@@ -1349,11 +1351,11 @@ function renderBadges() {
   if (muBadge) muBadge.innerHTML = `<img src="${FOTMOB_LOGO}${MU_TEAM_ID}_small.png" onerror="this.parentElement.textContent='MU'">`;
   if (avBadge) avBadge.innerHTML = `<img src="${FOTMOB_LOGO}${AV_TEAM_ID}_small.png" onerror="this.parentElement.textContent='AV'">`;
   function coachHtml(coachId, coachName) {
-    return `<img src="${FOTMOB}${coachId}.png" style="width:26px;height:26px;border-radius:50%;object-fit:cover;background:#333;flex-shrink:0;border:1px solid rgba(255,255,255,0.2);box-shadow:0 1px 4px rgba(0,0,0,0.5)"
+    return `<img src="${FOTMOB}${coachId}.png" style="width:36px;height:36px;border-radius:50%;object-fit:cover;background:#333;flex-shrink:0;border:2px solid rgba(255,255,255,0.2);box-shadow:0 2px 6px rgba(0,0,0,0.5)"
       onerror="this.style.display='none'">
-      <div style="background:rgba(0,0,0,0.5);border-radius:6px;padding:2px 5px;backdrop-filter:blur(4px);line-height:1.3">
-        <div style="font-size:7px;color:rgba(255,255,255,0.5);font-weight:500;letter-spacing:0.3px">主帅</div>
-        <div style="font-size:9px;color:#fff;font-weight:700;white-space:nowrap">${coachName}</div>
+      <div style="line-height:1.3">
+        <div style="font-size:8px;color:var(--text-muted);font-weight:500;letter-spacing:0.3px">主帅</div>
+        <div style="font-size:11px;color:var(--text);font-weight:700;white-space:nowrap">${coachName}</div>
       </div>`;
   }
   const muCoach = document.getElementById('coach-mu');

@@ -158,20 +158,27 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 /* MODAL */
 .modal-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:200; opacity:0; pointer-events:none; transition:opacity 0.3s; backdrop-filter:blur(4px); }
 .modal-overlay.open { opacity:1; pointer-events:all; }
-.modal-sheet { position:fixed; bottom:0; left:50%; transform:translateX(-50%) translateY(100%); width:100%; max-width:500px; background:linear-gradient(180deg,#1c1c2e,#161b22); border-radius:20px 20px 0 0; z-index:201; transition:transform 0.35s cubic-bezier(0.32,0.72,0,1); max-height:90vh; overflow-y:auto; padding-bottom:32px; }
+.modal-sheet { position:fixed; bottom:0; left:50%; transform:translateX(-50%) translateY(100%); width:100%; max-width:500px; background:linear-gradient(180deg,#1c1c2e,#161b22); border-radius:20px 20px 0 0; z-index:201; transition:transform 0.35s cubic-bezier(0.32,0.72,0,1); max-height:92vh; overflow-y:auto; padding-bottom:32px; }
 .modal-sheet.open { transform:translateX(-50%) translateY(0); }
 .modal-handle { width:36px; height:4px; background:rgba(255,255,255,0.2); border-radius:2px; margin:10px auto 0; }
-.modal-header { padding:14px 20px 0; display:flex; align-items:center; gap:14px; }
-.modal-avatar { width:64px; height:64px; border-radius:50%; object-fit:cover; flex-shrink:0; border:3px solid; }
-.modal-avatar-fallback { width:64px; height:64px; border-radius:50%; flex-shrink:0; border:3px solid; overflow:hidden; display:none; }
-.modal-avatar-fallback svg { width:100%; height:100%; }
-.modal-player-info { flex:1; min-width:0; }
-.modal-player-name { font-size:19px; font-weight:800; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+/* 新版 modal header：半身照 + 信息叠加 */
+.modal-hero { position:relative; width:100%; height:200px; overflow:hidden; border-radius:12px 12px 0 0; }
+.modal-hero-img { width:100%; height:100%; object-fit:cover; object-position:top center; display:block; }
+.modal-hero-fallback { width:100%; height:100%; display:none; align-items:center; justify-content:center; font-size:64px; }
+.modal-hero-grad { position:absolute; inset:0; background:linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.85) 100%); }
+.modal-hero-info { position:absolute; bottom:12px; left:16px; right:16px; }
+.modal-hero-name { font-size:22px; font-weight:900; color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.8); display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
 .modal-captain { background:#FFD700; color:#000; font-size:10px; font-weight:900; padding:1px 6px; border-radius:4px; }
-.modal-position-row { display:flex; align-items:center; gap:8px; margin-top:4px; }
+.modal-hero-badges { display:flex; align-items:center; gap:6px; margin-top:5px; flex-wrap:wrap; }
 .modal-position { font-size:11px; font-weight:700; padding:2px 8px; border-radius:12px; }
-.modal-shirt { font-size:11px; color:var(--text-muted); font-weight:600; }
-.modal-body { padding:14px 20px 0; }
+.modal-shirt { font-size:11px; color:rgba(255,255,255,0.7); font-weight:600; }
+.modal-overall-pill { font-size:13px; font-weight:900; padding:2px 10px; border-radius:12px; color:#fff; }
+/* 旧字段保留兼容 */
+.modal-avatar { display:none; }
+.modal-avatar-fallback { display:none !important; }
+.modal-player-info { display:none; }
+.modal-header { display:none; }
+.modal-body { padding:12px 16px 0; }
 .modal-meta-row { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
 .meta-chip { background:rgba(255,255,255,0.07); border-radius:20px; padding:3px 9px; font-size:11px; color:var(--text-muted); display:flex; align-items:center; gap:3px; }
 .season-stats { display:flex; gap:8px; margin-bottom:12px; }
@@ -192,6 +199,30 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 .tags-row { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:12px; }
 .tag { font-size:10px; font-weight:600; padding:3px 8px; border-radius:12px; background:rgba(88,166,255,0.1); color:var(--accent); border:1px solid rgba(88,166,255,0.2); }
 .bio-text { font-size:13px; line-height:1.7; color:rgba(230,237,243,0.8); background:rgba(255,255,255,0.04); border-radius:10px; padding:11px; border-left:3px solid; margin-bottom:12px; }
+
+/* PREVIEW PANEL */
+.preview-section { margin-bottom:14px; }
+.preview-section-title { font-size:10px; font-weight:700; color:var(--text-muted); letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; padding-bottom:5px; border-bottom:1px solid var(--border); }
+.spotlight-card { display:flex; align-items:center; gap:10px; padding:8px 10px; background:rgba(255,255,255,0.04); border-radius:10px; margin-bottom:6px; cursor:pointer; border:1px solid transparent; transition:all 0.2s; }
+.spotlight-card:hover { background:rgba(255,255,255,0.08); border-color:rgba(255,255,255,0.1); }
+.spotlight-rank { font-size:18px; min-width:24px; text-align:center; }
+.spotlight-avatar { width:42px; height:42px; border-radius:50%; object-fit:cover; border:2px solid; flex-shrink:0; }
+.spotlight-avatar-fb { width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:13px; font-weight:900; color:#fff; border:2px solid; }
+.spotlight-info { flex:1; min-width:0; }
+.spotlight-name { font-size:13px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.spotlight-sub { font-size:10px; color:var(--text-muted); margin-top:1px; }
+.spotlight-tags { display:flex; gap:4px; flex-wrap:wrap; margin-top:3px; }
+.spotlight-tag { font-size:9px; padding:1px 6px; border-radius:8px; background:rgba(88,166,255,0.12); color:var(--accent); border:1px solid rgba(88,166,255,0.2); font-weight:600; }
+.spotlight-overall { font-size:13px; font-weight:900; padding:2px 8px; border-radius:8px; color:#fff; flex-shrink:0; }
+.duel-card { background:rgba(255,255,255,0.04); border-radius:10px; padding:10px 12px; margin-bottom:8px; border:1px solid rgba(255,255,255,0.06); }
+.duel-label { font-size:9px; color:var(--text-muted); text-align:center; margin-bottom:6px; letter-spacing:0.5px; }
+.duel-row { display:flex; align-items:center; gap:8px; }
+.duel-player { flex:1; display:flex; flex-direction:column; align-items:center; gap:3px; cursor:pointer; }
+.duel-avatar { width:38px; height:38px; border-radius:50%; object-fit:cover; border:2px solid; }
+.duel-name { font-size:10px; font-weight:700; text-align:center; }
+.duel-stat { font-size:9px; color:var(--text-muted); text-align:center; }
+.duel-vs { font-size:12px; font-weight:900; color:var(--text-muted); }
+.analysis-box { background:rgba(255,255,255,0.04); border-radius:10px; padding:11px 12px; border-left:3px solid var(--accent); font-size:12px; line-height:1.7; color:rgba(230,237,243,0.85); }
 
 /* ===== PORTRAIT BASE ===== */
 .main-layout { display:block; }
@@ -248,7 +279,7 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
 <!-- Portrait: tab bar -->
 <div class="tab-bar">
   <button class="tab-btn active" onclick="switchTab('lineup',this)">阵容</button>
-  <button class="tab-btn" onclick="switchTab('stats',this)">统计</button>
+  <button class="tab-btn" onclick="switchTab('stats',this)">导览</button>
   <button class="tab-btn" onclick="switchTab('events',this)">事件</button>
 </div>
 
@@ -292,25 +323,11 @@ body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkM
   <!-- RIGHT COL / Portrait tabs -->
   <div class="right-col" id="right-col">
     <div class="tab-content" id="tab-stats">
-      <div class="stats-panel">
-        <div class="stats-panel-title">数据统计</div>
-        <div class="stats-score-row">
-          <span class="stats-score-num whu" id="stats-score-mu">0</span>
-          <span class="stats-score-divider">-</span>
-          <span class="stats-score-num mc" id="stats-score-av">0</span>
-        </div>
-        <div class="stats-score-teams">
-          <span style="color:#ff6b5b">曼联</span>
-          <span id="stats-status-text" style="color:var(--text-muted)">-</span>
-          <span style="color:#7ab8e8">维拉</span>
-        </div>
-        <div style="font-size:9px;color:var(--text-muted);margin-bottom:6px;text-align:center">数据来源：直播吧 / dasfootball.com</div>
-        <div class="stats-header-row">
-          <span class="stats-team-name mu" style="color:#ff6b5b">曼联</span>
-          <span class="stats-team-name av" style="color:#7ab8e8">维拉</span>
-        </div>
-        <div id="stats-rows"></div>
+      <div style="padding:10px 12px 4px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px">
+        <span style="font-size:12px;font-weight:700;color:var(--text)">本场导览</span>
+        <span style="font-size:10px;color:var(--text-muted)">点击球员可查看详情</span>
       </div>
+      <div id="preview-panel" style="padding:12px 12px 0;overflow-y:auto"></div>
     </div>
     <div class="tab-content" id="tab-events">
       <div class="events-panel">
@@ -825,61 +842,70 @@ function getAttrColor(v) {
   if(v>=85)return'#3ddc84'; if(v>=75)return'#58a6ff'; if(v>=65)return'#e3b341'; return'#f85149';
 }
 
+const FLAG_MAP = {
+  '英格兰':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','苏格兰':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','威尔士':'🏴󠁧󠁢󠁷󠁬󠁳󠁿',
+  '葡萄牙':'🇵🇹','法国':'🇫🇷','西班牙':'🇪🇸','德国':'🇩🇪','荷兰':'🇳🇱',
+  '比利时':'🇧🇪','意大利':'🇮🇹','巴西':'🇧🇷','阿根廷':'🇦🇷','乌拉圭':'🇺🇾',
+  '哥伦比亚':'🇨🇴','墨西哥':'🇲🇽','美国':'🇺🇸','加拿大':'🇨🇦',
+  '塞内加尔':'🇸🇳','科特迪瓦':'🇨🇮','喀麦隆':'🇨🇲','加纳':'🇬🇭','尼日利亚':'🇳🇬',
+  '摩洛哥':'🇲🇦','埃及':'🇪🇬','阿尔及利亚':'🇩🇿',
+  '日本':'🇯🇵','韩国':'🇰🇷','澳大利亚':'🇦🇺',
+  '丹麦':'🇩🇰','瑞典':'🇸🇪','挪威':'🇳🇴','芬兰':'🇫🇮',
+  '波兰':'🇵🇱','捷克':'🇨🇿','斯洛伐克':'🇸🇰','克罗地亚':'🇭🇷','塞尔维亚':'🇷🇸',
+  '斯洛文尼亚':'🇸🇮','奥地利':'🇦🇹','瑞士':'🇨🇭',
+  '土耳其':'🇹🇷','希腊':'🇬🇷','乌克兰':'🇺🇦','俄罗斯':'🇷🇺',
+  '牙买加':'🇯🇲','特立尼达和多巴哥':'🇹🇹',
+  '中国':'🇨🇳','中国香港':'🇭🇰','斯洛伐克':'🇸🇰',
+};
+
 function openModal(p, team) {
   const ismu = team==='mu';
-  // mu = 西汉姆, av = 曼城
   const color = ismu?'#DA291C':'#3E7FBB';
   const lighter = ismu?'#e05a50':'#5a9fd4';
   const ring = ismu?'#ff6b5b':'#7ab8e8';
-  const initBg = ismu?'#6a1010':'#1a3a5c';
+  const teamName = ismu?'曼联':'维拉';
 
-  const radarHtml = p.attrs && p.attrs.length===6 ?
-    `<div class="section-title">能力雷达</div><div class="radar-wrap">${drawRadar(getRadarAttrs(p.pos, p.attrs), ring)}</div>` : '';
+  // === HERO: 半身照 ===
+  // Transfermarkt 半身照（按 fotmob id 查不到，用 Fotmob 全身/半身大图代替）
+  // Fotmob 提供 playerimages/{id}_200x200.png 或直接 {id}.png
+  // 尝试用更大尺寸图片 + object-position:top 裁成半身效果
+  const heroImgUrl = `${FOTMOB}${p.id}.png`;
+  const heroFallbackBg = `linear-gradient(135deg, ${color}44, ${color}11)`;
+  const heroFallbackEmoji = p.pos==='GK'?'🧤': p.pos==='CB'||p.pos==='RB'||p.pos==='LB'?'🛡️': p.pos==='ST'||p.pos==='CF'?'⚽': p.pos.includes('AM')||p.pos==='CAM'?'🎯':'⚡';
 
+  // === 赛季数据 ===
+  const seasonHtml = p.season ? `
+    <div class="season-stats">
+      ${p.season.goals!=null?`<div class="stat-card"><div class="stat-card-val" style="color:#3ddc84">${p.season.goals}</div><div class="stat-card-label">进球</div></div>`:''}
+      ${p.season.assists!=null?`<div class="stat-card"><div class="stat-card-val" style="color:#58a6ff">${p.season.assists}</div><div class="stat-card-label">助攻</div></div>`:''}
+      ${p.season.rating!=null?`<div class="stat-card rating-card"><div class="stat-card-val rating-val">${p.season.rating}</div><div class="stat-card-label">评分</div></div>`:''}
+    </div>` : '';
+
+  // === 能力条（按位置定制，不用雷达图）===
   const displayAttrs = getRadarAttrs(p.pos, p.attrs);
   const attrHtml = displayAttrs && displayAttrs.length>0 ?
-    `<div class="attr-grid">${displayAttrs.map(a=>`
+    `<div class="section-title">能力指标</div>
+     <div class="attr-grid">${displayAttrs.map(a=>`
       <div class="attr-item">
         <div class="attr-label">${a.n}</div>
-        <div class="attr-bar-wrap"><div class="attr-bar-fill" style="width:${a.v}%;background:${getAttrColor(a.v)}"></div></div>
+        <div class="attr-bar-wrap"><div class="attr-bar-fill" style="width:${a.v}%;background:${getAttrColor(a.v)};border-radius:2px;transition:width 0.6s ease"></div></div>
         <div class="attr-val" style="color:${getAttrColor(a.v)}">${a.v}</div>
       </div>`).join('')}</div>` : '';
 
-  const seasonHtml = p.season ? `
-    <div class="season-stats">
-      <div class="stat-card"><div class="stat-card-val" style="color:#3ddc84">${p.season.goals}</div><div class="stat-card-label">进球</div></div>
-      <div class="stat-card"><div class="stat-card-val" style="color:#58a6ff">${p.season.assists}</div><div class="stat-card-label">助攻</div></div>
-      <div class="stat-card rating-card"><div class="stat-card-val rating-val">${p.season.rating}</div><div class="stat-card-label">评分</div></div>
-    </div>` : '';
-
-  const flagMap = {
-    '英格兰':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','苏格兰':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','威尔士':'🏴󠁧󠁢󠁷󠁬󠁳󠁿',
-    '葡萄牙':'🇵🇹','法国':'🇫🇷','西班牙':'🇪🇸','德国':'🇩🇪','荷兰':'🇳🇱',
-    '比利时':'🇧🇪','意大利':'🇮🇹','巴西':'🇧🇷','阿根廷':'🇦🇷','乌拉圭':'🇺🇾',
-    '哥伦比亚':'🇨🇴','墨西哥':'🇲🇽','美国':'🇺🇸','加拿大':'🇨🇦',
-    '塞内加尔':'🇸🇳','科特迪瓦':'🇨🇮','喀麦隆':'🇨🇲','加纳':'🇬🇭','尼日利亚':'🇳🇬',
-    '摩洛哥':'🇲🇦','埃及':'🇪🇬','阿尔及利亚':'🇩🇿',
-    '日本':'🇯🇵','韩国':'🇰🇷','澳大利亚':'🇦🇺',
-    '丹麦':'🇩🇰','瑞典':'🇸🇪','挪威':'🇳🇴','芬兰':'🇫🇮',
-    '波兰':'🇵🇱','捷克':'🇨🇿','斯洛伐克':'🇸🇰','克罗地亚':'🇭🇷','塞尔维亚':'🇷🇸',
-    '斯洛文尼亚':'🇸🇮','奥地利':'🇦🇹','瑞士':'🇨🇭',
-    '土耳其':'🇹🇷','希腊':'🇬🇷','乌克兰':'🇺🇦','俄罗斯':'🇷🇺',
-    '牙买加':'🇯🇲','特立尼达和多巴哥':'🇹🇹',
-    '中国':'🇨🇳','中国香港':'🇭🇰',
-  };
+  // === meta chips ===
   const statusMap = {
     '主力':  {label:'主力',  bg:'rgba(34,197,94,0.15)',  color:'#22c55e'},
     '轮换':  {label:'轮换',  bg:'rgba(234,179,8,0.15)',  color:'#eab308'},
     '替补':  {label:'替补',  bg:'rgba(148,163,184,0.12)',color:'#94a3b8'},
   };
-  const flag = flagMap[p.country] || '🌍';
+  const flag = FLAG_MAP[p.country] || '🌍';
   let chips = [];
   if(p.country) chips.push(`<div class="meta-chip">${flag} ${p.country}</div>`);
   if(p.age) {
     const ageIcon = p.age<=21?'🌱': p.age<=26?'⚡': p.age<=30?'💪': p.age<=34?'🧓':'🏛️';
     chips.push(`<div class="meta-chip">${ageIcon} ${p.age}岁</div>`);
   }
-  if(p.height)  chips.push(`<div class="meta-chip">📏 ${p.height}</div>`);
+  if(p.height) chips.push(`<div class="meta-chip">📏 ${p.height}</div>`);
   if(p.foot) {
     const footColor = p.foot==='左脚'?'#f97316': p.foot==='双脚'?'#22c55e':'#60a5fa';
     const footBg    = p.foot==='左脚'?'rgba(249,115,22,0.12)': p.foot==='双脚'?'rgba(34,197,94,0.12)':'rgba(96,165,250,0.12)';
@@ -894,32 +920,32 @@ function openModal(p, team) {
     const s = statusMap[p.status];
     chips.push(`<div class="meta-chip" style="background:${s.bg};color:${s.color};font-weight:700">● ${s.label}</div>`);
   }
-  if(p.extra)   chips.push(`<div class="meta-chip" style="color:#FFD700;background:rgba(255,215,0,0.08)">🏆 ${p.extra}</div>`);
 
   const tagsHtml = p.tags?.length ? `<div class="tags-row">${p.tags.map(t=>`<span class="tag">#${t}</span>`).join('')}</div>` : '';
-  const bioHtml = p.bio ? `<div class="bio-text" style="border-color:${color}">${p.bio}</div>` : '';
-  const fbHtml = makeFallback('m'+p.id, p.num, color, lighter).replace('class="player-fb"','class="modal-avatar-fallback"').replace(/id="fb-[^"]*"/, '');
+  const bioHtml = p.bio ? `<div class="section-title">球员简评</div><div class="bio-text" style="border-color:${ring}80">${p.bio}</div>` : '';
 
   document.getElementById('modal-content').innerHTML = `
-    <div class="modal-header">
-      <img class="modal-avatar" src="${FOTMOB}${p.id}.png"
-        style="border-color:${ring};box-shadow:0 0 20px ${ring}40"
+    <div class="modal-hero">
+      <img class="modal-hero-img" src="${heroImgUrl}"
+        style="filter:brightness(0.92)"
         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      ${fbHtml.replace('<div class="modal-avatar-fallback">','<div class="modal-avatar-fallback" style="border-color:'+ring+'">')}
-      <div class="modal-player-info">
-        <div class="modal-player-name">${p.lastName}${p.captain?'<span class="modal-captain">C</span>':''}</div>
-        <div class="modal-position-row">
-          <div class="modal-position" style="background:${color}22;color:${ring};border:1px solid ${color}44">${p.pos}</div>
-          <div class="modal-shirt">#${p.num} · ${ismu?'曼联':'维拉'}</div>
-          ${p.overall ? `<div style="background:${overallBg(p.overall)};color:#fff;font-size:12px;font-weight:900;padding:2px 9px;border-radius:12px;letter-spacing:0.5px">${p.overall}</div>` : ''}
+      <div class="modal-hero-fallback" style="background:${heroFallbackBg};font-size:72px">${heroFallbackEmoji}</div>
+      <div class="modal-hero-grad" style="background:linear-gradient(to bottom, transparent 35%, ${color}cc 100%)"></div>
+      <div class="modal-hero-info">
+        <div class="modal-hero-name">
+          ${p.lastName}
+          ${p.captain?'<span class="modal-captain">C</span>':''}
+        </div>
+        <div class="modal-hero-badges">
+          <div class="modal-position" style="background:${color}44;color:#fff;border:1px solid ${color}88">${p.pos}</div>
+          <div class="modal-shirt">#${p.num} · ${teamName}</div>
+          ${p.overall ? `<div class="modal-overall-pill" style="background:${overallBg(p.overall)}">${p.overall}</div>` : ''}
         </div>
       </div>
     </div>
     <div class="modal-body">
-      ${chips.length?'<div class="modal-meta-row">'+chips.join('')+'</div>':''}
+      ${chips.length?'<div class="modal-meta-row" style="margin-bottom:10px">'+chips.join('')+'</div>':''}
       ${seasonHtml}
-      <div class="section-title" style="margin-top:4px">综合能力</div>
-      ${radarHtml ? radarHtml.replace('<div class="section-title">能力雷达</div>','') : ''}
       ${attrHtml}
       ${tagsHtml}
       ${bioHtml}
@@ -1118,6 +1144,116 @@ let resizeT;
 window.addEventListener('resize', ()=>{ clearTimeout(resizeT); resizeT=setTimeout(renderPitch,100); });
 window.matchMedia('(orientation:landscape)').addEventListener('change', ()=>{ setTimeout(renderPitch,150); });
 
+// =====================================================
+// 本场导览面板
+// =====================================================
+const PREVIEW_DATA = {
+  // 本场重点关注球员（emoji + 原因）
+  spotlight: [
+    { emoji:'🔴', team:'mu', id:422685,  name:'B.费尔南德斯', pos:'CAM', overall:86, tags:['队长','组织核心'],  reason:'本场进攻发动机，需要盯防他的远射和直塞' },
+    { emoji:'🔵', team:'av', id:540088,  name:'O.沃特金斯',   pos:'ST',  overall:84, tags:['本场最危险'],      reason:'本赛季16球，速度和跑位是曼联后防最大威胁' },
+    { emoji:'🔴', team:'mu', id:923312,  name:'姆贝莫',       pos:'ST',  overall:82, tags:['高效射手'],        reason:'本赛季15球，禁区内嗅觉出色，值得关注' },
+    { emoji:'🔵', team:'av', id:268375,  name:'E.马丁内斯',   pos:'GK',  overall:89, tags:['世界级','点球克星'], reason:'世界杯冠军门将，关键时刻扑救能力出众' },
+  ],
+  // 关键对决
+  duels: [
+    {
+      label:'核心对决 · 中场枢纽',
+      home: { team:'mu', id:422685, name:'费尔南德斯', stat:'12球14助攻' },
+      away: { team:'av', id:356406, name:'麦金',       stat:'高强度覆盖' },
+    },
+    {
+      label:'速度对决 · 右路战场',
+      home: { team:'mu', id:1070052, name:'阿马德',  stat:'右路突破王' },
+      away: { team:'av', id:210111,  name:'迪涅',    stat:'左路稳健' },
+    },
+    {
+      label:'前锋 vs 后卫 · 焦点对决',
+      home: { team:'av', id:540088,  name:'沃特金斯', stat:'速度+跑位' },
+      away: { team:'mu', id:1358581, name:'约罗',     stat:'19岁天才中卫' },
+    },
+  ],
+  // 战术分析
+  analysis: '曼联本场4-2-3-1，费尔南德斯担任核心，进攻依赖阿马德右路突破和姆贝莫禁区嗅觉。\n\n维拉同样4-2-3-1，沃特金斯是最大威胁——速度和跑位可以撕扯曼联防线。马丁内斯在禁区内统治力强，曼联想得分需要打出高质量射门。\n\n关键看点：曼联中场Mainoo能否压制维拉进攻节奏，以及约罗能否顶住沃特金斯的冲击考验。'
+};
+
+function renderPreviewPanel() {
+  const el = document.getElementById('preview-panel');
+  if (!el) return;
+
+  const allPlayers = [...MU_PLAYERS, ...AV_PLAYERS, ...MU_BENCH, ...AV_BENCH];
+  function findPlayer(id) { return allPlayers.find(p=>p.id===id); }
+
+  // 本场重点
+  const spotlightHtml = PREVIEW_DATA.spotlight.map(s => {
+    const p = findPlayer(s.id);
+    const ismu = s.team === 'mu';
+    const ring = ismu ? '#ff6b5b' : '#7ab8e8';
+    const bg = ismu ? '#DA291C' : '#3E7FBB';
+    const tagsHtml = s.tags.map(t=>`<span class="spotlight-tag">${t}</span>`).join('');
+    return `<div class="spotlight-card" onclick="openModal(${JSON.stringify(p).replace(/"/g,'&quot;')}, '${s.team}')">
+      <div class="spotlight-rank">${s.emoji}</div>
+      <img class="spotlight-avatar" src="${FOTMOB}${s.id}.png" style="border-color:${ring}"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="spotlight-avatar-fb" style="background:${bg};border-color:${ring};display:none">${s.name.slice(-2)}</div>
+      <div class="spotlight-info">
+        <div class="spotlight-name" style="color:${ring}">${s.name}</div>
+        <div class="spotlight-sub">${s.pos} · ${ismu?'曼联':'维拉'} · OVR ${s.overall}</div>
+        <div class="spotlight-tags">${tagsHtml}</div>
+        <div style="font-size:9px;color:var(--text-muted);margin-top:2px">${s.reason}</div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // 关键对决
+  const duelsHtml = PREVIEW_DATA.duels.map(d => {
+    const hp = findPlayer(d.home.id);
+    const ap = findPlayer(d.away.id);
+    const hRing = d.home.team==='mu'?'#ff6b5b':'#7ab8e8';
+    const aRing = d.away.team==='mu'?'#ff6b5b':'#7ab8e8';
+    const hBg = d.home.team==='mu'?'#DA291C':'#3E7FBB';
+    const aBg = d.away.team==='mu'?'#DA291C':'#3E7FBB';
+    const hClick = hp ? `openModal(${JSON.stringify(hp).replace(/"/g,'&quot;')}, '${d.home.team}')` : '';
+    const aClick = ap ? `openModal(${JSON.stringify(ap).replace(/"/g,'&quot;')}, '${d.away.team}')` : '';
+    return `<div class="duel-card">
+      <div class="duel-label">${d.label}</div>
+      <div class="duel-row">
+        <div class="duel-player" onclick="${hClick}">
+          <img class="duel-avatar" src="${FOTMOB}${d.home.id}.png" style="border-color:${hRing}"
+            onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\'width:38px;height:38px;border-radius:50%;background:${hBg};border:2px solid ${hRing};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff\'>${d.home.name.slice(-1)}</div>')">
+          <div class="duel-name" style="color:${hRing}">${d.home.name}</div>
+          <div class="duel-stat">${d.home.stat}</div>
+        </div>
+        <div class="duel-vs">VS</div>
+        <div class="duel-player" onclick="${aClick}">
+          <img class="duel-avatar" src="${FOTMOB}${d.away.id}.png" style="border-color:${aRing}"
+            onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\'width:38px;height:38px;border-radius:50%;background:${aBg};border:2px solid ${aRing};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff\'>${d.away.name.slice(-1)}</div>')">
+          <div class="duel-name" style="color:${aRing}">${d.away.name}</div>
+          <div class="duel-stat">${d.away.stat}</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+
+  // 阵型分析
+  const analysisHtml = `<div class="analysis-box">${PREVIEW_DATA.analysis.replace(/\n/g,'<br>')}</div>`;
+
+  el.innerHTML = `
+    <div class="preview-section">
+      <div class="preview-section-title">🔥 本场重点球员</div>
+      ${spotlightHtml}
+    </div>
+    <div class="preview-section">
+      <div class="preview-section-title">⚡ 关键对决</div>
+      ${duelsHtml}
+    </div>
+    <div class="preview-section">
+      <div class="preview-section-title">📋 战术分析</div>
+      ${analysisHtml}
+    </div>
+  `;
+}
+
 // INIT — inject team badges from FotMob logo URLs
 function renderBadges() {
   const muBadge = document.getElementById('badge-mu');
@@ -1128,7 +1264,7 @@ function renderBadges() {
 renderBadges();
 renderPitch();
 renderBench();
-renderStats();
+renderPreviewPanel();
 startPolling(); // 自动每60秒刷新直播数据
 
 // Portrait: show lineup by default, hide right col

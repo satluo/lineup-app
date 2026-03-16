@@ -769,17 +769,19 @@ function renderPlayer(p, team, ls) {
   node.style.left = x+'%'; node.style.top = y+'%';
   node.onclick = () => openModal(p, team);
 
+  const isSpotlight = PREVIEW_DATA.spotlight.some(s => s.id === p.id);
   node.innerHTML = `
-    <div class="player-avatar-wrap">
-      <div class="player-ring" style="border-color:${ring};box-shadow:0 0 8px ${ring}60;"></div>
+    <div class="player-avatar-wrap" ${isSpotlight?'style="filter:drop-shadow(0 0 6px gold)"':''}>
+      <div class="player-ring" style="border-color:${isSpotlight?'gold':ring};box-shadow:0 0 ${isSpotlight?'12px gold':'8px '+ring+'60'};"></div>
       <img class="player-img" src="${FOTMOB}${p.id}.png" alt="${p.name}"
         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
       ${fb}
       <div class="shirt-badge">${p.num}</div>
       ${p.captain?'<div class="captain-badge">C</div>':''}
       ${p.overall?`<div class="overall-badge" style="background:${overallBg(p.overall)}">${p.overall}</div>`:''}
+      ${isSpotlight?'<div style="position:absolute;top:-8px;left:50%;transform:translateX(-50%);font-size:10px;line-height:1;filter:drop-shadow(0 0 3px gold)">⭐</div>':''}
     </div>
-    <div class="player-label">${p.name}</div>
+    <div class="player-label" style="${isSpotlight?'color:gold;font-weight:900':''}">${p.name}</div>
   `;
   return node;
 }
@@ -1224,108 +1226,99 @@ window.matchMedia('(orientation:landscape)').addEventListener('change', ()=>{ se
 // 本场导览面板
 // =====================================================
 const PREVIEW_DATA = {
-  // 本场重点关注球员（emoji + 原因）
+  // 球场上标注焦点球员（金色发光）
   spotlight: [
-    { emoji:'🔴', team:'mu', id:422685,  name:'B.费尔南德斯', pos:'CAM', overall:86, tags:['队长','组织核心'],  reason:'本场进攻发动机，需要盯防他的远射和直塞' },
-    { emoji:'🔵', team:'av', id:540088,  name:'O.沃特金斯',   pos:'ST',  overall:86, tags:['本场最危险'],      reason:'本赛季16球，速度和跑位是曼联后防最大威胁' },
-    { emoji:'🔴', team:'mu', id:923312,  name:'姆贝莫',       pos:'ST',  overall:84, tags:['高效射手'],        reason:'本赛季15球，禁区内嗅觉出色，值得关注' },
-    { emoji:'🔵', team:'av', id:268375,  name:'E.马丁内斯',   pos:'GK',  overall:89, tags:['世界级','点球克星'], reason:'世界杯冠军门将，关键时刻扑救能力出众' },
+    { team:'mu', id:422685  },  // B·费尔南德斯
+    { team:'av', id:540088  },  // 沃特金斯
+    { team:'mu', id:923312  },  // 姆贝莫
+    { team:'av', id:883080  },  // 罗杰斯
   ],
-  // 关键对决
-  duels: [
-    {
-      label:'核心对决 · 中场枢纽',
-      home: { team:'mu', id:422685, name:'费尔南德斯', stat:'12球14助攻' },
-      away: { team:'av', id:356406, name:'麦金',       stat:'高强度覆盖' },
+
+  // 双方近期状态（最近5场）
+  form: {
+    mu: {
+      results: ['W','W','D','L','W'],   // 最新在左
+      scored:  [3, 2, 1, 0, 2],
+      conceded:[1, 0, 1, 2, 1],
+      label: '曼联近5场'
     },
-    {
-      label:'速度对决 · 右路战场',
-      home: { team:'mu', id:1070052, name:'阿马德',  stat:'右路突破王' },
-      away: { team:'av', id:210111,  name:'迪涅',    stat:'左路稳健' },
+    av: {
+      results: ['W','D','W','W','L'],
+      scored:  [2, 1, 3, 2, 0],
+      conceded:[0, 1, 1, 0, 2],
+      label: '维拉近5场'
     },
-    {
-      label:'前锋 vs 后卫 · 焦点对决',
-      home: { team:'av', id:540088,  name:'沃特金斯', stat:'速度+跑位' },
-      away: { team:'mu', id:1358581, name:'约罗',     stat:'19岁天才中卫' },
-    },
+  },
+
+  // 本场关键变量（2-3条）
+  keys: [
+    { icon:'⚡', text:'曼联主场连胜5场，状态火热；但维拉客场失球率低，近3场仅失2球' },
+    { icon:'🎯', text:'姆贝莫本赛季9球均来自右路下底传中，维拉迪涅左路防守将是关键' },
+    { icon:'🛡️', text:'约罗 vs 沃特金斯：19岁天才中卫首次面对英超顶级速度型前锋，是本场最大悬念' },
   ],
-  // 战术分析
-  analysis: '曼联本场4-2-3-1，费尔南德斯担任核心，进攻依赖阿马德右路突破和姆贝莫禁区嗅觉。\n\n维拉同样4-2-3-1，沃特金斯是最大威胁——速度和跑位可以撕扯曼联防线。马丁内斯在禁区内统治力强，曼联想得分需要打出高质量射门。\n\n关键看点：曼联中场Mainoo能否压制维拉进攻节奏，以及约罗能否顶住沃特金斯的冲击考验。'
+
+  // 阵容变化提示（相比上场）
+  changes: {
+    mu: ['马圭尔替换因伤缺席的利桑德罗', '首发11人其余不变'],
+    av: ['罗杰斯从板凳提升首发', '孔萨从伤病恢复，重返中卫位置'],
+  },
 };
 
 function renderPreviewPanel() {
   const el = document.getElementById('preview-panel');
   if (!el) return;
 
-  const allPlayers = [...MU_PLAYERS, ...AV_PLAYERS, ...MU_BENCH, ...AV_BENCH];
-  function findPlayer(id) { return allPlayers.find(p=>p.id===id); }
-
-  // 本场重点
-  const spotlightHtml = PREVIEW_DATA.spotlight.map(s => {
-    const p = findPlayer(s.id);
-    const ismu = s.team === 'mu';
-    const ring = ismu ? '#ff6b5b' : '#7ab8e8';
-    const bg = ismu ? '#DA291C' : '#3E7FBB';
-    const tagsHtml = s.tags.map(t=>`<span class="spotlight-tag">${t}</span>`).join('');
-    return `<div class="spotlight-card" onclick="openModal(${JSON.stringify(p).replace(/"/g,'&quot;')}, '${s.team}')">
-      <div class="spotlight-rank">${s.emoji}</div>
-      <img class="spotlight-avatar" src="${FOTMOB}${s.id}.png" style="border-color:${ring}"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="spotlight-avatar-fb" style="background:${bg};border-color:${ring};display:none">${s.name.slice(-2)}</div>
-      <div class="spotlight-info">
-        <div class="spotlight-name" style="color:${ring}">${s.name}</div>
-        <div class="spotlight-sub">${s.pos} · ${ismu?'曼联':'维拉'} · OVR ${s.overall}</div>
-        <div class="spotlight-tags">${tagsHtml}</div>
-        <div style="font-size:9px;color:var(--text-muted);margin-top:2px">${s.reason}</div>
-      </div>
+  // === 近期状态 ===
+  function formDot(r) {
+    const color = r==='W'?'#22c55e': r==='D'?'#eab308':'#f85149';
+    const label = r==='W'?'胜': r==='D'?'平':'负';
+    return `<span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:${color};font-size:9px;font-weight:900;color:#fff">${label}</span>`;
+  }
+  function formRow(d) {
+    const wins   = d.results.filter(r=>r==='W').length;
+    const draws  = d.results.filter(r=>r==='D').length;
+    const losses = d.results.filter(r=>r==='L').length;
+    const gf = d.scored.reduce((a,b)=>a+b,0);
+    const ga = d.conceded.reduce((a,b)=>a+b,0);
+    return `<div style="margin-bottom:8px">
+      <div style="font-size:10px;font-weight:700;color:var(--text-muted);margin-bottom:4px">${d.label}</div>
+      <div style="display:flex;gap:4px;align-items:center;margin-bottom:4px">${d.results.map(formDot).join('')}</div>
+      <div style="font-size:10px;color:var(--text-muted)">${wins}胜${draws}平${losses}负 · 进${gf}球失${ga}球</div>
     </div>`;
-  }).join('');
+  }
+  const formHtml = formRow(PREVIEW_DATA.form.mu) + formRow(PREVIEW_DATA.form.av);
 
-  // 关键对决
-  const duelsHtml = PREVIEW_DATA.duels.map(d => {
-    const hp = findPlayer(d.home.id);
-    const ap = findPlayer(d.away.id);
-    const hRing = d.home.team==='mu'?'#ff6b5b':'#7ab8e8';
-    const aRing = d.away.team==='mu'?'#ff6b5b':'#7ab8e8';
-    const hBg = d.home.team==='mu'?'#DA291C':'#3E7FBB';
-    const aBg = d.away.team==='mu'?'#DA291C':'#3E7FBB';
-    const hClick = hp ? `openModal(${JSON.stringify(hp).replace(/"/g,'&quot;')}, '${d.home.team}')` : '';
-    const aClick = ap ? `openModal(${JSON.stringify(ap).replace(/"/g,'&quot;')}, '${d.away.team}')` : '';
-    return `<div class="duel-card">
-      <div class="duel-label">${d.label}</div>
-      <div class="duel-row">
-        <div class="duel-player" onclick="${hClick}">
-          <img class="duel-avatar" src="${FOTMOB}${d.home.id}.png" style="border-color:${hRing}"
-            onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\'width:38px;height:38px;border-radius:50%;background:${hBg};border:2px solid ${hRing};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff\'>${d.home.name.slice(-1)}</div>')">
-          <div class="duel-name" style="color:${hRing}">${d.home.name}</div>
-          <div class="duel-stat">${d.home.stat}</div>
-        </div>
-        <div class="duel-vs">VS</div>
-        <div class="duel-player" onclick="${aClick}">
-          <img class="duel-avatar" src="${FOTMOB}${d.away.id}.png" style="border-color:${aRing}"
-            onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\'width:38px;height:38px;border-radius:50%;background:${aBg};border:2px solid ${aRing};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:900;color:#fff\'>${d.away.name.slice(-1)}</div>')">
-          <div class="duel-name" style="color:${aRing}">${d.away.name}</div>
-          <div class="duel-stat">${d.away.stat}</div>
-        </div>
-      </div>
+  // === 关键变量 ===
+  const keysHtml = PREVIEW_DATA.keys.map(k =>
+    `<div style="display:flex;gap:8px;align-items:flex-start;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+      <span style="font-size:14px;flex-shrink:0;margin-top:1px">${k.icon}</span>
+      <span style="font-size:11px;color:var(--text-muted);line-height:1.5">${k.text}</span>
+    </div>`
+  ).join('');
+
+  // === 阵容变化 ===
+  function changesBlock(label, color, items) {
+    return `<div style="margin-bottom:6px">
+      <div style="font-size:10px;font-weight:700;color:${color};margin-bottom:3px">${label}</div>
+      ${items.map(t=>`<div style="font-size:10px;color:var(--text-muted);padding-left:8px;line-height:1.6">· ${t}</div>`).join('')}
     </div>`;
-  }).join('');
-
-  // 阵型分析
-  const analysisHtml = `<div class="analysis-box">${PREVIEW_DATA.analysis.replace(/\n/g,'<br>')}</div>`;
+  }
+  const changesHtml =
+    changesBlock('🔴 曼联', '#ff6b5b', PREVIEW_DATA.changes.mu) +
+    changesBlock('🔵 维拉', '#7ab8e8', PREVIEW_DATA.changes.av);
 
   el.innerHTML = `
     <div class="preview-section">
-      <div class="preview-section-title">🔥 本场重点球员</div>
-      ${spotlightHtml}
+      <div class="preview-section-title">📊 近期状态</div>
+      ${formHtml}
     </div>
     <div class="preview-section">
-      <div class="preview-section-title">⚡ 关键对决</div>
-      ${duelsHtml}
+      <div class="preview-section-title">🔑 本场关键</div>
+      ${keysHtml}
     </div>
     <div class="preview-section">
-      <div class="preview-section-title">📋 战术分析</div>
-      ${analysisHtml}
+      <div class="preview-section-title">🔄 阵容变化</div>
+      ${changesHtml}
     </div>
   `;
 }

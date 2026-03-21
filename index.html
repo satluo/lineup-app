@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>曼联 vs 维拉 | 首发阵容</title>
+<title>布赖顿 vs 利物浦 | 首发阵容</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;900&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -22,8 +22,8 @@
   --text-2:#999999;
   --text-3:#5a5a5a;
   /* ── 队色 ── */
-  --home:#e8402a;
-  --away:#4a9eda;
+  --home:#0057b8;
+  --away:#cc0000;
   /* ── 强调色 ── */
   --accent:#ebebeb;
   --gold:#d4a84b;
@@ -38,7 +38,7 @@
   --r-md:8px;
   --r-lg:14px;
   /* ── 兼容旧变量(JS引用) ── */
-  --mu-red:#e8402a; --av-claret:#4a9eda; --av-main:#4a9eda;
+  --mu-red:#0057b8; --av-claret:#cc0000; --av-main:#cc0000;
   --text:var(--text-1); --text-muted:var(--text-3); --border:var(--divider);
   --border-strong:rgba(255,255,255,0.12);
 }
@@ -160,8 +160,8 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
 .stat-val.mu { color:var(--text-1); text-align:right; }
 .stat-val.av { color:var(--text-1); text-align:left; }
 .stat-bar-track { flex:1; height:4px; background:var(--surface-3); border-radius:2px; display:flex; position:relative; }
-.stat-bar-mu { height:100%; background:linear-gradient(90deg,var(--home),#e66050); border-radius:2px 0 0 2px; }
-.stat-bar-av { height:100%; background:linear-gradient(90deg,var(--away),#6db8e8); border-radius:0 2px 2px 0; }
+.stat-bar-mu { height:100%; background:linear-gradient(90deg,var(--home),#3380d0); border-radius:2px 0 0 2px; }
+.stat-bar-av { height:100%; background:linear-gradient(90deg,var(--away),#e83030); border-radius:0 2px 2px 0; }
 .stat-divider { width:1px; height:12px; background:rgba(255,255,255,0.15); position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
 
 /* EVENTS PANEL */
@@ -356,13 +356,13 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
 </head>
 <body>
 <div class="match-header">
-  <div class="match-meta">英超 · 第30轮 &nbsp;|&nbsp; <span>2026年3月15日 周日 22:00</span> &nbsp;|&nbsp; 老特拉福德 &nbsp;<span id="last-updated" style="color:var(--text-muted);font-weight:400"></span></div>
+  <div class="match-meta">英超 · 第31轮 &nbsp;|&nbsp; <span>2026年3月21日 周六 22:30</span> &nbsp;|&nbsp; Amex球场 &nbsp;<span id="last-updated" style="color:var(--text-muted);font-weight:400"></span></div>
   <div class="score-row">
     <div id="coach-mu" style="display:flex;align-items:center;gap:6px;width:100px;flex-shrink:0;justify-content:flex-start"></div>
     <div style="display:flex;align-items:center;gap:8px;flex:1;justify-content:center">
       <div class="team-info" style="flex:0 0 auto">
         <div class="team-badge mu" id="badge-mu"></div>
-        <div class="team-name">曼联</div>
+        <div class="team-name">布赖顿</div>
       </div>
       <div class="score-display">
         <div class="score-numbers">
@@ -374,7 +374,7 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
       </div>
       <div class="team-info" style="flex:0 0 auto">
         <div class="team-badge av" id="badge-av"></div>
-        <div class="team-name">维拉</div>
+        <div class="team-name">利物浦</div>
       </div>
     </div>
     <div id="coach-av" style="display:flex;align-items:center;gap:6px;width:100px;flex-shrink:0;justify-content:flex-end"></div>
@@ -397,10 +397,10 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
         <div class="pitch" id="pitch">
           <svg class="pitch-markings" id="pitch-svg" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"></svg>
           <div id="label-mu" class="team-label-banner top">
-            <div class="team-label-pill" style="color:#ff6b5b;border:1px solid rgba(218,41,28,0.6);">曼联 · 4-2-3-1</div>
+            <div class="team-label-pill" style="color:#5599e8;border:1px solid rgba(0,87,184,0.6);">布赖顿 · 4-2-3-1</div>
           </div>
           <div id="label-av" class="team-label-banner bottom">
-            <div class="team-label-pill" style="color:#7ab8e8;border:1px solid rgba(62,127,187,0.6);">维拉 · 4-2-3-1</div>
+            <div class="team-label-pill" style="color:#e85555;border:1px solid rgba(204,0,0,0.6);">利物浦 · 4-3-3</div>
           </div>
           <div class="players-layer" id="players-layer"></div>
         </div>
@@ -409,12 +409,12 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
       <div class="bench-section" id="bench-section">
         <div class="bench-split">
           <div class="bench-half bench-half-mu">
-            <div class="bench-half-label" style="color:#ff6b5b;margin-bottom:3px">曼联 替补</div>
+            <div class="bench-half-label" style="color:#5599e8;margin-bottom:3px">布赖顿 替补</div>
             <div class="bench-cards-row" id="bench-mu" style="display:flex;flex-wrap:nowrap;gap:2px;width:100%;"></div>
           </div>
           <div class="bench-divider"></div>
           <div class="bench-half bench-half-av">
-            <div class="bench-half-label" style="color:#7ab8e8;margin-bottom:3px">维拉 替补</div>
+            <div class="bench-half-label" style="color:#e85555;margin-bottom:3px">利物浦 替补</div>
             <div class="bench-cards-row" id="bench-av" style="display:flex;flex-wrap:nowrap;gap:2px;width:100%;"></div>
           </div>
         </div>
@@ -460,203 +460,198 @@ body { background:var(--bg); color:var(--text-1); font-family:'Inter','Noto Sans
 const FOTMOB = 'https://images.fotmob.com/image_resources/playerimages/';
 const FOTMOB_LOGO = 'https://images.fotmob.com/image_resources/logo/teamlogo/';
 // 换比赛时修改这两个队标ID（FotMob team ID）
-const MU_TEAM_ID = 10260;  // 曼联
-const AV_TEAM_ID = 10252;  // 维拉
-const MU_COACH = '阿莫林';
-const MU_COACH_ID = 837621;   // FotMob ID
-const AV_COACH = '乌纳伊·埃梅里';
-const AV_COACH_ID = 96940;    // FotMob ID
+const MU_TEAM_ID = 10204;  // 布赖顿
+const AV_TEAM_ID = 8650;   // 利物浦
+const MU_COACH = '许尔泽勒';
+const MU_COACH_ID = 208516;   // FotMob ID
+const AV_COACH = '斯洛特';
+const AV_COACH_ID = 26630;    // FotMob ID
 
 // 坐标规则（横屏球场 16:9，主场左攻右，客场右攻左）
 // 主场：xL = fotmob_x * 48        yL = fotmob_y * 100
 // 客场：xL = 100 - fotmob_x * 48  yL = (1 - fotmob_y) * 100  ← y轴镜像！客场从右往左，上下颠倒
 // 换比赛时同步更新：MU_PLAYERS(主场)、AV_PLAYERS(客场)、MU_BENCH、AV_BENCH
 
-// 主场：曼联（左半场，4-2-3-1）Old Trafford
+// 主场：布赖顿（左半场，4-2-3-1）Amex Stadium
 const MU_PLAYERS = [
-  { id:1178602, plId:'p465247', num:31, pos:'GK',  name:'Lammens',    lastName:'Lammens',   cnName:'拉曼斯',   xP:50,yP:95, xL:5, yL:50,
-    country:'比利时', age:24, height:'191cm', foot:'左脚',
-    attrs:[{n:'速度',v:60},{n:'射门',v:18},{n:'传球',v:72},{n:'盘带',v:45},{n:'防守',v:80},{n:'体能',v:78}],
-    season:{apps:24, rating:6.7, cleanSheets:5, saves:54},
-    tags:['比利时门将', '脚下技术', '潜力新秀'], overall:68, status:'轮换', weakFoot:3, bio:'比利时年轻门将，身高191cm。职业生涯主要在比利时联赛积累经验，脚下技术尚可但大赛经验不足。本赛季担任曼联主力门将，表现平稳。反应速度良好，身体条件出色，未来潜力可期，但仍需更多顶级联赛历练才能真正在英超立足。' },
-  { id:751550,  plId:'p216051', num:2,  pos:'RB',  name:'Dalot',      lastName:'Dalot',     cnName:'达洛特',   xP:82,yP:83, xL:14,yL:88,
-    country:'葡萄牙', age:26, height:'182cm', foot:'右脚',
-    attrs:[{n:'速度',v:83},{n:'射门',v:62},{n:'传球',v:78},{n:'盘带',v:76},{n:'防守',v:78},{n:'体能',v:82}],
-    season:{apps:23, rating:7.1, goals:1, assists:6},
-    tags:['攻强守弱', '右路强攻', '助攻机器'], overall:83, status:'主力', weakFoot:3, bio:'葡萄牙国家队主力右后卫，在曼联多年已成不可或缺的一员。助攻能力强、奔跑积极，右路频繁制造威胁。参加过2024欧洲杯，表现稳健。本赛季进攻防守均有良好发挥，但一对一防守偶有失误是其短板，整体而言是英超高水准右后卫。' },
-  { id:1358581, plId:'p550864', num:15, pos:'CB',  name:'Yoro',       lastName:'Yoro',      cnName:'约罗',     xP:64,yP:83, xL:14,yL:62,
-    country:'法国', age:19, height:'194cm', foot:'右脚',
-    attrs:[{n:'速度',v:83},{n:'射门',v:40},{n:'传球',v:74},{n:'盘带',v:62},{n:'防守',v:84},{n:'体能',v:83}],
-    season:{apps:16, rating:7.0, goals:0, assists:1},
-    tags:['天才中卫', '技术出球', '贵价潜力'], overall:81, status:'主力', weakFoot:4, bio:'法国19岁天才中卫，以约1.5亿欧元身价从里尔加盟，是近年最昂贵后卫之一。身高194cm，对抗能力强、空中优势明显，脚下技术细腻，出球质量高。然而加盟后遭遇伤病，本赛季逐步找回状态。经验尚浅是当前短板，但以现有天赋看，未来将成为世界顶级中卫。' },
-  { id:255610,  plId:'p95658', num:5,  pos:'CB',  name:'Maguire',    lastName:'Maguire',   cnName:'马奎尔',   xP:36,yP:83, xL:14,yL:38,
-    country:'英格兰', age:33, height:'194cm', foot:'右脚',
-    attrs:[{n:'速度',v:64},{n:'射门',v:55},{n:'传球',v:74},{n:'盘带',v:55},{n:'防守',v:80},{n:'体能',v:80}],
-    season:{apps:12, rating:6.8, goals:1, assists:1},
-    tags:['头球制空', '老将领袖', '空中优势'], overall:79, status:'轮换', weakFoot:3, bio:'曾以8000万英镑身价创后卫纪录，前曼联队长。身高194cm，头球强、领导力出众。然而近年频繁失误，防守速度和灵活性饱受诟病，主力地位已受威胁。33岁仍保持一定水准，大场面经验丰富，但已过职业生涯最佳期，只能保持中规中矩的表现。' },
-  { id:362694,  plId:'p106760', num:23, pos:'LB',  name:'L.Shaw',     lastName:'Shaw',      cnName:'卢克·肖',  xP:18,yP:83, xL:14,yL:12,
-    country:'英格兰', age:28, height:'180cm', foot:'左脚',
-    attrs:[{n:'速度',v:78},{n:'射门',v:58},{n:'传球',v:76},{n:'盘带',v:72},{n:'防守',v:76},{n:'体能',v:77}],
-    season:{apps:28, rating:6.9, goals:0, assists:1},
-    tags:['进攻左卫', '传球精准', '伤病困扰'], overall:80, status:'轮换', weakFoot:4, bio:'英格兰主力左后卫，巅峰时期被誉为世界最佳之一。助攻能力强、传球精准，上下线均衡。职业生涯最大敌人是伤病，长期缺阵严重影响发展。本赛季伤病依然反复，出场时间有限。健康时展现出的统治力令人叹服，能有效支撑曼联左路进攻体系，克服伤病才是关键。' },
-  { id:208494,  plId:'p61256', num:18, pos:'CDM', name:'Casemiro',   lastName:'Casemiro',  cnName:'卡塞米罗',  xP:62,yP:71, xL:23,yL:70,
-    country:'巴西', age:34, height:'185cm', foot:'右脚',
-    attrs:[{n:'速度',v:64},{n:'射门',v:68},{n:'传球',v:82},{n:'盘带',v:70},{n:'防守',v:88},{n:'体能',v:82}],
-    season:{apps:22, rating:7.0, goals:7, assists:4},
-    tags:['拦截机器', '断球悍将', '老将经验'], overall:83, status:'轮换', weakFoot:3, bio:'巴西传奇后腰，皇马五冠王核心，职业生涯荣誉等身。断球技术一流，身体对抗能力极强。然而34岁的他状态已明显下滑，速度和覆盖范围退步，在英超快节奏对抗中偶有不适。尽管如此，其丰富经验和更衣室领导力仍对曼联中场有重要价值，是过渡期的关键人物。' },
-  { id:1292810, plId:'p516895', num:37, pos:'CM',  name:'Mainoo',     lastName:'Mainoo',    cnName:'迈努',     xP:38,yP:71, xL:23,yL:30,
-    country:'英格兰', age:20, height:'180cm', foot:'右脚',
-    attrs:[{n:'速度',v:76},{n:'射门',v:72},{n:'传球',v:84},{n:'盘带',v:82},{n:'防守',v:74},{n:'体能',v:82}],
-    season:{apps:20, rating:7.1, goals:0, assists:2},
-    tags:['技术中场', '冷静持球', '英格兰新星'], overall:80, status:'主力', weakFoot:4, bio:'曼联青训培养的中场新星，20岁便在英超站稳脚跟，并在2024年欧洲杯中助英格兰打入决赛，一战成名。技术细腻，传球视野开阔，善于在高压下保持冷静。本赛季逐渐成为曼联中场核心，防守能力也在持续成长。年轻是最大资本，被誉为英超最具潜力的新生代中场之一。' },
-  { id:1070052, plId:'p493250', num:16, pos:'RAM', name:'Amad',       lastName:'Amad',      cnName:'阿马德',   xP:80,yP:60, xL:33,yL:84,
-    country:'科特迪瓦', age:22, height:'174cm', foot:'右脚',
-    attrs:[{n:'速度',v:85},{n:'射门',v:76},{n:'传球',v:74},{n:'盘带',v:84},{n:'防守',v:54},{n:'体能',v:80}],
-    season:{apps:23, rating:7.0, goals:2, assists:2},
-    tags:['右路快马', '突破能手', '切入射门'], overall:82, status:'主力', weakFoot:4, bio:'科特迪瓦年轻边锋，2024/25赛季迎来职业生涯爆发期。速度极快、突破能力出众，右路频繁制造威胁，多次在关键比赛中打进重要进球。技术动作灵活，过人成功率高。不足在于稳定性偶有起伏，防守贡献有限。被誉为本赛季英超最大黑马之一，成长速度惊人。' },
-  { id:422685,  plId:'p141746', num:8,  pos:'CAM', name:'B.Fernandes',lastName:'Fernandes',  cnName:'B·费尔南德斯', xP:50,yP:60, xL:33,yL:50,
+  { id:1131987, num:1,  pos:'GK',  name:'Verbruggen', lastName:'Verbruggen', cnName:'费尔布鲁根', xP:50,yP:95, xL:5, yL:50,
+    country:'荷兰', age:22, height:'190cm', foot:'左脚',
+    attrs:[{n:'速度',v:62},{n:'射门',v:18},{n:'传球',v:74},{n:'盘带',v:48},{n:'防守',v:82},{n:'体能',v:80}],
+    season:{apps:26, rating:7.1, cleanSheets:7, saves:72},
+    tags:['荷兰新星门将','脚下技术','反应敏捷'], overall:79, status:'主力', weakFoot:3, bio:'荷兰年轻门将，身高190cm，从安德莱赫特加盟布赖顿后迅速成为主力。反应速度出众，脚下技术细腻，是布赖顿控球打法体系的重要一环。22岁正处于快速成长期，大赛经验逐渐积累，被广泛认为是荷兰门将位置未来接班人选之一，市场价值持续攀升。' },
+  { id:1047648, num:6,  pos:'RB',  name:'Wieffer',    lastName:'Wieffer',    cnName:'韦弗', xP:82,yP:83, xL:14,yL:88,
+    country:'荷兰', age:25, height:'185cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:60},{n:'传球',v:80},{n:'盘带',v:74},{n:'防守',v:82},{n:'体能',v:84}],
+    season:{apps:22, rating:7.0, goals:1, assists:2},
+    tags:['多功能荷兰国脚','防守积极','出球稳健'], overall:80, status:'主力', weakFoot:3, bio:'荷兰国脚，本场出任右后卫，以强悍对抗和积极跑动著称，攻守均衡是许尔泽勒右路体系的重要支撑。' },
+  { id:194411,  num:5,  pos:'CB',  name:'Dunk',       lastName:'Dunk',       cnName:'邓克', xP:64,yP:83, xL:14,yL:62,
     captain:true,
-    country:'葡萄牙', age:31, height:'179cm', foot:'右脚',
-    season:{apps:26, rating:7.8, goals:7, assists:14},
-    attrs:[{n:'速度',v:76},{n:'射门',v:86},{n:'传球',v:90},{n:'盘带',v:84},{n:'防守',v:62},{n:'体能',v:82}],
-    season:{apps:26, goals:7, assists:14},
-    tags:['组织核心', '远射威胁', '任意球专家'], overall:86, status:'主力', weakFoot:4, bio:'曼联现任队长，葡萄牙核心，本赛季12球14助攻，是球队最重要的进攻发动机。擅长远射、任意球和创造机会，对比赛掌控能力出众。加盟曼联以来始终高产，已成为近年英超最出色的10号。领导力强，关键时刻往往挺身而出。偶尔情绪化是其唯一缺点，整体属于当今世界级中场，曼联绝对核心。' },
-  { id:863098,  plId:'p430871', num:10, pos:'LAM', name:'Cunha',      lastName:'Cunha',     cnName:'库尼亚',   xP:20,yP:60, xL:33,yL:16,
-    country:'巴西', age:25, height:'181cm', foot:'左脚',
-    attrs:[{n:'速度',v:85},{n:'射门',v:82},{n:'传球',v:78},{n:'盘带',v:86},{n:'防守',v:50},{n:'体能',v:82}],
-    season:{apps:26, rating:7.3, goals:6, assists:2},
-    tags:['左路突破', '技术流', '灵动飘逸'], overall:82, status:'主力', weakFoot:4, bio:'巴西技术型前锋，从狼队加盟曼联。速度快、带球突破能力强，左路进攻威胁十足，踢球风格灵动飘逸。本赛季适应曼联战术体系后逐渐进入状态，进球和助攻稳步提升。25岁正值当打之年，具有典型巴西球员的技巧特点。防守贡献相对有限是其短板，但综合实力已属英超上流水准。' },
-  { id:923312,  plId:'p446008', num:19, pos:'ST',  name:'Mbeumo',     lastName:'Mbeumo',    cnName:'姆贝莫',   xP:50,yP:53, xL:42,yL:50,
-    country:'喀麦隆', age:25, height:'173cm', foot:'右脚',
-    season:{apps:24, rating:7.4, goals:9, assists:3},
-    attrs:[{n:'速度',v:89},{n:'射门',v:84},{n:'传球',v:74},{n:'盘带',v:86},{n:'防守',v:52},{n:'体能',v:84}],
-    season:{apps:24, goals:9, assists:3},
-    tags:['边路快马', '高效射手', '切入进球'], overall:84, status:'主力', weakFoot:3, bio:'喀麦隆前锋，从布伦特福德加盟曼联，本赛季已打入15球。身形矮小灵活，速度极快，射门精准，擅长边路突破后切入完成射门。在布伦特福德时便已展现英超顶级水准，加盟豪门后状态延续。跑位意识出色，唯一不足是身高在对抗高大后卫时略有劣势。本赛季完全达到顶级球队正选标准，性价比极高。' },
+    country:'英格兰', age:34, height:'191cm', foot:'左脚',
+    attrs:[{n:'速度',v:66},{n:'射门',v:44},{n:'传球',v:76},{n:'盘带',v:58},{n:'防守',v:86},{n:'体能',v:80}],
+    season:{apps:27, rating:7.0, goals:1, assists:1},
+    tags:['老将领袖','空中优势','布赖顿队长'], overall:82, status:'主力', weakFoot:3, bio:'布赖顿队长，效力球队多年的后防核心。身高191cm，空中争顶能力出众，领导力和大赛经验丰富。34岁仍是英超顶级中卫之一，速度是相对短板，但判断力和战术意识弥补了这一劣势。他是布赖顿历史上最重要的球员之一，是球队稳定的最后一道屏障。' },
+  { id:760924,  num:18, pos:'CB',  name:'van Hecke',  lastName:'van Hecke',  cnName:'范赫克', xP:36,yP:83, xL:14,yL:38,
+    country:'荷兰', age:24, height:'190cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:42},{n:'传球',v:78},{n:'盘带',v:62},{n:'防守',v:84},{n:'体能',v:82}],
+    season:{apps:24, rating:6.9, goals:0, assists:2},
+    tags:['技术中卫','出球流畅','荷兰潜力股'], overall:79, status:'主力', weakFoot:4, bio:'荷兰年轻中卫，24岁技术出众，出球质量高，是布赖顿后场控球体系的关键环节。与邓克搭档形成稳固的中卫组合，防守积极，对抗能力强，未来前景广阔。' },
+  { id:830303,  num:3,  pos:'LB',  name:'Kadioglu',   lastName:'Kadioglu',   cnName:'卡迪奥卢', xP:18,yP:83, xL:14,yL:12,
+    country:'土耳其', age:25, height:'175cm', foot:'左脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:62},{n:'传球',v:78},{n:'盘带',v:78},{n:'防守',v:74},{n:'体能',v:82}],
+    season:{apps:25, rating:7.1, goals:2, assists:6},
+    tags:['进攻左卫','速度冲击','土耳其国脚'], overall:81, status:'主力', weakFoot:3, bio:'土耳其国脚左后卫，25岁正处职业生涯上升期。速度快、助攻能力出众，是布赖顿左路进攻的重要出口。技术细腻，上下线频繁积极，本赛季助攻数据亮眼。防守端尚有提升空间，但进攻端的价值已达英超高水准。' },
+  { id:1352713, num:20, pos:'CDM', name:'Baleba',      lastName:'Baleba',     cnName:'巴莱巴', xP:62,yP:71, xL:23,yL:70,
+    country:'喀麦隆', age:20, height:'183cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:60},{n:'传球',v:78},{n:'盘带',v:76},{n:'防守',v:80},{n:'体能',v:86}],
+    season:{apps:23, rating:7.0, goals:2, assists:3},
+    tags:['年轻悍将','断球高手','体能出众'], overall:77, status:'主力', weakFoot:3, bio:'喀麦隆年轻中场，20岁已是布赖顿中场核心之一。身体素质极为出色，覆盖面积大，断球能力一流。踢球风格强硬积极，是布赖顿中场的防守引擎。传球技术和比赛阅读能力仍在快速成长中，未来潜力巨大。' },
+  { id:1168311, num:22, pos:'CM',  name:'Ayari',       lastName:'Ayari',      cnName:'阿亚里', xP:38,yP:71, xL:23,yL:30,
+    country:'瑞典', age:21, height:'174cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:68},{n:'传球',v:82},{n:'盘带',v:80},{n:'防守',v:72},{n:'体能',v:80}],
+    season:{apps:20, rating:6.9, goals:3, assists:4},
+    tags:['技术型中场','传球流畅','瑞典新星'], overall:75, status:'主力', weakFoot:4, bio:'瑞典年轻中场，21岁踢球风格技术流，传球精准，视野开阔。在布赖顿中场体系中承担串联职责，跑动积极。本赛季进球和助攻数据不断提升，是布赖顿中场的重要轮换选项，成长速度令人瞩目。' },
+  { id:1354561, num:21, pos:'RAM', name:'Gomez',        lastName:'Gomez',      cnName:'戈麦斯', xP:80,yP:60, xL:33,yL:84,
+    country:'巴拉圭', age:22, height:'180cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:72},{n:'传球',v:76},{n:'盘带',v:80},{n:'防守',v:58},{n:'体能',v:80}],
+    season:{apps:21, rating:6.9, goals:4, assists:5},
+    tags:['技术边锋','右路突破','巴拉圭国脚'], overall:76, status:'主力', weakFoot:3, bio:'巴拉圭年轻边锋，22岁从美职联加盟布赖顿。技术灵活，右路突破能力强，进球和助攻均有贡献。在许尔泽勒体系中逐渐找到状态，本赛季表现令人印象深刻，是布赖顿右路的重要选项。' },
+  { id:167008,  num:13, pos:'CAM', name:'Gross',        lastName:'Gross',      cnName:'格罗斯', xP:50,yP:60, xL:33,yL:50,
+    country:'德国', age:33, height:'181cm', foot:'右脚',
+    attrs:[{n:'速度',v:68},{n:'射门',v:74},{n:'传球',v:88},{n:'盘带',v:76},{n:'防守',v:68},{n:'体能',v:78}],
+    season:{apps:25, rating:7.2, goals:5, assists:8},
+    tags:['传控大师','定位球专家','老将经验'], overall:83, status:'主力', weakFoot:4, bio:'德国老将，33岁仍是布赖顿进攻大脑。传球视野一流，定位球技术出众，是布赖顿进攻体系的核心串联者。在布赖顿效力多年，完全融入高压逼抢和快速传递的战术体系。不以速度见长，但智慧和技术弥补了这一点，是英超同位置顶级效率型球员。' },
+  { id:1400227, num:31, pos:'LAM', name:'Minteh',       lastName:'Minteh',     cnName:'明特', xP:20,yP:60, xL:33,yL:16,
+    country:'冈比亚', age:20, height:'175cm', foot:'右脚',
+    attrs:[{n:'速度',v:92},{n:'射门',v:72},{n:'传球',v:68},{n:'盘带',v:82},{n:'防守',v:50},{n:'体能',v:82}],
+    season:{apps:24, rating:7.0, goals:6, assists:5},
+    tags:['速度炸弹','左路利器','非洲新星'], overall:78, status:'主力', weakFoot:3, bio:'冈比亚20岁速度型边锋，被认为是英超最快球员之一。爆发力惊人，左路突破能力令防守球员头疼。本赛季进球和助攻持续贡献，是布赖顿进攻最大亮点之一。最终产品质量和无球跑位仍有提升空间，但潜力无限，未来前景相当广阔。' },
+  { id:113836,  num:18, pos:'ST',  name:'Welbeck',      lastName:'Welbeck',    cnName:'韦尔贝克', xP:50,yP:53, xL:42,yL:50,
+    country:'英格兰', age:35, height:'183cm', foot:'右脚',
+    attrs:[{n:'速度',v:78},{n:'射门',v:76},{n:'传球',v:72},{n:'盘带',v:72},{n:'防守',v:54},{n:'体能',v:74}],
+    season:{apps:20, rating:6.9, goals:7, assists:3},
+    tags:['老将经验','全面前锋','英格兰老兵'], overall:76, status:'主力', weakFoot:4, bio:'英格兰老将前锋，35岁仍保持出色竞技状态。速度尚可，技术全面，跑位意识出众，是布赖顿锋线的经验担当。无私跑动为队友创造空间，关键时刻能打进重要进球。职业生涯历经曼联、阿森纳、米兰等豪门，丰富经验是其最大财富。本赛季进球效率超出预期，仍是英超合格水准的正选中锋。' },
 ];
 
-// 客场：维拉（右半场，4-2-3-1）
+// 客场：利物浦（右半场，4-3-3）
 const AV_PLAYERS = [
-  { id:268375,  plId:'p98980',  num:23, pos:'GK',  name:'E.Martínez', lastName:'Martínez', cnName:'E·马丁内斯',   xP:50,yP:5,  xL:95,yL:50,
-    country:'阿根廷', age:33, height:'195cm', foot:'右脚',
-    attrs:[{n:'速度',v:52},{n:'射门',v:18},{n:'传球',v:78},{n:'盘带',v:52},{n:'防守',v:90},{n:'体能',v:84}],
-    season:{apps:25, rating:7.4, cleanSheets:6, saves:75},
-    tags:['世界级门将', '点球克星', '统治禁区', '世界杯冠军'], overall:89, status:'主力', weakFoot:3, bio:'阿根廷主力门将，2022年世界杯冠军核心功臣，曾荣获FIFA最佳门将。以出色的点球扑救能力和强大心理素质著称，多次在关键比赛力挽狂澜。反应速度一流，统治禁区能力强，指挥防线经验丰富。33岁仍处于职业生涯最佳状态，是英超最顶级的门将之一。偶尔争议性举动是唯一缺点，专业能力无可挑剔，是维拉防线的终极保障。' },
-  { id:1190033, plId:'p515597', num:26, pos:'RB',  name:'Bogarde',    lastName:'Bogarde', cnName:'博加德',    xP:82,yP:17, xL:86,yL:12,
-    country:'荷兰', age:22, height:'182cm', foot:'右脚',
-    attrs:[{n:'速度',v:83},{n:'射门',v:54},{n:'传球',v:72},{n:'盘带',v:72},{n:'防守',v:70},{n:'体能',v:82}],
-    season:{apps:8,  rating:6.6, goals:0, assists:0},
-    tags:['攻强右卫', '潜力股', '助攻积极'], overall:68, status:'轮换', weakFoot:3, bio:'荷兰年轻右后卫，22岁来自切尔西青训体系，正处于职业生涯上升阶段。具备良好身体素质和防守积极性，是维拉培养中的潜力股。本赛季出场机会相对有限，但每次上场态度认真，展现了不错的基础技术。助攻能力有待提升，稳定性仍需磨练，距英超顶级右后卫仍有差距，未来可期。' },
-  { id:710159,  plId:'p199798', num:4,  pos:'CB',  name:'Konsa',      lastName:'Konsa', cnName:'孔萨',      xP:64,yP:17, xL:86,yL:38,
-    country:'英格兰', age:27, height:'183cm', foot:'右脚',
-    attrs:[{n:'速度',v:72},{n:'射门',v:38},{n:'传球',v:74},{n:'盘带',v:60},{n:'防守',v:86},{n:'体能',v:84}],
-    season:{apps:28, rating:7.0, goals:0, assists:1},
-    tags:['速度中卫', '积极对抗', '英格兰国脚'], overall:82, status:'主力', weakFoot:3, bio:'英格兰国脚中卫，在维拉效力多年是后防核心之一。防守积极，对抗能力强，速度较快，出球质量本赛季有所提升。27岁正处职业生涯黄金期，随维拉参与欧冠竞争，综合实力稳步上升。空中争顶能力相对普通，偶有判断失误。随着英格兰国家队地位的稳固，市场价值持续攀升，是英超顶级水准的中卫。' },
-  { id:419664,  plId:'p149484', num:5,  pos:'CB',  name:'Mings',      lastName:'Mings', cnName:'明斯',      xP:36,yP:17, xL:86,yL:62,
-    country:'英格兰', age:32, height:'194cm', foot:'左脚',
-    attrs:[{n:'速度',v:74},{n:'射门',v:38},{n:'传球',v:72},{n:'盘带',v:58},{n:'防守',v:82},{n:'体能',v:80}],
-    season:{apps:6,  rating:6.7, goals:0, assists:0},
-    tags:['空中优势', '领袖气质', '伤后复出'], overall:76, status:'轮换', weakFoot:3, bio:'维拉老将中卫，多年来是球队后防支柱，曾担任队长。身高194cm，对抗能力强，领导力出众，是更衣室精神象征。然而前十字韧带撕裂等严重伤病使其长期缺阵，本赛季逐渐康复回归。32岁已过职业生涯最佳状态，速度和灵活性有所下降，已从主力逐渐转向轮换角色，但精神价值依然不可替代。' },
-  { id:210111,  plId:'p101188', num:12, pos:'LB',  name:'Digne',      lastName:'Digne', cnName:'迪涅',      xP:18,yP:17, xL:86,yL:88,
-    country:'法国', age:32, height:'175cm', foot:'左脚',
-    attrs:[{n:'速度',v:76},{n:'射门',v:48},{n:'传球',v:78},{n:'盘带',v:70},{n:'防守',v:72},{n:'体能',v:74}],
-    season:{apps:16, rating:6.9, goals:0, assists:5},
-    tags:['传中精准', '定位球专家', '进攻左卫'], overall:76, status:'主力', weakFoot:3, bio:'法国左后卫，曾效力巴塞罗那，职业生涯履历丰富。以精准传球和定位球技术著称，助攻能力强，是维拉左路进攻重要出口。32岁速度有所下降，防守对抗稍显吃力，但技术经验和传球质量仍是核心优势。本赛季保持稳定出场，定位球质量为维拉贡献不少威胁。是合格的英超正选左后卫，但已无法再现巅峰期统治力。' },
-  { id:215384,  plId:'p88894', num:6,  pos:'CDM', name:'Barkley',    lastName:'Barkley', cnName:'巴克利',    xP:62,yP:30, xL:77,yL:30,
-    country:'英格兰', age:32, height:'190cm', foot:'右脚',
-    attrs:[{n:'速度',v:74},{n:'射门',v:76},{n:'传球',v:82},{n:'盘带',v:80},{n:'防守',v:70},{n:'体能',v:82}],
-    season:{apps:3,  rating:7.0, goals:2, assists:1},
-    tags:['强壮中场', '远射威胁', '推进型'], overall:79, status:'主力', weakFoot:3, bio:'英格兰中场老将，经历切尔西、埃弗顿等多家俱乐部，在维拉找到重生之路。身高190cm，体型强壮，带球推进能力强，中远射脚法出众。本赛季在维拉中场表现稳定，跑动积极，是球队不可或缺的一环。32岁仍保持良好状态，传球稳定性偶有起伏。整体是典型效率型中场，在维拉体系中发挥出高于预期的价值，职业生涯韧性令人钦佩。' },
-  { id:1185748, plId:'p449871', num:24, pos:'CM',  name:'Onana',      lastName:'Onana', cnName:'奥纳纳',      xP:38,yP:30, xL:77,yL:70,
-    country:'比利时', age:23, height:'192cm', foot:'右脚',
-    attrs:[{n:'速度',v:76},{n:'射门',v:68},{n:'传球',v:80},{n:'盘带',v:74},{n:'防守',v:76},{n:'体能',v:82}],
-    season:{apps:16, rating:7.1, goals:2, assists:0},
-    tags:['制空王者', '身体统治', '对抗型中场'], overall:80, status:'主力', weakFoot:3, bio:'比利时中场，从埃弗顿转会维拉，身高192cm，是英超中场中最具统治力的对抗型球员之一。身体素质极为出色，覆盖面积大，空中争顶几乎无往不利。23岁正值成长黄金期，进攻端也有不错参与，能及时插上助攻。传球精准性和技术细腻度仍有提升空间，决策偶尔偏慢。极具潜力的年轻中场，市场价值持续攀升。' },
-  { id:883080,  plId:'p244850', num:27, pos:'RAM', name:'M.Rogers',   lastName:'Rogers', cnName:'罗杰斯',     xP:80,yP:40, xL:67,yL:16,
-    country:'英格兰', age:22, height:'178cm', foot:'右脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:74},{n:'传球',v:80},{n:'盘带',v:80},{n:'防守',v:56},{n:'体能',v:80}],
-    season:{apps:29, rating:7.2, goals:8, assists:5},
-    tags:['右路快翼', '突破直接', '英格兰新星'], overall:79, status:'轮换', weakFoot:4, bio:'22岁英格兰新星，本场出任右路攻中，速度突破是维拉右侧利器，正处于职业生涯快速上升期。' },
-  { id:356406,  plId:'p122806', num:7,  pos:'CAM', name:'McGinn',     lastName:'McGinn', cnName:'麦金',     xP:50,yP:40, xL:67,yL:50,
+  { id:948800,  num:1,  pos:'GK',  name:'Mamardashvili', lastName:'Mamardashvili', cnName:'马马尔达什维利', xP:50,yP:5,  xL:95,yL:50,
+    country:'格鲁吉亚', age:24, height:'198cm', foot:'左脚',
+    attrs:[{n:'速度',v:58},{n:'射门',v:16},{n:'传球',v:72},{n:'盘带',v:48},{n:'防守',v:86},{n:'体能',v:82}],
+    season:{apps:18, rating:7.1, cleanSheets:6, saves:52},
+    tags:['高大门神','替代阿利森','格鲁吉亚一号'], overall:82, status:'主力', weakFoot:3, bio:'格鲁吉亚国门，身高198cm，本赛季因阿利森受伤出任利物浦主力。从瓦伦西亚加盟，此前表现惊艳，曾在欧冠中展现世界级水准。198cm的身高使其在高空球处理上极具优势，反应速度出众，脚下技术也相当不错，完全有能力驾驭英超压力。' },
+  { id:966018,  num:2,  pos:'RB',  name:'Frimpong',      lastName:'Frimpong',      cnName:'弗林庞', xP:82,yP:17, xL:86,yL:12,
+    country:'荷兰', age:24, height:'175cm', foot:'右脚',
+    attrs:[{n:'速度',v:92},{n:'射门',v:70},{n:'传球',v:76},{n:'盘带',v:80},{n:'防守',v:74},{n:'体能',v:86}],
+    season:{apps:25, rating:7.3, goals:5, assists:9},
+    tags:['速度右翼卫','进攻型后卫','英超最快之一'], overall:84, status:'主力', weakFoot:3, bio:'荷兰右翼卫，从勒沃库森加盟利物浦，是英超速度最快的防守球员之一。进攻能力一流，右路上下线频繁，本赛季已贡献多球多助。防守时偶有漏洞，但进攻端的统治力足以弥补。24岁正处于职业生涯爆发期，是斯洛特战术体系中的核心齿轮之一。' },
+  { id:820140,  num:5,  pos:'CB',  name:'Konate',        lastName:'Konate',        cnName:'科纳特', xP:64,yP:17, xL:86,yL:38,
+    country:'法国', age:25, height:'194cm', foot:'右脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:42},{n:'传球',v:76},{n:'盘带',v:64},{n:'防守',v:88},{n:'体能',v:86}],
+    season:{apps:22, rating:7.2, goals:1, assists:1},
+    tags:['速度中卫','法国国脚','力量与速度兼备'], overall:85, status:'主力', weakFoot:3, bio:'法国国脚中卫，25岁正处职业生涯黄金期。身高194cm，速度快、力量强，对抗能力出众，是英超最好的中卫之一。本赛季搭档范戴克形成世界顶级中卫组合，随利物浦争夺联赛冠军。未来有望成为世界最佳中卫之一，潜力已在英超充分展现。' },
+  { id:209405,  num:4,  pos:'CB',  name:'van Dijk',      lastName:'van Dijk',      cnName:'范戴克', xP:36,yP:17, xL:86,yL:62,
     captain:true,
-    country:'苏格兰', age:31, height:'180cm', foot:'右脚',
-    attrs:[{n:'速度',v:74},{n:'射门',v:72},{n:'传球',v:80},{n:'盘带',v:74},{n:'防守',v:74},{n:'体能',v:84}],
-    season:{apps:18, rating:7.1, goals:3, assists:2},
-    tags:['全能中场', '高强度跑动', '苏格兰队长'], overall:83, status:'主力', weakFoot:3, bio:'苏格兰核心中场，本场出任中路攻中位置，以高强度跑动和关键进球著称，维拉进攻组织核心。' },
-  { id:610184,  plId:'p195546', num:10, pos:'LAM', name:'Buendía',    lastName:'Buendía', cnName:'布恩迪亚',    xP:20,yP:40, xL:67,yL:84,
-    country:'阿根廷', age:27, height:'172cm', foot:'左脚',
-    attrs:[{n:'速度',v:80},{n:'射门',v:72},{n:'传球',v:80},{n:'盘带',v:82},{n:'防守',v:52},{n:'体能',v:78}],
-    season:{apps:14, rating:7.0, goals:3, assists:4},
-    tags:['创意核心', '狭小空间', '技术流10号'], overall:78, status:'主力', weakFoot:4, bio:'维拉10号，本场左路攻中，技术细腻，传球视野出众，擅长在狭小空间完成精准配合，是维拉进攻流畅度的保障。' },
-  { id:540088,  plId:'p178301', num:11, pos:'ST',  name:'O.Watkins',  lastName:'Watkins', cnName:'沃特金斯',    xP:50,yP:47, xL:58,yL:50,
-    country:'英格兰', age:30, height:'180cm', foot:'右脚',
-    season:{apps:24, rating:7.6, goals:8, assists:2},
-    attrs:[{n:'速度',v:88},{n:'射门',v:82},{n:'传球',v:72},{n:'盘带',v:76},{n:'防守',v:46},{n:'体能',v:84}],
-    season:{apps:24, goals:8, assists:2},
-    tags:['全能前锋', '跑位天才', '速度+进球'], overall:86, status:'主力', weakFoot:3, bio:'英格兰主力中锋，本赛季16球9助攻，是英超最全面的中锋之一。速度极快，跑位意识一流，深度跑动和拉边跑位为队友创造大量空间。不仅自己进球，助攻数量同样突出，展现了高水准团队意识。参加过2024欧洲杯，表现出色，是英格兰主力中锋。30岁仍处于职业生涯黄金期，维拉绝对核心，全面型前锋的标杆。' },
+    country:'荷兰', age:33, height:'193cm', foot:'右脚',
+    attrs:[{n:'速度',v:76},{n:'射门',v:60},{n:'传球',v:80},{n:'盘带',v:68},{n:'防守',v:92},{n:'体能',v:88}],
+    season:{apps:28, rating:7.5, goals:2, assists:2},
+    tags:['世界最佳中卫','领袖气质','空中统治者','利物浦队长'], overall:91, status:'主力', weakFoot:4, bio:'利物浦队长，荷兰核心，被广泛认为是当今世界最佳中卫，甚至是史上最佳之一。身高193cm，速度快、力量强、空中制霸，以沉着冷静的领导力著称。2019年协助利物浦夺欧冠，2020年英超冠军核心功臣。33岁仍处于职业生涯巅峰，稳定性令人叹为观止，是全队的精神支柱和最后一道屏障。' },
+  { id:1195281, num:26, pos:'LB',  name:'Kerkez',        lastName:'Kerkez',        cnName:'克尔克兹', xP:18,yP:17, xL:86,yL:88,
+    country:'匈牙利', age:21, height:'180cm', foot:'左脚',
+    attrs:[{n:'速度',v:86},{n:'射门',v:60},{n:'传球',v:76},{n:'盘带',v:74},{n:'防守',v:76},{n:'体能',v:82}],
+    season:{apps:22, rating:7.0, goals:1, assists:5},
+    tags:['速度左卫','进攻型后卫','匈牙利新星'], overall:78, status:'主力', weakFoot:3, bio:'匈牙利年轻左后卫，从伯恩茅斯加盟利物浦，21岁已是匈牙利国家队主力。速度极快，上下线积极，助攻能力出众，是斯洛特左路进攻体系的重要组成。防守技术仍在成长中，但进攻端已展现出顶级水准，是利物浦发掘的又一颗宝石。' },
+  { id:831489,  num:10, pos:'CM',  name:'Mac Allister',  lastName:'Mac Allister',  cnName:'麦卡利斯特', xP:62,yP:30, xL:77,yL:30,
+    country:'阿根廷', age:26, height:'174cm', foot:'左脚',
+    attrs:[{n:'速度',v:74},{n:'射门',v:80},{n:'传球',v:88},{n:'盘带',v:82},{n:'防守',v:76},{n:'体能',v:82}],
+    season:{apps:27, rating:7.4, goals:8, assists:7},
+    tags:['阿根廷世界杯冠军','进球中场','传控核心'], overall:87, status:'主力', weakFoot:4, bio:'阿根廷世界杯冠军中场，利物浦中场核心之一。技术出众，传球精准，进球能力强，是近年英超最出色的中场之一。从布赖顿加盟利物浦后表现出色，完美融入斯洛特的传控体系。26岁正值当打之年，已成为利物浦中场体系不可或缺的核心，被视为英超最全面的中场之一。' },
+  { id:956683,  num:38, pos:'CM',  name:'Gravenberch',   lastName:'Gravenberch',   cnName:'赫拉芬贝赫', xP:50,yP:30, xL:77,yL:50,
+    country:'荷兰', age:22, height:'190cm', foot:'右脚',
+    attrs:[{n:'速度',v:80},{n:'射门',v:72},{n:'传球',v:84},{n:'盘带',v:80},{n:'防守',v:78},{n:'体能',v:86}],
+    season:{apps:28, rating:7.3, goals:4, assists:6},
+    tags:['高大中场','荷兰国脚','全能型8号'], overall:84, status:'主力', weakFoot:4, bio:'荷兰国脚中场，22岁从拜仁慕尼黑加盟利物浦后迅速成为绝对主力。身高190cm，身体强壮，控球稳健，传球视野开阔，进攻参与积极。本赛季与麦卡利斯特、索博斯劳伊组成英超最佳中场组合之一，22岁的他已是世界级水准，未来前景无可限量。' },
+  { id:846005,  num:8,  pos:'CM',  name:'Szoboszlai',    lastName:'Szoboszlai',    cnName:'索博斯劳伊', xP:38,yP:30, xL:77,yL:70,
+    country:'匈牙利', age:24, height:'186cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:82},{n:'传球',v:86},{n:'盘带',v:84},{n:'防守',v:72},{n:'体能',v:84}],
+    season:{apps:26, rating:7.3, goals:9, assists:8},
+    tags:['远射威胁','匈牙利队长','攻击型中场'], overall:86, status:'主力', weakFoot:4, bio:'匈牙利队长，24岁正处职业生涯爆发期。远射能力出众，进球和助攻均高产，是利物浦中场进攻端的核心。从莱比锡加盟利物浦后适应顺利，本赛季数据令人印象深刻。186cm身材，攻守均衡，技术细腻，被认为是当今世界最完整的攻击型中场之一，利物浦夺冠的重要功臣。' },
+  { id:1152455, num:11, pos:'LW',  name:'Wirtz',          lastName:'Wirtz',         cnName:'维尔茨', xP:20,yP:40, xL:67,yL:84,
+    country:'德国', age:22, height:'180cm', foot:'右脚',
+    attrs:[{n:'速度',v:82},{n:'射门',v:84},{n:'传球',v:86},{n:'盘带',v:90},{n:'防守',v:62},{n:'体能',v:80}],
+    season:{apps:25, rating:7.6, goals:12, assists:10},
+    tags:['德国天才','盘带大师','进球+助攻全能'], overall:91, status:'主力', weakFoot:4, bio:'德国天才，22岁从勒沃库森加盟利物浦，被认为是当今世界最具天赋的年轻球员之一。盘带能力惊艳，射门精准，创造力无与伦比，本赛季12球10助攻数据恐怖。在利物浦迅速成为绝对核心，彻底填补了萨拉赫的空缺。22岁已是世界级水准，市场价值冲击历史纪录，未来有望角逐金球奖。' },
+  { id:806552,  num:18, pos:'RW',  name:'Gakpo',          lastName:'Gakpo',         cnName:'加克波', xP:80,yP:40, xL:67,yL:16,
+    country:'荷兰', age:25, height:'188cm', foot:'左脚',
+    attrs:[{n:'速度',v:84},{n:'射门',v:82},{n:'传球',v:76},{n:'盘带',v:82},{n:'防守',v:56},{n:'体能',v:82}],
+    season:{apps:27, rating:7.2, goals:11, assists:6},
+    tags:['速度+射门','荷兰国脚','双路全能前锋'], overall:85, status:'主力', weakFoot:4, bio:'荷兰国脚，25岁本赛季爆发式表现令英超侧目。速度快，射门能力出众，既可打左翼也可打右翼，甚至能担任中锋。从埃因霍温加盟利物浦后逐渐成为主力，本赛季已成为利物浦进攻的核心武器之一。多功能性和大赛稳定性是其最大优势，是利物浦夺冠阵容中的重要拼图。' },
+  { id:1197030, num:30, pos:'ST',  name:'Ekitike',        lastName:'Ekitike',       cnName:'埃基蒂凯', xP:50,yP:47, xL:58,yL:50,
+    country:'法国', age:22, height:'188cm', foot:'右脚',
+    attrs:[{n:'速度',v:86},{n:'射门',v:80},{n:'传球',v:70},{n:'盘带',v:78},{n:'防守',v:48},{n:'体能',v:82}],
+    season:{apps:20, rating:7.1, goals:9, assists:4},
+    tags:['高效中锋','法国新星','速度+身高'], overall:80, status:'主力', weakFoot:3, bio:'法国年轻中锋，22岁从埃因特拉赫特法兰克福加盟利物浦。身高188cm，速度极快，结合高中锋的身体优势和速度型前锋的冲刺能力，在萨拉赫缺席期间承担主力中锋职责。本赛季进球效率出色，是利物浦冬窗重磅引援，表现超出预期。' },
 ];
 
-// 替补席：左侧=主场曼联，右侧=客场维拉
+// 替补席：左侧=主场布赖顿，右侧=客场利物浦
 const MU_BENCH = [
-  {num:1, name:'Bayindir',   lastName:'Bayindir',  pos:'GK',  id:866967,  plId:'p451302', team:'mu', country:'土耳其', age:27, height:'197cm', foot:'右脚',
-    season:{apps:4, cleanSheets:1, saves:10},
-    attrs:[{n:'速度',v:46},{n:'射门',v:16},{n:'传球',v:60},{n:'盘带',v:40},{n:'防守',v:76},{n:'体能',v:72}], tags:['替补门将', '高空球稳', '高大门神'], overall:74, status:'替补', weakFoot:3, bio:'土耳其国门，身高197cm，英超身材最高的门将之一。加盟曼联后主要担任替补，高空球处理能力出色，反应速度良好。本赛季偶尔替补出场，表现中规中矩。职业态度积极，是合格的替补门将选项，但与曼联主力门将差距仍在，暂无争夺主力迹象。' },
-  {num:26,name:'Heaven',     lastName:'Heaven',    pos:'CB',  id:1559639, team:'mu', country:'英格兰', age:19, height:'188cm', foot:'右脚',
-    season:{apps:2, goals:0, assists:0},
-    attrs:[{n:'速度',v:78},{n:'射门',v:35},{n:'传球',v:68},{n:'盘带',v:55},{n:'防守',v:74},{n:'体能',v:78}], tags:['青训新秀', '潜力中卫', '尚需磨练'], overall:60, status:'替补', weakFoot:3, bio:'曼联自家青训19岁中卫，身高188cm，体型出色，对抗能力不错。目前主要在预备队积累经验，偶尔进入一线队大名单。出球传球展现一定天赋，但大赛经验极为有限，技术和判断力仍有大幅提升空间。是颇具潜力的后备人才，距英超主力水准还有不少路要走。' },
-  {num:3, name:'Mazraoui',   lastName:'Mazraoui',  pos:'RB',  id:775539,  plId:'p230001', team:'mu', country:'摩洛哥', age:27, height:'182cm', foot:'右脚',
-    season:{apps:15, goals:0, assists:2},
-    attrs:[{n:'速度',v:80},{n:'射门',v:58},{n:'传球',v:76},{n:'盘带',v:72},{n:'防守',v:78},{n:'体能',v:80}], tags:['全能后卫', '攻守均衡', '摩洛哥铁卫'], overall:80, status:'轮换', weakFoot:3, bio:'摩洛哥国脚，从拜仁慕尼黑加盟曼联。技术全面，防守积极，助攻能力强，攻守两端均可胜任。参加2022年世界杯，随摩洛哥创造非洲球队历史最佳成绩。本赛季在曼联表现稳定，逐渐成为右后卫主力竞争者。27岁正值当打之年，曾有伤病但恢复良好，是曼联防线值得信赖的选项。' },
-  {num:12,name:'Malacia',    lastName:'Malacia',   pos:'LB',  id:865118,  plId:'p222690', team:'mu', country:'荷兰', age:25, height:'169cm', foot:'左脚',
-    season:{apps:8, goals:0, assists:1},
-    attrs:[{n:'速度',v:82},{n:'射门',v:52},{n:'传球',v:72},{n:'盘带',v:70},{n:'防守',v:74},{n:'体能',v:84}], tags:['速度左卫', '一对一强', '伤病困扰'], overall:73, status:'轮换', weakFoot:3, bio:'荷兰左后卫，身高169cm，速度极快，一对一防守能力出色。职业生涯深受伤病困扰，在曼联长期缺阵。本赛季逐渐恢复健康，重获上场机会。助攻能力相对有限，身体劣势在对抗高大边锋时偶有体现。健康时能提供积极的左路保护，但伤病频繁让他难以建立持续性表现。' },
-  {num:25,name:'Ugarte',     lastName:'Ugarte',    pos:'CM',  id:1035614, plId:'p232112', team:'mu', country:'乌拉圭', age:23, height:'182cm', foot:'右脚',
-    season:{apps:18, goals:1, assists:2},
-    attrs:[{n:'速度',v:72},{n:'射门',v:62},{n:'传球',v:84},{n:'盘带',v:72},{n:'防守',v:80},{n:'体能',v:84}], tags:['防守悍将', '断球专家', '硬汉后腰'], overall:80, status:'轮换', weakFoot:3, bio:'乌拉圭防守型中场，从巴黎圣日耳曼转会曼联。以硬朗防守风格著称，断球能力一流，覆盖面积大，擅长破坏对手进攻并快速转换。23岁成长潜力巨大，随国家队积累了丰富大赛经验。本赛季适应英超节奏后状态提升，防守贡献明显，进攻端参与度是其短板，整体属英超中场中出色的防守专才。' },
-  {num:7, name:'M.Mount',    lastName:'Mount',     pos:'CAM', id:750032,  plId:'p184341', team:'mu', country:'英格兰', age:27, height:'181cm', foot:'右脚',
-    season:{apps:6, goals:0, assists:1},
-    attrs:[{n:'速度',v:72},{n:'射门',v:78},{n:'传球',v:86},{n:'盘带',v:82},{n:'防守',v:66},{n:'体能',v:80}], tags:['技术中场', '双脚均衡', '伤病多舛'], overall:81, status:'替补', weakFoot:4, bio:'曾是切尔西和英格兰中场核心，以高强度跑动、技术能力和进攻参与著称。然而加盟曼联后伤病频繁，已成曼联引援中最令人惋惜的案例。本赛季再度遭遇伤病困扰，出场时间极为有限。27岁本该是当打之年，状态健康时技术细腻、传球精准，若能恢复健康仍具英超高水准，但伤病已严重影响其职业发展。' },
-  {num:39,name:'Fletcher',   lastName:'Fletcher',  pos:'LW',  id:1676985, team:'mu', country:'英格兰', age:18, height:'175cm', foot:'左脚',
-    season:{apps:3, goals:0, assists:0},
-    attrs:[{n:'速度',v:82},{n:'射门',v:65},{n:'传球',v:68},{n:'盘带',v:76},{n:'防守',v:45},{n:'体能',v:78}], tags:['左路快马', '青训新苗', '速度型边锋'], overall:62, status:'替补', weakFoot:3, bio:'曼联青训18岁新星，速度快，技术灵活，左路突破能力颇具潜力。目前主要在青年队出场，一线队经验几乎为零。进攻直觉出色，被视为曼联未来潜力股，但年龄和经验双重局限决定其目前难以在英超稳定立足。需要大量比赛时间磨练，现阶段综合实力较低，但未来潜力相当可观。' },
-  {num:30,name:'Sesko',      lastName:'Sesko',     pos:'ST',  id:1073977, team:'mu', country:'斯洛文尼亚', age:22, height:'195cm', foot:'左脚',
-    season:{apps:14, goals:6, assists:1},
-    attrs:[{n:'速度',v:80},{n:'射门',v:82},{n:'传球',v:68},{n:'盘带',v:74},{n:'防守',v:44},{n:'体能',v:88}], tags:['高空威胁', '支点前锋', '德甲炸弹'], overall:83, status:'轮换', weakFoot:3, bio:'斯洛文尼亚高中锋，从莱比锡加盟曼联，身高195cm。结合高空球优势与灵活地面脚法，是防守球员的噩梦。在德甲期间打进大量进球，展现了顶级中锋潜力。22岁正值成长黄金期，本赛季加盟曼联后有起有伏，但关键比赛中的表现令人印象深刻。背身持球和细腻配合仍有成长空间，未来前景相当广阔。' },
-  {num:11,name:'Zirkzee',    lastName:'Zirkzee',   pos:'ST',  id:950830,  plId:'p458249', team:'mu', country:'荷兰', age:24, height:'193cm', foot:'右脚',
-    season:{apps:12, goals:3, assists:2},
-    attrs:[{n:'速度',v:78},{n:'射门',v:78},{n:'传球',v:72},{n:'盘带',v:76},{n:'防守',v:42},{n:'体能',v:80}], tags:['技术型中锋', '背身持球', '创意前锋'], overall:78, status:'轮换', weakFoot:4, bio:'荷兰高中锋，从博洛尼亚加盟曼联，身高193cm。以灵活脚法和出色的背身持球著称，与传统高中锋有所不同，更像是技术型支点前锋。积极参与配合，擅长禁区外拿球分配。加盟曼联后经历适应期，进球效率不如预期，整体贡献难以从数据直观体现。24岁若能提高射门精准度，将成为更完整的中锋选项。' },
+  {num:21, name:'Steele',    lastName:'Steele',    pos:'GK',  id:107917,  team:'mu', country:'英格兰', age:33, height:'190cm', foot:'右脚',
+    season:{apps:4, cleanSheets:1, saves:12},
+    attrs:[{n:'速度',v:52},{n:'射门',v:14},{n:'传球',v:66},{n:'盘带',v:40},{n:'防守',v:76},{n:'体能',v:74}], tags:['替补门将','稳健老将','英格兰国门'], overall:74, status:'替补', weakFoot:3, bio:'英格兰替补门将，33岁在布赖顿担任第二门将。职业生涯经验丰富，反应稳健，高空球处理较好。曾入选英格兰国家队，是一位可靠的替补选项，能为球队提供必要时的替补保障。' },
+  {num:14, name:'Rutter',    lastName:'Rutter',    pos:'CAM', id:956925,  team:'mu', country:'法国', age:22, height:'182cm', foot:'左脚',
+    season:{apps:15, goals:4, assists:5},
+    attrs:[{n:'速度',v:80},{n:'射门',v:76},{n:'传球',v:78},{n:'盘带',v:78},{n:'防守',v:56},{n:'体能',v:80}], tags:['技术攻中','法国新星','创意型前腰'], overall:76, status:'轮换', weakFoot:4, bio:'法国年轻攻击中场，22岁从利兹联加盟布赖顿。技术细腻，视野开阔，创造力强。本赛季进球和助攻均有贡献，是布赖顿中前场重要轮换选项。' },
+  {num:17, name:'Mitoma',    lastName:'Mitoma',    pos:'LW',  id:862608,  team:'mu', country:'日本', age:27, height:'173cm', foot:'左脚',
+    season:{apps:18, goals:6, assists:5},
+    attrs:[{n:'速度',v:88},{n:'射门',v:76},{n:'传球',v:74},{n:'盘带',v:86},{n:'防守',v:52},{n:'体能',v:82}], tags:['速度边锋','日本之星','左路突破专家'], overall:82, status:'轮换', weakFoot:3, bio:'日本国脚边锋，27岁速度与技术兼备，是布赖顿左路最具威胁的武器。本赛季从伤病中归来，状态逐渐回升，本场列入替补席。过人能力出众，切入射门是招牌动作，深受球迷喜爱。' },
+  {num:4,  name:'Ayari-B',   lastName:'Webster',   pos:'CB',  id:500001,  team:'mu', country:'英格兰', age:30, height:'189cm', foot:'右脚',
+    season:{apps:8, goals:0, assists:0},
+    attrs:[{n:'速度',v:70},{n:'射门',v:38},{n:'传球',v:72},{n:'盘带',v:58},{n:'防守',v:80},{n:'体能',v:78}], tags:['备用中卫','经验老将','稳健防守'], overall:74, status:'替补', weakFoot:3, bio:'英格兰中卫，布赖顿替补中卫选项，经验丰富，防守稳健，是后防线可靠的备用人选。' },
+  {num:16, name:'Pedro',     lastName:'Pedro',     pos:'RB',  id:600001,  team:'mu', country:'巴西', age:21, height:'176cm', foot:'右脚',
+    season:{apps:5, goals:0, assists:1},
+    attrs:[{n:'速度',v:82},{n:'射门',v:60},{n:'传球',v:72},{n:'盘带',v:74},{n:'防守',v:70},{n:'体能',v:80}], tags:['攻强右卫','巴西潜力','积极上线'], overall:68, status:'替补', weakFoot:3, bio:'巴西年轻右后卫，21岁正处于职业生涯上升期，是布赖顿右路位置的备用选项，速度快，进攻积极。' },
+  {num:10, name:'Enciso',    lastName:'Enciso',    pos:'RAM', id:1185428, team:'mu', country:'巴拉圭', age:21, height:'172cm', foot:'右脚',
+    season:{apps:14, goals:3, assists:2},
+    attrs:[{n:'速度',v:84},{n:'射门',v:76},{n:'传球',v:72},{n:'盘带',v:80},{n:'防守',v:50},{n:'体能',v:78}], tags:['技术边锋','远射威胁','巴拉圭新星'], overall:73, status:'轮换', weakFoot:3, bio:'巴拉圭年轻边锋，21岁技术出众，以精彩的远射能力闻名。在布赖顿轮换中逐渐获得更多机会，本赛季已贡献进球和助攻，是布赖顿替补席上的进攻活力选项。' },
+  {num:15, name:'O.Dunk',    lastName:'Offiah',    pos:'CM',  id:700001,  team:'mu', country:'英格兰', age:22, height:'181cm', foot:'右脚',
+    season:{apps:6, goals:1, assists:1},
+    attrs:[{n:'速度',v:76},{n:'射门',v:66},{n:'传球',v:74},{n:'盘带',v:72},{n:'防守',v:70},{n:'体能',v:80}], tags:['青训产品','技术中场','布赖顿本土'], overall:65, status:'替补', weakFoot:3, bio:'布赖顿青训出身的年轻中场，22岁正在一线队积累经验，传球技术尚可，是替补席的中场备选。' },
+  {num:11, name:'Adingra',   lastName:'Adingra',   pos:'RW',  id:1158018, team:'mu', country:'科特迪瓦', age:23, height:'172cm', foot:'右脚',
+    season:{apps:19, goals:5, assists:4},
+    attrs:[{n:'速度',v:88},{n:'射门',v:74},{n:'传球',v:70},{n:'盘带',v:82},{n:'防守',v:48},{n:'体能',v:80}], tags:['速度边锋','科特迪瓦国脚','右路冲击'], overall:76, status:'轮换', weakFoot:3, bio:'科特迪瓦年轻边锋，23岁速度出众，右路突破能力强，本赛季已贡献多球多助，是布赖顿右路的重要替补选项。' },
+  {num:9,  name:'Ferguson',  lastName:'Ferguson',  pos:'ST',  id:1218313, team:'mu', country:'爱尔兰', age:20, height:'193cm', foot:'右脚',
+    season:{apps:12, goals:4, assists:2},
+    attrs:[{n:'速度',v:76},{n:'射门',v:78},{n:'传球',v:66},{n:'盘带',v:68},{n:'防守',v:48},{n:'体能',v:82}], tags:['高中锋','爱尔兰新星','空中威胁'], overall:73, status:'轮换', weakFoot:3, bio:'爱尔兰年轻中锋，20岁身高193cm，是布赖顿锋线的备用选项。高空球处理能力强，射门能力不错，本赛季已多次以替补身份改变比赛，是布赖顿寄予厚望的年轻锋将。' },
 ];
 
 const AV_BENCH = [
-  {num:40,name:'Bizot',      lastName:'Bizot',     pos:'GK',  id:195782,  plId:'p72147', team:'av', country:'荷兰', age:33, height:'193cm', foot:'右脚',
-    season:{apps:3, cleanSheets:1, saves:8},
-    attrs:[{n:'速度',v:50},{n:'射门',v:14},{n:'传球',v:68},{n:'盘带',v:40},{n:'防守',v:76},{n:'体能',v:74}], tags:['替补门将', '高空球稳'], overall:72, status:'替补', weakFoot:3, bio:'荷兰替补门将，身高193cm，在维拉担任替补角色。职业生涯有过丰富出场经验，反应速度稳健，高空球处理较好。是一位可靠的替补门将选项，关键时刻能够站出来，但常规状态下差距于英超顶级首发门将。本赛季出场机会有限，状态保持良好。' },
-  {num:16,name:'A.García',   lastName:'García',    pos:'CM',  id:1430406, team:'av', country:'西班牙', age:21, height:'178cm', foot:'右脚',
-    season:{apps:10, goals:1, assists:2},
-    attrs:[{n:'速度',v:78},{n:'射门',v:65},{n:'传球',v:76},{n:'盘带',v:74},{n:'防守',v:68},{n:'体能',v:80}], tags:['技术传球', '西班牙新星', '潜力中场'], overall:73, status:'替补', weakFoot:3, bio:'西班牙21岁中场新星，传球技术出众，踢球风格灵动，展现了不错的技术底蕴。目前在维拉轮换中逐渐获得机会，出场时间有所增加。大赛经验仍需积累，与英超顶级中场相比仍有差距，但发展潜力不可小觑。' },
-  {num:22,name:'Maatsen',    lastName:'Maatsen',   pos:'LB',  id:966026,  plId:'p441302', team:'av', country:'荷兰', age:23, height:'174cm', foot:'左脚',
-    season:{apps:16, goals:1, assists:3},
-    attrs:[{n:'速度',v:84},{n:'射门',v:62},{n:'传球',v:76},{n:'盘带',v:74},{n:'防守',v:74},{n:'体能',v:80}], tags:['速度左卫', '双边可踢', '冲击力强'], overall:78, status:'轮换', weakFoot:3, bio:'荷兰左后卫，来自切尔西，以速度和进攻能力著称。身高174cm，动作灵活，左路冲击力强，传中质量不错。本赛季在维拉轮换中发挥稳定，既能担任左后卫也可出任左翼卫，灵活性是其优势。防守对抗方面有时偏软，23岁仍有很大提升空间，整体是英超水准以上的左后卫。' },
-  {num:14,name:'P.Torres',   lastName:'Torres',    pos:'CB',  id:792645,  plId:'p244954', team:'av', country:'西班牙', age:28, height:'191cm', foot:'左脚',
-    season:{apps:14, goals:0, assists:1},
-    attrs:[{n:'速度',v:76},{n:'射门',v:42},{n:'传球',v:78},{n:'盘带',v:62},{n:'防守',v:86},{n:'体能',v:84}], tags:['技术中卫', '出球一流', '传控大师'], overall:83, status:'主力', weakFoot:4, bio:'西班牙国脚中卫，前维亚雷亚尔核心，随西班牙赢得欧洲杯。技术型中卫代表人物，脚下出众，出球传球一流，善于用技术化解压迫。身高191cm，空中优势与技术完美结合。本赛季在维拉表现稳定，与Konsa组成英超顶级中卫搭档。28岁正处于职业生涯黄金期，技术型中卫中的顶尖代表。' },
-  {num:3, name:'Lindelöf',   lastName:'Lindelöf',  pos:'CB',  id:258269,  plId:'p184667', team:'av', country:'瑞典', age:30, height:'187cm', foot:'右脚',
-    season:{apps:12, goals:0, assists:0},
-    attrs:[{n:'速度',v:72},{n:'射门',v:36},{n:'传球',v:76},{n:'盘带',v:60},{n:'防守',v:82},{n:'体能',v:82}], tags:['稳健中卫', '经验老将', '前曼联'], overall:78, status:'替补', weakFoot:3, bio:'瑞典国脚中卫，前曼联主力，如今在维拉作为轮换选项。职业生涯经验丰富，防守稳健，脚下技术较好，传球出球能力出众。30岁经验丰富、心态成熟，是更衣室中的重要人物。速度有所下降，与英超顶级中卫相比身体属性略有不足，但作为高水准轮换中卫，仍具重要价值。' },
-  {num:21,name:'D.Luiz',     lastName:'Luiz',      pos:'CM',  id:787350,  plId:'p230046', team:'av', country:'巴西', age:28, height:'178cm', foot:'右脚',
-    season:{apps:18, goals:3, assists:5},
-    attrs:[{n:'速度',v:80},{n:'射门',v:72},{n:'传球',v:86},{n:'盘带',v:82},{n:'防守',v:72},{n:'体能',v:82}], tags:['传控大师', '技术串联', '巴西国脚'], overall:83, status:'轮换', weakFoot:4, bio:'巴西国脚中场，从尤文图斯回归维拉。技术出众，传控能力一流，是维拉中场的核心串联者。在维拉时期便展现了顶级中场潜力，转会尤文后发展受阻后回归。28岁仍是当打之年，带球、传球、进攻参与均衡，是维拉中场体系的重要拼图。本赛季回归后状态逐步恢复，为维拉中场质量带来明显提升。' },
-  {num:9, name:'H.Elliott',  lastName:'Elliott',   pos:'CAM', id:963964,  plId:'p444884', team:'av', country:'英格兰', age:22, height:'169cm', foot:'右脚',
-    season:{apps:14, goals:2, assists:3},
-    attrs:[{n:'速度',v:80},{n:'射门',v:74},{n:'传球',v:78},{n:'盘带',v:80},{n:'防守',v:55},{n:'体能',v:80}], tags:['创意中场', '技术灵动', '双脚均衡'], overall:75, status:'替补', weakFoot:4, bio:'英格兰年轻攻击中场，前利物浦球员，以灵活技术和创造力著称。身高169cm，动作轻盈，传球精准，擅长在压迫下找到空当。22岁正处于发展关键期，在维拉能获得更多出场机会磨练。进球效率有待提升，防守贡献有限，体能对抗是其短板。整体属于有技术有潜力的年轻球员，值得期待。' },
-  {num:31,name:'L.Bailey',   lastName:'Bailey',    pos:'LW',  id:671331,  plId:'p215711', team:'av', country:'牙买加', age:27, height:'170cm', foot:'左脚',
-    season:{goals:6, assists:5},
-    season:{apps:3, goals:0, assists:1},
-    attrs:[{n:'速度',v:90},{n:'射门',v:74},{n:'传球',v:70},{n:'盘带',v:82},{n:'防守',v:48},{n:'体能',v:80}], tags:['速度炸弹', '爆发力强', '边路冲击'], overall:80, status:'轮换', weakFoot:3, bio:'牙买加速度型边锋，是英超速度最快的球员之一。爆发力惊人，突破能力强，最高时速令防守球员望尘莫及。本赛季多次作为替补改变比赛节奏，关键进球和助攻贡献不少。不足在于最终产品稳定性有起伏，精准度偶尔欠佳。27岁状态成熟，是维拉进攻端最具冲击力的武器之一，尤其在需要打开局面时极具威胁。' },
-  {num:18,name:'T.Abraham',  lastName:'Abraham',   pos:'ST',  id:749661,  plId:'p173879', team:'av', country:'英格兰', age:27, height:'191cm', foot:'右脚',
-    season:{apps:2, goals:1, assists:0},
-    attrs:[{n:'速度',v:82},{n:'射门',v:80},{n:'传球',v:66},{n:'盘带',v:72},{n:'防守',v:42},{n:'体能',v:86}], tags:['背身支点', '空中优势', '高中锋'], overall:80, status:'轮换', weakFoot:3, bio:'英格兰前锋，来自AC米兰，前切尔西青训产品。身高191cm，身体强壮，背身持球能力出色，空中争顶是其核心优势。职业生涯在罗马期间经历爆发，赛季25球赢得欧联杯。回到英超后仍保持良好状态，是维拉锋线有力的备选。27岁经验丰富，能为球队提供不同的进攻选项，控球和链接前后场的能力相当出色。' },
+  {num:62, name:'Jaros',       lastName:'Jaros',       pos:'GK',  id:900001,  team:'av', country:'捷克', age:25, height:'192cm', foot:'右脚',
+    season:{apps:2, cleanSheets:0, saves:6},
+    attrs:[{n:'速度',v:54},{n:'射门',v:14},{n:'传球',v:64},{n:'盘带',v:42},{n:'防守',v:74},{n:'体能',v:76}], tags:['替补门将','高大稳健'], overall:68, status:'替补', weakFoot:3, bio:'捷克替补门将，利物浦第二门将选项，身高192cm，反应稳健，是可靠的替补门将保障。' },
+  {num:66, name:'Alexander-Arnold', lastName:'A-Arnold', pos:'RB', id:760712,  team:'av', country:'英格兰', age:27, height:'175cm', foot:'右脚',
+    season:{apps:5, goals:1, assists:3},
+    attrs:[{n:'速度',v:78},{n:'射门',v:82},{n:'传球',v:92},{n:'盘带',v:80},{n:'防守',v:72},{n:'体能',v:78}], tags:['传球大师','定位球专家','前利物浦队长'], overall:88, status:'替补', weakFoot:4, bio:'前利物浦主力右后卫，本赛季已宣布夏季离队，传闻将加盟皇马。尽管如此仍入选大名单，传球能力英超最顶级，定位球技术一绝。即使以替补身份出战，上场后依然能改变比赛走势，是利物浦宝贵的经验资源。' },
+  {num:26, name:'Robertson',    lastName:'Robertson',   pos:'LB',  id:357880,  team:'av', country:'苏格兰', age:32, height:'178cm', foot:'左脚',
+    season:{apps:10, goals:0, assists:4},
+    attrs:[{n:'速度',v:80},{n:'射门',v:58},{n:'传球',v:80},{n:'盘带',v:72},{n:'防守',v:78},{n:'体能',v:80}], tags:['传统左卫','苏格兰队长','老将经验'], overall:82, status:'替补', weakFoot:3, bio:'苏格兰队长，利物浦老将左后卫，32岁仍保持较高水准。本赛季被克尔克兹取代主力位置，但仍是高质量替补选项。传球精准，助攻能力强，上下线积极，是利物浦左路的经验保障。' },
+  {num:14, name:'Henderson',    lastName:'Henderson',   pos:'CB',  id:800001,  team:'av', country:'英格兰', age:24, height:'186cm', foot:'右脚',
+    season:{apps:10, goals:0, assists:0},
+    attrs:[{n:'速度',v:76},{n:'射门',v:38},{n:'传球',v:72},{n:'盘带',v:60},{n:'防守',v:80},{n:'体能',v:82}], tags:['轮换中卫','稳健出球','英格兰备选'], overall:74, status:'替补', weakFoot:3, bio:'英格兰年轻中卫，利物浦替补中卫选项，防守稳健，出球技术较好，是科纳特和范戴克的有力后备。' },
+  {num:6,  name:'Quansah',      lastName:'Quansah',     pos:'CB',  id:1314037, team:'av', country:'英格兰', age:21, height:'190cm', foot:'右脚',
+    season:{apps:8, goals:0, assists:0},
+    attrs:[{n:'速度',v:80},{n:'射门',v:36},{n:'传球',v:70},{n:'盘带',v:58},{n:'防守',v:78},{n:'体能',v:82}], tags:['青训中卫','利物浦本土','潜力股'], overall:70, status:'替补', weakFoot:3, bio:'利物浦青训出身的年轻中卫，21岁正在一线队积累经验，身体素质出色，防守积极，被视为利物浦未来重要的后防资源。' },
+  {num:17, name:'Jones',         lastName:'Jones',       pos:'CM',  id:933768,  team:'av', country:'英格兰', age:25, height:'182cm', foot:'右脚',
+    season:{apps:18, goals:4, assists:5},
+    attrs:[{n:'速度',v:78},{n:'射门',v:76},{n:'传球',v:80},{n:'盘带',v:78},{n:'防守',v:72},{n:'体能',v:80}], tags:['技术中场','英格兰国脚','攻守均衡'], overall:80, status:'轮换', weakFoot:4, bio:'英格兰中场，25岁技术全面，传球精准，进球和助攻能力均不错。本赛季在利物浦轮换中扮演重要角色，是三中场的有力替补，比赛智商高，大赛经验充足。' },
+  {num:19, name:'Elliott',       lastName:'Elliott',     pos:'CAM', id:1014723, team:'av', country:'英格兰', age:21, height:'170cm', foot:'右脚',
+    season:{apps:16, goals:3, assists:4},
+    attrs:[{n:'速度',v:80},{n:'射门',v:74},{n:'传球',v:78},{n:'盘带',v:80},{n:'防守',v:60},{n:'体能',v:78}], tags:['技术灵动','英格兰新星','创意攻中'], overall:74, status:'轮换', weakFoot:4, bio:'英格兰年轻攻击球员，21岁技术细腻，传球创意出众，是利物浦前场的活力替补。本赛季多次以替补身份改变比赛走势，进球和助攻均有贡献。' },
+  {num:20, name:'Diaz',          lastName:'Diaz',        pos:'LW',  id:961995,  team:'av', country:'哥伦比亚', age:28, height:'178cm', foot:'右脚',
+    season:{apps:24, goals:8, assists:6},
+    attrs:[{n:'速度',v:86},{n:'射门',v:78},{n:'传球',v:72},{n:'盘带',v:84},{n:'防守',v:56},{n:'体能',v:82}], tags:['速度边锋','哥伦比亚国脚','左路利器'], overall:83, status:'轮换', weakFoot:3, bio:'哥伦比亚边锋，28岁速度与技术兼备。本场维尔茨主打左路，迪亚斯列入替补，上场后可极大增强利物浦左路进攻的冲击力。本赛季进球和助攻均高产，是利物浦进攻端的重要选项。' },
+  {num:24, name:'Morton',        lastName:'Morton',      pos:'ST',  id:1105584, team:'av', country:'英格兰', age:22, height:'183cm', foot:'右脚',
+    season:{apps:8, goals:2, assists:1},
+    attrs:[{n:'速度',v:78},{n:'射门',v:74},{n:'传球',v:68},{n:'盘带',v:70},{n:'防守',v:48},{n:'体能',v:78}], tags:['青训前锋','备用中锋','利物浦本土'], overall:66, status:'替补', weakFoot:3, bio:'利物浦青训前锋，22岁是埃基蒂凯的替补选项，速度尚可，射门能力不错，是球队锋线的后备保障。' },
 ];
-
 
 // === SVG PITCH ===
 // 扁平风格：白色线条，清晰可见，无层次差异

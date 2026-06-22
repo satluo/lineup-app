@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T21:14:35+00:00",
+  "generated_at": "2026-06-22T21:19:38+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1175,8 +1175,8 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "13'",
-      "score_home": 0,
+      "status_detail": "18'",
+      "score_home": 1,
       "score_away": 0,
       "venue": "Philadelphia · Philadelphia Stadium"
     },
@@ -6976,27 +6976,27 @@
         ],
         "current": [
           {
-            "team_id": 35,
-            "team": "挪威",
-            "team_en": "挪威",
+            "team_id": 33,
+            "team": "法国",
+            "team_en": "法国",
             "position": 1,
             "played": 2,
             "goals_for": 4,
             "goals_against": 1,
             "goal_difference": 3,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
-            "team_id": 33,
-            "team": "法国",
-            "team_en": "法国",
+            "team_id": 35,
+            "team": "挪威",
+            "team_en": "挪威",
             "position": 2,
             "played": 2,
-            "goals_for": 3,
+            "goals_for": 4,
             "goals_against": 1,
-            "goal_difference": 2,
+            "goal_difference": 3,
             "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
@@ -7021,11 +7021,11 @@
             "position": 4,
             "played": 2,
             "goals_for": 1,
-            "goals_against": 4,
-            "goal_difference": -3,
-            "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "goals_against": 5,
+            "goal_difference": -4,
+            "points": 0,
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       },

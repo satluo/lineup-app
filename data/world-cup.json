@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T18:58:31+00:00",
+  "generated_at": "2026-06-22T19:00:29+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1155,8 +1155,8 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+3'",
-      "score_home": 1,
+      "status_detail": "90'+5'",
+      "score_home": 2,
       "score_away": 0,
       "venue": "Dallas · Dallas Stadium"
     },
@@ -3157,7 +3157,7 @@
       "goal_difference": 3,
       "points": 3,
       "fifa_rank": 1,
-      "fair_play_points": 0,
+      "fair_play_points": -2,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3177,7 +3177,7 @@
       "goal_difference": 2,
       "points": 3,
       "fifa_rank": 24,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5634,23 +5634,10 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 38,
-            "team": "阿根廷",
-            "team_en": "阿根廷",
-            "position": 1,
-            "played": 0,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
-            "points": 0,
-            "status_label": "未开赛",
-            "status_class": "progress"
-          },
-          {
             "team_id": 37,
             "team": "阿尔及利亚",
             "team_en": "阿尔及利亚",
-            "position": 2,
+            "position": 1,
             "played": 0,
             "goals_for": 0,
             "goals_against": 0,
@@ -5663,6 +5650,19 @@
             "team_id": 40,
             "team": "约旦",
             "team_en": "约旦",
+            "position": 2,
+            "played": 0,
+            "goals_for": 0,
+            "goals_against": 0,
+            "goal_difference": 0,
+            "points": 0,
+            "status_label": "未开赛",
+            "status_class": "progress"
+          },
+          {
+            "team_id": 38,
+            "team": "阿根廷",
+            "team_en": "阿根廷",
             "position": 3,
             "played": 0,
             "goals_for": 0,
@@ -7097,9 +7097,9 @@
             "team_en": "阿根廷",
             "position": 1,
             "played": 2,
-            "goals_for": 4,
+            "goals_for": 5,
             "goals_against": 0,
-            "goal_difference": 4,
+            "goal_difference": 5,
             "points": 6,
             "status_label": "锁定头名",
             "status_class": "locked-first"
@@ -7111,8 +7111,8 @@
             "position": 2,
             "played": 2,
             "goals_for": 3,
-            "goals_against": 2,
-            "goal_difference": 1,
+            "goals_against": 3,
+            "goal_difference": 0,
             "points": 3,
             "status_label": "暂列第2",
             "status_class": "progress"
@@ -8813,6 +8813,14 @@
   "leaderboards": {
     "scorers": [
       {
+        "name": "Lionel Messi",
+        "team": "阿根廷",
+        "goals": 5,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Deniz Undav",
         "team": "德国",
         "goals": 3,
@@ -8823,14 +8831,6 @@
       {
         "name": "Jonathan David",
         "team": "加拿大",
-        "goals": 3,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Lionel Messi",
-        "team": "阿根廷",
         "goals": 3,
         "assists": 0,
         "yellows": 0,
@@ -9885,6 +9885,14 @@
         "reds": 0
       },
       {
+        "name": "Facundo Medina",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Findlay Curtis",
         "team": "苏格兰",
         "goals": 0,
@@ -10101,6 +10109,14 @@
         "reds": 0
       },
       {
+        "name": "Konrad Laimer",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Kou Itakura",
         "team": "日本",
         "goals": 0,
@@ -10119,6 +10135,14 @@
       {
         "name": "Leandro Bacuna",
         "team": "库拉索",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Leandro Paredes",
+        "team": "阿根廷",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -10501,6 +10525,14 @@
         "reds": 1
       },
       {
+        "name": "Stefan Posch",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Takefusa Kubo",
         "team": "日本",
         "goals": 0,
@@ -10852,6 +10884,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Facundo Medina",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11919,6 +11959,14 @@
         "reds": 0
       },
       {
+        "name": "Konrad Laimer",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Kylian Mbappé",
         "team": "法国",
         "goals": 1,
@@ -11951,6 +11999,14 @@
         "reds": 0
       },
       {
+        "name": "Leandro Paredes",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Lee Gi-hyuk",
         "team": "韩国",
         "goals": 0,
@@ -11969,7 +12025,7 @@
       {
         "name": "Lionel Messi",
         "team": "阿根廷",
-        "goals": 3,
+        "goals": 5,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -12325,6 +12381,14 @@
         "assists": 0,
         "yellows": 0,
         "reds": 1
+      },
+      {
+        "name": "Stefan Posch",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
       },
       {
         "name": "Tarik Muharemović",
@@ -12785,6 +12849,14 @@
         "reds": 0
       },
       {
+        "name": "Facundo Medina",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Findlay Curtis",
         "team": "苏格兰",
         "goals": 0,
@@ -12961,6 +13033,14 @@
         "reds": 0
       },
       {
+        "name": "Konrad Laimer",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Ladislav Krejčí",
         "team": "捷克",
         "goals": 1,
@@ -12971,6 +13051,14 @@
       {
         "name": "Leandro Bacuna",
         "team": "库拉索",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Leandro Paredes",
+        "team": "阿根廷",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13203,6 +13291,14 @@
       {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Stefan Posch",
+        "team": "奥地利",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13851,7 +13947,7 @@
       {
         "name": "Lionel Messi",
         "team": "阿根廷",
-        "goals": 3,
+        "goals": 5,
         "assists": 0,
         "yellows": 0,
         "reds": 0

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T19:05:33+00:00",
+  "generated_at": "2026-06-22T21:04:30+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1174,10 +1174,10 @@
       "away_en": "Iraq",
       "stage": "I组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "live",
+      "status_detail": "3'",
+      "score_home": 0,
+      "score_away": 0,
       "venue": "Philadelphia · Philadelphia Stadium"
     },
     {

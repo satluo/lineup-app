@@ -235,6 +235,36 @@ def read_daily_group_projections(source_matches: list[dict]) -> dict[str, list[d
             projections[day] = groups
     return projections
 
+def build_live_standings(standings: list[dict], source_matches: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Treat active scores as if the matches ended now, using the internal ranking rules."""
+    from world_cup_page import _rank_simulated_group
+
+    rows_by_group: dict[str, list[dict]] = defaultdict(list)
+    results_by_group: dict[str, list[tuple[int, int, int, int]]] = defaultdict(list)
+    resolved_matches = []
+    for row in standings:
+        rows_by_group[row["group_code"]].append(row)
+    for match in source_matches:
+        item = dict(match)
+        if item.get("status") in {"live", "in_progress"}:
+            item["status"] = "finished"
+        resolved_matches.append(item)
+        if (
+            item.get("stage_code") == "group"
+            and item.get("status") == "finished"
+            and item.get("home_team_id")
+            and item.get("away_team_id")
+            and item.get("home_score") is not None
+            and item.get("away_score") is not None
+        ):
+            results_by_group[str(item["group_code"])].append(
+                (item["home_team_id"], item["away_team_id"], item["home_score"], item["away_score"])
+            )
+    live = []
+    for group_code, rows in rows_by_group.items():
+        live.extend(_rank_simulated_group(rows, results_by_group[group_code]))
+    return live, resolved_matches
+
 def build_snapshot(source_root: Path) -> dict:
     sys.path.insert(0, str(source_root))
     import world_cup_data  # Imported only by the local exporter, never by the site.
@@ -271,6 +301,22 @@ def build_snapshot(source_root: Path) -> dict:
                     "class_name": class_name,
                 }
             )
+        live_standings, resolved_matches = build_live_standings(standings, source_matches)
+        live_best_thirds = world_cup_data.best_third_rankings(live_standings)
+        live_best_thirds_map = {row["team_id"]: row for row in live_best_thirds}
+        live_projection_map = _build_group_projection_map(live_standings, resolved_matches)
+        live_group_statuses = []
+        for row in live_standings:
+            label, class_name = _group_status_label(row, live_best_thirds_map, live_projection_map)
+            live_group_statuses.append(
+                {
+                    "team_id": row["team_id"],
+                    "group_code": row["group_code"],
+                    "position": row["position"],
+                    "label": label,
+                    "class_name": class_name,
+                }
+            )
         group_routes = {
             code: _group_knockout_route_summary(code, source_matches)
             for code in sorted({row["group_code"] for row in standings})
@@ -299,6 +345,9 @@ def build_snapshot(source_root: Path) -> dict:
         "best_thirds": best_thirds,
         "qualification_slots": slots,
         "group_statuses": group_statuses,
+        "live_standings": live_standings,
+        "live_best_thirds": live_best_thirds,
+        "live_group_statuses": live_group_statuses,
         "daily_group_projections": daily_group_projections,
         "group_routes": group_routes,
         "third_place_slot_overrides": third_place_slot_overrides,

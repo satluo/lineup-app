@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T17:37:10+00:00",
+  "generated_at": "2026-06-22T17:42:13+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1155,8 +1155,8 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "35'",
-      "score_home": 0,
+      "status_detail": "40'",
+      "score_home": 1,
       "score_away": 0,
       "venue": "Dallas · Dallas Stadium"
     },
@@ -7097,12 +7097,12 @@
             "team_en": "阿根廷",
             "position": 1,
             "played": 2,
-            "goals_for": 3,
+            "goals_for": 4,
             "goals_against": 0,
-            "goal_difference": 3,
-            "points": 4,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "goal_difference": 4,
+            "points": 6,
+            "status_label": "锁定头名",
+            "status_class": "locked-first"
           },
           {
             "team_id": 39,
@@ -7111,9 +7111,9 @@
             "position": 2,
             "played": 2,
             "goals_for": 3,
-            "goals_against": 1,
-            "goal_difference": 2,
-            "points": 4,
+            "goals_against": 2,
+            "goal_difference": 1,
+            "points": 3,
             "status_label": "暂列第2",
             "status_class": "progress"
           },

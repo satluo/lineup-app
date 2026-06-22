@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T21:49:52+00:00",
+  "generated_at": "2026-06-22T23:00:25+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -3137,7 +3137,7 @@
       "goal_difference": -3,
       "points": 0,
       "fifa_rank": 57,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -8941,6 +8941,14 @@
         "reds": 0
       },
       {
+        "name": "Kylian Mbappé",
+        "team": "法国",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Matheus Cunha",
         "team": "巴西",
         "goals": 2,
@@ -9247,14 +9255,6 @@
       {
         "name": "Kevin Pina",
         "team": "佛得角",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Kylian Mbappé",
-        "team": "法国",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -9585,7 +9585,7 @@
         "team": "伊拉克",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10256,7 +10256,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10719,6 +10719,14 @@
         "reds": 0
       },
       {
+        "name": "Michael Olise",
+        "team": "法国",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Mohamed Salah",
         "team": "埃及",
         "goals": 1,
@@ -10763,7 +10771,7 @@
         "team": "伊拉克",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11036,14 +11044,6 @@
         "goals": 0,
         "assists": 1,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Michael Olise",
-        "team": "法国",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -11969,7 +11969,7 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -12665,6 +12665,14 @@
         "reds": 0
       },
       {
+        "name": "Amir Al-Ammari",
+        "team": "伊拉克",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Andy Robertson",
         "team": "苏格兰",
         "goals": 0,
@@ -13433,14 +13441,6 @@
         "reds": 0
       },
       {
-        "name": "Amir Al-Ammari",
-        "team": "伊拉克",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Anthony Elanga",
         "team": "瑞典",
         "goals": 1,
@@ -13915,7 +13915,7 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -14044,7 +14044,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T00:05:31+00:00",
+  "generated_at": "2026-06-23T00:10:34+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1175,8 +1175,8 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "50'",
-      "score_home": 1,
+      "status_detail": "54'",
+      "score_home": 2,
       "score_away": 0,
       "venue": "Philadelphia · Philadelphia Stadium"
     },
@@ -1195,7 +1195,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "5'",
+      "status_detail": "10'",
       "score_home": 0,
       "score_away": 0,
       "venue": "New Jersey · New York/New Jersey Stadium"
@@ -4992,9 +4992,9 @@
       "won": 2,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 4,
+      "goals_for": 5,
       "goals_against": 1,
-      "goal_difference": 3,
+      "goal_difference": 4,
       "points": 6,
       "fifa_rank": 3,
       "fair_play_points": 0,
@@ -5053,8 +5053,8 @@
       "drawn": 0,
       "lost": 2,
       "goals_for": 1,
-      "goals_against": 5,
-      "goal_difference": -4,
+      "goals_against": 6,
+      "goal_difference": -5,
       "points": 0,
       "fifa_rank": 57,
       "fair_play_points": -2,
@@ -8547,9 +8547,9 @@
             "team_en": "法国",
             "position": 1,
             "played": 2,
-            "goals_for": 4,
+            "goals_for": 5,
             "goals_against": 1,
-            "goal_difference": 3,
+            "goal_difference": 4,
             "points": 6,
             "status_label": "锁定前二",
             "status_class": "locked-top2"
@@ -8587,8 +8587,8 @@
             "position": 4,
             "played": 2,
             "goals_for": 1,
-            "goals_against": 5,
-            "goal_difference": -4,
+            "goals_against": 6,
+            "goal_difference": -5,
             "points": 0,
             "status_label": "无缘前二",
             "status_class": "out"

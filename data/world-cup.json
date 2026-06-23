@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T00:50:52+00:00",
+  "generated_at": "2026-06-23T01:06:02+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1195,7 +1195,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "live",
+      "status_detail": "46'",
       "score_home": 1,
       "score_away": 0,
       "venue": "New Jersey · New York/New Jersey Stadium"

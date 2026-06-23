@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T21:58:59+00:00",
+  "generated_at": "2026-06-23T22:00:15+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1255,7 +1255,7 @@
       "stage": "L组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+5'",
+      "status_detail": "90'+6'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Boston · Boston Stadium"
@@ -3317,7 +3317,7 @@
       "goal_difference": 2,
       "points": 3,
       "fifa_rank": 4,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3337,7 +3337,7 @@
       "goal_difference": 1,
       "points": 3,
       "fifa_rank": 73,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5237,7 +5237,7 @@
       "goal_difference": 2,
       "points": 4,
       "fifa_rank": 4,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5257,7 +5257,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -7434,9 +7434,9 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 46,
-            "team": "英格兰",
-            "team_en": "英格兰",
+            "team_id": 45,
+            "team": "克罗地亚",
+            "team_en": "克罗地亚",
             "position": 1,
             "played": 0,
             "goals_for": 0,
@@ -7447,23 +7447,10 @@
             "status_class": "progress"
           },
           {
-            "team_id": 45,
-            "team": "克罗地亚",
-            "team_en": "克罗地亚",
+            "team_id": 46,
+            "team": "英格兰",
+            "team_en": "英格兰",
             "position": 2,
-            "played": 0,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
-            "points": 0,
-            "status_label": "未开赛",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 47,
-            "team": "加纳",
-            "team_en": "加纳",
-            "position": 3,
             "played": 0,
             "goals_for": 0,
             "goals_against": 0,
@@ -7476,6 +7463,19 @@
             "team_id": 48,
             "team": "巴拿马",
             "team_en": "巴拿马",
+            "position": 3,
+            "played": 0,
+            "goals_for": 0,
+            "goals_against": 0,
+            "goal_difference": 0,
+            "points": 0,
+            "status_label": "未开赛",
+            "status_class": "progress"
+          },
+          {
+            "team_id": 47,
+            "team": "加纳",
+            "team_en": "加纳",
             "position": 4,
             "played": 0,
             "goals_for": 0,
@@ -11447,7 +11447,7 @@
         "team": "英格兰",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11656,6 +11656,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Iñaki Williams",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12641,7 +12649,7 @@
         "team": "英格兰",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13607,6 +13615,14 @@
       {
         "name": "Issa Diop",
         "team": "摩洛哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Iñaki Williams",
+        "team": "加纳",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -14703,6 +14719,14 @@
         "reds": 0
       },
       {
+        "name": "Declan Rice",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Denis Zakaria",
         "team": "瑞士",
         "goals": 0,
@@ -14857,6 +14881,14 @@
       {
         "name": "Issa Diop",
         "team": "摩洛哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Iñaki Williams",
+        "team": "加纳",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15585,14 +15617,6 @@
       {
         "name": "David Møller Wolfe",
         "team": "挪威",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Declan Rice",
-        "team": "英格兰",
         "goals": 0,
         "assists": 1,
         "yellows": 0,

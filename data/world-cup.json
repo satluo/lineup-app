@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T04:45:39+00:00",
+  "generated_at": "2026-06-23T04:50:43+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1215,7 +1215,7 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "83'",
+      "status_detail": "88'",
       "score_home": 1,
       "score_away": 2,
       "venue": "San Francisco Bay Area · San Francisco Bay Area Stadium"

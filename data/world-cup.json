@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T17:26:43+00:00",
+  "generated_at": "2026-06-23T17:31:45+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1235,7 +1235,7 @@
       "stage": "K组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "26'",
+      "status_detail": "31'",
       "score_home": 2,
       "score_away": 0,
       "venue": "Houston · Houston Stadium"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T01:56:39+00:00",
+  "generated_at": "2026-06-23T02:00:21+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1194,8 +1194,8 @@
       "away_en": "Senegal",
       "stage": "I组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+7'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 3,
       "score_away": 2,
       "venue": "New Jersey · New York/New Jersey Stadium"
@@ -3088,14 +3088,14 @@
       "team_name_en": "挪威",
       "team_name_zh": "挪威",
       "group_code": "I",
-      "played": 1,
-      "won": 1,
+      "played": 2,
+      "won": 2,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 4,
-      "goals_against": 1,
-      "goal_difference": 3,
-      "points": 3,
+      "goals_for": 7,
+      "goals_against": 3,
+      "goal_difference": 4,
+      "points": 6,
       "fifa_rank": 31,
       "fair_play_points": 0,
       "position": 2,
@@ -3108,13 +3108,13 @@
       "team_name_en": "塞内加尔",
       "team_name_zh": "塞内加尔",
       "group_code": "I",
-      "played": 1,
+      "played": 2,
       "won": 0,
       "drawn": 0,
-      "lost": 1,
-      "goals_for": 1,
-      "goals_against": 3,
-      "goal_difference": -2,
+      "lost": 2,
+      "goals_for": 3,
+      "goals_against": 6,
+      "goal_difference": -3,
       "points": 0,
       "fifa_rank": 15,
       "fair_play_points": 0,
@@ -3605,28 +3605,6 @@
       "qualifies_currently": false
     },
     {
-      "team_id": 36,
-      "team_name": "塞内加尔",
-      "team_name_en": "塞内加尔",
-      "team_name_zh": "塞内加尔",
-      "group_code": "I",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 1,
-      "goals_against": 3,
-      "goal_difference": -2,
-      "points": 0,
-      "fifa_rank": 15,
-      "fair_play_points": 0,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 11,
-      "qualifies_currently": false
-    },
-    {
       "team_id": 40,
       "team_name": "约旦",
       "team_name_en": "约旦",
@@ -3641,6 +3619,28 @@
       "goal_difference": -2,
       "points": 0,
       "fifa_rank": 63,
+      "fair_play_points": 0,
+      "position": 3,
+      "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 11,
+      "qualifies_currently": false
+    },
+    {
+      "team_id": 36,
+      "team_name": "塞内加尔",
+      "team_name_en": "塞内加尔",
+      "team_name_zh": "塞内加尔",
+      "group_code": "I",
+      "played": 2,
+      "won": 0,
+      "drawn": 0,
+      "lost": 2,
+      "goals_for": 3,
+      "goals_against": 6,
+      "goal_difference": -3,
+      "points": 0,
+      "fifa_rank": 15,
       "fair_play_points": 0,
       "position": 3,
       "group_complete": false,
@@ -4232,29 +4232,29 @@
       "team_id": 33,
       "group_code": "I",
       "position": 1,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "锁定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 35,
       "group_code": "I",
       "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
+      "label": "锁定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 36,
       "group_code": "I",
       "position": 3,
-      "label": "暂列第3",
-      "class_name": "progress"
+      "label": "无缘前二",
+      "class_name": "out"
     },
     {
       "team_id": 34,
       "group_code": "I",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "无缘前二",
+      "class_name": "out"
     },
     {
       "team_id": 38,
@@ -7097,29 +7097,29 @@
             "status_class": "progress"
           },
           {
-            "team_id": 36,
-            "team": "塞内加尔",
-            "team_en": "塞内加尔",
-            "position": 2,
-            "played": 0,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
-            "points": 0,
-            "status_label": "未开赛",
-            "status_class": "progress"
-          },
-          {
             "team_id": 35,
             "team": "挪威",
             "team_en": "挪威",
+            "position": 2,
+            "played": 1,
+            "goals_for": 3,
+            "goals_against": 2,
+            "goal_difference": 1,
+            "points": 3,
+            "status_label": "暂列第2",
+            "status_class": "progress"
+          },
+          {
+            "team_id": 36,
+            "team": "塞内加尔",
+            "team_en": "塞内加尔",
             "position": 3,
-            "played": 0,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
+            "played": 1,
+            "goals_for": 2,
+            "goals_against": 3,
+            "goal_difference": -1,
             "points": 0,
-            "status_label": "未开赛",
+            "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
@@ -7147,34 +7147,34 @@
             "goals_against": 1,
             "goal_difference": 5,
             "points": 6,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 35,
             "team": "挪威",
             "team_en": "挪威",
             "position": 2,
-            "played": 1,
-            "goals_for": 4,
-            "goals_against": 1,
-            "goal_difference": 3,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "played": 2,
+            "goals_for": 7,
+            "goals_against": 3,
+            "goal_difference": 4,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 36,
             "team": "塞内加尔",
             "team_en": "塞内加尔",
             "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 6,
+            "goal_difference": -3,
             "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           },
           {
             "team_id": 34,
@@ -7186,8 +7186,8 @@
             "goals_against": 7,
             "goal_difference": -6,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       },
@@ -8485,7 +8485,7 @@
           42,
           41
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 35,
@@ -9897,34 +9897,34 @@
             "goals_against": 1,
             "goal_difference": 5,
             "points": 6,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 35,
             "team": "挪威",
             "team_en": "挪威",
             "position": 2,
-            "played": 1,
-            "goals_for": 4,
-            "goals_against": 1,
-            "goal_difference": 3,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "played": 2,
+            "goals_for": 7,
+            "goals_against": 3,
+            "goal_difference": 4,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 36,
             "team": "塞内加尔",
             "team_en": "塞内加尔",
             "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 6,
+            "goal_difference": -3,
             "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           },
           {
             "team_id": 34,
@@ -9936,8 +9936,8 @@
             "goals_against": 7,
             "goal_difference": -6,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ],
         "current": [
@@ -9951,34 +9951,34 @@
             "goals_against": 1,
             "goal_difference": 5,
             "points": 7,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "status_label": "第1",
+            "status_class": "locked-first"
           },
           {
             "team_id": 35,
             "team": "挪威",
             "team_en": "挪威",
             "position": 2,
-            "played": 2,
-            "goals_for": 4,
-            "goals_against": 1,
-            "goal_difference": 3,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 3,
+            "goal_difference": 4,
+            "points": 7,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 36,
             "team": "塞内加尔",
             "team_en": "塞内加尔",
             "position": 3,
-            "played": 2,
-            "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 6,
+            "goal_difference": -3,
             "points": 1,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "第三第9",
+            "status_class": "third"
           },
           {
             "team_id": 34,
@@ -9990,7 +9990,7 @@
             "goals_against": 7,
             "goal_difference": -6,
             "points": 1,
-            "status_label": "无缘前二",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -10387,6 +10387,14 @@
         "reds": 0
       },
       {
+        "name": "Erling Haaland",
+        "team": "挪威",
+        "goals": 4,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Deniz Undav",
         "team": "德国",
         "goals": 3,
@@ -10459,14 +10467,6 @@
         "reds": 0
       },
       {
-        "name": "Erling Haaland",
-        "team": "挪威",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Folarin Balogun",
         "team": "美国",
         "goals": 2,
@@ -10485,6 +10485,14 @@
       {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ismaïla Sarr",
+        "team": "塞内加尔",
         "goals": 2,
         "assists": 0,
         "yellows": 0,
@@ -10869,6 +10877,14 @@
       {
         "name": "Luis Romo",
         "team": "墨西哥",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Marcus Holmgren Pedersen",
+        "team": "挪威",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11790,7 +11806,7 @@
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -11899,6 +11915,14 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Jackson",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nikola Katić",
         "team": "波黑",
         "goals": 0,
@@ -11936,6 +11960,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Patrick Berg",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12031,6 +12063,14 @@
         "team": "荷兰",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Sadio Mané",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -12279,6 +12319,14 @@
       {
         "name": "Julio Enciso",
         "team": "巴拉圭",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Martin Ødegaard",
+        "team": "挪威",
         "goals": 0,
         "assists": 2,
         "yellows": 0,
@@ -12589,14 +12637,6 @@
         "reds": 0
       },
       {
-        "name": "Martin Ødegaard",
-        "team": "挪威",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Maxi Araújo",
         "team": "乌拉圭",
         "goals": 2,
@@ -12669,8 +12709,24 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Jackson",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Noor Al-Rawabdeh",
         "team": "约旦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Patrick Berg",
+        "team": "挪威",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -12736,6 +12792,14 @@
         "name": "Rubén Vargas",
         "team": "瑞士",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Sadio Mané",
+        "team": "塞内加尔",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -13175,7 +13239,7 @@
       {
         "name": "Erling Haaland",
         "team": "挪威",
-        "goals": 2,
+        "goals": 4,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -13319,6 +13383,14 @@
       {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ismaïla Sarr",
+        "team": "塞内加尔",
         "goals": 2,
         "assists": 0,
         "yellows": 0,
@@ -13642,6 +13714,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Marcus Holmgren Pedersen",
+        "team": "挪威",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -15233,7 +15313,7 @@
       {
         "name": "Erling Haaland",
         "team": "挪威",
-        "goals": 2,
+        "goals": 4,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15337,6 +15417,14 @@
       {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ismaïla Sarr",
+        "team": "塞内加尔",
         "goals": 2,
         "assists": 0,
         "yellows": 0,
@@ -15551,6 +15639,14 @@
         "reds": 0
       },
       {
+        "name": "Marcus Holmgren Pedersen",
+        "team": "挪威",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Marcus Rashford",
         "team": "英格兰",
         "goals": 1,
@@ -15570,7 +15666,7 @@
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -15711,6 +15807,14 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Jackson",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Noor Al-Rawabdeh",
         "team": "约旦",
         "goals": 0,
@@ -15731,6 +15835,14 @@
         "team": "突尼斯",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Patrick Berg",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -15827,6 +15939,14 @@
         "team": "荷兰",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Sadio Mané",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

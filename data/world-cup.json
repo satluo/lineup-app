@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T23:26:24+00:00",
+  "generated_at": "2026-06-23T23:31:28+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1275,7 +1275,7 @@
       "stage": "L组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "26'",
+      "status_detail": "31'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Toronto · Toronto Stadium"

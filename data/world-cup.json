@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T21:23:39+00:00",
+  "generated_at": "2026-06-23T21:28:42+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1255,7 +1255,7 @@
       "stage": "L组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "60'",
+      "status_detail": "64'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Boston · Boston Stadium"

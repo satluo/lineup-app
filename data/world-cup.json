@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T17:06:32+00:00",
+  "generated_at": "2026-06-23T17:11:35+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1235,8 +1235,8 @@
       "stage": "K组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "6'",
-      "score_home": 0,
+      "status_detail": "11'",
+      "score_home": 1,
       "score_away": 0,
       "venue": "Houston · Houston Stadium"
     },
@@ -5143,6 +5143,26 @@
       "ranking_status": "calculated"
     },
     {
+      "team_id": 43,
+      "team_name": "葡萄牙",
+      "team_name_en": "葡萄牙",
+      "team_name_zh": "葡萄牙",
+      "group_code": "K",
+      "played": 2,
+      "won": 1,
+      "drawn": 1,
+      "lost": 0,
+      "goals_for": 2,
+      "goals_against": 1,
+      "goal_difference": 1,
+      "points": 4,
+      "fifa_rank": 5,
+      "fair_play_points": -3,
+      "position": 1,
+      "group_complete": false,
+      "ranking_status": "calculated"
+    },
+    {
       "team_id": 41,
       "team_name": "哥伦比亚",
       "team_name_en": "哥伦比亚",
@@ -5158,26 +5178,6 @@
       "points": 3,
       "fifa_rank": 13,
       "fair_play_points": -1,
-      "position": 1,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
-      "team_id": 43,
-      "team_name": "葡萄牙",
-      "team_name_en": "葡萄牙",
-      "team_name_zh": "葡萄牙",
-      "group_code": "K",
-      "played": 2,
-      "won": 0,
-      "drawn": 2,
-      "lost": 0,
-      "goals_for": 1,
-      "goals_against": 1,
-      "goal_difference": 0,
-      "points": 2,
-      "fifa_rank": 5,
-      "fair_play_points": -3,
       "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5210,12 +5210,12 @@
       "group_code": "K",
       "played": 2,
       "won": 0,
-      "drawn": 1,
-      "lost": 1,
+      "drawn": 0,
+      "lost": 2,
       "goals_for": 1,
-      "goals_against": 3,
-      "goal_difference": -2,
-      "points": 1,
+      "goals_against": 4,
+      "goal_difference": -3,
+      "points": 0,
       "fifa_rank": 50,
       "fair_play_points": -1,
       "position": 4,
@@ -5851,18 +5851,18 @@
       "class_name": "out"
     },
     {
-      "team_id": 41,
-      "group_code": "K",
-      "position": 1,
-      "label": "暂列第1",
-      "class_name": "progress"
-    },
-    {
       "team_id": 43,
       "group_code": "K",
+      "position": 1,
+      "label": "锁定前三",
+      "class_name": "locked-top3"
+    },
+    {
+      "team_id": 41,
+      "group_code": "K",
       "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
+      "label": "锁定前三",
+      "class_name": "locked-top3"
     },
     {
       "team_id": 42,
@@ -5875,8 +5875,8 @@
       "team_id": 44,
       "group_code": "K",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "无缘前二",
+      "class_name": "out"
     },
     {
       "team_id": 46,
@@ -8789,22 +8789,22 @@
             "status_class": "locked-top3"
           },
           {
-            "team_id": 42,
-            "team": "刚果（金）",
-            "team_en": "刚果（金）",
-            "position": 2,
-            "played": 2,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 2,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
             "team_id": 43,
             "team": "葡萄牙",
             "team_en": "葡萄牙",
+            "position": 2,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 1,
+            "goal_difference": 1,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
+            "team_id": 42,
+            "team": "刚果（金）",
+            "team_en": "刚果（金）",
             "position": 3,
             "played": 2,
             "goals_for": 1,
@@ -8821,11 +8821,11 @@
             "position": 4,
             "played": 2,
             "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
-            "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "goals_against": 4,
+            "goal_difference": -3,
+            "points": 0,
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T18:57:32+00:00",
+  "generated_at": "2026-06-23T19:00:16+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1234,8 +1234,8 @@
       "away_en": "Uzbekistan",
       "stage": "K组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+3'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 5,
       "score_away": 0,
       "venue": "Houston · Houston Stadium"
@@ -3223,6 +3223,26 @@
       "ranking_status": "calculated"
     },
     {
+      "team_id": 43,
+      "team_name": "葡萄牙",
+      "team_name_en": "葡萄牙",
+      "team_name_zh": "葡萄牙",
+      "group_code": "K",
+      "played": 2,
+      "won": 1,
+      "drawn": 1,
+      "lost": 0,
+      "goals_for": 6,
+      "goals_against": 1,
+      "goal_difference": 5,
+      "points": 4,
+      "fifa_rank": 5,
+      "fair_play_points": -4,
+      "position": 1,
+      "group_complete": false,
+      "ranking_status": "calculated"
+    },
+    {
       "team_id": 41,
       "team_name": "哥伦比亚",
       "team_name_en": "哥伦比亚",
@@ -3238,7 +3258,7 @@
       "points": 3,
       "fifa_rank": 13,
       "fair_play_points": -1,
-      "position": 1,
+      "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
     },
@@ -3258,26 +3278,6 @@
       "points": 1,
       "fifa_rank": 46,
       "fair_play_points": -1,
-      "position": 2,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
-      "team_id": 43,
-      "team_name": "葡萄牙",
-      "team_name_en": "葡萄牙",
-      "team_name_zh": "葡萄牙",
-      "group_code": "K",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goals_for": 1,
-      "goals_against": 1,
-      "goal_difference": 0,
-      "points": 1,
-      "fifa_rank": 5,
-      "fair_play_points": -3,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3288,16 +3288,16 @@
       "team_name_en": "乌兹别克斯坦",
       "team_name_zh": "乌兹别克斯坦",
       "group_code": "K",
-      "played": 1,
+      "played": 2,
       "won": 0,
       "drawn": 0,
-      "lost": 1,
+      "lost": 2,
       "goals_for": 1,
-      "goals_against": 3,
-      "goal_difference": -2,
+      "goals_against": 8,
+      "goal_difference": -7,
       "points": 0,
       "fifa_rank": 50,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3517,10 +3517,10 @@
       "qualifies_currently": true
     },
     {
-      "team_id": 43,
-      "team_name": "葡萄牙",
-      "team_name_en": "葡萄牙",
-      "team_name_zh": "葡萄牙",
+      "team_id": 42,
+      "team_name": "刚果（金）",
+      "team_name_en": "刚果（金）",
+      "team_name_zh": "刚果（金）",
       "group_code": "K",
       "played": 1,
       "won": 0,
@@ -3530,8 +3530,8 @@
       "goals_against": 1,
       "goal_difference": 0,
       "points": 1,
-      "fifa_rank": 5,
-      "fair_play_points": -3,
+      "fifa_rank": 46,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -3948,12 +3948,23 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
+      "team_id": 43,
+      "team_name": "葡萄牙",
+      "team_name_en": "葡萄牙",
+      "team_name_zh": "葡萄牙",
+      "group_code": "K",
+      "group_position": 1,
+      "slot_type": "group_position",
+      "status": "current_standings",
+      "reason": "Provisional from locally calculated current standings"
+    },
+    {
       "team_id": 41,
       "team_name": "哥伦比亚",
       "team_name_en": "哥伦比亚",
       "team_name_zh": "哥伦比亚",
       "group_code": "K",
-      "group_position": 1,
+      "group_position": 2,
       "slot_type": "group_position",
       "status": "current_standings",
       "reason": "Provisional from locally calculated current standings"
@@ -3963,17 +3974,6 @@
       "team_name": "刚果（金）",
       "team_name_en": "刚果（金）",
       "team_name_zh": "刚果（金）",
-      "group_code": "K",
-      "group_position": 2,
-      "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
-    },
-    {
-      "team_id": 43,
-      "team_name": "葡萄牙",
-      "team_name_en": "葡萄牙",
-      "team_name_zh": "葡萄牙",
       "group_code": "K",
       "group_position": 3,
       "slot_type": "best_third",
@@ -4285,21 +4285,21 @@
       "class_name": "out"
     },
     {
-      "team_id": 41,
+      "team_id": 43,
       "group_code": "K",
       "position": 1,
-      "label": "暂列第1",
-      "class_name": "progress"
+      "label": "锁定前三",
+      "class_name": "locked-top3"
+    },
+    {
+      "team_id": 41,
+      "group_code": "K",
+      "position": 2,
+      "label": "锁定前三",
+      "class_name": "locked-top3"
     },
     {
       "team_id": 42,
-      "group_code": "K",
-      "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
-    },
-    {
-      "team_id": 43,
       "group_code": "K",
       "position": 3,
       "label": "暂列第3",
@@ -4309,8 +4309,8 @@
       "team_id": 44,
       "group_code": "K",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "无缘前二",
+      "class_name": "out"
     },
     {
       "team_id": 46,
@@ -5157,7 +5157,7 @@
       "goal_difference": 5,
       "points": 4,
       "fifa_rank": 5,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5217,7 +5217,7 @@
       "goal_difference": -7,
       "points": 0,
       "fifa_rank": 50,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -7318,10 +7318,23 @@
         "all_finished": true,
         "pre": [
           {
+            "team_id": 43,
+            "team": "葡萄牙",
+            "team_en": "葡萄牙",
+            "position": 1,
+            "played": 1,
+            "goals_for": 5,
+            "goals_against": 0,
+            "goal_difference": 5,
+            "points": 3,
+            "status_label": "暂列第1",
+            "status_class": "progress"
+          },
+          {
             "team_id": 41,
             "team": "哥伦比亚",
             "team_en": "哥伦比亚",
-            "position": 1,
+            "position": 2,
             "played": 0,
             "goals_for": 0,
             "goals_against": 0,
@@ -7334,7 +7347,7 @@
             "team_id": 42,
             "team": "刚果（金）",
             "team_en": "刚果（金）",
-            "position": 2,
+            "position": 3,
             "played": 0,
             "goals_for": 0,
             "goals_against": 0,
@@ -7347,60 +7360,47 @@
             "team_id": 44,
             "team": "乌兹别克斯坦",
             "team_en": "乌兹别克斯坦",
-            "position": 3,
-            "played": 0,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
-            "points": 0,
-            "status_label": "未开赛",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 43,
-            "team": "葡萄牙",
-            "team_en": "葡萄牙",
             "position": 4,
-            "played": 0,
+            "played": 1,
             "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
+            "goals_against": 5,
+            "goal_difference": -5,
             "points": 0,
-            "status_label": "未开赛",
+            "status_label": "暂列第4",
             "status_class": "progress"
           }
         ],
         "current": [
           {
+            "team_id": 43,
+            "team": "葡萄牙",
+            "team_en": "葡萄牙",
+            "position": 1,
+            "played": 2,
+            "goals_for": 6,
+            "goals_against": 1,
+            "goal_difference": 5,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
             "team_id": 41,
             "team": "哥伦比亚",
             "team_en": "哥伦比亚",
-            "position": 1,
+            "position": 2,
             "played": 1,
             "goals_for": 3,
             "goals_against": 1,
             "goal_difference": 2,
             "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 42,
             "team": "刚果（金）",
             "team_en": "刚果（金）",
-            "position": 2,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 43,
-            "team": "葡萄牙",
-            "team_en": "葡萄牙",
             "position": 3,
             "played": 1,
             "goals_for": 1,
@@ -7415,13 +7415,13 @@
             "team": "乌兹别克斯坦",
             "team_en": "乌兹别克斯坦",
             "position": 4,
-            "played": 1,
+            "played": 2,
             "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
+            "goals_against": 8,
+            "goal_difference": -7,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       },
@@ -10122,35 +10122,35 @@
         "all_finished": false,
         "pre": [
           {
+            "team_id": 43,
+            "team": "葡萄牙",
+            "team_en": "葡萄牙",
+            "position": 1,
+            "played": 2,
+            "goals_for": 6,
+            "goals_against": 1,
+            "goal_difference": 5,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
             "team_id": 41,
             "team": "哥伦比亚",
             "team_en": "哥伦比亚",
-            "position": 1,
+            "position": 2,
             "played": 1,
             "goals_for": 3,
             "goals_against": 1,
             "goal_difference": 2,
             "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 42,
             "team": "刚果（金）",
             "team_en": "刚果（金）",
-            "position": 2,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 43,
-            "team": "葡萄牙",
-            "team_en": "葡萄牙",
             "position": 3,
             "played": 1,
             "goals_for": 1,
@@ -10165,21 +10165,34 @@
             "team": "乌兹别克斯坦",
             "team_en": "乌兹别克斯坦",
             "position": 4,
-            "played": 1,
+            "played": 2,
             "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
+            "goals_against": 8,
+            "goal_difference": -7,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ],
         "current": [
           {
+            "team_id": 43,
+            "team": "葡萄牙",
+            "team_en": "葡萄牙",
+            "position": 1,
+            "played": 3,
+            "goals_for": 6,
+            "goals_against": 1,
+            "goal_difference": 5,
+            "points": 5,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
             "team_id": 41,
             "team": "哥伦比亚",
             "team_en": "哥伦比亚",
-            "position": 1,
+            "position": 2,
             "played": 2,
             "goals_for": 3,
             "goals_against": 1,
@@ -10192,40 +10205,27 @@
             "team_id": 42,
             "team": "刚果（金）",
             "team_en": "刚果（金）",
-            "position": 2,
-            "played": 2,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 2,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 43,
-            "team": "葡萄牙",
-            "team_en": "葡萄牙",
             "position": 3,
             "played": 2,
             "goals_for": 1,
             "goals_against": 1,
             "goal_difference": 0,
             "points": 2,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 44,
             "team": "乌兹别克斯坦",
             "team_en": "乌兹别克斯坦",
             "position": 4,
-            "played": 2,
+            "played": 3,
             "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
+            "goals_against": 8,
+            "goal_difference": -7,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰了",
+            "status_class": "out"
           }
         ]
       },
@@ -10439,6 +10439,14 @@
         "team": "荷兰",
         "goals": 2,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "team": "葡萄牙",
+        "goals": 2,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -11027,6 +11035,14 @@
         "reds": 0
       },
       {
+        "name": "Nuno Mendes",
+        "team": "葡萄牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Oh Hyeon-gyu",
         "team": "韩国",
         "goals": 1,
@@ -11053,6 +11069,14 @@
       {
         "name": "Petar Musa",
         "team": "克罗地亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Rafael Leão",
+        "team": "葡萄牙",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11280,6 +11304,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Bruno Fernandes",
+        "team": "葡萄牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -11691,6 +11723,14 @@
         "reds": 0
       },
       {
+        "name": "João Cancelo",
+        "team": "葡萄牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Juan José Cáceres",
         "team": "巴拉圭",
         "goals": 0,
@@ -12019,6 +12059,14 @@
         "reds": 0
       },
       {
+        "name": "Odiljon Xamrobekov",
+        "team": "乌兹别克斯坦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Paik Seung-ho",
         "team": "韩国",
         "goals": 0,
@@ -12085,6 +12133,14 @@
       {
         "name": "Rani Khedira",
         "team": "突尼斯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Renato Veiga",
+        "team": "葡萄牙",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12509,6 +12565,14 @@
         "reds": 0
       },
       {
+        "name": "Bruno Fernandes",
+        "team": "葡萄牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Bruno Guimarães",
         "team": "巴西",
         "goals": 0,
@@ -12647,6 +12711,14 @@
       {
         "name": "Ivan Perišić",
         "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "João Cancelo",
+        "team": "葡萄牙",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13224,6 +13296,14 @@
         "name": "Connor Metcalfe",
         "team": "澳大利亚",
         "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "team": "葡萄牙",
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -14037,8 +14117,24 @@
         "reds": 0
       },
       {
+        "name": "Nuno Mendes",
+        "team": "葡萄牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nélson Semedo",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Odiljon Xamrobekov",
+        "team": "乌兹别克斯坦",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -14085,6 +14181,14 @@
         "reds": 0
       },
       {
+        "name": "Rafael Leão",
+        "team": "葡萄牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ramiz Zerrouki",
         "team": "阿尔及利亚",
         "goals": 0,
@@ -14106,6 +14210,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Renato Veiga",
+        "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15039,6 +15151,14 @@
         "reds": 0
       },
       {
+        "name": "Odiljon Xamrobekov",
+        "team": "乌兹别克斯坦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Paik Seung-ho",
         "team": "韩国",
         "goals": 0,
@@ -15065,6 +15185,14 @@
       {
         "name": "Rani Khedira",
         "team": "突尼斯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Renato Veiga",
+        "team": "葡萄牙",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15351,6 +15479,14 @@
         "reds": 0
       },
       {
+        "name": "Bruno Fernandes",
+        "team": "葡萄牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Bruno Guimarães",
         "team": "巴西",
         "goals": 0,
@@ -15394,6 +15530,14 @@
         "name": "Connor Metcalfe",
         "team": "澳大利亚",
         "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "team": "葡萄牙",
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15675,6 +15819,14 @@
         "team": "德国",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "João Cancelo",
+        "team": "葡萄牙",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -16047,6 +16199,14 @@
         "reds": 0
       },
       {
+        "name": "Nuno Mendes",
+        "team": "葡萄牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Oh Hyeon-gyu",
         "team": "韩国",
         "goals": 1,
@@ -16115,6 +16275,14 @@
         "team": "加拿大",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Rafael Leão",
+        "team": "葡萄牙",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },

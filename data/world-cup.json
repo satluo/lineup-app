@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T00:15:37+00:00",
+  "generated_at": "2026-06-23T00:20:40+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1175,7 +1175,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "59'",
+      "status_detail": "65'",
       "score_home": 2,
       "score_away": 0,
       "venue": "Philadelphia · Philadelphia Stadium"
@@ -1195,7 +1195,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "15'",
+      "status_detail": "20'",
       "score_home": 0,
       "score_away": 0,
       "venue": "New Jersey · New York/New Jersey Stadium"

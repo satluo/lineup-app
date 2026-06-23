@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T04:55:46+00:00",
+  "generated_at": "2026-06-23T05:00:23+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1215,7 +1215,7 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+3'",
+      "status_detail": "90'+7'",
       "score_home": 1,
       "score_away": 2,
       "venue": "San Francisco Bay Area · San Francisco Bay Area Stadium"
@@ -3197,7 +3197,7 @@
       "goal_difference": -2,
       "points": 0,
       "fifa_rank": 63,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3217,7 +3217,7 @@
       "goal_difference": -3,
       "points": 0,
       "fifa_rank": 28,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3619,7 +3619,7 @@
       "goal_difference": -2,
       "points": 0,
       "fifa_rank": 63,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -5117,7 +5117,7 @@
       "goal_difference": -2,
       "points": 3,
       "fifa_rank": 28,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5137,7 +5137,7 @@
       "goal_difference": -3,
       "points": 0,
       "fifa_rank": 63,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5363,7 +5363,7 @@
       "goal_difference": -2,
       "points": 3,
       "fifa_rank": 28,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -10619,6 +10619,14 @@
         "reds": 0
       },
       {
+        "name": "Amine Gouiri",
+        "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Anthony Elanga",
         "team": "瑞典",
         "goals": 1,
@@ -10963,6 +10971,14 @@
         "reds": 0
       },
       {
+        "name": "Nadhir Benbouali",
+        "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nathan Saliba",
         "team": "加拿大",
         "goals": 1,
@@ -10989,6 +11005,14 @@
       {
         "name": "Nico Schlotterbeck",
         "team": "德国",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nizar Al-Rashdan",
+        "team": "约旦",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11555,6 +11579,14 @@
         "reds": 1
       },
       {
+        "name": "Husam Abu Dahab",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Issa Diop",
         "team": "摩洛哥",
         "goals": 0,
@@ -11883,6 +11915,14 @@
         "reds": 0
       },
       {
+        "name": "Mousa Al-Tamari",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nadiem Amiri",
         "team": "德国",
         "goals": 0,
@@ -12011,11 +12051,27 @@
         "reds": 0
       },
       {
+        "name": "Ramiz Zerrouki",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Rani Khedira",
         "team": "突尼斯",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Riyad Mahrez",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12677,6 +12733,14 @@
         "reds": 0
       },
       {
+        "name": "Mousa Al-Tamari",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nadiem Amiri",
         "team": "德国",
         "goals": 0,
@@ -12768,6 +12832,14 @@
         "name": "Ramin Rezaeian",
         "team": "伊朗",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Riyad Mahrez",
+        "team": "阿尔及利亚",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -12970,6 +13042,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Amine Gouiri",
+        "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -13363,6 +13443,14 @@
         "assists": 0,
         "yellows": 0,
         "reds": 1
+      },
+      {
+        "name": "Husam Abu Dahab",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
       },
       {
         "name": "Hélio Varela",
@@ -13837,6 +13925,14 @@
         "reds": 0
       },
       {
+        "name": "Nadhir Benbouali",
+        "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nathan Ngoy",
         "team": "比利时",
         "goals": 0,
@@ -13874,6 +13970,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Nizar Al-Rashdan",
+        "team": "约旦",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -13930,6 +14034,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ramiz Zerrouki",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14575,6 +14687,14 @@
         "reds": 0
       },
       {
+        "name": "Husam Abu Dahab",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Issa Diop",
         "team": "摩洛哥",
         "goals": 0,
@@ -14887,6 +15007,14 @@
         "reds": 0
       },
       {
+        "name": "Ramiz Zerrouki",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Rani Khedira",
         "team": "突尼斯",
         "goals": 0,
@@ -15081,6 +15209,14 @@
       {
         "name": "Amad Diallo",
         "team": "科特迪瓦",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Amine Gouiri",
+        "team": "阿尔及利亚",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -15759,6 +15895,22 @@
         "reds": 0
       },
       {
+        "name": "Mousa Al-Tamari",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nadhir Benbouali",
+        "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nadiem Amiri",
         "team": "德国",
         "goals": 0,
@@ -15811,6 +15963,14 @@
         "team": "塞内加尔",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nizar Al-Rashdan",
+        "team": "约旦",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -15899,6 +16059,14 @@
         "team": "墨西哥",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Riyad Mahrez",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T00:00:27+00:00",
+  "generated_at": "2026-06-23T00:05:31+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1175,7 +1175,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "live",
+      "status_detail": "50'",
       "score_home": 1,
       "score_away": 0,
       "venue": "Philadelphia · Philadelphia Stadium"
@@ -1195,9 +1195,9 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "0'",
-      "score_home": null,
-      "score_away": null,
+      "status_detail": "5'",
+      "score_home": 0,
+      "score_away": 0,
       "venue": "New Jersey · New York/New Jersey Stadium"
     },
     {
@@ -5008,14 +5008,14 @@
       "team_name_en": "挪威",
       "team_name_zh": "挪威",
       "group_code": "I",
-      "played": 1,
+      "played": 2,
       "won": 1,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goals_for": 4,
       "goals_against": 1,
       "goal_difference": 3,
-      "points": 3,
+      "points": 4,
       "fifa_rank": 31,
       "fair_play_points": 0,
       "position": 2,
@@ -5028,14 +5028,14 @@
       "team_name_en": "塞内加尔",
       "team_name_zh": "塞内加尔",
       "group_code": "I",
-      "played": 1,
+      "played": 2,
       "won": 0,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
       "goals_for": 1,
       "goals_against": 3,
       "goal_difference": -2,
-      "points": 0,
+      "points": 1,
       "fifa_rank": 15,
       "fair_play_points": 0,
       "position": 3,
@@ -5481,6 +5481,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 36,
+      "team_name": "塞内加尔",
+      "team_name_en": "塞内加尔",
+      "team_name_zh": "塞内加尔",
+      "group_code": "I",
+      "played": 2,
+      "won": 0,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 1,
+      "goals_against": 3,
+      "goal_difference": -2,
+      "points": 1,
+      "fifa_rank": 15,
+      "fair_play_points": 0,
+      "position": 3,
+      "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 9,
+      "qualifies_currently": false
+    },
+    {
       "team_id": 5,
       "team_name": "波黑",
       "team_name_en": "波黑",
@@ -5499,7 +5521,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 9,
+      "third_place_position": 10,
       "qualifies_currently": false
     },
     {
@@ -5518,28 +5540,6 @@
       "points": 0,
       "fifa_rank": 34,
       "fair_play_points": -2,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 10,
-      "qualifies_currently": false
-    },
-    {
-      "team_id": 36,
-      "team_name": "塞内加尔",
-      "team_name_en": "塞内加尔",
-      "team_name_zh": "塞内加尔",
-      "group_code": "I",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 1,
-      "goals_against": 3,
-      "goal_difference": -2,
-      "points": 0,
-      "fifa_rank": 15,
-      "fair_play_points": 0,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -5798,15 +5798,15 @@
       "team_id": 33,
       "group_code": "I",
       "position": 1,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "锁定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 35,
       "group_code": "I",
       "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
+      "label": "锁定前三",
+      "class_name": "locked-top3"
     },
     {
       "team_id": 36,
@@ -5819,8 +5819,8 @@
       "team_id": 34,
       "group_code": "I",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "无缘前二",
+      "class_name": "out"
     },
     {
       "team_id": 38,

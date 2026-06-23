@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T05:05:24+00:00",
+  "generated_at": "2026-06-23T07:06:34+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -10395,6 +10395,14 @@
         "reds": 0
       },
       {
+        "name": "Kylian Mbappé",
+        "team": "法国",
+        "goals": 4,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Deniz Undav",
         "team": "德国",
         "goals": 3,
@@ -10515,14 +10523,6 @@
         "reds": 0
       },
       {
-        "name": "Kylian Mbappé",
-        "team": "法国",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Matheus Cunha",
         "team": "巴西",
         "goals": 2,
@@ -10579,7 +10579,7 @@
         "reds": 0
       },
       {
-        "name": "Agustín Cano",
+        "name": "Agustín Canobbio",
         "team": "乌拉圭",
         "goals": 1,
         "assists": 0,
@@ -10907,6 +10907,14 @@
         "reds": 0
       },
       {
+        "name": "Marko Arnautović",
+        "team": "奥地利",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Martin Baturina",
         "team": "克罗地亚",
         "goals": 1,
@@ -11031,6 +11039,14 @@
         "team": "突尼斯",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ousmane Dembélé",
+        "team": "法国",
+        "goals": 1,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -11587,6 +11603,14 @@
         "reds": 0
       },
       {
+        "name": "Iliman Ndiaye",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Issa Diop",
         "team": "摩洛哥",
         "goals": 0,
@@ -11870,7 +11894,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -12333,6 +12357,14 @@
         "reds": 0
       },
       {
+        "name": "Michael Olise",
+        "team": "法国",
+        "goals": 0,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Brahim Díaz",
         "team": "摩洛哥",
         "goals": 0,
@@ -12383,14 +12415,6 @@
       {
         "name": "Martin Ødegaard",
         "team": "挪威",
-        "goals": 0,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Michael Olise",
-        "team": "法国",
         "goals": 0,
         "assists": 2,
         "yellows": 0,
@@ -12613,6 +12637,14 @@
         "reds": 0
       },
       {
+        "name": "Iliman Ndiaye",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ivan Perišić",
         "team": "克罗地亚",
         "goals": 0,
@@ -12784,6 +12816,14 @@
         "name": "Noor Al-Rawabdeh",
         "team": "约旦",
         "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ousmane Dembélé",
+        "team": "法国",
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -12981,7 +13021,7 @@
         "reds": 0
       },
       {
-        "name": "Agustín Cano",
+        "name": "Agustín Canobbio",
         "team": "乌拉圭",
         "goals": 1,
         "assists": 0,
@@ -13695,7 +13735,7 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 2,
+        "goals": 4,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -13815,6 +13855,14 @@
       {
         "name": "Marcus Rashford",
         "team": "英格兰",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Marko Arnautović",
+        "team": "奥地利",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -15167,7 +15215,7 @@
         "reds": 0
       },
       {
-        "name": "Agustín Cano",
+        "name": "Agustín Canobbio",
         "team": "乌拉圭",
         "goals": 1,
         "assists": 0,
@@ -15551,6 +15599,14 @@
         "reds": 0
       },
       {
+        "name": "Iliman Ndiaye",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
         "goals": 2,
@@ -15705,7 +15761,7 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 2,
+        "goals": 4,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15791,6 +15847,14 @@
         "reds": 0
       },
       {
+        "name": "Marko Arnautović",
+        "team": "奥地利",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Martin Baturina",
         "team": "克罗地亚",
         "goals": 1,
@@ -15842,7 +15906,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -15995,6 +16059,14 @@
         "team": "突尼斯",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ousmane Dembélé",
+        "team": "法国",
+        "goals": 1,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T18:22:18+00:00",
+  "generated_at": "2026-06-23T18:27:18+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1235,8 +1235,8 @@
       "stage": "K组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "57'",
-      "score_home": 3,
+      "status_detail": "63'",
+      "score_home": 4,
       "score_away": 0,
       "venue": "Houston · Houston Stadium"
     },
@@ -5152,9 +5152,9 @@
       "won": 1,
       "drawn": 1,
       "lost": 0,
-      "goals_for": 4,
+      "goals_for": 5,
       "goals_against": 1,
-      "goal_difference": 3,
+      "goal_difference": 4,
       "points": 4,
       "fifa_rank": 5,
       "fair_play_points": -3,
@@ -5213,8 +5213,8 @@
       "drawn": 0,
       "lost": 2,
       "goals_for": 1,
-      "goals_against": 6,
-      "goal_difference": -5,
+      "goals_against": 7,
+      "goal_difference": -6,
       "points": 0,
       "fifa_rank": 50,
       "fair_play_points": -1,
@@ -8781,9 +8781,9 @@
             "team_en": "葡萄牙",
             "position": 1,
             "played": 2,
-            "goals_for": 4,
+            "goals_for": 5,
             "goals_against": 1,
-            "goal_difference": 3,
+            "goal_difference": 4,
             "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
@@ -8821,8 +8821,8 @@
             "position": 4,
             "played": 2,
             "goals_for": 1,
-            "goals_against": 6,
-            "goal_difference": -5,
+            "goals_against": 7,
+            "goal_difference": -6,
             "points": 0,
             "status_label": "无缘前二",
             "status_class": "out"

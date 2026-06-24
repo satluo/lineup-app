@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T03:58:53+00:00",
+  "generated_at": "2026-06-24T04:00:12+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -3237,7 +3237,7 @@
       "goal_difference": 3,
       "points": 6,
       "fifa_rank": 13,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3277,7 +3277,7 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3575,7 +3575,7 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -5157,7 +5157,7 @@
       "goal_difference": 3,
       "points": 6,
       "fifa_rank": 13,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5197,7 +5197,7 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5495,7 +5495,7 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -10475,6 +10475,14 @@
         "reds": 0
       },
       {
+        "name": "Daniel Muñoz",
+        "team": "哥伦比亚",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Elijah Just",
         "team": "新西兰",
         "goals": 2,
@@ -10685,14 +10693,6 @@
       {
         "name": "Connor Metcalfe",
         "team": "澳大利亚",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Daniel Muñoz",
-        "team": "哥伦比亚",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11379,6 +11379,14 @@
         "reds": 0
       },
       {
+        "name": "Charles Pickel",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Chris Richards",
         "team": "美国",
         "goals": 0,
@@ -11707,6 +11715,22 @@
         "reds": 0
       },
       {
+        "name": "Jefferson Lerma",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jhon Lucumí",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Johan Mojica",
         "team": "哥伦比亚",
         "goals": 0,
@@ -11749,6 +11773,14 @@
       {
         "name": "João Cancelo",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Juan Fernando Quintero",
+        "team": "哥伦比亚",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -12765,6 +12797,14 @@
         "reds": 0
       },
       {
+        "name": "Juan Fernando Quintero",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kaishū Sano",
         "team": "日本",
         "goals": 0,
@@ -13333,6 +13373,14 @@
         "reds": 0
       },
       {
+        "name": "Charles Pickel",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Chris Richards",
         "team": "美国",
         "goals": 0,
@@ -13391,7 +13439,7 @@
       {
         "name": "Daniel Muñoz",
         "team": "哥伦比亚",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -13711,6 +13759,22 @@
       {
         "name": "Jean-Ricner Bellegarde",
         "team": "海地",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jefferson Lerma",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jhon Lucumí",
+        "team": "哥伦比亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -14735,6 +14799,14 @@
         "reds": 0
       },
       {
+        "name": "Charles Pickel",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Chris Richards",
         "team": "美国",
         "goals": 0,
@@ -14969,6 +15041,22 @@
       {
         "name": "Jean-Ricner Bellegarde",
         "team": "海地",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jefferson Lerma",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jhon Lucumí",
+        "team": "哥伦比亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15681,7 +15769,7 @@
       {
         "name": "Daniel Muñoz",
         "team": "哥伦比亚",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15939,6 +16027,14 @@
         "team": "葡萄牙",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Juan Fernando Quintero",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

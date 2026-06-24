@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T00:52:13+00:00",
+  "generated_at": "2026-06-24T00:57:15+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1274,8 +1274,8 @@
       "away_en": "Croatia",
       "stage": "L组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+2'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 0,
       "score_away": 1,
       "venue": "Toronto · Toronto Stadium"
@@ -3343,41 +3343,41 @@
       "ranking_status": "calculated"
     },
     {
-      "team_id": 48,
-      "team_name": "巴拿马",
-      "team_name_en": "巴拿马",
-      "team_name_zh": "巴拿马",
-      "group_code": "L",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 0,
-      "goals_against": 1,
-      "goal_difference": -1,
-      "points": 0,
-      "fifa_rank": 34,
-      "fair_play_points": -2,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
       "team_id": 45,
       "team_name": "克罗地亚",
       "team_name_en": "克罗地亚",
       "team_name_zh": "克罗地亚",
       "group_code": "L",
-      "played": 1,
-      "won": 0,
+      "played": 2,
+      "won": 1,
       "drawn": 0,
       "lost": 1,
-      "goals_for": 2,
+      "goals_for": 3,
       "goals_against": 4,
-      "goal_difference": -2,
-      "points": 0,
+      "goal_difference": -1,
+      "points": 3,
       "fifa_rank": 11,
       "fair_play_points": 0,
+      "position": 3,
+      "group_complete": false,
+      "ranking_status": "calculated"
+    },
+    {
+      "team_id": 48,
+      "team_name": "巴拿马",
+      "team_name_en": "巴拿马",
+      "team_name_zh": "巴拿马",
+      "group_code": "L",
+      "played": 2,
+      "won": 0,
+      "drawn": 0,
+      "lost": 2,
+      "goals_for": 0,
+      "goals_against": 2,
+      "goal_difference": -2,
+      "points": 0,
+      "fifa_rank": 34,
+      "fair_play_points": -2,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3429,6 +3429,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 45,
+      "team_name": "克罗地亚",
+      "team_name_en": "克罗地亚",
+      "team_name_zh": "克罗地亚",
+      "group_code": "L",
+      "played": 2,
+      "won": 1,
+      "drawn": 0,
+      "lost": 1,
+      "goals_for": 3,
+      "goals_against": 4,
+      "goal_difference": -1,
+      "points": 3,
+      "fifa_rank": 11,
+      "fair_play_points": 0,
+      "position": 3,
+      "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 3,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 37,
       "team_name": "阿尔及利亚",
       "team_name_en": "阿尔及利亚",
@@ -3447,7 +3469,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 3,
+      "third_place_position": 4,
       "qualifies_currently": true
     },
     {
@@ -3469,7 +3491,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 5,
       "qualifies_currently": true
     },
     {
@@ -3491,7 +3513,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 6,
       "qualifies_currently": true
     },
     {
@@ -3513,7 +3535,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -3535,7 +3557,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -3557,8 +3579,8 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
+      "third_place_position": 9,
+      "qualifies_currently": false
     },
     {
       "team_id": 18,
@@ -3579,7 +3601,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 9,
+      "third_place_position": 10,
       "qualifies_currently": false
     },
     {
@@ -3598,28 +3620,6 @@
       "points": 1,
       "fifa_rank": 64,
       "fair_play_points": -9,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 10,
-      "qualifies_currently": false
-    },
-    {
-      "team_id": 48,
-      "team_name": "巴拿马",
-      "team_name_en": "巴拿马",
-      "team_name_zh": "巴拿马",
-      "group_code": "L",
-      "played": 1,
-      "won": 0,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 0,
-      "goals_against": 1,
-      "goal_difference": -1,
-      "points": 0,
-      "fifa_rank": 34,
-      "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -3669,17 +3669,6 @@
       "group_code": "A",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
-    },
-    {
-      "team_id": 1,
-      "team_name": "捷克",
-      "team_name_en": "捷克",
-      "team_name_zh": "捷克",
-      "group_code": "A",
-      "group_position": 3,
-      "slot_type": "best_third",
       "status": "current_standings",
       "reason": "Provisional from locally calculated current standings"
     },
@@ -4001,6 +3990,17 @@
       "slot_type": "group_position",
       "status": "current_standings",
       "reason": "Provisional from locally calculated current standings"
+    },
+    {
+      "team_id": 45,
+      "team_name": "克罗地亚",
+      "team_name_en": "克罗地亚",
+      "team_name_zh": "克罗地亚",
+      "group_code": "L",
+      "group_position": 3,
+      "slot_type": "best_third",
+      "status": "current_standings",
+      "reason": "Provisional from locally calculated current standings"
     }
   ],
   "group_statuses": [
@@ -4316,29 +4316,29 @@
       "team_id": 46,
       "group_code": "L",
       "position": 1,
-      "label": "暂列第1",
-      "class_name": "progress"
+      "label": "锁定前三",
+      "class_name": "locked-top3"
     },
     {
       "team_id": 47,
       "group_code": "L",
       "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
-    },
-    {
-      "team_id": 48,
-      "group_code": "L",
-      "position": 3,
-      "label": "暂列第3",
-      "class_name": "progress"
+      "label": "锁定前三",
+      "class_name": "locked-top3"
     },
     {
       "team_id": 45,
       "group_code": "L",
+      "position": 3,
+      "label": "锁定前三",
+      "class_name": "locked-top3"
+    },
+    {
+      "team_id": 48,
+      "group_code": "L",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "淘汰了",
+      "class_name": "out"
     }
   ],
   "live_standings": [
@@ -7434,22 +7434,22 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 46,
-            "team": "英格兰",
-            "team_en": "英格兰",
+            "team_id": 45,
+            "team": "克罗地亚",
+            "team_en": "克罗地亚",
             "position": 1,
             "played": 1,
-            "goals_for": 0,
+            "goals_for": 1,
             "goals_against": 0,
-            "goal_difference": 0,
-            "points": 1,
+            "goal_difference": 1,
+            "points": 3,
             "status_label": "暂列第1",
             "status_class": "progress"
           },
           {
-            "team_id": 47,
-            "team": "加纳",
-            "team_en": "加纳",
+            "team_id": 46,
+            "team": "英格兰",
+            "team_en": "英格兰",
             "position": 2,
             "played": 1,
             "goals_for": 0,
@@ -7460,16 +7460,16 @@
             "status_class": "progress"
           },
           {
-            "team_id": 45,
-            "team": "克罗地亚",
-            "team_en": "克罗地亚",
+            "team_id": 47,
+            "team": "加纳",
+            "team_en": "加纳",
             "position": 3,
-            "played": 0,
+            "played": 1,
             "goals_for": 0,
             "goals_against": 0,
             "goal_difference": 0,
-            "points": 0,
-            "status_label": "未开赛",
+            "points": 1,
+            "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
@@ -7477,12 +7477,12 @@
             "team": "巴拿马",
             "team_en": "巴拿马",
             "position": 4,
-            "played": 0,
+            "played": 1,
             "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
+            "goals_against": 1,
+            "goal_difference": -1,
             "points": 0,
-            "status_label": "未开赛",
+            "status_label": "暂列第4",
             "status_class": "progress"
           }
         ],
@@ -7497,8 +7497,8 @@
             "goals_against": 2,
             "goal_difference": 2,
             "points": 4,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 47,
@@ -7510,34 +7510,34 @@
             "goals_against": 0,
             "goal_difference": 1,
             "points": 4,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 48,
-            "team": "巴拿马",
-            "team_en": "巴拿马",
-            "position": 3,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 45,
             "team": "克罗地亚",
             "team_en": "克罗地亚",
-            "position": 4,
-            "played": 1,
-            "goals_for": 2,
+            "position": 3,
+            "played": 2,
+            "goals_for": 3,
             "goals_against": 4,
+            "goal_difference": -1,
+            "points": 3,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
+            "team_id": 48,
+            "team": "巴拿马",
+            "team_en": "巴拿马",
+            "position": 4,
+            "played": 2,
+            "goals_for": 0,
+            "goals_against": 2,
             "goal_difference": -2,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰了",
+            "status_class": "out"
           }
         ]
       }
@@ -8835,7 +8835,7 @@
           45,
           46
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 46,
@@ -9045,7 +9045,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 2,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -9161,7 +9161,7 @@
             "goals_against": 5,
             "goal_difference": -3,
             "points": 2,
-            "status_label": "第三第8",
+            "status_label": "第三第9",
             "status_class": "third"
           },
           {
@@ -9511,7 +9511,7 @@
             "goals_against": 1,
             "goal_difference": -1,
             "points": 2,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -9977,7 +9977,7 @@
             "goals_against": 6,
             "goal_difference": -3,
             "points": 1,
-            "status_label": "第三第10",
+            "status_label": "第三第11",
             "status_class": "third"
           },
           {
@@ -10095,7 +10095,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第1",
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -10247,8 +10247,8 @@
             "goals_against": 2,
             "goal_difference": 2,
             "points": 4,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 47,
@@ -10260,34 +10260,34 @@
             "goals_against": 0,
             "goal_difference": 1,
             "points": 4,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 48,
-            "team": "巴拿马",
-            "team_en": "巴拿马",
-            "position": 3,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 45,
             "team": "克罗地亚",
             "team_en": "克罗地亚",
-            "position": 4,
-            "played": 1,
-            "goals_for": 2,
+            "position": 3,
+            "played": 2,
+            "goals_for": 3,
             "goals_against": 4,
+            "goal_difference": -1,
+            "points": 3,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
+            "team_id": 48,
+            "team": "巴拿马",
+            "team_en": "巴拿马",
+            "position": 4,
+            "played": 2,
+            "goals_for": 0,
+            "goals_against": 2,
             "goal_difference": -2,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰了",
+            "status_class": "out"
           }
         ],
         "current": [
@@ -10301,7 +10301,7 @@
             "goals_against": 2,
             "goal_difference": 2,
             "points": 5,
-            "status_label": "锁定头名",
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -10314,33 +10314,33 @@
             "goals_against": 0,
             "goal_difference": 1,
             "points": 5,
-            "status_label": "锁定前二",
+            "status_label": "第2",
             "status_class": "locked-top2"
-          },
-          {
-            "team_id": 48,
-            "team": "巴拿马",
-            "team_en": "巴拿马",
-            "position": 3,
-            "played": 2,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 1,
-            "status_label": "无缘前二",
-            "status_class": "out"
           },
           {
             "team_id": 45,
             "team": "克罗地亚",
             "team_en": "克罗地亚",
-            "position": 4,
-            "played": 2,
-            "goals_for": 2,
+            "position": 3,
+            "played": 3,
+            "goals_for": 3,
             "goals_against": 4,
+            "goal_difference": -1,
+            "points": 4,
+            "status_label": "第三第1",
+            "status_class": "third"
+          },
+          {
+            "team_id": 48,
+            "team": "巴拿马",
+            "team_en": "巴拿马",
+            "position": 4,
+            "played": 3,
+            "goals_for": 0,
+            "goals_against": 2,
             "goal_difference": -2,
             "points": 1,
-            "status_label": "无缘前二",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -10362,19 +10362,19 @@
     "L": "1→3EHIJK 2→2K 3→K"
   },
   "third_place_slot_overrides": {
-    "3CEFHI": "H",
+    "3CEFHI": "C",
     "3EFGIJ": "G",
     "3BEFIJ": "J",
-    "3ABCDF": "C",
-    "3AEHIJ": "A",
+    "3ABCDF": "D",
+    "3AEHIJ": "H",
     "3CDFGH": "F",
-    "3DEIJL": "D",
+    "3DEIJL": "L",
     "3EHIJK": "K"
   },
   "third_place_mapping": {
     "source": "FIFA World Cup 2026 Regulations Annex C; extracted from the public Wikimedia template '2026 FIFA World Cup third-place table'.",
     "rule_count": 495,
-    "current_combination": "ACDFGHJK"
+    "current_combination": "CDFGHJKL"
   },
   "leaderboards": {
     "scorers": [

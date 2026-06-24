@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T00:57:15+00:00",
+  "generated_at": "2026-06-24T01:00:11+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -3357,7 +3357,7 @@
       "goal_difference": -1,
       "points": 3,
       "fifa_rank": 11,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3377,7 +3377,7 @@
       "goal_difference": -2,
       "points": 0,
       "fifa_rank": 34,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3443,7 +3443,7 @@
       "goal_difference": -1,
       "points": 3,
       "fifa_rank": 11,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -5277,7 +5277,7 @@
       "goal_difference": -1,
       "points": 3,
       "fifa_rank": 11,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5297,7 +5297,7 @@
       "goal_difference": -2,
       "points": 0,
       "fifa_rank": 34,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -5363,7 +5363,7 @@
       "goal_difference": -1,
       "points": 3,
       "fifa_rank": 11,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -10635,6 +10635,14 @@
         "reds": 0
       },
       {
+        "name": "Ante Budimir",
+        "team": "克罗地亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Anthony Elanga",
         "team": "瑞典",
         "goals": 1,
@@ -11731,6 +11739,14 @@
         "reds": 0
       },
       {
+        "name": "Josip Stanišić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "João Cancelo",
         "team": "葡萄牙",
         "goals": 0,
@@ -12119,7 +12135,7 @@
         "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12397,6 +12413,14 @@
       {
         "name": "Álex Arce",
         "team": "巴拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Édgar Yoel Bárcenas",
+        "team": "巴拿马",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12725,6 +12749,14 @@
         "reds": 0
       },
       {
+        "name": "Josip Stanišić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "João Cancelo",
         "team": "葡萄牙",
         "goals": 0,
@@ -12937,7 +12969,7 @@
         "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13178,6 +13210,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Ante Budimir",
+        "team": "克罗地亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14439,6 +14479,14 @@
       {
         "name": "Álex Arce",
         "team": "巴拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Édgar Yoel Bárcenas",
+        "team": "巴拿马",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15207,6 +15255,14 @@
         "reds": 0
       },
       {
+        "name": "Petar Sučić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Ramiz Zerrouki",
         "team": "阿尔及利亚",
         "goals": 0,
@@ -15359,6 +15415,14 @@
         "reds": 0
       },
       {
+        "name": "Édgar Yoel Bárcenas",
+        "team": "巴拿马",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Abbosbek Fayzullaev",
         "team": "乌兹别克斯坦",
         "goals": 1,
@@ -15425,6 +15489,14 @@
       {
         "name": "Amine Gouiri",
         "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ante Budimir",
+        "team": "克罗地亚",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -15843,6 +15915,14 @@
         "team": "德国",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Josip Stanišić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -16283,14 +16363,6 @@
         "team": "克罗地亚",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Petar Sučić",
-        "team": "克罗地亚",
-        "goals": 0,
-        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

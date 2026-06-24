@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T22:47:16+00:00",
+  "generated_at": "2026-06-24T22:52:19+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1355,9 +1355,9 @@
       "stage": "C组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "45'+1'",
+      "status_detail": "45'+6'",
       "score_home": 0,
-      "score_away": 1,
+      "score_away": 2,
       "venue": "Miami · Miami Stadium"
     },
     {
@@ -1375,7 +1375,7 @@
       "stage": "C组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "45'+1'",
+      "status_detail": "live",
       "score_home": 2,
       "score_away": 2,
       "venue": "Atlanta · Atlanta Stadium"
@@ -4512,9 +4512,9 @@
       "won": 2,
       "drawn": 1,
       "lost": 0,
-      "goals_for": 5,
+      "goals_for": 6,
       "goals_against": 1,
-      "goal_difference": 4,
+      "goal_difference": 5,
       "points": 7,
       "fifa_rank": 6,
       "fair_play_points": -3,
@@ -4553,8 +4553,8 @@
       "drawn": 0,
       "lost": 2,
       "goals_for": 1,
-      "goals_against": 2,
-      "goal_difference": -1,
+      "goals_against": 3,
+      "goal_difference": -2,
       "points": 3,
       "fifa_rank": 42,
       "fair_play_points": -4,
@@ -5371,28 +5371,6 @@
       "qualifies_currently": true
     },
     {
-      "team_id": 12,
-      "team_name": "苏格兰",
-      "team_name_en": "苏格兰",
-      "team_name_zh": "苏格兰",
-      "group_code": "C",
-      "played": 3,
-      "won": 1,
-      "drawn": 0,
-      "lost": 2,
-      "goals_for": 1,
-      "goals_against": 2,
-      "goal_difference": -1,
-      "points": 3,
-      "fifa_rank": 42,
-      "fair_play_points": -4,
-      "position": 3,
-      "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 4,
-      "qualifies_currently": true
-    },
-    {
       "team_id": 37,
       "team_name": "阿尔及利亚",
       "team_name_en": "阿尔及利亚",
@@ -5411,7 +5389,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 4,
       "qualifies_currently": true
     },
     {
@@ -5432,6 +5410,28 @@
       "fair_play_points": -10,
       "position": 3,
       "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 5,
+      "qualifies_currently": true
+    },
+    {
+      "team_id": 12,
+      "team_name": "苏格兰",
+      "team_name_en": "苏格兰",
+      "team_name_zh": "苏格兰",
+      "group_code": "C",
+      "played": 3,
+      "won": 1,
+      "drawn": 0,
+      "lost": 2,
+      "goals_for": 1,
+      "goals_against": 3,
+      "goal_difference": -2,
+      "points": 3,
+      "fifa_rank": 42,
+      "fair_play_points": -4,
+      "position": 3,
+      "group_complete": true,
       "ranking_status": "calculated",
       "third_place_position": 6,
       "qualifies_currently": true
@@ -9247,9 +9247,9 @@
             "team_en": "巴西",
             "position": 1,
             "played": 3,
-            "goals_for": 5,
+            "goals_for": 6,
             "goals_against": 1,
-            "goal_difference": 4,
+            "goal_difference": 5,
             "points": 7,
             "status_label": "第1",
             "status_class": "locked-first"
@@ -9274,10 +9274,10 @@
             "position": 3,
             "played": 3,
             "goals_for": 1,
-            "goals_against": 2,
-            "goal_difference": -1,
+            "goals_against": 3,
+            "goal_difference": -2,
             "points": 3,
-            "status_label": "第三第4",
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T23:47:51+00:00",
+  "generated_at": "2026-06-24T23:52:53+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1355,7 +1355,7 @@
       "stage": "C组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "83'",
+      "status_detail": "87'",
       "score_home": 0,
       "score_away": 3,
       "venue": "Miami · Miami Stadium"
@@ -1375,8 +1375,8 @@
       "stage": "C组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "85'",
-      "score_home": 3,
+      "status_detail": "90'",
+      "score_home": 4,
       "score_away": 2,
       "venue": "Atlanta · Atlanta Stadium"
     },
@@ -4532,9 +4532,9 @@
       "won": 2,
       "drawn": 1,
       "lost": 0,
-      "goals_for": 5,
+      "goals_for": 6,
       "goals_against": 3,
-      "goal_difference": 2,
+      "goal_difference": 3,
       "points": 7,
       "fifa_rank": 7,
       "fair_play_points": -1,
@@ -4573,8 +4573,8 @@
       "drawn": 0,
       "lost": 3,
       "goals_for": 2,
-      "goals_against": 7,
-      "goal_difference": -5,
+      "goals_against": 8,
+      "goal_difference": -6,
       "points": 0,
       "fifa_rank": 83,
       "fair_play_points": -4,
@@ -9260,9 +9260,9 @@
             "team_en": "摩洛哥",
             "position": 2,
             "played": 3,
-            "goals_for": 5,
+            "goals_for": 6,
             "goals_against": 3,
-            "goal_difference": 2,
+            "goal_difference": 3,
             "points": 7,
             "status_label": "第2",
             "status_class": "locked-top2"
@@ -9287,8 +9287,8 @@
             "position": 4,
             "played": 3,
             "goals_for": 2,
-            "goals_against": 7,
-            "goal_difference": -5,
+            "goals_against": 8,
+            "goal_difference": -6,
             "points": 0,
             "status_label": "淘汰",
             "status_class": "out"

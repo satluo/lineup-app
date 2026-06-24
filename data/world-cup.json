@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T20:52:34+00:00",
+  "generated_at": "2026-06-24T20:57:35+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1314,8 +1314,8 @@
       "away_en": "Canada",
       "stage": "B组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+3'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 2,
       "score_away": 1,
       "venue": "Vancouver · BC Place Vancouver"
@@ -1335,7 +1335,7 @@
       "stage": "B组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'",
+      "status_detail": "90'+4'",
       "score_home": 3,
       "score_away": 1,
       "venue": "Seattle · Seattle Stadium"
@@ -2028,9 +2028,9 @@
       "away_placeholder": "3EFGIJ",
       "date": "2026-07-03",
       "time": "11:00",
-      "home": "1B",
+      "home": "瑞士",
       "away": "3EFGIJ",
-      "home_en": "1B",
+      "home_en": "Switzerland",
       "away_en": "3EFGIJ",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
@@ -2503,41 +2503,41 @@
       "ranking_status": "calculated"
     },
     {
-      "team_id": 6,
-      "team_name": "加拿大",
-      "team_name_en": "加拿大",
-      "team_name_zh": "加拿大",
-      "group_code": "B",
-      "played": 2,
-      "won": 1,
-      "drawn": 1,
-      "lost": 0,
-      "goals_for": 7,
-      "goals_against": 1,
-      "goal_difference": 6,
-      "points": 4,
-      "fifa_rank": 30,
-      "fair_play_points": -3,
-      "position": 1,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
       "team_id": 8,
       "team_name": "瑞士",
       "team_name_en": "瑞士",
       "team_name_zh": "瑞士",
       "group_code": "B",
-      "played": 2,
-      "won": 1,
+      "played": 3,
+      "won": 2,
       "drawn": 1,
       "lost": 0,
-      "goals_for": 5,
-      "goals_against": 2,
-      "goal_difference": 3,
-      "points": 4,
+      "goals_for": 7,
+      "goals_against": 3,
+      "goal_difference": 4,
+      "points": 7,
       "fifa_rank": 19,
       "fair_play_points": -2,
+      "position": 1,
+      "group_complete": false,
+      "ranking_status": "calculated"
+    },
+    {
+      "team_id": 6,
+      "team_name": "加拿大",
+      "team_name_en": "加拿大",
+      "team_name_zh": "加拿大",
+      "group_code": "B",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 8,
+      "goals_against": 3,
+      "goal_difference": 5,
+      "points": 4,
+      "fifa_rank": 30,
+      "fair_play_points": -3,
       "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3684,10 +3684,10 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
-      "team_id": 6,
-      "team_name": "加拿大",
-      "team_name_en": "加拿大",
-      "team_name_zh": "加拿大",
+      "team_id": 8,
+      "team_name": "瑞士",
+      "team_name_en": "瑞士",
+      "team_name_zh": "瑞士",
       "group_code": "B",
       "group_position": 1,
       "slot_type": "group_position",
@@ -3695,10 +3695,10 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
-      "team_id": 8,
-      "team_name": "瑞士",
-      "team_name_en": "瑞士",
-      "team_name_zh": "瑞士",
+      "team_id": 6,
+      "team_name": "加拿大",
+      "team_name_en": "加拿大",
+      "team_name_zh": "加拿大",
       "group_code": "B",
       "group_position": 2,
       "slot_type": "group_position",
@@ -4033,14 +4033,14 @@
       "class_name": "progress"
     },
     {
-      "team_id": 6,
+      "team_id": 8,
       "group_code": "B",
       "position": 1,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "锁定头名",
+      "class_name": "locked-first"
     },
     {
-      "team_id": 8,
+      "team_id": 6,
       "group_code": "B",
       "position": 2,
       "label": "锁定前三",
@@ -4057,8 +4057,8 @@
       "team_id": 7,
       "group_code": "B",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "无缘前二",
+      "class_name": "out"
     },
     {
       "team_id": 9,
@@ -6039,23 +6039,23 @@
             "team": "瑞士",
             "team_en": "瑞士",
             "position": 1,
-            "played": 2,
-            "goals_for": 5,
-            "goals_against": 2,
-            "goal_difference": 3,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 3,
+            "goal_difference": 4,
+            "points": 7,
+            "status_label": "锁定头名",
+            "status_class": "locked-first"
           },
           {
             "team_id": 6,
             "team": "加拿大",
             "team_en": "加拿大",
             "position": 2,
-            "played": 1,
-            "goals_for": 6,
-            "goals_against": 0,
-            "goal_difference": 6,
+            "played": 2,
+            "goals_for": 7,
+            "goals_against": 2,
+            "goal_difference": 5,
             "points": 3,
             "status_label": "暂列第2",
             "status_class": "progress"
@@ -6089,27 +6089,27 @@
         ],
         "current": [
           {
-            "team_id": 6,
-            "team": "加拿大",
-            "team_en": "加拿大",
-            "position": 1,
-            "played": 2,
-            "goals_for": 7,
-            "goals_against": 1,
-            "goal_difference": 6,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
-          },
-          {
             "team_id": 8,
             "team": "瑞士",
             "team_en": "瑞士",
+            "position": 1,
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 3,
+            "goal_difference": 4,
+            "points": 7,
+            "status_label": "锁定头名",
+            "status_class": "locked-first"
+          },
+          {
+            "team_id": 6,
+            "team": "加拿大",
+            "team_en": "加拿大",
             "position": 2,
-            "played": 2,
-            "goals_for": 5,
-            "goals_against": 2,
-            "goal_difference": 3,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 3,
+            "goal_difference": 5,
             "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
@@ -6137,8 +6137,8 @@
             "goals_against": 7,
             "goal_difference": -6,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       },
@@ -6267,30 +6267,30 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 6,
-            "team": "加拿大",
-            "team_en": "加拿大",
-            "position": 1,
-            "played": 2,
-            "goals_for": 7,
-            "goals_against": 1,
-            "goal_difference": 6,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
-          },
-          {
             "team_id": 8,
             "team": "瑞士",
             "team_en": "瑞士",
+            "position": 1,
+            "played": 2,
+            "goals_for": 6,
+            "goals_against": 2,
+            "goal_difference": 4,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
+            "team_id": 6,
+            "team": "加拿大",
+            "team_en": "加拿大",
             "position": 2,
-            "played": 1,
-            "goals_for": 4,
-            "goals_against": 1,
-            "goal_difference": 3,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 3,
+            "goal_difference": 5,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 5,
@@ -6321,27 +6321,27 @@
         ],
         "current": [
           {
-            "team_id": 6,
-            "team": "加拿大",
-            "team_en": "加拿大",
-            "position": 1,
-            "played": 2,
-            "goals_for": 7,
-            "goals_against": 1,
-            "goal_difference": 6,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
-          },
-          {
             "team_id": 8,
             "team": "瑞士",
             "team_en": "瑞士",
+            "position": 1,
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 3,
+            "goal_difference": 4,
+            "points": 7,
+            "status_label": "锁定头名",
+            "status_class": "locked-first"
+          },
+          {
+            "team_id": 6,
+            "team": "加拿大",
+            "team_en": "加拿大",
             "position": 2,
-            "played": 2,
-            "goals_for": 5,
-            "goals_against": 2,
-            "goal_difference": 3,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 3,
+            "goal_difference": 5,
             "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
@@ -6369,8 +6369,8 @@
             "goals_against": 7,
             "goal_difference": -6,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       },
@@ -7672,18 +7672,18 @@
             "team": "瑞士",
             "team_en": "瑞士",
             "position": 1,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 1,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 2,
+            "goal_difference": 1,
+            "points": 4,
             "status_label": "暂列第1",
             "status_class": "progress"
           },
           {
-            "team_id": 6,
-            "team": "加拿大",
-            "team_en": "加拿大",
+            "team_id": 5,
+            "team": "波黑",
+            "team_en": "波黑",
             "position": 2,
             "played": 1,
             "goals_for": 1,
@@ -7694,14 +7694,14 @@
             "status_class": "progress"
           },
           {
-            "team_id": 5,
-            "team": "波黑",
-            "team_en": "波黑",
+            "team_id": 6,
+            "team": "加拿大",
+            "team_en": "加拿大",
             "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 3,
+            "goal_difference": -1,
             "points": 1,
             "status_label": "暂列第3",
             "status_class": "progress"
@@ -7722,27 +7722,27 @@
         ],
         "current": [
           {
-            "team_id": 6,
-            "team": "加拿大",
-            "team_en": "加拿大",
-            "position": 1,
-            "played": 2,
-            "goals_for": 7,
-            "goals_against": 1,
-            "goal_difference": 6,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
-          },
-          {
             "team_id": 8,
             "team": "瑞士",
             "team_en": "瑞士",
+            "position": 1,
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 3,
+            "goal_difference": 4,
+            "points": 7,
+            "status_label": "锁定头名",
+            "status_class": "locked-first"
+          },
+          {
+            "team_id": 6,
+            "team": "加拿大",
+            "team_en": "加拿大",
             "position": 2,
-            "played": 2,
-            "goals_for": 5,
-            "goals_against": 2,
-            "goal_difference": 3,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 3,
+            "goal_difference": 5,
             "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
@@ -7770,8 +7770,8 @@
             "goals_against": 7,
             "goal_difference": -6,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       }

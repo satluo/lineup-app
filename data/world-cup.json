@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T03:53:50+00:00",
+  "generated_at": "2026-06-24T03:58:53+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1294,8 +1294,8 @@
       "away_en": "DR Congo",
       "stage": "K组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+1'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 1,
       "score_away": 0,
       "venue": "Guadalajara · Guadalajara Stadium"
@@ -3223,6 +3223,26 @@
       "ranking_status": "calculated"
     },
     {
+      "team_id": 41,
+      "team_name": "哥伦比亚",
+      "team_name_en": "哥伦比亚",
+      "team_name_zh": "哥伦比亚",
+      "group_code": "K",
+      "played": 2,
+      "won": 2,
+      "drawn": 0,
+      "lost": 0,
+      "goals_for": 4,
+      "goals_against": 1,
+      "goal_difference": 3,
+      "points": 6,
+      "fifa_rank": 13,
+      "fair_play_points": -1,
+      "position": 1,
+      "group_complete": false,
+      "ranking_status": "calculated"
+    },
+    {
       "team_id": 43,
       "team_name": "葡萄牙",
       "team_name_en": "葡萄牙",
@@ -3238,26 +3258,6 @@
       "points": 4,
       "fifa_rank": 5,
       "fair_play_points": -4,
-      "position": 1,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
-      "team_id": 41,
-      "team_name": "哥伦比亚",
-      "team_name_en": "哥伦比亚",
-      "team_name_zh": "哥伦比亚",
-      "group_code": "K",
-      "played": 1,
-      "won": 1,
-      "drawn": 0,
-      "lost": 0,
-      "goals_for": 3,
-      "goals_against": 1,
-      "goal_difference": 2,
-      "points": 3,
-      "fifa_rank": 13,
-      "fair_play_points": -1,
       "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3268,13 +3268,13 @@
       "team_name_en": "刚果（金）",
       "team_name_zh": "刚果（金）",
       "group_code": "K",
-      "played": 1,
+      "played": 2,
       "won": 0,
       "drawn": 1,
-      "lost": 0,
+      "lost": 1,
       "goals_for": 1,
-      "goals_against": 1,
-      "goal_difference": 0,
+      "goals_against": 2,
+      "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
       "fair_play_points": -1,
@@ -3539,28 +3539,6 @@
       "qualifies_currently": true
     },
     {
-      "team_id": 42,
-      "team_name": "刚果（金）",
-      "team_name_en": "刚果（金）",
-      "team_name_zh": "刚果（金）",
-      "group_code": "K",
-      "played": 1,
-      "won": 0,
-      "drawn": 1,
-      "lost": 0,
-      "goals_for": 1,
-      "goals_against": 1,
-      "goal_difference": 0,
-      "points": 1,
-      "fifa_rank": 46,
-      "fair_play_points": -1,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
-    },
-    {
       "team_id": 1,
       "team_name": "捷克",
       "team_name_en": "捷克",
@@ -3575,6 +3553,28 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 40,
+      "fair_play_points": -1,
+      "position": 3,
+      "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 8,
+      "qualifies_currently": true
+    },
+    {
+      "team_id": 42,
+      "team_name": "刚果（金）",
+      "team_name_en": "刚果（金）",
+      "team_name_zh": "刚果（金）",
+      "group_code": "K",
+      "played": 2,
+      "won": 0,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 1,
+      "goals_against": 2,
+      "goal_difference": -1,
+      "points": 1,
+      "fifa_rank": 46,
       "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
@@ -3669,6 +3669,17 @@
       "group_code": "A",
       "group_position": 2,
       "slot_type": "group_position",
+      "status": "current_standings",
+      "reason": "Provisional from locally calculated current standings"
+    },
+    {
+      "team_id": 1,
+      "team_name": "捷克",
+      "team_name_en": "捷克",
+      "team_name_zh": "捷克",
+      "group_code": "A",
+      "group_position": 3,
+      "slot_type": "best_third",
       "status": "current_standings",
       "reason": "Provisional from locally calculated current standings"
     },
@@ -3937,10 +3948,10 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
-      "team_id": 43,
-      "team_name": "葡萄牙",
-      "team_name_en": "葡萄牙",
-      "team_name_zh": "葡萄牙",
+      "team_id": 41,
+      "team_name": "哥伦比亚",
+      "team_name_en": "哥伦比亚",
+      "team_name_zh": "哥伦比亚",
       "group_code": "K",
       "group_position": 1,
       "slot_type": "group_position",
@@ -3948,24 +3959,13 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
-      "team_id": 41,
-      "team_name": "哥伦比亚",
-      "team_name_en": "哥伦比亚",
-      "team_name_zh": "哥伦比亚",
+      "team_id": 43,
+      "team_name": "葡萄牙",
+      "team_name_en": "葡萄牙",
+      "team_name_zh": "葡萄牙",
       "group_code": "K",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
-    },
-    {
-      "team_id": 42,
-      "team_name": "刚果（金）",
-      "team_name_en": "刚果（金）",
-      "team_name_zh": "刚果（金）",
-      "group_code": "K",
-      "group_position": 3,
-      "slot_type": "best_third",
       "status": "current_standings",
       "reason": "Provisional from locally calculated current standings"
     },
@@ -4285,14 +4285,14 @@
       "class_name": "out"
     },
     {
-      "team_id": 43,
+      "team_id": 41,
       "group_code": "K",
       "position": 1,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "锁定前二",
+      "class_name": "locked-top2"
     },
     {
-      "team_id": 41,
+      "team_id": 43,
       "group_code": "K",
       "position": 2,
       "label": "锁定前三",
@@ -7335,12 +7335,12 @@
             "team": "哥伦比亚",
             "team_en": "哥伦比亚",
             "position": 2,
-            "played": 0,
-            "goals_for": 0,
+            "played": 1,
+            "goals_for": 1,
             "goals_against": 0,
-            "goal_difference": 0,
-            "points": 0,
-            "status_label": "未开赛",
+            "goal_difference": 1,
+            "points": 3,
+            "status_label": "暂列第2",
             "status_class": "progress"
           },
           {
@@ -7348,12 +7348,12 @@
             "team": "刚果（金）",
             "team_en": "刚果（金）",
             "position": 3,
-            "played": 0,
+            "played": 1,
             "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
+            "goals_against": 1,
+            "goal_difference": -1,
             "points": 0,
-            "status_label": "未开赛",
+            "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
@@ -7372,10 +7372,23 @@
         ],
         "current": [
           {
+            "team_id": 41,
+            "team": "哥伦比亚",
+            "team_en": "哥伦比亚",
+            "position": 1,
+            "played": 2,
+            "goals_for": 4,
+            "goals_against": 1,
+            "goal_difference": 3,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
             "team_id": 43,
             "team": "葡萄牙",
             "team_en": "葡萄牙",
-            "position": 1,
+            "position": 2,
             "played": 2,
             "goals_for": 6,
             "goals_against": 1,
@@ -7385,27 +7398,14 @@
             "status_class": "locked-top3"
           },
           {
-            "team_id": 41,
-            "team": "哥伦比亚",
-            "team_en": "哥伦比亚",
-            "position": 2,
-            "played": 1,
-            "goals_for": 3,
-            "goals_against": 1,
-            "goal_difference": 2,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
-          },
-          {
             "team_id": 42,
             "team": "刚果（金）",
             "team_en": "刚果（金）",
             "position": 3,
-            "played": 1,
+            "played": 2,
             "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
+            "goals_against": 2,
+            "goal_difference": -1,
             "points": 1,
             "status_label": "暂列第3",
             "status_class": "progress"
@@ -8719,7 +8719,7 @@
           47,
           48
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 41,
@@ -10122,10 +10122,23 @@
         "all_finished": false,
         "pre": [
           {
+            "team_id": 41,
+            "team": "哥伦比亚",
+            "team_en": "哥伦比亚",
+            "position": 1,
+            "played": 2,
+            "goals_for": 4,
+            "goals_against": 1,
+            "goal_difference": 3,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
             "team_id": 43,
             "team": "葡萄牙",
             "team_en": "葡萄牙",
-            "position": 1,
+            "position": 2,
             "played": 2,
             "goals_for": 6,
             "goals_against": 1,
@@ -10135,27 +10148,14 @@
             "status_class": "locked-top3"
           },
           {
-            "team_id": 41,
-            "team": "哥伦比亚",
-            "team_en": "哥伦比亚",
-            "position": 2,
-            "played": 1,
-            "goals_for": 3,
-            "goals_against": 1,
-            "goal_difference": 2,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
-          },
-          {
             "team_id": 42,
             "team": "刚果（金）",
             "team_en": "刚果（金）",
             "position": 3,
-            "played": 1,
+            "played": 2,
             "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
+            "goals_against": 2,
+            "goal_difference": -1,
             "points": 1,
             "status_label": "暂列第3",
             "status_class": "progress"
@@ -10176,43 +10176,43 @@
         ],
         "current": [
           {
+            "team_id": 41,
+            "team": "哥伦比亚",
+            "team_en": "哥伦比亚",
+            "position": 1,
+            "played": 3,
+            "goals_for": 4,
+            "goals_against": 1,
+            "goal_difference": 3,
+            "points": 7,
+            "status_label": "第1",
+            "status_class": "locked-first"
+          },
+          {
             "team_id": 43,
             "team": "葡萄牙",
             "team_en": "葡萄牙",
-            "position": 1,
+            "position": 2,
             "played": 3,
             "goals_for": 6,
             "goals_against": 1,
             "goal_difference": 5,
             "points": 5,
-            "status_label": "锁定前二",
+            "status_label": "第2",
             "status_class": "locked-top2"
-          },
-          {
-            "team_id": 41,
-            "team": "哥伦比亚",
-            "team_en": "哥伦比亚",
-            "position": 2,
-            "played": 2,
-            "goals_for": 3,
-            "goals_against": 1,
-            "goal_difference": 2,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
           },
           {
             "team_id": 42,
             "team": "刚果（金）",
             "team_en": "刚果（金）",
             "position": 3,
-            "played": 2,
+            "played": 3,
             "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
+            "goals_against": 2,
+            "goal_difference": -1,
             "points": 2,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第三第8",
+            "status_class": "third"
           },
           {
             "team_id": 44,
@@ -10224,7 +10224,7 @@
             "goals_against": 8,
             "goal_difference": -7,
             "points": 1,
-            "status_label": "淘汰了",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -10366,15 +10366,15 @@
     "3EFGIJ": "G",
     "3BEFIJ": "J",
     "3ABCDF": "D",
-    "3AEHIJ": "H",
+    "3AEHIJ": "A",
     "3CDFGH": "F",
     "3DEIJL": "L",
-    "3EHIJK": "K"
+    "3EHIJK": "H"
   },
   "third_place_mapping": {
     "source": "FIFA World Cup 2026 Regulations Annex C; extracted from the public Wikimedia template '2026 FIFA World Cup third-place table'.",
     "rule_count": 495,
-    "current_combination": "CDFGHJKL"
+    "current_combination": "ACDFGHJL"
   },
   "leaderboards": {
     "scorers": [

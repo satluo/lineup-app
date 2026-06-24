@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T19:26:36+00:00",
+  "generated_at": "2026-06-24T19:31:38+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1315,7 +1315,7 @@
       "stage": "B组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "26'",
+      "status_detail": "31'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Vancouver · BC Place Vancouver"
@@ -1335,8 +1335,8 @@
       "stage": "B组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "23'",
-      "score_home": 0,
+      "status_detail": "31'",
+      "score_home": 1,
       "score_away": 0,
       "venue": "Seattle · Seattle Stadium"
     },
@@ -4469,13 +4469,13 @@
       "team_name_zh": "波黑",
       "group_code": "B",
       "played": 3,
-      "won": 0,
-      "drawn": 2,
+      "won": 1,
+      "drawn": 1,
       "lost": 1,
-      "goals_for": 2,
+      "goals_for": 3,
       "goals_against": 5,
-      "goal_difference": -3,
-      "points": 2,
+      "goal_difference": -2,
+      "points": 4,
       "fifa_rank": 64,
       "fair_play_points": -9,
       "position": 3,
@@ -4490,12 +4490,12 @@
       "group_code": "B",
       "played": 3,
       "won": 0,
-      "drawn": 2,
-      "lost": 1,
+      "drawn": 1,
+      "lost": 2,
       "goals_for": 1,
-      "goals_against": 7,
-      "goal_difference": -6,
-      "points": 2,
+      "goals_against": 8,
+      "goal_difference": -7,
+      "points": 1,
       "fifa_rank": 56,
       "fair_play_points": -11,
       "position": 4,
@@ -5305,6 +5305,28 @@
   ],
   "live_best_thirds": [
     {
+      "team_id": 5,
+      "team_name": "波黑",
+      "team_name_en": "波黑",
+      "team_name_zh": "波黑",
+      "group_code": "B",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 3,
+      "goals_against": 5,
+      "goal_difference": -2,
+      "points": 4,
+      "fifa_rank": 64,
+      "fair_play_points": -9,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 1,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 23,
       "team_name": "瑞典",
       "team_name_en": "瑞典",
@@ -5323,7 +5345,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 1,
+      "third_place_position": 2,
       "qualifies_currently": true
     },
     {
@@ -5345,7 +5367,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 2,
+      "third_place_position": 3,
       "qualifies_currently": true
     },
     {
@@ -5367,7 +5389,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 3,
+      "third_place_position": 4,
       "qualifies_currently": true
     },
     {
@@ -5389,7 +5411,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 5,
       "qualifies_currently": true
     },
     {
@@ -5411,7 +5433,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 6,
       "qualifies_currently": true
     },
     {
@@ -5433,7 +5455,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -5454,28 +5476,6 @@
       "fair_play_points": -7,
       "position": 3,
       "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 7,
-      "qualifies_currently": true
-    },
-    {
-      "team_id": 5,
-      "team_name": "波黑",
-      "team_name_en": "波黑",
-      "team_name_zh": "波黑",
-      "group_code": "B",
-      "played": 3,
-      "won": 0,
-      "drawn": 2,
-      "lost": 1,
-      "goals_for": 2,
-      "goals_against": 5,
-      "goal_difference": -3,
-      "points": 2,
-      "fifa_rank": 64,
-      "fair_play_points": -9,
-      "position": 3,
-      "group_complete": true,
       "ranking_status": "calculated",
       "third_place_position": 8,
       "qualifies_currently": true
@@ -9045,7 +9045,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 2,
-            "status_label": "第三第8",
+            "status_label": "第三第9",
             "status_class": "third"
           },
           {
@@ -9157,11 +9157,11 @@
             "team_en": "波黑",
             "position": 3,
             "played": 3,
-            "goals_for": 2,
+            "goals_for": 3,
             "goals_against": 5,
-            "goal_difference": -3,
-            "points": 2,
-            "status_label": "第三第9",
+            "goal_difference": -2,
+            "points": 4,
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -9171,9 +9171,9 @@
             "position": 4,
             "played": 3,
             "goals_for": 1,
-            "goals_against": 7,
-            "goal_difference": -6,
-            "points": 2,
+            "goals_against": 8,
+            "goal_difference": -7,
+            "points": 1,
             "status_label": "淘汰",
             "status_class": "out"
           }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T22:27:06+00:00",
+  "generated_at": "2026-06-24T22:32:09+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1355,7 +1355,7 @@
       "stage": "C组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "25'",
+      "status_detail": "31'",
       "score_home": 0,
       "score_away": 1,
       "venue": "Miami · Miami Stadium"
@@ -1375,7 +1375,7 @@
       "stage": "C组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "26'",
+      "status_detail": "31'",
       "score_home": 0,
       "score_away": 1,
       "venue": "Atlanta · Atlanta Stadium"

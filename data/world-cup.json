@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T02:12:56+00:00",
+  "generated_at": "2026-06-24T02:17:58+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1295,7 +1295,7 @@
       "stage": "K组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "13'",
+      "status_detail": "18'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Guadalajara · Guadalajara Stadium"

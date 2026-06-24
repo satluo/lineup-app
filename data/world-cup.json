@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T20:47:33+00:00",
+  "generated_at": "2026-06-24T20:52:34+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1315,7 +1315,7 @@
       "stage": "B组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "88'",
+      "status_detail": "90'+3'",
       "score_home": 2,
       "score_away": 1,
       "venue": "Vancouver · BC Place Vancouver"
@@ -1335,7 +1335,7 @@
       "stage": "B组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "85'",
+      "status_detail": "90'",
       "score_home": 3,
       "score_away": 1,
       "venue": "Seattle · Seattle Stadium"

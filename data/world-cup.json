@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T01:01:14+00:00",
+  "generated_at": "2026-06-25T01:06:17+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1394,10 +1394,10 @@
       "away_en": "Mexico",
       "stage": "A组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "live",
+      "status_detail": "5'",
+      "score_home": 0,
+      "score_away": 0,
       "venue": "Mexico City · Mexico City Stadium"
     },
     {
@@ -1415,7 +1415,7 @@
       "stage": "A组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "1'",
+      "status_detail": "6'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Monterrey · Monterrey Stadium"
@@ -4348,18 +4348,18 @@
       "team_name_en": "墨西哥",
       "team_name_zh": "墨西哥",
       "group_code": "A",
-      "played": 2,
+      "played": 3,
       "won": 2,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goals_for": 3,
       "goals_against": 0,
       "goal_difference": 3,
-      "points": 6,
+      "points": 7,
       "fifa_rank": 14,
       "fair_play_points": -5,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -4379,7 +4379,27 @@
       "fifa_rank": 25,
       "fair_play_points": -3,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
+      "ranking_status": "calculated"
+    },
+    {
+      "team_id": 1,
+      "team_name": "捷克",
+      "team_name_en": "捷克",
+      "team_name_zh": "捷克",
+      "group_code": "A",
+      "played": 3,
+      "won": 0,
+      "drawn": 2,
+      "lost": 1,
+      "goals_for": 2,
+      "goals_against": 3,
+      "goal_difference": -1,
+      "points": 2,
+      "fifa_rank": 40,
+      "fair_play_points": -1,
+      "position": 3,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -4398,28 +4418,8 @@
       "points": 2,
       "fifa_rank": 60,
       "fair_play_points": -12,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
-      "team_id": 1,
-      "team_name": "捷克",
-      "team_name_en": "捷克",
-      "team_name_zh": "捷克",
-      "group_code": "A",
-      "played": 2,
-      "won": 0,
-      "drawn": 1,
-      "lost": 1,
-      "goals_for": 2,
-      "goals_against": 3,
-      "goal_difference": -1,
-      "points": 1,
-      "fifa_rank": 40,
-      "fair_play_points": -1,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -5481,23 +5481,23 @@
       "qualifies_currently": true
     },
     {
-      "team_id": 3,
-      "team_name": "南非",
-      "team_name_en": "南非",
-      "team_name_zh": "南非",
+      "team_id": 1,
+      "team_name": "捷克",
+      "team_name_en": "捷克",
+      "team_name_zh": "捷克",
       "group_code": "A",
       "played": 3,
       "won": 0,
       "drawn": 2,
       "lost": 1,
-      "goals_for": 1,
+      "goals_for": 2,
       "goals_against": 3,
-      "goal_difference": -2,
+      "goal_difference": -1,
       "points": 2,
-      "fifa_rank": 60,
-      "fair_play_points": -12,
+      "fifa_rank": 40,
+      "fair_play_points": -1,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated",
       "third_place_position": 9,
       "qualifies_currently": false
@@ -5574,28 +5574,28 @@
       "team_id": 2,
       "group_code": "A",
       "position": 1,
-      "label": "锁定头名",
+      "label": "确定头名",
       "class_name": "locked-first"
     },
     {
       "team_id": 4,
       "group_code": "A",
       "position": 2,
-      "label": "锁定前二",
+      "label": "确定前二",
       "class_name": "locked-top2"
-    },
-    {
-      "team_id": 3,
-      "group_code": "A",
-      "position": 3,
-      "label": "无缘前二",
-      "class_name": "out"
     },
     {
       "team_id": 1,
       "group_code": "A",
+      "position": 3,
+      "label": "淘汰了",
+      "class_name": "out"
+    },
+    {
+      "team_id": 3,
+      "group_code": "A",
       "position": 4,
-      "label": "无缘前二",
+      "label": "淘汰了",
       "class_name": "out"
     },
     {

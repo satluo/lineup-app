@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T00:00:12+00:00",
+  "generated_at": "2026-06-25T00:05:17+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1354,8 +1354,8 @@
       "away_en": "Brazil",
       "stage": "C组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+5'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 0,
       "score_away": 3,
       "venue": "Miami · Miami Stadium"
@@ -1374,8 +1374,8 @@
       "away_en": "Haiti",
       "stage": "C组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+6'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 4,
       "score_away": 2,
       "venue": "Atlanta · Atlanta Stadium"
@@ -2588,18 +2588,18 @@
       "team_name_en": "巴西",
       "team_name_zh": "巴西",
       "group_code": "C",
-      "played": 2,
-      "won": 1,
+      "played": 3,
+      "won": 2,
       "drawn": 1,
       "lost": 0,
-      "goals_for": 4,
+      "goals_for": 7,
       "goals_against": 1,
-      "goal_difference": 3,
-      "points": 4,
+      "goal_difference": 6,
+      "points": 7,
       "fifa_rank": 6,
       "fair_play_points": -5,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2608,18 +2608,18 @@
       "team_name_en": "摩洛哥",
       "team_name_zh": "摩洛哥",
       "group_code": "C",
-      "played": 2,
-      "won": 1,
+      "played": 3,
+      "won": 2,
       "drawn": 1,
       "lost": 0,
-      "goals_for": 2,
-      "goals_against": 1,
-      "goal_difference": 1,
-      "points": 4,
+      "goals_for": 6,
+      "goals_against": 3,
+      "goal_difference": 3,
+      "points": 7,
       "fifa_rank": 7,
       "fair_play_points": -1,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2628,18 +2628,18 @@
       "team_name_en": "苏格兰",
       "team_name_zh": "苏格兰",
       "group_code": "C",
-      "played": 2,
+      "played": 3,
       "won": 1,
       "drawn": 0,
-      "lost": 1,
+      "lost": 2,
       "goals_for": 1,
-      "goals_against": 1,
-      "goal_difference": 0,
+      "goals_against": 4,
+      "goal_difference": -3,
       "points": 3,
       "fifa_rank": 42,
       "fair_play_points": -5,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2648,18 +2648,18 @@
       "team_name_en": "海地",
       "team_name_zh": "海地",
       "group_code": "C",
-      "played": 2,
+      "played": 3,
       "won": 0,
       "drawn": 0,
-      "lost": 2,
-      "goals_for": 0,
-      "goals_against": 4,
-      "goal_difference": -4,
+      "lost": 3,
+      "goals_for": 2,
+      "goals_against": 8,
+      "goal_difference": -6,
       "points": 0,
       "fifa_rank": 83,
       "fair_play_points": -7,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3429,28 +3429,6 @@
       "qualifies_currently": true
     },
     {
-      "team_id": 12,
-      "team_name": "苏格兰",
-      "team_name_en": "苏格兰",
-      "team_name_zh": "苏格兰",
-      "group_code": "C",
-      "played": 2,
-      "won": 1,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 1,
-      "goals_against": 1,
-      "goal_difference": 0,
-      "points": 3,
-      "fifa_rank": 42,
-      "fair_play_points": -5,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 3,
-      "qualifies_currently": true
-    },
-    {
       "team_id": 45,
       "team_name": "克罗地亚",
       "team_name_en": "克罗地亚",
@@ -3469,7 +3447,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 3,
       "qualifies_currently": true
     },
     {
@@ -3491,7 +3469,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 4,
       "qualifies_currently": true
     },
     {
@@ -3512,6 +3490,28 @@
       "fair_play_points": -10,
       "position": 3,
       "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 5,
+      "qualifies_currently": true
+    },
+    {
+      "team_id": 12,
+      "team_name": "苏格兰",
+      "team_name_en": "苏格兰",
+      "team_name_zh": "苏格兰",
+      "group_code": "C",
+      "played": 3,
+      "won": 1,
+      "drawn": 0,
+      "lost": 2,
+      "goals_for": 1,
+      "goals_against": 4,
+      "goal_difference": -3,
+      "points": 3,
+      "fifa_rank": 42,
+      "fair_play_points": -5,
+      "position": 3,
+      "group_complete": true,
       "ranking_status": "calculated",
       "third_place_position": 6,
       "qualifies_currently": true
@@ -3713,8 +3713,8 @@
       "group_code": "C",
       "group_position": 1,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group C completed"
     },
     {
       "team_id": 11,
@@ -3724,8 +3724,8 @@
       "group_code": "C",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group C completed"
     },
     {
       "team_id": 12,
@@ -3735,8 +3735,8 @@
       "group_code": "C",
       "group_position": 3,
       "slot_type": "best_third",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group C completed"
     },
     {
       "team_id": 16,
@@ -4064,22 +4064,22 @@
       "team_id": 9,
       "group_code": "C",
       "position": 1,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "确定头名",
+      "class_name": "locked-first"
     },
     {
       "team_id": 11,
       "group_code": "C",
       "position": 2,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 12,
       "group_code": "C",
       "position": 3,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "第三晋级",
+      "class_name": "third"
     },
     {
       "team_id": 10,
@@ -6387,52 +6387,52 @@
             "team": "巴西",
             "team_en": "巴西",
             "position": 1,
-            "played": 1,
-            "goals_for": 3,
+            "played": 2,
+            "goals_for": 6,
             "goals_against": 0,
-            "goal_difference": 3,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "goal_difference": 6,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 11,
             "team": "摩洛哥",
             "team_en": "摩洛哥",
             "position": 2,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 0,
-            "goal_difference": 1,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "played": 2,
+            "goals_for": 5,
+            "goals_against": 2,
+            "goal_difference": 3,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 12,
             "team": "苏格兰",
             "team_en": "苏格兰",
             "position": 3,
-            "played": 1,
+            "played": 2,
             "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
+            "goals_against": 4,
+            "goal_difference": -4,
             "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           },
           {
             "team_id": 10,
             "team": "海地",
             "team_en": "海地",
             "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 3,
-            "goal_difference": -3,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 7,
+            "goal_difference": -5,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ],
         "current": [
@@ -6441,51 +6441,51 @@
             "team": "巴西",
             "team_en": "巴西",
             "position": 1,
-            "played": 2,
-            "goals_for": 4,
+            "played": 3,
+            "goals_for": 7,
             "goals_against": 1,
-            "goal_difference": 3,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "goal_difference": 6,
+            "points": 7,
+            "status_label": "第1",
+            "status_class": "locked-first"
           },
           {
             "team_id": 11,
             "team": "摩洛哥",
             "team_en": "摩洛哥",
             "position": 2,
-            "played": 2,
-            "goals_for": 2,
-            "goals_against": 1,
-            "goal_difference": 1,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "played": 3,
+            "goals_for": 6,
+            "goals_against": 3,
+            "goal_difference": 3,
+            "points": 7,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 12,
             "team": "苏格兰",
             "team_en": "苏格兰",
             "position": 3,
-            "played": 2,
+            "played": 3,
             "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
+            "goals_against": 4,
+            "goal_difference": -3,
             "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第三第6",
+            "status_class": "third"
           },
           {
             "team_id": 10,
             "team": "海地",
             "team_en": "海地",
             "position": 4,
-            "played": 2,
-            "goals_for": 0,
-            "goals_against": 4,
-            "goal_difference": -4,
+            "played": 3,
+            "goals_for": 2,
+            "goals_against": 8,
+            "goal_difference": -6,
             "points": 0,
-            "status_label": "淘汰了",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -7786,60 +7786,6 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 12,
-            "team": "苏格兰",
-            "team_en": "苏格兰",
-            "position": 1,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 0,
-            "goal_difference": 1,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 11,
-            "team": "摩洛哥",
-            "team_en": "摩洛哥",
-            "position": 2,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 9,
-            "team": "巴西",
-            "team_en": "巴西",
-            "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 10,
-            "team": "海地",
-            "team_en": "海地",
-            "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
-          }
-        ],
-        "current": [
-          {
             "team_id": 9,
             "team": "巴西",
             "team_en": "巴西",
@@ -7858,9 +7804,9 @@
             "team_en": "摩洛哥",
             "position": 2,
             "played": 2,
-            "goals_for": 2,
-            "goals_against": 1,
-            "goal_difference": 1,
+            "goals_for": 5,
+            "goals_against": 3,
+            "goal_difference": 2,
             "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
@@ -7872,8 +7818,8 @@
             "position": 3,
             "played": 2,
             "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
+            "goals_against": 3,
+            "goal_difference": -2,
             "points": 3,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
@@ -7884,11 +7830,65 @@
             "team_en": "海地",
             "position": 4,
             "played": 2,
-            "goals_for": 0,
-            "goals_against": 4,
-            "goal_difference": -4,
+            "goals_for": 2,
+            "goals_against": 5,
+            "goal_difference": -3,
             "points": 0,
             "status_label": "淘汰了",
+            "status_class": "out"
+          }
+        ],
+        "current": [
+          {
+            "team_id": 9,
+            "team": "巴西",
+            "team_en": "巴西",
+            "position": 1,
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 1,
+            "goal_difference": 6,
+            "points": 7,
+            "status_label": "第1",
+            "status_class": "locked-first"
+          },
+          {
+            "team_id": 11,
+            "team": "摩洛哥",
+            "team_en": "摩洛哥",
+            "position": 2,
+            "played": 3,
+            "goals_for": 6,
+            "goals_against": 3,
+            "goal_difference": 3,
+            "points": 7,
+            "status_label": "第2",
+            "status_class": "locked-top2"
+          },
+          {
+            "team_id": 12,
+            "team": "苏格兰",
+            "team_en": "苏格兰",
+            "position": 3,
+            "played": 3,
+            "goals_for": 1,
+            "goals_against": 4,
+            "goal_difference": -3,
+            "points": 3,
+            "status_label": "第三第6",
+            "status_class": "third"
+          },
+          {
+            "team_id": 10,
+            "team": "海地",
+            "team_en": "海地",
+            "position": 4,
+            "played": 3,
+            "goals_for": 2,
+            "goals_against": 8,
+            "goal_difference": -6,
+            "points": 0,
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -9185,7 +9185,7 @@
           49,
           50
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 9,
@@ -9745,7 +9745,7 @@
             "goals_against": 1,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第5",
+            "status_label": "第三第4",
             "status_class": "third"
           },
           {

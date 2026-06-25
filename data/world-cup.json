@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T23:04:28+00:00",
+  "generated_at": "2026-06-25T23:09:31+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1475,7 +1475,7 @@
       "stage": "F组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "4'",
+      "status_detail": "9'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Dallas · Dallas Stadium"
@@ -1495,9 +1495,9 @@
       "stage": "F组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "4'",
+      "status_detail": "9'",
       "score_home": 0,
-      "score_away": 1,
+      "score_away": 2,
       "venue": "Kansas City · Kansas City Stadium"
     },
     {
@@ -4752,9 +4752,9 @@
       "won": 2,
       "drawn": 1,
       "lost": 0,
-      "goals_for": 8,
+      "goals_for": 9,
       "goals_against": 3,
-      "goal_difference": 5,
+      "goal_difference": 6,
       "points": 7,
       "fifa_rank": 8,
       "fair_play_points": -3,
@@ -4813,8 +4813,8 @@
       "drawn": 0,
       "lost": 3,
       "goals_for": 1,
-      "goals_against": 10,
-      "goal_difference": -9,
+      "goals_against": 11,
+      "goal_difference": -10,
       "points": 0,
       "fifa_rank": 45,
       "fair_play_points": -1,
@@ -9597,9 +9597,9 @@
             "team_en": "荷兰",
             "position": 1,
             "played": 3,
-            "goals_for": 8,
+            "goals_for": 9,
             "goals_against": 3,
-            "goal_difference": 5,
+            "goal_difference": 6,
             "points": 7,
             "status_label": "第1",
             "status_class": "locked-first"
@@ -9637,8 +9637,8 @@
             "position": 4,
             "played": 3,
             "goals_for": 1,
-            "goals_against": 10,
-            "goal_difference": -9,
+            "goals_against": 11,
+            "goal_difference": -10,
             "points": 0,
             "status_label": "淘汰",
             "status_class": "out"

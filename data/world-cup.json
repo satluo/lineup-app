@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T00:05:17+00:00",
+  "generated_at": "2026-06-25T00:30:59+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1808,9 +1808,9 @@
       "away_placeholder": "2F",
       "date": "2026-06-30",
       "time": "01:00",
-      "home": "1C",
+      "home": "巴西",
       "away": "2F",
-      "home_en": "1C",
+      "home_en": "Brazil",
       "away_en": "2F",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
@@ -1849,9 +1849,9 @@
       "date": "2026-06-30",
       "time": "09:00",
       "home": "1F",
-      "away": "2C",
+      "away": "摩洛哥",
       "home_en": "1F",
-      "away_en": "2C",
+      "away_en": "Morocco",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
       "status": "scheduled",

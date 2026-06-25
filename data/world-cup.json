@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T23:57:56+00:00",
+  "generated_at": "2026-06-25T00:00:12+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1355,7 +1355,7 @@
       "stage": "C组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+2'",
+      "status_detail": "90'+5'",
       "score_home": 0,
       "score_away": 3,
       "venue": "Miami · Miami Stadium"
@@ -1375,7 +1375,7 @@
       "stage": "C组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+5'",
+      "status_detail": "90'+6'",
       "score_home": 4,
       "score_away": 2,
       "venue": "Atlanta · Atlanta Stadium"
@@ -2597,7 +2597,7 @@
       "goal_difference": 3,
       "points": 4,
       "fifa_rank": 6,
-      "fair_play_points": -3,
+      "fair_play_points": -5,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -2637,7 +2637,7 @@
       "goal_difference": 0,
       "points": 3,
       "fifa_rank": 42,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -2657,7 +2657,7 @@
       "goal_difference": -4,
       "points": 0,
       "fifa_rank": 83,
-      "fair_play_points": -4,
+      "fair_play_points": -7,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3443,7 +3443,7 @@
       "goal_difference": 0,
       "points": 3,
       "fifa_rank": 42,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -4517,7 +4517,7 @@
       "goal_difference": 6,
       "points": 7,
       "fifa_rank": 6,
-      "fair_play_points": -3,
+      "fair_play_points": -5,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4557,7 +4557,7 @@
       "goal_difference": -3,
       "points": 3,
       "fifa_rank": 42,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4577,7 +4577,7 @@
       "goal_difference": -6,
       "points": 0,
       "fifa_rank": 83,
-      "fair_play_points": -4,
+      "fair_play_points": -7,
       "position": 4,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5429,7 +5429,7 @@
       "goal_difference": -3,
       "points": 3,
       "fifa_rank": 42,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10403,10 +10403,26 @@
         "reds": 0
       },
       {
+        "name": "Vinícius Júnior",
+        "team": "巴西",
+        "goals": 4,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Deniz Undav",
         "team": "德国",
         "goals": 3,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ismael Saibari",
+        "team": "摩洛哥",
+        "goals": 3,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -10421,6 +10437,14 @@
       {
         "name": "Jonathan David",
         "team": "加拿大",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Matheus Cunha",
+        "team": "巴西",
         "goals": 3,
         "assists": 0,
         "yellows": 0,
@@ -10523,14 +10547,6 @@
         "reds": 0
       },
       {
-        "name": "Ismael Saibari",
-        "team": "摩洛哥",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Ismaïla Sarr",
         "team": "塞内加尔",
         "goals": 2,
@@ -10541,14 +10557,6 @@
       {
         "name": "Kai Havertz",
         "team": "德国",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Matheus Cunha",
-        "team": "巴西",
         "goals": 2,
         "assists": 0,
         "yellows": 0,
@@ -10579,14 +10587,6 @@
         "reds": 0
       },
       {
-        "name": "Vinícius Júnior",
-        "team": "巴西",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Yasin Ayari",
         "team": "瑞典",
         "goals": 2,
@@ -10608,6 +10608,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Achraf Hakimi",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -10744,6 +10752,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Gessime Yassine",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -11147,6 +11163,14 @@
         "reds": 0
       },
       {
+        "name": "Soufiane Rahimi",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Teboho Mokoena",
         "team": "南非",
         "goals": 1,
@@ -11173,6 +11197,14 @@
       {
         "name": "Virgil van Dijk",
         "team": "荷兰",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Wilson Isidor",
+        "team": "海地",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11350,7 +11382,7 @@
         "name": "Bruno Guimarães",
         "team": "巴西",
         "goals": 0,
-        "assists": 1,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -11392,6 +11424,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Chadi Riad",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -11464,6 +11504,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Danilo",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11547,6 +11595,14 @@
         "reds": 0
       },
       {
+        "name": "Duckens Nazon",
+        "team": "海地",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Edin Džeko",
         "team": "波黑",
         "goals": 0,
@@ -11589,6 +11645,14 @@
       {
         "name": "Ermedin Demirović",
         "team": "波黑",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Fabinho",
+        "team": "巴西",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -11755,6 +11819,14 @@
         "reds": 0
       },
       {
+        "name": "Jean-Kévin Duverne",
+        "team": "海地",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Jean-Ricner Bellegarde",
         "team": "海地",
         "goals": 0,
@@ -11781,6 +11853,14 @@
       {
         "name": "Johan Mojica",
         "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Johny Placide",
+        "team": "海地",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -11816,6 +11896,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Josué Casimir",
+        "team": "海地",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12243,6 +12331,14 @@
         "reds": 0
       },
       {
+        "name": "Rayan",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Renato Veiga",
         "team": "葡萄牙",
         "goals": 0,
@@ -12293,6 +12389,14 @@
       {
         "name": "Romelu Lukaku",
         "team": "比利时",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Ryan Christie",
+        "team": "苏格兰",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12525,6 +12629,14 @@
         "reds": 0
       },
       {
+        "name": "Bruno Guimarães",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
@@ -12621,6 +12733,14 @@
         "reds": 0
       },
       {
+        "name": "Achraf Hakimi",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Adrien Rabiot",
         "team": "法国",
         "goals": 0,
@@ -12693,16 +12813,16 @@
         "reds": 0
       },
       {
-        "name": "Bruno Guimarães",
-        "team": "巴西",
+        "name": "Bukayo Saka",
+        "team": "英格兰",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
       },
       {
-        "name": "Bukayo Saka",
-        "team": "英格兰",
+        "name": "Chadi Riad",
+        "team": "摩洛哥",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -12855,6 +12975,14 @@
       {
         "name": "Ivan Perišić",
         "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Jean-Kévin Duverne",
+        "team": "海地",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13109,6 +13237,14 @@
         "reds": 0
       },
       {
+        "name": "Rayan",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Riyad Mahrez",
         "team": "阿尔及利亚",
         "goals": 0,
@@ -13157,6 +13293,14 @@
         "reds": 0
       },
       {
+        "name": "Soufiane Rahimi",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Takefusa Kubo",
         "team": "日本",
         "goals": 0,
@@ -13183,7 +13327,7 @@
       {
         "name": "Vinícius Júnior",
         "team": "巴西",
-        "goals": 2,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -13525,6 +13669,14 @@
         "reds": 0
       },
       {
+        "name": "Danilo",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Danley Jean Jacques",
         "team": "海地",
         "goals": 0,
@@ -13567,6 +13719,14 @@
       {
         "name": "Douglas Santos",
         "team": "巴西",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Duckens Nazon",
+        "team": "海地",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13637,6 +13797,14 @@
         "reds": 0
       },
       {
+        "name": "Fabinho",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Findlay Curtis",
         "team": "苏格兰",
         "goals": 0,
@@ -13690,6 +13858,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Gessime Yassine",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -13775,7 +13951,7 @@
       {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -13885,6 +14061,14 @@
         "reds": 0
       },
       {
+        "name": "Johny Placide",
+        "team": "海地",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jonathan David",
         "team": "加拿大",
         "goals": 3,
@@ -13903,6 +14087,14 @@
       {
         "name": "Jordy Alcívar",
         "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Josué Casimir",
+        "team": "海地",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -14175,7 +14367,7 @@
       {
         "name": "Matheus Cunha",
         "team": "巴西",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -14469,6 +14661,14 @@
         "reds": 0
       },
       {
+        "name": "Ryan Christie",
+        "team": "苏格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Saeid Ezatolahi",
         "team": "伊朗",
         "goals": 0,
@@ -14599,6 +14799,14 @@
       {
         "name": "Virgil van Dijk",
         "team": "荷兰",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Wilson Isidor",
+        "team": "海地",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -14935,6 +15143,14 @@
         "reds": 0
       },
       {
+        "name": "Danilo",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Danley Jean Jacques",
         "team": "海地",
         "goals": 0,
@@ -14991,6 +15207,14 @@
         "reds": 0
       },
       {
+        "name": "Duckens Nazon",
+        "team": "海地",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Edin Džeko",
         "team": "波黑",
         "goals": 0,
@@ -15026,6 +15250,14 @@
         "name": "Ermin Mahmić",
         "team": "波黑",
         "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Fabinho",
+        "team": "巴西",
+        "goals": 0,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -15191,6 +15423,14 @@
         "reds": 0
       },
       {
+        "name": "Johny Placide",
+        "team": "海地",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jordan Bos",
         "team": "澳大利亚",
         "goals": 0,
@@ -15201,6 +15441,14 @@
       {
         "name": "Jordy Alcívar",
         "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Josué Casimir",
+        "team": "海地",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15527,6 +15775,14 @@
         "reds": 0
       },
       {
+        "name": "Ryan Christie",
+        "team": "苏格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Saeid Ezatolahi",
         "team": "伊朗",
         "goals": 0,
@@ -15643,6 +15899,14 @@
         "team": "乌兹别克斯坦",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Achraf Hakimi",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -15810,13 +16074,21 @@
         "name": "Bruno Guimarães",
         "team": "巴西",
         "goals": 0,
-        "assists": 1,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
       {
         "name": "Bukayo Saka",
         "team": "英格兰",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Chadi Riad",
+        "team": "摩洛哥",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -15991,6 +16263,14 @@
         "reds": 0
       },
       {
+        "name": "Gessime Yassine",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Giovanni Reyna",
         "team": "美国",
         "goals": 1,
@@ -16065,7 +16345,7 @@
       {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16107,6 +16387,14 @@
         "team": "哥伦比亚",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Jean-Kévin Duverne",
+        "team": "海地",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -16369,7 +16657,7 @@
       {
         "name": "Matheus Cunha",
         "team": "巴西",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16631,6 +16919,14 @@
         "reds": 0
       },
       {
+        "name": "Rayan",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Raúl Jiménez",
         "team": "墨西哥",
         "goals": 1,
@@ -16703,6 +16999,14 @@
         "reds": 0
       },
       {
+        "name": "Soufiane Rahimi",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Takefusa Kubo",
         "team": "日本",
         "goals": 0,
@@ -16737,7 +17041,7 @@
       {
         "name": "Vinícius Júnior",
         "team": "巴西",
-        "goals": 2,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -16763,6 +17067,14 @@
         "team": "科特迪瓦",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Wilson Isidor",
+        "team": "海地",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },

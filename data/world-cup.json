@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T02:47:15+00:00",
+  "generated_at": "2026-06-25T02:52:18+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1395,7 +1395,7 @@
       "stage": "A组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "86'",
+      "status_detail": "90'+1'",
       "score_home": 0,
       "score_away": 2,
       "venue": "Mexico City · Mexico City Stadium"
@@ -1415,7 +1415,7 @@
       "stage": "A组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "86'",
+      "status_detail": "90'+1'",
       "score_home": 1,
       "score_away": 0,
       "venue": "Monterrey · Monterrey Stadium"

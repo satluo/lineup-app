@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T02:52:18+00:00",
+  "generated_at": "2026-06-25T02:57:21+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1395,9 +1395,9 @@
       "stage": "A组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+1'",
+      "status_detail": "90'+6'",
       "score_home": 0,
-      "score_away": 2,
+      "score_away": 3,
       "venue": "Mexico City · Mexico City Stadium"
     },
     {
@@ -1414,8 +1414,8 @@
       "away_en": "South Korea",
       "stage": "A组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+1'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 1,
       "score_away": 0,
       "venue": "Monterrey · Monterrey Stadium"
@@ -2443,22 +2443,42 @@
       "ranking_status": "calculated"
     },
     {
+      "team_id": 3,
+      "team_name": "南非",
+      "team_name_en": "南非",
+      "team_name_zh": "南非",
+      "group_code": "A",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 2,
+      "goals_against": 3,
+      "goal_difference": -1,
+      "points": 4,
+      "fifa_rank": 60,
+      "fair_play_points": -12,
+      "position": 2,
+      "group_complete": false,
+      "ranking_status": "calculated"
+    },
+    {
       "team_id": 4,
       "team_name": "韩国",
       "team_name_en": "韩国",
       "team_name_zh": "韩国",
       "group_code": "A",
-      "played": 2,
+      "played": 3,
       "won": 1,
       "drawn": 0,
-      "lost": 1,
+      "lost": 2,
       "goals_for": 2,
-      "goals_against": 2,
-      "goal_difference": 0,
+      "goals_against": 3,
+      "goal_difference": -1,
       "points": 3,
       "fifa_rank": 25,
       "fair_play_points": -3,
-      "position": 2,
+      "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
     },
@@ -2478,26 +2498,6 @@
       "points": 1,
       "fifa_rank": 40,
       "fair_play_points": -1,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
-      "team_id": 3,
-      "team_name": "南非",
-      "team_name_en": "南非",
-      "team_name_zh": "南非",
-      "group_code": "A",
-      "played": 2,
-      "won": 0,
-      "drawn": 1,
-      "lost": 1,
-      "goals_for": 1,
-      "goals_against": 3,
-      "goal_difference": -2,
-      "points": 1,
-      "fifa_rank": 60,
-      "fair_play_points": -12,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3451,6 +3451,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 4,
+      "team_name": "韩国",
+      "team_name_en": "韩国",
+      "team_name_zh": "韩国",
+      "group_code": "A",
+      "played": 3,
+      "won": 1,
+      "drawn": 0,
+      "lost": 2,
+      "goals_for": 2,
+      "goals_against": 3,
+      "goal_difference": -1,
+      "points": 3,
+      "fifa_rank": 25,
+      "fair_play_points": -3,
+      "position": 3,
+      "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 4,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 37,
       "team_name": "阿尔及利亚",
       "team_name_en": "阿尔及利亚",
@@ -3469,7 +3491,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 5,
       "qualifies_currently": true
     },
     {
@@ -3491,7 +3513,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 6,
       "qualifies_currently": true
     },
     {
@@ -3513,7 +3535,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -3535,7 +3557,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -3554,28 +3576,6 @@
       "points": 2,
       "fifa_rank": 9,
       "fair_play_points": -7,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
-    },
-    {
-      "team_id": 1,
-      "team_name": "捷克",
-      "team_name_en": "捷克",
-      "team_name_zh": "捷克",
-      "group_code": "A",
-      "played": 2,
-      "won": 0,
-      "drawn": 1,
-      "lost": 1,
-      "goals_for": 2,
-      "goals_against": 3,
-      "goal_difference": -1,
-      "points": 1,
-      "fifa_rank": 40,
-      "fair_play_points": -1,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -3662,13 +3662,24 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
+      "team_id": 3,
+      "team_name": "南非",
+      "team_name_en": "南非",
+      "team_name_zh": "南非",
+      "group_code": "A",
+      "group_position": 2,
+      "slot_type": "group_position",
+      "status": "current_standings",
+      "reason": "Provisional from locally calculated current standings"
+    },
+    {
       "team_id": 4,
       "team_name": "韩国",
       "team_name_en": "韩国",
       "team_name_zh": "韩国",
       "group_code": "A",
-      "group_position": 2,
-      "slot_type": "group_position",
+      "group_position": 3,
+      "slot_type": "best_third",
       "status": "current_standings",
       "reason": "Provisional from locally calculated current standings"
     },
@@ -3849,17 +3860,6 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
-      "team_id": 25,
-      "team_name": "比利时",
-      "team_name_en": "比利时",
-      "team_name_zh": "比利时",
-      "group_code": "G",
-      "group_position": 3,
-      "slot_type": "best_third",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
-    },
-    {
       "team_id": 31,
       "team_name": "西班牙",
       "team_name_en": "西班牙",
@@ -4012,21 +4012,21 @@
       "class_name": "locked-first"
     },
     {
-      "team_id": 4,
+      "team_id": 3,
       "group_code": "A",
       "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
+      "label": "锁定前三",
+      "class_name": "locked-top3"
+    },
+    {
+      "team_id": 4,
+      "group_code": "A",
+      "position": 3,
+      "label": "无缘前二",
+      "class_name": "out"
     },
     {
       "team_id": 1,
-      "group_code": "A",
-      "position": 3,
-      "label": "暂列第3",
-      "class_name": "progress"
-    },
-    {
-      "team_id": 3,
       "group_code": "A",
       "position": 4,
       "label": "暂列第4",
@@ -4352,9 +4352,9 @@
       "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 5,
+      "goals_for": 6,
       "goals_against": 0,
-      "goal_difference": 5,
+      "goal_difference": 6,
       "points": 9,
       "fifa_rank": 14,
       "fair_play_points": -5,
@@ -4413,8 +4413,8 @@
       "drawn": 1,
       "lost": 2,
       "goals_for": 2,
-      "goals_against": 5,
-      "goal_difference": -3,
+      "goals_against": 6,
+      "goal_difference": -4,
       "points": 1,
       "fifa_rank": 40,
       "fair_play_points": -1,
@@ -5918,35 +5918,35 @@
         "all_finished": true,
         "pre": [
           {
+            "team_id": 3,
+            "team": "南非",
+            "team_en": "南非",
+            "position": 1,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 1,
+            "goal_difference": 1,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
             "team_id": 2,
             "team": "墨西哥",
             "team_en": "墨西哥",
-            "position": 1,
+            "position": 2,
             "played": 1,
             "goals_for": 1,
             "goals_against": 0,
             "goal_difference": 1,
             "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 1,
             "team": "捷克",
             "team_en": "捷克",
-            "position": 2,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 3,
-            "team": "南非",
-            "team_en": "南非",
             "position": 3,
             "played": 1,
             "goals_for": 1,
@@ -5961,13 +5961,13 @@
             "team": "韩国",
             "team_en": "韩国",
             "position": 4,
-            "played": 1,
+            "played": 2,
             "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
+            "goals_against": 2,
+            "goal_difference": -2,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ],
         "current": [
@@ -5985,40 +5985,40 @@
             "status_class": "locked-first"
           },
           {
+            "team_id": 3,
+            "team": "南非",
+            "team_en": "南非",
+            "position": 2,
+            "played": 3,
+            "goals_for": 2,
+            "goals_against": 3,
+            "goal_difference": -1,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
             "team_id": 4,
             "team": "韩国",
             "team_en": "韩国",
-            "position": 2,
-            "played": 2,
+            "position": 3,
+            "played": 3,
             "goals_for": 2,
-            "goals_against": 2,
-            "goal_difference": 0,
+            "goals_against": 3,
+            "goal_difference": -1,
             "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           },
           {
             "team_id": 1,
             "team": "捷克",
             "team_en": "捷克",
-            "position": 3,
+            "position": 4,
             "played": 2,
             "goals_for": 2,
             "goals_against": 3,
             "goal_difference": -1,
-            "points": 1,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 3,
-            "team": "南非",
-            "team_en": "南非",
-            "position": 4,
-            "played": 2,
-            "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
             "points": 1,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -6472,7 +6472,7 @@
             "goals_against": 4,
             "goal_difference": -3,
             "points": 3,
-            "status_label": "第三第6",
+            "status_label": "第三第7",
             "status_class": "third"
           },
           {
@@ -7565,40 +7565,40 @@
             "status_class": "progress"
           },
           {
+            "team_id": 3,
+            "team": "南非",
+            "team_en": "南非",
+            "position": 2,
+            "played": 2,
+            "goals_for": 1,
+            "goals_against": 2,
+            "goal_difference": -1,
+            "points": 3,
+            "status_label": "暂列第2",
+            "status_class": "progress"
+          },
+          {
             "team_id": 4,
             "team": "韩国",
             "team_en": "韩国",
-            "position": 2,
-            "played": 1,
+            "position": 3,
+            "played": 2,
             "goals_for": 2,
-            "goals_against": 1,
-            "goal_difference": 1,
+            "goals_against": 2,
+            "goal_difference": 0,
             "points": 3,
-            "status_label": "暂列第2",
+            "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
             "team_id": 1,
             "team": "捷克",
             "team_en": "捷克",
-            "position": 3,
+            "position": 4,
             "played": 1,
             "goals_for": 1,
             "goals_against": 2,
             "goal_difference": -1,
-            "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 3,
-            "team": "南非",
-            "team_en": "南非",
-            "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 2,
-            "goal_difference": -2,
             "points": 0,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -7619,40 +7619,40 @@
             "status_class": "locked-first"
           },
           {
+            "team_id": 3,
+            "team": "南非",
+            "team_en": "南非",
+            "position": 2,
+            "played": 3,
+            "goals_for": 2,
+            "goals_against": 3,
+            "goal_difference": -1,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
             "team_id": 4,
             "team": "韩国",
             "team_en": "韩国",
-            "position": 2,
-            "played": 2,
+            "position": 3,
+            "played": 3,
             "goals_for": 2,
-            "goals_against": 2,
-            "goal_difference": 0,
+            "goals_against": 3,
+            "goal_difference": -1,
             "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           },
           {
             "team_id": 1,
             "team": "捷克",
             "team_en": "捷克",
-            "position": 3,
+            "position": 4,
             "played": 2,
             "goals_for": 2,
             "goals_against": 3,
             "goal_difference": -1,
-            "points": 1,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 3,
-            "team": "南非",
-            "team_en": "南非",
-            "position": 4,
-            "played": 2,
-            "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
             "points": 1,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -7875,7 +7875,7 @@
             "goals_against": 4,
             "goal_difference": -3,
             "points": 3,
-            "status_label": "第三第6",
+            "status_label": "第三第7",
             "status_class": "third"
           },
           {
@@ -9015,9 +9015,9 @@
             "team_en": "墨西哥",
             "position": 1,
             "played": 3,
-            "goals_for": 5,
+            "goals_for": 6,
             "goals_against": 0,
-            "goal_difference": 5,
+            "goal_difference": 6,
             "points": 9,
             "status_label": "第1",
             "status_class": "locked-first"
@@ -9055,8 +9055,8 @@
             "position": 4,
             "played": 3,
             "goals_for": 2,
-            "goals_against": 5,
-            "goal_difference": -3,
+            "goals_against": 6,
+            "goal_difference": -4,
             "points": 1,
             "status_label": "淘汰",
             "status_class": "out"
@@ -9511,7 +9511,7 @@
             "goals_against": 1,
             "goal_difference": -1,
             "points": 2,
-            "status_label": "第三第9",
+            "status_label": "第三第10",
             "status_class": "third"
           },
           {
@@ -10211,7 +10211,7 @@
             "goals_against": 2,
             "goal_difference": -1,
             "points": 2,
-            "status_label": "第三第9",
+            "status_label": "第三第10",
             "status_class": "third"
           },
           {
@@ -10363,18 +10363,18 @@
   },
   "third_place_slot_overrides": {
     "3CEFHI": "C",
-    "3EFGIJ": "G",
+    "3EFGIJ": "J",
     "3BEFIJ": "B",
     "3ABCDF": "D",
-    "3AEHIJ": "H",
+    "3AEHIJ": "A",
     "3CDFGH": "F",
     "3DEIJL": "L",
-    "3EHIJK": "J"
+    "3EHIJK": "H"
   },
   "third_place_mapping": {
     "source": "FIFA World Cup 2026 Regulations Annex C; extracted from the public Wikimedia template '2026 FIFA World Cup third-place table'.",
     "rule_count": 495,
-    "current_combination": "BCDFGHJL"
+    "current_combination": "ABCDFHJL"
   },
   "leaderboards": {
     "scorers": [

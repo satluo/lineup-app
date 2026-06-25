@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T03:00:11+00:00",
+  "generated_at": "2026-06-25T22:54:24+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1434,10 +1434,10 @@
       "away_en": "Ivory Coast",
       "stage": "E组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 0,
+      "score_away": 2,
       "venue": "Philadelphia · Philadelphia Stadium"
     },
     {
@@ -1454,10 +1454,10 @@
       "away_en": "Germany",
       "stage": "E组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 1,
       "venue": "New Jersey · New York/New Jersey Stadium"
     },
     {
@@ -1868,9 +1868,9 @@
       "away_placeholder": "2I",
       "date": "2026-07-01",
       "time": "01:00",
-      "home": "2E",
+      "home": "科特迪瓦",
       "away": "2I",
-      "home_en": "2E",
+      "home_en": "Ivory Coast",
       "away_en": "2I",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
@@ -2748,18 +2748,18 @@
       "team_name_en": "德国",
       "team_name_zh": "德国",
       "group_code": "E",
-      "played": 2,
+      "played": 3,
       "won": 2,
       "drawn": 0,
-      "lost": 0,
-      "goals_for": 9,
-      "goals_against": 2,
-      "goal_difference": 7,
+      "lost": 1,
+      "goals_for": 10,
+      "goals_against": 4,
+      "goal_difference": 6,
       "points": 6,
       "fifa_rank": 10,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2768,18 +2768,18 @@
       "team_name_en": "科特迪瓦",
       "team_name_zh": "科特迪瓦",
       "group_code": "E",
-      "played": 2,
-      "won": 1,
+      "played": 3,
+      "won": 2,
       "drawn": 0,
       "lost": 1,
-      "goals_for": 2,
+      "goals_for": 4,
       "goals_against": 2,
-      "goal_difference": 0,
-      "points": 3,
+      "goal_difference": 2,
+      "points": 6,
       "fifa_rank": 33,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2788,18 +2788,18 @@
       "team_name_en": "厄瓜多尔",
       "team_name_zh": "厄瓜多尔",
       "group_code": "E",
-      "played": 2,
-      "won": 0,
+      "played": 3,
+      "won": 1,
       "drawn": 1,
       "lost": 1,
-      "goals_for": 0,
-      "goals_against": 1,
-      "goal_difference": -1,
-      "points": 1,
+      "goals_for": 2,
+      "goals_against": 2,
+      "goal_difference": 0,
+      "points": 4,
       "fifa_rank": 23,
-      "fair_play_points": -2,
+      "fair_play_points": -5,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2808,18 +2808,18 @@
       "team_name_en": "库拉索",
       "team_name_zh": "库拉索",
       "group_code": "E",
-      "played": 2,
+      "played": 3,
       "won": 0,
       "drawn": 1,
-      "lost": 1,
+      "lost": 2,
       "goals_for": 1,
-      "goals_against": 7,
-      "goal_difference": -6,
+      "goals_against": 9,
+      "goal_difference": -8,
       "points": 1,
       "fifa_rank": 82,
-      "fair_play_points": -5,
+      "fair_play_points": -7,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3385,6 +3385,28 @@
   ],
   "best_thirds": [
     {
+      "team_id": 18,
+      "team_name": "厄瓜多尔",
+      "team_name_en": "厄瓜多尔",
+      "team_name_zh": "厄瓜多尔",
+      "group_code": "E",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 2,
+      "goals_against": 2,
+      "goal_difference": 0,
+      "points": 4,
+      "fifa_rank": 23,
+      "fair_play_points": -5,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 1,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 5,
       "team_name": "波黑",
       "team_name_en": "波黑",
@@ -3403,7 +3425,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 1,
+      "third_place_position": 2,
       "qualifies_currently": true
     },
     {
@@ -3425,7 +3447,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 2,
+      "third_place_position": 3,
       "qualifies_currently": true
     },
     {
@@ -3447,7 +3469,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 3,
+      "third_place_position": 4,
       "qualifies_currently": true
     },
     {
@@ -3469,7 +3491,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 5,
       "qualifies_currently": true
     },
     {
@@ -3491,7 +3513,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 6,
       "qualifies_currently": true
     },
     {
@@ -3513,7 +3535,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -3535,7 +3557,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -3557,8 +3579,8 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
+      "third_place_position": 9,
+      "qualifies_currently": false
     },
     {
       "team_id": 25,
@@ -3579,7 +3601,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 9,
+      "third_place_position": 10,
       "qualifies_currently": false
     },
     {
@@ -3597,28 +3619,6 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
-      "fair_play_points": -2,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 10,
-      "qualifies_currently": false
-    },
-    {
-      "team_id": 18,
-      "team_name": "厄瓜多尔",
-      "team_name_en": "厄瓜多尔",
-      "team_name_zh": "厄瓜多尔",
-      "group_code": "E",
-      "played": 2,
-      "won": 0,
-      "drawn": 1,
-      "lost": 1,
-      "goals_for": 0,
-      "goals_against": 1,
-      "goal_difference": -1,
-      "points": 1,
-      "fifa_rank": 23,
       "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
@@ -3790,8 +3790,8 @@
       "group_code": "E",
       "group_position": 1,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group E completed"
     },
     {
       "team_id": 20,
@@ -3801,8 +3801,19 @@
       "group_code": "E",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group E completed"
+    },
+    {
+      "team_id": 18,
+      "team_name": "厄瓜多尔",
+      "team_name_en": "厄瓜多尔",
+      "team_name_zh": "厄瓜多尔",
+      "group_code": "E",
+      "group_position": 3,
+      "slot_type": "best_third",
+      "status": "confirmed",
+      "reason": "Group E completed"
     },
     {
       "team_id": 22,
@@ -3878,17 +3889,6 @@
       "group_code": "H",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
-    },
-    {
-      "team_id": 29,
-      "team_name": "佛得角",
-      "team_name_en": "佛得角",
-      "team_name_zh": "佛得角",
-      "group_code": "H",
-      "group_position": 3,
-      "slot_type": "best_third",
       "status": "current_standings",
       "reason": "Provisional from locally calculated current standings"
     },
@@ -4120,29 +4120,29 @@
       "team_id": 19,
       "group_code": "E",
       "position": 1,
-      "label": "锁定头名",
+      "label": "确定头名",
       "class_name": "locked-first"
     },
     {
       "team_id": 20,
       "group_code": "E",
       "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 18,
       "group_code": "E",
       "position": 3,
-      "label": "暂列第3",
+      "label": "第三待定",
       "class_name": "progress"
     },
     {
       "team_id": 17,
       "group_code": "E",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "淘汰了",
+      "class_name": "out"
     },
     {
       "team_id": 22,
@@ -4668,18 +4668,18 @@
       "team_name_en": "德国",
       "team_name_zh": "德国",
       "group_code": "E",
-      "played": 2,
+      "played": 3,
       "won": 2,
       "drawn": 0,
-      "lost": 0,
-      "goals_for": 9,
-      "goals_against": 2,
-      "goal_difference": 7,
+      "lost": 1,
+      "goals_for": 10,
+      "goals_against": 4,
+      "goal_difference": 6,
       "points": 6,
       "fifa_rank": 10,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -4688,18 +4688,18 @@
       "team_name_en": "科特迪瓦",
       "team_name_zh": "科特迪瓦",
       "group_code": "E",
-      "played": 2,
-      "won": 1,
+      "played": 3,
+      "won": 2,
       "drawn": 0,
       "lost": 1,
-      "goals_for": 2,
+      "goals_for": 4,
       "goals_against": 2,
-      "goal_difference": 0,
-      "points": 3,
+      "goal_difference": 2,
+      "points": 6,
       "fifa_rank": 33,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -4708,18 +4708,18 @@
       "team_name_en": "厄瓜多尔",
       "team_name_zh": "厄瓜多尔",
       "group_code": "E",
-      "played": 2,
-      "won": 0,
+      "played": 3,
+      "won": 1,
       "drawn": 1,
       "lost": 1,
-      "goals_for": 0,
-      "goals_against": 1,
-      "goal_difference": -1,
-      "points": 1,
+      "goals_for": 2,
+      "goals_against": 2,
+      "goal_difference": 0,
+      "points": 4,
       "fifa_rank": 23,
-      "fair_play_points": -2,
+      "fair_play_points": -5,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -4728,18 +4728,18 @@
       "team_name_en": "库拉索",
       "team_name_zh": "库拉索",
       "group_code": "E",
-      "played": 2,
+      "played": 3,
       "won": 0,
       "drawn": 1,
-      "lost": 1,
+      "lost": 2,
       "goals_for": 1,
-      "goals_against": 7,
-      "goal_difference": -6,
+      "goals_against": 9,
+      "goal_difference": -8,
       "points": 1,
       "fifa_rank": 82,
-      "fair_play_points": -5,
+      "fair_play_points": -7,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -5305,6 +5305,28 @@
   ],
   "live_best_thirds": [
     {
+      "team_id": 18,
+      "team_name": "厄瓜多尔",
+      "team_name_en": "厄瓜多尔",
+      "team_name_zh": "厄瓜多尔",
+      "group_code": "E",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 2,
+      "goals_against": 2,
+      "goal_difference": 0,
+      "points": 4,
+      "fifa_rank": 23,
+      "fair_play_points": -5,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 1,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 5,
       "team_name": "波黑",
       "team_name_en": "波黑",
@@ -5323,7 +5345,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 1,
+      "third_place_position": 2,
       "qualifies_currently": true
     },
     {
@@ -5345,7 +5367,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 2,
+      "third_place_position": 3,
       "qualifies_currently": true
     },
     {
@@ -5367,7 +5389,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 3,
+      "third_place_position": 4,
       "qualifies_currently": true
     },
     {
@@ -5389,7 +5411,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 5,
       "qualifies_currently": true
     },
     {
@@ -5411,7 +5433,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 6,
       "qualifies_currently": true
     },
     {
@@ -5433,7 +5455,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -5455,7 +5477,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -5477,8 +5499,8 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
+      "third_place_position": 9,
+      "qualifies_currently": false
     },
     {
       "team_id": 25,
@@ -5499,7 +5521,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 9,
+      "third_place_position": 10,
       "qualifies_currently": false
     },
     {
@@ -5517,28 +5539,6 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
-      "fair_play_points": -2,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 10,
-      "qualifies_currently": false
-    },
-    {
-      "team_id": 18,
-      "team_name": "厄瓜多尔",
-      "team_name_en": "厄瓜多尔",
-      "team_name_zh": "厄瓜多尔",
-      "group_code": "E",
-      "played": 2,
-      "won": 0,
-      "drawn": 1,
-      "lost": 1,
-      "goals_for": 0,
-      "goals_against": 1,
-      "goal_difference": -1,
-      "points": 1,
-      "fifa_rank": 23,
       "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
@@ -5686,29 +5686,29 @@
       "team_id": 19,
       "group_code": "E",
       "position": 1,
-      "label": "锁定头名",
+      "label": "确定头名",
       "class_name": "locked-first"
     },
     {
       "team_id": 20,
       "group_code": "E",
       "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 18,
       "group_code": "E",
       "position": 3,
-      "label": "暂列第3",
+      "label": "第三待定",
       "class_name": "progress"
     },
     {
       "team_id": 17,
       "group_code": "E",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "淘汰了",
+      "class_name": "out"
     },
     {
       "team_id": 22,
@@ -6007,7 +6007,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第4",
+            "status_label": "第三第5",
             "status_class": "third"
           },
           {
@@ -6124,7 +6124,7 @@
             "goals_against": 6,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第1",
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -6356,7 +6356,7 @@
             "goals_against": 6,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第1",
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -6472,7 +6472,7 @@
             "goals_against": 4,
             "goal_difference": -3,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -6616,54 +6616,54 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 19,
-            "team": "德国",
-            "team_en": "德国",
-            "position": 1,
-            "played": 1,
-            "goals_for": 2,
-            "goals_against": 1,
-            "goal_difference": 1,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
-          },
-          {
             "team_id": 18,
             "team": "厄瓜多尔",
             "team_en": "厄瓜多尔",
-            "position": 2,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "position": 1,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 1,
+            "goal_difference": 1,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
-            "team_id": 17,
-            "team": "库拉索",
-            "team_en": "库拉索",
-            "position": 3,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 0,
+            "team_id": 19,
+            "team": "德国",
+            "team_en": "德国",
+            "position": 2,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 3,
             "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第3",
+            "points": 3,
+            "status_label": "暂列第2",
             "status_class": "progress"
           },
           {
             "team_id": 20,
             "team": "科特迪瓦",
             "team_en": "科特迪瓦",
-            "position": 4,
-            "played": 1,
-            "goals_for": 1,
+            "position": 3,
+            "played": 2,
+            "goals_for": 3,
             "goals_against": 2,
-            "goal_difference": -1,
-            "points": 0,
+            "goal_difference": 1,
+            "points": 3,
+            "status_label": "暂列第3",
+            "status_class": "progress"
+          },
+          {
+            "team_id": 17,
+            "team": "库拉索",
+            "team_en": "库拉索",
+            "position": 4,
+            "played": 2,
+            "goals_for": 0,
+            "goals_against": 2,
+            "goal_difference": -2,
+            "points": 1,
             "status_label": "暂列第4",
             "status_class": "progress"
           }
@@ -6674,12 +6674,12 @@
             "team": "德国",
             "team_en": "德国",
             "position": 1,
-            "played": 2,
-            "goals_for": 9,
-            "goals_against": 2,
-            "goal_difference": 7,
+            "played": 3,
+            "goals_for": 10,
+            "goals_against": 4,
+            "goal_difference": 6,
             "points": 6,
-            "status_label": "锁定头名",
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -6687,39 +6687,39 @@
             "team": "科特迪瓦",
             "team_en": "科特迪瓦",
             "position": 2,
-            "played": 2,
-            "goals_for": 2,
+            "played": 3,
+            "goals_for": 4,
             "goals_against": 2,
-            "goal_difference": 0,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "goal_difference": 2,
+            "points": 6,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 18,
             "team": "厄瓜多尔",
             "team_en": "厄瓜多尔",
             "position": 3,
-            "played": 2,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 1,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "played": 3,
+            "goals_for": 2,
+            "goals_against": 2,
+            "goal_difference": 0,
+            "points": 4,
+            "status_label": "第三第1",
+            "status_class": "third"
           },
           {
             "team_id": 17,
             "team": "库拉索",
             "team_en": "库拉索",
             "position": 4,
-            "played": 2,
+            "played": 3,
             "goals_for": 1,
-            "goals_against": 7,
-            "goal_difference": -6,
+            "goals_against": 9,
+            "goal_difference": -8,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰",
+            "status_class": "out"
           }
         ]
       },
@@ -7641,7 +7641,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第4",
+            "status_label": "第三第5",
             "status_class": "third"
           },
           {
@@ -7757,7 +7757,7 @@
             "goals_against": 6,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第1",
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -7875,7 +7875,7 @@
             "goals_against": 4,
             "goal_difference": -3,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -8020,53 +8020,53 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 19,
-            "team": "德国",
-            "team_en": "德国",
-            "position": 1,
-            "played": 1,
-            "goals_for": 7,
-            "goals_against": 1,
-            "goal_difference": 6,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
-          },
-          {
             "team_id": 20,
             "team": "科特迪瓦",
             "team_en": "科特迪瓦",
-            "position": 2,
-            "played": 1,
-            "goals_for": 1,
+            "position": 1,
+            "played": 2,
+            "goals_for": 3,
             "goals_against": 0,
-            "goal_difference": 1,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "goal_difference": 3,
+            "points": 6,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 18,
             "team": "厄瓜多尔",
             "team_en": "厄瓜多尔",
-            "position": 3,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 0,
-            "status_label": "暂列第3",
+            "position": 2,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 2,
+            "goal_difference": 0,
+            "points": 3,
+            "status_label": "暂列第2",
             "status_class": "progress"
+          },
+          {
+            "team_id": 19,
+            "team": "德国",
+            "team_en": "德国",
+            "position": 3,
+            "played": 2,
+            "goals_for": 8,
+            "goals_against": 3,
+            "goal_difference": 5,
+            "points": 3,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 17,
             "team": "库拉索",
             "team_en": "库拉索",
             "position": 4,
-            "played": 1,
+            "played": 2,
             "goals_for": 1,
-            "goals_against": 7,
-            "goal_difference": -6,
+            "goals_against": 9,
+            "goal_difference": -8,
             "points": 0,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -8078,12 +8078,12 @@
             "team": "德国",
             "team_en": "德国",
             "position": 1,
-            "played": 2,
-            "goals_for": 9,
-            "goals_against": 2,
-            "goal_difference": 7,
+            "played": 3,
+            "goals_for": 10,
+            "goals_against": 4,
+            "goal_difference": 6,
             "points": 6,
-            "status_label": "锁定头名",
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -8091,39 +8091,39 @@
             "team": "科特迪瓦",
             "team_en": "科特迪瓦",
             "position": 2,
-            "played": 2,
-            "goals_for": 2,
+            "played": 3,
+            "goals_for": 4,
             "goals_against": 2,
-            "goal_difference": 0,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "goal_difference": 2,
+            "points": 6,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 18,
             "team": "厄瓜多尔",
             "team_en": "厄瓜多尔",
             "position": 3,
-            "played": 2,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 1,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "played": 3,
+            "goals_for": 2,
+            "goals_against": 2,
+            "goal_difference": 0,
+            "points": 4,
+            "status_label": "第三第1",
+            "status_class": "third"
           },
           {
             "team_id": 17,
             "team": "库拉索",
             "team_en": "库拉索",
             "position": 4,
-            "played": 2,
+            "played": 3,
             "goals_for": 1,
-            "goals_against": 7,
-            "goal_difference": -6,
+            "goals_against": 9,
+            "goal_difference": -8,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰",
+            "status_class": "out"
           }
         ]
       },
@@ -9045,7 +9045,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第4",
+            "status_label": "第三第5",
             "status_class": "third"
           },
           {
@@ -9161,7 +9161,7 @@
             "goals_against": 6,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第1",
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -9277,7 +9277,7 @@
             "goals_against": 4,
             "goal_difference": -3,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -9395,7 +9395,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第3",
+            "status_label": "第三第4",
             "status_class": "third"
           },
           {
@@ -9419,7 +9419,7 @@
           55,
           56
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 19,
@@ -9481,10 +9481,10 @@
             "team_en": "德国",
             "position": 1,
             "played": 3,
-            "goals_for": 9,
-            "goals_against": 2,
-            "goal_difference": 7,
-            "points": 7,
+            "goals_for": 10,
+            "goals_against": 4,
+            "goal_difference": 6,
+            "points": 6,
             "status_label": "第1",
             "status_class": "locked-first"
           },
@@ -9494,10 +9494,10 @@
             "team_en": "科特迪瓦",
             "position": 2,
             "played": 3,
-            "goals_for": 2,
+            "goals_for": 4,
             "goals_against": 2,
-            "goal_difference": 0,
-            "points": 4,
+            "goal_difference": 2,
+            "points": 6,
             "status_label": "第2",
             "status_class": "locked-top2"
           },
@@ -9507,11 +9507,11 @@
             "team_en": "厄瓜多尔",
             "position": 3,
             "played": 3,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 2,
-            "status_label": "第三第10",
+            "goals_for": 2,
+            "goals_against": 2,
+            "goal_difference": 0,
+            "points": 4,
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -9521,9 +9521,9 @@
             "position": 4,
             "played": 3,
             "goals_for": 1,
-            "goals_against": 7,
-            "goal_difference": -6,
-            "points": 2,
+            "goals_against": 9,
+            "goal_difference": -8,
+            "points": 1,
             "status_label": "淘汰",
             "status_class": "out"
           }
@@ -9745,7 +9745,7 @@
             "goals_against": 1,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第4",
+            "status_label": "第三第5",
             "status_class": "third"
           },
           {
@@ -9861,7 +9861,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第3",
+            "status_label": "第三第4",
             "status_class": "third"
           },
           {
@@ -10095,7 +10095,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第3",
+            "status_label": "第三第4",
             "status_class": "third"
           },
           {
@@ -10211,7 +10211,7 @@
             "goals_against": 2,
             "goal_difference": -1,
             "points": 2,
-            "status_label": "第三第10",
+            "status_label": "第三第11",
             "status_class": "third"
           },
           {
@@ -10327,7 +10327,7 @@
             "goals_against": 4,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第2",
+            "status_label": "第三第3",
             "status_class": "third"
           },
           {
@@ -10369,12 +10369,12 @@
     "3AEHIJ": "A",
     "3CDFGH": "F",
     "3DEIJL": "L",
-    "3EHIJK": "H"
+    "3EHIJK": "E"
   },
   "third_place_mapping": {
     "source": "FIFA World Cup 2026 Regulations Annex C; extracted from the public Wikimedia template '2026 FIFA World Cup third-place table'.",
     "rule_count": 495,
-    "current_combination": "ABCDFHJL"
+    "current_combination": "ABCDEFJL"
   },
   "leaderboards": {
     "scorers": [
@@ -10587,6 +10587,14 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Pépé",
+        "team": "科特迪瓦",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Rubén Vargas",
         "team": "瑞士",
         "goals": 2,
@@ -10779,6 +10787,14 @@
         "reds": 0
       },
       {
+        "name": "Gonzalo Plata",
+        "team": "厄瓜多尔",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Granit Xhaka",
         "team": "瑞士",
         "goals": 1,
@@ -10917,6 +10933,14 @@
       {
         "name": "Leo Østigård",
         "team": "挪威",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Leroy Sané",
+        "team": "德国",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11077,6 +11101,14 @@
       {
         "name": "Nico Schlotterbeck",
         "team": "德国",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nilson Angulo",
+        "team": "厄瓜多尔",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11277,6 +11309,22 @@
       {
         "name": "Ahmed Fatouh",
         "team": "埃及",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Alan Franco",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Aleksandar Pavlović",
+        "team": "德国",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -11726,7 +11774,7 @@
         "name": "Florian Wirtz",
         "team": "德国",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -11751,7 +11799,7 @@
         "team": "库拉索",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -11800,6 +11848,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Ibrahim Sangaré",
+        "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -11999,7 +12055,7 @@
         "team": "库拉索",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12032,6 +12088,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Kevin Rodríguez",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12363,10 +12427,26 @@
         "reds": 0
       },
       {
+        "name": "Pedro Vite",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Petar Sučić",
         "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Piero Hincapié",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
         "yellows": 1,
         "reds": 0
       },
@@ -12643,6 +12723,14 @@
         "reds": 0
       },
       {
+        "name": "Yan Diomande",
+        "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Yunus Akgün",
         "team": "土耳其",
         "goals": 0,
@@ -12743,6 +12831,14 @@
       {
         "name": "Denzel Dumfries",
         "team": "荷兰",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Florian Wirtz",
+        "team": "德国",
         "goals": 0,
         "assists": 2,
         "yellows": 0,
@@ -12997,14 +13093,6 @@
         "reds": 0
       },
       {
-        "name": "Florian Wirtz",
-        "team": "德国",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Gustavo Puerta",
         "team": "哥伦比亚",
         "goals": 0,
@@ -13024,6 +13112,14 @@
         "name": "Hwang In-beom",
         "team": "韩国",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ibrahim Sangaré",
+        "team": "科特迪瓦",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -13112,6 +13208,14 @@
         "name": "Keito Nakamura",
         "team": "日本",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Kevin Rodríguez",
+        "team": "厄瓜多尔",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -13301,6 +13405,14 @@
         "reds": 0
       },
       {
+        "name": "Pedro Vite",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Petar Sučić",
         "team": "克罗地亚",
         "goals": 0,
@@ -13445,6 +13557,14 @@
         "reds": 0
       },
       {
+        "name": "Yan Diomande",
+        "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Érik Lira",
         "team": "墨西哥",
         "goals": 0,
@@ -13503,6 +13623,22 @@
       {
         "name": "Ahmed Fatouh",
         "team": "埃及",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Alan Franco",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Aleksandar Pavlović",
+        "team": "德国",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13969,7 +14105,7 @@
         "team": "库拉索",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -13986,6 +14122,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Gonzalo Plata",
+        "team": "厄瓜多尔",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14257,7 +14401,7 @@
         "team": "库拉索",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14375,6 +14519,14 @@
       {
         "name": "Leo Østigård",
         "team": "挪威",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Leroy Sané",
+        "team": "德国",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -14613,11 +14765,27 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Pépé",
+        "team": "科特迪瓦",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nikola Katić",
         "team": "波黑",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Nilson Angulo",
+        "team": "厄瓜多尔",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14698,6 +14866,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Piero Hincapié",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15071,6 +15247,22 @@
         "reds": 0
       },
       {
+        "name": "Gervane Kastaneer",
+        "team": "库拉索",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Juninho Bacuna",
+        "team": "库拉索",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Sidny Lopes Cabral",
         "team": "佛得角",
         "goals": 0,
@@ -15113,6 +15305,22 @@
       {
         "name": "Ahmed Fatouh",
         "team": "埃及",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Alan Franco",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Aleksandar Pavlović",
+        "team": "德国",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15463,9 +15671,9 @@
         "reds": 0
       },
       {
-        "name": "Gervane Kastaneer",
-        "team": "库拉索",
-        "goals": 0,
+        "name": "Gonzalo Plata",
+        "team": "厄瓜多尔",
+        "goals": 1,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -15617,14 +15825,6 @@
       {
         "name": "Juan José Cáceres",
         "team": "巴拉圭",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Juninho Bacuna",
-        "team": "库拉索",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15823,6 +16023,14 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Pépé",
+        "team": "科特迪瓦",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nikola Katić",
         "team": "波黑",
         "goals": 0,
@@ -15875,6 +16083,14 @@
         "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Piero Hincapié",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
         "yellows": 1,
         "reds": 0
       },
@@ -16410,7 +16626,7 @@
         "name": "Florian Wirtz",
         "team": "德国",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -16483,6 +16699,14 @@
         "team": "塞内加尔",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ibrahim Sangaré",
+        "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -16695,6 +16919,14 @@
         "reds": 0
       },
       {
+        "name": "Kevin Rodríguez",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kou Itakura",
         "team": "日本",
         "goals": 0,
@@ -16729,6 +16961,14 @@
       {
         "name": "Leo Østigård",
         "team": "挪威",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Leroy Sané",
+        "team": "德国",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -16983,6 +17223,14 @@
         "reds": 0
       },
       {
+        "name": "Nilson Angulo",
+        "team": "厄瓜多尔",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nizar Al-Rashdan",
         "team": "约旦",
         "goals": 1,
@@ -17049,6 +17297,14 @@
       {
         "name": "Pedro Neto",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Pedro Vite",
+        "team": "厄瓜多尔",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -17265,6 +17521,14 @@
       {
         "name": "Xaver Schlager",
         "team": "奥地利",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Yan Diomande",
+        "team": "科特迪瓦",
         "goals": 0,
         "assists": 1,
         "yellows": 0,

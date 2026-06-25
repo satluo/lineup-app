@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T02:57:21+00:00",
+  "generated_at": "2026-06-25T03:00:11+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1394,8 +1394,8 @@
       "away_en": "Mexico",
       "stage": "A组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+6'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 0,
       "score_away": 3,
       "venue": "Mexico City · Mexico City Stadium"
@@ -1788,9 +1788,9 @@
       "away_placeholder": "2B",
       "date": "2026-06-29",
       "time": "03:00",
-      "home": "2A",
+      "home": "南非",
       "away": "加拿大",
-      "home_en": "2A",
+      "home_en": "South Africa",
       "away_en": "Canada",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
@@ -2428,18 +2428,18 @@
       "team_name_en": "墨西哥",
       "team_name_zh": "墨西哥",
       "group_code": "A",
-      "played": 2,
-      "won": 2,
+      "played": 3,
+      "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 3,
+      "goals_for": 6,
       "goals_against": 0,
-      "goal_difference": 3,
-      "points": 6,
+      "goal_difference": 6,
+      "points": 9,
       "fifa_rank": 14,
-      "fair_play_points": -5,
+      "fair_play_points": -6,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2457,9 +2457,9 @@
       "goal_difference": -1,
       "points": 4,
       "fifa_rank": 60,
-      "fair_play_points": -12,
+      "fair_play_points": -13,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2477,9 +2477,9 @@
       "goal_difference": -1,
       "points": 3,
       "fifa_rank": 25,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2488,18 +2488,18 @@
       "team_name_en": "捷克",
       "team_name_zh": "捷克",
       "group_code": "A",
-      "played": 2,
+      "played": 3,
       "won": 0,
       "drawn": 1,
-      "lost": 1,
+      "lost": 2,
       "goals_for": 2,
-      "goals_against": 3,
-      "goal_difference": -1,
+      "goals_against": 6,
+      "goal_difference": -4,
       "points": 1,
       "fifa_rank": 40,
       "fair_play_points": -1,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3465,9 +3465,9 @@
       "goal_difference": -1,
       "points": 3,
       "fifa_rank": 25,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated",
       "third_place_position": 4,
       "qualifies_currently": true
@@ -3658,8 +3658,8 @@
       "group_code": "A",
       "group_position": 1,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group A completed"
     },
     {
       "team_id": 3,
@@ -3669,8 +3669,8 @@
       "group_code": "A",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group A completed"
     },
     {
       "team_id": 4,
@@ -3680,8 +3680,8 @@
       "group_code": "A",
       "group_position": 3,
       "slot_type": "best_third",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group A completed"
     },
     {
       "team_id": 8,
@@ -4008,29 +4008,29 @@
       "team_id": 2,
       "group_code": "A",
       "position": 1,
-      "label": "锁定头名",
+      "label": "确定头名",
       "class_name": "locked-first"
     },
     {
       "team_id": 3,
       "group_code": "A",
       "position": 2,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 4,
       "group_code": "A",
       "position": 3,
-      "label": "无缘前二",
-      "class_name": "out"
+      "label": "第三待定",
+      "class_name": "progress"
     },
     {
       "team_id": 1,
       "group_code": "A",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "淘汰了",
+      "class_name": "out"
     },
     {
       "team_id": 8,
@@ -4357,7 +4357,7 @@
       "goal_difference": 6,
       "points": 9,
       "fifa_rank": 14,
-      "fair_play_points": -5,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4377,7 +4377,7 @@
       "goal_difference": -1,
       "points": 4,
       "fifa_rank": 60,
-      "fair_play_points": -12,
+      "fair_play_points": -13,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4397,7 +4397,7 @@
       "goal_difference": -1,
       "points": 3,
       "fifa_rank": 25,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5385,7 +5385,7 @@
       "goal_difference": -1,
       "points": 3,
       "fifa_rank": 25,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -5918,10 +5918,23 @@
         "all_finished": true,
         "pre": [
           {
+            "team_id": 2,
+            "team": "墨西哥",
+            "team_en": "墨西哥",
+            "position": 1,
+            "played": 2,
+            "goals_for": 4,
+            "goals_against": 0,
+            "goal_difference": 4,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
             "team_id": 3,
             "team": "南非",
             "team_en": "南非",
-            "position": 1,
+            "position": 2,
             "played": 2,
             "goals_for": 2,
             "goals_against": 1,
@@ -5931,27 +5944,14 @@
             "status_class": "locked-top3"
           },
           {
-            "team_id": 2,
-            "team": "墨西哥",
-            "team_en": "墨西哥",
-            "position": 2,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 0,
-            "goal_difference": 1,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
-          },
-          {
             "team_id": 1,
             "team": "捷克",
             "team_en": "捷克",
             "position": 3,
-            "played": 1,
+            "played": 2,
             "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
+            "goals_against": 4,
+            "goal_difference": -3,
             "points": 1,
             "status_label": "暂列第3",
             "status_class": "progress"
@@ -5976,12 +5976,12 @@
             "team": "墨西哥",
             "team_en": "墨西哥",
             "position": 1,
-            "played": 2,
-            "goals_for": 3,
+            "played": 3,
+            "goals_for": 6,
             "goals_against": 0,
-            "goal_difference": 3,
-            "points": 6,
-            "status_label": "锁定头名",
+            "goal_difference": 6,
+            "points": 9,
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -5994,8 +5994,8 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 4,
@@ -6007,21 +6007,21 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "无缘前二",
-            "status_class": "out"
+            "status_label": "第三第4",
+            "status_class": "third"
           },
           {
             "team_id": 1,
             "team": "捷克",
             "team_en": "捷克",
             "position": 4,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
-            "goals_against": 3,
-            "goal_difference": -1,
+            "goals_against": 6,
+            "goal_difference": -4,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰",
+            "status_class": "out"
           }
         ]
       }
@@ -7556,13 +7556,13 @@
             "team": "墨西哥",
             "team_en": "墨西哥",
             "position": 1,
-            "played": 1,
-            "goals_for": 2,
+            "played": 2,
+            "goals_for": 5,
             "goals_against": 0,
-            "goal_difference": 2,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "goal_difference": 5,
+            "points": 6,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 3,
@@ -7587,18 +7587,18 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 1,
             "team": "捷克",
             "team_en": "捷克",
             "position": 4,
-            "played": 1,
+            "played": 2,
             "goals_for": 1,
-            "goals_against": 2,
-            "goal_difference": -1,
+            "goals_against": 5,
+            "goal_difference": -4,
             "points": 0,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -7610,12 +7610,12 @@
             "team": "墨西哥",
             "team_en": "墨西哥",
             "position": 1,
-            "played": 2,
-            "goals_for": 3,
+            "played": 3,
+            "goals_for": 6,
             "goals_against": 0,
-            "goal_difference": 3,
-            "points": 6,
-            "status_label": "锁定头名",
+            "goal_difference": 6,
+            "points": 9,
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -7628,8 +7628,8 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 4,
@@ -7641,21 +7641,21 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "无缘前二",
-            "status_class": "out"
+            "status_label": "第三第4",
+            "status_class": "third"
           },
           {
             "team_id": 1,
             "team": "捷克",
             "team_en": "捷克",
             "position": 4,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
-            "goals_against": 3,
-            "goal_difference": -1,
+            "goals_against": 6,
+            "goal_difference": -4,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰",
+            "status_class": "out"
           }
         ]
       },
@@ -8953,7 +8953,7 @@
           53,
           54
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 2,
@@ -10555,6 +10555,14 @@
         "reds": 0
       },
       {
+        "name": "Julián Quiñones",
+        "team": "墨西哥",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kai Havertz",
         "team": "德国",
         "goals": 2,
@@ -10859,14 +10867,6 @@
         "reds": 0
       },
       {
-        "name": "Julián Quiñones",
-        "team": "墨西哥",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Junya Itō",
         "team": "日本",
         "goals": 1,
@@ -10942,7 +10942,7 @@
         "name": "Luis Romo",
         "team": "墨西哥",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -10973,6 +10973,14 @@
       {
         "name": "Martin Baturina",
         "team": "克罗地亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mateo Chávez",
+        "team": "墨西哥",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11179,6 +11187,14 @@
         "reds": 0
       },
       {
+        "name": "Thapelo Maseko",
+        "team": "南非",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Trézéguet",
         "team": "埃及",
         "goals": 1,
@@ -11213,6 +11229,14 @@
       {
         "name": "Yoane Wissa",
         "team": "刚果（金）",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Álvaro Fidalgo",
+        "team": "墨西哥",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11331,6 +11355,14 @@
         "reds": 1
       },
       {
+        "name": "Aubrey Modiba",
+        "team": "南非",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Aymeric Laporte",
         "team": "西班牙",
         "goals": 0,
@@ -11445,6 +11477,14 @@
       {
         "name": "Charles Pickel",
         "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Cho Gue-sung",
+        "team": "韩国",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -11616,6 +11656,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Edson Álvarez",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11880,6 +11928,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jorge Sánchez",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12358,7 +12414,7 @@
         "name": "Roberto Alvarado",
         "team": "墨西哥",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -12547,6 +12603,14 @@
         "reds": 0
       },
       {
+        "name": "Tshepang Moremi",
+        "team": "南非",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Tyler Adams",
         "team": "美国",
         "goals": 0,
@@ -12720,6 +12784,14 @@
         "name": "Nathan Saliba",
         "team": "加拿大",
         "goals": 1,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Roberto Alvarado",
+        "team": "墨西哥",
+        "goals": 0,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -12997,6 +13069,14 @@
         "reds": 0
       },
       {
+        "name": "Jorge Sánchez",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Josip Stanišić",
         "team": "克罗地亚",
         "goals": 0,
@@ -13079,6 +13159,14 @@
       {
         "name": "Luis Díaz",
         "team": "哥伦比亚",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Luis Romo",
+        "team": "墨西哥",
         "goals": 1,
         "assists": 1,
         "yellows": 0,
@@ -13253,14 +13341,6 @@
         "reds": 0
       },
       {
-        "name": "Roberto Alvarado",
-        "team": "墨西哥",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Rodrigo De Paul",
         "team": "阿根廷",
         "goals": 0,
@@ -13311,6 +13391,14 @@
       {
         "name": "Tim Payne",
         "team": "新西兰",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Tshepang Moremi",
+        "team": "南非",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13509,6 +13597,14 @@
         "reds": 1
       },
       {
+        "name": "Aubrey Modiba",
+        "team": "南非",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Aymen Hussein",
         "team": "伊拉克",
         "goals": 1,
@@ -13599,6 +13695,14 @@
       {
         "name": "Charles Pickel",
         "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Cho Gue-sung",
+        "team": "韩国",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13735,6 +13839,14 @@
       {
         "name": "Edin Džeko",
         "team": "波黑",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Edson Álvarez",
+        "team": "墨西哥",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -14135,7 +14247,7 @@
       {
         "name": "Julián Quiñones",
         "team": "墨西哥",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -14301,14 +14413,6 @@
         "reds": 0
       },
       {
-        "name": "Luis Romo",
-        "team": "墨西哥",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Mahmoud Abunada",
         "team": "卡塔尔",
         "goals": 0,
@@ -14359,6 +14463,14 @@
       {
         "name": "Martin Baturina",
         "team": "克罗地亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mateo Chávez",
+        "team": "墨西哥",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -14749,6 +14861,14 @@
         "reds": 0
       },
       {
+        "name": "Thapelo Maseko",
+        "team": "南非",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Themba Zwane",
         "team": "南非",
         "goals": 0,
@@ -14850,6 +14970,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Álvaro Fidalgo",
+        "team": "墨西哥",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -15039,6 +15167,14 @@
         "reds": 0
       },
       {
+        "name": "Aubrey Modiba",
+        "team": "南非",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Bernardo Silva",
         "team": "葡萄牙",
         "goals": 0,
@@ -15105,6 +15241,14 @@
       {
         "name": "Charles Pickel",
         "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Cho Gue-sung",
+        "team": "韩国",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15217,6 +15361,14 @@
       {
         "name": "Edin Džeko",
         "team": "波黑",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Edson Álvarez",
+        "team": "墨西哥",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16423,6 +16575,14 @@
         "reds": 0
       },
       {
+        "name": "Jorge Sánchez",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Joshua Kimmich",
         "team": "德国",
         "goals": 0,
@@ -16481,7 +16641,7 @@
       {
         "name": "Julián Quiñones",
         "team": "墨西哥",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16602,7 +16762,7 @@
         "name": "Luis Romo",
         "team": "墨西哥",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -16651,6 +16811,14 @@
         "team": "挪威",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mateo Chávez",
+        "team": "墨西哥",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -16946,7 +17114,7 @@
         "name": "Roberto Alvarado",
         "team": "墨西哥",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -17015,6 +17183,14 @@
         "reds": 0
       },
       {
+        "name": "Thapelo Maseko",
+        "team": "南非",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Tim Payne",
         "team": "新西兰",
         "goals": 0,
@@ -17027,6 +17203,14 @@
         "team": "埃及",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Tshepang Moremi",
+        "team": "南非",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -17089,6 +17273,14 @@
       {
         "name": "Yoane Wissa",
         "team": "刚果（金）",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Álvaro Fidalgo",
+        "team": "墨西哥",
         "goals": 1,
         "assists": 0,
         "yellows": 0,

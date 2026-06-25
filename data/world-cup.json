@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T23:34:47+00:00",
+  "generated_at": "2026-06-25T23:39:49+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1475,7 +1475,7 @@
       "stage": "F组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "35'",
+      "status_detail": "40'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Dallas · Dallas Stadium"
@@ -1495,7 +1495,7 @@
       "stage": "F组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "35'",
+      "status_detail": "40'",
       "score_home": 0,
       "score_away": 2,
       "venue": "Kansas City · Kansas City Stadium"

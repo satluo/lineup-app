@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T04:05:12+00:00",
+  "generated_at": "2026-06-26T04:10:16+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2048,9 +2048,9 @@
       "away_placeholder": "2G",
       "date": "2026-07-04",
       "time": "02:00",
-      "home": "2D",
+      "home": "澳大利亚",
       "away": "2G",
-      "home_en": "2D",
+      "home_en": "Australia",
       "away_en": "2G",
       "stage": "Round of 32",
       "stage_code": "round_of_32",

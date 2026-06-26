@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T21:05:15+00:00",
+  "generated_at": "2026-06-26T21:10:16+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1869,9 +1869,9 @@
       "date": "2026-07-01",
       "time": "01:00",
       "home": "科特迪瓦",
-      "away": "2I",
+      "away": "挪威",
       "home_en": "Ivory Coast",
-      "away_en": "2I",
+      "away_en": "Norway",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
       "status": "scheduled",
@@ -1888,9 +1888,9 @@
       "away_placeholder": "3CDFGH",
       "date": "2026-07-01",
       "time": "05:00",
-      "home": "1I",
+      "home": "法国",
       "away": "3CDFGH",
-      "home_en": "1I",
+      "home_en": "France",
       "away_en": "3CDFGH",
       "stage": "Round of 32",
       "stage_code": "round_of_32",

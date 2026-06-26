@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T19:16:40+00:00",
+  "generated_at": "2026-06-26T19:21:41+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1555,9 +1555,9 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "15'",
+      "status_detail": "20'",
       "score_home": 0,
-      "score_away": 1,
+      "score_away": 2,
       "venue": "Boston · Boston Stadium"
     },
     {
@@ -1575,7 +1575,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "14'",
+      "status_detail": "18'",
       "score_home": 1,
       "score_away": 0,
       "venue": "Toronto · Toronto Stadium"
@@ -4992,9 +4992,9 @@
       "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 7,
+      "goals_for": 8,
       "goals_against": 1,
-      "goal_difference": 6,
+      "goal_difference": 7,
       "points": 9,
       "fifa_rank": 3,
       "fair_play_points": 0,
@@ -5013,8 +5013,8 @@
       "drawn": 0,
       "lost": 1,
       "goals_for": 7,
-      "goals_against": 4,
-      "goal_difference": 3,
+      "goals_against": 5,
+      "goal_difference": 2,
       "points": 6,
       "fifa_rank": 31,
       "fair_play_points": 0,
@@ -9947,9 +9947,9 @@
             "team_en": "法国",
             "position": 1,
             "played": 3,
-            "goals_for": 7,
+            "goals_for": 8,
             "goals_against": 1,
-            "goal_difference": 6,
+            "goal_difference": 7,
             "points": 9,
             "status_label": "第1",
             "status_class": "locked-first"
@@ -9961,8 +9961,8 @@
             "position": 2,
             "played": 3,
             "goals_for": 7,
-            "goals_against": 4,
-            "goal_difference": 3,
+            "goals_against": 5,
+            "goal_difference": 2,
             "points": 6,
             "status_label": "第2",
             "status_class": "locked-top2"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T19:36:46+00:00",
+  "generated_at": "2026-06-26T19:41:49+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1555,7 +1555,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "35'",
+      "status_detail": "40'",
       "score_home": 1,
       "score_away": 3,
       "venue": "Boston · Boston Stadium"
@@ -1575,7 +1575,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "34'",
+      "status_detail": "39'",
       "score_home": 1,
       "score_away": 0,
       "venue": "Toronto · Toronto Stadium"

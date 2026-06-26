@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T20:22:02+00:00",
+  "generated_at": "2026-06-26T20:27:05+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1555,7 +1555,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "57'",
+      "status_detail": "59'",
       "score_home": 1,
       "score_away": 3,
       "venue": "Boston · Boston Stadium"
@@ -1575,8 +1575,8 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "54'",
-      "score_home": 1,
+      "status_detail": "59'",
+      "score_home": 3,
       "score_away": 0,
       "venue": "Toronto · Toronto Stadium"
     },
@@ -5032,9 +5032,9 @@
       "won": 1,
       "drawn": 0,
       "lost": 2,
-      "goals_for": 4,
+      "goals_for": 6,
       "goals_against": 6,
-      "goal_difference": -2,
+      "goal_difference": 0,
       "points": 3,
       "fifa_rank": 15,
       "fair_play_points": 0,
@@ -5053,8 +5053,8 @@
       "drawn": 0,
       "lost": 3,
       "goals_for": 1,
-      "goals_against": 8,
-      "goal_difference": -7,
+      "goals_against": 10,
+      "goal_difference": -9,
       "points": 0,
       "fifa_rank": 57,
       "fair_play_points": -2,
@@ -5393,6 +5393,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 36,
+      "team_name": "塞内加尔",
+      "team_name_en": "塞内加尔",
+      "team_name_zh": "塞内加尔",
+      "group_code": "I",
+      "played": 3,
+      "won": 1,
+      "drawn": 0,
+      "lost": 2,
+      "goals_for": 6,
+      "goals_against": 6,
+      "goal_difference": 0,
+      "points": 3,
+      "fifa_rank": 15,
+      "fair_play_points": 0,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 5,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 45,
       "team_name": "克罗地亚",
       "team_name_en": "克罗地亚",
@@ -5411,7 +5433,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 6,
       "qualifies_currently": true
     },
     {
@@ -5430,28 +5452,6 @@
       "points": 3,
       "fifa_rank": 25,
       "fair_play_points": -4,
-      "position": 3,
-      "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 6,
-      "qualifies_currently": true
-    },
-    {
-      "team_id": 36,
-      "team_name": "塞内加尔",
-      "team_name_en": "塞内加尔",
-      "team_name_zh": "塞内加尔",
-      "group_code": "I",
-      "played": 3,
-      "won": 1,
-      "drawn": 0,
-      "lost": 2,
-      "goals_for": 4,
-      "goals_against": 6,
-      "goal_difference": -2,
-      "points": 3,
-      "fifa_rank": 15,
-      "fair_play_points": 0,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -9745,7 +9745,7 @@
             "goals_against": 1,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第6",
+            "status_label": "第三第7",
             "status_class": "third"
           },
           {
@@ -9861,7 +9861,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第5",
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {
@@ -9973,11 +9973,11 @@
             "team_en": "塞内加尔",
             "position": 3,
             "played": 3,
-            "goals_for": 4,
+            "goals_for": 6,
             "goals_against": 6,
-            "goal_difference": -2,
+            "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第9",
+            "status_label": "第三第5",
             "status_class": "third"
           },
           {
@@ -9987,8 +9987,8 @@
             "position": 4,
             "played": 3,
             "goals_for": 1,
-            "goals_against": 8,
-            "goal_difference": -7,
+            "goals_against": 10,
+            "goal_difference": -9,
             "points": 0,
             "status_label": "淘汰",
             "status_class": "out"

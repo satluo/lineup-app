@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T04:00:12+00:00",
+  "generated_at": "2026-06-26T04:05:12+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1514,9 +1514,9 @@
       "away_en": "United States",
       "stage": "D组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+7'",
-      "score_home": 2,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 3,
       "score_away": 2,
       "venue": "Los Angeles · Los Angeles Stadium"
     },
@@ -2668,18 +2668,18 @@
       "team_name_en": "美国",
       "team_name_zh": "美国",
       "group_code": "D",
-      "played": 2,
+      "played": 3,
       "won": 2,
       "drawn": 0,
-      "lost": 0,
-      "goals_for": 6,
-      "goals_against": 1,
-      "goal_difference": 5,
+      "lost": 1,
+      "goals_for": 8,
+      "goals_against": 4,
+      "goal_difference": 4,
       "points": 6,
       "fifa_rank": 17,
       "fair_play_points": -5,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2699,7 +2699,7 @@
       "fifa_rank": 27,
       "fair_play_points": -5,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2719,7 +2719,7 @@
       "fifa_rank": 41,
       "fair_play_points": -11,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2728,18 +2728,18 @@
       "team_name_en": "土耳其",
       "team_name_zh": "土耳其",
       "group_code": "D",
-      "played": 2,
-      "won": 0,
+      "played": 3,
+      "won": 1,
       "drawn": 0,
       "lost": 2,
-      "goals_for": 0,
-      "goals_against": 3,
-      "goal_difference": -3,
-      "points": 0,
+      "goals_for": 3,
+      "goals_against": 5,
+      "goal_difference": -2,
+      "points": 3,
       "fifa_rank": 22,
       "fair_play_points": -2,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3467,7 +3467,7 @@
       "fifa_rank": 41,
       "fair_play_points": -11,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated",
       "third_place_position": 4,
       "qualifies_currently": true
@@ -3757,8 +3757,8 @@
       "group_code": "D",
       "group_position": 1,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group D completed"
     },
     {
       "team_id": 13,
@@ -3768,8 +3768,8 @@
       "group_code": "D",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group D completed"
     },
     {
       "team_id": 14,
@@ -3779,8 +3779,8 @@
       "group_code": "D",
       "group_position": 3,
       "slot_type": "best_third",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group D completed"
     },
     {
       "team_id": 19,
@@ -4092,22 +4092,22 @@
       "team_id": 16,
       "group_code": "D",
       "position": 1,
-      "label": "锁定头名",
+      "label": "确定头名",
       "class_name": "locked-first"
     },
     {
       "team_id": 13,
       "group_code": "D",
       "position": 2,
-      "label": "锁定前二",
+      "label": "确定前二",
       "class_name": "locked-top2"
     },
     {
       "team_id": 14,
       "group_code": "D",
       "position": 3,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "第三待定",
+      "class_name": "progress"
     },
     {
       "team_id": 15,
@@ -4590,12 +4590,12 @@
       "group_code": "D",
       "played": 3,
       "won": 2,
-      "drawn": 1,
-      "lost": 0,
+      "drawn": 0,
+      "lost": 1,
       "goals_for": 8,
-      "goals_against": 3,
-      "goal_difference": 5,
-      "points": 7,
+      "goals_against": 4,
+      "goal_difference": 4,
+      "points": 6,
       "fifa_rank": 17,
       "fair_play_points": -5,
       "position": 1,
@@ -4649,13 +4649,13 @@
       "team_name_zh": "土耳其",
       "group_code": "D",
       "played": 3,
-      "won": 0,
-      "drawn": 1,
+      "won": 1,
+      "drawn": 0,
       "lost": 2,
-      "goals_for": 2,
+      "goals_for": 3,
       "goals_against": 5,
-      "goal_difference": -3,
-      "points": 1,
+      "goal_difference": -2,
+      "points": 3,
       "fifa_rank": 22,
       "fair_play_points": -2,
       "position": 4,
@@ -6176,30 +6176,30 @@
             "status_class": "locked-top3"
           },
           {
-            "team_id": 16,
-            "team": "美国",
-            "team_en": "美国",
-            "position": 3,
-            "played": 1,
-            "goals_for": 2,
-            "goals_against": 0,
-            "goal_difference": 2,
-            "points": 3,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
             "team_id": 15,
             "team": "土耳其",
             "team_en": "土耳其",
-            "position": 4,
-            "played": 2,
-            "goals_for": 0,
-            "goals_against": 3,
-            "goal_difference": -3,
-            "points": 0,
+            "position": 3,
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 5,
+            "goal_difference": -2,
+            "points": 3,
             "status_label": "无缘前二",
             "status_class": "out"
+          },
+          {
+            "team_id": 16,
+            "team": "美国",
+            "team_en": "美国",
+            "position": 4,
+            "played": 2,
+            "goals_for": 4,
+            "goals_against": 3,
+            "goal_difference": 1,
+            "points": 3,
+            "status_label": "暂列第4",
+            "status_class": "progress"
           }
         ],
         "current": [
@@ -6208,12 +6208,12 @@
             "team": "美国",
             "team_en": "美国",
             "position": 1,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 1,
-            "goal_difference": 5,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 4,
+            "goal_difference": 4,
             "points": 6,
-            "status_label": "锁定头名",
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -6226,7 +6226,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 4,
-            "status_label": "锁定前二",
+            "status_label": "第2",
             "status_class": "locked-top2"
           },
           {
@@ -6239,20 +6239,20 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第三第4",
+            "status_class": "third"
           },
           {
             "team_id": 15,
             "team": "土耳其",
             "team_en": "土耳其",
             "position": 4,
-            "played": 2,
-            "goals_for": 0,
-            "goals_against": 3,
-            "goal_difference": -3,
-            "points": 0,
-            "status_label": "淘汰了",
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 5,
+            "goal_difference": -2,
+            "points": 3,
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -6502,10 +6502,10 @@
             "team": "美国",
             "team_en": "美国",
             "position": 1,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 1,
-            "goal_difference": 5,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 4,
+            "goal_difference": 4,
             "points": 6,
             "status_label": "锁定前二",
             "status_class": "locked-top2"
@@ -6524,28 +6524,28 @@
             "status_class": "locked-top3"
           },
           {
+            "team_id": 15,
+            "team": "土耳其",
+            "team_en": "土耳其",
+            "position": 3,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 3,
+            "goal_difference": 0,
+            "points": 3,
+            "status_label": "暂列第3",
+            "status_class": "progress"
+          },
+          {
             "team_id": 13,
             "team": "澳大利亚",
             "team_en": "澳大利亚",
-            "position": 3,
+            "position": 4,
             "played": 2,
             "goals_for": 0,
             "goals_against": 2,
             "goal_difference": -2,
             "points": 1,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 15,
-            "team": "土耳其",
-            "team_en": "土耳其",
-            "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 1,
-            "goal_difference": -1,
-            "points": 0,
             "status_label": "暂列第4",
             "status_class": "progress"
           }
@@ -6556,12 +6556,12 @@
             "team": "美国",
             "team_en": "美国",
             "position": 1,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 1,
-            "goal_difference": 5,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 4,
+            "goal_difference": 4,
             "points": 6,
-            "status_label": "锁定头名",
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -6574,7 +6574,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 4,
-            "status_label": "锁定前二",
+            "status_label": "第2",
             "status_class": "locked-top2"
           },
           {
@@ -6587,20 +6587,20 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第三第4",
+            "status_class": "third"
           },
           {
             "team_id": 15,
             "team": "土耳其",
             "team_en": "土耳其",
             "position": 4,
-            "played": 2,
-            "goals_for": 0,
-            "goals_against": 3,
-            "goal_difference": -3,
-            "points": 0,
-            "status_label": "淘汰了",
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 5,
+            "goal_difference": -2,
+            "points": 3,
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -7915,41 +7915,41 @@
             "status_class": "locked-top3"
           },
           {
+            "team_id": 15,
+            "team": "土耳其",
+            "team_en": "土耳其",
+            "position": 2,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 4,
+            "goal_difference": -1,
+            "points": 3,
+            "status_label": "暂列第2",
+            "status_class": "progress"
+          },
+          {
             "team_id": 16,
             "team": "美国",
             "team_en": "美国",
-            "position": 2,
-            "played": 1,
-            "goals_for": 4,
-            "goals_against": 1,
-            "goal_difference": 3,
+            "position": 3,
+            "played": 2,
+            "goals_for": 6,
+            "goals_against": 4,
+            "goal_difference": 2,
             "points": 3,
-            "status_label": "暂列第2",
+            "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
             "team_id": 14,
             "team": "巴拉圭",
             "team_en": "巴拉圭",
-            "position": 3,
+            "position": 4,
             "played": 2,
             "goals_for": 1,
             "goals_against": 4,
             "goal_difference": -3,
             "points": 1,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 15,
-            "team": "土耳其",
-            "team_en": "土耳其",
-            "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 2,
-            "goal_difference": -2,
-            "points": 0,
             "status_label": "暂列第4",
             "status_class": "progress"
           }
@@ -7960,12 +7960,12 @@
             "team": "美国",
             "team_en": "美国",
             "position": 1,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 1,
-            "goal_difference": 5,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 4,
+            "goal_difference": 4,
             "points": 6,
-            "status_label": "锁定头名",
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -7978,7 +7978,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 4,
-            "status_label": "锁定前二",
+            "status_label": "第2",
             "status_class": "locked-top2"
           },
           {
@@ -7991,20 +7991,20 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第三第4",
+            "status_class": "third"
           },
           {
             "team_id": 15,
             "team": "土耳其",
             "team_en": "土耳其",
             "position": 4,
-            "played": 2,
-            "goals_for": 0,
-            "goals_against": 3,
-            "goal_difference": -3,
-            "points": 0,
-            "status_label": "淘汰了",
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 5,
+            "goal_difference": -2,
+            "points": 3,
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -9303,7 +9303,7 @@
           59,
           60
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 16,
@@ -9366,9 +9366,9 @@
             "position": 1,
             "played": 3,
             "goals_for": 8,
-            "goals_against": 3,
-            "goal_difference": 5,
-            "points": 7,
+            "goals_against": 4,
+            "goal_difference": 4,
+            "points": 6,
             "status_label": "第1",
             "status_class": "locked-first"
           },
@@ -9404,10 +9404,10 @@
             "team_en": "土耳其",
             "position": 4,
             "played": 3,
-            "goals_for": 2,
+            "goals_for": 3,
             "goals_against": 5,
-            "goal_difference": -3,
-            "points": 1,
+            "goal_difference": -2,
+            "points": 3,
             "status_label": "淘汰",
             "status_class": "out"
           }

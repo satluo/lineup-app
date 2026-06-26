@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T03:57:18+00:00",
+  "generated_at": "2026-06-26T04:00:12+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1515,7 +1515,7 @@
       "stage": "D组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+4'",
+      "status_detail": "90'+7'",
       "score_home": 2,
       "score_away": 2,
       "venue": "Los Angeles · Los Angeles Stadium"
@@ -1534,8 +1534,8 @@
       "away_en": "Australia",
       "stage": "D组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+4'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 0,
       "score_away": 0,
       "venue": "San Francisco Bay Area · San Francisco Bay Area Stadium"
@@ -2677,7 +2677,7 @@
       "goal_difference": 5,
       "points": 6,
       "fifa_rank": 17,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -2688,16 +2688,16 @@
       "team_name_en": "澳大利亚",
       "team_name_zh": "澳大利亚",
       "group_code": "D",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
       "goals_for": 2,
       "goals_against": 2,
       "goal_difference": 0,
-      "points": 3,
+      "points": 4,
       "fifa_rank": 27,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -2708,16 +2708,16 @@
       "team_name_en": "巴拉圭",
       "team_name_zh": "巴拉圭",
       "group_code": "D",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
       "goals_for": 2,
       "goals_against": 4,
       "goal_difference": -2,
-      "points": 3,
+      "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -10,
+      "fair_play_points": -11,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3451,6 +3451,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 14,
+      "team_name": "巴拉圭",
+      "team_name_en": "巴拉圭",
+      "team_name_zh": "巴拉圭",
+      "group_code": "D",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 2,
+      "goals_against": 4,
+      "goal_difference": -2,
+      "points": 4,
+      "fifa_rank": 41,
+      "fair_play_points": -11,
+      "position": 3,
+      "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 4,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 45,
       "team_name": "克罗地亚",
       "team_name_en": "克罗地亚",
@@ -3469,7 +3491,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 5,
       "qualifies_currently": true
     },
     {
@@ -3491,7 +3513,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 6,
       "qualifies_currently": true
     },
     {
@@ -3510,28 +3532,6 @@
       "points": 3,
       "fifa_rank": 28,
       "fair_play_points": -1,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 6,
-      "qualifies_currently": true
-    },
-    {
-      "team_id": 14,
-      "team_name": "巴拉圭",
-      "team_name_en": "巴拉圭",
-      "team_name_zh": "巴拉圭",
-      "group_code": "D",
-      "played": 2,
-      "won": 1,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 2,
-      "goals_against": 4,
-      "goal_difference": -2,
-      "points": 3,
-      "fifa_rank": 41,
-      "fair_play_points": -10,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -4099,8 +4099,8 @@
       "team_id": 13,
       "group_code": "D",
       "position": 2,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "锁定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 14,
@@ -4597,7 +4597,7 @@
       "goal_difference": 5,
       "points": 7,
       "fifa_rank": 17,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4617,7 +4617,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 27,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4637,7 +4637,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -10,
+      "fair_play_points": -11,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5385,7 +5385,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -10,
+      "fair_play_points": -11,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -6007,7 +6007,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第5",
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {
@@ -6150,28 +6150,15 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 16,
-            "team": "美国",
-            "team_en": "美国",
-            "position": 1,
-            "played": 1,
-            "goals_for": 2,
-            "goals_against": 0,
-            "goal_difference": 2,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
-          },
-          {
             "team_id": 14,
             "team": "巴拉圭",
             "team_en": "巴拉圭",
-            "position": 2,
-            "played": 1,
+            "position": 1,
+            "played": 2,
             "goals_for": 1,
             "goals_against": 0,
             "goal_difference": 1,
-            "points": 3,
+            "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
           },
@@ -6179,14 +6166,27 @@
             "team_id": 13,
             "team": "澳大利亚",
             "team_en": "澳大利亚",
-            "position": 3,
-            "played": 2,
+            "position": 2,
+            "played": 3,
             "goals_for": 2,
             "goals_against": 2,
             "goal_difference": 0,
-            "points": 3,
+            "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
+          },
+          {
+            "team_id": 16,
+            "team": "美国",
+            "team_en": "美国",
+            "position": 3,
+            "played": 1,
+            "goals_for": 2,
+            "goals_against": 0,
+            "goal_difference": 2,
+            "points": 3,
+            "status_label": "暂列第3",
+            "status_class": "progress"
           },
           {
             "team_id": 15,
@@ -6198,8 +6198,8 @@
             "goals_against": 3,
             "goal_difference": -3,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ],
         "current": [
@@ -6221,24 +6221,24 @@
             "team": "澳大利亚",
             "team_en": "澳大利亚",
             "position": 2,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
             "goals_against": 2,
             "goal_difference": 0,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 4,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 14,
             "team": "巴拉圭",
             "team_en": "巴拉圭",
             "position": 3,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
             "goals_against": 4,
             "goal_difference": -2,
-            "points": 3,
+            "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
           },
@@ -6507,44 +6507,44 @@
             "goals_against": 1,
             "goal_difference": 5,
             "points": 6,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 14,
             "team": "巴拉圭",
             "team_en": "巴拉圭",
             "position": 2,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
             "goals_against": 4,
             "goal_difference": -2,
-            "points": 3,
-            "status_label": "暂列第2",
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
+            "team_id": 13,
+            "team": "澳大利亚",
+            "team_en": "澳大利亚",
+            "position": 3,
+            "played": 2,
+            "goals_for": 0,
+            "goals_against": 2,
+            "goal_difference": -2,
+            "points": 1,
+            "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
             "team_id": 15,
             "team": "土耳其",
             "team_en": "土耳其",
-            "position": 3,
+            "position": 4,
             "played": 1,
             "goals_for": 0,
             "goals_against": 1,
             "goal_difference": -1,
-            "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 13,
-            "team": "澳大利亚",
-            "team_en": "澳大利亚",
-            "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 2,
-            "goal_difference": -2,
             "points": 0,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -6569,24 +6569,24 @@
             "team": "澳大利亚",
             "team_en": "澳大利亚",
             "position": 2,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
             "goals_against": 2,
             "goal_difference": 0,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 4,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 14,
             "team": "巴拉圭",
             "team_en": "巴拉圭",
             "position": 3,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
             "goals_against": 4,
             "goal_difference": -2,
-            "points": 3,
+            "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
           },
@@ -7641,7 +7641,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第5",
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {
@@ -7902,53 +7902,53 @@
         "all_finished": true,
         "pre": [
           {
+            "team_id": 13,
+            "team": "澳大利亚",
+            "team_en": "澳大利亚",
+            "position": 1,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 0,
+            "goal_difference": 2,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
             "team_id": 16,
             "team": "美国",
             "team_en": "美国",
-            "position": 1,
+            "position": 2,
             "played": 1,
             "goals_for": 4,
             "goals_against": 1,
             "goal_difference": 3,
             "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 13,
-            "team": "澳大利亚",
-            "team_en": "澳大利亚",
-            "position": 2,
-            "played": 1,
-            "goals_for": 2,
-            "goals_against": 0,
-            "goal_difference": 2,
-            "points": 3,
             "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 15,
-            "team": "土耳其",
-            "team_en": "土耳其",
-            "position": 3,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 2,
-            "goal_difference": -2,
-            "points": 0,
-            "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
             "team_id": 14,
             "team": "巴拉圭",
             "team_en": "巴拉圭",
-            "position": 4,
-            "played": 1,
+            "position": 3,
+            "played": 2,
             "goals_for": 1,
             "goals_against": 4,
             "goal_difference": -3,
+            "points": 1,
+            "status_label": "暂列第3",
+            "status_class": "progress"
+          },
+          {
+            "team_id": 15,
+            "team": "土耳其",
+            "team_en": "土耳其",
+            "position": 4,
+            "played": 1,
+            "goals_for": 0,
+            "goals_against": 2,
+            "goal_difference": -2,
             "points": 0,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -7973,24 +7973,24 @@
             "team": "澳大利亚",
             "team_en": "澳大利亚",
             "position": 2,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
             "goals_against": 2,
             "goal_difference": 0,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 4,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 14,
             "team": "巴拉圭",
             "team_en": "巴拉圭",
             "position": 3,
-            "played": 2,
+            "played": 3,
             "goals_for": 2,
             "goals_against": 4,
             "goal_difference": -2,
-            "points": 3,
+            "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
           },
@@ -9045,7 +9045,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第5",
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {
@@ -9745,7 +9745,7 @@
             "goals_against": 1,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第5",
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {
@@ -9861,7 +9861,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第4",
+            "status_label": "第三第5",
             "status_class": "third"
           },
           {
@@ -10699,10 +10699,34 @@
         "reds": 0
       },
       {
+        "name": "Arda Güler",
+        "team": "土耳其",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Auston Trusty",
+        "team": "美国",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Aymen Hussein",
         "team": "伊拉克",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Baris Alper Yilmaz",
+        "team": "土耳其",
+        "goals": 1,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -11227,6 +11251,14 @@
         "reds": 0
       },
       {
+        "name": "Sebastian Berhalter",
+        "team": "美国",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Soufiane Rahimi",
         "team": "摩洛哥",
         "goals": 1,
@@ -11687,7 +11719,7 @@
         "team": "巴拉圭",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -11925,6 +11957,14 @@
       {
         "name": "Iñaki Williams",
         "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jackson Irvine",
+        "team": "澳大利亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12416,6 +12456,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Orkun Kökçü",
+        "team": "土耳其",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -13037,6 +13085,14 @@
         "reds": 0
       },
       {
+        "name": "Baris Alper Yilmaz",
+        "team": "土耳其",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Brandon Thomas-Asante",
         "team": "加纳",
         "goals": 0,
@@ -13437,6 +13493,14 @@
         "reds": 0
       },
       {
+        "name": "Orkun Kökçü",
+        "team": "土耳其",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ousmane Dembélé",
         "team": "法国",
         "goals": 1,
@@ -13554,6 +13618,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Sebastian Berhalter",
+        "team": "美国",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13805,6 +13877,14 @@
         "reds": 0
       },
       {
+        "name": "Arda Güler",
+        "team": "土耳其",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Assim Madibo",
         "team": "卡塔尔",
         "goals": 0,
@@ -13818,6 +13898,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Auston Trusty",
+        "team": "美国",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14033,7 +14121,7 @@
         "team": "巴拉圭",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14335,6 +14423,14 @@
       {
         "name": "Iñaki Williams",
         "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jackson Irvine",
+        "team": "澳大利亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15359,6 +15455,14 @@
         "reds": 0
       },
       {
+        "name": "Diego Gómez",
+        "team": "巴拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Gervane Kastaneer",
         "team": "库拉索",
         "goals": 0,
@@ -15647,14 +15751,6 @@
         "reds": 0
       },
       {
-        "name": "Diego Gómez",
-        "team": "巴拉圭",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Diney Borges",
         "team": "佛得角",
         "goals": 0,
@@ -15841,6 +15937,14 @@
       {
         "name": "Iñaki Williams",
         "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jackson Irvine",
+        "team": "澳大利亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16295,6 +16399,14 @@
         "reds": 0
       },
       {
+        "name": "Sebastian Berhalter",
+        "team": "美国",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
         "goals": 0,
@@ -16495,10 +16607,26 @@
         "reds": 0
       },
       {
+        "name": "Arda Güler",
+        "team": "土耳其",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Arthur Masuaku",
         "team": "刚果（金）",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Auston Trusty",
+        "team": "美国",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -16522,6 +16650,14 @@
         "name": "Aymeric Laporte",
         "team": "西班牙",
         "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Baris Alper Yilmaz",
+        "team": "土耳其",
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -17427,6 +17563,14 @@
         "team": "突尼斯",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Orkun Kökçü",
+        "team": "土耳其",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

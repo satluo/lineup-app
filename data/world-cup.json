@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T00:55:25+00:00",
+  "generated_at": "2026-06-26T01:00:12+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1474,8 +1474,8 @@
       "away_en": "Sweden",
       "stage": "F组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+4'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 1,
       "score_away": 1,
       "venue": "Dallas · Dallas Stadium"
@@ -2839,7 +2839,7 @@
       "fifa_rank": 8,
       "fair_play_points": -3,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2848,18 +2848,18 @@
       "team_name_en": "日本",
       "team_name_zh": "日本",
       "group_code": "F",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 0,
-      "goals_for": 6,
-      "goals_against": 2,
+      "goals_for": 7,
+      "goals_against": 3,
       "goal_difference": 4,
-      "points": 4,
+      "points": 5,
       "fifa_rank": 18,
       "fair_play_points": 0,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2868,18 +2868,18 @@
       "team_name_en": "瑞典",
       "team_name_zh": "瑞典",
       "group_code": "F",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
-      "goals_for": 6,
-      "goals_against": 6,
+      "goals_for": 7,
+      "goals_against": 7,
       "goal_difference": 0,
-      "points": 3,
+      "points": 4,
       "fifa_rank": 38,
       "fair_play_points": -3,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2899,7 +2899,7 @@
       "fifa_rank": 45,
       "fair_play_points": -1,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3385,6 +3385,28 @@
   ],
   "best_thirds": [
     {
+      "team_id": 23,
+      "team_name": "瑞典",
+      "team_name_en": "瑞典",
+      "team_name_zh": "瑞典",
+      "group_code": "F",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 7,
+      "goals_against": 7,
+      "goal_difference": 0,
+      "points": 4,
+      "fifa_rank": 38,
+      "fair_play_points": -3,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 1,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 18,
       "team_name": "厄瓜多尔",
       "team_name_en": "厄瓜多尔",
@@ -3403,7 +3425,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 1,
+      "third_place_position": 2,
       "qualifies_currently": true
     },
     {
@@ -3424,28 +3446,6 @@
       "fair_play_points": -10,
       "position": 3,
       "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 2,
-      "qualifies_currently": true
-    },
-    {
-      "team_id": 23,
-      "team_name": "瑞典",
-      "team_name_en": "瑞典",
-      "team_name_zh": "瑞典",
-      "group_code": "F",
-      "played": 2,
-      "won": 1,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 6,
-      "goals_against": 6,
-      "goal_difference": 0,
-      "points": 3,
-      "fifa_rank": 38,
-      "fair_play_points": -3,
-      "position": 3,
-      "group_complete": false,
       "ranking_status": "calculated",
       "third_place_position": 3,
       "qualifies_currently": true
@@ -3823,8 +3823,8 @@
       "group_code": "F",
       "group_position": 1,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group F completed"
     },
     {
       "team_id": 21,
@@ -3834,8 +3834,8 @@
       "group_code": "F",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group F completed"
     },
     {
       "team_id": 23,
@@ -3845,8 +3845,8 @@
       "group_code": "F",
       "group_position": 3,
       "slot_type": "best_third",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group F completed"
     },
     {
       "team_id": 26,
@@ -4148,22 +4148,22 @@
       "team_id": 22,
       "group_code": "F",
       "position": 1,
-      "label": "锁定前二",
-      "class_name": "locked-top2"
+      "label": "确定头名",
+      "class_name": "locked-first"
     },
     {
       "team_id": 21,
       "group_code": "F",
       "position": 2,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 23,
       "group_code": "F",
       "position": 3,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "第三晋级",
+      "class_name": "third"
     },
     {
       "team_id": 24,
@@ -6124,7 +6124,7 @@
             "goals_against": 6,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第2",
+            "status_label": "第三第3",
             "status_class": "third"
           },
           {
@@ -6356,7 +6356,7 @@
             "goals_against": 6,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第2",
+            "status_label": "第三第3",
             "status_class": "third"
           },
           {
@@ -6705,7 +6705,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 4,
-            "status_label": "第三第1",
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -6741,32 +6741,32 @@
             "goals_against": 2,
             "goal_difference": 6,
             "points": 6,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 21,
             "team": "日本",
             "team_en": "日本",
             "position": 2,
-            "played": 1,
-            "goals_for": 4,
-            "goals_against": 0,
+            "played": 2,
+            "goals_for": 5,
+            "goals_against": 1,
             "goal_difference": 4,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 23,
             "team": "瑞典",
             "team_en": "瑞典",
             "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 5,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 6,
             "goal_difference": -4,
-            "points": 0,
+            "points": 1,
             "status_label": "暂列第3",
             "status_class": "progress"
           },
@@ -6780,8 +6780,8 @@
             "goals_against": 7,
             "goal_difference": -6,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ],
         "current": [
@@ -6795,34 +6795,34 @@
             "goals_against": 4,
             "goal_difference": 6,
             "points": 7,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "status_label": "第1",
+            "status_class": "locked-first"
           },
           {
             "team_id": 21,
             "team": "日本",
             "team_en": "日本",
             "position": 2,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 2,
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 3,
             "goal_difference": 4,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 5,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 23,
             "team": "瑞典",
             "team_en": "瑞典",
             "position": 3,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 6,
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 7,
             "goal_difference": 0,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 4,
+            "status_label": "第三第1",
+            "status_class": "third"
           },
           {
             "team_id": 24,
@@ -6834,7 +6834,7 @@
             "goals_against": 12,
             "goal_difference": -10,
             "points": 0,
-            "status_label": "淘汰了",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -7757,7 +7757,7 @@
             "goals_against": 6,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第2",
+            "status_label": "第三第3",
             "status_class": "third"
           },
           {
@@ -8109,7 +8109,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 4,
-            "status_label": "第三第1",
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -8136,10 +8136,23 @@
         "all_finished": true,
         "pre": [
           {
+            "team_id": 23,
+            "team": "瑞典",
+            "team_en": "瑞典",
+            "position": 1,
+            "played": 2,
+            "goals_for": 6,
+            "goals_against": 2,
+            "goal_difference": 4,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
             "team_id": 22,
             "team": "荷兰",
             "team_en": "荷兰",
-            "position": 1,
+            "position": 2,
             "played": 2,
             "goals_for": 5,
             "goals_against": 3,
@@ -8149,28 +8162,15 @@
             "status_class": "locked-top3"
           },
           {
-            "team_id": 23,
-            "team": "瑞典",
-            "team_en": "瑞典",
-            "position": 2,
-            "played": 1,
-            "goals_for": 5,
-            "goals_against": 1,
-            "goal_difference": 4,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
-          },
-          {
             "team_id": 21,
             "team": "日本",
             "team_en": "日本",
             "position": 3,
-            "played": 1,
-            "goals_for": 2,
-            "goals_against": 2,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 3,
             "goal_difference": 0,
-            "points": 1,
+            "points": 2,
             "status_label": "暂列第3",
             "status_class": "progress"
           },
@@ -8199,34 +8199,34 @@
             "goals_against": 4,
             "goal_difference": 6,
             "points": 7,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "status_label": "第1",
+            "status_class": "locked-first"
           },
           {
             "team_id": 21,
             "team": "日本",
             "team_en": "日本",
             "position": 2,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 2,
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 3,
             "goal_difference": 4,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 5,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 23,
             "team": "瑞典",
             "team_en": "瑞典",
             "position": 3,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 6,
+            "played": 3,
+            "goals_for": 7,
+            "goals_against": 7,
             "goal_difference": 0,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 4,
+            "status_label": "第三第1",
+            "status_class": "third"
           },
           {
             "team_id": 24,
@@ -8238,7 +8238,7 @@
             "goals_against": 12,
             "goal_difference": -10,
             "points": 0,
-            "status_label": "淘汰了",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -9161,7 +9161,7 @@
             "goals_against": 6,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第2",
+            "status_label": "第三第3",
             "status_class": "third"
           },
           {
@@ -9535,7 +9535,7 @@
           57,
           58
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 22,
@@ -10095,7 +10095,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第4",
+            "status_label": "第三第5",
             "status_class": "third"
           },
           {
@@ -10327,7 +10327,7 @@
             "goals_against": 4,
             "goal_difference": -1,
             "points": 4,
-            "status_label": "第三第3",
+            "status_label": "第三第4",
             "status_class": "third"
           },
           {

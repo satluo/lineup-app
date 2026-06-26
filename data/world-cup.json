@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T02:21:30+00:00",
+  "generated_at": "2026-06-26T02:26:34+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1515,7 +1515,7 @@
       "stage": "D组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "21'",
+      "status_detail": "26'",
       "score_home": 1,
       "score_away": 1,
       "venue": "Los Angeles · Los Angeles Stadium"
@@ -1535,7 +1535,7 @@
       "stage": "D组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "21'",
+      "status_detail": "25'",
       "score_home": 0,
       "score_away": 0,
       "venue": "San Francisco Bay Area · San Francisco Bay Area Stadium"

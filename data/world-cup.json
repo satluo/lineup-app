@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T23:54:57+00:00",
+  "generated_at": "2026-06-25T23:58:04+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -4050,8 +4050,8 @@
       "team_id": 5,
       "group_code": "B",
       "position": 3,
-      "label": "第三待定",
-      "class_name": "progress"
+      "label": "第三晋级",
+      "class_name": "third"
     },
     {
       "team_id": 7,
@@ -4134,8 +4134,8 @@
       "team_id": 18,
       "group_code": "E",
       "position": 3,
-      "label": "第三待定",
-      "class_name": "progress"
+      "label": "第三晋级",
+      "class_name": "third"
     },
     {
       "team_id": 17,

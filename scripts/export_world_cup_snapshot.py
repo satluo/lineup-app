@@ -270,6 +270,7 @@ def build_snapshot(source_root: Path) -> dict:
     import world_cup_data  # Imported only by the local exporter, never by the site.
     from world_cup_pages.panorama import (
         _build_group_projection_map,
+        _build_third_place_lock_map,
         _group_knockout_route_summary,
         _group_status_label,
         _third_place_slot_overrides,
@@ -289,9 +290,10 @@ def build_snapshot(source_root: Path) -> dict:
         daily_group_projections = read_daily_group_projections(source_matches)
         projection_map = _build_group_projection_map(standings, source_matches)
         best_thirds_map = {row["team_id"]: row for row in best_thirds}
+        third_lock_map = _build_third_place_lock_map(standings, source_matches)
         group_statuses = []
         for row in standings:
-            label, class_name = _group_status_label(row, best_thirds_map, projection_map)
+            label, class_name = _group_status_label(row, best_thirds_map, projection_map, third_lock_map)
             group_statuses.append(
                 {
                     "team_id": row["team_id"],

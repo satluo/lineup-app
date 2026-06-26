@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T20:57:15+00:00",
+  "generated_at": "2026-06-26T21:00:13+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1554,10 +1554,10 @@
       "away_en": "France",
       "stage": "I组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+3'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 1,
-      "score_away": 3,
+      "score_away": 4,
       "venue": "Boston · Boston Stadium"
     },
     {
@@ -1575,7 +1575,7 @@
       "stage": "I组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "89'",
+      "status_detail": "90'+2'",
       "score_home": 5,
       "score_away": 0,
       "venue": "Toronto · Toronto Stadium"
@@ -3068,16 +3068,16 @@
       "team_name_en": "法国",
       "team_name_zh": "法国",
       "group_code": "I",
-      "played": 2,
-      "won": 2,
+      "played": 3,
+      "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 6,
-      "goals_against": 1,
-      "goal_difference": 5,
-      "points": 6,
+      "goals_for": 10,
+      "goals_against": 2,
+      "goal_difference": 8,
+      "points": 9,
       "fifa_rank": 3,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3088,16 +3088,16 @@
       "team_name_en": "挪威",
       "team_name_zh": "挪威",
       "group_code": "I",
-      "played": 2,
+      "played": 3,
       "won": 2,
       "drawn": 0,
-      "lost": 0,
-      "goals_for": 7,
-      "goals_against": 3,
-      "goal_difference": 4,
+      "lost": 1,
+      "goals_for": 8,
+      "goals_against": 7,
+      "goal_difference": 1,
       "points": 6,
       "fifa_rank": 31,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3117,7 +3117,7 @@
       "goal_difference": -3,
       "points": 0,
       "fifa_rank": 15,
-      "fair_play_points": 0,
+      "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3137,7 +3137,7 @@
       "goal_difference": -6,
       "points": 0,
       "fifa_rank": 57,
-      "fair_play_points": -2,
+      "fair_play_points": -8,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3641,7 +3641,7 @@
       "goal_difference": -3,
       "points": 0,
       "fifa_rank": 15,
-      "fair_play_points": 0,
+      "fair_play_points": -2,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -4232,8 +4232,8 @@
       "team_id": 33,
       "group_code": "I",
       "position": 1,
-      "label": "锁定前二",
-      "class_name": "locked-top2"
+      "label": "锁定头名",
+      "class_name": "locked-first"
     },
     {
       "team_id": 35,
@@ -4992,12 +4992,12 @@
       "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 9,
+      "goals_for": 10,
       "goals_against": 2,
-      "goal_difference": 7,
+      "goal_difference": 8,
       "points": 9,
       "fifa_rank": 3,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5013,11 +5013,11 @@
       "drawn": 0,
       "lost": 1,
       "goals_for": 8,
-      "goals_against": 6,
-      "goal_difference": 2,
+      "goals_against": 7,
+      "goal_difference": 1,
       "points": 6,
       "fifa_rank": 31,
-      "fair_play_points": 0,
+      "fair_play_points": -1,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5037,7 +5037,7 @@
       "goal_difference": 2,
       "points": 3,
       "fifa_rank": 15,
-      "fair_play_points": 0,
+      "fair_play_points": -2,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5057,7 +5057,7 @@
       "goal_difference": -11,
       "points": 0,
       "fifa_rank": 57,
-      "fair_play_points": -2,
+      "fair_play_points": -8,
       "position": 4,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5407,7 +5407,7 @@
       "goal_difference": 2,
       "points": 3,
       "fifa_rank": 15,
-      "fair_play_points": 0,
+      "fair_play_points": -2,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -7088,23 +7088,23 @@
             "team": "法国",
             "team_en": "法国",
             "position": 1,
-            "played": 1,
-            "goals_for": 3,
-            "goals_against": 0,
-            "goal_difference": 3,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "played": 2,
+            "goals_for": 7,
+            "goals_against": 1,
+            "goal_difference": 6,
+            "points": 6,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 35,
             "team": "挪威",
             "team_en": "挪威",
             "position": 2,
-            "played": 1,
-            "goals_for": 3,
-            "goals_against": 2,
-            "goal_difference": 1,
+            "played": 2,
+            "goals_for": 4,
+            "goals_against": 6,
+            "goal_difference": -2,
             "points": 3,
             "status_label": "暂列第2",
             "status_class": "progress"
@@ -7142,23 +7142,23 @@
             "team": "法国",
             "team_en": "法国",
             "position": 1,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 1,
-            "goal_difference": 5,
-            "points": 6,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "played": 3,
+            "goals_for": 10,
+            "goals_against": 2,
+            "goal_difference": 8,
+            "points": 9,
+            "status_label": "锁定头名",
+            "status_class": "locked-first"
           },
           {
             "team_id": 35,
             "team": "挪威",
             "team_en": "挪威",
             "position": 2,
-            "played": 2,
-            "goals_for": 7,
-            "goals_against": 3,
-            "goal_difference": 4,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 7,
+            "goal_difference": 1,
             "points": 6,
             "status_label": "锁定前二",
             "status_class": "locked-top2"
@@ -8488,27 +8488,27 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 35,
-            "team": "挪威",
-            "team_en": "挪威",
-            "position": 1,
-            "played": 1,
-            "goals_for": 4,
-            "goals_against": 1,
-            "goal_difference": 3,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
-          },
-          {
             "team_id": 33,
             "team": "法国",
             "team_en": "法国",
+            "position": 1,
+            "played": 2,
+            "goals_for": 7,
+            "goals_against": 2,
+            "goal_difference": 5,
+            "points": 6,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
+            "team_id": 35,
+            "team": "挪威",
+            "team_en": "挪威",
             "position": 2,
-            "played": 1,
-            "goals_for": 3,
-            "goals_against": 1,
-            "goal_difference": 2,
+            "played": 2,
+            "goals_for": 5,
+            "goals_against": 5,
+            "goal_difference": 0,
             "points": 3,
             "status_label": "暂列第2",
             "status_class": "progress"
@@ -8546,23 +8546,23 @@
             "team": "法国",
             "team_en": "法国",
             "position": 1,
-            "played": 2,
-            "goals_for": 6,
-            "goals_against": 1,
-            "goal_difference": 5,
-            "points": 6,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "played": 3,
+            "goals_for": 10,
+            "goals_against": 2,
+            "goal_difference": 8,
+            "points": 9,
+            "status_label": "锁定头名",
+            "status_class": "locked-first"
           },
           {
             "team_id": 35,
             "team": "挪威",
             "team_en": "挪威",
             "position": 2,
-            "played": 2,
-            "goals_for": 7,
-            "goals_against": 3,
-            "goal_difference": 4,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 7,
+            "goal_difference": 1,
             "points": 6,
             "status_label": "锁定前二",
             "status_class": "locked-top2"
@@ -9947,9 +9947,9 @@
             "team_en": "法国",
             "position": 1,
             "played": 3,
-            "goals_for": 9,
+            "goals_for": 10,
             "goals_against": 2,
-            "goal_difference": 7,
+            "goal_difference": 8,
             "points": 9,
             "status_label": "第1",
             "status_class": "locked-first"
@@ -9961,8 +9961,8 @@
             "position": 2,
             "played": 3,
             "goals_for": 8,
-            "goals_against": 6,
-            "goal_difference": 2,
+            "goals_against": 7,
+            "goal_difference": 1,
             "points": 6,
             "status_label": "第2",
             "status_class": "locked-top2"
@@ -10398,7 +10398,15 @@
         "name": "Kylian Mbappé",
         "team": "法国",
         "goals": 4,
-        "assists": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ousmane Dembélé",
+        "team": "法国",
+        "goals": 4,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -10431,6 +10439,14 @@
         "team": "摩洛哥",
         "goals": 3,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ismaïla Sarr",
+        "team": "塞内加尔",
+        "goals": 3,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -10555,14 +10571,6 @@
         "reds": 0
       },
       {
-        "name": "Ismaïla Sarr",
-        "team": "塞内加尔",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Julián Quiñones",
         "team": "墨西哥",
         "goals": 2,
@@ -10599,6 +10607,14 @@
         "team": "科特迪瓦",
         "goals": 2,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Pape Gueye",
+        "team": "塞内加尔",
+        "goals": 2,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -10734,7 +10750,7 @@
         "name": "Bradley Barcola",
         "team": "法国",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -10765,6 +10781,14 @@
       {
         "name": "Daizen Maeda",
         "team": "日本",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Désiré Doué",
+        "team": "法国",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -10835,6 +10859,14 @@
         "reds": 0
       },
       {
+        "name": "Habib Diarra",
+        "team": "塞内加尔",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Hassan Al-Haydos",
         "team": "卡塔尔",
         "goals": 1,
@@ -10871,6 +10903,14 @@
         "team": "塞内加尔",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Iliman Ndiaye",
+        "team": "塞内加尔",
+        "goals": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -11203,14 +11243,6 @@
         "reds": 0
       },
       {
-        "name": "Ousmane Dembélé",
-        "team": "法国",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Petar Musa",
         "team": "克罗地亚",
         "goals": 1,
@@ -11291,6 +11323,14 @@
         "reds": 0
       },
       {
+        "name": "Thelo Aasgaard",
+        "team": "挪威",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Trézéguet",
         "team": "埃及",
         "goals": 1,
@@ -11343,6 +11383,14 @@
         "team": "苏格兰",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Abdoulaye Seck",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -11431,7 +11479,15 @@
         "team": "伊拉克",
         "goals": 0,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Andreas Schjelderup",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -11471,6 +11527,14 @@
         "team": "南非",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Aurélien Tchouaméni",
+        "team": "法国",
+        "goals": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -11923,14 +11987,6 @@
         "reds": 0
       },
       {
-        "name": "Iliman Ndiaye",
-        "team": "塞内加尔",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Isak Hien",
         "team": "瑞典",
         "goals": 0,
@@ -12203,6 +12259,14 @@
         "reds": 0
       },
       {
+        "name": "Lamine Camara",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Leandro Bacuna",
         "team": "库拉索",
         "goals": 0,
@@ -12327,6 +12391,14 @@
         "team": "荷兰",
         "goals": 0,
         "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Merchas Doski",
+        "team": "伊拉克",
+        "goals": 0,
+        "assists": 0,
         "yellows": 1,
         "reds": 0
       },
@@ -12487,7 +12559,7 @@
         "team": "挪威",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12561,6 +12633,14 @@
         "assists": 1,
         "yellows": 0,
         "reds": 0
+      },
+      {
+        "name": "Rebin Sulaka",
+        "team": "伊拉克",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 1
       },
       {
         "name": "Renato Veiga",
@@ -12965,6 +13045,14 @@
         "reds": 0
       },
       {
+        "name": "Iliman Ndiaye",
+        "team": "塞内加尔",
+        "goals": 1,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Joshua Kimmich",
         "team": "德国",
         "goals": 0,
@@ -12976,6 +13064,14 @@
         "name": "Julio Enciso",
         "team": "巴拉圭",
         "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Kylian Mbappé",
+        "team": "法国",
+        "goals": 4,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -13029,6 +13125,14 @@
         "reds": 0
       },
       {
+        "name": "Abdoulaye Seck",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Achraf Hakimi",
         "team": "摩洛哥",
         "goals": 1,
@@ -13065,7 +13169,15 @@
         "team": "伊拉克",
         "goals": 0,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Andreas Schjelderup",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -13074,6 +13186,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Aurélien Tchouaméni",
+        "team": "法国",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13095,6 +13215,14 @@
       {
         "name": "Baris Alper Yilmaz",
         "team": "土耳其",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Bradley Barcola",
+        "team": "法国",
         "goals": 1,
         "assists": 1,
         "yellows": 0,
@@ -13253,9 +13381,9 @@
         "reds": 0
       },
       {
-        "name": "Iliman Ndiaye",
+        "name": "Ismaïla Sarr",
         "team": "塞内加尔",
-        "goals": 0,
+        "goals": 3,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -13359,6 +13487,14 @@
       {
         "name": "Kōki Ogawa",
         "team": "日本",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Lamine Camara",
+        "team": "塞内加尔",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13511,9 +13647,17 @@
       {
         "name": "Ousmane Dembélé",
         "team": "法国",
-        "goals": 1,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Pape Gueye",
+        "team": "塞内加尔",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13521,7 +13665,7 @@
         "team": "挪威",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13933,14 +14077,6 @@
         "reds": 0
       },
       {
-        "name": "Bradley Barcola",
-        "team": "法国",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Brian Brobbey",
         "team": "荷兰",
         "goals": 3,
@@ -14157,6 +14293,14 @@
         "reds": 0
       },
       {
+        "name": "Désiré Doué",
+        "team": "法国",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Edin Džeko",
         "team": "波黑",
         "goals": 0,
@@ -14333,6 +14477,14 @@
         "reds": 0
       },
       {
+        "name": "Habib Diarra",
+        "team": "塞内加尔",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Harry Kane",
         "team": "英格兰",
         "goals": 2,
@@ -14408,14 +14560,6 @@
         "name": "Ismael Saibari",
         "team": "摩洛哥",
         "goals": 3,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Ismaïla Sarr",
-        "team": "塞内加尔",
-        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -14693,14 +14837,6 @@
         "reds": 0
       },
       {
-        "name": "Kylian Mbappé",
-        "team": "法国",
-        "goals": 4,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Ladislav Krejčí",
         "team": "捷克",
         "goals": 1,
@@ -14895,6 +15031,14 @@
       {
         "name": "Maxim De Cuyper",
         "team": "比利时",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Merchas Doski",
+        "team": "伊拉克",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15133,6 +15277,14 @@
         "reds": 0
       },
       {
+        "name": "Rebin Sulaka",
+        "team": "伊拉克",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 1
+      },
+      {
         "name": "Renato Veiga",
         "team": "葡萄牙",
         "goals": 0,
@@ -15271,6 +15423,14 @@
       {
         "name": "Thapelo Maseko",
         "team": "南非",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Thelo Aasgaard",
+        "team": "挪威",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -15431,6 +15591,14 @@
         "reds": 1
       },
       {
+        "name": "Rebin Sulaka",
+        "team": "伊拉克",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 1
+      },
+      {
         "name": "Sphephelo Sithole",
         "team": "南非",
         "goals": 0,
@@ -15467,6 +15635,14 @@
         "team": "卡塔尔",
         "goals": 0,
         "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Amir Al-Ammari",
+        "team": "伊拉克",
+        "goals": 0,
+        "assists": 1,
         "yellows": 2,
         "reds": 0
       },
@@ -15515,6 +15691,14 @@
         "team": "苏格兰",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Abdoulaye Seck",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -15583,14 +15767,6 @@
         "reds": 0
       },
       {
-        "name": "Amir Al-Ammari",
-        "team": "伊拉克",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Andy Robertson",
         "team": "苏格兰",
         "goals": 0,
@@ -15611,6 +15787,14 @@
         "team": "南非",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Aurélien Tchouaméni",
+        "team": "法国",
+        "goals": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -16231,6 +16415,14 @@
         "reds": 0
       },
       {
+        "name": "Merchas Doski",
+        "team": "伊拉克",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Micky van de Ven",
         "team": "荷兰",
         "goals": 0,
@@ -16307,6 +16499,22 @@
         "team": "韩国",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Pape Gueye",
+        "team": "塞内加尔",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Patrick Berg",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -16607,6 +16815,14 @@
         "reds": 0
       },
       {
+        "name": "Andreas Schjelderup",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ante Budimir",
         "team": "克罗地亚",
         "goals": 1,
@@ -16682,7 +16898,7 @@
         "name": "Bradley Barcola",
         "team": "法国",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -16863,6 +17079,14 @@
         "reds": 0
       },
       {
+        "name": "Désiré Doué",
+        "team": "法国",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Edmilson Junior",
         "team": "卡塔尔",
         "goals": 0,
@@ -16951,6 +17175,14 @@
         "reds": 0
       },
       {
+        "name": "Habib Diarra",
+        "team": "塞内加尔",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Hannibal Mejbri",
         "team": "突尼斯",
         "goals": 0,
@@ -17017,8 +17249,8 @@
       {
         "name": "Iliman Ndiaye",
         "team": "塞内加尔",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -17033,8 +17265,8 @@
       {
         "name": "Ismaïla Sarr",
         "team": "塞内加尔",
-        "goals": 2,
-        "assists": 0,
+        "goals": 3,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -17258,13 +17490,21 @@
         "name": "Kylian Mbappé",
         "team": "法国",
         "goals": 4,
-        "assists": 0,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
       {
         "name": "Kōki Ogawa",
         "team": "日本",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Lamine Camara",
+        "team": "塞内加尔",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -17601,15 +17841,7 @@
       {
         "name": "Ousmane Dembélé",
         "team": "法国",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Patrick Berg",
-        "team": "挪威",
-        "goals": 0,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -17777,6 +18009,14 @@
       {
         "name": "Thapelo Maseko",
         "team": "南非",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Thelo Aasgaard",
+        "team": "挪威",
         "goals": 1,
         "assists": 0,
         "yellows": 0,

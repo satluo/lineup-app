@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T04:10:16+00:00",
+  "generated_at": "2026-06-26T05:00:17+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -10939,6 +10939,14 @@
         "reds": 0
       },
       {
+        "name": "Kaan Ayhan",
+        "team": "土耳其",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Keito Nakamura",
         "team": "日本",
         "goals": 1,
@@ -14637,6 +14645,14 @@
         "reds": 0
       },
       {
+        "name": "Kaan Ayhan",
+        "team": "土耳其",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kai Havertz",
         "team": "德国",
         "goals": 2,
@@ -17169,6 +17185,14 @@
       {
         "name": "Junya Itō",
         "team": "日本",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Kaan Ayhan",
+        "team": "土耳其",
         "goals": 1,
         "assists": 0,
         "yellows": 0,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T18:36:17+00:00",
+  "generated_at": "2026-06-26T19:01:30+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1554,8 +1554,8 @@
       "away_en": "France",
       "stage": "I组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
+      "status": "live",
+      "status_detail": "0'",
       "score_home": null,
       "score_away": null,
       "venue": "Boston · Boston Stadium"

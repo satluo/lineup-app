@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T02:00:13+00:00",
+  "generated_at": "2026-06-27T02:05:16+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1614,8 +1614,8 @@
       "away_en": "Spain",
       "stage": "H组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+4'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 0,
       "score_away": 1,
       "venue": "Guadalajara · Guadalajara Stadium"
@@ -2988,18 +2988,18 @@
       "team_name_en": "西班牙",
       "team_name_zh": "西班牙",
       "group_code": "H",
-      "played": 2,
-      "won": 1,
+      "played": 3,
+      "won": 2,
       "drawn": 1,
       "lost": 0,
-      "goals_for": 4,
+      "goals_for": 5,
       "goals_against": 0,
-      "goal_difference": 4,
-      "points": 4,
+      "goal_difference": 5,
+      "points": 7,
       "fifa_rank": 2,
       "fair_play_points": -2,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3019,7 +3019,7 @@
       "fifa_rank": 67,
       "fair_play_points": -4,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3028,18 +3028,18 @@
       "team_name_en": "乌拉圭",
       "team_name_zh": "乌拉圭",
       "group_code": "H",
-      "played": 2,
+      "played": 3,
       "won": 0,
       "drawn": 2,
-      "lost": 0,
+      "lost": 1,
       "goals_for": 3,
-      "goals_against": 3,
-      "goal_difference": 0,
+      "goals_against": 4,
+      "goal_difference": -1,
       "points": 2,
       "fifa_rank": 16,
       "fair_play_points": -9,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3059,7 +3059,7 @@
       "fifa_rank": 61,
       "fair_play_points": -6,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3583,28 +3583,6 @@
       "qualifies_currently": false
     },
     {
-      "team_id": 32,
-      "team_name": "乌拉圭",
-      "team_name_en": "乌拉圭",
-      "team_name_zh": "乌拉圭",
-      "group_code": "H",
-      "played": 2,
-      "won": 0,
-      "drawn": 2,
-      "lost": 0,
-      "goals_for": 3,
-      "goals_against": 3,
-      "goal_difference": 0,
-      "points": 2,
-      "fifa_rank": 16,
-      "fair_play_points": -9,
-      "position": 3,
-      "group_complete": false,
-      "ranking_status": "calculated",
-      "third_place_position": 10,
-      "qualifies_currently": false
-    },
-    {
       "team_id": 25,
       "team_name": "比利时",
       "team_name_en": "比利时",
@@ -3622,6 +3600,28 @@
       "fair_play_points": -7,
       "position": 3,
       "group_complete": false,
+      "ranking_status": "calculated",
+      "third_place_position": 10,
+      "qualifies_currently": false
+    },
+    {
+      "team_id": 32,
+      "team_name": "乌拉圭",
+      "team_name_en": "乌拉圭",
+      "team_name_zh": "乌拉圭",
+      "group_code": "H",
+      "played": 3,
+      "won": 0,
+      "drawn": 2,
+      "lost": 1,
+      "goals_for": 3,
+      "goals_against": 4,
+      "goal_difference": -1,
+      "points": 2,
+      "fifa_rank": 16,
+      "fair_play_points": -9,
+      "position": 3,
+      "group_complete": true,
       "ranking_status": "calculated",
       "third_place_position": 11,
       "qualifies_currently": false
@@ -3867,8 +3867,8 @@
       "group_code": "H",
       "group_position": 1,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group H completed"
     },
     {
       "team_id": 29,
@@ -3878,8 +3878,8 @@
       "group_code": "H",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group H completed"
     },
     {
       "team_id": 33,
@@ -4204,28 +4204,28 @@
       "team_id": 31,
       "group_code": "H",
       "position": 1,
-      "label": "锁定前二",
-      "class_name": "locked-top2"
+      "label": "确定头名",
+      "class_name": "locked-first"
     },
     {
       "team_id": 29,
       "group_code": "H",
       "position": 2,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 32,
       "group_code": "H",
       "position": 3,
-      "label": "暂列第3",
-      "class_name": "progress"
+      "label": "第三淘汰",
+      "class_name": "out"
     },
     {
       "team_id": 30,
       "group_code": "H",
       "position": 4,
-      "label": "无缘前二",
+      "label": "淘汰了",
       "class_name": "out"
     },
     {
@@ -6970,13 +6970,13 @@
             "team": "西班牙",
             "team_en": "西班牙",
             "position": 1,
-            "played": 1,
-            "goals_for": 4,
+            "played": 2,
+            "goals_for": 5,
             "goals_against": 0,
-            "goal_difference": 4,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "goal_difference": 5,
+            "points": 6,
+            "status_label": "锁定头名",
+            "status_class": "locked-first"
           },
           {
             "team_id": 29,
@@ -6996,10 +6996,10 @@
             "team": "乌拉圭",
             "team_en": "乌拉圭",
             "position": 3,
-            "played": 1,
+            "played": 2,
             "goals_for": 2,
-            "goals_against": 2,
-            "goal_difference": 0,
+            "goals_against": 3,
+            "goal_difference": -1,
             "points": 1,
             "status_label": "暂列第3",
             "status_class": "progress"
@@ -7024,13 +7024,13 @@
             "team": "西班牙",
             "team_en": "西班牙",
             "position": 1,
-            "played": 2,
-            "goals_for": 4,
+            "played": 3,
+            "goals_for": 5,
             "goals_against": 0,
-            "goal_difference": 4,
-            "points": 4,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "goal_difference": 5,
+            "points": 7,
+            "status_label": "第1",
+            "status_class": "locked-first"
           },
           {
             "team_id": 29,
@@ -7042,21 +7042,21 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 32,
             "team": "乌拉圭",
             "team_en": "乌拉圭",
             "position": 3,
-            "played": 2,
+            "played": 3,
             "goals_for": 3,
-            "goals_against": 3,
-            "goal_difference": 0,
+            "goals_against": 4,
+            "goal_difference": -1,
             "points": 2,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "第三第11",
+            "status_class": "third"
           },
           {
             "team_id": 30,
@@ -7068,7 +7068,7 @@
             "goals_against": 5,
             "goal_difference": -4,
             "points": 2,
-            "status_label": "无缘前二",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -8370,53 +8370,53 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 30,
-            "team": "沙特阿拉伯",
-            "team_en": "沙特阿拉伯",
+            "team_id": 31,
+            "team": "西班牙",
+            "team_en": "西班牙",
             "position": 1,
             "played": 2,
             "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 2,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "goals_against": 0,
+            "goal_difference": 1,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
-            "team_id": 29,
-            "team": "佛得角",
-            "team_en": "佛得角",
+            "team_id": 30,
+            "team": "沙特阿拉伯",
+            "team_en": "沙特阿拉伯",
             "position": 2,
             "played": 2,
-            "goals_for": 0,
-            "goals_against": 0,
+            "goals_for": 1,
+            "goals_against": 1,
             "goal_difference": 0,
             "points": 2,
             "status_label": "暂列第2",
             "status_class": "progress"
           },
           {
-            "team_id": 32,
-            "team": "乌拉圭",
-            "team_en": "乌拉圭",
+            "team_id": 29,
+            "team": "佛得角",
+            "team_en": "佛得角",
             "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
+            "played": 2,
+            "goals_for": 0,
+            "goals_against": 0,
             "goal_difference": 0,
-            "points": 1,
+            "points": 2,
             "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
-            "team_id": 31,
-            "team": "西班牙",
-            "team_en": "西班牙",
+            "team_id": 32,
+            "team": "乌拉圭",
+            "team_en": "乌拉圭",
             "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
+            "played": 2,
+            "goals_for": 1,
+            "goals_against": 2,
+            "goal_difference": -1,
             "points": 1,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -8428,13 +8428,13 @@
             "team": "西班牙",
             "team_en": "西班牙",
             "position": 1,
-            "played": 2,
-            "goals_for": 4,
+            "played": 3,
+            "goals_for": 5,
             "goals_against": 0,
-            "goal_difference": 4,
-            "points": 4,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "goal_difference": 5,
+            "points": 7,
+            "status_label": "第1",
+            "status_class": "locked-first"
           },
           {
             "team_id": 29,
@@ -8446,21 +8446,21 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 32,
             "team": "乌拉圭",
             "team_en": "乌拉圭",
             "position": 3,
-            "played": 2,
+            "played": 3,
             "goals_for": 3,
-            "goals_against": 3,
-            "goal_difference": 0,
+            "goals_against": 4,
+            "goal_difference": -1,
             "points": 2,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "第三第11",
+            "status_class": "third"
           },
           {
             "team_id": 30,
@@ -8472,7 +8472,7 @@
             "goals_against": 5,
             "goal_difference": -4,
             "points": 2,
-            "status_label": "无缘前二",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -9769,7 +9769,7 @@
           65,
           66
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 31,

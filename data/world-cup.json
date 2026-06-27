@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T02:10:21+00:00",
+  "generated_at": "2026-06-27T03:01:18+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1634,8 +1634,8 @@
       "away_en": "Iran",
       "stage": "G组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
+      "status": "live",
+      "status_detail": "0'",
       "score_home": null,
       "score_away": null,
       "venue": "Seattle · Seattle Stadium"
@@ -1654,8 +1654,8 @@
       "away_en": "Belgium",
       "stage": "G组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
+      "status": "live",
+      "status_detail": "0'",
       "score_home": null,
       "score_away": null,
       "venue": "Vancouver · BC Place Vancouver"

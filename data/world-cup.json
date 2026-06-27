@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T23:05:44+00:00",
+  "generated_at": "2026-06-27T23:30:52+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1714,8 +1714,8 @@
       "away_en": "Portugal",
       "stage": "K组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
+      "status": "live",
+      "status_detail": "0'",
       "score_home": null,
       "score_away": null,
       "venue": "Miami · Miami Stadium"
@@ -1734,8 +1734,8 @@
       "away_en": "Uzbekistan",
       "stage": "K组",
       "stage_code": "group",
-      "status": "scheduled",
-      "status_detail": "scheduled",
+      "status": "live",
+      "status_detail": "0'",
       "score_home": null,
       "score_away": null,
       "venue": "Atlanta · Atlanta Stadium"

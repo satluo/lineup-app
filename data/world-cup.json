@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T05:00:11+00:00",
+  "generated_at": "2026-06-27T05:05:13+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1634,10 +1634,10 @@
       "away_en": "Iran",
       "stage": "G组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+4'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 1,
-      "score_away": 2,
+      "score_away": 1,
       "venue": "Seattle · Seattle Stadium"
     },
     {
@@ -2919,7 +2919,7 @@
       "fifa_rank": 9,
       "fair_play_points": -7,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2928,18 +2928,18 @@
       "team_name_en": "埃及",
       "team_name_zh": "埃及",
       "group_code": "G",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 0,
-      "goals_for": 4,
-      "goals_against": 2,
+      "goals_for": 5,
+      "goals_against": 3,
       "goal_difference": 2,
-      "points": 4,
+      "points": 5,
       "fifa_rank": 29,
       "fair_play_points": -6,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2948,18 +2948,18 @@
       "team_name_en": "伊朗",
       "team_name_zh": "伊朗",
       "group_code": "G",
-      "played": 2,
+      "played": 3,
       "won": 0,
-      "drawn": 2,
+      "drawn": 3,
       "lost": 0,
-      "goals_for": 2,
-      "goals_against": 2,
+      "goals_for": 3,
+      "goals_against": 3,
       "goal_difference": 0,
-      "points": 2,
+      "points": 3,
       "fifa_rank": 20,
       "fair_play_points": -6,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -2979,7 +2979,7 @@
       "fifa_rank": 85,
       "fair_play_points": -4,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3495,6 +3495,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 27,
+      "team_name": "伊朗",
+      "team_name_en": "伊朗",
+      "team_name_zh": "伊朗",
+      "group_code": "G",
+      "played": 3,
+      "won": 0,
+      "drawn": 3,
+      "lost": 0,
+      "goals_for": 3,
+      "goals_against": 3,
+      "goal_difference": 0,
+      "points": 3,
+      "fifa_rank": 20,
+      "fair_play_points": -6,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 6,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 45,
       "team_name": "克罗地亚",
       "team_name_en": "克罗地亚",
@@ -3513,7 +3535,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -3535,7 +3557,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -3557,8 +3579,8 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
+      "third_place_position": 9,
+      "qualifies_currently": false
     },
     {
       "team_id": 12,
@@ -3578,28 +3600,6 @@
       "fair_play_points": -5,
       "position": 3,
       "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 9,
-      "qualifies_currently": false
-    },
-    {
-      "team_id": 27,
-      "team_name": "伊朗",
-      "team_name_en": "伊朗",
-      "team_name_zh": "伊朗",
-      "group_code": "G",
-      "played": 2,
-      "won": 0,
-      "drawn": 2,
-      "lost": 0,
-      "goals_for": 2,
-      "goals_against": 2,
-      "goal_difference": 0,
-      "points": 2,
-      "fifa_rank": 20,
-      "fair_play_points": -6,
-      "position": 3,
-      "group_complete": false,
       "ranking_status": "calculated",
       "third_place_position": 10,
       "qualifies_currently": false
@@ -3845,8 +3845,8 @@
       "group_code": "G",
       "group_position": 1,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group G completed"
     },
     {
       "team_id": 26,
@@ -3856,8 +3856,19 @@
       "group_code": "G",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group G completed"
+    },
+    {
+      "team_id": 27,
+      "team_name": "伊朗",
+      "team_name_en": "伊朗",
+      "team_name_zh": "伊朗",
+      "group_code": "G",
+      "group_position": 3,
+      "slot_type": "best_third",
+      "status": "confirmed",
+      "reason": "Group G completed"
     },
     {
       "team_id": 31,
@@ -3933,17 +3944,6 @@
       "group_code": "J",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
-    },
-    {
-      "team_id": 37,
-      "team_name": "阿尔及利亚",
-      "team_name_en": "阿尔及利亚",
-      "team_name_zh": "阿尔及利亚",
-      "group_code": "J",
-      "group_position": 3,
-      "slot_type": "best_third",
       "status": "current_standings",
       "reason": "Provisional from locally calculated current standings"
     },
@@ -4176,22 +4176,22 @@
       "team_id": 25,
       "group_code": "G",
       "position": 1,
-      "label": "锁定前二",
-      "class_name": "locked-top2"
+      "label": "确定头名",
+      "class_name": "locked-first"
     },
     {
       "team_id": 26,
       "group_code": "G",
       "position": 2,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 27,
       "group_code": "G",
       "position": 3,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "第三待定",
+      "class_name": "progress"
     },
     {
       "team_id": 28,
@@ -4246,8 +4246,8 @@
       "team_id": 36,
       "group_code": "I",
       "position": 3,
-      "label": "第三待定",
-      "class_name": "progress"
+      "label": "第三晋级",
+      "class_name": "third"
     },
     {
       "team_id": 34,
@@ -4843,26 +4843,6 @@
       "ranking_status": "calculated"
     },
     {
-      "team_id": 27,
-      "team_name": "伊朗",
-      "team_name_en": "伊朗",
-      "team_name_zh": "伊朗",
-      "group_code": "G",
-      "played": 3,
-      "won": 1,
-      "drawn": 2,
-      "lost": 0,
-      "goals_for": 4,
-      "goals_against": 3,
-      "goal_difference": 1,
-      "points": 5,
-      "fifa_rank": 20,
-      "fair_play_points": -6,
-      "position": 2,
-      "group_complete": true,
-      "ranking_status": "calculated"
-    },
-    {
       "team_id": 26,
       "team_name": "埃及",
       "team_name_en": "埃及",
@@ -4870,13 +4850,33 @@
       "group_code": "G",
       "played": 3,
       "won": 1,
-      "drawn": 1,
-      "lost": 1,
+      "drawn": 2,
+      "lost": 0,
       "goals_for": 5,
-      "goals_against": 4,
-      "goal_difference": 1,
-      "points": 4,
+      "goals_against": 3,
+      "goal_difference": 2,
+      "points": 5,
       "fifa_rank": 29,
+      "fair_play_points": -6,
+      "position": 2,
+      "group_complete": true,
+      "ranking_status": "calculated"
+    },
+    {
+      "team_id": 27,
+      "team_name": "伊朗",
+      "team_name_en": "伊朗",
+      "team_name_zh": "伊朗",
+      "group_code": "G",
+      "played": 3,
+      "won": 0,
+      "drawn": 3,
+      "lost": 0,
+      "goals_for": 3,
+      "goals_against": 3,
+      "goal_difference": 0,
+      "points": 3,
+      "fifa_rank": 20,
       "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
@@ -5305,28 +5305,6 @@
   ],
   "live_best_thirds": [
     {
-      "team_id": 26,
-      "team_name": "埃及",
-      "team_name_en": "埃及",
-      "team_name_zh": "埃及",
-      "group_code": "G",
-      "played": 3,
-      "won": 1,
-      "drawn": 1,
-      "lost": 1,
-      "goals_for": 5,
-      "goals_against": 4,
-      "goal_difference": 1,
-      "points": 4,
-      "fifa_rank": 29,
-      "fair_play_points": -6,
-      "position": 3,
-      "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 1,
-      "qualifies_currently": true
-    },
-    {
       "team_id": 23,
       "team_name": "瑞典",
       "team_name_en": "瑞典",
@@ -5345,7 +5323,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 2,
+      "third_place_position": 1,
       "qualifies_currently": true
     },
     {
@@ -5367,7 +5345,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 3,
+      "third_place_position": 2,
       "qualifies_currently": true
     },
     {
@@ -5389,7 +5367,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 3,
       "qualifies_currently": true
     },
     {
@@ -5411,7 +5389,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 4,
       "qualifies_currently": true
     },
     {
@@ -5430,6 +5408,28 @@
       "points": 3,
       "fifa_rank": 15,
       "fair_play_points": -2,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 5,
+      "qualifies_currently": true
+    },
+    {
+      "team_id": 27,
+      "team_name": "伊朗",
+      "team_name_en": "伊朗",
+      "team_name_zh": "伊朗",
+      "group_code": "G",
+      "played": 3,
+      "won": 0,
+      "drawn": 3,
+      "lost": 0,
+      "goals_for": 3,
+      "goals_against": 3,
+      "goal_difference": 0,
+      "points": 3,
+      "fifa_rank": 20,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -5746,14 +5746,14 @@
       "class_name": "locked-first"
     },
     {
-      "team_id": 27,
+      "team_id": 26,
       "group_code": "G",
       "position": 2,
       "label": "确定前二",
       "class_name": "locked-top2"
     },
     {
-      "team_id": 26,
+      "team_id": 27,
       "group_code": "G",
       "position": 3,
       "label": "第三待定",
@@ -6007,7 +6007,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -6472,7 +6472,7 @@
             "goals_against": 4,
             "goal_difference": -3,
             "points": 3,
-            "status_label": "第三第9",
+            "status_label": "第三第10",
             "status_class": "third"
           },
           {
@@ -6867,11 +6867,11 @@
             "team": "埃及",
             "team_en": "埃及",
             "position": 2,
-            "played": 1,
-            "goals_for": 3,
-            "goals_against": 1,
+            "played": 2,
+            "goals_for": 4,
+            "goals_against": 2,
             "goal_difference": 2,
-            "points": 3,
+            "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
           },
@@ -6880,11 +6880,11 @@
             "team": "伊朗",
             "team_en": "伊朗",
             "position": 3,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 0,
+            "played": 2,
+            "goals_for": 1,
+            "goals_against": 1,
             "goal_difference": 0,
-            "points": 1,
+            "points": 2,
             "status_label": "暂列第3",
             "status_class": "progress"
           },
@@ -6913,34 +6913,34 @@
             "goals_against": 2,
             "goal_difference": 4,
             "points": 5,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "status_label": "第1",
+            "status_class": "locked-first"
           },
           {
             "team_id": 26,
             "team": "埃及",
             "team_en": "埃及",
             "position": 2,
-            "played": 2,
-            "goals_for": 4,
-            "goals_against": 2,
+            "played": 3,
+            "goals_for": 5,
+            "goals_against": 3,
             "goal_difference": 2,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 5,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 27,
             "team": "伊朗",
             "team_en": "伊朗",
             "position": 3,
-            "played": 2,
-            "goals_for": 2,
-            "goals_against": 2,
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 3,
             "goal_difference": 0,
-            "points": 2,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 3,
+            "status_label": "第三第6",
+            "status_class": "third"
           },
           {
             "team_id": 28,
@@ -6952,7 +6952,7 @@
             "goals_against": 10,
             "goal_difference": -6,
             "points": 1,
-            "status_label": "淘汰了",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -7641,7 +7641,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -7875,7 +7875,7 @@
             "goals_against": 4,
             "goal_difference": -3,
             "points": 3,
-            "status_label": "第三第9",
+            "status_label": "第三第10",
             "status_class": "third"
           },
           {
@@ -8263,44 +8263,44 @@
             "goals_against": 2,
             "goal_difference": 4,
             "points": 4,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 27,
             "team": "伊朗",
             "team_en": "伊朗",
             "position": 2,
-            "played": 1,
-            "goals_for": 2,
-            "goals_against": 2,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 28,
-            "team": "新西兰",
-            "team_en": "新西兰",
-            "position": 3,
             "played": 2,
             "goals_for": 3,
-            "goals_against": 7,
-            "goal_difference": -4,
-            "points": 1,
-            "status_label": "暂列第3",
+            "goals_against": 3,
+            "goal_difference": 0,
+            "points": 2,
+            "status_label": "暂列第2",
             "status_class": "progress"
           },
           {
             "team_id": 26,
             "team": "埃及",
             "team_en": "埃及",
-            "position": 4,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
+            "position": 3,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 2,
             "goal_difference": 0,
+            "points": 2,
+            "status_label": "暂列第3",
+            "status_class": "progress"
+          },
+          {
+            "team_id": 28,
+            "team": "新西兰",
+            "team_en": "新西兰",
+            "position": 4,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 7,
+            "goal_difference": -4,
             "points": 1,
             "status_label": "暂列第4",
             "status_class": "progress"
@@ -8317,34 +8317,34 @@
             "goals_against": 2,
             "goal_difference": 4,
             "points": 5,
-            "status_label": "锁定前二",
-            "status_class": "locked-top2"
+            "status_label": "第1",
+            "status_class": "locked-first"
           },
           {
             "team_id": 26,
             "team": "埃及",
             "team_en": "埃及",
             "position": 2,
-            "played": 2,
-            "goals_for": 4,
-            "goals_against": 2,
+            "played": 3,
+            "goals_for": 5,
+            "goals_against": 3,
             "goal_difference": 2,
-            "points": 4,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 5,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 27,
             "team": "伊朗",
             "team_en": "伊朗",
             "position": 3,
-            "played": 2,
-            "goals_for": 2,
-            "goals_against": 2,
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 3,
             "goal_difference": 0,
-            "points": 2,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 3,
+            "status_label": "第三第6",
+            "status_class": "third"
           },
           {
             "team_id": 28,
@@ -8356,7 +8356,7 @@
             "goals_against": 10,
             "goal_difference": -6,
             "points": 1,
-            "status_label": "淘汰了",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -9045,7 +9045,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -9277,7 +9277,7 @@
             "goals_against": 4,
             "goal_difference": -3,
             "points": 3,
-            "status_label": "第三第9",
+            "status_label": "第三第10",
             "status_class": "third"
           },
           {
@@ -9653,7 +9653,7 @@
           63,
           64
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 26,
@@ -9723,29 +9723,29 @@
             "status_class": "locked-first"
           },
           {
-            "team_id": 27,
-            "team": "伊朗",
-            "team_en": "伊朗",
+            "team_id": 26,
+            "team": "埃及",
+            "team_en": "埃及",
             "position": 2,
             "played": 3,
-            "goals_for": 4,
+            "goals_for": 5,
             "goals_against": 3,
-            "goal_difference": 1,
+            "goal_difference": 2,
             "points": 5,
             "status_label": "第2",
             "status_class": "locked-top2"
           },
           {
-            "team_id": 26,
-            "team": "埃及",
-            "team_en": "埃及",
+            "team_id": 27,
+            "team": "伊朗",
+            "team_en": "伊朗",
             "position": 3,
             "played": 3,
-            "goals_for": 5,
-            "goals_against": 4,
-            "goal_difference": 1,
-            "points": 4,
-            "status_label": "第三第1",
+            "goals_for": 3,
+            "goals_against": 3,
+            "goal_difference": 0,
+            "points": 3,
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {
@@ -9977,7 +9977,7 @@
             "goals_against": 6,
             "goal_difference": 2,
             "points": 3,
-            "status_label": "第三第6",
+            "status_label": "第三第5",
             "status_class": "third"
           },
           {
@@ -10363,7 +10363,7 @@
   },
   "third_place_slot_overrides": {
     "3CEFHI": "E",
-    "3EFGIJ": "J",
+    "3EFGIJ": "G",
     "3BEFIJ": "B",
     "3ABCDF": "D",
     "3AEHIJ": "A",
@@ -10374,7 +10374,7 @@
   "third_place_mapping": {
     "source": "FIFA World Cup 2026 Regulations Annex C; extracted from the public Wikimedia template '2026 FIFA World Cup third-place table'.",
     "rule_count": 495,
-    "current_combination": "ABDEFIJL"
+    "current_combination": "ABDEFGIL"
   },
   "leaderboards": {
     "scorers": [

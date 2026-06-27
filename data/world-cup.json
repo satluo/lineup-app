@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T04:57:28+00:00",
+  "generated_at": "2026-06-27T05:00:11+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1635,7 +1635,7 @@
       "stage": "G组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+3'",
+      "status_detail": "90'+4'",
       "score_home": 1,
       "score_away": 2,
       "venue": "Seattle · Seattle Stadium"
@@ -1654,8 +1654,8 @@
       "away_en": "Belgium",
       "stage": "G组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+5'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 1,
       "score_away": 5,
       "venue": "Vancouver · BC Place Vancouver"
@@ -1948,9 +1948,9 @@
       "away_placeholder": "3AEHIJ",
       "date": "2026-07-02",
       "time": "04:00",
-      "home": "1G",
+      "home": "比利时",
       "away": "3AEHIJ",
-      "home_en": "1G",
+      "home_en": "Belgium",
       "away_en": "3AEHIJ",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
@@ -2903,6 +2903,26 @@
       "ranking_status": "calculated"
     },
     {
+      "team_id": 25,
+      "team_name": "比利时",
+      "team_name_en": "比利时",
+      "team_name_zh": "比利时",
+      "group_code": "G",
+      "played": 3,
+      "won": 1,
+      "drawn": 2,
+      "lost": 0,
+      "goals_for": 6,
+      "goals_against": 2,
+      "goal_difference": 4,
+      "points": 5,
+      "fifa_rank": 9,
+      "fair_play_points": -7,
+      "position": 1,
+      "group_complete": false,
+      "ranking_status": "calculated"
+    },
+    {
       "team_id": 26,
       "team_name": "埃及",
       "team_name_en": "埃及",
@@ -2917,8 +2937,8 @@
       "goal_difference": 2,
       "points": 4,
       "fifa_rank": 29,
-      "fair_play_points": -3,
-      "position": 1,
+      "fair_play_points": -6,
+      "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
     },
@@ -2937,27 +2957,7 @@
       "goal_difference": 0,
       "points": 2,
       "fifa_rank": 20,
-      "fair_play_points": -2,
-      "position": 2,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
-      "team_id": 25,
-      "team_name": "比利时",
-      "team_name_en": "比利时",
-      "team_name_zh": "比利时",
-      "group_code": "G",
-      "played": 2,
-      "won": 0,
-      "drawn": 2,
-      "lost": 0,
-      "goals_for": 1,
-      "goals_against": 1,
-      "goal_difference": 0,
-      "points": 2,
-      "fifa_rank": 9,
-      "fair_play_points": -7,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -2968,16 +2968,16 @@
       "team_name_en": "新西兰",
       "team_name_zh": "新西兰",
       "group_code": "G",
-      "played": 2,
+      "played": 3,
       "won": 0,
       "drawn": 1,
-      "lost": 1,
-      "goals_for": 3,
-      "goals_against": 5,
-      "goal_difference": -2,
+      "lost": 2,
+      "goals_for": 4,
+      "goals_against": 10,
+      "goal_difference": -6,
       "points": 1,
       "fifa_rank": 85,
-      "fair_play_points": -2,
+      "fair_play_points": -4,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3583,21 +3583,21 @@
       "qualifies_currently": false
     },
     {
-      "team_id": 25,
-      "team_name": "比利时",
-      "team_name_en": "比利时",
-      "team_name_zh": "比利时",
+      "team_id": 27,
+      "team_name": "伊朗",
+      "team_name_en": "伊朗",
+      "team_name_zh": "伊朗",
       "group_code": "G",
       "played": 2,
       "won": 0,
       "drawn": 2,
       "lost": 0,
-      "goals_for": 1,
-      "goals_against": 1,
+      "goals_for": 2,
+      "goals_against": 2,
       "goal_difference": 0,
       "points": 2,
-      "fifa_rank": 9,
-      "fair_play_points": -7,
+      "fifa_rank": 20,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -3838,10 +3838,10 @@
       "reason": "Group F completed"
     },
     {
-      "team_id": 26,
-      "team_name": "埃及",
-      "team_name_en": "埃及",
-      "team_name_zh": "埃及",
+      "team_id": 25,
+      "team_name": "比利时",
+      "team_name_en": "比利时",
+      "team_name_zh": "比利时",
       "group_code": "G",
       "group_position": 1,
       "slot_type": "group_position",
@@ -3849,10 +3849,10 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
-      "team_id": 27,
-      "team_name": "伊朗",
-      "team_name_en": "伊朗",
-      "team_name_zh": "伊朗",
+      "team_id": 26,
+      "team_name": "埃及",
+      "team_name_en": "埃及",
+      "team_name_zh": "埃及",
       "group_code": "G",
       "group_position": 2,
       "slot_type": "group_position",
@@ -4173,32 +4173,32 @@
       "class_name": "out"
     },
     {
-      "team_id": 26,
+      "team_id": 25,
       "group_code": "G",
       "position": 1,
+      "label": "锁定前二",
+      "class_name": "locked-top2"
+    },
+    {
+      "team_id": 26,
+      "group_code": "G",
+      "position": 2,
       "label": "锁定前三",
       "class_name": "locked-top3"
     },
     {
       "team_id": 27,
       "group_code": "G",
-      "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
-    },
-    {
-      "team_id": 25,
-      "group_code": "G",
       "position": 3,
-      "label": "暂列第3",
-      "class_name": "progress"
+      "label": "锁定前三",
+      "class_name": "locked-top3"
     },
     {
       "team_id": 28,
       "group_code": "G",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "淘汰了",
+      "class_name": "out"
     },
     {
       "team_id": 31,
@@ -4857,7 +4857,7 @@
       "goal_difference": 1,
       "points": 5,
       "fifa_rank": 20,
-      "fair_play_points": -2,
+      "fair_play_points": -6,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4877,7 +4877,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 29,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4897,7 +4897,7 @@
       "goal_difference": -6,
       "points": 1,
       "fifa_rank": 85,
-      "fair_play_points": -2,
+      "fair_play_points": -4,
       "position": 4,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5319,7 +5319,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 29,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -6850,35 +6850,35 @@
         "all_finished": true,
         "pre": [
           {
+            "team_id": 25,
+            "team": "比利时",
+            "team_en": "比利时",
+            "position": 1,
+            "played": 2,
+            "goals_for": 5,
+            "goals_against": 1,
+            "goal_difference": 4,
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
             "team_id": 26,
             "team": "埃及",
             "team_en": "埃及",
-            "position": 1,
+            "position": 2,
             "played": 1,
             "goals_for": 3,
             "goals_against": 1,
             "goal_difference": 2,
             "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 27,
             "team": "伊朗",
             "team_en": "伊朗",
-            "position": 2,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 25,
-            "team": "比利时",
-            "team_en": "比利时",
             "position": 3,
             "played": 1,
             "goals_for": 0,
@@ -6893,21 +6893,34 @@
             "team": "新西兰",
             "team_en": "新西兰",
             "position": 4,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 8,
+            "goal_difference": -6,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ],
         "current": [
           {
+            "team_id": 25,
+            "team": "比利时",
+            "team_en": "比利时",
+            "position": 1,
+            "played": 3,
+            "goals_for": 6,
+            "goals_against": 2,
+            "goal_difference": 4,
+            "points": 5,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
             "team_id": 26,
             "team": "埃及",
             "team_en": "埃及",
-            "position": 1,
+            "position": 2,
             "played": 2,
             "goals_for": 4,
             "goals_against": 2,
@@ -6920,40 +6933,27 @@
             "team_id": 27,
             "team": "伊朗",
             "team_en": "伊朗",
-            "position": 2,
+            "position": 3,
             "played": 2,
             "goals_for": 2,
             "goals_against": 2,
             "goal_difference": 0,
             "points": 2,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 25,
-            "team": "比利时",
-            "team_en": "比利时",
-            "position": 3,
-            "played": 2,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 2,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 28,
             "team": "新西兰",
             "team_en": "新西兰",
             "position": 4,
-            "played": 2,
-            "goals_for": 3,
-            "goals_against": 5,
-            "goal_difference": -2,
+            "played": 3,
+            "goals_for": 4,
+            "goals_against": 10,
+            "goal_difference": -6,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰了",
+            "status_class": "out"
           }
         ]
       },
@@ -8254,22 +8254,22 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 27,
-            "team": "伊朗",
-            "team_en": "伊朗",
+            "team_id": 25,
+            "team": "比利时",
+            "team_en": "比利时",
             "position": 1,
-            "played": 1,
-            "goals_for": 2,
+            "played": 2,
+            "goals_for": 6,
             "goals_against": 2,
-            "goal_difference": 0,
-            "points": 1,
+            "goal_difference": 4,
+            "points": 4,
             "status_label": "暂列第1",
             "status_class": "progress"
           },
           {
-            "team_id": 28,
-            "team": "新西兰",
-            "team_en": "新西兰",
+            "team_id": 27,
+            "team": "伊朗",
+            "team_en": "伊朗",
             "position": 2,
             "played": 1,
             "goals_for": 2,
@@ -8280,22 +8280,22 @@
             "status_class": "progress"
           },
           {
-            "team_id": 26,
-            "team": "埃及",
-            "team_en": "埃及",
+            "team_id": 28,
+            "team": "新西兰",
+            "team_en": "新西兰",
             "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 7,
+            "goal_difference": -4,
             "points": 1,
             "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
-            "team_id": 25,
-            "team": "比利时",
-            "team_en": "比利时",
+            "team_id": 26,
+            "team": "埃及",
+            "team_en": "埃及",
             "position": 4,
             "played": 1,
             "goals_for": 1,
@@ -8308,10 +8308,23 @@
         ],
         "current": [
           {
+            "team_id": 25,
+            "team": "比利时",
+            "team_en": "比利时",
+            "position": 1,
+            "played": 3,
+            "goals_for": 6,
+            "goals_against": 2,
+            "goal_difference": 4,
+            "points": 5,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
             "team_id": 26,
             "team": "埃及",
             "team_en": "埃及",
-            "position": 1,
+            "position": 2,
             "played": 2,
             "goals_for": 4,
             "goals_against": 2,
@@ -8324,40 +8337,27 @@
             "team_id": 27,
             "team": "伊朗",
             "team_en": "伊朗",
-            "position": 2,
+            "position": 3,
             "played": 2,
             "goals_for": 2,
             "goals_against": 2,
             "goal_difference": 0,
             "points": 2,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 25,
-            "team": "比利时",
-            "team_en": "比利时",
-            "position": 3,
-            "played": 2,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 2,
-            "status_label": "暂列第3",
-            "status_class": "progress"
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
           },
           {
             "team_id": 28,
             "team": "新西兰",
             "team_en": "新西兰",
             "position": 4,
-            "played": 2,
-            "goals_for": 3,
-            "goals_against": 5,
-            "goal_difference": -2,
+            "played": 3,
+            "goals_for": 4,
+            "goals_against": 10,
+            "goal_difference": -6,
             "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "淘汰了",
+            "status_class": "out"
           }
         ]
       },
@@ -10435,6 +10435,14 @@
         "reds": 0
       },
       {
+        "name": "Elijah Just",
+        "team": "新西兰",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
         "goals": 3,
@@ -10539,14 +10547,6 @@
         "reds": 0
       },
       {
-        "name": "Elijah Just",
-        "team": "新西兰",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Ermin Mahmić",
         "team": "波黑",
         "goals": 2,
@@ -10587,6 +10587,14 @@
         "reds": 0
       },
       {
+        "name": "Leandro Trossard",
+        "team": "比利时",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Maxi Araújo",
         "team": "乌拉圭",
         "goals": 2,
@@ -10616,6 +10624,14 @@
         "goals": 2,
         "assists": 1,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Ramin Rezaeian",
+        "team": "伊朗",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -10679,6 +10695,14 @@
         "team": "瑞典",
         "goals": 1,
         "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Alexis Saelemaekers",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -11003,6 +11027,14 @@
         "reds": 0
       },
       {
+        "name": "Kevin De Bruyne",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kevin Pina",
         "team": "佛得角",
         "goals": 1,
@@ -11064,6 +11096,14 @@
         "goals": 1,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mahmoud Saber",
+        "team": "埃及",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11267,14 +11307,6 @@
         "reds": 0
       },
       {
-        "name": "Ramin Rezaeian",
-        "team": "伊朗",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Raúl Jiménez",
         "team": "墨西哥",
         "goals": 1,
@@ -11288,6 +11320,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Romelu Lukaku",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11334,7 +11374,7 @@
         "name": "Trézéguet",
         "team": "埃及",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -11464,6 +11504,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ali Nemati",
+        "team": "伊朗",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11979,6 +12027,14 @@
         "reds": 0
       },
       {
+        "name": "Hans Vanaken",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Harry Souttar",
         "team": "澳大利亚",
         "goals": 0,
@@ -11993,6 +12049,14 @@
         "assists": 0,
         "yellows": 0,
         "reds": 1
+      },
+      {
+        "name": "Hossein Kanani",
+        "team": "伊朗",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
       },
       {
         "name": "Husam Abu Dahab",
@@ -12403,6 +12467,14 @@
         "reds": 0
       },
       {
+        "name": "Marko Stamenić",
+        "team": "新西兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
@@ -12487,7 +12559,7 @@
         "team": "埃及",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12541,6 +12613,14 @@
       {
         "name": "Nicolas Jackson",
         "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nicolas Raskin",
+        "team": "比利时",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -12755,14 +12835,6 @@
         "reds": 0
       },
       {
-        "name": "Romelu Lukaku",
-        "team": "比利时",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Ryan Christie",
         "team": "苏格兰",
         "goals": 0,
@@ -12791,7 +12863,7 @@
         "team": "伊朗",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12829,6 +12901,14 @@
       {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Shoja Khalilzadeh",
+        "team": "伊朗",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12992,6 +13072,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Yasser Ibrahim",
+        "team": "埃及",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13437,6 +13525,14 @@
         "reds": 0
       },
       {
+        "name": "Hans Vanaken",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Hwang In-beom",
         "team": "韩国",
         "goals": 1,
@@ -13709,6 +13805,14 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Raskin",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Noor Al-Rawabdeh",
         "team": "约旦",
         "goals": 0,
@@ -13791,7 +13895,7 @@
       {
         "name": "Ramin Rezaeian",
         "team": "伊朗",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -13826,6 +13930,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Romelu Lukaku",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13888,6 +14000,14 @@
         "name": "Tim Payne",
         "team": "新西兰",
         "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Trézéguet",
+        "team": "埃及",
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14031,6 +14151,22 @@
       {
         "name": "Alessandro Circati",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Alexis Saelemaekers",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ali Nemati",
+        "team": "伊朗",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -14407,9 +14543,9 @@
       {
         "name": "Elijah Just",
         "team": "新西兰",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14619,6 +14755,14 @@
         "assists": 0,
         "yellows": 0,
         "reds": 1
+      },
+      {
+        "name": "Hossein Kanani",
+        "team": "伊朗",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
       },
       {
         "name": "Husam Abu Dahab",
@@ -14925,6 +15069,14 @@
         "reds": 0
       },
       {
+        "name": "Kevin De Bruyne",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kevin Pina",
         "team": "佛得角",
         "goals": 1,
@@ -14970,6 +15122,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Leandro Trossard",
+        "team": "比利时",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -15037,6 +15197,14 @@
         "reds": 0
       },
       {
+        "name": "Mahmoud Saber",
+        "team": "埃及",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Marawan Attia",
         "team": "埃及",
         "goals": 0,
@@ -15074,6 +15242,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Marko Stamenić",
+        "team": "新西兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15193,7 +15369,7 @@
         "team": "埃及",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15437,14 +15613,6 @@
         "reds": 0
       },
       {
-        "name": "Romelu Lukaku",
-        "team": "比利时",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Ryan Christie",
         "team": "苏格兰",
         "goals": 0,
@@ -15457,7 +15625,7 @@
         "team": "伊朗",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15487,6 +15655,14 @@
       {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Shoja Khalilzadeh",
+        "team": "伊朗",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15597,14 +15773,6 @@
         "reds": 0
       },
       {
-        "name": "Trézéguet",
-        "team": "埃及",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Tyler Adams",
         "team": "美国",
         "goals": 0,
@@ -15632,6 +15800,14 @@
         "name": "Yasin Ayari",
         "team": "瑞典",
         "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Yasser Ibrahim",
+        "team": "埃及",
+        "goals": 0,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -15823,6 +15999,22 @@
         "reds": 0
       },
       {
+        "name": "Mohanad Lashin",
+        "team": "埃及",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Saeid Ezatolahi",
+        "team": "伊朗",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Sidny Lopes Cabral",
         "team": "佛得角",
         "goals": 0,
@@ -15897,6 +16089,14 @@
       {
         "name": "Alessandro Circati",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Ali Nemati",
+        "team": "伊朗",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16151,6 +16351,14 @@
         "reds": 0
       },
       {
+        "name": "Elijah Just",
+        "team": "新西兰",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Eren Elmali",
         "team": "土耳其",
         "goals": 0,
@@ -16273,6 +16481,14 @@
       {
         "name": "Harry Souttar",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Hossein Kanani",
+        "team": "伊朗",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16543,6 +16759,14 @@
         "reds": 0
       },
       {
+        "name": "Mahmoud Saber",
+        "team": "埃及",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Marawan Attia",
         "team": "埃及",
         "goals": 0,
@@ -16553,6 +16777,14 @@
       {
         "name": "Marcel Sabitzer",
         "team": "奥地利",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Marko Stamenić",
+        "team": "新西兰",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16609,14 +16841,6 @@
       {
         "name": "Mohamed Kanno",
         "team": "沙特阿拉伯",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Mohanad Lashin",
-        "team": "埃及",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16777,22 +17001,14 @@
       {
         "name": "Romelu Lukaku",
         "team": "比利时",
-        "goals": 0,
-        "assists": 0,
+        "goals": 1,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
       {
         "name": "Ryan Christie",
         "team": "苏格兰",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Saeid Ezatolahi",
-        "team": "伊朗",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16833,6 +17049,14 @@
       {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Shoja Khalilzadeh",
+        "team": "伊朗",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16906,6 +17130,14 @@
         "name": "Yasin Ayari",
         "team": "瑞典",
         "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Yasser Ibrahim",
+        "team": "埃及",
+        "goals": 0,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -16995,6 +17227,14 @@
         "team": "捷克",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Alexis Saelemaekers",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -17303,14 +17543,6 @@
         "reds": 0
       },
       {
-        "name": "Elijah Just",
-        "team": "新西兰",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Elliot Anderson",
         "team": "英格兰",
         "goals": 0,
@@ -17395,6 +17627,14 @@
         "team": "突尼斯",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Hans Vanaken",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -17671,6 +17911,14 @@
         "reds": 0
       },
       {
+        "name": "Kevin De Bruyne",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kevin Pina",
         "team": "佛得角",
         "goals": 1,
@@ -17722,6 +17970,14 @@
         "name": "Lamine Yamal",
         "team": "西班牙",
         "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Leandro Trossard",
+        "team": "比利时",
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -17999,6 +18255,14 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Raskin",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nilson Angulo",
         "team": "厄瓜多尔",
         "goals": 1,
@@ -18113,7 +18377,7 @@
       {
         "name": "Ramin Rezaeian",
         "team": "伊朗",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -18258,7 +18522,7 @@
         "name": "Trézéguet",
         "team": "埃及",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

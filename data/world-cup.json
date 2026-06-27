@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T22:17:29+00:00",
+  "generated_at": "2026-06-27T22:22:33+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1675,9 +1675,9 @@
       "stage": "L组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "58'",
+      "status_detail": "63'",
       "score_home": 0,
-      "score_away": 0,
+      "score_away": 1,
       "venue": "New Jersey · New York/New Jersey Stadium"
     },
     {
@@ -1695,7 +1695,7 @@
       "stage": "L组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "56'",
+      "status_detail": "61'",
       "score_home": 1,
       "score_away": 0,
       "venue": "Philadelphia · Philadelphia Stadium"
@@ -5223,6 +5223,26 @@
       "ranking_status": "calculated"
     },
     {
+      "team_id": 46,
+      "team_name": "英格兰",
+      "team_name_en": "英格兰",
+      "team_name_zh": "英格兰",
+      "group_code": "L",
+      "played": 3,
+      "won": 2,
+      "drawn": 1,
+      "lost": 0,
+      "goals_for": 5,
+      "goals_against": 2,
+      "goal_difference": 3,
+      "points": 7,
+      "fifa_rank": 4,
+      "fair_play_points": -1,
+      "position": 1,
+      "group_complete": true,
+      "ranking_status": "calculated"
+    },
+    {
       "team_id": 45,
       "team_name": "克罗地亚",
       "team_name_en": "克罗地亚",
@@ -5237,26 +5257,6 @@
       "goal_difference": 0,
       "points": 6,
       "fifa_rank": 11,
-      "fair_play_points": -1,
-      "position": 1,
-      "group_complete": true,
-      "ranking_status": "calculated"
-    },
-    {
-      "team_id": 46,
-      "team_name": "英格兰",
-      "team_name_en": "英格兰",
-      "team_name_zh": "英格兰",
-      "group_code": "L",
-      "played": 3,
-      "won": 1,
-      "drawn": 2,
-      "lost": 0,
-      "goals_for": 4,
-      "goals_against": 2,
-      "goal_difference": 2,
-      "points": 5,
-      "fifa_rank": 4,
       "fair_play_points": -1,
       "position": 2,
       "group_complete": true,
@@ -5290,12 +5290,12 @@
       "group_code": "L",
       "played": 3,
       "won": 0,
-      "drawn": 1,
-      "lost": 2,
+      "drawn": 0,
+      "lost": 3,
       "goals_for": 0,
-      "goals_against": 2,
-      "goal_difference": -2,
-      "points": 1,
+      "goals_against": 3,
+      "goal_difference": -3,
+      "points": 0,
       "fifa_rank": 34,
       "fair_play_points": -3,
       "position": 4,
@@ -5879,14 +5879,14 @@
       "class_name": "out"
     },
     {
-      "team_id": 45,
+      "team_id": 46,
       "group_code": "L",
       "position": 1,
       "label": "确定头名",
       "class_name": "locked-first"
     },
     {
-      "team_id": 46,
+      "team_id": 45,
       "group_code": "L",
       "position": 2,
       "label": "确定前二",
@@ -10292,28 +10292,28 @@
         ],
         "current": [
           {
+            "team_id": 46,
+            "team": "英格兰",
+            "team_en": "英格兰",
+            "position": 1,
+            "played": 3,
+            "goals_for": 5,
+            "goals_against": 2,
+            "goal_difference": 3,
+            "points": 7,
+            "status_label": "第1",
+            "status_class": "locked-first"
+          },
+          {
             "team_id": 45,
             "team": "克罗地亚",
             "team_en": "克罗地亚",
-            "position": 1,
+            "position": 2,
             "played": 3,
             "goals_for": 4,
             "goals_against": 4,
             "goal_difference": 0,
             "points": 6,
-            "status_label": "第1",
-            "status_class": "locked-first"
-          },
-          {
-            "team_id": 46,
-            "team": "英格兰",
-            "team_en": "英格兰",
-            "position": 2,
-            "played": 3,
-            "goals_for": 4,
-            "goals_against": 2,
-            "goal_difference": 2,
-            "points": 5,
             "status_label": "第2",
             "status_class": "locked-top2"
           },
@@ -10337,9 +10337,9 @@
             "position": 4,
             "played": 3,
             "goals_for": 0,
-            "goals_against": 2,
-            "goal_difference": -2,
-            "points": 1,
+            "goals_against": 3,
+            "goal_difference": -3,
+            "points": 0,
             "status_label": "淘汰",
             "status_class": "out"
           }

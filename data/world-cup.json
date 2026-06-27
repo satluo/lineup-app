@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T04:12:01+00:00",
+  "generated_at": "2026-06-27T04:17:05+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1635,7 +1635,7 @@
       "stage": "G组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "47'",
+      "status_detail": "52'",
       "score_home": 1,
       "score_away": 1,
       "venue": "Seattle · Seattle Stadium"
@@ -1655,9 +1655,9 @@
       "stage": "G组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "49'",
+      "status_detail": "55'",
       "score_home": 0,
-      "score_away": 1,
+      "score_away": 2,
       "venue": "Vancouver · BC Place Vancouver"
     },
     {
@@ -4852,9 +4852,9 @@
       "won": 1,
       "drawn": 2,
       "lost": 0,
-      "goals_for": 2,
+      "goals_for": 3,
       "goals_against": 1,
-      "goal_difference": 1,
+      "goal_difference": 2,
       "points": 5,
       "fifa_rank": 9,
       "fair_play_points": -7,
@@ -4893,8 +4893,8 @@
       "drawn": 1,
       "lost": 2,
       "goals_for": 3,
-      "goals_against": 6,
-      "goal_difference": -3,
+      "goals_against": 7,
+      "goal_difference": -4,
       "points": 1,
       "fifa_rank": 85,
       "fair_play_points": -2,
@@ -9728,9 +9728,9 @@
             "team_en": "比利时",
             "position": 2,
             "played": 3,
-            "goals_for": 2,
+            "goals_for": 3,
             "goals_against": 1,
-            "goal_difference": 1,
+            "goal_difference": 2,
             "points": 5,
             "status_label": "第2",
             "status_class": "locked-top2"
@@ -9755,8 +9755,8 @@
             "position": 4,
             "played": 3,
             "goals_for": 3,
-            "goals_against": 6,
-            "goal_difference": -3,
+            "goals_against": 7,
+            "goal_difference": -4,
             "points": 1,
             "status_label": "淘汰",
             "status_class": "out"

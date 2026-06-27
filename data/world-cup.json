@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T23:00:16+00:00",
+  "generated_at": "2026-06-27T23:00:39+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -3317,7 +3317,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 4,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3337,7 +3337,7 @@
       "goal_difference": 0,
       "points": 6,
       "fifa_rank": 11,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3357,7 +3357,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3377,7 +3377,7 @@
       "goal_difference": -4,
       "points": 0,
       "fifa_rank": 34,
-      "fair_play_points": -3,
+      "fair_play_points": -5,
       "position": 4,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3421,7 +3421,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -5237,7 +5237,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 4,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5257,7 +5257,7 @@
       "goal_difference": 0,
       "points": 6,
       "fifa_rank": 11,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5277,7 +5277,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5297,7 +5297,7 @@
       "goal_difference": -4,
       "points": 0,
       "fifa_rank": 34,
-      "fair_play_points": -3,
+      "fair_play_points": -5,
       "position": 4,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5341,7 +5341,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10443,6 +10443,14 @@
         "reds": 0
       },
       {
+        "name": "Harry Kane",
+        "team": "英格兰",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
         "goals": 3,
@@ -10563,10 +10571,10 @@
         "reds": 0
       },
       {
-        "name": "Harry Kane",
+        "name": "Jude Bellingham",
         "team": "英格兰",
         "goals": 2,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -10811,6 +10819,14 @@
         "reds": 0
       },
       {
+        "name": "Derrick Luckassen",
+        "team": "加纳",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Désiré Doué",
         "team": "法国",
         "goals": 1,
@@ -10981,14 +10997,6 @@
       {
         "name": "João Neves",
         "team": "葡萄牙",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Jude Bellingham",
-        "team": "英格兰",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11243,6 +11251,14 @@
         "reds": 0
       },
       {
+        "name": "Nikola Vlašić",
+        "team": "克罗地亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nilson Angulo",
         "team": "厄瓜多尔",
         "goals": 1,
@@ -11288,6 +11304,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Petar Sučić",
+        "team": "克罗地亚",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11547,6 +11571,14 @@
         "reds": 0
       },
       {
+        "name": "Andrés Andrade",
+        "team": "巴拿马",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Andy Robertson",
         "team": "苏格兰",
         "goals": 0,
@@ -11654,7 +11686,7 @@
         "name": "Bukayo Saka",
         "team": "英格兰",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -11931,6 +11963,14 @@
         "reds": 0
       },
       {
+        "name": "Ernest Nuamah",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Fabinho",
         "team": "巴西",
         "goals": 0,
@@ -12103,7 +12143,7 @@
         "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12133,6 +12173,14 @@
       {
         "name": "Jacob Italiano",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jarell Quansah",
+        "team": "英格兰",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12243,6 +12291,14 @@
         "reds": 0
       },
       {
+        "name": "José Fajardo",
+        "team": "巴拿马",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "João Cancelo",
         "team": "葡萄牙",
         "goals": 0,
@@ -12328,6 +12384,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Kojo Peprah Oppong",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12427,6 +12491,14 @@
         "reds": 0
       },
       {
+        "name": "Luka Modrić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Mahmoud Abunada",
         "team": "卡塔尔",
         "goals": 0,
@@ -12479,6 +12551,14 @@
         "team": "挪威",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mateo Kovačić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -12728,14 +12808,6 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Petar Sučić",
-        "team": "克罗地亚",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -13165,6 +13237,14 @@
         "reds": 0
       },
       {
+        "name": "Bukayo Saka",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Chris Wood",
         "team": "新西兰",
         "goals": 0,
@@ -13405,14 +13485,6 @@
         "reds": 0
       },
       {
-        "name": "Bukayo Saka",
-        "team": "英格兰",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Chadi Riad",
         "team": "摩洛哥",
         "goals": 0,
@@ -13501,6 +13573,14 @@
         "reds": 0
       },
       {
+        "name": "Ernest Nuamah",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Facundo Medina",
         "team": "阿根廷",
         "goals": 0,
@@ -13569,7 +13649,7 @@
         "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13616,6 +13696,14 @@
         "name": "Juan Fernando Quintero",
         "team": "哥伦比亚",
         "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Jude Bellingham",
+        "team": "英格兰",
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -13709,6 +13797,14 @@
         "reds": 0
       },
       {
+        "name": "Luka Modrić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Malik Tillman",
         "team": "美国",
         "goals": 0,
@@ -13719,6 +13815,14 @@
       {
         "name": "Marcos Llorente",
         "team": "西班牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mateo Kovačić",
+        "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13879,7 +13983,7 @@
       {
         "name": "Petar Sučić",
         "team": "克罗地亚",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -14213,6 +14317,14 @@
         "reds": 0
       },
       {
+        "name": "Andrés Andrade",
+        "team": "巴拿马",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Andy Robertson",
         "team": "苏格兰",
         "goals": 0,
@@ -14477,6 +14589,14 @@
         "reds": 0
       },
       {
+        "name": "Derrick Luckassen",
+        "team": "加纳",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Diego Gómez",
         "team": "巴拉圭",
         "goals": 0,
@@ -14719,7 +14839,7 @@
       {
         "name": "Harry Kane",
         "team": "英格兰",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -14869,6 +14989,14 @@
         "reds": 0
       },
       {
+        "name": "Jarell Quansah",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jassem Gaber",
         "team": "卡塔尔",
         "goals": 0,
@@ -14957,6 +15085,14 @@
         "reds": 0
       },
       {
+        "name": "José Fajardo",
+        "team": "巴拿马",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jovo Lukić",
         "team": "波黑",
         "goals": 1,
@@ -14986,14 +15122,6 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Jude Bellingham",
-        "team": "英格兰",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -15082,6 +15210,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Kojo Peprah Oppong",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15442,6 +15578,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Nikola Vlašić",
+        "team": "克罗地亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -16119,6 +16263,14 @@
         "reds": 0
       },
       {
+        "name": "Andrés Andrade",
+        "team": "巴拿马",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Andy Robertson",
         "team": "苏格兰",
         "goals": 0,
@@ -16519,6 +16671,14 @@
         "reds": 0
       },
       {
+        "name": "Ivan Perišić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Iñaki Williams",
         "team": "加纳",
         "goals": 0,
@@ -16545,6 +16705,14 @@
       {
         "name": "Jacob Italiano",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jarell Quansah",
+        "team": "英格兰",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16623,6 +16791,14 @@
         "reds": 0
       },
       {
+        "name": "José Fajardo",
+        "team": "巴拿马",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jovo Lukić",
         "team": "波黑",
         "goals": 1,
@@ -16665,6 +16841,14 @@
       {
         "name": "Kenny McLean",
         "team": "苏格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Kojo Peprah Oppong",
+        "team": "加纳",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16945,7 +17129,7 @@
       {
         "name": "Petar Sučić",
         "team": "克罗地亚",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -17402,7 +17586,7 @@
         "name": "Bukayo Saka",
         "team": "英格兰",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -17527,6 +17711,14 @@
         "reds": 0
       },
       {
+        "name": "Derrick Luckassen",
+        "team": "加纳",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Désiré Doué",
         "team": "法国",
         "goals": 1,
@@ -17563,6 +17755,14 @@
         "team": "挪威",
         "goals": 4,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ernest Nuamah",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -17641,7 +17841,7 @@
       {
         "name": "Harry Kane",
         "team": "英格兰",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -17721,14 +17921,6 @@
       {
         "name": "Ivan Bašić",
         "team": "波黑",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Ivan Perišić",
-        "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -17841,8 +18033,8 @@
       {
         "name": "Jude Bellingham",
         "team": "英格兰",
-        "goals": 1,
-        "assists": 0,
+        "goals": 2,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -18031,6 +18223,14 @@
         "reds": 0
       },
       {
+        "name": "Luka Modrić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Malik Tillman",
         "team": "美国",
         "goals": 0,
@@ -18091,6 +18291,14 @@
         "team": "墨西哥",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mateo Kovačić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -18259,6 +18467,14 @@
         "team": "比利时",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nikola Vlašić",
+        "team": "克罗地亚",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },

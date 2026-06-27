@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T01:57:01+00:00",
+  "generated_at": "2026-06-27T02:00:13+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1594,8 +1594,8 @@
       "away_en": "Saudi Arabia",
       "stage": "H组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+3'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 0,
       "score_away": 0,
       "venue": "Houston · Houston Stadium"
@@ -1615,7 +1615,7 @@
       "stage": "H组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "90'+2'",
+      "status_detail": "90'+4'",
       "score_home": 0,
       "score_away": 1,
       "venue": "Guadalajara · Guadalajara Stadium"
@@ -2997,8 +2997,28 @@
       "goal_difference": 4,
       "points": 4,
       "fifa_rank": 2,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 1,
+      "group_complete": false,
+      "ranking_status": "calculated"
+    },
+    {
+      "team_id": 29,
+      "team_name": "佛得角",
+      "team_name_en": "佛得角",
+      "team_name_zh": "佛得角",
+      "group_code": "H",
+      "played": 3,
+      "won": 0,
+      "drawn": 3,
+      "lost": 0,
+      "goals_for": 2,
+      "goals_against": 2,
+      "goal_difference": 0,
+      "points": 3,
+      "fifa_rank": 67,
+      "fair_play_points": -4,
+      "position": 2,
       "group_complete": false,
       "ranking_status": "calculated"
     },
@@ -3017,27 +3037,7 @@
       "goal_difference": 0,
       "points": 2,
       "fifa_rank": 16,
-      "fair_play_points": -2,
-      "position": 2,
-      "group_complete": false,
-      "ranking_status": "calculated"
-    },
-    {
-      "team_id": 29,
-      "team_name": "佛得角",
-      "team_name_en": "佛得角",
-      "team_name_zh": "佛得角",
-      "group_code": "H",
-      "played": 2,
-      "won": 0,
-      "drawn": 2,
-      "lost": 0,
-      "goals_for": 2,
-      "goals_against": 2,
-      "goal_difference": 0,
-      "points": 2,
-      "fifa_rank": 67,
-      "fair_play_points": -3,
+      "fair_play_points": -9,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3048,16 +3048,16 @@
       "team_name_en": "沙特阿拉伯",
       "team_name_zh": "沙特阿拉伯",
       "group_code": "H",
-      "played": 2,
+      "played": 3,
       "won": 0,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 1,
       "goals_for": 1,
       "goals_against": 5,
       "goal_difference": -4,
-      "points": 1,
+      "points": 2,
       "fifa_rank": 61,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3583,21 +3583,21 @@
       "qualifies_currently": false
     },
     {
-      "team_id": 29,
-      "team_name": "佛得角",
-      "team_name_en": "佛得角",
-      "team_name_zh": "佛得角",
+      "team_id": 32,
+      "team_name": "乌拉圭",
+      "team_name_en": "乌拉圭",
+      "team_name_zh": "乌拉圭",
       "group_code": "H",
       "played": 2,
       "won": 0,
       "drawn": 2,
       "lost": 0,
-      "goals_for": 2,
-      "goals_against": 2,
+      "goals_for": 3,
+      "goals_against": 3,
       "goal_difference": 0,
       "points": 2,
-      "fifa_rank": 67,
-      "fair_play_points": -3,
+      "fifa_rank": 16,
+      "fair_play_points": -9,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -3871,10 +3871,10 @@
       "reason": "Provisional from locally calculated current standings"
     },
     {
-      "team_id": 32,
-      "team_name": "乌拉圭",
-      "team_name_en": "乌拉圭",
-      "team_name_zh": "乌拉圭",
+      "team_id": 29,
+      "team_name": "佛得角",
+      "team_name_en": "佛得角",
+      "team_name_zh": "佛得角",
       "group_code": "H",
       "group_position": 2,
       "slot_type": "group_position",
@@ -4106,8 +4106,8 @@
       "team_id": 14,
       "group_code": "D",
       "position": 3,
-      "label": "第三待定",
-      "class_name": "progress"
+      "label": "第三晋级",
+      "class_name": "third"
     },
     {
       "team_id": 15,
@@ -4204,18 +4204,18 @@
       "team_id": 31,
       "group_code": "H",
       "position": 1,
+      "label": "锁定前二",
+      "class_name": "locked-top2"
+    },
+    {
+      "team_id": 29,
+      "group_code": "H",
+      "position": 2,
       "label": "锁定前三",
       "class_name": "locked-top3"
     },
     {
       "team_id": 32,
-      "group_code": "H",
-      "position": 2,
-      "label": "暂列第2",
-      "class_name": "progress"
-    },
-    {
-      "team_id": 29,
       "group_code": "H",
       "position": 3,
       "label": "暂列第3",
@@ -4225,8 +4225,8 @@
       "team_id": 30,
       "group_code": "H",
       "position": 4,
-      "label": "暂列第4",
-      "class_name": "progress"
+      "label": "无缘前二",
+      "class_name": "out"
     },
     {
       "team_id": 33,
@@ -4917,7 +4917,7 @@
       "goal_difference": 5,
       "points": 7,
       "fifa_rank": 2,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4937,7 +4937,7 @@
       "goal_difference": 0,
       "points": 3,
       "fifa_rank": 67,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4957,7 +4957,7 @@
       "goal_difference": -1,
       "points": 2,
       "fifa_rank": 16,
-      "fair_play_points": -2,
+      "fair_play_points": -9,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4977,7 +4977,7 @@
       "goal_difference": -4,
       "points": 2,
       "fifa_rank": 61,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 4,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5539,7 +5539,7 @@
       "goal_difference": -1,
       "points": 2,
       "fifa_rank": 16,
-      "fair_play_points": -2,
+      "fair_play_points": -9,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -6979,22 +6979,22 @@
             "status_class": "progress"
           },
           {
-            "team_id": 32,
-            "team": "乌拉圭",
-            "team_en": "乌拉圭",
+            "team_id": 29,
+            "team": "佛得角",
+            "team_en": "佛得角",
             "position": 2,
-            "played": 1,
+            "played": 2,
             "goals_for": 2,
             "goals_against": 2,
             "goal_difference": 0,
-            "points": 1,
+            "points": 2,
             "status_label": "暂列第2",
             "status_class": "progress"
           },
           {
-            "team_id": 29,
-            "team": "佛得角",
-            "team_en": "佛得角",
+            "team_id": 32,
+            "team": "乌拉圭",
+            "team_en": "乌拉圭",
             "position": 3,
             "played": 1,
             "goals_for": 2,
@@ -7009,11 +7009,11 @@
             "team": "沙特阿拉伯",
             "team_en": "沙特阿拉伯",
             "position": 4,
-            "played": 1,
+            "played": 2,
             "goals_for": 0,
             "goals_against": 4,
             "goal_difference": -4,
-            "points": 0,
+            "points": 1,
             "status_label": "暂列第4",
             "status_class": "progress"
           }
@@ -7029,6 +7029,19 @@
             "goals_against": 0,
             "goal_difference": 4,
             "points": 4,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
+            "team_id": 29,
+            "team": "佛得角",
+            "team_en": "佛得角",
+            "position": 2,
+            "played": 3,
+            "goals_for": 2,
+            "goals_against": 2,
+            "goal_difference": 0,
+            "points": 3,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
           },
@@ -7036,23 +7049,10 @@
             "team_id": 32,
             "team": "乌拉圭",
             "team_en": "乌拉圭",
-            "position": 2,
+            "position": 3,
             "played": 2,
             "goals_for": 3,
             "goals_against": 3,
-            "goal_difference": 0,
-            "points": 2,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 29,
-            "team": "佛得角",
-            "team_en": "佛得角",
-            "position": 3,
-            "played": 2,
-            "goals_for": 2,
-            "goals_against": 2,
             "goal_difference": 0,
             "points": 2,
             "status_label": "暂列第3",
@@ -7063,13 +7063,13 @@
             "team": "沙特阿拉伯",
             "team_en": "沙特阿拉伯",
             "position": 4,
-            "played": 2,
+            "played": 3,
             "goals_for": 1,
             "goals_against": 5,
             "goal_difference": -4,
-            "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "points": 2,
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       }
@@ -8370,48 +8370,48 @@
         "all_finished": true,
         "pre": [
           {
-            "team_id": 32,
-            "team": "乌拉圭",
-            "team_en": "乌拉圭",
-            "position": 1,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 1,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第1",
-            "status_class": "progress"
-          },
-          {
             "team_id": 30,
             "team": "沙特阿拉伯",
             "team_en": "沙特阿拉伯",
-            "position": 2,
-            "played": 1,
+            "position": 1,
+            "played": 2,
             "goals_for": 1,
             "goals_against": 1,
             "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 31,
-            "team": "西班牙",
-            "team_en": "西班牙",
-            "position": 3,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 0,
-            "goal_difference": 0,
-            "points": 1,
-            "status_label": "暂列第3",
+            "points": 2,
+            "status_label": "暂列第1",
             "status_class": "progress"
           },
           {
             "team_id": 29,
             "team": "佛得角",
             "team_en": "佛得角",
+            "position": 2,
+            "played": 2,
+            "goals_for": 0,
+            "goals_against": 0,
+            "goal_difference": 0,
+            "points": 2,
+            "status_label": "暂列第2",
+            "status_class": "progress"
+          },
+          {
+            "team_id": 32,
+            "team": "乌拉圭",
+            "team_en": "乌拉圭",
+            "position": 3,
+            "played": 1,
+            "goals_for": 1,
+            "goals_against": 1,
+            "goal_difference": 0,
+            "points": 1,
+            "status_label": "暂列第3",
+            "status_class": "progress"
+          },
+          {
+            "team_id": 31,
+            "team": "西班牙",
+            "team_en": "西班牙",
             "position": 4,
             "played": 1,
             "goals_for": 0,
@@ -8433,6 +8433,19 @@
             "goals_against": 0,
             "goal_difference": 4,
             "points": 4,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
+          },
+          {
+            "team_id": 29,
+            "team": "佛得角",
+            "team_en": "佛得角",
+            "position": 2,
+            "played": 3,
+            "goals_for": 2,
+            "goals_against": 2,
+            "goal_difference": 0,
+            "points": 3,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
           },
@@ -8440,23 +8453,10 @@
             "team_id": 32,
             "team": "乌拉圭",
             "team_en": "乌拉圭",
-            "position": 2,
+            "position": 3,
             "played": 2,
             "goals_for": 3,
             "goals_against": 3,
-            "goal_difference": 0,
-            "points": 2,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 29,
-            "team": "佛得角",
-            "team_en": "佛得角",
-            "position": 3,
-            "played": 2,
-            "goals_for": 2,
-            "goals_against": 2,
             "goal_difference": 0,
             "points": 2,
             "status_label": "暂列第3",
@@ -8467,13 +8467,13 @@
             "team": "沙特阿拉伯",
             "team_en": "沙特阿拉伯",
             "position": 4,
-            "played": 2,
+            "played": 3,
             "goals_for": 1,
             "goals_against": 5,
             "goal_difference": -4,
-            "points": 1,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "points": 2,
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ]
       }
@@ -10664,7 +10664,7 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
-        "reds": 0
+        "reds": 1
       },
       {
         "name": "Alex Freeman",
@@ -11371,6 +11371,14 @@
         "reds": 0
       },
       {
+        "name": "Álex Baena",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Álvaro Fidalgo",
         "team": "墨西哥",
         "goals": 1,
@@ -11891,6 +11899,14 @@
         "reds": 0
       },
       {
+        "name": "Feras Al-Brikan",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Findlay Curtis",
         "team": "苏格兰",
         "goals": 0,
@@ -11928,6 +11944,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Guillermo Varela",
+        "team": "乌拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12179,6 +12203,14 @@
         "reds": 0
       },
       {
+        "name": "Juan Manuel Sanabria",
+        "team": "乌拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Julio Enciso",
         "team": "巴拉圭",
         "goals": 0,
@@ -12363,6 +12395,14 @@
         "reds": 0
       },
       {
+        "name": "Marcos Llorente",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
@@ -12467,6 +12507,14 @@
         "reds": 0
       },
       {
+        "name": "Nasser Al-Dawsari",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nathan Ngoy",
         "team": "比利时",
         "goals": 0,
@@ -12496,6 +12544,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nicolás de la Cruz",
+        "team": "乌拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12755,6 +12811,14 @@
         "reds": 0
       },
       {
+        "name": "Saud Abdulhamid",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Sead Kolašinac",
         "team": "波黑",
         "goals": 0,
@@ -12896,6 +12960,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Wagner Pina",
+        "team": "佛得角",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13549,6 +13621,14 @@
         "reds": 0
       },
       {
+        "name": "Marcos Llorente",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Maxi Araújo",
         "team": "乌拉圭",
         "goals": 2,
@@ -13914,7 +13994,7 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
-        "reds": 0
+        "reds": 1
       },
       {
         "name": "Ahmed Fathy",
@@ -14381,6 +14461,14 @@
         "reds": 0
       },
       {
+        "name": "Feras Al-Brikan",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Findlay Curtis",
         "team": "苏格兰",
         "goals": 0,
@@ -14464,6 +14552,14 @@
         "name": "Granit Xhaka",
         "team": "瑞士",
         "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Guillermo Varela",
+        "team": "乌拉圭",
+        "goals": 0,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -14735,6 +14831,14 @@
       {
         "name": "Juan José Cáceres",
         "team": "巴拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Juan Manuel Sanabria",
+        "team": "乌拉圭",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15101,6 +15205,14 @@
         "reds": 0
       },
       {
+        "name": "Nasser Al-Dawsari",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nathan Ngoy",
         "team": "比利时",
         "goals": 0,
@@ -15136,6 +15248,14 @@
         "name": "Nicolas Pépé",
         "team": "科特迪瓦",
         "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Nicolás de la Cruz",
+        "team": "乌拉圭",
+        "goals": 0,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -15357,6 +15477,14 @@
         "reds": 0
       },
       {
+        "name": "Saud Abdulhamid",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
         "goals": 0,
@@ -15485,6 +15613,14 @@
         "reds": 0
       },
       {
+        "name": "Wagner Pina",
+        "team": "佛得角",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Wilson Isidor",
         "team": "海地",
         "goals": 1,
@@ -15533,6 +15669,14 @@
         "reds": 0
       },
       {
+        "name": "Álex Baena",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Álvaro Fidalgo",
         "team": "墨西哥",
         "goals": 1,
@@ -15556,6 +15700,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 1
+      },
+      {
+        "name": "Agustín Canobbio",
+        "team": "乌拉圭",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 1
       },
       {
@@ -16039,6 +16191,14 @@
         "reds": 0
       },
       {
+        "name": "Feras Al-Brikan",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Findlay Curtis",
         "team": "苏格兰",
         "goals": 0,
@@ -16090,6 +16250,14 @@
         "name": "Granit Xhaka",
         "team": "瑞士",
         "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Guillermo Varela",
+        "team": "乌拉圭",
+        "goals": 0,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -16249,6 +16417,14 @@
       {
         "name": "Juan José Cáceres",
         "team": "巴拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Juan Manuel Sanabria",
+        "team": "乌拉圭",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16447,6 +16623,14 @@
         "reds": 0
       },
       {
+        "name": "Nasser Al-Dawsari",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nico Elvedi",
         "team": "瑞士",
         "goals": 0,
@@ -16458,6 +16642,14 @@
         "name": "Nicolas Pépé",
         "team": "科特迪瓦",
         "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Nicolás de la Cruz",
+        "team": "乌拉圭",
+        "goals": 0,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -16623,6 +16815,14 @@
         "reds": 0
       },
       {
+        "name": "Saud Abdulhamid",
+        "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Sebastian Berhalter",
         "team": "美国",
         "goals": 1,
@@ -16695,6 +16895,14 @@
         "reds": 0
       },
       {
+        "name": "Wagner Pina",
+        "team": "佛得角",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Yasin Ayari",
         "team": "瑞典",
         "goals": 2,
@@ -16722,6 +16930,14 @@
         "name": "Álex Arce",
         "team": "巴拉圭",
         "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Álex Baena",
+        "team": "西班牙",
+        "goals": 1,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -16755,14 +16971,6 @@
         "team": "法国",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Agustín Canobbio",
-        "team": "乌拉圭",
-        "goals": 1,
-        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -17569,6 +17777,14 @@
       {
         "name": "Malik Tillman",
         "team": "美国",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Marcos Llorente",
+        "team": "西班牙",
         "goals": 0,
         "assists": 1,
         "yellows": 0,

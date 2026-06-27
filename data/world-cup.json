@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T00:21:01+00:00",
+  "generated_at": "2026-06-27T00:26:05+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1595,7 +1595,7 @@
       "stage": "H组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "19'",
+      "status_detail": "24'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Houston · Houston Stadium"
@@ -1615,7 +1615,7 @@
       "stage": "H组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "19'",
+      "status_detail": "21'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Guadalajara · Guadalajara Stadium"

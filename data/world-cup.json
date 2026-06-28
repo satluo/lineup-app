@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T01:30:17+00:00",
+  "generated_at": "2026-06-28T01:30:39+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -3237,7 +3237,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 13,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 1,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3277,7 +3277,7 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
-      "fair_play_points": -2,
+      "fair_play_points": -5,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3297,7 +3297,7 @@
       "goal_difference": -7,
       "points": 0,
       "fifa_rank": 50,
-      "fair_play_points": -2,
+      "fair_play_points": -4,
       "position": 4,
       "group_complete": false,
       "ranking_status": "calculated"
@@ -3641,7 +3641,7 @@
       "goal_difference": -1,
       "points": 1,
       "fifa_rank": 46,
-      "fair_play_points": -2,
+      "fair_play_points": -5,
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
@@ -5157,7 +5157,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 13,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5197,7 +5197,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 46,
-      "fair_play_points": -2,
+      "fair_play_points": -5,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5217,7 +5217,7 @@
       "goal_difference": -9,
       "points": 0,
       "fifa_rank": 50,
-      "fair_play_points": -2,
+      "fair_play_points": -4,
       "position": 4,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5319,7 +5319,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 46,
-      "fair_play_points": -2,
+      "fair_play_points": -5,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10491,6 +10491,14 @@
         "reds": 0
       },
       {
+        "name": "Yoane Wissa",
+        "team": "刚果（金）",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Anthony Elanga",
         "team": "瑞典",
         "goals": 2,
@@ -10835,6 +10843,14 @@
         "reds": 0
       },
       {
+        "name": "Eldor Shomurodov",
+        "team": "乌兹别克斯坦",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Emam Ashour",
         "team": "埃及",
         "goals": 1,
@@ -10853,6 +10869,14 @@
       {
         "name": "Finn Surman",
         "team": "新西兰",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Fiston Mayele",
+        "team": "刚果（金）",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11427,14 +11451,6 @@
         "reds": 0
       },
       {
-        "name": "Yoane Wissa",
-        "team": "刚果（金）",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Álex Baena",
         "team": "西班牙",
         "goals": 1,
@@ -11471,7 +11487,7 @@
         "team": "乌兹别克斯坦",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -11496,6 +11512,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Akmal Mozgovoy",
+        "team": "乌兹别克斯坦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12047,7 +12071,7 @@
         "team": "哥伦比亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12595,6 +12619,14 @@
         "reds": 0
       },
       {
+        "name": "Meschack Elia",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
@@ -12675,6 +12707,14 @@
         "reds": 1
       },
       {
+        "name": "Nathanaël Mbuku",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nico Elvedi",
         "team": "瑞士",
         "goals": 0,
@@ -12725,6 +12765,14 @@
       {
         "name": "Nkosinathi Sibisi",
         "team": "南非",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Noah Sadiki",
+        "team": "刚果（金）",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12947,6 +12995,14 @@
         "reds": 0
       },
       {
+        "name": "Samuel Moutoussamy",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Sarpreet Singh",
         "team": "新西兰",
         "goals": 0,
@@ -12973,6 +13029,14 @@
       {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Sherzod Nasrullaev",
+        "team": "乌兹别克斯坦",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13389,6 +13453,14 @@
         "reds": 0
       },
       {
+        "name": "Akmal Mozgovoy",
+        "team": "乌兹别克斯坦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Alex Freeman",
         "team": "美国",
         "goals": 1,
@@ -13601,7 +13673,7 @@
         "team": "哥伦比亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13842,6 +13914,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Meschack Elia",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14201,7 +14281,7 @@
         "team": "乌兹别克斯坦",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14661,6 +14741,14 @@
         "reds": 0
       },
       {
+        "name": "Eldor Shomurodov",
+        "team": "乌兹别克斯坦",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Elijah Just",
         "team": "新西兰",
         "goals": 3,
@@ -14735,6 +14823,14 @@
       {
         "name": "Finn Surman",
         "team": "新西兰",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Fiston Mayele",
+        "team": "刚果（金）",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -15533,6 +15629,14 @@
         "reds": 1
       },
       {
+        "name": "Nathanaël Mbuku",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nestory Irankunda",
         "team": "澳大利亚",
         "goals": 1,
@@ -15607,6 +15711,14 @@
       {
         "name": "Nkosinathi Sibisi",
         "team": "南非",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Noah Sadiki",
+        "team": "刚果（金）",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15781,6 +15893,14 @@
         "reds": 0
       },
       {
+        "name": "Samuel Moutoussamy",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Sarpreet Singh",
         "team": "新西兰",
         "goals": 0,
@@ -15799,6 +15919,14 @@
       {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Sherzod Nasrullaev",
+        "team": "乌兹别克斯坦",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15959,7 +16087,7 @@
       {
         "name": "Yoane Wissa",
         "team": "刚果（金）",
-        "goals": 1,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16103,6 +16231,14 @@
         "reds": 1
       },
       {
+        "name": "Abdukodir Khusanov",
+        "team": "乌兹别克斯坦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Ahmed Fathy",
         "team": "卡塔尔",
         "goals": 0,
@@ -16187,14 +16323,6 @@
         "team": "塞内加尔",
         "goals": 0,
         "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Abdukodir Khusanov",
-        "team": "乌兹别克斯坦",
-        "goals": 0,
-        "assists": 0,
         "yellows": 1,
         "reds": 0
       },
@@ -16623,6 +16751,14 @@
         "reds": 0
       },
       {
+        "name": "Gustavo Puerta",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Guéla Doué",
         "team": "科特迪瓦",
         "goals": 0,
@@ -17039,6 +17175,14 @@
         "reds": 0
       },
       {
+        "name": "Nathanaël Mbuku",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nico Elvedi",
         "team": "瑞士",
         "goals": 0,
@@ -17073,6 +17217,14 @@
       {
         "name": "Nkosinathi Sibisi",
         "team": "南非",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Noah Sadiki",
+        "team": "刚果（金）",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17207,6 +17359,14 @@
         "reds": 0
       },
       {
+        "name": "Samuel Moutoussamy",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Sarpreet Singh",
         "team": "新西兰",
         "goals": 0,
@@ -17233,6 +17393,14 @@
       {
         "name": "Seko Fofana",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Sherzod Nasrullaev",
+        "team": "乌兹别克斯坦",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17385,6 +17553,14 @@
       {
         "name": "Adrien Rabiot",
         "team": "法国",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Akmal Mozgovoy",
+        "team": "乌兹别克斯坦",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -17735,6 +17911,14 @@
         "reds": 0
       },
       {
+        "name": "Eldor Shomurodov",
+        "team": "乌兹别克斯坦",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Elliot Anderson",
         "team": "英格兰",
         "goals": 0,
@@ -17783,6 +17967,14 @@
         "reds": 0
       },
       {
+        "name": "Fiston Mayele",
+        "team": "刚果（金）",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Florian Wirtz",
         "team": "德国",
         "goals": 0,
@@ -17803,14 +17995,6 @@
         "team": "美国",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Gustavo Puerta",
-        "team": "哥伦比亚",
-        "goals": 0,
-        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -18335,6 +18519,14 @@
         "reds": 0
       },
       {
+        "name": "Meschack Elia",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
@@ -18809,7 +19001,7 @@
       {
         "name": "Yoane Wissa",
         "team": "刚果（金）",
-        "goals": 1,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0

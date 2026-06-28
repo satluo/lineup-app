@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T02:31:18+00:00",
+  "generated_at": "2026-06-28T02:36:22+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1755,7 +1755,7 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "30'",
+      "status_detail": "35'",
       "score_home": 0,
       "score_away": 1,
       "venue": "Kansas City · Kansas City Stadium"
@@ -1775,9 +1775,9 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "30'",
+      "status_detail": "36'",
       "score_home": 0,
-      "score_away": 1,
+      "score_away": 2,
       "venue": "Dallas · Dallas Stadium"
     },
     {
@@ -5072,9 +5072,9 @@
       "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 6,
+      "goals_for": 7,
       "goals_against": 0,
-      "goal_difference": 6,
+      "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
       "fair_play_points": -2,
@@ -5133,8 +5133,8 @@
       "drawn": 0,
       "lost": 3,
       "goals_for": 2,
-      "goals_against": 6,
-      "goal_difference": -4,
+      "goals_against": 7,
+      "goal_difference": -5,
       "points": 0,
       "fifa_rank": 63,
       "fair_play_points": -1,
@@ -10065,9 +10065,9 @@
             "team_en": "阿根廷",
             "position": 1,
             "played": 3,
-            "goals_for": 6,
+            "goals_for": 7,
             "goals_against": 0,
-            "goal_difference": 6,
+            "goal_difference": 7,
             "points": 9,
             "status_label": "第1",
             "status_class": "locked-first"
@@ -10105,8 +10105,8 @@
             "position": 4,
             "played": 3,
             "goals_for": 2,
-            "goals_against": 6,
-            "goal_difference": -4,
+            "goals_against": 7,
+            "goal_difference": -5,
             "points": 0,
             "status_label": "淘汰",
             "status_class": "out"

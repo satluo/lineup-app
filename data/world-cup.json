@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T02:00:52+00:00",
+  "generated_at": "2026-06-28T02:05:59+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1755,9 +1755,9 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "0'",
-      "score_home": null,
-      "score_away": null,
+      "status_detail": "5'",
+      "score_home": 0,
+      "score_away": 0,
       "venue": "Kansas City · Kansas City Stadium"
     },
     {
@@ -1775,9 +1775,9 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "0'",
-      "score_home": null,
-      "score_away": null,
+      "status_detail": "1'",
+      "score_home": 0,
+      "score_away": 0,
       "venue": "Dallas · Dallas Stadium"
     },
     {
@@ -5068,18 +5068,18 @@
       "team_name_en": "阿根廷",
       "team_name_zh": "阿根廷",
       "group_code": "J",
-      "played": 2,
+      "played": 3,
       "won": 2,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 0,
       "goals_for": 5,
       "goals_against": 0,
       "goal_difference": 5,
-      "points": 6,
+      "points": 7,
       "fifa_rank": 1,
       "fair_play_points": -2,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -5088,18 +5088,18 @@
       "team_name_en": "奥地利",
       "team_name_zh": "奥地利",
       "group_code": "J",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
       "goals_for": 3,
       "goals_against": 3,
       "goal_difference": 0,
-      "points": 3,
+      "points": 4,
       "fifa_rank": 24,
       "fair_play_points": -3,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -5108,18 +5108,18 @@
       "team_name_en": "阿尔及利亚",
       "team_name_zh": "阿尔及利亚",
       "group_code": "J",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
       "goals_for": 2,
       "goals_against": 4,
       "goal_difference": -2,
-      "points": 3,
+      "points": 4,
       "fifa_rank": 28,
       "fair_play_points": -1,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -5128,18 +5128,18 @@
       "team_name_en": "约旦",
       "team_name_zh": "约旦",
       "group_code": "J",
-      "played": 2,
+      "played": 3,
       "won": 0,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 2,
       "goals_for": 2,
       "goals_against": 5,
       "goal_difference": -3,
-      "points": 0,
+      "points": 1,
       "fifa_rank": 63,
       "fair_play_points": -1,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -5415,6 +5415,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 37,
+      "team_name": "阿尔及利亚",
+      "team_name_en": "阿尔及利亚",
+      "team_name_zh": "阿尔及利亚",
+      "group_code": "J",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 2,
+      "goals_against": 4,
+      "goal_difference": -2,
+      "points": 4,
+      "fifa_rank": 28,
+      "fair_play_points": -1,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 6,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 14,
       "team_name": "巴拉圭",
       "team_name_en": "巴拉圭",
@@ -5433,7 +5455,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -5455,7 +5477,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -5477,8 +5499,8 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
+      "third_place_position": 9,
+      "qualifies_currently": false
     },
     {
       "team_id": 4,
@@ -5498,28 +5520,6 @@
       "fair_play_points": -4,
       "position": 3,
       "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 9,
-      "qualifies_currently": false
-    },
-    {
-      "team_id": 37,
-      "team_name": "阿尔及利亚",
-      "team_name_en": "阿尔及利亚",
-      "team_name_zh": "阿尔及利亚",
-      "group_code": "J",
-      "played": 2,
-      "won": 1,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 2,
-      "goals_against": 4,
-      "goal_difference": -2,
-      "points": 3,
-      "fifa_rank": 28,
-      "fair_play_points": -1,
-      "position": 3,
-      "group_complete": false,
       "ranking_status": "calculated",
       "third_place_position": 10,
       "qualifies_currently": false
@@ -5826,22 +5826,22 @@
       "team_id": 38,
       "group_code": "J",
       "position": 1,
-      "label": "锁定头名",
+      "label": "确定头名",
       "class_name": "locked-first"
     },
     {
       "team_id": 39,
       "group_code": "J",
       "position": 2,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 37,
       "group_code": "J",
       "position": 3,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "第三待定",
+      "class_name": "progress"
     },
     {
       "team_id": 40,

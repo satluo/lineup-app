@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T19:05:19+00:00",
+  "generated_at": "2026-06-28T19:10:24+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1795,7 +1795,7 @@
       "stage": "Round of 32",
       "stage_code": "round_of_32",
       "status": "live",
-      "status_detail": "5'",
+      "status_detail": "10'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Los Angeles · Los Angeles Stadium"

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T01:11:22+00:00",
+  "generated_at": "2026-06-28T01:16:57+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1715,7 +1715,7 @@
       "stage": "K组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "79'",
+      "status_detail": "85'",
       "score_home": 0,
       "score_away": 0,
       "venue": "Miami · Miami Stadium"
@@ -1735,8 +1735,8 @@
       "stage": "K组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "77'",
-      "score_home": 1,
+      "status_detail": "83'",
+      "score_home": 2,
       "score_away": 1,
       "venue": "Atlanta · Atlanta Stadium"
     },
@@ -5189,13 +5189,13 @@
       "team_name_zh": "刚果（金）",
       "group_code": "K",
       "played": 3,
-      "won": 0,
-      "drawn": 2,
+      "won": 1,
+      "drawn": 1,
       "lost": 1,
-      "goals_for": 2,
+      "goals_for": 3,
       "goals_against": 3,
-      "goal_difference": -1,
-      "points": 2,
+      "goal_difference": 0,
+      "points": 4,
       "fifa_rank": 46,
       "fair_play_points": -2,
       "position": 3,
@@ -5210,12 +5210,12 @@
       "group_code": "K",
       "played": 3,
       "won": 0,
-      "drawn": 1,
-      "lost": 2,
+      "drawn": 0,
+      "lost": 3,
       "goals_for": 2,
-      "goals_against": 9,
-      "goal_difference": -7,
-      "points": 1,
+      "goals_against": 10,
+      "goal_difference": -8,
+      "points": 0,
       "fifa_rank": 50,
       "fair_play_points": -2,
       "position": 4,
@@ -5327,6 +5327,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 42,
+      "team_name": "刚果（金）",
+      "team_name_en": "刚果（金）",
+      "team_name_zh": "刚果（金）",
+      "group_code": "K",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 3,
+      "goals_against": 3,
+      "goal_difference": 0,
+      "points": 4,
+      "fifa_rank": 46,
+      "fair_play_points": -2,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 2,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 47,
       "team_name": "加纳",
       "team_name_en": "加纳",
@@ -5345,7 +5367,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 2,
+      "third_place_position": 3,
       "qualifies_currently": true
     },
     {
@@ -5367,7 +5389,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 3,
+      "third_place_position": 4,
       "qualifies_currently": true
     },
     {
@@ -5389,7 +5411,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 4,
+      "third_place_position": 5,
       "qualifies_currently": true
     },
     {
@@ -5411,7 +5433,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 5,
+      "third_place_position": 6,
       "qualifies_currently": true
     },
     {
@@ -5433,7 +5455,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -5455,7 +5477,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -5477,8 +5499,8 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
+      "third_place_position": 9,
+      "qualifies_currently": false
     },
     {
       "team_id": 37,
@@ -5499,7 +5521,7 @@
       "position": 3,
       "group_complete": false,
       "ranking_status": "calculated",
-      "third_place_position": 9,
+      "third_place_position": 10,
       "qualifies_currently": false
     },
     {
@@ -5521,7 +5543,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 10,
+      "third_place_position": 11,
       "qualifies_currently": false
     },
     {
@@ -5540,28 +5562,6 @@
       "points": 2,
       "fifa_rank": 16,
       "fair_play_points": -9,
-      "position": 3,
-      "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 11,
-      "qualifies_currently": false
-    },
-    {
-      "team_id": 42,
-      "team_name": "刚果（金）",
-      "team_name_en": "刚果（金）",
-      "team_name_zh": "刚果（金）",
-      "group_code": "K",
-      "played": 3,
-      "won": 0,
-      "drawn": 2,
-      "lost": 1,
-      "goals_for": 2,
-      "goals_against": 3,
-      "goal_difference": -1,
-      "points": 2,
-      "fifa_rank": 46,
-      "fair_play_points": -2,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10095,7 +10095,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第5",
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {
@@ -10207,11 +10207,11 @@
             "team_en": "刚果（金）",
             "position": 3,
             "played": 3,
-            "goals_for": 2,
+            "goals_for": 3,
             "goals_against": 3,
-            "goal_difference": -1,
-            "points": 2,
-            "status_label": "第三第12",
+            "goal_difference": 0,
+            "points": 4,
+            "status_label": "第三第2",
             "status_class": "third"
           },
           {
@@ -10221,9 +10221,9 @@
             "position": 4,
             "played": 3,
             "goals_for": 2,
-            "goals_against": 9,
-            "goal_difference": -7,
-            "points": 1,
+            "goals_against": 10,
+            "goal_difference": -8,
+            "points": 0,
             "status_label": "淘汰",
             "status_class": "out"
           }
@@ -10327,7 +10327,7 @@
             "goals_against": 2,
             "goal_difference": 0,
             "points": 4,
-            "status_label": "第三第2",
+            "status_label": "第三第3",
             "status_class": "third"
           },
           {

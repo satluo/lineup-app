@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T20:56:19+00:00",
+  "generated_at": "2026-06-28T21:00:15+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1794,8 +1794,8 @@
       "away_en": "Canada",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "live",
-      "status_detail": "90'+6'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 0,
       "score_away": 1,
       "venue": "Los Angeles · Los Angeles Stadium"
@@ -2108,9 +2108,9 @@
       "away_placeholder": "W75",
       "date": "2026-07-05",
       "time": "01:00",
-      "home": "W73",
+      "home": "加拿大",
       "away": "W75",
-      "home_en": "W73",
+      "home_en": "Canada",
       "away_en": "W75",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
@@ -2537,7 +2537,7 @@
       "goal_difference": 5,
       "points": 4,
       "fifa_rank": 30,
-      "fair_play_points": -5,
+      "fair_play_points": -7,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4457,7 +4457,7 @@
       "goal_difference": 5,
       "points": 4,
       "fifa_rank": 30,
-      "fair_play_points": -5,
+      "fair_play_points": -7,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -11287,7 +11287,7 @@
         "team": "加拿大",
         "goals": 1,
         "assists": 2,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11447,6 +11447,14 @@
         "team": "摩洛哥",
         "goals": 1,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Stephen Eustáquio",
+        "team": "加拿大",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -12843,6 +12851,14 @@
         "reds": 0
       },
       {
+        "name": "Niko Sigur",
+        "team": "加拿大",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nikola Katić",
         "team": "波黑",
         "goals": 0,
@@ -13497,7 +13513,7 @@
         "team": "加拿大",
         "goals": 1,
         "assists": 2,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15829,6 +15845,14 @@
         "reds": 0
       },
       {
+        "name": "Niko Sigur",
+        "team": "加拿大",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nikola Katić",
         "team": "波黑",
         "goals": 0,
@@ -16138,6 +16162,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Stephen Eustáquio",
+        "team": "加拿大",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -17375,6 +17407,14 @@
         "reds": 0
       },
       {
+        "name": "Nathan Saliba",
+        "team": "加拿大",
+        "goals": 1,
+        "assists": 2,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nathanaël Mbuku",
         "team": "刚果（金）",
         "goals": 0,
@@ -17401,6 +17441,14 @@
       {
         "name": "Nicolás de la Cruz",
         "team": "乌拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Niko Sigur",
+        "team": "加拿大",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -18855,14 +18903,6 @@
         "reds": 0
       },
       {
-        "name": "Nathan Saliba",
-        "team": "加拿大",
-        "goals": 1,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Nathaniel Brown",
         "team": "德国",
         "goals": 1,
@@ -19147,6 +19187,14 @@
         "team": "摩洛哥",
         "goals": 1,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Stephen Eustáquio",
+        "team": "加拿大",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },

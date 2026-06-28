@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T02:51:31+00:00",
+  "generated_at": "2026-06-28T02:56:30+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1775,7 +1775,7 @@
       "stage": "J组",
       "stage_code": "group",
       "status": "live",
-      "status_detail": "45'+5'",
+      "status_detail": "live",
       "score_home": 0,
       "score_away": 2,
       "venue": "Dallas · Dallas Stadium"

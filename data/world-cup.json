@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T03:57:07+00:00",
+  "generated_at": "2026-06-28T04:00:18+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1754,10 +1754,10 @@
       "away_en": "Austria",
       "stage": "J组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+5'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 3,
-      "score_away": 2,
+      "score_away": 3,
       "venue": "Kansas City · Kansas City Stadium"
     },
     {
@@ -1774,8 +1774,8 @@
       "away_en": "Argentina",
       "stage": "J组",
       "stage_code": "group",
-      "status": "live",
-      "status_detail": "90'+5'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 1,
       "score_away": 3,
       "venue": "Dallas · Dallas Stadium"
@@ -1989,9 +1989,9 @@
       "date": "2026-07-03",
       "time": "03:00",
       "home": "西班牙",
-      "away": "2J",
+      "away": "奥地利",
       "home_en": "Spain",
-      "away_en": "2J",
+      "away_en": "Austria",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
       "status": "scheduled",
@@ -2029,9 +2029,9 @@
       "date": "2026-07-03",
       "time": "11:00",
       "home": "瑞士",
-      "away": "3EFGIJ",
+      "away": "阿尔及利亚",
       "home_en": "Switzerland",
-      "away_en": "3EFGIJ",
+      "away_en": "Algeria",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
       "status": "scheduled",
@@ -3148,18 +3148,18 @@
       "team_name_en": "阿根廷",
       "team_name_zh": "阿根廷",
       "group_code": "J",
-      "played": 2,
-      "won": 2,
+      "played": 3,
+      "won": 3,
       "drawn": 0,
       "lost": 0,
-      "goals_for": 5,
-      "goals_against": 0,
-      "goal_difference": 5,
-      "points": 6,
+      "goals_for": 8,
+      "goals_against": 1,
+      "goal_difference": 7,
+      "points": 9,
       "fifa_rank": 1,
       "fair_play_points": -2,
       "position": 1,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3168,18 +3168,18 @@
       "team_name_en": "奥地利",
       "team_name_zh": "奥地利",
       "group_code": "J",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
-      "goals_for": 3,
-      "goals_against": 3,
+      "goals_for": 6,
+      "goals_against": 6,
       "goal_difference": 0,
-      "points": 3,
+      "points": 4,
       "fifa_rank": 24,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
       "position": 2,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3188,18 +3188,18 @@
       "team_name_en": "阿尔及利亚",
       "team_name_zh": "阿尔及利亚",
       "group_code": "J",
-      "played": 2,
+      "played": 3,
       "won": 1,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
-      "goals_for": 2,
-      "goals_against": 4,
+      "goals_for": 5,
+      "goals_against": 7,
       "goal_difference": -2,
-      "points": 3,
+      "points": 4,
       "fifa_rank": 28,
       "fair_play_points": -1,
       "position": 3,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3208,18 +3208,18 @@
       "team_name_en": "约旦",
       "team_name_zh": "约旦",
       "group_code": "J",
-      "played": 2,
+      "played": 3,
       "won": 0,
       "drawn": 0,
-      "lost": 2,
-      "goals_for": 2,
-      "goals_against": 5,
-      "goal_difference": -3,
+      "lost": 3,
+      "goals_for": 3,
+      "goals_against": 8,
+      "goal_difference": -5,
       "points": 0,
       "fifa_rank": 63,
-      "fair_play_points": -1,
+      "fair_play_points": -4,
       "position": 4,
-      "group_complete": false,
+      "group_complete": true,
       "ranking_status": "calculated"
     },
     {
@@ -3495,6 +3495,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 37,
+      "team_name": "阿尔及利亚",
+      "team_name_en": "阿尔及利亚",
+      "team_name_zh": "阿尔及利亚",
+      "group_code": "J",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 5,
+      "goals_against": 7,
+      "goal_difference": -2,
+      "points": 4,
+      "fifa_rank": 28,
+      "fair_play_points": -1,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 6,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 14,
       "team_name": "巴拉圭",
       "team_name_en": "巴拉圭",
@@ -3513,7 +3535,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -3535,7 +3557,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -3557,8 +3579,8 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
+      "third_place_position": 9,
+      "qualifies_currently": false
     },
     {
       "team_id": 4,
@@ -3578,28 +3600,6 @@
       "fair_play_points": -4,
       "position": 3,
       "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 9,
-      "qualifies_currently": false
-    },
-    {
-      "team_id": 37,
-      "team_name": "阿尔及利亚",
-      "team_name_en": "阿尔及利亚",
-      "team_name_zh": "阿尔及利亚",
-      "group_code": "J",
-      "played": 2,
-      "won": 1,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 2,
-      "goals_against": 4,
-      "goal_difference": -2,
-      "points": 3,
-      "fifa_rank": 28,
-      "fair_play_points": -1,
-      "position": 3,
-      "group_complete": false,
       "ranking_status": "calculated",
       "third_place_position": 10,
       "qualifies_currently": false
@@ -3849,17 +3849,6 @@
       "reason": "Group G completed"
     },
     {
-      "team_id": 27,
-      "team_name": "伊朗",
-      "team_name_en": "伊朗",
-      "team_name_zh": "伊朗",
-      "group_code": "G",
-      "group_position": 3,
-      "slot_type": "best_third",
-      "status": "confirmed",
-      "reason": "Group G completed"
-    },
-    {
       "team_id": 31,
       "team_name": "西班牙",
       "team_name_en": "西班牙",
@@ -3922,8 +3911,8 @@
       "group_code": "J",
       "group_position": 1,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group J completed"
     },
     {
       "team_id": 39,
@@ -3933,8 +3922,19 @@
       "group_code": "J",
       "group_position": 2,
       "slot_type": "group_position",
-      "status": "current_standings",
-      "reason": "Provisional from locally calculated current standings"
+      "status": "confirmed",
+      "reason": "Group J completed"
+    },
+    {
+      "team_id": 37,
+      "team_name": "阿尔及利亚",
+      "team_name_en": "阿尔及利亚",
+      "team_name_zh": "阿尔及利亚",
+      "group_code": "J",
+      "group_position": 3,
+      "slot_type": "best_third",
+      "status": "confirmed",
+      "reason": "Group J completed"
     },
     {
       "team_id": 41,
@@ -4190,8 +4190,8 @@
       "team_id": 27,
       "group_code": "G",
       "position": 3,
-      "label": "第三待定",
-      "class_name": "progress"
+      "label": "第三淘汰",
+      "class_name": "out"
     },
     {
       "team_id": 28,
@@ -4260,22 +4260,22 @@
       "team_id": 38,
       "group_code": "J",
       "position": 1,
-      "label": "锁定头名",
+      "label": "确定头名",
       "class_name": "locked-first"
     },
     {
       "team_id": 39,
       "group_code": "J",
       "position": 2,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "确定前二",
+      "class_name": "locked-top2"
     },
     {
       "team_id": 37,
       "group_code": "J",
       "position": 3,
-      "label": "锁定前三",
-      "class_name": "locked-top3"
+      "label": "第三晋级",
+      "class_name": "third"
     },
     {
       "team_id": 40,
@@ -5083,26 +5083,6 @@
       "ranking_status": "calculated"
     },
     {
-      "team_id": 37,
-      "team_name": "阿尔及利亚",
-      "team_name_en": "阿尔及利亚",
-      "team_name_zh": "阿尔及利亚",
-      "group_code": "J",
-      "played": 3,
-      "won": 2,
-      "drawn": 0,
-      "lost": 1,
-      "goals_for": 5,
-      "goals_against": 6,
-      "goal_difference": -1,
-      "points": 6,
-      "fifa_rank": 28,
-      "fair_play_points": -1,
-      "position": 2,
-      "group_complete": true,
-      "ranking_status": "calculated"
-    },
-    {
       "team_id": 39,
       "team_name": "奥地利",
       "team_name_en": "奥地利",
@@ -5110,14 +5090,34 @@
       "group_code": "J",
       "played": 3,
       "won": 1,
-      "drawn": 0,
-      "lost": 2,
-      "goals_for": 5,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 6,
       "goals_against": 6,
-      "goal_difference": -1,
-      "points": 3,
+      "goal_difference": 0,
+      "points": 4,
       "fifa_rank": 24,
-      "fair_play_points": -3,
+      "fair_play_points": -4,
+      "position": 2,
+      "group_complete": true,
+      "ranking_status": "calculated"
+    },
+    {
+      "team_id": 37,
+      "team_name": "阿尔及利亚",
+      "team_name_en": "阿尔及利亚",
+      "team_name_zh": "阿尔及利亚",
+      "group_code": "J",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 5,
+      "goals_against": 7,
+      "goal_difference": -2,
+      "points": 4,
+      "fifa_rank": 28,
+      "fair_play_points": -1,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5137,7 +5137,7 @@
       "goal_difference": -5,
       "points": 0,
       "fifa_rank": 63,
-      "fair_play_points": -1,
+      "fair_play_points": -4,
       "position": 4,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5415,6 +5415,28 @@
       "qualifies_currently": true
     },
     {
+      "team_id": 37,
+      "team_name": "阿尔及利亚",
+      "team_name_en": "阿尔及利亚",
+      "team_name_zh": "阿尔及利亚",
+      "group_code": "J",
+      "played": 3,
+      "won": 1,
+      "drawn": 1,
+      "lost": 1,
+      "goals_for": 5,
+      "goals_against": 7,
+      "goal_difference": -2,
+      "points": 4,
+      "fifa_rank": 28,
+      "fair_play_points": -1,
+      "position": 3,
+      "group_complete": true,
+      "ranking_status": "calculated",
+      "third_place_position": 6,
+      "qualifies_currently": true
+    },
+    {
       "team_id": 14,
       "team_name": "巴拉圭",
       "team_name_en": "巴拉圭",
@@ -5433,7 +5455,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 6,
+      "third_place_position": 7,
       "qualifies_currently": true
     },
     {
@@ -5455,7 +5477,7 @@
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
-      "third_place_position": 7,
+      "third_place_position": 8,
       "qualifies_currently": true
     },
     {
@@ -5474,28 +5496,6 @@
       "points": 3,
       "fifa_rank": 20,
       "fair_play_points": -6,
-      "position": 3,
-      "group_complete": true,
-      "ranking_status": "calculated",
-      "third_place_position": 8,
-      "qualifies_currently": true
-    },
-    {
-      "team_id": 39,
-      "team_name": "奥地利",
-      "team_name_en": "奥地利",
-      "team_name_zh": "奥地利",
-      "group_code": "J",
-      "played": 3,
-      "won": 1,
-      "drawn": 0,
-      "lost": 2,
-      "goals_for": 5,
-      "goals_against": 6,
-      "goal_difference": -1,
-      "points": 3,
-      "fifa_rank": 24,
-      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -5830,14 +5830,14 @@
       "class_name": "locked-first"
     },
     {
-      "team_id": 37,
+      "team_id": 39,
       "group_code": "J",
       "position": 2,
       "label": "确定前二",
       "class_name": "locked-top2"
     },
     {
-      "team_id": 39,
+      "team_id": 37,
       "group_code": "J",
       "position": 3,
       "label": "第三待定",
@@ -6007,7 +6007,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第9",
+            "status_label": "第三第10",
             "status_class": "third"
           },
           {
@@ -6239,7 +6239,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第6",
+            "status_label": "第三第7",
             "status_class": "third"
           },
           {
@@ -6587,7 +6587,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第6",
+            "status_label": "第三第7",
             "status_class": "third"
           },
           {
@@ -6939,7 +6939,7 @@
             "goals_against": 3,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第8",
+            "status_label": "第三第9",
             "status_class": "third"
           },
           {
@@ -7173,7 +7173,7 @@
             "goals_against": 6,
             "goal_difference": 2,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -7204,93 +7204,39 @@
             "team": "阿根廷",
             "team_en": "阿根廷",
             "position": 1,
-            "played": 1,
-            "goals_for": 2,
-            "goals_against": 0,
-            "goal_difference": 2,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 37,
-            "team": "阿尔及利亚",
-            "team_en": "阿尔及利亚",
-            "position": 2,
-            "played": 1,
-            "goals_for": 2,
-            "goals_against": 1,
-            "goal_difference": 1,
-            "points": 3,
-            "status_label": "暂列第2",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 40,
-            "team": "约旦",
-            "team_en": "约旦",
-            "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 2,
-            "goal_difference": -1,
-            "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 39,
-            "team": "奥地利",
-            "team_en": "奥地利",
-            "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 2,
-            "goal_difference": -2,
-            "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
-          }
-        ],
-        "current": [
-          {
-            "team_id": 38,
-            "team": "阿根廷",
-            "team_en": "阿根廷",
-            "position": 1,
             "played": 2,
             "goals_for": 5,
-            "goals_against": 0,
-            "goal_difference": 5,
+            "goals_against": 1,
+            "goal_difference": 4,
             "points": 6,
-            "status_label": "锁定头名",
-            "status_class": "locked-first"
-          },
-          {
-            "team_id": 39,
-            "team": "奥地利",
-            "team_en": "奥地利",
-            "position": 2,
-            "played": 2,
-            "goals_for": 3,
-            "goals_against": 3,
-            "goal_difference": 0,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 37,
             "team": "阿尔及利亚",
             "team_en": "阿尔及利亚",
-            "position": 3,
+            "position": 2,
             "played": 2,
-            "goals_for": 2,
+            "goals_for": 5,
             "goals_against": 4,
-            "goal_difference": -2,
-            "points": 3,
+            "goal_difference": 1,
+            "points": 4,
             "status_label": "锁定前三",
             "status_class": "locked-top3"
+          },
+          {
+            "team_id": 39,
+            "team": "奥地利",
+            "team_en": "奥地利",
+            "position": 3,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 5,
+            "goal_difference": -2,
+            "points": 1,
+            "status_label": "暂列第3",
+            "status_class": "progress"
           },
           {
             "team_id": 40,
@@ -7302,7 +7248,61 @@
             "goals_against": 5,
             "goal_difference": -3,
             "points": 0,
-            "status_label": "淘汰了",
+            "status_label": "无缘前二",
+            "status_class": "out"
+          }
+        ],
+        "current": [
+          {
+            "team_id": 38,
+            "team": "阿根廷",
+            "team_en": "阿根廷",
+            "position": 1,
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 1,
+            "goal_difference": 7,
+            "points": 9,
+            "status_label": "第1",
+            "status_class": "locked-first"
+          },
+          {
+            "team_id": 39,
+            "team": "奥地利",
+            "team_en": "奥地利",
+            "position": 2,
+            "played": 3,
+            "goals_for": 6,
+            "goals_against": 6,
+            "goal_difference": 0,
+            "points": 4,
+            "status_label": "第2",
+            "status_class": "locked-top2"
+          },
+          {
+            "team_id": 37,
+            "team": "阿尔及利亚",
+            "team_en": "阿尔及利亚",
+            "position": 3,
+            "played": 3,
+            "goals_for": 5,
+            "goals_against": 7,
+            "goal_difference": -2,
+            "points": 4,
+            "status_label": "第三第6",
+            "status_class": "third"
+          },
+          {
+            "team_id": 40,
+            "team": "约旦",
+            "team_en": "约旦",
+            "position": 4,
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 8,
+            "goal_difference": -5,
+            "points": 0,
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -7641,7 +7641,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第9",
+            "status_label": "第三第10",
             "status_class": "third"
           },
           {
@@ -7991,7 +7991,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第6",
+            "status_label": "第三第7",
             "status_class": "third"
           },
           {
@@ -8343,7 +8343,7 @@
             "goals_against": 3,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第8",
+            "status_label": "第三第9",
             "status_class": "third"
           },
           {
@@ -8577,7 +8577,7 @@
             "goals_against": 6,
             "goal_difference": 2,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -8608,52 +8608,52 @@
             "team": "阿根廷",
             "team_en": "阿根廷",
             "position": 1,
-            "played": 1,
-            "goals_for": 3,
-            "goals_against": 0,
-            "goal_difference": 3,
-            "points": 3,
-            "status_label": "暂列第1",
-            "status_class": "progress"
+            "played": 2,
+            "goals_for": 6,
+            "goals_against": 1,
+            "goal_difference": 5,
+            "points": 6,
+            "status_label": "锁定前二",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 39,
             "team": "奥地利",
             "team_en": "奥地利",
             "position": 2,
-            "played": 1,
-            "goals_for": 3,
-            "goals_against": 1,
+            "played": 2,
+            "goals_for": 6,
+            "goals_against": 4,
             "goal_difference": 2,
-            "points": 3,
-            "status_label": "暂列第2",
+            "points": 4,
+            "status_label": "锁定前三",
+            "status_class": "locked-top3"
+          },
+          {
+            "team_id": 37,
+            "team": "阿尔及利亚",
+            "team_en": "阿尔及利亚",
+            "position": 3,
+            "played": 2,
+            "goals_for": 3,
+            "goals_against": 6,
+            "goal_difference": -3,
+            "points": 1,
+            "status_label": "暂列第3",
             "status_class": "progress"
           },
           {
             "team_id": 40,
             "team": "约旦",
             "team_en": "约旦",
-            "position": 3,
-            "played": 1,
-            "goals_for": 1,
-            "goals_against": 3,
-            "goal_difference": -2,
-            "points": 0,
-            "status_label": "暂列第3",
-            "status_class": "progress"
-          },
-          {
-            "team_id": 37,
-            "team": "阿尔及利亚",
-            "team_en": "阿尔及利亚",
             "position": 4,
-            "played": 1,
-            "goals_for": 0,
-            "goals_against": 3,
-            "goal_difference": -3,
+            "played": 2,
+            "goals_for": 2,
+            "goals_against": 6,
+            "goal_difference": -4,
             "points": 0,
-            "status_label": "暂列第4",
-            "status_class": "progress"
+            "status_label": "无缘前二",
+            "status_class": "out"
           }
         ],
         "current": [
@@ -8662,12 +8662,12 @@
             "team": "阿根廷",
             "team_en": "阿根廷",
             "position": 1,
-            "played": 2,
-            "goals_for": 5,
-            "goals_against": 0,
-            "goal_difference": 5,
-            "points": 6,
-            "status_label": "锁定头名",
+            "played": 3,
+            "goals_for": 8,
+            "goals_against": 1,
+            "goal_difference": 7,
+            "points": 9,
+            "status_label": "第1",
             "status_class": "locked-first"
           },
           {
@@ -8675,38 +8675,38 @@
             "team": "奥地利",
             "team_en": "奥地利",
             "position": 2,
-            "played": 2,
-            "goals_for": 3,
-            "goals_against": 3,
+            "played": 3,
+            "goals_for": 6,
+            "goals_against": 6,
             "goal_difference": 0,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 4,
+            "status_label": "第2",
+            "status_class": "locked-top2"
           },
           {
             "team_id": 37,
             "team": "阿尔及利亚",
             "team_en": "阿尔及利亚",
             "position": 3,
-            "played": 2,
-            "goals_for": 2,
-            "goals_against": 4,
+            "played": 3,
+            "goals_for": 5,
+            "goals_against": 7,
             "goal_difference": -2,
-            "points": 3,
-            "status_label": "锁定前三",
-            "status_class": "locked-top3"
+            "points": 4,
+            "status_label": "第三第6",
+            "status_class": "third"
           },
           {
             "team_id": 40,
             "team": "约旦",
             "team_en": "约旦",
             "position": 4,
-            "played": 2,
-            "goals_for": 2,
-            "goals_against": 5,
-            "goal_difference": -3,
+            "played": 3,
+            "goals_for": 3,
+            "goals_against": 8,
+            "goal_difference": -5,
             "points": 0,
-            "status_label": "淘汰了",
+            "status_label": "淘汰",
             "status_class": "out"
           }
         ]
@@ -9045,7 +9045,7 @@
             "goals_against": 3,
             "goal_difference": -1,
             "points": 3,
-            "status_label": "第三第9",
+            "status_label": "第三第10",
             "status_class": "third"
           },
           {
@@ -9395,7 +9395,7 @@
             "goals_against": 4,
             "goal_difference": -2,
             "points": 4,
-            "status_label": "第三第6",
+            "status_label": "第三第7",
             "status_class": "third"
           },
           {
@@ -9745,7 +9745,7 @@
             "goals_against": 3,
             "goal_difference": 0,
             "points": 3,
-            "status_label": "第三第8",
+            "status_label": "第三第9",
             "status_class": "third"
           },
           {
@@ -9977,7 +9977,7 @@
             "goals_against": 6,
             "goal_difference": 2,
             "points": 3,
-            "status_label": "第三第7",
+            "status_label": "第三第8",
             "status_class": "third"
           },
           {
@@ -10003,7 +10003,7 @@
           69,
           70
         ],
-        "all_finished": false,
+        "all_finished": true,
         "pre": [
           {
             "team_id": 38,
@@ -10073,29 +10073,29 @@
             "status_class": "locked-first"
           },
           {
-            "team_id": 37,
-            "team": "阿尔及利亚",
-            "team_en": "阿尔及利亚",
+            "team_id": 39,
+            "team": "奥地利",
+            "team_en": "奥地利",
             "position": 2,
             "played": 3,
-            "goals_for": 5,
+            "goals_for": 6,
             "goals_against": 6,
-            "goal_difference": -1,
-            "points": 6,
+            "goal_difference": 0,
+            "points": 4,
             "status_label": "第2",
             "status_class": "locked-top2"
           },
           {
-            "team_id": 39,
-            "team": "奥地利",
-            "team_en": "奥地利",
+            "team_id": 37,
+            "team": "阿尔及利亚",
+            "team_en": "阿尔及利亚",
             "position": 3,
             "played": 3,
             "goals_for": 5,
-            "goals_against": 6,
-            "goal_difference": -1,
-            "points": 3,
-            "status_label": "第三第9",
+            "goals_against": 7,
+            "goal_difference": -2,
+            "points": 4,
+            "status_label": "第三第6",
             "status_class": "third"
           },
           {
@@ -10363,7 +10363,7 @@
   },
   "third_place_slot_overrides": {
     "3CEFHI": "E",
-    "3EFGIJ": "G",
+    "3EFGIJ": "J",
     "3BEFIJ": "B",
     "3ABCDF": "D",
     "3AEHIJ": "I",
@@ -10374,14 +10374,14 @@
   "third_place_mapping": {
     "source": "FIFA World Cup 2026 Regulations Annex C; extracted from the public Wikimedia template '2026 FIFA World Cup third-place table'.",
     "rule_count": 495,
-    "current_combination": "BDEFGIKL"
+    "current_combination": "BDEFIJKL"
   },
   "leaderboards": {
     "scorers": [
       {
         "name": "Lionel Messi",
         "team": "阿根廷",
-        "goals": 5,
+        "goals": 6,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -10611,6 +10611,14 @@
         "reds": 0
       },
       {
+        "name": "Marko Arnautović",
+        "team": "奥地利",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Maxi Araújo",
         "team": "乌拉圭",
         "goals": 2,
@@ -10645,6 +10653,14 @@
       {
         "name": "Ramin Rezaeian",
         "team": "伊朗",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Riyad Mahrez",
+        "team": "阿尔及利亚",
         "goals": 2,
         "assists": 1,
         "yellows": 0,
@@ -10899,6 +10915,14 @@
         "reds": 0
       },
       {
+        "name": "Giovani Lo Celso",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Giovanni Reyna",
         "team": "美国",
         "goals": 1,
@@ -11091,6 +11115,14 @@
         "reds": 0
       },
       {
+        "name": "Lautaro Martínez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Leo Østigård",
         "team": "挪威",
         "goals": 1,
@@ -11139,6 +11171,14 @@
         "reds": 0
       },
       {
+        "name": "Marcel Sabitzer",
+        "team": "奥地利",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Marcus Holmgren Pedersen",
         "team": "挪威",
         "goals": 1,
@@ -11149,14 +11189,6 @@
       {
         "name": "Marcus Rashford",
         "team": "英格兰",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Marko Arnautović",
-        "team": "奥地利",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11229,6 +11261,14 @@
       {
         "name": "Mostafa Zico",
         "team": "埃及",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mousa Al-Tamari",
+        "team": "约旦",
         "goals": 1,
         "assists": 1,
         "yellows": 0,
@@ -11355,6 +11395,14 @@
         "reds": 0
       },
       {
+        "name": "Rafik Belghali",
+        "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Raúl Jiménez",
         "team": "墨西哥",
         "goals": 1,
@@ -11376,6 +11424,14 @@
         "goals": 1,
         "assists": 1,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Saša Kalajdžić",
+        "team": "奥地利",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -11851,6 +11907,14 @@
         "reds": 0
       },
       {
+        "name": "David Alaba",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "David Møller Wolfe",
         "team": "挪威",
         "goals": 0,
@@ -11952,6 +12016,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Ehsan Haddad",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12120,6 +12192,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Houssem Aouar",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12422,7 +12502,7 @@
         "name": "Konrad Laimer",
         "team": "奥地利",
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -12547,14 +12627,6 @@
         "reds": 0
       },
       {
-        "name": "Marcel Sabitzer",
-        "team": "奥地利",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Marcos Llorente",
         "team": "西班牙",
         "goals": 0,
@@ -12627,6 +12699,14 @@
         "reds": 0
       },
       {
+        "name": "Michael Gregoritsch",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
@@ -12667,6 +12747,14 @@
         "reds": 0
       },
       {
+        "name": "Mohammed Abu Zraiq",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Mohanad Lashin",
         "team": "埃及",
         "goals": 0,
@@ -12675,11 +12763,11 @@
         "reds": 0
       },
       {
-        "name": "Mousa Al-Tamari",
+        "name": "Mohannad Abu Taha",
         "team": "约旦",
         "goals": 0,
-        "assists": 1,
-        "yellows": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12909,14 +12997,6 @@
       {
         "name": "Ritsu Dōan",
         "team": "日本",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Riyad Mahrez",
-        "team": "阿尔及利亚",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13219,6 +13299,14 @@
         "reds": 0
       },
       {
+        "name": "Yazan Al-Arab",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Yunus Akgün",
         "team": "土耳其",
         "goals": 0,
@@ -13343,6 +13431,14 @@
       {
         "name": "Hannibal Mejbri",
         "team": "突尼斯",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Houssem Aouar",
+        "team": "阿尔及利亚",
         "goals": 0,
         "assists": 2,
         "yellows": 0,
@@ -13605,6 +13701,14 @@
         "reds": 0
       },
       {
+        "name": "David Alaba",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "David Møller Wolfe",
         "team": "挪威",
         "goals": 0,
@@ -13631,6 +13735,14 @@
       {
         "name": "Edmilson Junior",
         "team": "卡塔尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ehsan Haddad",
+        "team": "约旦",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13805,6 +13917,14 @@
         "reds": 0
       },
       {
+        "name": "Konrad Laimer",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Kou Itakura",
         "team": "日本",
         "goals": 0,
@@ -13925,6 +14045,14 @@
         "reds": 0
       },
       {
+        "name": "Michael Gregoritsch",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Mikel Oyarzabal",
         "team": "西班牙",
         "goals": 2,
@@ -13951,7 +14079,7 @@
       {
         "name": "Mousa Al-Tamari",
         "team": "约旦",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14103,7 +14231,7 @@
       {
         "name": "Riyad Mahrez",
         "team": "阿尔及利亚",
-        "goals": 0,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14885,6 +15013,14 @@
         "reds": 0
       },
       {
+        "name": "Giovani Lo Celso",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Giovanni Reyna",
         "team": "美国",
         "goals": 1,
@@ -15317,14 +15453,6 @@
         "reds": 0
       },
       {
-        "name": "Konrad Laimer",
-        "team": "奥地利",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Ladislav Krejčí",
         "team": "捷克",
         "goals": 1,
@@ -15335,6 +15463,14 @@
       {
         "name": "Lamine Yamal",
         "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Lautaro Martínez",
+        "team": "阿根廷",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -15399,7 +15535,7 @@
       {
         "name": "Lionel Messi",
         "team": "阿根廷",
-        "goals": 5,
+        "goals": 6,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15447,7 +15583,7 @@
       {
         "name": "Marcel Sabitzer",
         "team": "奥地利",
-        "goals": 0,
+        "goals": 1,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -15471,9 +15607,9 @@
       {
         "name": "Marko Arnautović",
         "team": "奥地利",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15597,11 +15733,27 @@
         "reds": 0
       },
       {
+        "name": "Mohammed Abu Zraiq",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Mohanad Lashin",
         "team": "埃及",
         "goals": 0,
         "assists": 0,
         "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Mohannad Abu Taha",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15805,6 +15957,14 @@
         "reds": 0
       },
       {
+        "name": "Rafik Belghali",
+        "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ramiz Zerrouki",
         "team": "阿尔及利亚",
         "goals": 0,
@@ -15914,6 +16074,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Saša Kalajdžić",
+        "team": "奥地利",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -16079,6 +16247,14 @@
       {
         "name": "Yasser Ibrahim",
         "team": "埃及",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Yazan Al-Arab",
+        "team": "约旦",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16994,7 +17170,7 @@
         "name": "Konrad Laimer",
         "team": "奥地利",
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -17097,7 +17273,15 @@
       {
         "name": "Marcel Sabitzer",
         "team": "奥地利",
-        "goals": 0,
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Marko Arnautović",
+        "team": "奥地利",
+        "goals": 2,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -17161,6 +17345,22 @@
       {
         "name": "Mohamed Kanno",
         "team": "沙特阿拉伯",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Mohammed Abu Zraiq",
+        "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Mohannad Abu Taha",
+        "team": "约旦",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17489,6 +17689,14 @@
       {
         "name": "Yasser Ibrahim",
         "team": "埃及",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Yazan Al-Arab",
+        "team": "约旦",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17855,6 +18063,14 @@
         "reds": 0
       },
       {
+        "name": "David Alaba",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "David Møller Wolfe",
         "team": "挪威",
         "goals": 0,
@@ -17905,6 +18121,14 @@
       {
         "name": "Edmilson Junior",
         "team": "卡塔尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ehsan Haddad",
+        "team": "约旦",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -17991,6 +18215,14 @@
         "reds": 0
       },
       {
+        "name": "Giovani Lo Celso",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Giovanni Reyna",
         "team": "美国",
         "goals": 1,
@@ -18043,6 +18275,14 @@
         "team": "突尼斯",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Houssem Aouar",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -18351,6 +18591,14 @@
         "reds": 0
       },
       {
+        "name": "Lautaro Martínez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
@@ -18377,7 +18625,7 @@
       {
         "name": "Lionel Messi",
         "team": "阿根廷",
-        "goals": 5,
+        "goals": 6,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -18441,14 +18689,6 @@
       {
         "name": "Marcus Rashford",
         "team": "英格兰",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Marko Arnautović",
-        "team": "奥地利",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -18527,6 +18767,14 @@
         "reds": 0
       },
       {
+        "name": "Michael Gregoritsch",
+        "team": "奥地利",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
@@ -18585,7 +18833,7 @@
       {
         "name": "Mousa Al-Tamari",
         "team": "约旦",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -18783,6 +19031,14 @@
         "reds": 0
       },
       {
+        "name": "Rafik Belghali",
+        "team": "阿尔及利亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ramin Rezaeian",
         "team": "伊朗",
         "goals": 2,
@@ -18817,7 +19073,7 @@
       {
         "name": "Riyad Mahrez",
         "team": "阿尔及利亚",
-        "goals": 0,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -18867,6 +19123,14 @@
         "team": "塞内加尔",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Saša Kalajdžić",
+        "team": "奥地利",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },

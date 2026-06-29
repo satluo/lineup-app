@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T21:00:15+00:00",
+  "generated_at": "2026-06-29T19:32:49+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1814,10 +1814,10 @@
       "away_en": "Japan",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 1,
       "venue": "Houston · Houston Stadium"
     },
     {
@@ -2148,9 +2148,9 @@
       "away_placeholder": "W78",
       "date": "2026-07-06",
       "time": "04:00",
-      "home": "W76",
+      "home": "巴西",
       "away": "W78",
-      "home_en": "W76",
+      "home_en": "Brazil",
       "away_en": "W78",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
@@ -2597,7 +2597,7 @@
       "goal_difference": 6,
       "points": 7,
       "fifa_rank": 6,
-      "fair_play_points": -5,
+      "fair_play_points": -7,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -2857,7 +2857,7 @@
       "goal_difference": 4,
       "points": 5,
       "fifa_rank": 18,
-      "fair_play_points": -1,
+      "fair_play_points": -4,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4517,7 +4517,7 @@
       "goal_difference": 6,
       "points": 7,
       "fifa_rank": 6,
-      "fair_play_points": -5,
+      "fair_play_points": -7,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4777,7 +4777,7 @@
       "goal_difference": 4,
       "points": 5,
       "fifa_rank": 18,
-      "fair_play_points": -1,
+      "fair_play_points": -4,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10551,7 +10551,7 @@
         "team": "日本",
         "goals": 2,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10827,6 +10827,14 @@
         "reds": 0
       },
       {
+        "name": "Casemiro",
+        "team": "巴西",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Connor Metcalfe",
         "team": "澳大利亚",
         "goals": 1,
@@ -10904,6 +10912,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Gabriel Martinelli",
+        "team": "巴西",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -11064,6 +11080,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Kaishū Sano",
+        "team": "日本",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11766,7 +11790,7 @@
         "name": "Bruno Guimarães",
         "team": "巴西",
         "goals": 0,
-        "assists": 3,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },
@@ -11797,14 +11821,6 @@
       {
         "name": "Carlos Harvey",
         "team": "巴拿马",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Casemiro",
-        "team": "巴西",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -11903,7 +11919,7 @@
         "team": "巴西",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12128,6 +12144,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Gabriel Magalhães",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12459,6 +12483,14 @@
         "reds": 0
       },
       {
+        "name": "Junnosuke Suzuki",
+        "team": "日本",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Juriën Gaari",
         "team": "库拉索",
         "goals": 0,
@@ -12472,14 +12504,6 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Kaishū Sano",
-        "team": "日本",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -13365,17 +13389,17 @@
     ],
     "assists": [
       {
-        "name": "Alexander Isak",
-        "team": "瑞典",
-        "goals": 1,
-        "assists": 3,
+        "name": "Bruno Guimarães",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },
       {
-        "name": "Bruno Guimarães",
-        "team": "巴西",
-        "goals": 0,
+        "name": "Alexander Isak",
+        "team": "瑞典",
+        "goals": 1,
         "assists": 3,
         "yellows": 0,
         "reds": 0
@@ -13797,6 +13821,14 @@
         "reds": 0
       },
       {
+        "name": "Gabriel Magalhães",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Gustavo Puerta",
         "team": "哥伦比亚",
         "goals": 0,
@@ -13911,9 +13943,9 @@
       {
         "name": "Kaishū Sano",
         "team": "日本",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14679,9 +14711,9 @@
       {
         "name": "Casemiro",
         "team": "巴西",
-        "goals": 0,
+        "goals": 1,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14761,7 +14793,7 @@
         "team": "日本",
         "goals": 2,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14785,7 +14817,7 @@
         "team": "巴西",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15010,6 +15042,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Gabriel Martinelli",
+        "team": "巴西",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -15386,6 +15426,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Junnosuke Suzuki",
+        "team": "日本",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -16463,6 +16511,22 @@
         "reds": 0
       },
       {
+        "name": "Casemiro",
+        "team": "巴西",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Danilo",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Diego Gómez",
         "team": "巴拉圭",
         "goals": 0,
@@ -16687,14 +16751,6 @@
         "reds": 0
       },
       {
-        "name": "Casemiro",
-        "team": "巴西",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Chancel Mbemba",
         "team": "刚果（金）",
         "goals": 0,
@@ -16751,9 +16807,9 @@
         "reds": 0
       },
       {
-        "name": "Danilo",
-        "team": "巴西",
-        "goals": 0,
+        "name": "Daichi Kamada",
+        "team": "日本",
+        "goals": 2,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -17167,6 +17223,14 @@
         "reds": 0
       },
       {
+        "name": "Junnosuke Suzuki",
+        "team": "日本",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Juriën Gaari",
         "team": "库拉索",
         "goals": 0,
@@ -17179,6 +17243,14 @@
         "team": "巴拉圭",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Kaishū Sano",
+        "team": "日本",
+        "goals": 1,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -18010,7 +18082,7 @@
         "name": "Bruno Guimarães",
         "team": "巴西",
         "goals": 0,
-        "assists": 3,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },
@@ -18075,14 +18147,6 @@
         "team": "哥伦比亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Daichi Kamada",
-        "team": "日本",
-        "goals": 2,
-        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -18251,6 +18315,22 @@
         "team": "德国",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Gabriel Magalhães",
+        "team": "巴西",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Gabriel Martinelli",
+        "team": "巴西",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -18547,14 +18627,6 @@
         "team": "德国",
         "goals": 2,
         "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Kaishū Sano",
-        "team": "日本",
-        "goals": 0,
-        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

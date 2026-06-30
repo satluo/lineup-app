@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T16:03:07+00:00",
+  "generated_at": "2026-06-30T20:02:34+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1874,10 +1874,10 @@
       "away_en": "Norway",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 2,
       "venue": "Dallas · Dallas Stadium"
     },
     {
@@ -2149,9 +2149,9 @@
       "date": "2026-07-06",
       "time": "04:00",
       "home": "巴西",
-      "away": "W78",
+      "away": "挪威",
       "home_en": "Brazil",
-      "away_en": "W78",
+      "away_en": "Norway",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
       "status": "scheduled",
@@ -3097,7 +3097,7 @@
       "goal_difference": 1,
       "points": 6,
       "fifa_rank": 31,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5017,7 +5017,7 @@
       "goal_difference": 1,
       "points": 6,
       "fifa_rank": 31,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10389,7 +10389,7 @@
       {
         "name": "Erling Haaland",
         "team": "挪威",
-        "goals": 4,
+        "goals": 5,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -10510,6 +10510,14 @@
         "name": "Yoane Wissa",
         "team": "刚果（金）",
         "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Amad Diallo",
+        "team": "科特迪瓦",
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -10638,7 +10646,7 @@
         "name": "Nicolas Pépé",
         "team": "科特迪瓦",
         "goals": 2,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -10747,14 +10755,6 @@
         "reds": 0
       },
       {
-        "name": "Amad Diallo",
-        "team": "科特迪瓦",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Amine Gouiri",
         "team": "阿尔及利亚",
         "goals": 1,
@@ -10768,6 +10768,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Antonio Nusa",
+        "team": "挪威",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12694,7 +12702,7 @@
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -12966,7 +12974,7 @@
         "name": "Patrick Berg",
         "team": "挪威",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 1,
         "reds": 0
       },
@@ -13429,6 +13437,14 @@
         "reds": 0
       },
       {
+        "name": "Martin Ødegaard",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
@@ -13541,14 +13557,6 @@
         "reds": 0
       },
       {
-        "name": "Martin Ødegaard",
-        "team": "挪威",
-        "goals": 0,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Mohamed Salah",
         "team": "埃及",
         "goals": 1,
@@ -13560,6 +13568,14 @@
         "name": "Nathan Saliba",
         "team": "加拿大",
         "goals": 1,
+        "assists": 2,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Patrick Berg",
+        "team": "挪威",
+        "goals": 0,
         "assists": 2,
         "yellows": 1,
         "reds": 0
@@ -14197,6 +14213,14 @@
         "reds": 0
       },
       {
+        "name": "Nicolas Pépé",
+        "team": "科特迪瓦",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nicolas Raskin",
         "team": "比利时",
         "goals": 0,
@@ -14232,14 +14256,6 @@
         "name": "Pape Gueye",
         "team": "塞内加尔",
         "goals": 2,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Patrick Berg",
-        "team": "挪威",
-        "goals": 0,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -14583,7 +14599,7 @@
       {
         "name": "Amad Diallo",
         "team": "科特迪瓦",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -14648,6 +14664,14 @@
         "name": "Antonee Robinson",
         "team": "美国",
         "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Antonio Nusa",
+        "team": "挪威",
+        "goals": 1,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -14991,7 +15015,7 @@
       {
         "name": "Erling Haaland",
         "team": "挪威",
-        "goals": 4,
+        "goals": 5,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15906,14 +15930,6 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Nicolas Pépé",
-        "team": "科特迪瓦",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -16735,6 +16751,14 @@
         "reds": 0
       },
       {
+        "name": "Antonio Nusa",
+        "team": "挪威",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Aubrey Modiba",
         "team": "南非",
         "goals": 0,
@@ -17546,7 +17570,7 @@
         "name": "Nicolas Pépé",
         "team": "科特迪瓦",
         "goals": 2,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -17626,7 +17650,7 @@
         "name": "Patrick Berg",
         "team": "挪威",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 1,
         "reds": 0
       },
@@ -17977,7 +18001,7 @@
       {
         "name": "Amad Diallo",
         "team": "科特迪瓦",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -18321,7 +18345,7 @@
       {
         "name": "Erling Haaland",
         "team": "挪威",
-        "goals": 4,
+        "goals": 5,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -18874,7 +18898,7 @@
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T19:32:49+00:00",
+  "generated_at": "2026-06-30T16:03:07+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1834,10 +1834,10 @@
       "away_en": "Paraguay",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 1,
       "venue": "Boston · Boston Stadium"
     },
     {
@@ -1854,10 +1854,10 @@
       "away_en": "Morocco",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 1,
       "venue": "Monterrey · Monterrey Stadium"
     },
     {
@@ -2109,9 +2109,9 @@
       "date": "2026-07-05",
       "time": "01:00",
       "home": "加拿大",
-      "away": "W75",
+      "away": "摩洛哥",
       "home_en": "Canada",
-      "away_en": "W75",
+      "away_en": "Morocco",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
       "status": "scheduled",
@@ -2128,9 +2128,9 @@
       "away_placeholder": "W77",
       "date": "2026-07-05",
       "time": "05:00",
-      "home": "W74",
+      "home": "巴拉圭",
       "away": "W77",
-      "home_en": "W74",
+      "home_en": "Paraguay",
       "away_en": "W77",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
@@ -2617,7 +2617,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 7,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -2717,7 +2717,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -11,
+      "fair_play_points": -12,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3531,7 +3531,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -11,
+      "fair_play_points": -12,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -4537,7 +4537,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 7,
-      "fair_play_points": -1,
+      "fair_play_points": -2,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4637,7 +4637,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -11,
+      "fair_play_points": -12,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5451,7 +5451,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -11,
+      "fair_play_points": -12,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10427,6 +10427,14 @@
         "reds": 0
       },
       {
+        "name": "Cody Gakpo",
+        "team": "荷兰",
+        "goals": 3,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Deniz Undav",
         "team": "德国",
         "goals": 3,
@@ -10483,6 +10491,14 @@
         "reds": 0
       },
       {
+        "name": "Kai Havertz",
+        "team": "德国",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Matheus Cunha",
         "team": "巴西",
         "goals": 3,
@@ -10515,14 +10531,6 @@
         "reds": 0
       },
       {
-        "name": "Cody Gakpo",
-        "team": "荷兰",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Cristiano Ronaldo",
         "team": "葡萄牙",
         "goals": 2,
@@ -10534,7 +10542,7 @@
         "name": "Crysencio Summerville",
         "team": "荷兰",
         "goals": 2,
-        "assists": 1,
+        "assists": 2,
         "yellows": 1,
         "reds": 0
       },
@@ -10589,14 +10597,6 @@
       {
         "name": "Julián Quiñones",
         "team": "墨西哥",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Kai Havertz",
-        "team": "德国",
         "goals": 2,
         "assists": 0,
         "yellows": 0,
@@ -11019,6 +11019,14 @@
         "reds": 0
       },
       {
+        "name": "Issa Diop",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Jamal Musiala",
         "team": "德国",
         "goals": 1,
@@ -11063,6 +11071,14 @@
         "team": "葡萄牙",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Julio Enciso",
+        "team": "巴拉圭",
+        "goals": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -11246,7 +11262,7 @@
         "name": "Matías Galarza",
         "team": "巴拉圭",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -11691,6 +11707,14 @@
         "reds": 0
       },
       {
+        "name": "Andrés Cubas",
+        "team": "巴拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Andy Robertson",
         "team": "苏格兰",
         "goals": 0,
@@ -11848,6 +11872,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Chemsdine Talbi",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12126,7 +12158,7 @@
         "name": "Florian Wirtz",
         "team": "德国",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -12253,14 +12285,6 @@
       {
         "name": "Isak Hien",
         "team": "瑞典",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Issa Diop",
-        "team": "摩洛哥",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12464,14 +12488,6 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Julio Enciso",
-        "team": "巴拉圭",
-        "goals": 0,
-        "assists": 2,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -13405,6 +13421,14 @@
         "reds": 0
       },
       {
+        "name": "Florian Wirtz",
+        "team": "德国",
+        "goals": 0,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
@@ -13445,6 +13469,14 @@
         "reds": 0
       },
       {
+        "name": "Crysencio Summerville",
+        "team": "荷兰",
+        "goals": 2,
+        "assists": 2,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Deniz Undav",
         "team": "德国",
         "goals": 3,
@@ -13455,14 +13487,6 @@
       {
         "name": "Denzel Dumfries",
         "team": "荷兰",
-        "goals": 0,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Florian Wirtz",
-        "team": "德国",
         "goals": 0,
         "assists": 2,
         "yellows": 0,
@@ -13503,7 +13527,7 @@
       {
         "name": "Julio Enciso",
         "team": "巴拉圭",
-        "goals": 0,
+        "goals": 1,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -13701,6 +13725,14 @@
         "reds": 0
       },
       {
+        "name": "Chemsdine Talbi",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Christian Pulisic",
         "team": "美国",
         "goals": 0,
@@ -13711,17 +13743,9 @@
       {
         "name": "Cody Gakpo",
         "team": "荷兰",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Crysencio Summerville",
-        "team": "荷兰",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -14066,6 +14090,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Matías Galarza",
+        "team": "巴拉圭",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14575,6 +14607,14 @@
       {
         "name": "Andrés Andrade",
         "team": "巴拿马",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Andrés Cubas",
+        "team": "巴拉圭",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15215,9 +15255,9 @@
       {
         "name": "Issa Diop",
         "team": "摩洛哥",
-        "goals": 0,
+        "goals": 1,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15471,7 +15511,7 @@
       {
         "name": "Kai Havertz",
         "team": "德国",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15722,14 +15762,6 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Matías Galarza",
-        "team": "巴拉圭",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -16543,6 +16575,14 @@
         "reds": 0
       },
       {
+        "name": "Issa Diop",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Juninho Bacuna",
         "team": "库拉索",
         "goals": 0,
@@ -16671,6 +16711,14 @@
         "reds": 0
       },
       {
+        "name": "Andrés Cubas",
+        "team": "巴拉圭",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Andy Robertson",
         "team": "苏格兰",
         "goals": 0,
@@ -16786,7 +16834,7 @@
         "name": "Crysencio Summerville",
         "team": "荷兰",
         "goals": 2,
-        "assists": 1,
+        "assists": 2,
         "yellows": 1,
         "reds": 0
       },
@@ -17057,14 +17105,6 @@
       {
         "name": "Isak Hien",
         "team": "瑞典",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Issa Diop",
-        "team": "摩洛哥",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17410,7 +17450,7 @@
         "name": "Matías Galarza",
         "team": "巴拉圭",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -18103,6 +18143,14 @@
         "reds": 0
       },
       {
+        "name": "Chemsdine Talbi",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Chris Wood",
         "team": "新西兰",
         "goals": 0,
@@ -18121,7 +18169,7 @@
       {
         "name": "Cody Gakpo",
         "team": "荷兰",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -18314,7 +18362,7 @@
         "name": "Florian Wirtz",
         "team": "德国",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -18593,7 +18641,7 @@
       {
         "name": "Julio Enciso",
         "team": "巴拉圭",
-        "goals": 0,
+        "goals": 1,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -18625,7 +18673,7 @@
       {
         "name": "Kai Havertz",
         "team": "德国",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0

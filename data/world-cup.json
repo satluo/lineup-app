@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T20:02:34+00:00",
+  "generated_at": "2026-07-01T00:02:42+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1894,10 +1894,10 @@
       "away_en": "Sweden",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 3,
+      "score_away": 0,
       "venue": "New Jersey · New York/New Jersey Stadium"
     },
     {
@@ -2129,9 +2129,9 @@
       "date": "2026-07-05",
       "time": "05:00",
       "home": "巴拉圭",
-      "away": "W77",
+      "away": "法国",
       "home_en": "Paraguay",
-      "away_en": "W77",
+      "away_en": "France",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
       "status": "scheduled",
@@ -10379,6 +10379,14 @@
   "leaderboards": {
     "scorers": [
       {
+        "name": "Kylian Mbappé",
+        "team": "法国",
+        "goals": 6,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Lionel Messi",
         "team": "阿根廷",
         "goals": 6,
@@ -10395,18 +10403,10 @@
         "reds": 0
       },
       {
-        "name": "Kylian Mbappé",
-        "team": "法国",
-        "goals": 4,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Ousmane Dembélé",
         "team": "法国",
         "goals": 4,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10533,6 +10533,14 @@
       {
         "name": "Ayase Ueda",
         "team": "日本",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Bradley Barcola",
+        "team": "法国",
         "goals": 2,
         "assists": 1,
         "yellows": 0,
@@ -10805,14 +10813,6 @@
       {
         "name": "Baris Alper Yilmaz",
         "team": "土耳其",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Bradley Barcola",
-        "team": "法国",
         "goals": 1,
         "assists": 1,
         "yellows": 0,
@@ -12766,7 +12766,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 3,
+        "assists": 5,
         "yellows": 0,
         "reds": 0
       },
@@ -13413,6 +13413,14 @@
     ],
     "assists": [
       {
+        "name": "Michael Olise",
+        "team": "法国",
+        "goals": 0,
+        "assists": 5,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Bruno Guimarães",
         "team": "巴西",
         "goals": 0,
@@ -13439,14 +13447,6 @@
       {
         "name": "Martin Ødegaard",
         "team": "挪威",
-        "goals": 0,
-        "assists": 3,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Michael Olise",
-        "team": "法国",
         "goals": 0,
         "assists": 3,
         "yellows": 0,
@@ -13551,7 +13551,7 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 4,
+        "goals": 6,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -13570,6 +13570,14 @@
         "goals": 1,
         "assists": 2,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Ousmane Dembélé",
+        "team": "法国",
+        "goals": 4,
+        "assists": 2,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -13711,7 +13719,7 @@
       {
         "name": "Bradley Barcola",
         "team": "法国",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14240,14 +14248,6 @@
         "name": "Orkun Kökçü",
         "team": "土耳其",
         "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Ousmane Dembélé",
-        "team": "法国",
-        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -18097,7 +18097,7 @@
       {
         "name": "Bradley Barcola",
         "team": "法国",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -18753,7 +18753,7 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 4,
+        "goals": 6,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -18970,7 +18970,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 3,
+        "assists": 5,
         "yellows": 0,
         "reds": 0
       },
@@ -19162,7 +19162,7 @@
         "name": "Ousmane Dembélé",
         "team": "法国",
         "goals": 4,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },

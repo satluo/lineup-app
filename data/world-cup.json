@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T19:03:19+00:00",
+  "generated_at": "2026-07-01T23:02:11+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1954,10 +1954,10 @@
       "away_en": "Senegal",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 3,
+      "score_away": 2,
       "venue": "Seattle · Seattle Stadium"
     },
     {
@@ -2209,9 +2209,9 @@
       "date": "2026-07-07",
       "time": "08:00",
       "home": "W81",
-      "away": "W82",
+      "away": "比利时",
       "home_en": "W81",
-      "away_en": "W82",
+      "away_en": "Belgium",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
       "status": "scheduled",
@@ -2917,7 +2917,7 @@
       "goal_difference": 4,
       "points": 5,
       "fifa_rank": 9,
-      "fair_play_points": -7,
+      "fair_play_points": -8,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3117,7 +3117,7 @@
       "goal_difference": 2,
       "points": 3,
       "fifa_rank": 15,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3553,7 +3553,7 @@
       "goal_difference": 2,
       "points": 3,
       "fifa_rank": 15,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -4837,7 +4837,7 @@
       "goal_difference": 4,
       "points": 5,
       "fifa_rank": 9,
-      "fair_play_points": -7,
+      "fair_play_points": -8,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5037,7 +5037,7 @@
       "goal_difference": 2,
       "points": 3,
       "fifa_rank": 15,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5473,7 +5473,7 @@
       "goal_difference": 2,
       "points": 3,
       "fifa_rank": 15,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10411,6 +10411,14 @@
         "reds": 0
       },
       {
+        "name": "Ismaïla Sarr",
+        "team": "塞内加尔",
+        "goals": 4,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ousmane Dembélé",
         "team": "法国",
         "goals": 4,
@@ -10463,14 +10471,6 @@
         "team": "摩洛哥",
         "goals": 3,
         "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Ismaïla Sarr",
-        "team": "塞内加尔",
-        "goals": 3,
-        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -10611,6 +10611,14 @@
         "reds": 0
       },
       {
+        "name": "Habib Diarra",
+        "team": "塞内加尔",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Jude Bellingham",
         "team": "英格兰",
         "goals": 2,
@@ -10622,7 +10630,7 @@
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -10688,6 +10696,14 @@
         "goals": 2,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Romelu Lukaku",
+        "team": "比利时",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10984,14 +11000,6 @@
         "goals": 1,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Habib Diarra",
-        "team": "塞内加尔",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -11475,14 +11483,6 @@
         "reds": 0
       },
       {
-        "name": "Romelu Lukaku",
-        "team": "比利时",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Saša Kalajdžić",
         "team": "奥地利",
         "goals": 1,
@@ -11565,6 +11565,14 @@
       {
         "name": "Wilson Isidor",
         "team": "海地",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Youri Tielemans",
+        "team": "比利时",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11808,6 +11816,14 @@
         "goals": 0,
         "assists": 2,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Brandon Mechele",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12607,7 +12623,7 @@
         "team": "塞内加尔",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12856,6 +12872,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Moussa Niakhaté",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -13289,6 +13313,14 @@
         "assists": 0,
         "yellows": 0,
         "reds": 1
+      },
+      {
+        "name": "Thomas Meunier",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
       },
       {
         "name": "Tijjani Reijnders",
@@ -13959,7 +13991,7 @@
       {
         "name": "Ismaïla Sarr",
         "team": "塞内加尔",
-        "goals": 3,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14096,6 +14128,14 @@
         "name": "Lamine Camara",
         "team": "塞内加尔",
         "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Leandro Trossard",
+        "team": "比利时",
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14240,6 +14280,14 @@
         "name": "Mousa Al-Tamari",
         "team": "约旦",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Moussa Niakhaté",
+        "team": "塞内加尔",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14399,7 +14447,7 @@
       {
         "name": "Romelu Lukaku",
         "team": "比利时",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -14447,6 +14495,14 @@
       {
         "name": "Takefusa Kubo",
         "team": "日本",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Thomas Meunier",
+        "team": "比利时",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -14775,6 +14831,14 @@
       {
         "name": "Bernardo Silva",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Brandon Mechele",
+        "team": "比利时",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15239,7 +15303,7 @@
       {
         "name": "Habib Diarra",
         "team": "塞内加尔",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15674,14 +15738,6 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Leandro Trossard",
-        "team": "比利时",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -16461,6 +16517,14 @@
         "reds": 0
       },
       {
+        "name": "Youri Tielemans",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Yunus Akgün",
         "team": "土耳其",
         "goals": 0,
@@ -16865,6 +16929,14 @@
       {
         "name": "Bernardo Silva",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Brandon Mechele",
+        "team": "比利时",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17471,6 +17543,14 @@
         "reds": 0
       },
       {
+        "name": "Lamine Camara",
+        "team": "塞内加尔",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Leandro Bacuna",
         "team": "库拉索",
         "goals": 0,
@@ -17825,7 +17905,7 @@
       {
         "name": "Romelu Lukaku",
         "team": "比利时",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -18553,7 +18633,7 @@
       {
         "name": "Habib Diarra",
         "team": "塞内加尔",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -18657,7 +18737,7 @@
       {
         "name": "Ismaïla Sarr",
         "team": "塞内加尔",
-        "goals": 3,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -18863,14 +18943,6 @@
         "reds": 0
       },
       {
-        "name": "Lamine Camara",
-        "team": "塞内加尔",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Lamine Yamal",
         "team": "西班牙",
         "goals": 1,
@@ -18890,7 +18962,7 @@
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -19122,6 +19194,14 @@
         "name": "Mousa Al-Tamari",
         "team": "约旦",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Moussa Niakhaté",
+        "team": "塞内加尔",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -19463,6 +19543,14 @@
         "reds": 0
       },
       {
+        "name": "Thomas Meunier",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Tijjani Reijnders",
         "team": "荷兰",
         "goals": 0,
@@ -19554,6 +19642,14 @@
         "name": "Yoane Wissa",
         "team": "刚果（金）",
         "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Youri Tielemans",
+        "team": "比利时",
+        "goals": 1,
         "assists": 0,
         "yellows": 0,
         "reds": 0

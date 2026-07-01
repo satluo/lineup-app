@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T15:03:43+00:00",
+  "generated_at": "2026-07-01T19:03:19+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1934,10 +1934,10 @@
       "away_en": "DR Congo",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 1,
       "venue": "Atlanta · Atlanta Stadium"
     },
     {
@@ -2169,9 +2169,9 @@
       "date": "2026-07-06",
       "time": "08:00",
       "home": "墨西哥",
-      "away": "W80",
+      "away": "英格兰",
       "home_en": "Mexico",
-      "away_en": "W80",
+      "away_en": "England",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
       "status": "scheduled",
@@ -3277,7 +3277,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 46,
-      "fair_play_points": -5,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3317,7 +3317,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 4,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3399,7 +3399,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 46,
-      "fair_play_points": -5,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -5197,7 +5197,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 46,
-      "fair_play_points": -5,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5237,7 +5237,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 4,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5319,7 +5319,7 @@
       "goal_difference": 1,
       "points": 4,
       "fifa_rank": 46,
-      "fair_play_points": -5,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10403,6 +10403,14 @@
         "reds": 0
       },
       {
+        "name": "Harry Kane",
+        "team": "英格兰",
+        "goals": 5,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ousmane Dembélé",
         "team": "法国",
         "goals": 4,
@@ -10448,14 +10456,6 @@
         "goals": 3,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Harry Kane",
-        "team": "英格兰",
-        "goals": 3,
-        "assists": 0,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -10615,7 +10615,7 @@
         "team": "英格兰",
         "goals": 2,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10831,6 +10831,14 @@
         "team": "瑞士",
         "goals": 1,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Brian Cipenga",
+        "team": "刚果（金）",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -11731,6 +11739,14 @@
         "reds": 0
       },
       {
+        "name": "Anthony Gordon",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Antonee Robinson",
         "team": "美国",
         "goals": 0,
@@ -11870,7 +11886,7 @@
         "name": "Chancel Mbemba",
         "team": "刚果（金）",
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -12943,7 +12959,7 @@
         "team": "刚果（金）",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -13477,6 +13493,14 @@
         "reds": 0
       },
       {
+        "name": "Anthony Gordon",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Brahim Díaz",
         "team": "摩洛哥",
         "goals": 0,
@@ -13765,6 +13789,14 @@
         "reds": 0
       },
       {
+        "name": "Chancel Mbemba",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Chemsdine Talbi",
         "team": "摩洛哥",
         "goals": 0,
@@ -14001,7 +14033,7 @@
         "team": "英格兰",
         "goals": 2,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14757,6 +14789,14 @@
         "reds": 0
       },
       {
+        "name": "Brian Cipenga",
+        "team": "刚果（金）",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Brian Gutiérrez",
         "team": "墨西哥",
         "goals": 0,
@@ -14802,14 +14842,6 @@
         "goals": 1,
         "assists": 0,
         "yellows": 2,
-        "reds": 0
-      },
-      {
-        "name": "Chancel Mbemba",
-        "team": "刚果（金）",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -15215,7 +15247,7 @@
       {
         "name": "Harry Kane",
         "team": "英格兰",
-        "goals": 3,
+        "goals": 5,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16025,7 +16057,7 @@
         "team": "刚果（金）",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -16671,6 +16703,14 @@
         "reds": 0
       },
       {
+        "name": "Noah Sadiki",
+        "team": "刚果（金）",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Saeid Ezatolahi",
         "team": "伊朗",
         "goals": 0,
@@ -16874,7 +16914,7 @@
         "name": "Chancel Mbemba",
         "team": "刚果（金）",
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -17343,6 +17383,14 @@
         "reds": 0
       },
       {
+        "name": "Jude Bellingham",
+        "team": "英格兰",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Junnosuke Suzuki",
         "team": "日本",
         "goals": 0,
@@ -17673,14 +17721,6 @@
       {
         "name": "Nkosinathi Sibisi",
         "team": "南非",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Noah Sadiki",
-        "team": "刚果（金）",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -18103,6 +18143,14 @@
         "reds": 0
       },
       {
+        "name": "Anthony Gordon",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Arda Güler",
         "team": "土耳其",
         "goals": 1,
@@ -18194,6 +18242,14 @@
         "name": "Brian Brobbey",
         "team": "荷兰",
         "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Brian Cipenga",
+        "team": "刚果（金）",
+        "goals": 1,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -18521,7 +18577,7 @@
       {
         "name": "Harry Kane",
         "team": "英格兰",
-        "goals": 3,
+        "goals": 5,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -18706,14 +18762,6 @@
         "name": "Juan Fernando Quintero",
         "team": "哥伦比亚",
         "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Jude Bellingham",
-        "team": "英格兰",
-        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0

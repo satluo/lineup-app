@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T00:02:42+00:00",
+  "generated_at": "2026-07-01T15:03:43+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1907,17 +1907,17 @@
       "home_placeholder": "1A",
       "away_placeholder": "3CEFHI",
       "date": "2026-07-01",
-      "time": "09:00",
+      "time": "10:00",
       "home": "墨西哥",
       "away": "厄瓜多尔",
       "home_en": "Mexico",
       "away_en": "Ecuador",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 0,
       "venue": "Mexico City · Mexico City Stadium"
     },
     {
@@ -2168,9 +2168,9 @@
       "away_placeholder": "W80",
       "date": "2026-07-06",
       "time": "08:00",
-      "home": "W79",
+      "home": "墨西哥",
       "away": "W80",
-      "home_en": "W79",
+      "home_en": "Mexico",
       "away_en": "W80",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
@@ -2717,7 +2717,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -12,
+      "fair_play_points": -13,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -2757,7 +2757,7 @@
       "goal_difference": 6,
       "points": 6,
       "fifa_rank": 10,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -2797,7 +2797,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 23,
-      "fair_play_points": -5,
+      "fair_play_points": -12,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3465,7 +3465,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 23,
-      "fair_play_points": -5,
+      "fair_play_points": -12,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -3531,7 +3531,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -12,
+      "fair_play_points": -13,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -4637,7 +4637,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -12,
+      "fair_play_points": -13,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4677,7 +4677,7 @@
       "goal_difference": 6,
       "points": 6,
       "fifa_rank": 10,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4717,7 +4717,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 23,
-      "fair_play_points": -5,
+      "fair_play_points": -12,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5385,7 +5385,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 23,
-      "fair_play_points": -5,
+      "fair_play_points": -12,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -5451,7 +5451,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 41,
-      "fair_play_points": -12,
+      "fair_play_points": -13,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10491,11 +10491,19 @@
         "reds": 0
       },
       {
+        "name": "Julián Quiñones",
+        "team": "墨西哥",
+        "goals": 3,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kai Havertz",
         "team": "德国",
         "goals": 3,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10611,14 +10619,6 @@
         "reds": 0
       },
       {
-        "name": "Julián Quiñones",
-        "team": "墨西哥",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
@@ -10671,6 +10671,14 @@
         "team": "伊朗",
         "goals": 2,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Raúl Jiménez",
+        "team": "墨西哥",
+        "goals": 2,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -11039,7 +11047,7 @@
         "team": "德国",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11271,7 +11279,7 @@
         "team": "巴拉圭",
         "goals": 1,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -11445,14 +11453,6 @@
       {
         "name": "Rafik Belghali",
         "team": "阿尔及利亚",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Raúl Jiménez",
-        "team": "墨西哥",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11639,7 +11639,7 @@
         "team": "厄瓜多尔",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12531,6 +12531,14 @@
         "reds": 0
       },
       {
+        "name": "Kendry Páez",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Kenny McLean",
         "team": "苏格兰",
         "goals": 0,
@@ -12827,6 +12835,14 @@
         "reds": 0
       },
       {
+        "name": "Moisés Caicedo",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nadiem Amiri",
         "team": "德国",
         "goals": 0,
@@ -13016,7 +13032,7 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
+        "reds": 1
       },
       {
         "name": "Ramiz Zerrouki",
@@ -13070,7 +13086,7 @@
         "name": "Roberto Alvarado",
         "team": "墨西哥",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -13453,6 +13469,14 @@
         "reds": 0
       },
       {
+        "name": "Roberto Alvarado",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Brahim Díaz",
         "team": "摩洛哥",
         "goals": 0,
@@ -13586,14 +13610,6 @@
         "goals": 0,
         "assists": 2,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Roberto Alvarado",
-        "team": "墨西哥",
-        "goals": 0,
-        "assists": 2,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -13989,6 +14005,14 @@
         "reds": 0
       },
       {
+        "name": "Julián Quiñones",
+        "team": "墨西哥",
+        "goals": 3,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kaishū Sano",
         "team": "日本",
         "goals": 1,
@@ -14121,7 +14145,7 @@
         "team": "巴拉圭",
         "goals": 1,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14545,7 +14569,7 @@
         "team": "厄瓜多尔",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15321,7 +15345,7 @@
         "team": "德国",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15477,14 +15501,6 @@
         "reds": 0
       },
       {
-        "name": "Julián Quiñones",
-        "team": "墨西哥",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Juninho Bacuna",
         "team": "库拉索",
         "goals": 0,
@@ -15537,7 +15553,15 @@
         "team": "德国",
         "goals": 3,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Kendry Páez",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15877,6 +15901,14 @@
         "reds": 0
       },
       {
+        "name": "Moisés Caicedo",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nadhir Benbouali",
         "team": "阿尔及利亚",
         "goals": 1,
@@ -16066,7 +16098,7 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
+        "reds": 1
       },
       {
         "name": "Rafael Leão",
@@ -16103,7 +16135,7 @@
       {
         "name": "Raúl Jiménez",
         "team": "墨西哥",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16455,6 +16487,14 @@
         "reds": 1
       },
       {
+        "name": "Piero Hincapié",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 1
+      },
+      {
         "name": "Agustín Canobbio",
         "team": "乌拉圭",
         "goals": 1,
@@ -16551,6 +16591,14 @@
         "reds": 0
       },
       {
+        "name": "Alan Franco",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Amir Al-Ammari",
         "team": "伊拉克",
         "goals": 0,
@@ -16603,6 +16651,14 @@
         "team": "库拉索",
         "goals": 0,
         "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Matías Galarza",
+        "team": "巴拉圭",
+        "goals": 1,
+        "assists": 1,
         "yellows": 2,
         "reds": 0
       },
@@ -16665,14 +16721,6 @@
       {
         "name": "Ahmed Fatouh",
         "team": "埃及",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Alan Franco",
-        "team": "厄瓜多尔",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17175,6 +17223,14 @@
         "reds": 0
       },
       {
+        "name": "Jamal Musiala",
+        "team": "德国",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jarell Quansah",
         "team": "英格兰",
         "goals": 0,
@@ -17311,10 +17367,26 @@
         "reds": 0
       },
       {
+        "name": "Kai Havertz",
+        "team": "德国",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Kaishū Sano",
         "team": "日本",
         "goals": 1,
         "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Kendry Páez",
+        "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
         "yellows": 1,
         "reds": 0
       },
@@ -17471,14 +17543,6 @@
         "reds": 0
       },
       {
-        "name": "Matías Galarza",
-        "team": "巴拉圭",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Maxim De Cuyper",
         "team": "比利时",
         "goals": 0,
@@ -17529,6 +17593,14 @@
       {
         "name": "Mohannad Abu Taha",
         "team": "约旦",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Moisés Caicedo",
+        "team": "厄瓜多尔",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17667,14 +17739,6 @@
         "team": "克罗地亚",
         "goals": 1,
         "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Piero Hincapié",
-        "team": "厄瓜多尔",
-        "goals": 0,
-        "assists": 0,
         "yellows": 1,
         "reds": 0
       },
@@ -18551,14 +18615,6 @@
         "reds": 0
       },
       {
-        "name": "Jamal Musiala",
-        "team": "德国",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Jaminton Campaz",
         "team": "哥伦比亚",
         "goals": 1,
@@ -18673,8 +18729,8 @@
       {
         "name": "Julián Quiñones",
         "team": "墨西哥",
-        "goals": 2,
-        "assists": 0,
+        "goals": 3,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -18690,14 +18746,6 @@
         "name": "Kaan Ayhan",
         "team": "土耳其",
         "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Kai Havertz",
-        "team": "德国",
-        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -19241,7 +19289,7 @@
       {
         "name": "Raúl Jiménez",
         "team": "墨西哥",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -19266,7 +19314,7 @@
         "name": "Roberto Alvarado",
         "team": "墨西哥",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },

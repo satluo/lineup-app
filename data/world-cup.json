@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T23:02:11+00:00",
+  "generated_at": "2026-07-01T23:04:33+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -10723,6 +10723,14 @@
         "reds": 0
       },
       {
+        "name": "Youri Tielemans",
+        "team": "比利时",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Abbosbek Fayzullaev",
         "team": "乌兹别克斯坦",
         "goals": 1,
@@ -11565,14 +11573,6 @@
       {
         "name": "Wilson Isidor",
         "team": "海地",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Youri Tielemans",
-        "team": "比利时",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -16519,7 +16519,7 @@
       {
         "name": "Youri Tielemans",
         "team": "比利时",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -19649,7 +19649,7 @@
       {
         "name": "Youri Tielemans",
         "team": "比利时",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0

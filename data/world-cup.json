@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T23:04:33+00:00",
+  "generated_at": "2026-07-02T18:02:21+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1974,10 +1974,10 @@
       "away_en": "Bosnia and Herzegovina",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 0,
       "venue": "San Francisco Bay Area · San Francisco Bay Area Stadium"
     },
     {
@@ -2208,9 +2208,9 @@
       "away_placeholder": "W82",
       "date": "2026-07-07",
       "time": "08:00",
-      "home": "W81",
+      "home": "美国",
       "away": "比利时",
-      "home_en": "W81",
+      "home_en": "United States",
       "away_en": "Belgium",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
@@ -2557,7 +2557,7 @@
       "goal_difference": -1,
       "points": 4,
       "fifa_rank": 64,
-      "fair_play_points": -10,
+      "fair_play_points": -11,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -2677,7 +2677,7 @@
       "goal_difference": 4,
       "points": 6,
       "fifa_rank": 17,
-      "fair_play_points": -5,
+      "fair_play_points": -9,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3487,7 +3487,7 @@
       "goal_difference": -1,
       "points": 4,
       "fifa_rank": 64,
-      "fair_play_points": -10,
+      "fair_play_points": -11,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -4477,7 +4477,7 @@
       "goal_difference": -1,
       "points": 4,
       "fifa_rank": 64,
-      "fair_play_points": -10,
+      "fair_play_points": -11,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4597,7 +4597,7 @@
       "goal_difference": 4,
       "points": 6,
       "fifa_rank": 17,
-      "fair_play_points": -5,
+      "fair_play_points": -9,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5407,7 +5407,7 @@
       "goal_difference": -1,
       "points": 4,
       "fifa_rank": 64,
-      "fair_play_points": -10,
+      "fair_play_points": -11,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10467,6 +10467,14 @@
         "reds": 0
       },
       {
+        "name": "Folarin Balogun",
+        "team": "美国",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 1
+      },
+      {
         "name": "Ismael Saibari",
         "team": "摩洛哥",
         "goals": 3,
@@ -10597,14 +10605,6 @@
       {
         "name": "Ermin Mahmić",
         "team": "波黑",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Folarin Balogun",
-        "team": "美国",
         "goals": 2,
         "assists": 0,
         "yellows": 1,
@@ -11248,6 +11248,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Malik Tillman",
+        "team": "美国",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12707,14 +12715,6 @@
         "reds": 0
       },
       {
-        "name": "Malik Tillman",
-        "team": "美国",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Marawan Attia",
         "team": "埃及",
         "goals": 0,
@@ -13277,6 +13277,14 @@
       {
         "name": "Stefan Posch",
         "team": "奥地利",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Stjepan Radeljić",
+        "team": "波黑",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -14191,7 +14199,7 @@
       {
         "name": "Malik Tillman",
         "team": "美国",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -15199,10 +15207,10 @@
       {
         "name": "Folarin Balogun",
         "team": "美国",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
+        "reds": 1
       },
       {
         "name": "Franck Kessié",
@@ -16389,6 +16397,14 @@
         "reds": 0
       },
       {
+        "name": "Stjepan Radeljić",
+        "team": "波黑",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Tarik Muharemović",
         "team": "波黑",
         "goals": 0,
@@ -16574,6 +16590,14 @@
       }
     ],
     "cards": [
+      {
+        "name": "Folarin Balogun",
+        "team": "美国",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 1
+      },
       {
         "name": "Miguel Almirón",
         "team": "巴拉圭",
@@ -17186,14 +17210,6 @@
         "name": "Findlay Curtis",
         "team": "苏格兰",
         "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Folarin Balogun",
-        "team": "美国",
-        "goals": 2,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -17993,6 +18009,14 @@
       {
         "name": "Stefan Posch",
         "team": "奥地利",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Stjepan Radeljić",
+        "team": "波黑",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -19025,7 +19049,7 @@
       {
         "name": "Malik Tillman",
         "team": "美国",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0

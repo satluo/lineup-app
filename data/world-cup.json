@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T18:02:21+00:00",
+  "generated_at": "2026-07-02T22:02:09+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -1994,10 +1994,10 @@
       "away_en": "Austria",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 3,
+      "score_away": 0,
       "venue": "Los Angeles · Los Angeles Stadium"
     },
     {
@@ -2189,9 +2189,9 @@
       "date": "2026-07-07",
       "time": "03:00",
       "home": "W83",
-      "away": "W84",
+      "away": "西班牙",
       "home_en": "W83",
-      "away_en": "W84",
+      "away_en": "Spain",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
       "status": "scheduled",
@@ -3177,7 +3177,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 24,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5097,7 +5097,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 24,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10419,6 +10419,14 @@
         "reds": 0
       },
       {
+        "name": "Mikel Oyarzabal",
+        "team": "西班牙",
+        "goals": 4,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ousmane Dembélé",
         "team": "法国",
         "goals": 4,
@@ -10645,14 +10653,6 @@
       {
         "name": "Maxi Araújo",
         "team": "乌拉圭",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Mikel Oyarzabal",
-        "team": "西班牙",
         "goals": 2,
         "assists": 1,
         "yellows": 0,
@@ -11451,6 +11451,14 @@
         "reds": 0
       },
       {
+        "name": "Pedro Porro",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Petar Musa",
         "team": "克罗地亚",
         "goals": 1,
@@ -11590,7 +11598,7 @@
         "name": "Álex Baena",
         "team": "西班牙",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -12723,6 +12731,14 @@
         "reds": 0
       },
       {
+        "name": "Marc Cucurella",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Marcos Llorente",
         "team": "西班牙",
         "goals": 0,
@@ -13279,7 +13295,7 @@
         "team": "奥地利",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -13645,6 +13661,14 @@
         "reds": 0
       },
       {
+        "name": "Marc Cucurella",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Mohamed Salah",
         "team": "埃及",
         "goals": 1,
@@ -14263,7 +14287,7 @@
       {
         "name": "Mikel Oyarzabal",
         "team": "西班牙",
-        "goals": 2,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14594,6 +14618,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Álex Baena",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -16181,6 +16213,14 @@
         "reds": 0
       },
       {
+        "name": "Pedro Porro",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Petar Musa",
         "team": "克罗地亚",
         "goals": 1,
@@ -16385,7 +16425,7 @@
         "team": "奥地利",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -16560,14 +16600,6 @@
         "name": "Álex Arce",
         "team": "巴拉圭",
         "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Álex Baena",
-        "team": "西班牙",
-        "goals": 1,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -16809,6 +16841,14 @@
       {
         "name": "Sidny Lopes Cabral",
         "team": "佛得角",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Stefan Posch",
+        "team": "奥地利",
         "goals": 0,
         "assists": 0,
         "yellows": 2,
@@ -18007,14 +18047,6 @@
         "reds": 0
       },
       {
-        "name": "Stefan Posch",
-        "team": "奥地利",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Stjepan Radeljić",
         "team": "波黑",
         "goals": 0,
@@ -18122,7 +18154,7 @@
         "name": "Álex Baena",
         "team": "西班牙",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -19055,6 +19087,14 @@
         "reds": 0
       },
       {
+        "name": "Marc Cucurella",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Marcos Llorente",
         "team": "西班牙",
         "goals": 0,
@@ -19177,7 +19217,7 @@
       {
         "name": "Mikel Oyarzabal",
         "team": "西班牙",
-        "goals": 2,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -19379,6 +19419,14 @@
         "team": "葡萄牙",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Pedro Porro",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },

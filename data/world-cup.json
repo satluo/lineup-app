@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T22:02:09+00:00",
+  "generated_at": "2026-07-03T02:01:45+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2014,10 +2014,10 @@
       "away_en": "Croatia",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 1,
       "venue": "Toronto · Toronto Stadium"
     },
     {
@@ -2188,9 +2188,9 @@
       "away_placeholder": "W84",
       "date": "2026-07-07",
       "time": "03:00",
-      "home": "W83",
+      "home": "葡萄牙",
       "away": "西班牙",
-      "home_en": "W83",
+      "home_en": "Portugal",
       "away_en": "Spain",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
@@ -3257,7 +3257,7 @@
       "goal_difference": 5,
       "points": 5,
       "fifa_rank": 5,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3337,7 +3337,7 @@
       "goal_difference": 0,
       "points": 6,
       "fifa_rank": 11,
-      "fair_play_points": -2,
+      "fair_play_points": -4,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5177,7 +5177,7 @@
       "goal_difference": 5,
       "points": 5,
       "fifa_rank": 5,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5257,7 +5257,7 @@
       "goal_difference": 0,
       "points": 6,
       "fifa_rank": 11,
-      "fair_play_points": -2,
+      "fair_play_points": -4,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10459,6 +10459,14 @@
         "reds": 0
       },
       {
+        "name": "Cristiano Ronaldo",
+        "team": "葡萄牙",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Deniz Undav",
         "team": "德国",
         "goals": 3,
@@ -10567,14 +10575,6 @@
         "team": "法国",
         "goals": 2,
         "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Cristiano Ronaldo",
-        "team": "葡萄牙",
-        "goals": 2,
-        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -11003,6 +11003,14 @@
         "reds": 0
       },
       {
+        "name": "Gonçalo Ramos",
+        "team": "葡萄牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Granit Xhaka",
         "team": "瑞士",
         "goals": 1,
@@ -11063,6 +11071,14 @@
         "team": "摩洛哥",
         "goals": 1,
         "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Ivan Perišić",
+        "team": "克罗地亚",
+        "goals": 1,
+        "assists": 1,
         "yellows": 2,
         "reds": 0
       },
@@ -11486,7 +11502,7 @@
         "name": "Rafael Leão",
         "team": "葡萄牙",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -12355,14 +12371,6 @@
         "reds": 0
       },
       {
-        "name": "Ivan Perišić",
-        "team": "克罗地亚",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Iñaki Williams",
         "team": "加纳",
         "goals": 0,
@@ -12711,7 +12719,7 @@
         "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13184,6 +13192,14 @@
         "goals": 0,
         "assists": 2,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Rúben Dias",
+        "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14039,9 +14055,9 @@
       {
         "name": "Ivan Perišić",
         "team": "克罗地亚",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14217,7 +14233,7 @@
         "team": "克罗地亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14431,6 +14447,14 @@
       {
         "name": "Promise David",
         "team": "加拿大",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Rafael Leão",
+        "team": "葡萄牙",
         "goals": 1,
         "assists": 1,
         "yellows": 0,
@@ -14983,7 +15007,7 @@
       {
         "name": "Cristiano Ronaldo",
         "team": "葡萄牙",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -15314,6 +15338,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Gonçalo Ramos",
+        "team": "葡萄牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -16237,14 +16269,6 @@
         "reds": 1
       },
       {
-        "name": "Rafael Leão",
-        "team": "葡萄牙",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Rafik Belghali",
         "team": "阿尔及利亚",
         "goals": 1,
@@ -16319,6 +16343,14 @@
       {
         "name": "Ryan Christie",
         "team": "苏格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Rúben Dias",
+        "team": "葡萄牙",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16795,6 +16827,14 @@
         "team": "摩洛哥",
         "goals": 1,
         "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Ivan Perišić",
+        "team": "克罗地亚",
+        "goals": 1,
+        "assists": 1,
         "yellows": 2,
         "reds": 0
       },
@@ -17351,14 +17391,6 @@
         "reds": 0
       },
       {
-        "name": "Ivan Perišić",
-        "team": "克罗地亚",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Iñaki Williams",
         "team": "加纳",
         "goals": 0,
@@ -17671,6 +17703,14 @@
         "reds": 0
       },
       {
+        "name": "Luka Modrić",
+        "team": "克罗地亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Mahmoud Abunada",
         "team": "卡塔尔",
         "goals": 0,
@@ -17969,6 +18009,14 @@
       {
         "name": "Ryan Christie",
         "team": "苏格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Rúben Dias",
+        "team": "葡萄牙",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -18465,7 +18513,7 @@
       {
         "name": "Cristiano Ronaldo",
         "team": "葡萄牙",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -18681,6 +18729,14 @@
       {
         "name": "Giovanni Reyna",
         "team": "美国",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Gonçalo Ramos",
+        "team": "葡萄牙",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -19071,14 +19127,6 @@
         "reds": 0
       },
       {
-        "name": "Luka Modrić",
-        "team": "克罗地亚",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Malik Tillman",
         "team": "美国",
         "goals": 1,
@@ -19458,7 +19506,7 @@
         "name": "Rafael Leão",
         "team": "葡萄牙",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

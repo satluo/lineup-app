@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T02:01:45+00:00",
+  "generated_at": "2026-07-03T08:03:37+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2034,10 +2034,10 @@
       "away_en": "Algeria",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 0,
       "venue": "Vancouver · BC Place Vancouver"
     },
     {
@@ -2248,9 +2248,9 @@
       "away_placeholder": "W87",
       "date": "2026-07-08",
       "time": "04:00",
-      "home": "W85",
+      "home": "瑞士",
       "away": "W87",
-      "home_en": "W85",
+      "home_en": "Switzerland",
       "away_en": "W87",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
@@ -3197,7 +3197,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 28,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3509,7 +3509,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 28,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -5117,7 +5117,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 28,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5429,7 +5429,7 @@
       "goal_difference": -2,
       "points": 4,
       "fifa_rank": 28,
-      "fair_play_points": -1,
+      "fair_play_points": -3,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10502,7 +10502,7 @@
         "name": "Johan Manzambi",
         "team": "瑞士",
         "goals": 3,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10575,6 +10575,14 @@
         "team": "法国",
         "goals": 2,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Breel Embolo",
+        "team": "瑞士",
+        "goals": 2,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10851,14 +10859,6 @@
         "reds": 0
       },
       {
-        "name": "Breel Embolo",
-        "team": "瑞士",
-        "goals": 1,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Brian Cipenga",
         "team": "刚果（金）",
         "goals": 1,
@@ -10893,6 +10893,14 @@
       {
         "name": "Daizen Maeda",
         "team": "日本",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Dan Ndoye",
+        "team": "瑞士",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -12211,6 +12219,14 @@
         "reds": 0
       },
       {
+        "name": "Farès Chaïbi",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Feras Al-Brikan",
         "team": "沙特阿拉伯",
         "goals": 0,
@@ -12309,6 +12325,14 @@
       {
         "name": "Harry Souttar",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Hicham Boudaoui",
+        "team": "阿尔及利亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13583,7 +13607,7 @@
       {
         "name": "Breel Embolo",
         "team": "瑞士",
-        "goals": 1,
+        "goals": 2,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -13648,6 +13672,14 @@
         "name": "Iliman Ndiaye",
         "team": "塞内加尔",
         "goals": 1,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Johan Manzambi",
+        "team": "瑞士",
+        "goals": 3,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -14064,14 +14096,6 @@
         "name": "Jean-Kévin Duverne",
         "team": "海地",
         "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Johan Manzambi",
-        "team": "瑞士",
-        "goals": 3,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -15053,6 +15077,14 @@
         "reds": 0
       },
       {
+        "name": "Dan Ndoye",
+        "team": "瑞士",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Daniel Muñoz",
         "team": "哥伦比亚",
         "goals": 2,
@@ -15223,6 +15255,14 @@
       {
         "name": "Fabinho",
         "team": "巴西",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Farès Chaïbi",
+        "team": "阿尔及利亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15410,6 +15450,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Hicham Boudaoui",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -17279,6 +17327,14 @@
         "reds": 0
       },
       {
+        "name": "Farès Chaïbi",
+        "team": "阿尔及利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Feras Al-Brikan",
         "team": "沙特阿拉伯",
         "goals": 0,
@@ -17361,6 +17417,14 @@
       {
         "name": "Harry Souttar",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Hicham Boudaoui",
+        "team": "阿尔及利亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -18417,7 +18481,7 @@
       {
         "name": "Breel Embolo",
         "team": "瑞士",
-        "goals": 1,
+        "goals": 2,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -18529,6 +18593,14 @@
       {
         "name": "Daizen Maeda",
         "team": "日本",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Dan Ndoye",
+        "team": "瑞士",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -18890,7 +18962,7 @@
         "name": "Johan Manzambi",
         "team": "瑞士",
         "goals": 3,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },

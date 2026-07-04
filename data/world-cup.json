@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T00:52:58+00:00",
+  "generated_at": "2026-07-04T07:01:30+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2094,10 +2094,10 @@
       "away_en": "Ghana",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 0,
       "venue": "Kansas City · Kansas City Stadium"
     },
     {
@@ -2249,9 +2249,9 @@
       "date": "2026-07-08",
       "time": "04:00",
       "home": "瑞士",
-      "away": "W87",
+      "away": "哥伦比亚",
       "home_en": "Switzerland",
-      "away_en": "W87",
+      "away_en": "Colombia",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
       "status": "scheduled",
@@ -3157,7 +3157,7 @@
       "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3237,7 +3237,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 13,
-      "fair_play_points": -4,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3357,7 +3357,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3443,7 +3443,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -5077,7 +5077,7 @@
       "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5157,7 +5157,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 13,
-      "fair_play_points": -4,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5277,7 +5277,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5363,7 +5363,7 @@
       "goal_difference": 0,
       "points": 4,
       "fifa_rank": 73,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 3,
       "group_complete": true,
       "ranking_status": "calculated",
@@ -10879,7 +10879,7 @@
         "team": "加纳",
         "goals": 1,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -11120,6 +11120,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Jhon Arias",
+        "team": "哥伦比亚",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11763,6 +11771,14 @@
         "reds": 0
       },
       {
+        "name": "Alidu Seidu",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Alistair Johnston",
         "team": "加拿大",
         "goals": 0,
@@ -12259,6 +12275,14 @@
         "reds": 0
       },
       {
+        "name": "Fatawu Issahaku",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Feras Al-Brikan",
         "team": "沙特阿拉伯",
         "goals": 0,
@@ -12312,6 +12336,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Gonzalo Montiel",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12787,6 +12819,14 @@
         "reds": 0
       },
       {
+        "name": "Luis Suárez",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Luka Modrić",
         "team": "克罗地亚",
         "goals": 0,
@@ -13205,6 +13245,14 @@
       {
         "name": "Renato Veiga",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Richard Ríos",
+        "team": "哥伦比亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -14333,6 +14381,14 @@
         "reds": 0
       },
       {
+        "name": "Luis Suárez",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Luka Modrić",
         "team": "克罗地亚",
         "goals": 0,
@@ -14885,6 +14941,14 @@
         "reds": 0
       },
       {
+        "name": "Alidu Seidu",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Alistair Johnston",
         "team": "加拿大",
         "goals": 0,
@@ -15057,7 +15121,7 @@
         "team": "加纳",
         "goals": 1,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15373,6 +15437,14 @@
         "reds": 0
       },
       {
+        "name": "Fatawu Issahaku",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Feras Al-Brikan",
         "team": "沙特阿拉伯",
         "goals": 0,
@@ -15474,6 +15546,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Gonzalo Montiel",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15720,6 +15800,14 @@
         "name": "Jefferson Lerma",
         "team": "哥伦比亚",
         "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jhon Arias",
+        "team": "哥伦比亚",
+        "goals": 1,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -16477,6 +16565,14 @@
         "reds": 0
       },
       {
+        "name": "Richard Ríos",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Rodrigo Bentancur",
         "team": "乌拉圭",
         "goals": 0,
@@ -16951,6 +17047,14 @@
         "reds": 0
       },
       {
+        "name": "Caleb Yirenkyi",
+        "team": "加纳",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Casemiro",
         "team": "巴西",
         "goals": 1,
@@ -17127,6 +17231,14 @@
         "reds": 0
       },
       {
+        "name": "Alidu Seidu",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Alistair Johnston",
         "team": "加拿大",
         "goals": 0,
@@ -17218,14 +17330,6 @@
         "name": "Brian Gutiérrez",
         "team": "墨西哥",
         "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Caleb Yirenkyi",
-        "team": "加纳",
-        "goals": 1,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -17455,6 +17559,14 @@
         "reds": 0
       },
       {
+        "name": "Fatawu Issahaku",
+        "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Feras Al-Brikan",
         "team": "沙特阿拉伯",
         "goals": 0,
@@ -17489,6 +17601,14 @@
       {
         "name": "Gabriel Gudmundsson",
         "team": "瑞典",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Gonzalo Montiel",
+        "team": "阿根廷",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17650,6 +17770,14 @@
         "name": "Jefferson Lerma",
         "team": "哥伦比亚",
         "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jhon Arias",
+        "team": "哥伦比亚",
+        "goals": 1,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -18177,6 +18305,14 @@
       {
         "name": "Renato Veiga",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Richard Ríos",
+        "team": "哥伦比亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -19346,6 +19482,14 @@
         "name": "Luis Romo",
         "team": "墨西哥",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Luis Suárez",
+        "team": "哥伦比亚",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0

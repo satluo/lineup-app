@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T00:41:25+00:00",
+  "generated_at": "2026-07-04T00:46:27+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2074,8 +2074,8 @@
       "away_en": "Cape Verde",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "live",
-      "status_detail": "119'",
+      "status": "finished",
+      "status_detail": "official_result",
       "score_home": 3,
       "score_away": 2,
       "venue": "Miami · Miami Stadium"

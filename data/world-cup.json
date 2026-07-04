@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T00:46:27+00:00",
+  "generated_at": "2026-07-04T00:52:58+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2228,9 +2228,9 @@
       "away_placeholder": "W88",
       "date": "2026-07-08",
       "time": "00:00",
-      "home": "W86",
+      "home": "阿根廷",
       "away": "埃及",
-      "home_en": "W86",
+      "home_en": "Argentina",
       "away_en": "Egypt",
       "stage": "Round of 16",
       "stage_code": "round_of_16",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T21:02:03+00:00",
+  "generated_at": "2026-07-04T00:31:33+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2074,10 +2074,10 @@
       "away_en": "Cape Verde",
       "stage": "Round of 32",
       "stage_code": "round_of_32",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "live",
+      "status_detail": "109'",
+      "score_home": 2,
+      "score_away": 2,
       "venue": "Miami · Miami Stadium"
     },
     {
@@ -2229,9 +2229,9 @@
       "date": "2026-07-08",
       "time": "00:00",
       "home": "W86",
-      "away": "W88",
+      "away": "埃及",
       "home_en": "W86",
-      "away_en": "W88",
+      "away_en": "Egypt",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
       "status": "scheduled",
@@ -3017,7 +3017,7 @@
       "goal_difference": 0,
       "points": 3,
       "fifa_rank": 67,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4937,7 +4937,7 @@
       "goal_difference": 0,
       "points": 3,
       "fifa_rank": 67,
-      "fair_play_points": -4,
+      "fair_play_points": -5,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10379,18 +10379,18 @@
   "leaderboards": {
     "scorers": [
       {
-        "name": "Kylian Mbappé",
-        "team": "法国",
-        "goals": 6,
-        "assists": 2,
+        "name": "Lionel Messi",
+        "team": "阿根廷",
+        "goals": 7,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
       {
-        "name": "Lionel Messi",
-        "team": "阿根廷",
+        "name": "Kylian Mbappé",
+        "team": "法国",
         "goals": 6,
-        "assists": 0,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10915,6 +10915,14 @@
         "reds": 0
       },
       {
+        "name": "Deroy Duarte",
+        "team": "佛得角",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Derrick Luckassen",
         "team": "加纳",
         "goals": 1,
@@ -11199,7 +11207,7 @@
         "team": "佛得角",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11239,6 +11247,14 @@
         "team": "德国",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Lisandro Martínez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -11547,6 +11563,14 @@
         "reds": 0
       },
       {
+        "name": "Sidny Lopes Cabral",
+        "team": "佛得角",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Soufiane Rahimi",
         "team": "摩洛哥",
         "goals": 1,
@@ -11717,6 +11741,14 @@
       {
         "name": "Alexandr Sojka",
         "team": "捷克",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Alexis Mac Allister",
+        "team": "阿根廷",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13235,6 +13267,14 @@
         "reds": 0
       },
       {
+        "name": "Ryan Mendes",
+        "team": "佛得角",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Rúben Dias",
         "team": "葡萄牙",
         "goals": 0,
@@ -13328,14 +13368,6 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Sidny Lopes Cabral",
-        "team": "佛得角",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 2,
         "reds": 0
       },
       {
@@ -13493,6 +13525,14 @@
       {
         "name": "Yan Diomande",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Yannick Semedo",
+        "team": "佛得角",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -13823,6 +13863,14 @@
       {
         "name": "Alexandr Sojka",
         "team": "捷克",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Alexis Mac Allister",
+        "team": "阿根廷",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -14245,6 +14293,14 @@
         "reds": 0
       },
       {
+        "name": "Lisandro Martínez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Lucas Bergvall",
         "team": "瑞典",
         "goals": 0,
@@ -14565,6 +14621,14 @@
         "reds": 0
       },
       {
+        "name": "Ryan Mendes",
+        "team": "佛得角",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Sadio Mané",
         "team": "塞内加尔",
         "goals": 0,
@@ -14687,6 +14751,14 @@
       {
         "name": "Yan Diomande",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Yannick Semedo",
+        "team": "佛得角",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -15146,6 +15218,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Deroy Duarte",
+        "team": "佛得角",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -15841,7 +15921,7 @@
         "team": "佛得角",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15927,7 +16007,7 @@
       {
         "name": "Lionel Messi",
         "team": "阿根廷",
-        "goals": 6,
+        "goals": 7,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16519,7 +16599,7 @@
       {
         "name": "Sidny Lopes Cabral",
         "team": "佛得角",
-        "goals": 0,
+        "goals": 1,
         "assists": 0,
         "yellows": 2,
         "reds": 0
@@ -16961,7 +17041,7 @@
       {
         "name": "Sidny Lopes Cabral",
         "team": "佛得角",
-        "goals": 0,
+        "goals": 1,
         "assists": 0,
         "yellows": 2,
         "reds": 0
@@ -17719,6 +17799,14 @@
         "reds": 0
       },
       {
+        "name": "Kevin Pina",
+        "team": "佛得角",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Kojo Peprah Oppong",
         "team": "加纳",
         "goals": 0,
@@ -18375,6 +18463,14 @@
         "reds": 0
       },
       {
+        "name": "Alexis Mac Allister",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Alexis Saelemaekers",
         "team": "比利时",
         "goals": 1,
@@ -18699,6 +18795,14 @@
         "team": "荷兰",
         "goals": 0,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Deroy Duarte",
+        "team": "佛得角",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -19135,14 +19239,6 @@
         "reds": 0
       },
       {
-        "name": "Kevin Pina",
-        "team": "佛得角",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Kevin Rodríguez",
         "team": "厄瓜多尔",
         "goals": 0,
@@ -19217,8 +19313,16 @@
       {
         "name": "Lionel Messi",
         "team": "阿根廷",
-        "goals": 6,
+        "goals": 7,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Lisandro Martínez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -19719,6 +19823,14 @@
         "reds": 0
       },
       {
+        "name": "Ryan Mendes",
+        "team": "佛得角",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Sadio Mané",
         "team": "塞内加尔",
         "goals": 0,
@@ -19873,6 +19985,14 @@
       {
         "name": "Yan Diomande",
         "team": "科特迪瓦",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Yannick Semedo",
+        "team": "佛得角",
         "goals": 0,
         "assists": 1,
         "yellows": 0,

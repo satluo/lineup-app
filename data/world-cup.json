@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T07:01:30+00:00",
+  "generated_at": "2026-07-04T20:01:17+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2114,10 +2114,10 @@
       "away_en": "Morocco",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 0,
+      "score_away": 3,
       "venue": "Houston · Houston Stadium"
     },
     {
@@ -2269,9 +2269,9 @@
       "date": "2026-07-10",
       "time": "04:00",
       "home": "W89",
-      "away": "W90",
+      "away": "摩洛哥",
       "home_en": "W89",
-      "away_en": "W90",
+      "away_en": "Morocco",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
       "status": "scheduled",
@@ -2537,7 +2537,7 @@
       "goal_difference": 5,
       "points": 4,
       "fifa_rank": 30,
-      "fair_play_points": -7,
+      "fair_play_points": -11,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -2617,7 +2617,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 7,
-      "fair_play_points": -2,
+      "fair_play_points": -6,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4457,7 +4457,7 @@
       "goal_difference": 5,
       "points": 4,
       "fifa_rank": 30,
-      "fair_play_points": -7,
+      "fair_play_points": -11,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4537,7 +4537,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 7,
-      "fair_play_points": -2,
+      "fair_play_points": -6,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10511,7 +10511,7 @@
         "team": "加拿大",
         "goals": 3,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10571,6 +10571,14 @@
         "reds": 0
       },
       {
+        "name": "Azzedine Ounahi",
+        "team": "摩洛哥",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Bradley Barcola",
         "team": "法国",
         "goals": 2,
@@ -10599,7 +10607,7 @@
         "team": "加拿大",
         "goals": 2,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -10731,6 +10739,14 @@
         "reds": 0
       },
       {
+        "name": "Soufiane Rahimi",
+        "team": "摩洛哥",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Yasin Ayari",
         "team": "瑞典",
         "goals": 2,
@@ -10766,8 +10782,8 @@
         "name": "Achraf Hakimi",
         "team": "摩洛哥",
         "goals": 1,
-        "assists": 1,
-        "yellows": 0,
+        "assists": 2,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11579,14 +11595,6 @@
         "reds": 0
       },
       {
-        "name": "Soufiane Rahimi",
-        "team": "摩洛哥",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Stephen Eustáquio",
         "team": "加拿大",
         "goals": 1,
@@ -11899,10 +11907,18 @@
         "reds": 0
       },
       {
+        "name": "Bilal El Khannouss",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Brahim Díaz",
         "team": "摩洛哥",
         "goals": 0,
-        "assists": 2,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },
@@ -12799,7 +12815,7 @@
         "team": "加拿大",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -13243,6 +13259,14 @@
         "reds": 1
       },
       {
+        "name": "Redouane Halhal",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Renato Veiga",
         "team": "葡萄牙",
         "goals": 0,
@@ -13253,6 +13277,14 @@
       {
         "name": "Richard Ríos",
         "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Richie Laryea",
+        "team": "加拿大",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13653,6 +13685,14 @@
         "reds": 0
       },
       {
+        "name": "Brahim Díaz",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 4,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Bruno Guimarães",
         "team": "巴西",
         "goals": 0,
@@ -13693,16 +13733,16 @@
         "reds": 0
       },
       {
-        "name": "Anthony Gordon",
-        "team": "英格兰",
-        "goals": 0,
+        "name": "Achraf Hakimi",
+        "team": "摩洛哥",
+        "goals": 1,
         "assists": 2,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
-        "name": "Brahim Díaz",
-        "team": "摩洛哥",
+        "name": "Anthony Gordon",
+        "team": "英格兰",
         "goals": 0,
         "assists": 2,
         "yellows": 0,
@@ -13874,14 +13914,6 @@
         "goals": 0,
         "assists": 1,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Achraf Hakimi",
-        "team": "摩洛哥",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -14711,7 +14743,7 @@
       {
         "name": "Soufiane Rahimi",
         "team": "摩洛哥",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -15077,8 +15109,24 @@
         "reds": 0
       },
       {
+        "name": "Azzedine Ounahi",
+        "team": "摩洛哥",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Bernardo Silva",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Bilal El Khannouss",
+        "team": "摩洛哥",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -15201,7 +15249,7 @@
         "team": "加拿大",
         "goals": 2,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15849,7 +15897,7 @@
         "team": "加拿大",
         "goals": 3,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -16113,7 +16161,7 @@
         "team": "加拿大",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -16557,6 +16605,14 @@
         "reds": 1
       },
       {
+        "name": "Redouane Halhal",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Renato Veiga",
         "team": "葡萄牙",
         "goals": 0,
@@ -16567,6 +16623,14 @@
       {
         "name": "Richard Ríos",
         "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Richie Laryea",
+        "team": "加拿大",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17063,6 +17127,14 @@
         "reds": 0
       },
       {
+        "name": "Cyle Larin",
+        "team": "加拿大",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Danilo",
         "team": "巴西",
         "goals": 0,
@@ -17105,6 +17177,14 @@
       {
         "name": "Juninho Bacuna",
         "team": "库拉索",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Luc de Fougerolles",
+        "team": "加拿大",
         "goals": 0,
         "assists": 0,
         "yellows": 2,
@@ -17195,6 +17275,14 @@
         "team": "沙特阿拉伯",
         "goals": 1,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Achraf Hakimi",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 2,
         "yellows": 1,
         "reds": 0
       },
@@ -17311,8 +17399,24 @@
         "reds": 0
       },
       {
+        "name": "Azzedine Ounahi",
+        "team": "摩洛哥",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Bernardo Silva",
         "team": "葡萄牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Bilal El Khannouss",
+        "team": "摩洛哥",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17395,14 +17499,6 @@
         "team": "荷兰",
         "goals": 2,
         "assists": 2,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Cyle Larin",
-        "team": "加拿大",
-        "goals": 2,
-        "assists": 0,
         "yellows": 1,
         "reds": 0
       },
@@ -17807,6 +17903,14 @@
         "reds": 0
       },
       {
+        "name": "Jonathan David",
+        "team": "加拿大",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jordan Bos",
         "team": "澳大利亚",
         "goals": 0,
@@ -18010,14 +18114,6 @@
         "name": "Livano Comenencia",
         "team": "库拉索",
         "goals": 1,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Luc de Fougerolles",
-        "team": "加拿大",
-        "goals": 0,
         "assists": 0,
         "yellows": 1,
         "reds": 0
@@ -18303,6 +18399,14 @@
         "reds": 0
       },
       {
+        "name": "Redouane Halhal",
+        "team": "摩洛哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Renato Veiga",
         "team": "葡萄牙",
         "goals": 0,
@@ -18313,6 +18417,14 @@
       {
         "name": "Richard Ríos",
         "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Richie Laryea",
+        "team": "加拿大",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -18551,14 +18663,6 @@
         "reds": 0
       },
       {
-        "name": "Achraf Hakimi",
-        "team": "摩洛哥",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Adrien Rabiot",
         "team": "法国",
         "goals": 0,
@@ -18738,7 +18842,7 @@
         "name": "Brahim Díaz",
         "team": "摩洛哥",
         "goals": 0,
-        "assists": 2,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },
@@ -19250,14 +19354,6 @@
         "name": "John McGinn",
         "team": "苏格兰",
         "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Jonathan David",
-        "team": "加拿大",
-        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -20001,7 +20097,7 @@
       {
         "name": "Soufiane Rahimi",
         "team": "摩洛哥",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0

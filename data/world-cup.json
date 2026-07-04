@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T00:31:33+00:00",
+  "generated_at": "2026-07-04T00:36:27+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2075,8 +2075,8 @@
       "stage": "Round of 32",
       "stage_code": "round_of_32",
       "status": "live",
-      "status_detail": "109'",
-      "score_home": 2,
+      "status_detail": "114'",
+      "score_home": 3,
       "score_away": 2,
       "venue": "Miami · Miami Stadium"
     },

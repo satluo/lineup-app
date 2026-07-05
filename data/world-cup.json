@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T02:02:22+00:00",
+  "generated_at": "2026-07-05T23:01:07+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2154,10 +2154,10 @@
       "away_en": "Norway",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 2,
       "venue": "New Jersey · New York/New Jersey Stadium"
     },
     {
@@ -2308,9 +2308,9 @@
       "away_placeholder": "W92",
       "date": "2026-07-12",
       "time": "05:00",
-      "home": "W91",
+      "home": "挪威",
       "away": "W92",
-      "home_en": "W91",
+      "home_en": "Norway",
       "away_en": "W92",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
@@ -2597,7 +2597,7 @@
       "goal_difference": 6,
       "points": 7,
       "fifa_rank": 6,
-      "fair_play_points": -7,
+      "fair_play_points": -8,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4517,7 +4517,7 @@
       "goal_difference": 6,
       "points": 7,
       "fifa_rank": 6,
-      "fair_play_points": -7,
+      "fair_play_points": -8,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10379,6 +10379,14 @@
   "leaderboards": {
     "scorers": [
       {
+        "name": "Erling Haaland",
+        "team": "挪威",
+        "goals": 7,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Kylian Mbappé",
         "team": "法国",
         "goals": 7,
@@ -10390,14 +10398,6 @@
         "name": "Lionel Messi",
         "team": "阿根廷",
         "goals": 7,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Erling Haaland",
-        "team": "挪威",
-        "goals": 5,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -11459,6 +11459,14 @@
         "reds": 0
       },
       {
+        "name": "Neymar",
+        "team": "巴西",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nico Schlotterbeck",
         "team": "德国",
         "goals": 1,
@@ -11814,7 +11822,7 @@
         "name": "Andreas Schjelderup",
         "team": "挪威",
         "goals": 0,
-        "assists": 1,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -13717,6 +13725,14 @@
         "reds": 0
       },
       {
+        "name": "Andreas Schjelderup",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Florian Wirtz",
         "team": "德国",
         "goals": 0,
@@ -13970,14 +13986,6 @@
         "goals": 0,
         "assists": 1,
         "yellows": 2,
-        "reds": 0
-      },
-      {
-        "name": "Andreas Schjelderup",
-        "team": "挪威",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -15455,7 +15463,7 @@
       {
         "name": "Erling Haaland",
         "team": "挪威",
-        "goals": 5,
+        "goals": 7,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16418,6 +16426,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Neymar",
+        "team": "巴西",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -18319,6 +18335,14 @@
         "reds": 0
       },
       {
+        "name": "Neymar",
+        "team": "巴西",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nico Elvedi",
         "team": "瑞士",
         "goals": 0,
@@ -18786,7 +18810,7 @@
         "name": "Andreas Schjelderup",
         "team": "挪威",
         "goals": 0,
-        "assists": 1,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -19137,7 +19161,7 @@
       {
         "name": "Erling Haaland",
         "team": "挪威",
-        "goals": 5,
+        "goals": 7,
         "assists": 0,
         "yellows": 0,
         "reds": 0

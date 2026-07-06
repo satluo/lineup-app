@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T23:01:07+00:00",
+  "generated_at": "2026-07-06T05:02:29+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2167,17 +2167,17 @@
       "home_placeholder": "W79",
       "away_placeholder": "W80",
       "date": "2026-07-06",
-      "time": "08:00",
+      "time": "09:00",
       "home": "墨西哥",
       "away": "英格兰",
       "home_en": "Mexico",
       "away_en": "England",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 3,
       "venue": "Mexico City · Mexico City Stadium"
     },
     {
@@ -2309,9 +2309,9 @@
       "date": "2026-07-12",
       "time": "05:00",
       "home": "挪威",
-      "away": "W92",
+      "away": "英格兰",
       "home_en": "Norway",
-      "away_en": "W92",
+      "away_en": "England",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
       "status": "scheduled",
@@ -2437,7 +2437,7 @@
       "goal_difference": 6,
       "points": 9,
       "fifa_rank": 14,
-      "fair_play_points": -6,
+      "fair_play_points": -8,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3317,7 +3317,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 4,
-      "fair_play_points": -3,
+      "fair_play_points": -11,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4357,7 +4357,7 @@
       "goal_difference": 6,
       "points": 9,
       "fifa_rank": 14,
-      "fair_play_points": -6,
+      "fair_play_points": -8,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5237,7 +5237,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 4,
-      "fair_play_points": -3,
+      "fair_play_points": -11,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10405,14 +10405,30 @@
       {
         "name": "Harry Kane",
         "team": "英格兰",
-        "goals": 5,
-        "assists": 0,
+        "goals": 6,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
       {
         "name": "Ismaïla Sarr",
         "team": "塞内加尔",
+        "goals": 4,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Jude Bellingham",
+        "team": "英格兰",
+        "goals": 4,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Julián Quiñones",
+        "team": "墨西哥",
         "goals": 4,
         "assists": 1,
         "yellows": 0,
@@ -10515,14 +10531,6 @@
         "reds": 0
       },
       {
-        "name": "Julián Quiñones",
-        "team": "墨西哥",
-        "goals": 3,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Kai Havertz",
         "team": "德国",
         "goals": 3,
@@ -10533,6 +10541,14 @@
       {
         "name": "Matheus Cunha",
         "team": "巴西",
+        "goals": 3,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Raúl Jiménez",
+        "team": "墨西哥",
         "goals": 3,
         "assists": 0,
         "yellows": 0,
@@ -10651,14 +10667,6 @@
         "reds": 0
       },
       {
-        "name": "Jude Bellingham",
-        "team": "英格兰",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
@@ -10703,14 +10711,6 @@
         "team": "伊朗",
         "goals": 2,
         "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Raúl Jiménez",
-        "team": "墨西哥",
-        "goals": 2,
-        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -11974,7 +11974,7 @@
         "name": "Bukayo Saka",
         "team": "英格兰",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -12135,7 +12135,7 @@
         "team": "英格兰",
         "goals": 0,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12528,7 +12528,7 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
+        "reds": 1
       },
       {
         "name": "Jassem Gaber",
@@ -12579,6 +12579,14 @@
         "reds": 0
       },
       {
+        "name": "Johan Vásquez",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Johny Placide",
         "team": "海地",
         "goals": 0,
@@ -12589,6 +12597,14 @@
       {
         "name": "Jordan Bos",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jordan Henderson",
+        "team": "英格兰",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -12607,7 +12623,7 @@
         "team": "墨西哥",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12891,6 +12907,14 @@
         "reds": 0
       },
       {
+        "name": "Marc Guéhi",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Marcos Llorente",
         "team": "西班牙",
         "goals": 0,
@@ -13096,6 +13120,14 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nico O'Reilly",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13733,6 +13765,14 @@
         "reds": 0
       },
       {
+        "name": "Bukayo Saka",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Florian Wirtz",
         "team": "德国",
         "goals": 0,
@@ -13776,14 +13816,6 @@
         "name": "Breel Embolo",
         "team": "瑞士",
         "goals": 2,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Bukayo Saka",
-        "team": "英格兰",
-        "goals": 0,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -14129,7 +14161,7 @@
         "team": "英格兰",
         "goals": 0,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14213,6 +14245,14 @@
         "reds": 0
       },
       {
+        "name": "Harry Kane",
+        "team": "英格兰",
+        "goals": 6,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Hwang In-beom",
         "team": "韩国",
         "goals": 1,
@@ -14265,7 +14305,7 @@
         "team": "墨西哥",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14295,7 +14335,7 @@
       {
         "name": "Jude Bellingham",
         "team": "英格兰",
-        "goals": 2,
+        "goals": 4,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -14303,7 +14343,7 @@
       {
         "name": "Julián Quiñones",
         "team": "墨西哥",
-        "goals": 3,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -15677,14 +15717,6 @@
         "reds": 0
       },
       {
-        "name": "Harry Kane",
-        "team": "英格兰",
-        "goals": 5,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Harry Souttar",
         "team": "澳大利亚",
         "goals": 0,
@@ -15842,7 +15874,7 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
+        "reds": 1
       },
       {
         "name": "Jassem Gaber",
@@ -15893,6 +15925,14 @@
         "reds": 0
       },
       {
+        "name": "Johan Vásquez",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "John McGinn",
         "team": "苏格兰",
         "goals": 1,
@@ -15919,6 +15959,14 @@
       {
         "name": "Jordan Bos",
         "team": "澳大利亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jordan Henderson",
+        "team": "英格兰",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16213,6 +16261,14 @@
         "reds": 0
       },
       {
+        "name": "Marc Guéhi",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Marcel Sabitzer",
         "team": "奥地利",
         "goals": 1,
@@ -16445,6 +16501,14 @@
         "reds": 0
       },
       {
+        "name": "Nico O'Reilly",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Nico Schlotterbeck",
         "team": "德国",
         "goals": 1,
@@ -16623,7 +16687,7 @@
       {
         "name": "Raúl Jiménez",
         "team": "墨西哥",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -17015,6 +17079,14 @@
         "reds": 1
       },
       {
+        "name": "Jarell Quansah",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 1
+      },
+      {
         "name": "Miguel Almirón",
         "team": "巴拉圭",
         "goals": 0,
@@ -17171,6 +17243,14 @@
         "team": "巴西",
         "goals": 0,
         "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Declan Rice",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 1,
         "yellows": 2,
         "reds": 0
       },
@@ -17567,14 +17647,6 @@
         "reds": 0
       },
       {
-        "name": "Declan Rice",
-        "team": "英格兰",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Denis Zakaria",
         "team": "瑞士",
         "goals": 0,
@@ -17879,14 +17951,6 @@
         "reds": 0
       },
       {
-        "name": "Jarell Quansah",
-        "team": "英格兰",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Jassem Gaber",
         "team": "卡塔尔",
         "goals": 0,
@@ -17935,6 +17999,14 @@
         "reds": 0
       },
       {
+        "name": "Johan Vásquez",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Johny Placide",
         "team": "海地",
         "goals": 0,
@@ -17959,10 +18031,26 @@
         "reds": 0
       },
       {
+        "name": "Jordan Henderson",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jordy Alcívar",
         "team": "厄瓜多尔",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Jorge Sánchez",
+        "team": "墨西哥",
+        "goals": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -18009,7 +18097,7 @@
       {
         "name": "Jude Bellingham",
         "team": "英格兰",
-        "goals": 2,
+        "goals": 4,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -18207,6 +18295,14 @@
         "reds": 0
       },
       {
+        "name": "Marc Guéhi",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Marcel Sabitzer",
         "team": "奥地利",
         "goals": 1,
@@ -18345,6 +18441,14 @@
       {
         "name": "Nico Elvedi",
         "team": "瑞士",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Nico O'Reilly",
+        "team": "英格兰",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -18954,7 +19058,7 @@
         "name": "Bukayo Saka",
         "team": "英格兰",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -19281,8 +19385,8 @@
       {
         "name": "Harry Kane",
         "team": "英格兰",
-        "goals": 5,
-        "assists": 0,
+        "goals": 6,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -19415,14 +19519,6 @@
         "reds": 0
       },
       {
-        "name": "Jorge Sánchez",
-        "team": "墨西哥",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Joshua Kimmich",
         "team": "德国",
         "goals": 0,
@@ -19473,7 +19569,7 @@
       {
         "name": "Julián Quiñones",
         "team": "墨西哥",
-        "goals": 3,
+        "goals": 4,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -20049,7 +20145,7 @@
       {
         "name": "Raúl Jiménez",
         "team": "墨西哥",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
         "yellows": 0,
         "reds": 0

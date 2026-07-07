@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T23:01:17+00:00",
+  "generated_at": "2026-07-07T15:01:19+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2214,10 +2214,10 @@
       "away_en": "Belgium",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 4,
       "venue": "Seattle · Seattle Stadium"
     },
     {
@@ -2289,9 +2289,9 @@
       "date": "2026-07-11",
       "time": "03:00",
       "home": "西班牙",
-      "away": "W94",
+      "away": "比利时",
       "home_en": "Spain",
-      "away_en": "W94",
+      "away_en": "Belgium",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
       "status": "scheduled",
@@ -2677,7 +2677,7 @@
       "goal_difference": 4,
       "points": 6,
       "fifa_rank": 17,
-      "fair_play_points": -9,
+      "fair_play_points": -11,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4597,7 +4597,7 @@
       "goal_difference": 4,
       "points": 6,
       "fifa_rank": 17,
-      "fair_play_points": -9,
+      "fair_play_points": -11,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10555,6 +10555,14 @@
         "reds": 0
       },
       {
+        "name": "Romelu Lukaku",
+        "team": "比利时",
+        "goals": 3,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Yoane Wissa",
         "team": "刚果（金）",
         "goals": 3,
@@ -10607,6 +10615,14 @@
         "team": "瑞士",
         "goals": 2,
         "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Charles De Ketelaere",
+        "team": "比利时",
+        "goals": 2,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -10670,8 +10686,16 @@
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Malik Tillman",
+        "team": "美国",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10720,14 +10744,6 @@
         "goals": 2,
         "assists": 1,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Romelu Lukaku",
-        "team": "比利时",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -11051,6 +11067,14 @@
         "reds": 0
       },
       {
+        "name": "Hans Vanaken",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Hassan Al-Haydos",
         "team": "卡塔尔",
         "goals": 1,
@@ -11312,14 +11336,6 @@
         "goals": 1,
         "assists": 0,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Malik Tillman",
-        "team": "美国",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -12427,14 +12443,6 @@
         "reds": 0
       },
       {
-        "name": "Hans Vanaken",
-        "team": "比利时",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Harry Souttar",
         "team": "澳大利亚",
         "goals": 0,
@@ -13158,7 +13166,7 @@
         "name": "Nicolas Raskin",
         "team": "比利时",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -13651,6 +13659,14 @@
         "reds": 0
       },
       {
+        "name": "Weston McKennie",
+        "team": "美国",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Wilfried Singo",
         "team": "科特迪瓦",
         "goals": 0,
@@ -13877,6 +13893,14 @@
         "reds": 0
       },
       {
+        "name": "Hans Vanaken",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Houssem Aouar",
         "team": "阿尔及利亚",
         "goals": 0,
@@ -13925,6 +13949,14 @@
         "reds": 0
       },
       {
+        "name": "Leandro Trossard",
+        "team": "比利时",
+        "goals": 2,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Marc Cucurella",
         "team": "西班牙",
         "goals": 0,
@@ -13946,6 +13978,14 @@
         "goals": 1,
         "assists": 2,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Nicolas Raskin",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14117,6 +14157,14 @@
         "reds": 0
       },
       {
+        "name": "Charles De Ketelaere",
+        "team": "比利时",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Chemsdine Talbi",
         "team": "摩洛哥",
         "goals": 0,
@@ -14258,14 +14306,6 @@
         "goals": 0,
         "assists": 1,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Hans Vanaken",
-        "team": "比利时",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -14437,14 +14477,6 @@
         "reds": 0
       },
       {
-        "name": "Leandro Trossard",
-        "team": "比利时",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Lee Kang-in",
         "team": "韩国",
         "goals": 0,
@@ -14511,9 +14543,9 @@
       {
         "name": "Malik Tillman",
         "team": "美国",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14653,14 +14685,6 @@
         "reds": 0
       },
       {
-        "name": "Nicolas Raskin",
-        "team": "比利时",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Noor Al-Rawabdeh",
         "team": "约旦",
         "goals": 0,
@@ -14775,7 +14799,7 @@
       {
         "name": "Romelu Lukaku",
         "team": "比利时",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -17013,6 +17037,14 @@
         "reds": 0
       },
       {
+        "name": "Weston McKennie",
+        "team": "美国",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Wilson Isidor",
         "team": "海地",
         "goals": 1,
@@ -18327,6 +18359,14 @@
         "reds": 0
       },
       {
+        "name": "Malik Tillman",
+        "team": "美国",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Manu Koné",
         "team": "法国",
         "goals": 0,
@@ -18657,7 +18697,7 @@
       {
         "name": "Romelu Lukaku",
         "team": "比利时",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -18801,6 +18841,14 @@
       {
         "name": "Wagner Pina",
         "team": "佛得角",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Weston McKennie",
+        "team": "美国",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -19106,6 +19154,14 @@
         "name": "Chadi Riad",
         "team": "摩洛哥",
         "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Charles De Ketelaere",
+        "team": "比利时",
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -19417,8 +19473,8 @@
       {
         "name": "Hans Vanaken",
         "team": "比利时",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -19714,7 +19770,7 @@
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -19778,14 +19834,6 @@
         "name": "Luis Suárez",
         "team": "哥伦比亚",
         "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Malik Tillman",
-        "team": "美国",
-        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -20034,7 +20082,7 @@
         "name": "Nicolas Raskin",
         "team": "比利时",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },

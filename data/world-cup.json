@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T15:01:19+00:00",
+  "generated_at": "2026-07-07T19:00:44+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2234,10 +2234,10 @@
       "away_en": "Egypt",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 3,
+      "score_away": 2,
       "venue": "Atlanta · Atlanta Stadium"
     },
     {
@@ -2328,9 +2328,9 @@
       "away_placeholder": "W96",
       "date": "2026-07-12",
       "time": "09:00",
-      "home": "W95",
+      "home": "阿根廷",
       "away": "W96",
-      "home_en": "W95",
+      "home_en": "Argentina",
       "away_en": "W96",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
@@ -2937,7 +2937,7 @@
       "goal_difference": 2,
       "points": 5,
       "fifa_rank": 29,
-      "fair_play_points": -8,
+      "fair_play_points": -12,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4857,7 +4857,7 @@
       "goal_difference": 2,
       "points": 5,
       "fifa_rank": 29,
-      "fair_play_points": -8,
+      "fair_play_points": -12,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10379,6 +10379,14 @@
   "leaderboards": {
     "scorers": [
       {
+        "name": "Lionel Messi",
+        "team": "阿根廷",
+        "goals": 8,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Erling Haaland",
         "team": "挪威",
         "goals": 7,
@@ -10391,14 +10399,6 @@
         "team": "法国",
         "goals": 7,
         "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Lionel Messi",
-        "team": "阿根廷",
-        "goals": 7,
-        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -10715,6 +10715,14 @@
         "reds": 0
       },
       {
+        "name": "Mostafa Zico",
+        "team": "埃及",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Nicolas Pépé",
         "team": "科特迪瓦",
         "goals": 2,
@@ -10931,6 +10939,14 @@
         "reds": 0
       },
       {
+        "name": "Cristian Romero",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Daizen Maeda",
         "team": "日本",
         "goals": 1,
@@ -10973,6 +10989,14 @@
       {
         "name": "Eldor Shomurodov",
         "team": "乌兹别克斯坦",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Enzo Fernández",
+        "team": "阿根廷",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11278,7 +11302,7 @@
         "name": "Lautaro Martínez",
         "team": "阿根廷",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -11431,14 +11455,6 @@
         "team": "伊朗",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Mostafa Zico",
-        "team": "埃及",
-        "goals": 1,
-        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -11688,6 +11704,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Yasser Ibrahim",
+        "team": "埃及",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12398,7 +12422,7 @@
         "name": "Gonzalo Montiel",
         "team": "阿根廷",
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -12428,6 +12452,14 @@
       },
       {
         "name": "Haissem Hassan",
+        "team": "埃及",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Hamdy Fathy",
         "team": "埃及",
         "goals": 0,
         "assists": 0,
@@ -12918,8 +12950,8 @@
         "name": "Marawan Attia",
         "team": "埃及",
         "goals": 0,
-        "assists": 0,
-        "yellows": 1,
+        "assists": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -13085,6 +13117,14 @@
       {
         "name": "Moisés Caicedo",
         "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Mostafa Shoubir",
+        "team": "埃及",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -13696,14 +13736,6 @@
         "goals": 0,
         "assists": 1,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Yasser Ibrahim",
-        "team": "埃及",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 2,
         "reds": 0
       },
       {
@@ -14301,11 +14333,27 @@
         "reds": 0
       },
       {
+        "name": "Gonzalo Montiel",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Gustavo Puerta",
         "team": "哥伦比亚",
         "goals": 0,
         "assists": 1,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Haissem Hassan",
+        "team": "埃及",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14477,11 +14525,27 @@
         "reds": 0
       },
       {
+        "name": "Lautaro Martínez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Lee Kang-in",
         "team": "韩国",
         "goals": 0,
         "assists": 1,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Lionel Messi",
+        "team": "阿根廷",
+        "goals": 8,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14546,6 +14610,14 @@
         "goals": 2,
         "assists": 1,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Marawan Attia",
+        "team": "埃及",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14623,7 +14695,7 @@
       {
         "name": "Mostafa Zico",
         "team": "埃及",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -15341,6 +15413,14 @@
         "reds": 0
       },
       {
+        "name": "Cristian Romero",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Cristiano Ronaldo",
         "team": "葡萄牙",
         "goals": 3,
@@ -15541,6 +15621,14 @@
         "reds": 0
       },
       {
+        "name": "Enzo Fernández",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Eren Elmali",
         "team": "土耳其",
         "goals": 0,
@@ -15701,14 +15789,6 @@
         "reds": 0
       },
       {
-        "name": "Gonzalo Montiel",
-        "team": "阿根廷",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Gonzalo Plata",
         "team": "厄瓜多尔",
         "goals": 1,
@@ -15757,7 +15837,7 @@
         "reds": 0
       },
       {
-        "name": "Haissem Hassan",
+        "name": "Hamdy Fathy",
         "team": "埃及",
         "goals": 0,
         "assists": 0,
@@ -16197,14 +16277,6 @@
         "reds": 0
       },
       {
-        "name": "Lautaro Martínez",
-        "team": "阿根廷",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Leandro Bacuna",
         "team": "库拉索",
         "goals": 0,
@@ -16253,14 +16325,6 @@
         "reds": 0
       },
       {
-        "name": "Lionel Messi",
-        "team": "阿根廷",
-        "goals": 7,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Livano Comenencia",
         "team": "库拉索",
         "goals": 1,
@@ -16295,14 +16359,6 @@
       {
         "name": "Manu Koné",
         "team": "法国",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Marawan Attia",
-        "team": "埃及",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -16495,6 +16551,14 @@
       {
         "name": "Moisés Caicedo",
         "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Mostafa Shoubir",
+        "team": "埃及",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17063,7 +17127,7 @@
       {
         "name": "Yasser Ibrahim",
         "team": "埃及",
-        "goals": 0,
+        "goals": 1,
         "assists": 0,
         "yellows": 2,
         "reds": 0
@@ -17343,6 +17407,14 @@
         "reds": 0
       },
       {
+        "name": "Haissem Hassan",
+        "team": "埃及",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Issa Diop",
         "team": "摩洛哥",
         "goals": 1,
@@ -17371,6 +17443,14 @@
         "team": "加拿大",
         "goals": 0,
         "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Marawan Attia",
+        "team": "埃及",
+        "goals": 0,
+        "assists": 1,
         "yellows": 2,
         "reds": 0
       },
@@ -17441,7 +17521,7 @@
       {
         "name": "Yasser Ibrahim",
         "team": "埃及",
-        "goals": 0,
+        "goals": 1,
         "assists": 0,
         "yellows": 2,
         "reds": 0
@@ -17898,7 +17978,7 @@
         "name": "Gonzalo Montiel",
         "team": "阿根廷",
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -17943,7 +18023,7 @@
         "reds": 0
       },
       {
-        "name": "Haissem Hassan",
+        "name": "Hamdy Fathy",
         "team": "埃及",
         "goals": 0,
         "assists": 0,
@@ -18375,14 +18455,6 @@
         "reds": 0
       },
       {
-        "name": "Marawan Attia",
-        "team": "埃及",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Marc Guéhi",
         "team": "英格兰",
         "goals": 0,
@@ -18489,6 +18561,14 @@
       {
         "name": "Moisés Caicedo",
         "team": "厄瓜多尔",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Mostafa Shoubir",
+        "team": "埃及",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -19207,6 +19287,14 @@
         "reds": 0
       },
       {
+        "name": "Cristian Romero",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Cristiano Ronaldo",
         "team": "葡萄牙",
         "goals": 3,
@@ -19354,6 +19442,14 @@
         "name": "Emam Ashour",
         "team": "埃及",
         "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Enzo Fernández",
+        "team": "阿根廷",
+        "goals": 1,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -19762,7 +19858,7 @@
         "name": "Lautaro Martínez",
         "team": "阿根廷",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -19793,8 +19889,8 @@
       {
         "name": "Lionel Messi",
         "team": "阿根廷",
-        "goals": 7,
-        "assists": 0,
+        "goals": 8,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -20001,7 +20097,7 @@
       {
         "name": "Mostafa Zico",
         "team": "埃及",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
         "yellows": 0,
         "reds": 0

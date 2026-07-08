@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:00:44+00:00",
+  "generated_at": "2026-07-08T01:01:20+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2254,10 +2254,10 @@
       "away_en": "Colombia",
       "stage": "Round of 16",
       "stage_code": "round_of_16",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 0,
+      "score_away": 0,
       "venue": "Vancouver · BC Place Vancouver"
     },
     {
@@ -2329,9 +2329,9 @@
       "date": "2026-07-12",
       "time": "09:00",
       "home": "阿根廷",
-      "away": "W96",
+      "away": "瑞士",
       "home_en": "Argentina",
-      "away_en": "W96",
+      "away_en": "Switzerland",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
       "status": "scheduled",
@@ -2517,7 +2517,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 19,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3237,7 +3237,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 13,
-      "fair_play_points": -6,
+      "fair_play_points": -8,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4437,7 +4437,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 19,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5157,7 +5157,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 13,
-      "fair_play_points": -6,
+      "fair_play_points": -8,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -11087,7 +11087,7 @@
         "team": "瑞士",
         "goals": 1,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12179,6 +12179,14 @@
         "reds": 0
       },
       {
+        "name": "Davinson Sánchez",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Declan Rice",
         "team": "英格兰",
         "goals": 0,
@@ -12191,7 +12199,7 @@
         "team": "瑞士",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12919,7 +12927,7 @@
         "team": "哥伦比亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13073,6 +13081,14 @@
         "assists": 0,
         "yellows": 1,
         "reds": 1
+      },
+      {
+        "name": "Miro Muheim",
+        "team": "瑞士",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
       },
       {
         "name": "Mohamed Hany",
@@ -14593,7 +14609,7 @@
         "team": "哥伦比亚",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15501,11 +15517,19 @@
         "reds": 0
       },
       {
+        "name": "Davinson Sánchez",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Denis Zakaria",
         "team": "瑞士",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15809,7 +15833,7 @@
         "team": "瑞士",
         "goals": 1,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -16506,6 +16530,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Miro Muheim",
+        "team": "瑞士",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -17391,6 +17423,14 @@
         "reds": 0
       },
       {
+        "name": "Denis Zakaria",
+        "team": "瑞士",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Diego Gómez",
         "team": "巴拉圭",
         "goals": 0,
@@ -17402,6 +17442,14 @@
         "name": "Gervane Kastaneer",
         "team": "库拉索",
         "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Granit Xhaka",
+        "team": "瑞士",
+        "goals": 1,
         "assists": 0,
         "yellows": 2,
         "reds": 0
@@ -17799,8 +17847,8 @@
         "reds": 0
       },
       {
-        "name": "Denis Zakaria",
-        "team": "瑞士",
+        "name": "Davinson Sánchez",
+        "team": "哥伦比亚",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17985,14 +18033,6 @@
       {
         "name": "Gonzalo Plata",
         "team": "厄瓜多尔",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Granit Xhaka",
-        "team": "瑞士",
         "goals": 1,
         "assists": 0,
         "yellows": 1,
@@ -18415,6 +18455,14 @@
         "reds": 0
       },
       {
+        "name": "Luis Suárez",
+        "team": "哥伦比亚",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Luka Modrić",
         "team": "克罗地亚",
         "goals": 0,
@@ -18529,6 +18577,14 @@
       {
         "name": "Micky van de Ven",
         "team": "荷兰",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Miro Muheim",
+        "team": "瑞士",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -19922,14 +19978,6 @@
         "name": "Luis Romo",
         "team": "墨西哥",
         "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Luis Suárez",
-        "team": "哥伦比亚",
-        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T01:01:20+00:00",
+  "generated_at": "2026-07-10T01:02:10+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2274,10 +2274,10 @@
       "away_en": "Morocco",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 0,
       "venue": "Boston · Boston Stadium"
     },
     {
@@ -2348,9 +2348,9 @@
       "away_placeholder": "W98",
       "date": "2026-07-15",
       "time": "03:00",
-      "home": "W97",
+      "home": "法国",
       "away": "W98",
-      "home_en": "W97",
+      "home_en": "France",
       "away_en": "W98",
       "stage": "Semi-final",
       "stage_code": "semifinal",
@@ -2617,7 +2617,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 7,
-      "fair_play_points": -6,
+      "fair_play_points": -7,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4537,7 +4537,7 @@
       "goal_difference": 3,
       "points": 7,
       "fifa_rank": 7,
-      "fair_play_points": -6,
+      "fair_play_points": -7,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10379,6 +10379,14 @@
   "leaderboards": {
     "scorers": [
       {
+        "name": "Kylian Mbappé",
+        "team": "法国",
+        "goals": 8,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Lionel Messi",
         "team": "阿根廷",
         "goals": 8,
@@ -10395,18 +10403,18 @@
         "reds": 0
       },
       {
-        "name": "Kylian Mbappé",
-        "team": "法国",
-        "goals": 7,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Harry Kane",
         "team": "英格兰",
         "goals": 6,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ousmane Dembélé",
+        "team": "法国",
+        "goals": 5,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10439,14 +10447,6 @@
         "team": "西班牙",
         "goals": 4,
         "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Ousmane Dembélé",
-        "team": "法国",
-        "goals": 4,
-        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10982,7 +10982,7 @@
         "name": "Désiré Doué",
         "team": "法国",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -11151,7 +11151,7 @@
         "team": "摩洛哥",
         "goals": 1,
         "assists": 0,
-        "yellows": 2,
+        "yellows": 3,
         "reds": 0
       },
       {
@@ -13861,6 +13861,14 @@
         "reds": 0
       },
       {
+        "name": "Kylian Mbappé",
+        "team": "法国",
+        "goals": 8,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
@@ -13989,14 +13997,6 @@
         "reds": 0
       },
       {
-        "name": "Kylian Mbappé",
-        "team": "法国",
-        "goals": 7,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
@@ -14039,7 +14039,7 @@
       {
         "name": "Ousmane Dembélé",
         "team": "法国",
-        "goals": 4,
+        "goals": 5,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -14280,6 +14280,14 @@
         "name": "Dennis Hadžikadunić",
         "team": "波黑",
         "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Désiré Doué",
+        "team": "法国",
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -15589,14 +15597,6 @@
         "reds": 0
       },
       {
-        "name": "Désiré Doué",
-        "team": "法国",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Edin Džeko",
         "team": "波黑",
         "goals": 0,
@@ -15961,7 +15961,7 @@
         "team": "摩洛哥",
         "goals": 1,
         "assists": 0,
-        "yellows": 2,
+        "yellows": 3,
         "reds": 0
       },
       {
@@ -17343,6 +17343,14 @@
         "reds": 1
       },
       {
+        "name": "Issa Diop",
+        "team": "摩洛哥",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 3,
+        "reds": 0
+      },
+      {
         "name": "Abdukodir Khusanov",
         "team": "乌兹别克斯坦",
         "goals": 0,
@@ -17459,14 +17467,6 @@
         "team": "埃及",
         "goals": 0,
         "assists": 1,
-        "yellows": 2,
-        "reds": 0
-      },
-      {
-        "name": "Issa Diop",
-        "team": "摩洛哥",
-        "goals": 1,
-        "assists": 0,
         "yellows": 2,
         "reds": 0
       },
@@ -19458,7 +19458,7 @@
         "name": "Désiré Doué",
         "team": "法国",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -19889,8 +19889,8 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 7,
-        "assists": 2,
+        "goals": 8,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -20297,7 +20297,7 @@
       {
         "name": "Ousmane Dembélé",
         "team": "法国",
-        "goals": 4,
+        "goals": 5,
         "assists": 2,
         "yellows": 0,
         "reds": 0

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T01:02:10+00:00",
+  "generated_at": "2026-07-11T00:02:26+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2294,10 +2294,10 @@
       "away_en": "Belgium",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 2,
+      "score_away": 1,
       "venue": "Los Angeles · Los Angeles Stadium"
     },
     {
@@ -2349,9 +2349,9 @@
       "date": "2026-07-15",
       "time": "03:00",
       "home": "法国",
-      "away": "W98",
+      "away": "西班牙",
       "home_en": "France",
-      "away_en": "W98",
+      "away_en": "Spain",
       "stage": "Semi-final",
       "stage_code": "semifinal",
       "status": "scheduled",
@@ -2917,7 +2917,7 @@
       "goal_difference": 4,
       "points": 5,
       "fifa_rank": 9,
-      "fair_play_points": -8,
+      "fair_play_points": -10,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -2997,7 +2997,7 @@
       "goal_difference": 5,
       "points": 7,
       "fifa_rank": 2,
-      "fair_play_points": -3,
+      "fair_play_points": -5,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4837,7 +4837,7 @@
       "goal_difference": 4,
       "points": 5,
       "fifa_rank": 9,
-      "fair_play_points": -8,
+      "fair_play_points": -10,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4917,7 +4917,7 @@
       "goal_difference": 5,
       "points": 7,
       "fifa_rank": 2,
-      "fair_play_points": -3,
+      "fair_play_points": -5,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10467,6 +10467,14 @@
         "reds": 0
       },
       {
+        "name": "Charles De Ketelaere",
+        "team": "比利时",
+        "goals": 3,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Cody Gakpo",
         "team": "荷兰",
         "goals": 3,
@@ -10619,14 +10627,6 @@
         "reds": 0
       },
       {
-        "name": "Charles De Ketelaere",
-        "team": "比利时",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Crysencio Summerville",
         "team": "荷兰",
         "goals": 2,
@@ -10711,6 +10711,14 @@
         "team": "乌拉圭",
         "goals": 2,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Mikel Merino",
+        "team": "西班牙",
+        "goals": 2,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -11003,6 +11011,14 @@
         "reds": 0
       },
       {
+        "name": "Fabián Ruiz",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Felix Nmecha",
         "team": "德国",
         "goals": 1,
@@ -11271,7 +11287,7 @@
         "team": "比利时",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11429,14 +11445,6 @@
       {
         "name": "Michal Sadílek",
         "team": "捷克",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Mikel Merino",
-        "team": "西班牙",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11947,11 +11955,19 @@
         "reds": 0
       },
       {
+        "name": "Axel Witsel",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Aymeric Laporte",
         "team": "西班牙",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13315,6 +13331,14 @@
         "reds": 0
       },
       {
+        "name": "Pau Cubarsí",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Paul Okon-Engstler",
         "team": "澳大利亚",
         "goals": 0,
@@ -13670,7 +13694,7 @@
         "name": "Timothy Castagne",
         "team": "比利时",
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -14153,7 +14177,7 @@
         "team": "西班牙",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14207,7 +14231,7 @@
       {
         "name": "Charles De Ketelaere",
         "team": "比利时",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14981,6 +15005,14 @@
         "reds": 0
       },
       {
+        "name": "Timothy Castagne",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Trézéguet",
         "team": "埃及",
         "goals": 1,
@@ -15298,6 +15330,14 @@
         "goals": 1,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Axel Witsel",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15690,6 +15730,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Fabián Ruiz",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -16265,7 +16313,7 @@
         "team": "比利时",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -16527,7 +16575,7 @@
       {
         "name": "Mikel Merino",
         "team": "西班牙",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16775,6 +16823,14 @@
       {
         "name": "Paik Seung-ho",
         "team": "韩国",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Pau Cubarsí",
+        "team": "西班牙",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -17099,14 +17155,6 @@
         "assists": 0,
         "yellows": 0,
         "reds": 1
-      },
-      {
-        "name": "Timothy Castagne",
-        "team": "比利时",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
       },
       {
         "name": "Tomás Araújo",
@@ -17713,6 +17761,22 @@
       {
         "name": "Aurélien Tchouaméni",
         "team": "法国",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Axel Witsel",
+        "team": "比利时",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Aymeric Laporte",
+        "team": "西班牙",
         "goals": 0,
         "assists": 1,
         "yellows": 1,
@@ -18359,6 +18423,14 @@
         "reds": 0
       },
       {
+        "name": "Kevin De Bruyne",
+        "team": "比利时",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Kevin Pina",
         "team": "佛得角",
         "goals": 1,
@@ -18759,6 +18831,14 @@
         "reds": 0
       },
       {
+        "name": "Pau Cubarsí",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Pedri",
         "team": "西班牙",
         "goals": 0,
@@ -18946,7 +19026,7 @@
         "name": "Timothy Castagne",
         "team": "比利时",
         "goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -19207,14 +19287,6 @@
         "reds": 0
       },
       {
-        "name": "Aymeric Laporte",
-        "team": "西班牙",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Baris Alper Yilmaz",
         "team": "土耳其",
         "goals": 1,
@@ -19297,7 +19369,7 @@
       {
         "name": "Charles De Ketelaere",
         "team": "比利时",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -19523,6 +19595,14 @@
         "team": "加纳",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Fabián Ruiz",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -19863,14 +19943,6 @@
         "reds": 0
       },
       {
-        "name": "Kevin De Bruyne",
-        "team": "比利时",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Kevin Rodríguez",
         "team": "厄瓜多尔",
         "goals": 0,
@@ -20105,7 +20177,7 @@
       {
         "name": "Mikel Merino",
         "team": "西班牙",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T00:02:26+00:00",
+  "generated_at": "2026-07-12T00:00:40+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2314,10 +2314,10 @@
       "away_en": "England",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 2,
       "venue": "Miami · Miami Stadium"
     },
     {
@@ -2368,9 +2368,9 @@
       "away_placeholder": "W100",
       "date": "2026-07-16",
       "time": "03:00",
-      "home": "W99",
+      "home": "英格兰",
       "away": "W100",
-      "home_en": "W99",
+      "home_en": "England",
       "away_en": "W100",
       "stage": "Semi-final",
       "stage_code": "semifinal",
@@ -3097,7 +3097,7 @@
       "goal_difference": 1,
       "points": 6,
       "fifa_rank": 31,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5017,7 +5017,7 @@
       "goal_difference": 1,
       "points": 6,
       "fifa_rank": 31,
-      "fair_play_points": -2,
+      "fair_play_points": -3,
       "position": 2,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10411,6 +10411,14 @@
         "reds": 0
       },
       {
+        "name": "Jude Bellingham",
+        "team": "英格兰",
+        "goals": 6,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Ousmane Dembélé",
         "team": "法国",
         "goals": 5,
@@ -10424,14 +10432,6 @@
         "goals": 4,
         "assists": 1,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Jude Bellingham",
-        "team": "英格兰",
-        "goals": 4,
-        "assists": 1,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -10863,6 +10863,14 @@
         "team": "阿尔及利亚",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Andreas Schjelderup",
+        "team": "挪威",
+        "goals": 1,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -11875,14 +11883,6 @@
         "reds": 0
       },
       {
-        "name": "Andreas Schjelderup",
-        "team": "挪威",
-        "goals": 0,
-        "assists": 3,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Andrés Andrade",
         "team": "巴拿马",
         "goals": 0,
@@ -11910,7 +11910,7 @@
         "name": "Anthony Gordon",
         "team": "英格兰",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -12859,6 +12859,14 @@
         "reds": 0
       },
       {
+        "name": "Kristoffer Ajer",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Kōki Ogawa",
         "team": "日本",
         "goals": 0,
@@ -13014,7 +13022,7 @@
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
-        "assists": 3,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },
@@ -13853,6 +13861,14 @@
         "reds": 0
       },
       {
+        "name": "Martin Ødegaard",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 4,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Alexander Isak",
         "team": "瑞典",
         "goals": 1,
@@ -13863,6 +13879,14 @@
       {
         "name": "Andreas Schjelderup",
         "team": "挪威",
+        "goals": 1,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Anthony Gordon",
+        "team": "英格兰",
         "goals": 0,
         "assists": 3,
         "yellows": 0,
@@ -13893,14 +13917,6 @@
         "reds": 0
       },
       {
-        "name": "Martin Ødegaard",
-        "team": "挪威",
-        "goals": 0,
-        "assists": 3,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Roberto Alvarado",
         "team": "墨西哥",
         "goals": 0,
@@ -13914,14 +13930,6 @@
         "goals": 1,
         "assists": 2,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Anthony Gordon",
-        "team": "英格兰",
-        "goals": 0,
-        "assists": 2,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -14495,7 +14503,7 @@
       {
         "name": "Jude Bellingham",
         "team": "英格兰",
-        "goals": 4,
+        "goals": 6,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -16327,6 +16335,14 @@
       {
         "name": "Kojo Peprah Oppong",
         "team": "加纳",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Kristoffer Ajer",
+        "team": "挪威",
         "goals": 0,
         "assists": 0,
         "yellows": 1,
@@ -18361,7 +18377,7 @@
       {
         "name": "Jude Bellingham",
         "team": "英格兰",
-        "goals": 4,
+        "goals": 6,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -18451,6 +18467,14 @@
         "team": "奥地利",
         "goals": 0,
         "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Kristoffer Ajer",
+        "team": "挪威",
+        "goals": 0,
+        "assists": 0,
         "yellows": 1,
         "reds": 0
       },
@@ -19217,7 +19241,7 @@
       {
         "name": "Andreas Schjelderup",
         "team": "挪威",
-        "goals": 0,
+        "goals": 1,
         "assists": 3,
         "yellows": 0,
         "reds": 0
@@ -19242,7 +19266,7 @@
         "name": "Anthony Gordon",
         "team": "英格兰",
         "goals": 0,
-        "assists": 2,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -20098,7 +20122,7 @@
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
-        "assists": 3,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },

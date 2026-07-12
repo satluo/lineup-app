@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T00:00:40+00:00",
+  "generated_at": "2026-07-12T06:01:12+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2334,10 +2334,10 @@
       "away_en": "Switzerland",
       "stage": "Quarter-final",
       "stage_code": "quarterfinal",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 3,
+      "score_away": 1,
       "venue": "Kansas City · Kansas City Stadium"
     },
     {
@@ -2369,9 +2369,9 @@
       "date": "2026-07-16",
       "time": "03:00",
       "home": "英格兰",
-      "away": "W100",
+      "away": "阿根廷",
       "home_en": "England",
-      "away_en": "W100",
+      "away_en": "Argentina",
       "stage": "Semi-final",
       "stage_code": "semifinal",
       "status": "scheduled",
@@ -2517,7 +2517,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 19,
-      "fair_play_points": -6,
+      "fair_play_points": -11,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3157,7 +3157,7 @@
       "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4437,7 +4437,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 19,
-      "fair_play_points": -6,
+      "fair_play_points": -11,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5077,7 +5077,7 @@
       "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
-      "fair_play_points": -3,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10390,7 +10390,7 @@
         "name": "Lionel Messi",
         "team": "阿根廷",
         "goals": 8,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10623,8 +10623,8 @@
         "team": "瑞士",
         "goals": 2,
         "assists": 2,
-        "yellows": 0,
-        "reds": 0
+        "yellows": 1,
+        "reds": 1
       },
       {
         "name": "Crysencio Summerville",
@@ -10648,6 +10648,14 @@
         "goals": 2,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Dan Ndoye",
+        "team": "瑞士",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -10680,6 +10688,14 @@
         "goals": 2,
         "assists": 0,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Lautaro Martínez",
+        "team": "阿根廷",
+        "goals": 2,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10843,6 +10859,14 @@
         "reds": 0
       },
       {
+        "name": "Alexis Mac Allister",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Alexis Saelemaekers",
         "team": "比利时",
         "goals": 1,
@@ -10965,14 +10989,6 @@
       {
         "name": "Daizen Maeda",
         "team": "日本",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Dan Ndoye",
-        "team": "瑞士",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11251,6 +11267,14 @@
         "reds": 0
       },
       {
+        "name": "Julián Alvarez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Junya Itō",
         "team": "日本",
         "goals": 1,
@@ -11319,14 +11343,6 @@
         "team": "西班牙",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Lautaro Martínez",
-        "team": "阿根廷",
-        "goals": 1,
-        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -11829,14 +11845,6 @@
       {
         "name": "Alexandr Sojka",
         "team": "捷克",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Alexis Mac Allister",
-        "team": "阿根廷",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -12739,6 +12747,14 @@
         "reds": 0
       },
       {
+        "name": "José Manuel López",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "João Cancelo",
         "team": "葡萄牙",
         "goals": 0,
@@ -13435,6 +13451,14 @@
         "reds": 0
       },
       {
+        "name": "Ricardo Rodriguez",
+        "team": "瑞士",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Richard Ríos",
         "team": "哥伦比亚",
         "goals": 0,
@@ -13665,6 +13689,14 @@
         "assists": 0,
         "yellows": 0,
         "reds": 1
+      },
+      {
+        "name": "Thiago Almada",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
       },
       {
         "name": "Thomas Meunier",
@@ -13937,8 +13969,8 @@
         "team": "瑞士",
         "goals": 2,
         "assists": 2,
-        "yellows": 0,
-        "reds": 0
+        "yellows": 1,
+        "reds": 1
       },
       {
         "name": "Chris Wood",
@@ -14032,6 +14064,14 @@
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
+        "assists": 2,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Lionel Messi",
+        "team": "阿根廷",
+        "goals": 8,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -14143,7 +14183,7 @@
       {
         "name": "Alexis Mac Allister",
         "team": "阿根廷",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14485,6 +14525,14 @@
         "reds": 0
       },
       {
+        "name": "José Manuel López",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "João Cancelo",
         "team": "葡萄牙",
         "goals": 0,
@@ -14583,9 +14631,9 @@
       {
         "name": "Lautaro Martínez",
         "team": "阿根廷",
-        "goals": 1,
+        "goals": 2,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14594,14 +14642,6 @@
         "goals": 0,
         "assists": 1,
         "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Lionel Messi",
-        "team": "阿根廷",
-        "goals": 8,
-        "assists": 1,
-        "yellows": 0,
         "reds": 0
       },
       {
@@ -14895,6 +14935,14 @@
       {
         "name": "Rayan",
         "team": "巴西",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ricardo Rodriguez",
+        "team": "瑞士",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -15543,7 +15591,7 @@
       {
         "name": "Dan Ndoye",
         "team": "瑞士",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -16234,6 +16282,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Julián Alvarez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -17165,6 +17221,14 @@
         "reds": 1
       },
       {
+        "name": "Thiago Almada",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Tim Ream",
         "team": "美国",
         "goals": 0,
@@ -17294,6 +17358,14 @@
       }
     ],
     "cards": [
+      {
+        "name": "Breel Embolo",
+        "team": "瑞士",
+        "goals": 2,
+        "assists": 2,
+        "yellows": 1,
+        "reds": 1
+      },
       {
         "name": "Folarin Balogun",
         "team": "美国",
@@ -18351,6 +18423,14 @@
         "reds": 0
       },
       {
+        "name": "José Manuel López",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Jovo Lukić",
         "team": "波黑",
         "goals": 1,
@@ -18490,6 +18570,14 @@
         "name": "Lamine Camara",
         "team": "塞内加尔",
         "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Lautaro Martínez",
+        "team": "阿根廷",
+        "goals": 2,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -19047,6 +19135,14 @@
         "reds": 0
       },
       {
+        "name": "Thiago Almada",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Timothy Castagne",
         "team": "比利时",
         "goals": 0,
@@ -19201,7 +19297,7 @@
       {
         "name": "Alexis Mac Allister",
         "team": "阿根廷",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -19331,14 +19427,6 @@
         "team": "加纳",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Breel Embolo",
-        "team": "瑞士",
-        "goals": 2,
-        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -19473,7 +19561,7 @@
       {
         "name": "Dan Ndoye",
         "team": "瑞士",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -19919,6 +20007,14 @@
         "reds": 0
       },
       {
+        "name": "Julián Alvarez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Julián Quiñones",
         "team": "墨西哥",
         "goals": 4,
@@ -20007,14 +20103,6 @@
         "reds": 0
       },
       {
-        "name": "Lautaro Martínez",
-        "team": "阿根廷",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
@@ -20042,7 +20130,7 @@
         "name": "Lionel Messi",
         "team": "阿根廷",
         "goals": 8,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -20483,6 +20571,14 @@
         "team": "墨西哥",
         "goals": 3,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ricardo Rodriguez",
+        "team": "瑞士",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

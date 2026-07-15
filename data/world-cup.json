@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T06:01:12+00:00",
+  "generated_at": "2026-07-15T00:02:20+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2354,10 +2354,10 @@
       "away_en": "Spain",
       "stage": "Semi-final",
       "stage_code": "semifinal",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 0,
+      "score_away": 2,
       "venue": "Dallas · Dallas Stadium"
     },
     {
@@ -2388,12 +2388,12 @@
       "away_placeholder": "RU102",
       "date": "2026-07-19",
       "time": "05:00",
-      "home": "RU101",
+      "home": "法国",
       "away": "RU102",
-      "home_en": "RU101",
+      "home_en": "France",
       "away_en": "RU102",
-      "stage": "Play-off for third place",
-      "stage_code": "third_place",
+      "stage": "Bronze final",
+      "stage_code": "final",
       "status": "scheduled",
       "status_detail": "scheduled",
       "score_home": null,
@@ -2408,9 +2408,9 @@
       "away_placeholder": "W102",
       "date": "2026-07-20",
       "time": "03:00",
-      "home": "W101",
+      "home": "西班牙",
       "away": "W102",
-      "home_en": "W101",
+      "home_en": "Spain",
       "away_en": "W102",
       "stage": "Final",
       "stage_code": "final",
@@ -2997,7 +2997,7 @@
       "goal_difference": 5,
       "points": 7,
       "fifa_rank": 2,
-      "fair_play_points": -5,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3077,7 +3077,7 @@
       "goal_difference": 8,
       "points": 9,
       "fifa_rank": 3,
-      "fair_play_points": -4,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4917,7 +4917,7 @@
       "goal_difference": 5,
       "points": 7,
       "fifa_rank": 2,
-      "fair_play_points": -5,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -4997,7 +4997,7 @@
       "goal_difference": 8,
       "points": 9,
       "fifa_rank": 3,
-      "fair_play_points": -4,
+      "fair_play_points": -6,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10383,7 +10383,7 @@
         "team": "法国",
         "goals": 8,
         "assists": 3,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -10419,6 +10419,14 @@
         "reds": 0
       },
       {
+        "name": "Mikel Oyarzabal",
+        "team": "西班牙",
+        "goals": 5,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ousmane Dembélé",
         "team": "法国",
         "goals": 5,
@@ -10437,14 +10445,6 @@
       {
         "name": "Julián Quiñones",
         "team": "墨西哥",
-        "goals": 4,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Mikel Oyarzabal",
-        "team": "西班牙",
         "goals": 4,
         "assists": 1,
         "yellows": 0,
@@ -10760,6 +10760,14 @@
         "goals": 2,
         "assists": 1,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Pedro Porro",
+        "team": "西班牙",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -11595,14 +11603,6 @@
         "reds": 0
       },
       {
-        "name": "Pedro Porro",
-        "team": "西班牙",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Petar Musa",
         "team": "克罗地亚",
         "goals": 1,
@@ -11791,7 +11791,7 @@
         "team": "法国",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -12166,7 +12166,7 @@
         "name": "Dani Olmo",
         "team": "西班牙",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -13007,7 +13007,7 @@
         "team": "西班牙",
         "goals": 0,
         "assists": 2,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13945,7 +13945,7 @@
         "team": "法国",
         "goals": 8,
         "assists": 3,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13986,6 +13986,14 @@
         "goals": 2,
         "assists": 2,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Dani Olmo",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 2,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14081,7 +14089,7 @@
         "team": "西班牙",
         "goals": 0,
         "assists": 2,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14153,7 +14161,7 @@
         "team": "法国",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14311,14 +14319,6 @@
       {
         "name": "Cucho Hernández",
         "team": "哥伦比亚",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Dani Olmo",
-        "team": "西班牙",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -14775,7 +14775,7 @@
       {
         "name": "Mikel Oyarzabal",
         "team": "西班牙",
-        "goals": 4,
+        "goals": 5,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -16919,7 +16919,7 @@
       {
         "name": "Pedro Porro",
         "team": "西班牙",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -17743,6 +17743,14 @@
         "reds": 0
       },
       {
+        "name": "Adrien Rabiot",
+        "team": "法国",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Ahmed Fatouh",
         "team": "埃及",
         "goals": 0,
@@ -18559,6 +18567,14 @@
         "reds": 0
       },
       {
+        "name": "Kylian Mbappé",
+        "team": "法国",
+        "goals": 8,
+        "assists": 3,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Ladislav Krejčí",
         "team": "捷克",
         "goals": 1,
@@ -18683,6 +18699,14 @@
         "team": "法国",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Marc Cucurella",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 2,
         "yellows": 1,
         "reds": 0
       },
@@ -19255,14 +19279,6 @@
         "reds": 0
       },
       {
-        "name": "Adrien Rabiot",
-        "team": "法国",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Akmal Mozgovoy",
         "team": "乌兹别克斯坦",
         "goals": 0,
@@ -19570,7 +19586,7 @@
         "name": "Dani Olmo",
         "team": "西班牙",
         "goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -20079,14 +20095,6 @@
         "reds": 0
       },
       {
-        "name": "Kylian Mbappé",
-        "team": "法国",
-        "goals": 8,
-        "assists": 3,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Kōki Ogawa",
         "team": "日本",
         "goals": 0,
@@ -20163,14 +20171,6 @@
         "team": "墨西哥",
         "goals": 1,
         "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Marc Cucurella",
-        "team": "西班牙",
-        "goals": 0,
-        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -20297,7 +20297,7 @@
       {
         "name": "Mikel Oyarzabal",
         "team": "西班牙",
-        "goals": 4,
+        "goals": 5,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -20505,7 +20505,7 @@
       {
         "name": "Pedro Porro",
         "team": "西班牙",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0

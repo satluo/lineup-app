@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T00:02:20+00:00",
+  "generated_at": "2026-07-16T00:01:39+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2374,10 +2374,10 @@
       "away_en": "Argentina",
       "stage": "Semi-final",
       "stage_code": "semifinal",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 2,
       "venue": "Atlanta · Atlanta Stadium"
     },
     {
@@ -2389,9 +2389,9 @@
       "date": "2026-07-19",
       "time": "05:00",
       "home": "法国",
-      "away": "RU102",
+      "away": "英格兰",
       "home_en": "France",
-      "away_en": "RU102",
+      "away_en": "England",
       "stage": "Bronze final",
       "stage_code": "final",
       "status": "scheduled",
@@ -2409,9 +2409,9 @@
       "date": "2026-07-20",
       "time": "03:00",
       "home": "西班牙",
-      "away": "W102",
+      "away": "阿根廷",
       "home_en": "Spain",
-      "away_en": "W102",
+      "away_en": "Argentina",
       "stage": "Final",
       "stage_code": "final",
       "status": "scheduled",
@@ -3157,7 +3157,7 @@
       "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
-      "fair_play_points": -6,
+      "fair_play_points": -9,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -3317,7 +3317,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 4,
-      "fair_play_points": -11,
+      "fair_play_points": -12,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5077,7 +5077,7 @@
       "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
-      "fair_play_points": -6,
+      "fair_play_points": -9,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5237,7 +5237,7 @@
       "goal_difference": 4,
       "points": 7,
       "fifa_rank": 4,
-      "fair_play_points": -11,
+      "fair_play_points": -12,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10390,7 +10390,7 @@
         "name": "Lionel Messi",
         "team": "阿根廷",
         "goals": 8,
-        "assists": 2,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },
@@ -10547,6 +10547,14 @@
         "reds": 0
       },
       {
+        "name": "Lautaro Martínez",
+        "team": "阿根廷",
+        "goals": 3,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Matheus Cunha",
         "team": "巴西",
         "goals": 3,
@@ -10675,6 +10683,14 @@
         "reds": 0
       },
       {
+        "name": "Enzo Fernández",
+        "team": "阿根廷",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Ermin Mahmić",
         "team": "波黑",
         "goals": 2,
@@ -10688,14 +10704,6 @@
         "goals": 2,
         "assists": 0,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Lautaro Martínez",
-        "team": "阿根廷",
-        "goals": 2,
-        "assists": 1,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -10915,6 +10923,14 @@
         "reds": 0
       },
       {
+        "name": "Anthony Gordon",
+        "team": "英格兰",
+        "goals": 1,
+        "assists": 3,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Antonio Nusa",
         "team": "挪威",
         "goals": 1,
@@ -10991,7 +11007,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11029,14 +11045,6 @@
       {
         "name": "Eldor Shomurodov",
         "team": "乌兹别克斯坦",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Enzo Fernández",
-        "team": "阿根廷",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11375,7 +11383,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11915,14 +11923,6 @@
         "reds": 0
       },
       {
-        "name": "Anthony Gordon",
-        "team": "英格兰",
-        "goals": 0,
-        "assists": 3,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Antonee Robinson",
         "team": "美国",
         "goals": 0,
@@ -12327,7 +12327,7 @@
         "team": "英格兰",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13179,6 +13179,14 @@
         "reds": 0
       },
       {
+        "name": "Morgan Rogers",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Mostafa Shoubir",
         "team": "埃及",
         "goals": 0,
@@ -13503,7 +13511,7 @@
         "team": "阿根廷",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13893,6 +13901,14 @@
         "reds": 0
       },
       {
+        "name": "Lionel Messi",
+        "team": "阿根廷",
+        "goals": 8,
+        "assists": 4,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Martin Ødegaard",
         "team": "挪威",
         "goals": 0,
@@ -13919,7 +13935,7 @@
       {
         "name": "Anthony Gordon",
         "team": "英格兰",
-        "goals": 0,
+        "goals": 1,
         "assists": 3,
         "yellows": 0,
         "reds": 0
@@ -14072,14 +14088,6 @@
         "name": "Leandro Trossard",
         "team": "比利时",
         "goals": 2,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Lionel Messi",
-        "team": "阿根廷",
-        "goals": 8,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -14385,7 +14393,7 @@
         "team": "英格兰",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14631,7 +14639,7 @@
       {
         "name": "Lautaro Martínez",
         "team": "阿根廷",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -14649,7 +14657,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14783,6 +14791,14 @@
       {
         "name": "Mohamed Hany",
         "team": "埃及",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Morgan Rogers",
+        "team": "英格兰",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -14969,7 +14985,7 @@
         "team": "阿根廷",
         "goals": 0,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15537,7 +15553,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 0,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -15743,7 +15759,7 @@
       {
         "name": "Enzo Fernández",
         "team": "阿根廷",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -17975,6 +17991,14 @@
         "reds": 0
       },
       {
+        "name": "Cristian Romero",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Crysencio Summerville",
         "team": "荷兰",
         "goals": 2,
@@ -18075,6 +18099,14 @@
         "team": "新西兰",
         "goals": 3,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Elliot Anderson",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -18593,7 +18625,7 @@
       {
         "name": "Lautaro Martínez",
         "team": "阿根廷",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -18635,6 +18667,14 @@
         "team": "加拿大",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Lisandro Martínez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -19039,6 +19079,14 @@
         "reds": 0
       },
       {
+        "name": "Rodrigo De Paul",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Roger Ibañez",
         "team": "巴西",
         "goals": 0,
@@ -19377,7 +19425,7 @@
       {
         "name": "Anthony Gordon",
         "team": "英格兰",
-        "goals": 0,
+        "goals": 1,
         "assists": 3,
         "yellows": 0,
         "reds": 0
@@ -19543,14 +19591,6 @@
         "reds": 0
       },
       {
-        "name": "Cristian Romero",
-        "team": "阿根廷",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Cristiano Ronaldo",
         "team": "葡萄牙",
         "goals": 3,
@@ -19687,14 +19727,6 @@
         "reds": 0
       },
       {
-        "name": "Elliot Anderson",
-        "team": "英格兰",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Emam Ashour",
         "team": "埃及",
         "goals": 2,
@@ -19705,7 +19737,7 @@
       {
         "name": "Enzo Fernández",
         "team": "阿根廷",
-        "goals": 1,
+        "goals": 2,
         "assists": 0,
         "yellows": 0,
         "reds": 0
@@ -20138,15 +20170,7 @@
         "name": "Lionel Messi",
         "team": "阿根廷",
         "goals": 8,
-        "assists": 2,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Lisandro Martínez",
-        "team": "阿根廷",
-        "goals": 1,
-        "assists": 1,
+        "assists": 4,
         "yellows": 0,
         "reds": 0
       },
@@ -20323,6 +20347,14 @@
         "team": "伊朗",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Morgan Rogers",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -20603,14 +20635,6 @@
         "team": "墨西哥",
         "goals": 0,
         "assists": 3,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Rodrigo De Paul",
-        "team": "阿根廷",
-        "goals": 0,
-        "assists": 1,
         "yellows": 0,
         "reds": 0
       },

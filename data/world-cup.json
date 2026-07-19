@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T00:01:39+00:00",
+  "generated_at": "2026-07-19T02:01:59+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2394,10 +2394,10 @@
       "away_en": "England",
       "stage": "Bronze final",
       "stage_code": "final",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 4,
+      "score_away": 6,
       "venue": "Miami · Miami Stadium"
     },
     {
@@ -10381,8 +10381,8 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 8,
-        "assists": 3,
+        "goals": 10,
+        "assists": 4,
         "yellows": 1,
         "reds": 0
       },
@@ -10403,6 +10403,14 @@
         "reds": 0
       },
       {
+        "name": "Jude Bellingham",
+        "team": "英格兰",
+        "goals": 7,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Harry Kane",
         "team": "英格兰",
         "goals": 6,
@@ -10411,11 +10419,11 @@
         "reds": 0
       },
       {
-        "name": "Jude Bellingham",
-        "team": "英格兰",
+        "name": "Ousmane Dembélé",
+        "team": "法国",
         "goals": 6,
-        "assists": 1,
-        "yellows": 1,
+        "assists": 2,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -10423,14 +10431,6 @@
         "team": "西班牙",
         "goals": 5,
         "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Ousmane Dembélé",
-        "team": "法国",
-        "goals": 5,
-        "assists": 2,
         "yellows": 0,
         "reds": 0
       },
@@ -10459,10 +10459,26 @@
         "reds": 0
       },
       {
+        "name": "Bradley Barcola",
+        "team": "法国",
+        "goals": 3,
+        "assists": 1,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
         "name": "Brian Brobbey",
         "team": "荷兰",
         "goals": 3,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Bukayo Saka",
+        "team": "英格兰",
+        "goals": 3,
+        "assists": 3,
         "yellows": 0,
         "reds": 0
       },
@@ -10615,14 +10631,6 @@
         "team": "摩洛哥",
         "goals": 2,
         "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Bradley Barcola",
-        "team": "法国",
-        "goals": 2,
-        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -11019,6 +11027,14 @@
         "reds": 0
       },
       {
+        "name": "Declan Rice",
+        "team": "英格兰",
+        "goals": 1,
+        "assists": 2,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Deroy Duarte",
         "team": "佛得角",
         "goals": 1,
@@ -11045,6 +11061,14 @@
       {
         "name": "Eldor Shomurodov",
         "team": "乌兹别克斯坦",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ezri Konsa",
+        "team": "英格兰",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -11438,7 +11462,7 @@
         "name": "Marcus Rashford",
         "team": "英格兰",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -12043,14 +12067,6 @@
         "reds": 0
       },
       {
-        "name": "Bukayo Saka",
-        "team": "英格兰",
-        "goals": 0,
-        "assists": 3,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Callum McCowatt",
         "team": "新西兰",
         "goals": 0,
@@ -12211,11 +12227,11 @@
         "reds": 0
       },
       {
-        "name": "Declan Rice",
-        "team": "英格兰",
+        "name": "Dayot Upamecano",
+        "team": "法国",
         "goals": 0,
         "assists": 1,
-        "yellows": 2,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -12280,6 +12296,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Eberechi Eze",
+        "team": "英格兰",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -13102,7 +13126,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 5,
+        "assists": 7,
         "yellows": 1,
         "reds": 0
       },
@@ -13880,7 +13904,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 5,
+        "assists": 7,
         "yellows": 1,
         "reds": 0
       },
@@ -13898,6 +13922,14 @@
         "goals": 0,
         "assists": 4,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Kylian Mbappé",
+        "team": "法国",
+        "goals": 10,
+        "assists": 4,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -13943,7 +13975,7 @@
       {
         "name": "Bukayo Saka",
         "team": "英格兰",
-        "goals": 0,
+        "goals": 3,
         "assists": 3,
         "yellows": 0,
         "reds": 0
@@ -13954,14 +13986,6 @@
         "goals": 0,
         "assists": 3,
         "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Kylian Mbappé",
-        "team": "法国",
-        "goals": 8,
-        "assists": 3,
-        "yellows": 1,
         "reds": 0
       },
       {
@@ -14010,6 +14034,14 @@
         "goals": 0,
         "assists": 2,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Declan Rice",
+        "team": "英格兰",
+        "goals": 1,
+        "assists": 2,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14127,7 +14159,7 @@
       {
         "name": "Ousmane Dembélé",
         "team": "法国",
-        "goals": 5,
+        "goals": 6,
         "assists": 2,
         "yellows": 0,
         "reds": 0
@@ -14255,7 +14287,7 @@
       {
         "name": "Bradley Barcola",
         "team": "法国",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -14349,11 +14381,11 @@
         "reds": 0
       },
       {
-        "name": "Declan Rice",
-        "team": "英格兰",
+        "name": "Dayot Upamecano",
+        "team": "法国",
         "goals": 0,
         "assists": 1,
-        "yellows": 2,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14368,6 +14400,14 @@
         "name": "Désiré Doué",
         "team": "法国",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Eberechi Eze",
+        "team": "英格兰",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -14559,7 +14599,7 @@
       {
         "name": "Jude Bellingham",
         "team": "英格兰",
-        "goals": 6,
+        "goals": 7,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -14728,6 +14768,14 @@
         "name": "Marcos Llorente",
         "team": "西班牙",
         "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Marcus Rashford",
+        "team": "英格兰",
+        "goals": 1,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -15797,6 +15845,14 @@
         "reds": 0
       },
       {
+        "name": "Ezri Konsa",
+        "team": "英格兰",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Fabinho",
         "team": "巴西",
         "goals": 0,
@@ -16543,14 +16599,6 @@
       {
         "name": "Marcus Holmgren Pedersen",
         "team": "挪威",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Marcus Rashford",
-        "team": "英格兰",
         "goals": 1,
         "assists": 0,
         "yellows": 0,
@@ -17577,8 +17625,8 @@
       {
         "name": "Declan Rice",
         "team": "英格兰",
-        "goals": 0,
-        "assists": 1,
+        "goals": 1,
+        "assists": 2,
         "yellows": 2,
         "reds": 0
       },
@@ -17913,7 +17961,7 @@
       {
         "name": "Bradley Barcola",
         "team": "法国",
-        "goals": 2,
+        "goals": 3,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -18497,7 +18545,7 @@
       {
         "name": "Jude Bellingham",
         "team": "英格兰",
-        "goals": 6,
+        "goals": 7,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -18601,8 +18649,8 @@
       {
         "name": "Kylian Mbappé",
         "team": "法国",
-        "goals": 8,
-        "assists": 3,
+        "goals": 10,
+        "assists": 4,
         "yellows": 1,
         "reds": 0
       },
@@ -18818,7 +18866,7 @@
         "name": "Michael Olise",
         "team": "法国",
         "goals": 0,
-        "assists": 5,
+        "assists": 7,
         "yellows": 1,
         "reds": 0
       },
@@ -19529,7 +19577,7 @@
       {
         "name": "Bukayo Saka",
         "team": "英格兰",
-        "goals": 0,
+        "goals": 3,
         "assists": 3,
         "yellows": 0,
         "reds": 0
@@ -19655,6 +19703,14 @@
         "reds": 0
       },
       {
+        "name": "Dayot Upamecano",
+        "team": "法国",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
         "name": "Deniz Undav",
         "team": "德国",
         "goals": 3,
@@ -19698,6 +19754,14 @@
         "name": "Désiré Doué",
         "team": "法国",
         "goals": 1,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Eberechi Eze",
+        "team": "英格兰",
+        "goals": 0,
         "assists": 1,
         "yellows": 0,
         "reds": 0
@@ -19755,6 +19819,14 @@
         "team": "加纳",
         "goals": 0,
         "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ezri Konsa",
+        "team": "英格兰",
+        "goals": 1,
+        "assists": 0,
         "yellows": 0,
         "reds": 0
       },
@@ -20218,7 +20290,7 @@
         "name": "Marcus Rashford",
         "team": "英格兰",
         "goals": 1,
-        "assists": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
@@ -20513,7 +20585,7 @@
       {
         "name": "Ousmane Dembélé",
         "team": "法国",
-        "goals": 5,
+        "goals": 6,
         "assists": 2,
         "yellows": 0,
         "reds": 0

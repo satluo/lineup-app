@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T02:01:59+00:00",
+  "generated_at": "2026-07-20T00:01:05+00:00",
   "source": "internal world_cup.db snapshot",
   "teams": [
     {
@@ -2414,10 +2414,10 @@
       "away_en": "Argentina",
       "stage": "Final",
       "stage_code": "final",
-      "status": "scheduled",
-      "status_detail": "scheduled",
-      "score_home": null,
-      "score_away": null,
+      "status": "finished",
+      "status_detail": "official_result",
+      "score_home": 1,
+      "score_away": 0,
       "venue": "New Jersey · New York/New Jersey Stadium"
     }
   ],
@@ -3157,7 +3157,7 @@
       "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
-      "fair_play_points": -9,
+      "fair_play_points": -18,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -5077,7 +5077,7 @@
       "goal_difference": 7,
       "points": 9,
       "fifa_rank": 1,
-      "fair_play_points": -9,
+      "fair_play_points": -18,
       "position": 1,
       "group_complete": true,
       "ranking_status": "calculated"
@@ -10695,8 +10695,8 @@
         "team": "阿根廷",
         "goals": 2,
         "assists": 0,
-        "yellows": 0,
-        "reds": 0
+        "yellows": 1,
+        "reds": 1
       },
       {
         "name": "Ermin Mahmić",
@@ -10887,7 +10887,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11015,7 +11015,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -11088,6 +11088,14 @@
         "goals": 1,
         "assists": 1,
         "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Ferran Torres",
+        "team": "西班牙",
+        "goals": 1,
+        "assists": 1,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -11407,7 +11415,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -12419,14 +12427,6 @@
         "reds": 0
       },
       {
-        "name": "Ferran Torres",
-        "team": "西班牙",
-        "goals": 0,
-        "assists": 1,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Findlay Curtis",
         "team": "苏格兰",
         "goals": 0,
@@ -12935,7 +12935,7 @@
         "team": "阿根廷",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -13280,6 +13280,14 @@
         "goals": 0,
         "assists": 0,
         "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Nico Williams",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
         "reds": 0
       },
       {
@@ -14233,7 +14241,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 1,
-        "yellows": 0,
+        "yellows": 1,
         "reds": 0
       },
       {
@@ -14463,7 +14471,7 @@
       {
         "name": "Ferran Torres",
         "team": "西班牙",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -14697,7 +14705,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 1,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -14895,6 +14903,14 @@
       {
         "name": "Nico González",
         "team": "阿根廷",
+        "goals": 0,
+        "assists": 1,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nico Williams",
+        "team": "西班牙",
         "goals": 0,
         "assists": 1,
         "yellows": 0,
@@ -15601,7 +15617,7 @@
         "team": "阿根廷",
         "goals": 1,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -15809,8 +15825,8 @@
         "team": "阿根廷",
         "goals": 2,
         "assists": 0,
-        "yellows": 0,
-        "reds": 0
+        "yellows": 1,
+        "reds": 1
       },
       {
         "name": "Eren Elmali",
@@ -16505,7 +16521,7 @@
         "team": "阿根廷",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
+        "yellows": 2,
         "reds": 0
       },
       {
@@ -17431,6 +17447,14 @@
         "reds": 1
       },
       {
+        "name": "Enzo Fernández",
+        "team": "阿根廷",
+        "goals": 2,
+        "assists": 0,
+        "yellows": 1,
+        "reds": 1
+      },
+      {
         "name": "Folarin Balogun",
         "team": "美国",
         "goals": 3,
@@ -17607,6 +17631,14 @@
         "reds": 0
       },
       {
+        "name": "Cristian Romero",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
         "name": "Cyle Larin",
         "team": "加拿大",
         "goals": 2,
@@ -17683,6 +17715,22 @@
         "team": "库拉索",
         "goals": 0,
         "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Leandro Paredes",
+        "team": "阿根廷",
+        "goals": 0,
+        "assists": 0,
+        "yellows": 2,
+        "reds": 0
+      },
+      {
+        "name": "Lisandro Martínez",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 1,
         "yellows": 2,
         "reds": 0
       },
@@ -17835,6 +17883,14 @@
         "team": "澳大利亚",
         "goals": 0,
         "assists": 0,
+        "yellows": 1,
+        "reds": 0
+      },
+      {
+        "name": "Alexis Mac Allister",
+        "team": "阿根廷",
+        "goals": 1,
+        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -18039,14 +18095,6 @@
         "reds": 0
       },
       {
-        "name": "Cristian Romero",
-        "team": "阿根廷",
-        "goals": 1,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Crysencio Summerville",
         "team": "荷兰",
         "goals": 2,
@@ -18225,7 +18273,7 @@
       {
         "name": "Ferran Torres",
         "team": "西班牙",
-        "goals": 0,
+        "goals": 1,
         "assists": 1,
         "yellows": 1,
         "reds": 0
@@ -18687,14 +18735,6 @@
         "reds": 0
       },
       {
-        "name": "Leandro Paredes",
-        "team": "阿根廷",
-        "goals": 0,
-        "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
         "name": "Lee Gi-hyuk",
         "team": "韩国",
         "goals": 0,
@@ -18715,14 +18755,6 @@
         "team": "加拿大",
         "goals": 0,
         "assists": 0,
-        "yellows": 1,
-        "reds": 0
-      },
-      {
-        "name": "Lisandro Martínez",
-        "team": "阿根廷",
-        "goals": 1,
-        "assists": 1,
         "yellows": 1,
         "reds": 0
       },
@@ -19407,14 +19439,6 @@
         "reds": 0
       },
       {
-        "name": "Alexis Mac Allister",
-        "team": "阿根廷",
-        "goals": 1,
-        "assists": 1,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
         "name": "Alexis Saelemaekers",
         "team": "比利时",
         "goals": 1,
@@ -19793,14 +19817,6 @@
       {
         "name": "Emam Ashour",
         "team": "埃及",
-        "goals": 2,
-        "assists": 0,
-        "yellows": 0,
-        "reds": 0
-      },
-      {
-        "name": "Enzo Fernández",
-        "team": "阿根廷",
         "goals": 2,
         "assists": 0,
         "yellows": 0,
@@ -20499,6 +20515,14 @@
         "team": "德国",
         "goals": 1,
         "assists": 0,
+        "yellows": 0,
+        "reds": 0
+      },
+      {
+        "name": "Nico Williams",
+        "team": "西班牙",
+        "goals": 0,
+        "assists": 1,
         "yellows": 0,
         "reds": 0
       },
